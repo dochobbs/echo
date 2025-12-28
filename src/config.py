@@ -4,6 +4,19 @@ from pydantic_settings import BaseSettings
 from functools import lru_cache
 
 
+# Available Echo voices (Eleven Labs)
+ECHO_VOICES: dict[str, str] = {
+  "eryn": "WuBPEavIaQB56EnsGvFh",      # Default - calm, confident
+  "matilda": "NihRgaLj2HWAjvZ5XNxl",   # Warm, friendly
+  "clarice": "sIak7pFapfSLCfctxdOu",   # Clear, professional
+  "clara": "Qggl4b0xRMiqOwhPtVWT",     # Approachable
+  "devan": "mC104ON19u9NruNfYC3j",     # Energetic
+  "lilly": "qBDvhofpxp92JgXJxDjB",     # Gentle
+}
+
+DEFAULT_VOICE = "eryn"
+
+
 class Settings(BaseSettings):
   """Application settings from environment."""
 
@@ -13,10 +26,11 @@ class Settings(BaseSettings):
   deepgram_api_key: str = ""
 
   # Eleven Labs
-  echo_voice_id: str = ""
+  echo_voice_id: str = ECHO_VOICES[DEFAULT_VOICE]
+  eleven_labs_model: str = "eleven_multilingual_v2"
 
   # Claude
-  claude_model: str = "claude-sonnet-4-20250514"
+  claude_model: str = "claude-sonnet-4-5-20250929"
 
   # Server
   echo_host: str = "0.0.0.0"
