@@ -14,7 +14,7 @@
  */
 
 import { useState, useCallback, useEffect, useRef } from 'react';
-import type { EchoWidgetProps, EchoMessage, EchoMemoryItem, EchoVoice } from '../types';
+import type { EchoWidgetProps, EchoMessage, EchoMemoryItem } from '../types';
 import { useEchoApi } from '../hooks/useEchoApi';
 import { useEchoMemory } from '../hooks/useEchoMemory';
 import { EchoIcon } from './EchoIcon';
@@ -24,7 +24,7 @@ export function EchoWidget({
   apiUrl,
   context,
   defaultVoice = 'eryn',
-  voiceEnabled: initialVoiceEnabled = false,
+  // voiceEnabled: initialVoiceEnabled = false,  // TODO: Re-enable when TTS implemented
   position = 'bottom-right',
   theme = 'light',
   onResponse,
@@ -32,7 +32,9 @@ export function EchoWidget({
 }: EchoWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<EchoMessage[]>([]);
-  const [voiceEnabled, setVoiceEnabled] = useState(initialVoiceEnabled);
+  // TODO: Re-enable when TTS implemented
+  // const [voiceEnabled, setVoiceEnabled] = useState(initialVoiceEnabled);
+  const voiceEnabled = false;  // Disabled for now
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const { isLoading, askQuestion, speak } = useEchoApi({ apiUrl, context });
@@ -162,12 +164,12 @@ export function EchoWidget({
           messages={messages}
           memories={memories}
           isLoading={isLoading}
-          voiceEnabled={voiceEnabled}
-          defaultVoice={defaultVoice}
+          // voiceEnabled={voiceEnabled}  // TODO: Re-enable when TTS implemented
+          // defaultVoice={defaultVoice}  // TODO: Re-enable when TTS implemented
           onSend={handleSend}
-          onSpeak={handleSpeak}
+          // onSpeak={handleSpeak}  // TODO: Re-enable when TTS implemented
           onClose={handleToggle}
-          onToggleVoice={() => setVoiceEnabled(!voiceEnabled)}
+          // onToggleVoice={() => setVoiceEnabled(!voiceEnabled)}  // TODO: Re-enable when TTS implemented
           onMemoryClick={handleMemoryClick}
           onMemoryStar={toggleStar}
           onMemoryDelete={deleteInteraction}

@@ -1,7 +1,7 @@
 """Context models shared across platforms."""
 
-from typing import Optional, Literal
-from pydantic import BaseModel
+from typing import Optional, Literal, Union
+from pydantic import BaseModel, model_validator
 from datetime import date
 
 
@@ -92,3 +92,49 @@ class EncounterContext(BaseModel):
 
   # Errors detected (for Syrinx error injection scenarios)
   known_errors: list[str] = []
+
+
+class WidgetPatientContext(BaseModel):
+  """
+  Simplified patient context for widget consumers.
+  Uses camelCase and simple string arrays for easier JavaScript integration.
+  """
+  patientId: str
+  source: Literal["oread", "syrinx", "mneme"] = "oread"
+
+  # Demographics (simplified)
+  name: Optional[str] = None
+  age: Optional[int] = None  # Will be treated as years
+  sex: Optional[str] = None
+  chiefComplaint: Optional[str] = None
+
+  # Simple string lists (will be converted to complex types)
+  problemList: Optional[list[str]] = None
+  medications: Optional[list[str]] = None
+  allergies: Optional[list[str]] = None
+
+  def to_patient_context(self) -> PatientContext:
+    """Convert to full PatientContext for backend processing."""
+    return PatientContext(
+      patient_id=self.patientId,
+      source=self.source,
+      name=self.name or "Unknown",
+      age_years=self.age,
+      sex=self.sex,
+      problem_list=[Condition(display_name=p) for p in (self.problemList or [])],
+      medication_list=[Medication(display_name=m) for m in (self.medications or [])],
+      allergy_list=[Allergy(display_name=a) for a in (self.allergies or [])],
+    )
+
+
+# Type alias for accepting either format
+FlexiblePatientContext = Union[PatientContext, WidgetPatientContext]
+
+
+def normalize_patient_context(patient: Optional[FlexiblePatientContext]) -> Optional[PatientContext]:
+  """Convert any patient context format to the standard PatientContext."""
+  if patient is None:
+    return None
+  if isinstance(patient, WidgetPatientContext):
+    return patient.to_patient_context()
+  return patient

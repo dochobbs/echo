@@ -1,8 +1,8 @@
 """Request and response models for Echo endpoints."""
 
-from typing import Optional, Literal
-from pydantic import BaseModel
-from .context import PatientContext, EncounterContext
+from typing import Optional, Literal, Any, Union
+from pydantic import BaseModel, model_validator
+from .context import PatientContext, EncounterContext, WidgetPatientContext, normalize_patient_context
 
 
 class FeedbackRequest(BaseModel):
@@ -35,12 +35,27 @@ class FeedbackResponse(BaseModel):
 
 class QuestionRequest(BaseModel):
   """Request a Socratic question about the case."""
-  patient: PatientContext
+  patient: Optional[Union[PatientContext, WidgetPatientContext, dict]] = None
   encounter: Optional[EncounterContext] = None
-  learner_question: Optional[str] = None  # What the learner asked
+  learner_question: str  # What the learner asked (required)
   topic: Optional[str] = None  # Specific topic to question about
   learner_level: str = "student"
   voice_response: bool = False
+
+  @model_validator(mode='before')
+  @classmethod
+  def normalize_patient(cls, data: Any) -> Any:
+    """Convert widget patient format to standard format."""
+    if isinstance(data, dict) and 'patient' in data and data['patient'] is not None:
+      patient = data['patient']
+      # Check if it's widget format (has camelCase patientId)
+      if isinstance(patient, dict) and 'patientId' in patient:
+        data['patient'] = WidgetPatientContext(**patient)
+    return data
+
+  def get_normalized_patient(self) -> Optional[PatientContext]:
+    """Get patient in normalized PatientContext format."""
+    return normalize_patient_context(self.patient)
 
 
 class QuestionResponse(BaseModel):

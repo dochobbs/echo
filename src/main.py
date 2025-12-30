@@ -45,7 +45,7 @@ async def health():
   return {
     "status": "healthy",
     "claude_configured": bool(settings.anthropic_api_key),
-    "eleven_labs_configured": bool(settings.eleven_labs_api_key),
+    "eleven_labs_configured": bool(settings.eleven_api_key),
   }
 
 

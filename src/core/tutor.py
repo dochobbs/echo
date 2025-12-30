@@ -2,6 +2,7 @@
 
 from functools import lru_cache
 import anthropic
+import re
 
 from ..config import get_settings
 from ..models import PatientContext
@@ -10,6 +11,14 @@ from ..models.feedback import (
   QuestionRequest, QuestionResponse,
   DebriefRequest, DebriefResponse,
 )
+
+
+def clean_json_response(text: str) -> str:
+  """Strip markdown code blocks from LLM response."""
+  # Remove ```json ... ``` blocks
+  text = re.sub(r'^```(?:json)?\s*\n?', '', text.strip())
+  text = re.sub(r'\n?```\s*$', '', text.strip())
+  return text.strip()
 
 
 SYSTEM_PROMPT = """You are Echo, an AI attending physician and medical educator. You work with medical learners (students, residents, NP students) to help them develop clinical reasoning skills.
@@ -84,7 +93,7 @@ Provide feedback on this action. Consider:
 3. What's the clinical reasoning behind this choice?
 4. What follow-up question would help the learner think deeper?
 
-Respond in JSON format:
+IMPORTANT: Respond with valid JSON only. No markdown, no code blocks, no explanation - just the raw JSON object:
 {{"feedback": "your feedback", "feedback_type": "praise|correction|question|suggestion", "clinical_issue": "if any safety concern, describe it, else null", "follow_up_question": "a Socratic question to deepen understanding"}}"""
 
     response = self.client.messages.create(
@@ -94,8 +103,7 @@ Respond in JSON format:
       messages=[{"role": "user", "content": prompt}]
     )
 
-    # Parse response (in production, add proper JSON parsing)
-    content = response.content[0].text
+    content = clean_json_response(response.content[0].text)
     import json
     try:
       data = json.loads(content)
@@ -103,24 +111,25 @@ Respond in JSON format:
     except json.JSONDecodeError:
       # Fallback if Claude doesn't return valid JSON
       return FeedbackResponse(
-        feedback=content,
+        feedback=response.content[0].text,
         feedback_type="suggestion",
       )
 
   async def ask_socratic_question(self, request: QuestionRequest) -> QuestionResponse:
     """Generate a Socratic question."""
-    patient_context = format_patient_context(request.patient)
+    normalized_patient = request.get_normalized_patient()
+    patient_context = format_patient_context(normalized_patient) if normalized_patient else "No patient context provided."
 
     prompt = f"""{patient_context}
 
 LEARNER LEVEL: {request.learner_level}
-{f"LEARNER ASKED: {request.learner_question}" if request.learner_question else ""}
+LEARNER ASKED: {request.learner_question}
 {f"FOCUS TOPIC: {request.topic}" if request.topic else ""}
 
-Generate a Socratic question to help this learner think through the case. Don't give the answer - ask a question that guides them to discover it.
+Respond to the learner's question using the Socratic method. Ask a guiding question that helps them think through the problem rather than giving a direct answer. Be helpful and educational.
 
-Respond in JSON format:
-{{"question": "your Socratic question", "hint": "optional gentle hint or null", "topic": "clinical concept this addresses"}}"""
+IMPORTANT: Respond with valid JSON only. No markdown, no code blocks, no explanation - just the raw JSON object:
+{{"question": "your Socratic response/question", "hint": "optional gentle hint or null", "topic": "clinical concept this addresses"}}"""
 
     response = self.client.messages.create(
       model=self.model,
@@ -129,14 +138,14 @@ Respond in JSON format:
       messages=[{"role": "user", "content": prompt}]
     )
 
-    content = response.content[0].text
+    content = clean_json_response(response.content[0].text)
     import json
     try:
       data = json.loads(content)
       return QuestionResponse(**data)
     except json.JSONDecodeError:
       return QuestionResponse(
-        question=content,
+        question=response.content[0].text,
         topic="clinical reasoning",
       )
 
@@ -162,7 +171,7 @@ LEARNER LEVEL: {request.learner_level}
 
 Provide a comprehensive debrief of this encounter. Be specific about what went well and what could improve.
 
-Respond in JSON format:
+IMPORTANT: Respond with valid JSON only. No markdown, no code blocks, no explanation - just the raw JSON object:
 {{
   "summary": "2-3 sentence overall summary",
   "strengths": ["list of things done well"],
@@ -179,14 +188,14 @@ Respond in JSON format:
       messages=[{"role": "user", "content": prompt}]
     )
 
-    content = response.content[0].text
+    content = clean_json_response(response.content[0].text)
     import json
     try:
       data = json.loads(content)
       return DebriefResponse(**data)
     except json.JSONDecodeError:
       return DebriefResponse(
-        summary=content,
+        summary=response.content[0].text,
         strengths=[],
         areas_for_improvement=[],
         missed_items=[],

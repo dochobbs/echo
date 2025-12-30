@@ -22,7 +22,7 @@ class Settings(BaseSettings):
 
   # API Keys
   anthropic_api_key: str = ""
-  eleven_labs_api_key: str = ""
+  eleven_api_key: str = ""  # Maps to ELEVEN_API_KEY env var
   deepgram_api_key: str = ""
 
   # Eleven Labs

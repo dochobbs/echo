@@ -3,19 +3,29 @@
  */
 
 import { useState, useRef, useEffect } from 'react';
-import type { EchoMessage, EchoMemoryItem, EchoWidgetProps, EchoVoice } from '../types';
+import {
+  GraduationCap,
+  // Volume2,  // TODO: Re-enable when TTS implemented
+  // VolumeX,  // TODO: Re-enable when TTS implemented
+  X,
+  Star,
+  Trash2,
+  BookOpen,
+} from 'lucide-react';
+import type { EchoMessage, EchoMemoryItem, EchoWidgetProps } from '../types';
+// import type { EchoVoice } from '../types';  // TODO: Re-enable when TTS implemented
 
 interface EchoPanelProps {
   position: EchoWidgetProps['position'];
   messages: EchoMessage[];
   memories: EchoMemoryItem[];
   isLoading: boolean;
-  voiceEnabled: boolean;
-  defaultVoice: EchoVoice;
+  // voiceEnabled: boolean;  // TODO: Re-enable when TTS implemented
+  // defaultVoice: EchoVoice;  // TODO: Re-enable when TTS implemented
   onSend: (message: string) => void;
-  onSpeak: (text: string) => void;
+  // onSpeak: (text: string) => void;  // TODO: Re-enable when TTS implemented
   onClose: () => void;
-  onToggleVoice: () => void;
+  // onToggleVoice: () => void;  // TODO: Re-enable when TTS implemented
   onMemoryClick: (memory: EchoMemoryItem) => void;
   onMemoryStar: (id: string) => void;
   onMemoryDelete: (id: string) => void;
@@ -28,11 +38,11 @@ export function EchoPanel({
   messages,
   memories,
   isLoading,
-  voiceEnabled,
+  // voiceEnabled,  // TODO: Re-enable when TTS implemented
   onSend,
-  onSpeak,
+  // onSpeak,  // TODO: Re-enable when TTS implemented
   onClose,
-  onToggleVoice,
+  // onToggleVoice,  // TODO: Re-enable when TTS implemented
   onMemoryClick,
   onMemoryStar,
   onMemoryDelete,
@@ -77,23 +87,25 @@ export function EchoPanel({
       {/* Header */}
       <div className="echo-header">
         <div className="echo-header-title">
-          <span>🎓</span>
+          <GraduationCap size={20} />
           <span>Echo</span>
         </div>
         <div className="echo-header-actions">
+          {/* TODO: Re-enable voice toggle when TTS is fully implemented
           <button
             className="echo-header-btn"
             onClick={onToggleVoice}
             title={voiceEnabled ? 'Disable voice' : 'Enable voice'}
           >
-            {voiceEnabled ? '🔊' : '🔇'}
+            {voiceEnabled ? <Volume2 size={18} /> : <VolumeX size={18} />}
           </button>
+          */}
           <button
             className="echo-header-btn"
             onClick={onClose}
             title="Close"
           >
-            ✕
+            <X size={18} />
           </button>
         </div>
       </div>
@@ -121,7 +133,7 @@ export function EchoPanel({
           <div className="echo-messages">
             {messages.length === 0 && !isLoading && (
               <div className="echo-empty">
-                <div className="echo-empty-icon">🎓</div>
+                <GraduationCap size={48} strokeWidth={1.5} />
                 <p>Hi! I'm Echo, your AI tutor.</p>
                 <p>Ask me anything about your case.</p>
               </div>
@@ -130,6 +142,7 @@ export function EchoPanel({
             {messages.map((msg) => (
               <div key={msg.id} className={`echo-message ${msg.role}`}>
                 <div>{msg.content}</div>
+                {/* TODO: Re-enable voice features when TTS is fully implemented
                 {msg.role === 'echo' && (
                   <div className="echo-message-actions">
                     <button
@@ -137,10 +150,11 @@ export function EchoPanel({
                       onClick={() => onSpeak(msg.content)}
                       title="Read aloud"
                     >
-                      🔊 Listen
+                      <Volume2 size={14} /> Listen
                     </button>
                   </div>
                 )}
+                */}
               </div>
             ))}
 
@@ -185,7 +199,7 @@ export function EchoPanel({
         <div className="echo-messages">
           {memories.length === 0 ? (
             <div className="echo-empty">
-              <div className="echo-empty-icon">📚</div>
+              <BookOpen size={48} strokeWidth={1.5} />
               <p>No saved interactions yet.</p>
               <p>Your conversations with Echo will appear here.</p>
             </div>
@@ -211,7 +225,7 @@ export function EchoPanel({
                         onMemoryStar(memory.id);
                       }}
                     >
-                      {memory.starred ? '⭐' : '☆'}
+                      <Star size={14} fill={memory.starred ? 'currentColor' : 'none'} />
                     </button>
                     <button
                       className="echo-message-btn"
@@ -220,7 +234,7 @@ export function EchoPanel({
                         onMemoryDelete(memory.id);
                       }}
                     >
-                      🗑️
+                      <Trash2 size={14} />
                     </button>
                   </div>
                 </div>

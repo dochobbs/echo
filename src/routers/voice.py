@@ -1,12 +1,16 @@
-"""Voice endpoints - TTS for Echo responses."""
+"""Voice endpoints - TTS for Echo responses and real-time conversation."""
 
+import json
+import base64
 from typing import Optional
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, WebSocket, WebSocketDisconnect
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 from ..core.voice_out import VoiceOut, get_voice_out
+from ..core.tutor import get_tutor
+from ..models.feedback import QuestionRequest
 from ..config import ECHO_VOICES, DEFAULT_VOICE
 
 
@@ -106,3 +110,100 @@ async def list_voices():
       is_default=(name == DEFAULT_VOICE),
     ))
   return voices
+
+
+@router.websocket("/conversation")
+async def conversation_websocket(websocket: WebSocket):
+  """
+  Real-time conversation WebSocket endpoint.
+
+  Accepts JSON messages with the following format:
+  {
+    "type": "message",
+    "text": "learner's question or statement",
+    "learner_level": "student",  // optional
+    "voice": "eryn",             // optional, for TTS
+    "include_audio": false       // optional, include TTS audio in response
+  }
+
+  Responds with:
+  {
+    "type": "response",
+    "text": "Echo's response",
+    "topic": "clinical concept",
+    "hint": "optional hint",
+    "audio": "base64-encoded-mp3"  // if include_audio was true
+  }
+  """
+  await websocket.accept()
+
+  tutor = get_tutor()
+  voice_out = get_voice_out()
+
+  try:
+    while True:
+      # Receive message from client
+      data = await websocket.receive_text()
+
+      try:
+        message = json.loads(data)
+      except json.JSONDecodeError:
+        await websocket.send_json({
+          "type": "error",
+          "message": "Invalid JSON format",
+        })
+        continue
+
+      if message.get("type") == "ping":
+        await websocket.send_json({"type": "pong"})
+        continue
+
+      if message.get("type") != "message":
+        await websocket.send_json({
+          "type": "error",
+          "message": f"Unknown message type: {message.get('type')}",
+        })
+        continue
+
+      text = message.get("text", "").strip()
+      if not text:
+        await websocket.send_json({
+          "type": "error",
+          "message": "Message text cannot be empty",
+        })
+        continue
+
+      # Process with tutor
+      try:
+        request = QuestionRequest(
+          learner_question=text,
+          learner_level=message.get("learner_level", "student"),
+        )
+        response = await tutor.ask_socratic_question(request)
+
+        result = {
+          "type": "response",
+          "text": response.question,
+          "topic": response.topic,
+          "hint": response.hint,
+        }
+
+        # Include TTS audio if requested
+        if message.get("include_audio", False):
+          voice = message.get("voice", DEFAULT_VOICE)
+          audio_bytes = await voice_out.synthesize(
+            text=response.question,
+            voice=voice,
+          )
+          result["audio"] = base64.b64encode(audio_bytes).decode("utf-8")
+
+        await websocket.send_json(result)
+
+      except Exception as e:
+        await websocket.send_json({
+          "type": "error",
+          "message": f"Tutor error: {str(e)}",
+        })
+
+  except WebSocketDisconnect:
+    pass  # Client disconnected normally

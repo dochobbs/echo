@@ -28,6 +28,11 @@ dist/
 build/
 *.egg-info/
 
+# Node
+node_modules/
+widget/node_modules/
+widget/dist/
+
 # Audio files (large)
 *.mp3
 *.wav

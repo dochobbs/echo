@@ -14,7 +14,7 @@ class VoiceOut:
 
   def __init__(self):
     settings = get_settings()
-    self.client = AsyncElevenLabs(api_key=settings.eleven_labs_api_key)
+    self.client = AsyncElevenLabs(api_key=settings.eleven_api_key)
     self.model_id = settings.eleven_labs_model
     self.default_voice_id = settings.echo_voice_id
 

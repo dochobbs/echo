@@ -5,15 +5,25 @@
 /** Source platform for context */
 export type EchoSource = 'oread' | 'syrinx' | 'mneme' | 'unknown';
 
-/** Patient context passed from host app */
+/** Patient context passed from host app (widget-friendly format) */
 export interface PatientContext {
+  /** Required patient identifier */
   patientId: string;
+  /** Source platform */
+  source?: 'oread' | 'syrinx' | 'mneme';
+  /** Patient name */
   name?: string;
+  /** Age in years */
   age?: number;
+  /** Sex */
   sex?: 'male' | 'female' | 'other';
+  /** Chief complaint */
   chiefComplaint?: string;
+  /** Active problems (simple strings) */
   problemList?: string[];
+  /** Current medications (simple strings) */
   medications?: string[];
+  /** Known allergies (simple strings) */
   allergies?: string[];
 }
 

@@ -34,9 +34,69 @@ Get a Socratic question about the current case.
 ### POST /debrief
 Get comprehensive post-encounter feedback.
 
+## Widget Integration
+
+Embed Echo in your MedEd app:
+
+```bash
+npm install @meded/echo-widget
+```
+
+```tsx
+import { EchoWidget } from '@meded/echo-widget';
+import '@meded/echo-widget/styles.css';
+
+<EchoWidget
+  apiUrl="http://localhost:8001"
+  context={{
+    source: 'oread',  // or 'syrinx' or 'mneme'
+    patient: {
+      patientId: patient.id,
+      name: patient.name,
+      age: patient.age,
+    },
+    learnerLevel: 'resident',
+  }}
+  defaultVoice="eryn"
+  position="bottom-right"
+/>
+```
+
+See [docs/WIDGET_INTEGRATION.md](docs/WIDGET_INTEGRATION.md) for full documentation.
+
+### Local Development (widget not yet on npm)
+
+```bash
+# In echo/widget
+npm link
+
+# In host app
+npm link @meded/echo-widget
+```
+
+Or in host app's `package.json`:
+```json
+{
+  "dependencies": {
+    "@meded/echo-widget": "file:../echo/widget"
+  }
+}
+```
+
 ## Tech Stack
 
 - FastAPI + Pydantic v2
 - Claude (Anthropic) for clinical reasoning
 - Eleven Labs for voice output
 - Deepgram/Whisper for voice input
+
+## Available Voices
+
+| Voice | Description |
+|-------|-------------|
+| `eryn` | Calm, confident (default) |
+| `matilda` | Warm, friendly |
+| `clarice` | Clear, professional |
+| `clara` | Approachable |
+| `devan` | Energetic |
+| `lilly` | Gentle |
