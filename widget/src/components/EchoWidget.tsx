@@ -19,12 +19,12 @@ import { useEchoApi } from '../hooks/useEchoApi';
 import { useEchoMemory } from '../hooks/useEchoMemory';
 import { EchoIcon } from './EchoIcon';
 import { EchoPanel } from './EchoPanel';
+import { parseError } from './EchoError';
 
 export function EchoWidget({
   apiUrl,
   context,
   defaultVoice = 'eryn',
-  // voiceEnabled: initialVoiceEnabled = false,  // TODO: Re-enable when TTS implemented
   position = 'bottom-right',
   theme = 'light',
   onResponse,
@@ -32,18 +32,25 @@ export function EchoWidget({
 }: EchoWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<EchoMessage[]>([]);
-  // TODO: Re-enable when TTS implemented
-  // const [voiceEnabled, setVoiceEnabled] = useState(initialVoiceEnabled);
+  const [displayError, setDisplayError] = useState<string | null>(null);
+  const [lastQuery, setLastQuery] = useState<string | null>(null);
   const voiceEnabled = false;  // Disabled for now
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const { isLoading, askQuestion, speak } = useEchoApi({ apiUrl, context });
+  const { isLoading, error, askQuestion, speak, clearError } = useEchoApi({ apiUrl, context });
   const {
     memories,
     saveInteraction,
     toggleStar,
     deleteInteraction,
   } = useEchoMemory();
+
+  // Sync API error to display error
+  useEffect(() => {
+    if (error) {
+      setDisplayError(parseError(new Error(error)));
+    }
+  }, [error]);
 
   // Determine theme class
   const themeClass = theme === 'dark' ? 'dark' :
@@ -56,6 +63,13 @@ export function EchoWidget({
   }, [isOpen, onToggle]);
 
   const handleSend = useCallback(async (text: string) => {
+    // Clear any previous error
+    setDisplayError(null);
+    clearError();
+
+    // Store query for retry
+    setLastQuery(text);
+
     // Add user message
     const userMessage: EchoMessage = {
       id: crypto.randomUUID(),
@@ -88,21 +102,39 @@ export function EchoWidget({
       // Notify parent
       onResponse?.(echoMessage);
 
+      // Clear retry query on success
+      setLastQuery(null);
+
       // Auto-speak if voice enabled
       if (voiceEnabled) {
         handleSpeak(response.message);
       }
     } catch (err) {
-      // Add error message
-      const errorMessage: EchoMessage = {
-        id: crypto.randomUUID(),
-        role: 'echo',
-        content: 'Sorry, I encountered an error. Please try again.',
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, errorMessage]);
+      // Mark the user message as failed
+      setMessages((prev) =>
+        prev.map((msg) =>
+          msg.id === userMessage.id ? { ...msg, failed: true } : msg
+        )
+      );
+
+      // Set user-friendly error
+      setDisplayError(parseError(err));
     }
-  }, [askQuestion, saveInteraction, context, voiceEnabled, onResponse]);
+  }, [askQuestion, saveInteraction, context, voiceEnabled, onResponse, clearError]);
+
+  const handleRetry = useCallback(() => {
+    if (lastQuery) {
+      // Remove the failed message
+      setMessages((prev) => prev.filter((msg) => !msg.failed));
+      // Retry the last query
+      handleSend(lastQuery);
+    }
+  }, [lastQuery, handleSend]);
+
+  const handleClearError = useCallback(() => {
+    setDisplayError(null);
+    clearError();
+  }, [clearError]);
 
   const handleSpeak = useCallback(async (text: string) => {
     try {
@@ -164,12 +196,11 @@ export function EchoWidget({
           messages={messages}
           memories={memories}
           isLoading={isLoading}
-          // voiceEnabled={voiceEnabled}  // TODO: Re-enable when TTS implemented
-          // defaultVoice={defaultVoice}  // TODO: Re-enable when TTS implemented
+          error={displayError}
           onSend={handleSend}
-          // onSpeak={handleSpeak}  // TODO: Re-enable when TTS implemented
           onClose={handleToggle}
-          // onToggleVoice={() => setVoiceEnabled(!voiceEnabled)}  // TODO: Re-enable when TTS implemented
+          onRetry={lastQuery ? handleRetry : undefined}
+          onClearError={handleClearError}
           onMemoryClick={handleMemoryClick}
           onMemoryStar={toggleStar}
           onMemoryDelete={deleteInteraction}

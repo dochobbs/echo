@@ -5,27 +5,25 @@
 import { useState, useRef, useEffect } from 'react';
 import {
   GraduationCap,
-  // Volume2,  // TODO: Re-enable when TTS implemented
-  // VolumeX,  // TODO: Re-enable when TTS implemented
   X,
   Star,
   Trash2,
   BookOpen,
+  AlertCircle,
+  RefreshCw,
 } from 'lucide-react';
 import type { EchoMessage, EchoMemoryItem, EchoWidgetProps } from '../types';
-// import type { EchoVoice } from '../types';  // TODO: Re-enable when TTS implemented
 
 interface EchoPanelProps {
   position: EchoWidgetProps['position'];
   messages: EchoMessage[];
   memories: EchoMemoryItem[];
   isLoading: boolean;
-  // voiceEnabled: boolean;  // TODO: Re-enable when TTS implemented
-  // defaultVoice: EchoVoice;  // TODO: Re-enable when TTS implemented
+  error: string | null;
   onSend: (message: string) => void;
-  // onSpeak: (text: string) => void;  // TODO: Re-enable when TTS implemented
   onClose: () => void;
-  // onToggleVoice: () => void;  // TODO: Re-enable when TTS implemented
+  onRetry?: () => void;
+  onClearError?: () => void;
   onMemoryClick: (memory: EchoMemoryItem) => void;
   onMemoryStar: (id: string) => void;
   onMemoryDelete: (id: string) => void;
@@ -38,11 +36,11 @@ export function EchoPanel({
   messages,
   memories,
   isLoading,
-  // voiceEnabled,  // TODO: Re-enable when TTS implemented
+  error,
   onSend,
-  // onSpeak,  // TODO: Re-enable when TTS implemented
   onClose,
-  // onToggleVoice,  // TODO: Re-enable when TTS implemented
+  onRetry,
+  onClearError,
   onMemoryClick,
   onMemoryStar,
   onMemoryDelete,
@@ -54,7 +52,7 @@ export function EchoPanel({
   // Auto-scroll to bottom on new messages
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+  }, [messages, isLoading]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -91,15 +89,6 @@ export function EchoPanel({
           <span>Echo</span>
         </div>
         <div className="echo-header-actions">
-          {/* TODO: Re-enable voice toggle when TTS is fully implemented
-          <button
-            className="echo-header-btn"
-            onClick={onToggleVoice}
-            title={voiceEnabled ? 'Disable voice' : 'Enable voice'}
-          >
-            {voiceEnabled ? <Volume2 size={18} /> : <VolumeX size={18} />}
-          </button>
-          */}
           <button
             className="echo-header-btn"
             onClick={onClose}
@@ -126,6 +115,36 @@ export function EchoPanel({
         </button>
       </div>
 
+      {/* Error Banner */}
+      {error && (
+        <div className="echo-error">
+          <div className="echo-error-content">
+            <AlertCircle size={16} />
+            <span>{error}</span>
+          </div>
+          <div className="echo-error-actions">
+            {onRetry && (
+              <button
+                className="echo-error-btn"
+                onClick={onRetry}
+                title="Try again"
+              >
+                <RefreshCw size={14} />
+              </button>
+            )}
+            {onClearError && (
+              <button
+                className="echo-error-btn"
+                onClick={onClearError}
+                title="Dismiss"
+              >
+                <X size={14} />
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Content */}
       {activeTab === 'chat' ? (
         <>
@@ -140,30 +159,34 @@ export function EchoPanel({
             )}
 
             {messages.map((msg) => (
-              <div key={msg.id} className={`echo-message ${msg.role}`}>
+              <div
+                key={msg.id}
+                className={`echo-message ${msg.role} ${msg.failed ? 'failed' : ''}`}
+              >
                 <div>{msg.content}</div>
-                {/* TODO: Re-enable voice features when TTS is fully implemented
-                {msg.role === 'echo' && (
-                  <div className="echo-message-actions">
-                    <button
-                      className="echo-message-btn"
-                      onClick={() => onSpeak(msg.content)}
-                      title="Read aloud"
-                    >
-                      <Volume2 size={14} /> Listen
-                    </button>
+                {msg.failed && (
+                  <div className="echo-message-failed">
+                    <AlertCircle size={12} />
+                    <span>Failed to send</span>
+                    {onRetry && (
+                      <button className="echo-message-retry" onClick={onRetry}>
+                        Retry
+                      </button>
+                    )}
                   </div>
                 )}
-                */}
               </div>
             ))}
 
             {isLoading && (
               <div className="echo-message echo">
-                <div className="echo-loading">
-                  <div className="echo-loading-dot" />
-                  <div className="echo-loading-dot" />
-                  <div className="echo-loading-dot" />
+                <div className="echo-typing">
+                  <span>Echo is thinking</span>
+                  <div className="echo-typing-dots">
+                    <div className="echo-typing-dot" />
+                    <div className="echo-typing-dot" />
+                    <div className="echo-typing-dot" />
+                  </div>
                 </div>
               </div>
             )}
@@ -189,7 +212,11 @@ export function EchoPanel({
                 className="echo-send-btn"
                 disabled={!input.trim() || isLoading}
               >
-                Send
+                {isLoading ? (
+                  <div className="echo-spinner" />
+                ) : (
+                  'Send'
+                )}
               </button>
             </form>
           </div>

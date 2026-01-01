@@ -14,6 +14,12 @@
 - [x] Widget text chat functionality
 - [x] JSON response cleanup (no markdown code blocks)
 - [x] Prompts exported to reviewable markdown
+- [x] **Prompt overhaul** - New teaching-focused prompts based on expert interview
+  - `src/prompts/system.md` - Core identity, "A teacher is a helper"
+  - `src/prompts/feedback.md` - Feedback prompt reference
+  - `src/prompts/question.md` - Question prompt reference
+  - `src/prompts/debrief.md` - Debrief prompt reference
+  - `prompts/ECHO_PROMPTS.md` - Updated reference documentation
 
 ## In Progress
 
@@ -27,9 +33,15 @@
 - [ ] Test with Oread integration (end-to-end)
 
 ### Priority 2 - Polish
-- [ ] Prompt template files (`prompts/feedback.md`, `prompts/debrief.md`)
-- [ ] Error handling improvements in widget
-- [ ] Loading states and animations
+- [x] Error handling improvements in widget
+  - User-friendly error messages (network, timeout, server errors)
+  - Error banner with dismiss/retry buttons
+  - Failed message indicator with retry option
+- [x] Loading states and animations
+  - "Echo is thinking" typing indicator
+  - Send button spinner during loading
+  - Smooth message slide-in animations
+  - Error shake animation
 
 ### Priority 3 - Future
 - [ ] Different voices for different tutor modes

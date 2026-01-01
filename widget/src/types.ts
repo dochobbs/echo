@@ -52,6 +52,7 @@ export interface EchoMessage {
   content: string;
   timestamp: Date;
   audioUrl?: string;  // TTS audio URL if generated
+  failed?: boolean;   // True if message failed to send
 }
 
 /** A saved interaction in memory */

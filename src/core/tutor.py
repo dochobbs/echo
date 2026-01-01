@@ -1,7 +1,9 @@
 """Core tutor logic using Claude."""
 
 from functools import lru_cache
+from pathlib import Path
 import anthropic
+import json
 import re
 
 from ..config import get_settings
@@ -13,31 +15,29 @@ from ..models.feedback import (
 )
 
 
+# Prompts directory
+PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
+
+
+def load_prompt(name: str) -> str:
+  """Load a prompt template from the prompts directory."""
+  path = PROMPTS_DIR / f"{name}.md"
+  if not path.exists():
+    raise FileNotFoundError(f"Prompt file not found: {path}")
+  return path.read_text()
+
+
+@lru_cache
+def get_system_prompt() -> str:
+  """Load and cache the system prompt."""
+  return load_prompt("system")
+
+
 def clean_json_response(text: str) -> str:
   """Strip markdown code blocks from LLM response."""
-  # Remove ```json ... ``` blocks
   text = re.sub(r'^```(?:json)?\s*\n?', '', text.strip())
   text = re.sub(r'\n?```\s*$', '', text.strip())
   return text.strip()
-
-
-SYSTEM_PROMPT = """You are Echo, an AI attending physician and medical educator. You work with medical learners (students, residents, NP students) to help them develop clinical reasoning skills.
-
-Your teaching philosophy:
-1. SOCRATIC METHOD: Ask questions rather than giving answers. Guide learners to discover insights themselves.
-2. PATIENT SAFETY FIRST: If there's a safety issue (allergy, contraindication, missed red flag), address it clearly.
-3. SPECIFIC FEEDBACK: Reference actual patient data, not generic advice.
-4. APPROPRIATE LEVEL: Adjust complexity to learner level (student vs resident vs fellow).
-5. ENCOURAGING: Build confidence while correcting errors. Never belittle.
-6. CLINICAL ACCURACY: Your medical knowledge must be correct.
-
-When reviewing actions:
-- Praise good clinical reasoning, not just correct answers
-- When correcting, explain the "why"
-- Ask follow-up questions to deepen understanding
-- Connect to broader clinical principles
-
-Tone: Warm, supportive, intellectually curious. Like the best attending you ever had."""
 
 
 def format_patient_context(patient: PatientContext) -> str:
@@ -75,71 +75,217 @@ class Tutor:
   def __init__(self, api_key: str, model: str):
     self.client = anthropic.Anthropic(api_key=api_key)
     self.model = model
+    self.system_prompt = get_system_prompt()
+
+  def _build_feedback_prompt(self, request: FeedbackRequest, patient_context: str) -> str:
+    """Build the feedback prompt with patient context."""
+    context_line = f"- **Additional Context**: {request.context}" if request.context else ""
+
+    prompt = f"""## Patient Context
+{patient_context}
+
+## The Situation
+- **Learner Level**: {request.learner_level}
+- **Action Type**: {request.action_type}
+- **What They Did**: {request.learner_action}
+{context_line}
+
+## Your Task
+
+Provide feedback on this action. Think through:
+
+1. **Clinical appropriateness**: Is this reasonable for this patient?
+2. **Safety check**: Any allergies, contraindications, red flags?
+3. **Reasoning**: What thinking led to this choice?
+4. **Family impact**: How does this affect the child and parents?
+
+## How to Respond
+
+### If it's good:
+- Say so directly: "Nice job", "I like how you're thinking about that"
+- Don't over-elaborate
+- You might add one deepening question, but don't interrogate
+
+### If there's a problem:
+- First understand: Is this a knowledge gap? Reasoning error? Overconfidence? Carelessness?
+- For safety issues: Be direct but understated - "I'd review that again if I were you"
+- For other issues: Help them see it - reframe, add context, compare options
+- Never shame or make it a big deal
+
+### If it's mixed:
+- Acknowledge what's good first
+- Then gently redirect: "One thing to consider..."
+
+## Common Pediatric Pitfalls to Watch For
+
+- Too quick to treat (vs. watchful waiting, reassurance, shared decision-making)
+- Not considering how this affects the family
+- Ignoring what the parent said or wanted
+- Being too "medical" - jargon, losing the human
+- Overconfidence about the "right" answer
+
+## Response Format
+
+Respond with valid JSON only. No markdown, no code blocks:
+
+{{"feedback": "Your response to the learner - direct, helpful, not preachy", "feedback_type": "praise|correction|question|suggestion", "clinical_issue": "If there's a safety issue, state it clearly. Otherwise null", "follow_up_question": "Optional: One question to deepen thinking. Can be null if feedback is sufficient"}}"""
+
+    return prompt
+
+  def _build_question_prompt(self, request: QuestionRequest, patient_context: str) -> str:
+    """Build the question prompt from template."""
+    topic_line = f"- **Focus Topic**: {request.topic}" if request.topic else ""
+
+    prompt = f"""A learner is asking you a question. Your job is to help them learn - not to quiz them.
+
+## Patient Context
+{patient_context}
+
+## The Situation
+- **Learner Level**: {request.learner_level}
+- **Their Question**: {request.learner_question}
+{topic_line}
+
+## Your Task
+
+Respond in a way that helps them learn. This does NOT mean always asking a question back.
+
+## Decision Tree
+
+### Is this their first question?
+- You can ask a guiding question to understand their thinking
+- Or provide helpful context and see where they go
+
+### Have they already answered 2-3 questions from you?
+- Default to giving more support, not another question
+- A series of questions feels like an interrogation
+
+### Are their responses getting short or flippant?
+- They're frustrated - stop questioning
+- Give them what they need to move forward
+
+### Do they genuinely not know and need help?
+- **For students/NP students**: "How might you find out?", "What tools do you use?"
+- **For residents**: Present material or resources (not "go look it up")
+- Sometimes just help them directly
+
+## Techniques When They're Stuck
+
+Instead of another question, try:
+- **Reframe**: "What if it were X instead of Y?"
+- **Add context**: "What if I told you Z?"
+- **Compare**: "How does A compare to B?"
+- **Just help**: Give them a piece of what they need
+
+## Response Format
+
+Respond with valid JSON only. No markdown, no code blocks:
+
+{{"question": "Your helpful response - could be a question, guidance, information, or reframe", "hint": "Optional gentle nudge or additional context. Can be null", "topic": "The clinical concept this addresses"}}"""
+
+    return prompt
+
+  def _build_debrief_prompt(self, request: DebriefRequest, patient_context: str) -> str:
+    """Build the debrief prompt from template."""
+    enc = request.encounter
+
+    known_errors_line = f"### Known Errors in Scenario\n{', '.join(enc.known_errors)}" if enc.known_errors else ""
+    focus_areas_line = f"- **Focus Areas**: {', '.join(request.focus_areas)}" if request.focus_areas else ""
+
+    prompt = f"""The encounter is over. Your job is to help the learner reflect and grow.
+
+## Patient Context
+{patient_context}
+
+## The Encounter
+- **Type**: {enc.encounter_type}
+- **Chief Complaint**: {enc.chief_complaint}
+
+### What They Did
+- **History Gathered**: {', '.join(enc.history_gathered) if enc.history_gathered else 'none documented'}
+- **Exam Findings**: {', '.join(enc.exam_findings) if enc.exam_findings else 'none documented'}
+- **Differential**: {', '.join(enc.differential) if enc.differential else 'none documented'}
+- **Orders/Plan**: {', '.join(enc.orders_placed) if enc.orders_placed else 'none'}
+
+{known_errors_line}
+
+## Learner Info
+- **Level**: {request.learner_level}
+{focus_areas_line}
+
+## Debrief Principles
+
+### Start with strengths
+- What did they do well? Be specific.
+- "Nice job asking about the fever history" not "Good history taking"
+- Direct praise, don't over-elaborate
+
+### Be specific about improvements
+- Reference actual missed items or suboptimal choices
+- Explain *why* it matters, not just *that* it was wrong
+- Connect to patient impact or family impact
+
+### Watch for common pediatric issues
+- Did they listen to the parent?
+- Did they consider family impact?
+- Were they too quick to treat vs. watchful waiting?
+- Did they explain things in accessible language?
+- Were they overconfident about the "right" answer?
+
+### Teaching points should be useful
+- 1-3 clinical pearls from this specific case
+- Things they can apply next time
+- Not generic textbook knowledge
+
+### Tone
+- Supportive, not judgmental
+- They should leave wanting to see another patient, not feeling defeated
+- Remember: success = they stay engaged and want to learn more
+
+## Response Format
+
+Respond with valid JSON only. No markdown, no code blocks:
+
+{{"summary": "2-3 sentences capturing how the encounter went overall. End with a brief check-in.", "strengths": ["Specific things done well - reference actual actions"], "areas_for_improvement": ["Specific areas to work on - explain why it matters"], "missed_items": ["Things that should have been caught - if any, otherwise empty array"], "teaching_points": ["1-3 clinical pearls from this case"], "follow_up_resources": ["Optional: relevant guidelines, articles, or resources. Can be empty array"]}}"""
+
+    return prompt
 
   async def provide_feedback(self, request: FeedbackRequest) -> FeedbackResponse:
     """Provide feedback on a learner action."""
     patient_context = format_patient_context(request.patient)
-
-    prompt = f"""{patient_context}
-
-LEARNER LEVEL: {request.learner_level}
-ACTION TYPE: {request.action_type}
-LEARNER ACTION: {request.learner_action}
-{f"ADDITIONAL CONTEXT: {request.context}" if request.context else ""}
-
-Provide feedback on this action. Consider:
-1. Is this clinically appropriate for this patient?
-2. Are there safety concerns (allergies, contraindications)?
-3. What's the clinical reasoning behind this choice?
-4. What follow-up question would help the learner think deeper?
-
-IMPORTANT: Respond with valid JSON only. No markdown, no code blocks, no explanation - just the raw JSON object:
-{{"feedback": "your feedback", "feedback_type": "praise|correction|question|suggestion", "clinical_issue": "if any safety concern, describe it, else null", "follow_up_question": "a Socratic question to deepen understanding"}}"""
+    prompt = self._build_feedback_prompt(request, patient_context)
 
     response = self.client.messages.create(
       model=self.model,
       max_tokens=1024,
-      system=SYSTEM_PROMPT,
+      system=self.system_prompt,
       messages=[{"role": "user", "content": prompt}]
     )
 
     content = clean_json_response(response.content[0].text)
-    import json
     try:
       data = json.loads(content)
       return FeedbackResponse(**data)
     except json.JSONDecodeError:
-      # Fallback if Claude doesn't return valid JSON
       return FeedbackResponse(
         feedback=response.content[0].text,
         feedback_type="suggestion",
       )
 
   async def ask_socratic_question(self, request: QuestionRequest) -> QuestionResponse:
-    """Generate a Socratic question."""
+    """Generate a helpful response to learner question."""
     normalized_patient = request.get_normalized_patient()
     patient_context = format_patient_context(normalized_patient) if normalized_patient else "No patient context provided."
-
-    prompt = f"""{patient_context}
-
-LEARNER LEVEL: {request.learner_level}
-LEARNER ASKED: {request.learner_question}
-{f"FOCUS TOPIC: {request.topic}" if request.topic else ""}
-
-Respond to the learner's question using the Socratic method. Ask a guiding question that helps them think through the problem rather than giving a direct answer. Be helpful and educational.
-
-IMPORTANT: Respond with valid JSON only. No markdown, no code blocks, no explanation - just the raw JSON object:
-{{"question": "your Socratic response/question", "hint": "optional gentle hint or null", "topic": "clinical concept this addresses"}}"""
+    prompt = self._build_question_prompt(request, patient_context)
 
     response = self.client.messages.create(
       model=self.model,
       max_tokens=512,
-      system=SYSTEM_PROMPT,
+      system=self.system_prompt,
       messages=[{"role": "user", "content": prompt}]
     )
 
     content = clean_json_response(response.content[0].text)
-    import json
     try:
       data = json.loads(content)
       return QuestionResponse(**data)
@@ -152,44 +298,16 @@ IMPORTANT: Respond with valid JSON only. No markdown, no code blocks, no explana
   async def debrief_encounter(self, request: DebriefRequest) -> DebriefResponse:
     """Provide post-encounter debrief."""
     patient_context = format_patient_context(request.patient)
-    enc = request.encounter
-
-    prompt = f"""{patient_context}
-
-ENCOUNTER TYPE: {enc.encounter_type}
-CHIEF COMPLAINT: {enc.chief_complaint}
-
-HISTORY GATHERED: {', '.join(enc.history_gathered) if enc.history_gathered else 'none documented'}
-EXAM FINDINGS: {', '.join(enc.exam_findings) if enc.exam_findings else 'none documented'}
-DIFFERENTIAL: {', '.join(enc.differential) if enc.differential else 'none documented'}
-ORDERS: {', '.join(enc.orders_placed) if enc.orders_placed else 'none'}
-
-{f"KNOWN ERRORS IN SCENARIO: {', '.join(enc.known_errors)}" if enc.known_errors else ""}
-
-LEARNER LEVEL: {request.learner_level}
-{f"FOCUS AREAS: {', '.join(request.focus_areas)}" if request.focus_areas else ""}
-
-Provide a comprehensive debrief of this encounter. Be specific about what went well and what could improve.
-
-IMPORTANT: Respond with valid JSON only. No markdown, no code blocks, no explanation - just the raw JSON object:
-{{
-  "summary": "2-3 sentence overall summary",
-  "strengths": ["list of things done well"],
-  "areas_for_improvement": ["specific improvement areas"],
-  "missed_items": ["things the learner should have caught"],
-  "teaching_points": ["key clinical pearls from this case"],
-  "follow_up_resources": ["optional reading/resources"]
-}}"""
+    prompt = self._build_debrief_prompt(request, patient_context)
 
     response = self.client.messages.create(
       model=self.model,
       max_tokens=2048,
-      system=SYSTEM_PROMPT,
+      system=self.system_prompt,
       messages=[{"role": "user", "content": prompt}]
     )
 
     content = clean_json_response(response.content[0].text)
-    import json
     try:
       data = json.loads(content)
       return DebriefResponse(**data)
