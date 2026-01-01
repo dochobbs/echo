@@ -1,0 +1,27 @@
+Session Date: 2026-01-01
+Project: Echo (AI Attending Tutor)
+Path: /Users/dochobbs/Downloads/Consult/MedEd/echo
+Branch: main
+
+Git Stats (this session):
+- Commits: 2
+- Files Modified: 24
+- Lines Added: +3632
+- Lines Removed: -72
+- Net Change: +3560
+
+Key Files Changed:
+- src/core/tutor.py (JSON cleanup, prompt updates)
+- src/routers/voice.py (WebSocket endpoint)
+- src/models/context.py (WidgetPatientContext)
+- src/models/feedback.py (flexible patient format)
+- src/config.py (ELEVEN_API_KEY)
+- widget/src/components/*.tsx (voice features disabled)
+- widget/src/hooks/useEchoApi.ts (patient context support)
+- prompts/ECHO_PROMPTS.md (new)
+
+Tests: Not run
+Build: Widget builds successfully
+
+Backend Status: Running on port 8002
+Widget Dev Server: Running on port 5174
