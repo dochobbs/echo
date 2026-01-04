@@ -7,7 +7,7 @@ Echo is an AI-powered attending tutor for medical education. It provides persona
 
 ### Backend (Python FastAPI)
 - **Location**: `src/`
-- **Port**: 8001 (localhost)
+- **Port**: 8000 (localhost)
 - **Main entry**: `src/main.py`
 - **Configuration**: `src/config.py`
 - **Framework**: FastAPI with uvicorn
