@@ -74,39 +74,60 @@ export interface LoginRequest {
   password: string;
 }
 
+function getStorage(key: string): string | null {
+  if (typeof window === 'undefined') return null;
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function setStorage(key: string, value: string | null): void {
+  if (typeof window === 'undefined') return;
+  try {
+    if (value) {
+      localStorage.setItem(key, value);
+    } else {
+      localStorage.removeItem(key);
+    }
+  } catch {
+    // Storage not available
+  }
+}
+
 class ApiClient {
   private token: string | null = null;
+  private initialized = false;
 
-  constructor() {
-    const stored = localStorage.getItem('access_token');
-    if (stored) {
-      this.token = stored;
+  private ensureInitialized() {
+    if (!this.initialized && typeof window !== 'undefined') {
+      const stored = getStorage('access_token');
+      if (stored) {
+        this.token = stored;
+      }
+      this.initialized = true;
     }
   }
 
   setToken(token: string | null) {
     this.token = token;
-    if (token) {
-      localStorage.setItem('access_token', token);
-    } else {
-      localStorage.removeItem('access_token');
-      localStorage.removeItem('refresh_token');
+    setStorage('access_token', token);
+    if (!token) {
+      setStorage('refresh_token', null);
     }
   }
 
   setRefreshToken(token: string | null) {
-    if (token) {
-      localStorage.setItem('refresh_token', token);
-    } else {
-      localStorage.removeItem('refresh_token');
-    }
+    setStorage('refresh_token', token);
   }
 
   getRefreshToken(): string | null {
-    return localStorage.getItem('refresh_token');
+    return getStorage('refresh_token');
   }
 
   hasToken(): boolean {
+    this.ensureInitialized();
     return !!this.token;
   }
 
