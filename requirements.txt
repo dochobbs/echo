@@ -38,3 +38,6 @@ uvicorn
 websockets
 email-validator
 gotrue
+bcrypt
+psycopg2-binary
+sqlalchemy
