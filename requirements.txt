@@ -23,3 +23,16 @@ supabase>=2.0.0
 httpx>=0.26.0
 python-multipart>=0.0.6
 pyyaml>=6.0
+anthropic
+deepgram-sdk
+elevenlabs
+fastapi
+httpx
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart
+pyyaml
+supabase
+uvicorn
+websockets
