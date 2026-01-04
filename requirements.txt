@@ -36,3 +36,5 @@ pyyaml
 supabase
 uvicorn
 websockets
+email-validator
+gotrue
