@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session
 from .models import User as UserSchema, UserCreate, UserLogin, UserUpdate, Token, TokenRefresh, UserStats
 from .deps import get_current_user
 from ..database import get_db, is_database_configured
-from .. import models as db_models
+from .. import db_models
 
 
 router = APIRouter(prefix="/auth", tags=["auth"])

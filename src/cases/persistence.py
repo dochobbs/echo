@@ -5,13 +5,18 @@ from typing import Optional
 from uuid import UUID
 
 from ..database import get_db, is_database_configured
-from .. import models as db_models
+from .. import db_models
 from .models import (
     CaseState,
     CaseExport,
     CompletedCaseSummary,
     LearningMaterials,
 )
+
+
+def _to_uuid(value: str) -> UUID:
+    """Convert string to UUID."""
+    return UUID(value) if isinstance(value, str) else value
 
 
 def is_db_configured() -> bool:
@@ -33,8 +38,9 @@ class CasePersistence:
 
         db = next(get_db())
         try:
+            session_uuid = _to_uuid(case_state.session_id)
             existing = db.query(db_models.CaseSession).filter(
-                db_models.CaseSession.id == case_state.session_id
+                db_models.CaseSession.id == session_uuid
             ).first()
 
             if existing:
@@ -49,8 +55,8 @@ class CasePersistence:
                 db.commit()
             else:
                 session = db_models.CaseSession(
-                    id=UUID(case_state.session_id),
-                    user_id=UUID(user_id) if user_id else None,
+                    id=session_uuid,
+                    user_id=_to_uuid(user_id) if user_id else None,
                     condition_key=case_state.patient.condition_key,
                     condition_display=case_state.patient.condition_display,
                     patient_data=case_state.patient.model_dump(),
@@ -66,7 +72,7 @@ class CasePersistence:
                 db.add(session)
                 db.commit()
 
-            self._save_conversation(db, case_state.session_id, case_state.conversation)
+            self._save_conversation(db, session_uuid, case_state.conversation)
             return case_state.session_id
         except Exception as e:
             print(f"Error saving case session: {e}")
@@ -75,7 +81,7 @@ class CasePersistence:
         finally:
             db.close()
 
-    def _save_conversation(self, db, session_id: str, conversation: list[dict]) -> None:
+    def _save_conversation(self, db, session_id: UUID, conversation: list[dict]) -> None:
         """Save conversation messages."""
         if not conversation:
             return
@@ -91,7 +97,7 @@ class CasePersistence:
 
             for msg in new_messages:
                 message = db_models.Message(
-                    session_id=UUID(session_id),
+                    session_id=session_id,
                     role=msg.get("role", "user"),
                     content=msg.get("content", ""),
                 )
@@ -115,8 +121,9 @@ class CasePersistence:
 
         db = next(get_db())
         try:
+            session_uuid = _to_uuid(case_state.session_id)
             session = db.query(db_models.CaseSession).filter(
-                db_models.CaseSession.id == case_state.session_id
+                db_models.CaseSession.id == session_uuid
             ).first()
 
             if not session:
@@ -141,7 +148,7 @@ class CasePersistence:
 
             db.commit()
 
-            self._save_conversation(db, case_state.session_id, case_state.conversation)
+            self._save_conversation(db, session_uuid, case_state.conversation)
             return case_state.session_id
         except Exception as e:
             print(f"Error completing case session: {e}")
@@ -157,11 +164,12 @@ class CasePersistence:
 
         db = next(get_db())
         try:
+            session_uuid = _to_uuid(session_id)
             query = db.query(db_models.CaseSession).filter(
-                db_models.CaseSession.id == session_id
+                db_models.CaseSession.id == session_uuid
             )
             if user_id:
-                query = query.filter(db_models.CaseSession.user_id == user_id)
+                query = query.filter(db_models.CaseSession.user_id == _to_uuid(user_id))
 
             session = query.first()
             if not session:
@@ -204,8 +212,9 @@ class CasePersistence:
 
         db = next(get_db())
         try:
+            user_uuid = _to_uuid(user_id)
             query = db.query(db_models.CaseSession).filter(
-                db_models.CaseSession.user_id == user_id
+                db_models.CaseSession.user_id == user_uuid
             ).order_by(db_models.CaseSession.created_at.desc()).limit(limit)
 
             if status:
@@ -248,18 +257,19 @@ class CasePersistence:
 
         db = next(get_db())
         try:
+            session_uuid = _to_uuid(session_id)
             query = db.query(db_models.CaseSession).filter(
-                db_models.CaseSession.id == session_id
+                db_models.CaseSession.id == session_uuid
             )
             if user_id:
-                query = query.filter(db_models.CaseSession.user_id == user_id)
+                query = query.filter(db_models.CaseSession.user_id == _to_uuid(user_id))
 
             session = query.first()
             if not session:
                 return None
 
             messages = db.query(db_models.Message).filter(
-                db_models.Message.session_id == session_id
+                db_models.Message.session_id == session_uuid
             ).order_by(db_models.Message.created_at).all()
 
             conversation = []

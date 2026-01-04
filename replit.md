@@ -13,12 +13,14 @@ Echo is an AI-powered attending tutor for medical education. It provides persona
 - **Framework**: FastAPI with uvicorn
 
 Key modules:
-- `src/auth/` - Authentication with Supabase
+- `src/auth/` - Authentication with local JWT tokens
 - `src/cases/` - Case generation and history
 - `src/cds/` - Clinical decision support (dosing, guidelines)
 - `src/core/` - Core tutor functionality, citations, voice
 - `src/routers/` - API endpoints (feedback, question, debrief, voice)
 - `src/prompts/` - LLM prompt templates
+- `src/database.py` - SQLAlchemy database connection
+- `src/db_models.py` - SQLAlchemy ORM models (User, CaseSession, Message)
 
 ### Frontend (React + Vite + TypeScript)
 - **Location**: `web/`
@@ -29,7 +31,7 @@ Key components:
 - `web/src/pages/` - Main pages (Home, Case, Login, Profile, etc.)
 - `web/src/components/` - Reusable components
 - `web/src/hooks/` - Custom hooks (useAuth, useCase)
-- `web/src/api/` - API client and Supabase integration
+- `web/src/api/` - API client
 
 ### Widget Library
 - **Location**: `widget/`
@@ -39,34 +41,45 @@ Key components:
 - **Location**: `knowledge/conditions/` - YAML files with medical condition data
 - Covers pediatric conditions: asthma, bronchiolitis, croup, UTI, etc.
 
+## Database Schema (PostgreSQL)
+Uses Replit's built-in PostgreSQL database with SQLAlchemy ORM.
+
+**Tables:**
+- `users` - User accounts with email, password hash, profile info
+- `case_sessions` - Case session data with patient info, progress, status
+- `messages` - Conversation messages for each case session
+
 ## Environment Variables Required
+- `DATABASE_URL` - PostgreSQL connection (auto-configured by Replit)
+- `JWT_SECRET` - Secret for JWT token signing (optional, has default)
 - `ANTHROPIC_API_KEY` - Claude API for LLM features
 - `ELEVEN_API_KEY` - ElevenLabs for voice synthesis
 - `DEEPGRAM_API_KEY` - Deepgram for speech-to-text
-- `SUPABASE_URL` - Supabase project URL
-- `SUPABASE_ANON_KEY` - Supabase anonymous key
-- `SUPABASE_SERVICE_KEY` - Supabase service key (admin operations)
 
 ## Development
 - Frontend runs on port 5000 with proxy to backend on port 8000
 - Frontend: `cd web && npm run dev`
-- Backend: `python -m uvicorn src.main:app --host localhost --port 8000`
+- Backend: `python -m uvicorn src.main:app --host localhost --port 8000 --reload`
+- Database tables are auto-created on backend startup
 
 ## Authentication & Persistence
-The backend supports optional Supabase authentication. When configured:
+The backend uses local JWT authentication with PostgreSQL storage:
 - Users can register/login via `/auth/register` and `/auth/login`
-- Case sessions are persisted to Supabase `case_sessions` table
+- Access tokens expire in 24 hours, refresh tokens in 7 days
+- Case sessions are persisted to `case_sessions` table
 - Messages are saved to `messages` table
 - User history is available via `/case/history` endpoint
 - Active cases available via `/case/me/active` (requires auth)
 
-Without Supabase configured, the app works with in-memory storage per session.
+Without DATABASE_URL configured, the app works with in-memory storage per session.
 
 ## API Endpoints
 - `POST /auth/register` - Register new user
 - `POST /auth/login` - Login with email/password
 - `POST /auth/refresh` - Refresh access token
 - `GET /auth/me` - Get current user profile
+- `PATCH /auth/me` - Update user profile
+- `GET /auth/me/stats` - Get user case statistics
 - `POST /case/start` - Start a new case
 - `POST /case/message` - Send message in active case
 - `POST /case/debrief` - Get case debrief
@@ -74,12 +87,13 @@ Without Supabase configured, the app works with in-memory storage per session.
 - `GET /case/me/active` - Get active cases (requires auth)
 
 ## Recent Changes
+- 2026-01-04: Migrated from Supabase to Replit PostgreSQL
+  - Created SQLAlchemy models (User, CaseSession, Message)
+  - Implemented local JWT authentication (bcrypt + PyJWT)
+  - Updated persistence layer to use SQLAlchemy
+  - Database tables auto-created on startup
+  - Removed Supabase dependencies from auth and persistence
 - 2026-01-04: Configured for Replit environment
   - Set frontend to port 5000 with allowedHosts enabled for Replit proxy
   - Backend runs on port 8000
   - Installed Python and Node.js dependencies
-- 2026-01-04: Added user authentication and case persistence
-  - Wired auth router into FastAPI app
-  - Created CasePersistence service for Supabase storage
-  - Updated case router endpoints to save/load from database
-  - Added authenticated history endpoints

@@ -10,7 +10,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
 from .models import User as UserSchema
 from ..database import get_db, is_database_configured
-from .. import models as db_models
+from .. import db_models
 
 
 security = HTTPBearer(auto_error=False)
