@@ -1,6 +1,6 @@
 # Echo Project Worklist
 
-**Last Updated:** 2026-01-03
+**Last Updated:** 2026-01-04
 
 ## Vision
 
@@ -33,56 +33,52 @@ Target: Medical learner with 30 minutes at lunch wanting to run a case.
 
 ### Sprint 1: The Magic Moment ✅ COMPLETE
 - [x] Mobile-first web app scaffold (`web/` directory)
-  - Vite + React + TypeScript + Tailwind CSS 4
-  - Home page with "Start a case" button
-  - Case chat interface
-  - Responsive mobile design
-- [x] Port AOM condition from Oread (`knowledge/conditions/otitis_media.yaml`)
-  - Teaching goals, common mistakes, parent styles
-  - Clinical details (symptoms, vitals, exam findings)
+- [x] Port AOM condition from Oread
 - [x] Case generation module (`src/cases/`)
-  - Patient generator from condition YAML
-  - CaseState model with phase tracking
-  - `/case/start`, `/case/message`, `/case/debrief` endpoints
 - [x] Fluid voice tutor implementation
-  - Parent roleplay + teaching voice
-  - Automatic phase transitions (intro → history → exam → assessment → plan)
-  - Context-aware responses based on phase
+- [x] TTS available (off by default, toggle in header)
+- [x] localStorage persistence
+
+### Sprint 2: Voice + Depth ✅ MOSTLY COMPLETE
+- [x] Expand conditions to 11
+- [x] Stuck detection + natural hint offering
+- [x] CDS validation (dosing, guidelines)
+- [x] Debrief experience refinement
+- [ ] STT (Deepgram) - learners can speak to Echo
+
+### Teaching Frameworks ✅ NEW - 2026-01-04
+- [x] **100 condition teaching frameworks** - Full pediatric curriculum coverage
+- [x] Framework schema with teaching fields (goals, mistakes, pearls, red flags)
+- [x] Framework loader module (`src/knowledge/framework_loader.py`)
+- [x] Replit deployment bundle (`frameworks_bundle.tar.gz`)
 
 ---
 
-## In Progress
+## Ready for Replit Integration
 
-### Sprint 1: Complete ✅
-All Sprint 1 "Magic Moment" tasks are done:
-- [x] Mobile-first web app (Vite + React + TypeScript + Tailwind CSS 4)
-- [x] Zero-friction home page with "Start a case" button
-- [x] Case chat interface with fluid voice tutor
-- [x] AOM condition ported from Oread with teaching enhancements
-- [x] TTS available (off by default, toggle in header)
-- [x] localStorage persistence (resume interrupted sessions)
-- [x] Complete case flow tested: intro → history → exam → assessment → plan → debrief
+### Files to Upload
+- `frameworks_bundle.tar.gz` (106 KB) - Everything bundled
+- `REPLIT_HANDOFF.md` - Integration instructions
+
+### Integration Tasks
+- [ ] Upload and extract frameworks bundle
+- [ ] Add `/frameworks` API endpoints
+- [ ] Update case generation to use framework teaching context
+- [ ] Add condition selector UI
 
 ---
 
 ## Pending
 
-### Sprint 2: Voice + Depth
-- [ ] STT (Deepgram) - learners can speak to Echo
-- [x] Expand conditions (5-10 from Oread) - **11 conditions implemented**
-- [x] Stuck detection + natural hint offering - **Detects short/confused responses, offers supportive guidance**
-- [x] CDS validation (dosing, guidelines) - **CDS module created with 15+ medications**
-- [x] Debrief experience refinement - **DebriefCard component with structured display**
-
 ### Sprint 3: Identity + Persistence
-- [x] Supabase setup - **Schema created, client ready, works in guest mode**
-- [x] Email auth (optional for users) - **Auth module created (src/auth/)**
+- [x] Supabase setup - Schema created, client ready
+- [x] Auth module structure - `src/auth/`
 - [ ] Server-side case storage
 - [ ] Cross-device case resume
 
 ### Sprint 4: Memory + Personalization
 - [ ] Case history tracking per user
-- [ ] Return-visit greetings ("Good to see you! Last time we did respiratory...")
+- [ ] Return-visit greetings
 - [ ] Adaptive case selection
 - [ ] Time constraint check-ins
 
@@ -129,18 +125,32 @@ echo/
 │   ├── main.py             # FastAPI app
 │   ├── core/tutor.py       # Claude-based tutor with fluid voice
 │   ├── cases/              # Case generation
-│   │   ├── generator.py    # Patient generation from YAML
-│   │   ├── models.py       # CaseState, GeneratedPatient
-│   │   └── router.py       # /case/* endpoints
-│   ├── routers/            # Other API routes
+│   ├── knowledge/          # NEW: Framework loader
+│   │   └── framework_loader.py
+│   ├── routers/            # API routes
 │   └── prompts/            # System, feedback, question, debrief prompts
 ├── knowledge/
-│   └── conditions/         # Condition YAML files
-│       └── otitis_media.yaml
+│   ├── conditions/         # Full condition YAML files
+│   └── frameworks/         # NEW: 100 teaching frameworks
 ├── web/                    # Standalone web app
-│   ├── src/
-│   │   ├── pages/          # Home, Case
-│   │   └── types/          # TypeScript types
-│   └── package.json
-└── widget/                 # Embeddable widget (for Oread/etc)
+└── widget/                 # Embeddable widget
 ```
+
+---
+
+## Framework Categories (100 total)
+
+| Category | Count |
+|----------|-------|
+| Newborn/Infant | 15 |
+| Infectious Disease | 17 |
+| Respiratory/Allergy | 5 |
+| Dermatology | 11 |
+| Behavioral/Developmental | 12 |
+| GI | 6 |
+| Emergency/Trauma | 10 |
+| MSK | 6 |
+| Endocrine | 7 |
+| Nephrology/Urology | 7 |
+| Hematology/Oncology | 2 |
+| Adolescent/GYN | 3 |
