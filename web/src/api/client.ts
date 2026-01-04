@@ -1,6 +1,11 @@
 import type { LearnerLevel, User } from '../types';
 
-const API_BASE = '/api';
+function getApiBase(): string {
+  if (import.meta.env.DEV) {
+    return '/api';
+  }
+  return '';
+}
 
 export interface BackendStartCaseRequest {
   learner_level: LearnerLevel;
@@ -144,7 +149,7 @@ class ApiClient {
       headers['Authorization'] = `Bearer ${this.token}`;
     }
 
-    const response = await fetch(`${API_BASE}${endpoint}`, {
+    const response = await fetch(`${getApiBase()}${endpoint}`, {
       ...options,
       headers,
     });
@@ -154,7 +159,7 @@ class ApiClient {
         const refreshed = await this.refreshTokens();
         if (refreshed) {
           headers['Authorization'] = `Bearer ${this.token}`;
-          const retryResponse = await fetch(`${API_BASE}${endpoint}`, {
+          const retryResponse = await fetch(`${getApiBase()}${endpoint}`, {
             ...options,
             headers,
           });
@@ -171,7 +176,7 @@ class ApiClient {
   }
 
   async register(data: RegisterRequest): Promise<AuthTokens> {
-    const response = await fetch(`${API_BASE}/auth/register`, {
+    const response = await fetch(`${getApiBase()}/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
@@ -189,7 +194,7 @@ class ApiClient {
   }
 
   async login(data: LoginRequest): Promise<AuthTokens> {
-    const response = await fetch(`${API_BASE}/auth/login`, {
+    const response = await fetch(`${getApiBase()}/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
@@ -211,7 +216,7 @@ class ApiClient {
     if (!refreshToken) return false;
 
     try {
-      const response = await fetch(`${API_BASE}/auth/refresh`, {
+      const response = await fetch(`${getApiBase()}/auth/refresh`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ refresh_token: refreshToken }),
