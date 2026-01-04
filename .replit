@@ -62,6 +62,6 @@ exposeLocalhost = true
 
 [deployment]
 deploymentTarget = "autoscale"
-build = ["npm", "run", "build"]
+build = ["bash", "-c", "cd web && npm run build"]
 publicDir = "web/dist"
-run = ["bash", "-c", "cd web && npm run preview -- --host 0.0.0.0 --port 5000 & python -m uvicorn src.main:app --host 0.0.0.0 --port 8000"]
+run = ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "5000"]

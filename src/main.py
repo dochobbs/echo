@@ -1,7 +1,12 @@
 """Echo - AI Attending Tutor Service."""
 
-from fastapi import FastAPI
+import os
+from pathlib import Path
+
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 from .config import get_settings
 from .routers import feedback, question, debrief, voice
@@ -67,6 +72,26 @@ async def health():
     "database_configured": db_configured,
     "auth_enabled": db_configured,
   }
+
+
+# Serve static frontend files in production
+STATIC_DIR = Path(__file__).parent.parent / "web" / "dist"
+
+if STATIC_DIR.exists():
+  # Mount assets directory for static files (JS, CSS, images)
+  assets_dir = STATIC_DIR / "assets"
+  if assets_dir.exists():
+    app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+  
+  @app.get("/{full_path:path}")
+  async def serve_spa(request: Request, full_path: str):
+    """Serve the SPA for all non-API routes."""
+    # Check if requesting a static file
+    file_path = STATIC_DIR / full_path
+    if file_path.is_file():
+      return FileResponse(file_path)
+    # Otherwise return index.html for SPA routing
+    return FileResponse(STATIC_DIR / "index.html")
 
 
 if __name__ == "__main__":
