@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { useAuth } from '../hooks/useAuth';
 import { MobileNav } from './MobileNav';
 import { LogOutIcon } from './icons';
+import { EchoLogo } from './EchoLogo';
 
 export function Layout() {
   const { user, signOut } = useAuth();
@@ -15,13 +16,7 @@ export function Layout() {
       <header className="bg-surface-1 border-b border-surface-3 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 group">
-            <motion.div 
-              className="w-9 h-9 bg-gradient-to-br from-echo-500 to-echo-600 rounded-xl flex items-center justify-center shadow-glow"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span className="text-white font-bold text-lg">E</span>
-            </motion.div>
+            <EchoLogo size={36} />
             <span className="font-semibold text-gray-100 tracking-wide group-hover:text-echo-400 transition-colors">
               Echo
             </span>
