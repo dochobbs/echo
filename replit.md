@@ -107,6 +107,12 @@ The app uses a "Clinical Calm" dark theme with Geist Mono font:
 - `Toast` - Notification toasts for milestones
 
 ## Recent Changes
+- 2026-01-04: Fixed authentication and replaced emojis with animated icons
+  - Rewired useAuth hook to use local JWT endpoints (/auth/login, /auth/register)
+  - Added SSR-safe localStorage handling in API client
+  - Created animated icon components based on itshover.com style
+  - Replaced all emoji icons with motion-animated SVG icons
+  - Icons: HomeIcon, UserIcon, HistoryIcon, SendIcon, SpinnerIcon, etc.
 - 2026-01-04: Major UI redesign with Geist Mono font
   - Dark theme with teal/copper accent colors
   - Added animated components (timeline, typing indicator, message bubbles)
