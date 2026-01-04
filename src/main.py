@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from .config import get_settings
 from .routers import feedback, question, debrief, voice
 from .cases import case_router
+from .auth.router import router as auth_router
 
 app = FastAPI(
   title="Echo",
@@ -23,6 +24,7 @@ app.add_middleware(
 )
 
 # Include routers
+app.include_router(auth_router)
 app.include_router(feedback.router, prefix="/feedback", tags=["feedback"])
 app.include_router(question.router, prefix="/question", tags=["question"])
 app.include_router(debrief.router, prefix="/debrief", tags=["debrief"])
@@ -48,6 +50,8 @@ async def health():
     "status": "healthy",
     "claude_configured": bool(settings.anthropic_api_key),
     "eleven_labs_configured": bool(settings.eleven_api_key),
+    "supabase_configured": bool(settings.supabase_url and settings.supabase_anon_key),
+    "auth_enabled": bool(settings.supabase_url and settings.supabase_anon_key),
   }
 
 

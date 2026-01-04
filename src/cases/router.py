@@ -1,7 +1,8 @@
 """Case management API endpoints for Echo."""
 
 from datetime import datetime
-from fastapi import APIRouter, HTTPException
+from typing import Optional
+from fastapi import APIRouter, HTTPException, Depends
 from .models import (
   StartCaseRequest,
   CaseMessageRequest,
@@ -23,40 +24,46 @@ from .models import (
 )
 from .generator import get_generator
 from .history import get_case_history
+from .persistence import get_case_persistence, is_supabase_configured
+from ..auth.deps import get_optional_user, get_current_user
+from ..auth.models import User
 
 router = APIRouter(prefix="/case", tags=["cases"])
 
 
 @router.post("/start")
-async def start_case(request: StartCaseRequest) -> CaseResponse:
+async def start_case(
+  request: StartCaseRequest,
+  user: Optional[User] = Depends(get_optional_user),
+) -> CaseResponse:
   """Start a new case.
 
   Returns an opening message from Echo and the initial case state.
+  If authenticated, the case will be persisted to the user's history.
   """
-  # Late import to avoid circular dependency
   from ..core.tutor import Tutor
 
   generator = get_generator()
 
-  # Generate the case
   case_state = generator.create_case(
     condition_key=request.condition_key,
     learner_level=request.learner_level,
     time_constraint=request.time_constraint,
   )
 
-  # Get condition info for tutor context
   condition_info = generator.get_condition_info(case_state.patient.condition_key)
 
-  # Get the tutor's opening message
   tutor = Tutor()
   opening = await tutor.generate_case_opening(case_state, condition_info)
 
-  # Add to conversation history
   case_state.conversation.append({
     "role": "echo",
     "content": opening,
   })
+
+  if user and is_supabase_configured():
+    persistence = get_case_persistence()
+    persistence.save_session(case_state, user_id=str(user.id))
 
   return CaseResponse(
     message=opening,
@@ -65,29 +72,28 @@ async def start_case(request: StartCaseRequest) -> CaseResponse:
 
 
 @router.post("/message")
-async def send_message(request: CaseMessageRequest) -> CaseResponse:
+async def send_message(
+  request: CaseMessageRequest,
+  user: Optional[User] = Depends(get_optional_user),
+) -> CaseResponse:
   """Send a message in an active case.
 
   The tutor processes the learner's message and responds appropriately,
   tracking what has been discovered and advancing the case phase.
   Detects when the learner is stuck and offers supportive hints.
   """
-  # Late import to avoid circular dependency
   from ..core.tutor import Tutor
 
   case_state = request.case_state
 
-  # Add learner message to conversation
   case_state.conversation.append({
     "role": "user",
     "content": request.message,
   })
 
-  # Get condition info
   generator = get_generator()
   condition_info = generator.get_condition_info(case_state.patient.condition_key)
 
-  # Generate tutor response (now includes stuck detection)
   tutor = Tutor()
   response, updated_state, teaching_moment, hint_offered = await tutor.process_case_message(
     message=request.message,
@@ -95,11 +101,14 @@ async def send_message(request: CaseMessageRequest) -> CaseResponse:
     condition_info=condition_info,
   )
 
-  # Add Echo's response to conversation
   updated_state.conversation.append({
     "role": "echo",
     "content": response,
   })
+
+  if user and is_supabase_configured():
+    persistence = get_case_persistence()
+    persistence.save_session(updated_state, user_id=str(user.id))
 
   return CaseResponse(
     message=response,
@@ -110,27 +119,25 @@ async def send_message(request: CaseMessageRequest) -> CaseResponse:
 
 
 @router.post("/debrief")
-async def get_debrief(case_state: CaseState) -> CaseResponse:
+async def get_debrief(
+  case_state: CaseState,
+  user: Optional[User] = Depends(get_optional_user),
+) -> CaseResponse:
   """Get a debrief for a completed case.
 
   Summarizes what was done well, areas for improvement, and key teaching points.
   Returns structured debrief data for rich UI display.
   """
-  # Late import to avoid circular dependency
   from ..core.tutor import Tutor
 
-  # Get condition info
   generator = get_generator()
   condition_info = generator.get_condition_info(case_state.patient.condition_key)
 
-  # Generate structured debrief
   tutor = Tutor()
   debrief_data = await tutor.generate_debrief(case_state, condition_info)
 
-  # Update phase
   case_state.phase = CasePhase.COMPLETE
 
-  # Create structured debrief object
   debrief = DebriefData(
     summary=debrief_data.get("summary", "Case complete."),
     strengths=debrief_data.get("strengths", []),
@@ -139,6 +146,14 @@ async def get_debrief(case_state: CaseState) -> CaseResponse:
     teaching_points=debrief_data.get("teaching_points", []),
     follow_up_resources=debrief_data.get("follow_up_resources", []),
   )
+
+  if user and is_supabase_configured():
+    persistence = get_case_persistence()
+    persistence.complete_session(
+      case_state,
+      debrief_summary=debrief.summary,
+      user_id=str(user.id),
+    )
 
   return CaseResponse(
     message=debrief.summary,
@@ -291,11 +306,23 @@ async def export_case(request: CaseExportRequest) -> CaseExport:
 
 
 @router.get("/history")
-async def get_history() -> CaseHistoryResponse:
+async def get_history(
+  user: Optional[User] = Depends(get_optional_user),
+) -> CaseHistoryResponse:
   """Get list of completed cases.
 
-  Returns a summary list of all cases completed in this session.
+  Returns a summary list of all cases completed.
+  If authenticated with Supabase, returns persisted history.
+  Otherwise returns in-memory history from current session.
   """
+  if user and is_supabase_configured():
+    persistence = get_case_persistence()
+    cases = persistence.get_user_history(str(user.id), status="completed")
+    return CaseHistoryResponse(
+      cases=cases,
+      total_count=len(cases),
+    )
+
   history = get_case_history()
   cases = history.get_all()
 
@@ -306,8 +333,17 @@ async def get_history() -> CaseHistoryResponse:
 
 
 @router.get("/history/{session_id}")
-async def get_case_detail(session_id: str) -> CaseExport:
+async def get_case_detail(
+  session_id: str,
+  user: Optional[User] = Depends(get_optional_user),
+) -> CaseExport:
   """Get full details of a specific completed case."""
+  if user and is_supabase_configured():
+    persistence = get_case_persistence()
+    export = persistence.get_case_export(session_id, user_id=str(user.id))
+    if export:
+      return export
+
   history = get_case_history()
   export = history.get_by_session_id(session_id)
 
@@ -315,6 +351,22 @@ async def get_case_detail(session_id: str) -> CaseExport:
     raise HTTPException(status_code=404, detail=f"Case {session_id} not found")
 
   return export
+
+
+@router.get("/me/active")
+async def get_active_cases(
+  user: User = Depends(get_current_user),
+) -> CaseHistoryResponse:
+  """Get active (in-progress) cases for the authenticated user."""
+  if not is_supabase_configured():
+    return CaseHistoryResponse(cases=[], total_count=0)
+
+  persistence = get_case_persistence()
+  cases = persistence.get_user_history(str(user.id), status="active")
+  return CaseHistoryResponse(
+    cases=cases,
+    total_count=len(cases),
+  )
 
 
 async def _generate_reading_list(
