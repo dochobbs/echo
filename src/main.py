@@ -7,6 +7,7 @@ from .config import get_settings
 from .routers import feedback, question, debrief, voice
 from .cases import case_router
 from .auth.router import router as auth_router
+from .database import is_database_configured, create_tables
 
 app = FastAPI(
   title="Echo",
@@ -17,7 +18,7 @@ app = FastAPI(
 # CORS for web clients
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=["*"],  # Configure for production
+  allow_origins=["*"],
   allow_credentials=True,
   allow_methods=["*"],
   allow_headers=["*"],
@@ -30,6 +31,16 @@ app.include_router(question.router, prefix="/question", tags=["question"])
 app.include_router(debrief.router, prefix="/debrief", tags=["debrief"])
 app.include_router(voice.router, prefix="/voice", tags=["voice"])
 app.include_router(case_router, tags=["cases"])
+
+
+@app.on_event("startup")
+async def startup():
+  """Initialize database tables on startup."""
+  if is_database_configured():
+    create_tables()
+    print("Database tables created/verified.")
+  else:
+    print("Database not configured - running without persistence.")
 
 
 @app.get("/")
@@ -46,12 +57,13 @@ async def root():
 async def health():
   """Health check."""
   settings = get_settings()
+  db_configured = is_database_configured()
   return {
     "status": "healthy",
     "claude_configured": bool(settings.anthropic_api_key),
     "eleven_labs_configured": bool(settings.eleven_api_key),
-    "supabase_configured": bool(settings.supabase_url and settings.supabase_anon_key),
-    "auth_enabled": bool(settings.supabase_url and settings.supabase_anon_key),
+    "database_configured": db_configured,
+    "auth_enabled": db_configured,
   }
 
 

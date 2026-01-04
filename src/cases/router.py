@@ -24,7 +24,7 @@ from .models import (
 )
 from .generator import get_generator
 from .history import get_case_history
-from .persistence import get_case_persistence, is_supabase_configured
+from .persistence import get_case_persistence, is_db_configured
 from ..auth.deps import get_optional_user, get_current_user
 from ..auth.models import User
 
@@ -61,7 +61,7 @@ async def start_case(
     "content": opening,
   })
 
-  if user and is_supabase_configured():
+  if user and is_db_configured():
     persistence = get_case_persistence()
     persistence.save_session(case_state, user_id=str(user.id))
 
@@ -106,7 +106,7 @@ async def send_message(
     "content": response,
   })
 
-  if user and is_supabase_configured():
+  if user and is_db_configured():
     persistence = get_case_persistence()
     persistence.save_session(updated_state, user_id=str(user.id))
 
@@ -147,7 +147,7 @@ async def get_debrief(
     follow_up_resources=debrief_data.get("follow_up_resources", []),
   )
 
-  if user and is_supabase_configured():
+  if user and is_db_configured():
     persistence = get_case_persistence()
     persistence.complete_session(
       case_state,
@@ -312,10 +312,10 @@ async def get_history(
   """Get list of completed cases.
 
   Returns a summary list of all cases completed.
-  If authenticated with Supabase, returns persisted history.
+  If authenticated, returns persisted history.
   Otherwise returns in-memory history from current session.
   """
-  if user and is_supabase_configured():
+  if user and is_db_configured():
     persistence = get_case_persistence()
     cases = persistence.get_user_history(str(user.id), status="completed")
     return CaseHistoryResponse(
@@ -338,7 +338,7 @@ async def get_case_detail(
   user: Optional[User] = Depends(get_optional_user),
 ) -> CaseExport:
   """Get full details of a specific completed case."""
-  if user and is_supabase_configured():
+  if user and is_db_configured():
     persistence = get_case_persistence()
     export = persistence.get_case_export(session_id, user_id=str(user.id))
     if export:
@@ -358,7 +358,7 @@ async def get_active_cases(
   user: User = Depends(get_current_user),
 ) -> CaseHistoryResponse:
   """Get active (in-progress) cases for the authenticated user."""
-  if not is_supabase_configured():
+  if not is_db_configured():
     return CaseHistoryResponse(cases=[], total_count=0)
 
   persistence = get_case_persistence()
