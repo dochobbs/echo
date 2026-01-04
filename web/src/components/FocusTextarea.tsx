@@ -20,11 +20,20 @@ export function FocusTextarea({
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const isActive = isFocused || value.length > 0;
 
-  useEffect(() => {
+  const adjustHeight = () => {
     if (textareaRef.current) {
       textareaRef.current.style.height = 'auto';
-      textareaRef.current.style.height = `${Math.min(textareaRef.current.scrollHeight, 200)}px`;
+      const scrollHeight = textareaRef.current.scrollHeight;
+      const minHeight = 56; // Minimum single-line height
+      const maxHeight = 300; // Maximum height before scrolling
+      const newHeight = Math.max(minHeight, Math.min(scrollHeight, maxHeight));
+      textareaRef.current.style.height = `${newHeight}px`;
+      textareaRef.current.style.overflow = scrollHeight > maxHeight ? 'auto' : 'hidden';
     }
+  };
+
+  useEffect(() => {
+    adjustHeight();
   }, [value]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -71,7 +80,8 @@ export function FocusTextarea({
           onKeyDown={handleKeyDown}
           placeholder={placeholder}
           disabled={disabled}
-          rows={3}
+          rows={1}
+          style={{ minHeight: '56px', overflow: 'hidden' }}
           className={`w-full px-5 py-4 bg-surface-2 border rounded-2xl text-gray-100 placeholder-gray-500 resize-none transition-all duration-300 focus:outline-none ${
             isActive 
               ? 'border-echo-500 ring-2 ring-echo-500/30' 
