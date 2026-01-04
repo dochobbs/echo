@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useAuth } from '../hooks/useAuth';
 import { MobileNav } from './MobileNav';
+import { LogOutIcon } from './icons';
 
 export function Layout() {
   const { user, signOut } = useAuth();
@@ -53,12 +54,15 @@ export function Layout() {
             ))}
 
             {user ? (
-              <button
+              <motion.button
                 onClick={() => signOut()}
-                className="px-4 py-2 rounded-xl text-sm font-medium text-gray-400 hover:text-gray-200 hover:bg-surface-3 transition-all"
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-gray-400 hover:text-gray-200 hover:bg-surface-3 transition-all"
+                whileHover={{ x: 2 }}
+                whileTap={{ scale: 0.98 }}
               >
+                <LogOutIcon size={16} />
                 Sign out
-              </button>
+              </motion.button>
             ) : (
               <Link
                 to="/login"

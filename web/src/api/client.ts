@@ -1,8 +1,7 @@
-import type { LearnerLevel } from '../types';
+import type { LearnerLevel, User } from '../types';
 
 const API_BASE = '/api';
 
-// Backend API types (match Python models)
 export interface BackendStartCaseRequest {
   learner_level: LearnerLevel;
   condition_key?: string;
@@ -57,11 +56,58 @@ export interface BackendMessageRequest {
   case_state: BackendCaseState;
 }
 
+export interface AuthTokens {
+  access_token: string;
+  refresh_token: string;
+  token_type: string;
+}
+
+export interface RegisterRequest {
+  email: string;
+  password: string;
+  name?: string;
+  level?: LearnerLevel;
+}
+
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
 class ApiClient {
   private token: string | null = null;
 
+  constructor() {
+    const stored = localStorage.getItem('access_token');
+    if (stored) {
+      this.token = stored;
+    }
+  }
+
   setToken(token: string | null) {
     this.token = token;
+    if (token) {
+      localStorage.setItem('access_token', token);
+    } else {
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('refresh_token');
+    }
+  }
+
+  setRefreshToken(token: string | null) {
+    if (token) {
+      localStorage.setItem('refresh_token', token);
+    } else {
+      localStorage.removeItem('refresh_token');
+    }
+  }
+
+  getRefreshToken(): string | null {
+    return localStorage.getItem('refresh_token');
+  }
+
+  hasToken(): boolean {
+    return !!this.token;
   }
 
   private async fetch<T>(
@@ -83,6 +129,19 @@ class ApiClient {
     });
 
     if (!response.ok) {
+      if (response.status === 401 && this.getRefreshToken()) {
+        const refreshed = await this.refreshTokens();
+        if (refreshed) {
+          headers['Authorization'] = `Bearer ${this.token}`;
+          const retryResponse = await fetch(`${API_BASE}${endpoint}`, {
+            ...options,
+            headers,
+          });
+          if (retryResponse.ok) {
+            return retryResponse.json();
+          }
+        }
+      }
       const error = await response.json().catch(() => ({}));
       throw new Error(error.detail || `API error: ${response.status}`);
     }
@@ -90,7 +149,87 @@ class ApiClient {
     return response.json();
   }
 
-  // Case endpoints - match backend API
+  async register(data: RegisterRequest): Promise<AuthTokens> {
+    const response = await fetch(`${API_BASE}/auth/register`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error.detail || 'Registration failed');
+    }
+
+    const tokens: AuthTokens = await response.json();
+    this.setToken(tokens.access_token);
+    this.setRefreshToken(tokens.refresh_token);
+    return tokens;
+  }
+
+  async login(data: LoginRequest): Promise<AuthTokens> {
+    const response = await fetch(`${API_BASE}/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error.detail || 'Login failed');
+    }
+
+    const tokens: AuthTokens = await response.json();
+    this.setToken(tokens.access_token);
+    this.setRefreshToken(tokens.refresh_token);
+    return tokens;
+  }
+
+  async refreshTokens(): Promise<boolean> {
+    const refreshToken = this.getRefreshToken();
+    if (!refreshToken) return false;
+
+    try {
+      const response = await fetch(`${API_BASE}/auth/refresh`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ refresh_token: refreshToken }),
+      });
+
+      if (!response.ok) {
+        this.setToken(null);
+        return false;
+      }
+
+      const tokens: AuthTokens = await response.json();
+      this.setToken(tokens.access_token);
+      this.setRefreshToken(tokens.refresh_token);
+      return true;
+    } catch {
+      this.setToken(null);
+      return false;
+    }
+  }
+
+  async getMe(): Promise<User> {
+    return this.fetch('/auth/me');
+  }
+
+  async updateMe(updates: Partial<User>): Promise<User> {
+    return this.fetch('/auth/me', {
+      method: 'PATCH',
+      body: JSON.stringify(updates),
+    });
+  }
+
+  async getMyStats(): Promise<{ total_cases: number; completed_cases: number; total_teaching_moments: number }> {
+    return this.fetch('/auth/me/stats');
+  }
+
+  logout() {
+    this.setToken(null);
+  }
+
   async startCase(data: BackendStartCaseRequest): Promise<BackendCaseResponse> {
     return this.fetch('/case/start', {
       method: 'POST',
@@ -112,7 +251,6 @@ class ApiClient {
     });
   }
 
-  // Describe-a-case mode
   async startDescribeCase(learnerLevel: LearnerLevel): Promise<BackendCaseResponse> {
     return this.fetch('/case/describe/start', {
       method: 'POST',
@@ -122,6 +260,10 @@ class ApiClient {
 
   async getCaseHistory(): Promise<{ cases: unknown[]; total_count: number }> {
     return this.fetch('/case/history');
+  }
+
+  async getActiveCases(): Promise<{ cases: unknown[] }> {
+    return this.fetch('/case/me/active');
   }
 }
 

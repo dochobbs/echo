@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useAuth } from '../hooks/useAuth';
+import { SpinnerIcon, ArrowRightIcon } from '../components/icons';
 import type { LearnerLevel } from '../types';
 
 const LEVELS: { value: LearnerLevel; label: string }[] = [
@@ -144,24 +145,20 @@ export function Login() {
           <motion.button
             type="submit"
             disabled={loading}
-            className="btn btn-primary w-full py-3"
+            className="btn btn-primary w-full py-3 flex items-center justify-center gap-2"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
             {loading ? (
-              <span className="flex items-center justify-center gap-2">
-                <motion.span
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                >
-                  ⟳
-                </motion.span>
+              <>
+                <SpinnerIcon size={18} />
                 {isSignUp ? 'Creating account...' : 'Signing in...'}
-              </span>
-            ) : isSignUp ? (
-              'Create account'
+              </>
             ) : (
-              'Sign in'
+              <>
+                {isSignUp ? 'Create account' : 'Sign in'}
+                <ArrowRightIcon size={18} />
+              </>
             )}
           </motion.button>
         </form>
