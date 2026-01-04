@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useAuth } from '../hooks/useAuth';
 import { SpinnerIcon, ArrowRightIcon } from '../components/icons';
+import { EchoLogo } from '../components/EchoLogo';
 import type { LearnerLevel } from '../types';
 
 const LEVELS: { value: LearnerLevel; label: string }[] = [
@@ -52,12 +53,9 @@ export function Login() {
         className="max-w-md w-full"
       >
         <div className="text-center mb-8">
-          <motion.div
-            className="w-16 h-16 bg-gradient-to-br from-echo-500 to-echo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-glow"
-            whileHover={{ scale: 1.05, rotate: 5 }}
-          >
-            <span className="text-white font-bold text-2xl">E</span>
-          </motion.div>
+          <div className="flex justify-center mb-4">
+            <EchoLogo size={64} />
+          </div>
           <h1 className="text-2xl font-bold text-gray-100">
             {isSignUp ? 'Create your account' : 'Welcome back'}
           </h1>
