@@ -41,3 +41,4 @@ gotrue
 bcrypt
 psycopg2-binary
 sqlalchemy
+pyjwt
