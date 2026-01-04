@@ -1,16 +1,24 @@
 import { motion } from 'motion/react';
+import { ClipboardIcon, StethoscopeSimpleIcon, BrainIcon, FileTextIcon, CircleCheckIcon, CheckIcon } from './icons';
+import type { ReactNode } from 'react';
 
 interface CaseTimelineProps {
   currentPhase: string;
   compact?: boolean;
 }
 
-const phases = [
-  { id: 'history', label: 'History', icon: '📋' },
-  { id: 'examination', label: 'Exam', icon: '🩺' },
-  { id: 'differential', label: 'Differential', icon: '🧠' },
-  { id: 'plan', label: 'Plan', icon: '📝' },
-  { id: 'complete', label: 'Complete', icon: '✓' },
+interface Phase {
+  id: string;
+  label: string;
+  Icon: (props: { className?: string; size?: number; animate?: boolean }) => ReactNode;
+}
+
+const phases: Phase[] = [
+  { id: 'history', label: 'History', Icon: ClipboardIcon },
+  { id: 'examination', label: 'Exam', Icon: StethoscopeSimpleIcon },
+  { id: 'differential', label: 'Differential', Icon: BrainIcon },
+  { id: 'plan', label: 'Plan', Icon: FileTextIcon },
+  { id: 'complete', label: 'Complete', Icon: CircleCheckIcon },
 ];
 
 export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProps) {
@@ -21,6 +29,7 @@ export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProp
       {phases.map((phase, index) => {
         const isComplete = index < currentIndex;
         const isCurrent = index === currentIndex;
+        const Icon = phase.Icon;
 
         return (
           <div key={phase.id} className="flex items-center">
@@ -43,9 +52,11 @@ export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProp
                 ease: "easeInOut",
               } : {}}
             >
-              <span className={compact ? 'text-sm' : 'text-base'}>
-                {isComplete ? '✓' : phase.icon}
-              </span>
+              {isComplete ? (
+                <CheckIcon size={compact ? 14 : 18} animate={false} />
+              ) : (
+                <Icon size={compact ? 14 : 18} animate={false} />
+              )}
               
               {isCurrent && (
                 <motion.div

@@ -3,6 +3,185 @@ import { motion } from 'motion/react';
 interface IconProps {
   className?: string;
   size?: number;
+  animate?: boolean;
+}
+
+export function ClipboardIcon({ className = '', size = 24, animate = true }: IconProps) {
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <motion.path
+        d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.4 }}
+      />
+      <motion.rect
+        x="8"
+        y="2"
+        width="8"
+        height="4"
+        rx="1"
+        ry="1"
+        initial={animate ? { scale: 0 } : { scale: 1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
+      />
+    </motion.svg>
+  );
+}
+
+export function StethoscopeSimpleIcon({ className = '', size = 24, animate = true }: IconProps) {
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <motion.path
+        d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.5 }}
+      />
+      <motion.path
+        d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.4, delay: 0.3 }}
+      />
+      <motion.circle
+        cx="20"
+        cy="10"
+        r="2"
+        initial={animate ? { scale: 0 } : { scale: 1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+      />
+    </motion.svg>
+  );
+}
+
+export function BrainIcon({ className = '', size = 24, animate = true }: IconProps) {
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <motion.path
+        d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.54"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.6 }}
+      />
+      <motion.path
+        d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.54"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      />
+    </motion.svg>
+  );
+}
+
+export function FileTextIcon({ className = '', size = 24, animate = true }: IconProps) {
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <motion.path
+        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.4 }}
+      />
+      <motion.polyline
+        points="14 2 14 8 20 8"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
+      />
+      <motion.line
+        x1="16"
+        y1="13"
+        x2="8"
+        y2="13"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.2, delay: 0.4 }}
+      />
+      <motion.line
+        x1="16"
+        y1="17"
+        x2="8"
+        y2="17"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.2, delay: 0.5 }}
+      />
+    </motion.svg>
+  );
+}
+
+export function CircleCheckIcon({ className = '', size = 24, animate = true }: IconProps) {
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <motion.circle
+        cx="12"
+        cy="12"
+        r="10"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.4 }}
+      />
+      <motion.polyline
+        points="9 12 12 15 16 10"
+        initial={animate ? { pathLength: 0 } : { pathLength: 1 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+      />
+    </motion.svg>
+  );
 }
 
 export function HomeIcon({ className = '', size = 24 }: IconProps) {
@@ -156,7 +335,7 @@ export function SpinnerIcon({ className = '', size = 24 }: IconProps) {
   );
 }
 
-export function CheckIcon({ className = '', size = 24 }: IconProps) {
+export function CheckIcon({ className = '', size = 24, animate = true }: IconProps) {
   return (
     <motion.svg
       width={size}
@@ -168,9 +347,9 @@ export function CheckIcon({ className = '', size = 24 }: IconProps) {
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
-      initial={{ scale: 0 }}
+      initial={animate ? { scale: 0 } : { scale: 1 }}
       animate={{ scale: 1 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      transition={animate ? { type: "spring", stiffness: 300, damping: 20 } : { duration: 0 }}
     >
       <motion.polyline
         points="20 6 9 17 4 12"
