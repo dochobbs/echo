@@ -4,32 +4,79 @@
 
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
   }
   
   body {
-    @apply bg-gray-50 text-gray-900 antialiased;
+    @apply bg-surface-0 text-gray-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-echo-500/30;
   }
 }
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+    @apply px-5 py-2.5 rounded-xl font-medium transition-all duration-300 text-sm tracking-wide;
   }
   
   .btn-primary {
-    @apply bg-echo-600 text-white hover:bg-echo-700 active:bg-echo-800;
+    @apply bg-echo-500 text-white hover:bg-echo-600 active:bg-echo-700 shadow-glow hover:shadow-glow-lg;
   }
   
   .btn-secondary {
-    @apply bg-gray-200 text-gray-800 hover:bg-gray-300 active:bg-gray-400;
+    @apply bg-surface-3 text-gray-200 hover:bg-surface-4 active:bg-surface-2 border border-surface-4;
+  }
+
+  .btn-copper {
+    @apply bg-copper-500 text-white hover:bg-copper-600 active:bg-copper-700 shadow-glow-copper;
   }
   
   .input {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-echo-500 focus:border-transparent;
+    @apply w-full px-4 py-3 bg-surface-2 border border-surface-4 rounded-xl text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-echo-500/50 focus:border-echo-500 transition-all duration-300;
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-sm border border-gray-100;
+    @apply bg-surface-1 rounded-2xl border border-surface-3 shadow-soft;
+  }
+
+  .card-elevated {
+    @apply bg-surface-2 rounded-2xl border border-surface-4 shadow-elevated;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-echo-400 to-copper-400 bg-clip-text text-transparent;
+  }
+
+  .focus-overlay {
+    @apply fixed inset-0 bg-surface-0/80 backdrop-blur-sm transition-opacity duration-300 pointer-events-none z-40;
+  }
+
+  .focus-box {
+    @apply relative z-50 transition-all duration-300;
+  }
+
+  .focus-box.active {
+    @apply ring-2 ring-echo-500/50 shadow-glow-lg;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  .slide-up {
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-in,
+    .slide-up {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
   }
 }

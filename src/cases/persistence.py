@@ -215,12 +215,12 @@ class CasePersistence:
             user_uuid = _to_uuid(user_id)
             query = db.query(db_models.CaseSession).filter(
                 db_models.CaseSession.user_id == user_uuid
-            ).order_by(db_models.CaseSession.created_at.desc()).limit(limit)
+            )
 
             if status:
                 query = query.filter(db_models.CaseSession.status == status)
 
-            sessions = query.all()
+            sessions = query.order_by(db_models.CaseSession.created_at.desc()).limit(limit).all()
 
             summaries = []
             for session in sessions:

@@ -86,7 +86,33 @@ Without DATABASE_URL configured, the app works with in-memory storage per sessio
 - `GET /case/history` - Get user's case history
 - `GET /case/me/active` - Get active cases (requires auth)
 
+## Design System
+The app uses a "Clinical Calm" dark theme with Geist Mono font:
+
+**Colors:**
+- Primary: Echo teal (`#0D9CB8`)
+- Accent: Copper (`#E07B54`)
+- Surfaces: Dark grays (`#0a0a0b` to `#27272a`)
+
+**Typography:**
+- Font: Geist Mono (loaded from jsDelivr CDN)
+- Monospace styling throughout for technical aesthetic
+
+**Components:**
+- `FocusTextarea` - Text input with screen fade focus effect
+- `CaseTimeline` - Animated phase progress indicator
+- `TypingIndicator` - Animated dots for AI thinking state
+- `MessageBubble` - Animated chat messages with slide-in effect
+- `MobileNav` - Bottom tab bar for mobile navigation
+- `Toast` - Notification toasts for milestones
+
 ## Recent Changes
+- 2026-01-04: Major UI redesign with Geist Mono font
+  - Dark theme with teal/copper accent colors
+  - Added animated components (timeline, typing indicator, message bubbles)
+  - Focus-mode text box with screen fade overlay
+  - Mobile-first navigation with bottom tab bar
+  - Framer Motion animations throughout
 - 2026-01-04: Migrated from Supabase to Replit PostgreSQL
   - Created SQLAlchemy models (User, CaseSession, Message)
   - Implemented local JWT authentication (bcrypt + PyJWT)

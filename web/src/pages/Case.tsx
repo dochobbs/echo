@@ -1,7 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'motion/react';
 import { useCase } from '../hooks/useCase';
 import { DebriefCard } from '../components/DebriefCard';
+import { MessageBubble } from '../components/MessageBubble';
+import { TypingIndicator } from '../components/TypingIndicator';
+import { CaseTimeline } from '../components/CaseTimeline';
 
 export function Case() {
   const navigate = useNavigate();
@@ -38,10 +42,16 @@ export function Case() {
   if (!caseState && !loading) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <p className="text-gray-600">No active case. Start a new one from the home page.</p>
-        <button onClick={() => navigate('/')} className="btn btn-primary mt-4">
-          Go Home
-        </button>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="card p-8"
+        >
+          <p className="text-gray-400 mb-6">No active case. Start a new one from the home page.</p>
+          <button onClick={() => navigate('/')} className="btn btn-primary">
+            Go Home
+          </button>
+        </motion.div>
       </div>
     );
   }
@@ -50,87 +60,71 @@ export function Case() {
 
   return (
     <div className="flex flex-col h-[calc(100vh-8rem)]">
-      {/* Patient Info Header */}
       {caseState && (
-        <div className="bg-white border-b border-gray-200 px-4 py-3">
-          <div className="max-w-4xl mx-auto flex items-center justify-between">
-            <div>
-              <h2 className="font-medium text-gray-900">
-                {caseState.patient.name}, {caseState.patient.age} {caseState.patient.age_unit} old {caseState.patient.sex}
-              </h2>
-              <p className="text-sm text-gray-500">
-                {caseState.patient.condition_display} - Phase: {caseState.phase}
-              </p>
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-surface-1 border-b border-surface-3 px-4 py-3"
+        >
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-between mb-3">
+              <div>
+                <h2 className="font-medium text-gray-100">
+                  {caseState.patient.name}, {caseState.patient.age} {caseState.patient.age_unit} old {caseState.patient.sex}
+                </h2>
+                <p className="text-sm text-gray-500">
+                  {caseState.patient.condition_display}
+                </p>
+              </div>
+              {!isComplete && (
+                <motion.button
+                  onClick={handleEndCase}
+                  disabled={loading}
+                  className="btn btn-secondary text-sm"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  End Case
+                </motion.button>
+              )}
             </div>
-            {!isComplete && (
-              <button
-                onClick={handleEndCase}
-                disabled={loading}
-                className="btn btn-secondary text-sm"
-              >
-                End Case
-              </button>
-            )}
+            
+            <CaseTimeline currentPhase={caseState.phase} compact />
           </div>
-        </div>
+        </motion.div>
       )}
 
-      {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-4 py-6">
+      <div className="flex-1 overflow-y-auto px-4 py-6 bg-surface-0">
         <div className="max-w-2xl mx-auto space-y-4">
-          {messages.map((msg) => (
-            <div
-              key={msg.id}
-              className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
-            >
-              <div
-                className={`max-w-[80%] rounded-2xl px-4 py-3 ${
-                  msg.role === 'user'
-                    ? 'bg-echo-600 text-white'
-                    : 'bg-gray-100 text-gray-900'
-                } ${msg.failed ? 'opacity-50' : ''}`}
-              >
-                <p className="whitespace-pre-wrap">{msg.content}</p>
-                {msg.failed && (
-                  <p className="text-xs mt-1 text-red-300">Failed to send</p>
-                )}
-              </div>
-            </div>
+          {messages.map((msg, index) => (
+            <MessageBubble key={msg.id} message={msg} index={index} />
           ))}
 
-          {loading && (
-            <div className="flex justify-start">
-              <div className="bg-gray-100 rounded-2xl px-4 py-3">
-                <div className="flex items-center gap-1">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-                </div>
-              </div>
-            </div>
-          )}
+          {loading && <TypingIndicator />}
 
           <div ref={messagesEndRef} />
         </div>
       </div>
 
-      {/* Error Banner */}
       {error && (
-        <div className="bg-red-50 border-t border-red-200 px-4 py-2">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-red-500/10 border-t border-red-500/20 px-4 py-2"
+        >
           <div className="max-w-4xl mx-auto flex items-center justify-between">
-            <p className="text-sm text-red-700">{error}</p>
-            <button onClick={clearError} className="text-red-700 hover:text-red-900">
+            <p className="text-sm text-red-400">{error}</p>
+            <button onClick={clearError} className="text-red-400 hover:text-red-300 p-1">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
-        </div>
+        </motion.div>
       )}
 
-      {/* Input Area */}
       {caseState && !isComplete && (
-        <div className="bg-white border-t border-gray-200 px-4 py-4">
+        <div className="bg-surface-1 border-t border-surface-3 px-4 py-4">
           <form onSubmit={handleSubmit} className="max-w-4xl mx-auto flex gap-3">
             <input
               type="text"
@@ -141,36 +135,44 @@ export function Case() {
               className="input flex-1"
               autoFocus
             />
-            <button
+            <motion.button
               type="submit"
               disabled={!input.trim() || loading}
               className="btn btn-primary"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               Send
-            </button>
+            </motion.button>
           </form>
         </div>
       )}
 
-      {/* Completed State with Debrief */}
       {isComplete && debrief && (
-        <div className="border-t border-gray-200 px-4 py-6 bg-gray-50">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="border-t border-surface-3 px-4 py-6 bg-surface-1"
+        >
           <div className="max-w-2xl mx-auto">
             <DebriefCard debrief={debrief} onNewCase={() => navigate('/')} />
           </div>
-        </div>
+        </motion.div>
       )}
 
-      {/* Fallback if complete but no structured debrief */}
       {isComplete && !debrief && (
-        <div className="bg-echo-50 border-t border-echo-200 px-4 py-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-echo-500/10 border-t border-echo-500/20 px-4 py-4"
+        >
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-echo-700 font-medium mb-2">Case Complete!</p>
+            <p className="text-echo-400 font-medium mb-3">Case Complete! 🎉</p>
             <button onClick={() => navigate('/')} className="btn btn-primary">
               Start New Case
             </button>
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

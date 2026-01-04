@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'motion/react';
 import { api } from '../api/client';
 import type { CaseSession } from '../types';
 
@@ -41,7 +42,11 @@ export function History() {
   if (loading) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-echo-600 mx-auto" />
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+          className="w-8 h-8 border-2 border-echo-500 border-t-transparent rounded-full mx-auto"
+        />
       </div>
     );
   }
@@ -49,29 +54,45 @@ export function History() {
   if (error) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <p className="text-red-600">{error}</p>
+        <p className="text-red-400">{error}</p>
       </div>
     );
   }
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">Case History</h1>
+      <motion.h1
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-2xl font-bold text-gray-100 mb-6"
+      >
+        Case History
+      </motion.h1>
 
       {cases.length === 0 ? (
-        <div className="text-center py-12">
-          <p className="text-gray-600 mb-4">No cases yet. Start your first one!</p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="card p-8 text-center"
+        >
+          <p className="text-gray-500 mb-4">No cases yet. Start your first one!</p>
           <Link to="/" className="btn btn-primary">
             Start a Case
           </Link>
-        </div>
+        </motion.div>
       ) : (
         <div className="space-y-4">
-          {cases.map((c) => (
-            <div key={c.id} className="card p-4">
+          {cases.map((c, index) => (
+            <motion.div
+              key={c.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.05 }}
+              className="card p-4 hover:border-surface-3 transition-colors"
+            >
               <div className="flex items-start justify-between">
                 <div>
-                  <h3 className="font-medium text-gray-900">
+                  <h3 className="font-medium text-gray-100">
                     {c.condition_display}
                   </h3>
                   <p className="text-sm text-gray-500">
@@ -79,12 +100,12 @@ export function History() {
                   </p>
                 </div>
                 <span
-                  className={`px-2 py-1 text-xs rounded-full ${
+                  className={`px-2.5 py-1 text-xs font-medium rounded-full ${
                     c.status === 'completed'
-                      ? 'bg-green-100 text-green-700'
+                      ? 'bg-echo-500/20 text-echo-400 border border-echo-500/30'
                       : c.status === 'active'
-                      ? 'bg-yellow-100 text-yellow-700'
-                      : 'bg-gray-100 text-gray-700'
+                      ? 'bg-copper-500/20 text-copper-400 border border-copper-500/30'
+                      : 'bg-surface-4 text-gray-400'
                   }`}
                 >
                   {c.status}
@@ -93,19 +114,21 @@ export function History() {
 
               <div className="mt-3 flex items-center gap-4 text-sm text-gray-500">
                 <span>{formatDate(c.started_at)}</span>
+                <span className="w-1 h-1 bg-surface-4 rounded-full" />
                 <span>{formatDuration(c.duration_seconds)}</span>
+                <span className="w-1 h-1 bg-surface-4 rounded-full" />
                 <span>{c.hints_given} hints</span>
               </div>
 
               {c.status === 'active' && (
                 <Link
                   to={`/case/${c.id}`}
-                  className="mt-3 inline-block text-sm text-echo-600 hover:text-echo-700 font-medium"
+                  className="mt-3 inline-block text-sm text-echo-400 hover:text-echo-300 font-medium transition-colors"
                 >
-                  Continue case
+                  Continue case →
                 </Link>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       )}
