@@ -1,0 +1,71 @@
+# Drowning - Teaching Framework
+topic: "Drowning"
+aliases: ["drowning", "submersion injury", "near-drowning"]
+category: emergency
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Know drowning is leading cause of death in 1-4 year olds"
+  - "Understand 'dry drowning' is a myth"
+  - "Recognize who needs observation vs can go home"
+  - "Counsel on prevention at every visit"
+
+common_mistakes:
+  - "Worrying about 'dry drowning' days later (not a real entity)"
+  - "Not counseling on water safety at well visits"
+  - "Discharging symptomatic patients too early"
+  - "Not considering intentional injury in unusual circumstances"
+
+red_flags:
+  - "Any respiratory symptoms (cough, tachypnea, hypoxia)"
+  - "Altered mental status"
+  - "Prolonged submersion (>5 minutes)"
+  - "Required CPR at scene"
+  - "Aspiration"
+
+clinical_pearls:
+  - "There is no 'dry drowning' or 'secondary drowning' days later - these are myths"
+  - "If asymptomatic after submersion with brief observation (4-6 hours), safe to discharge"
+  - "Symptomatic patients need admission for monitoring"
+  - "Drowning peaks: 1-4 years (pools) and 15-19 years (lakes, rivers, alcohol)"
+  - "Survival depends on duration of submersion, temperature, immediate CPR"
+
+key_history_questions:
+  - "Duration of submersion?"
+  - "Was child conscious when pulled out?"
+  - "CPR performed? How long?"
+  - "Any vomiting or aspiration?"
+  - "Current symptoms: Cough, trouble breathing?"
+  - "Water type (pool, lake, bathtub)?"
+  - "Supervision - who was watching?"
+  - "Any seizure activity?"
+
+key_exam_findings:
+  - "Respiratory: Rate, effort, breath sounds, O2 saturation"
+  - "Mental status - GCS"
+  - "Vital signs"
+  - "Signs of trauma (head/neck injury if diving)"
+  - "Temperature (hypothermia)"
+  - "Signs of aspiration (crackles)"
+
+treatment_principles:
+  - "ABCs - standard resuscitation if needed"
+  - "Supplemental oxygen for hypoxia"
+  - "Chest X-ray if symptomatic"
+  - "Asymptomatic: 4-6 hour observation, normal CXR → can discharge"
+  - "Symptomatic: Admit for monitoring"
+  - "Severe: ICU, may need intubation, ECMO in select cases"
+  - "Warm slowly if hypothermic"
+
+disposition_guidance:
+  - "ED: All submersion events"
+  - "Home: Asymptomatic after 4-6 hours observation, normal CXR"
+  - "Admit: Any respiratory symptoms, hypoxia, aspiration"
+  - "ICU: Required CPR, prolonged submersion, altered mental status"
+  - "Counsel on prevention: Fencing, supervision, swim lessons"
+
+parent_styles: [traumatized, guilty, asking-about-dry-drowning]
+
+sources:
+  - "Szpilman D, et al. Current Concepts in Drowning Resuscitation. NEJM"
+  - "AAP Policy Statement: Prevention of Drowning"

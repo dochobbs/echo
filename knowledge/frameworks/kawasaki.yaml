@@ -1,0 +1,69 @@
+# Kawasaki Disease - Teaching Framework
+topic: "Kawasaki Disease"
+aliases: ["Kawasaki", "mucocutaneous lymph node syndrome", "KD"]
+category: emergency
+age_range_months: [3, 60]
+
+teaching_goals:
+  - "Know the diagnostic criteria"
+  - "Recognize incomplete Kawasaki"
+  - "Understand urgency of treatment (coronary artery aneurysms)"
+  - "Know IVIG + aspirin are treatment"
+
+common_mistakes:
+  - "Dismissing as viral illness and missing diagnosis"
+  - "Waiting for all 5 criteria (incomplete Kawasaki is common)"
+  - "Not getting echocardiogram"
+  - "Delaying IVIG treatment"
+
+red_flags:
+  - "Fever >5 days with ANY criteria (think incomplete Kawasaki)"
+  - "Coronary artery involvement"
+  - "Shock/hemodynamic instability"
+  - "IVIG-refractory (persistent fever after treatment)"
+
+clinical_pearls:
+  - "Fever ≥5 days + 4 of 5 criteria = Classic Kawasaki (or 3+ with positive echo)"
+  - "CREAM: Conjunctivitis (bilateral, non-purulent), Rash, Extremity changes, Adenopathy (>1.5cm, unilateral), Mucosal changes"
+  - "Incomplete Kawasaki: Fever + 2-3 criteria + lab abnormalities → treat!"
+  - "CAA risk: 25% untreated → <5% if treated with IVIG within 10 days"
+  - "Peak age: 1-2 years (80% under 5 years)"
+
+key_history_questions:
+  - "How many days of fever?"
+  - "Rash? When did it appear?"
+  - "Eye redness? (No discharge)"
+  - "Lip/mouth changes (cracked lips, strawberry tongue)?"
+  - "Swollen hands/feet? Peeling?"
+  - "Neck swelling/lymph nodes?"
+  - "Irritability - extreme? (Common)"
+
+key_exam_findings:
+  - "Fever ≥5 days (required)"
+  - "Bilateral conjunctival injection without exudate"
+  - "Polymorphous rash (can be any type)"
+  - "Lip/oral changes: Cracked lips, strawberry tongue, oral erythema"
+  - "Extremity changes: Edema, erythema of hands/feet; later peeling"
+  - "Cervical lymphadenopathy (≥1.5 cm, often unilateral)"
+  - "Extreme irritability"
+
+treatment_principles:
+  - "IVIG 2 g/kg single infusion + high-dose aspirin (80-100 mg/kg/day)"
+  - "Treat within first 10 days of fever to prevent CAA"
+  - "After afebrile 48-72 hours: Switch to low-dose aspirin (3-5 mg/kg/day)"
+  - "Echocardiogram at diagnosis, 2 weeks, 6-8 weeks"
+  - "If IVIG-refractory: Second IVIG or methylprednisolone"
+  - "Cardiology follow-up"
+
+disposition_guidance:
+  - "Admit: All suspected cases for treatment and monitoring"
+  - "Cardiology: Echocardiogram required at diagnosis"
+  - "ED referral: If diagnosed in office - needs IVIG urgently"
+  - "Follow-up: Cardiology for ongoing monitoring"
+  - "Delay live vaccines 11 months after IVIG"
+
+parent_styles: [terrified-about-heart, wants-answers, frustrated-by-delayed-diagnosis]
+
+sources:
+  - "McCrindle BW, et al. AHA Scientific Statement: Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease"
+  - "AAP Clinical Report: Kawasaki Disease"

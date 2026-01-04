@@ -1,0 +1,58 @@
+# Food Allergy Prevention - Teaching Framework
+topic: "Food Allergy Prevention"
+aliases: ["peanut allergy prevention", "early allergen introduction"]
+category: respiratory
+age_range_months: [4, 12]
+
+teaching_goals:
+  - "Understand early introduction prevents allergies"
+  - "Identify high-risk infants for early testing"
+  - "Know testing limitations (high false positive)"
+  - "Counsel appropriately on introduction"
+
+common_mistakes:
+  - "Delaying allergenic food introduction (increases risk)"
+  - "Screening with IgE panels without reaction history (false positives)"
+  - "Strict avoidance 'just in case'"
+  - "Confusing intolerance with allergy"
+
+red_flags:
+  - "Severe eczema + egg allergy (highest risk for peanut)"
+  - "Previous anaphylactic reaction"
+  - "Multiple confirmed food allergies"
+
+clinical_pearls:
+  - "Early introduction (4-6 months) PREVENTS food allergies - do not delay"
+  - "LEAP study: 80% reduction in peanut allergy with early introduction"
+  - "High-risk (severe eczema): May need peanut IgE before introduction"
+  - "Do NOT screen with IgE panels without history of reaction - high false positive"
+
+key_history_questions:
+  - "Any eczema? How severe?"
+  - "Any known allergies?"
+  - "Any previous reactions to foods?"
+  - "Family history of food allergies?"
+  - "Has the child started solids?"
+  - "Which foods introduced so far?"
+
+key_exam_findings:
+  - "Eczema presence and severity"
+  - "Growth parameters"
+  - "No active allergic symptoms"
+
+treatment_principles:
+  - "Introduce peanut, egg, dairy early (4-6 months)"
+  - "High-risk (severe eczema): Consider peanut IgE testing first"
+  - "Positive test alone is not diagnosis - need clinical correlation"
+  - "Allergist referral for confirmed allergies or high-risk"
+
+disposition_guidance:
+  - "Outpatient: Counseling on early introduction"
+  - "Allergist referral: Severe eczema, positive testing, confirmed reactions"
+  - "No testing: In absence of reaction history"
+
+parent_styles: [anxious-about-allergies, delayed-introduction, wants-testing]
+
+sources:
+  - "Togias A, et al. NIAID: Addendum Guidelines for Peanut Allergy Prevention (2017)"
+  - "AAP Clinical Report: Effects of Early Nutritional Interventions"

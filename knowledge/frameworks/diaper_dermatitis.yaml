@@ -1,0 +1,62 @@
+# Diaper Dermatitis - Teaching Framework
+topic: "Diaper Dermatitis"
+aliases: ["diaper rash", "nappy rash", "candidal diaper rash"]
+category: derm
+age_range_months: [0, 36]
+
+teaching_goals:
+  - "Differentiate irritant from candidal diaper dermatitis"
+  - "Know barrier creams are first-line for irritant rash"
+  - "Recognize when antifungal treatment is needed"
+  - "Avoid inappropriate steroid use in diaper area"
+
+common_mistakes:
+  - "Using high-potency steroids in diaper area (thin skin, occlusion)"
+  - "Missing satellite lesions indicating candida"
+  - "Not counseling on diaper hygiene and frequent changes"
+  - "Treating all diaper rash as candida"
+
+red_flags:
+  - "Erosions, ulceration (severe irritant or infection)"
+  - "Persistent rash despite treatment (psoriasis, Langerhans cell histiocytosis)"
+  - "Associated with failure to thrive (zinc deficiency, immunodeficiency)"
+  - "Jacquet erosive dermatitis"
+
+clinical_pearls:
+  - "Irritant: Spares creases (convex surfaces affected) - barrier cream is treatment"
+  - "Candida: INVOLVES creases + satellite pustules - needs antifungal"
+  - "Zinc oxide paste: Barrier protection, apply liberally at each change"
+  - "DO NOT use combination steroid/antifungal products in diaper area"
+
+key_history_questions:
+  - "How long has rash been present?"
+  - "Recent antibiotics (predisposes to candida)?"
+  - "Diaper changing frequency?"
+  - "Type of diapers (cloth vs disposable)?"
+  - "What products have been used?"
+  - "Any diarrhea?"
+
+key_exam_findings:
+  - "Distribution: Creases spared (irritant) vs creases involved (candida)"
+  - "Satellite lesions (candida)"
+  - "Beefy red, well-demarcated (candida)"
+  - "Erosions or ulceration"
+  - "Check for oral thrush (if candida suspected)"
+
+treatment_principles:
+  - "Irritant: Barrier cream (zinc oxide) + frequent diaper changes + air exposure"
+  - "Candidal: Topical nystatin or clotrimazole + barrier cream"
+  - "Low-potency steroid (hydrocortisone 1%): Brief course only if very inflamed"
+  - "AVOID: High-potency steroids, combination products"
+  - "Treat oral thrush if present (source of reinfection)"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Follow-up: If not improving in 1 week"
+  - "Dermatology: Refractory, erosive, or atypical presentation"
+
+parent_styles: [over-using-products, wants-quick-fix, natural-remedies]
+
+sources:
+  - "Blume-Peytavi U, et al. Prevention and Treatment of Diaper Dermatitis. Pediatric Dermatology"
+  - "AAP: Diaper Rash Care"

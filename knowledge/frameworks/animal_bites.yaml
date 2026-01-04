@@ -1,0 +1,72 @@
+# Animal Bites - Teaching Framework
+topic: "Animal Bites"
+aliases: ["dog bite", "cat bite", "animal bite", "human bite"]
+category: emergency
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Know which bites require antibiotics"
+  - "Understand rabies post-exposure prophylaxis indications"
+  - "Recognize when to suture vs leave open"
+  - "Assess tetanus status"
+
+common_mistakes:
+  - "Suturing all bites (high-risk wounds should be left open)"
+  - "Not giving prophylactic antibiotics for high-risk bites"
+  - "Missing cat bites as higher risk than dog bites"
+  - "Not assessing rabies risk"
+
+red_flags:
+  - "Signs of infection (spreading cellulitis, purulent drainage)"
+  - "Deep puncture wounds, especially from cats"
+  - "Wounds near joints, tendons, bones"
+  - "Bites to hands, face, genitals"
+  - "Immunocompromised patient"
+  - "Wild animal or unprovoked attack (rabies risk)"
+
+clinical_pearls:
+  - "Cat bites: HIGHER infection risk than dogs (deep puncture) - always give prophylactic antibiotics"
+  - "Dog bites: Crush injuries, lower infection rate than cats"
+  - "Human bites: Treat like cat bites - high infection risk, include anaerobic coverage"
+  - "Augmentin (amox-clav): First-line prophylaxis for most bites - covers Pasteurella, Capnocytophaga, anaerobes"
+  - "Rabies PEP: Bats, raccoons, skunks, foxes - contact public health for guidance"
+
+key_history_questions:
+  - "What animal? Wild or domestic? Known or stray?"
+  - "Provoked or unprovoked attack?"
+  - "When did bite occur?"
+  - "Where on body?"
+  - "Any treatment so far?"
+  - "Animal's vaccination status (if known)?"
+  - "Child's immunization status (tetanus)?"
+  - "Any immunocompromising conditions?"
+
+key_exam_findings:
+  - "Wound assessment: Puncture vs laceration vs crush"
+  - "Depth and tissue involvement"
+  - "Signs of infection (erythema, warmth, drainage, lymphangitis)"
+  - "Neurovascular status distal to injury"
+  - "Joint involvement (test ROM, check for penetration)"
+  - "Document wound size, location precisely"
+
+treatment_principles:
+  - "Irrigation: Copious with saline or water - most important treatment"
+  - "Debridement: Remove devitalized tissue"
+  - "Suturing: Primary closure for face; leave open for hands, punctures, >24h old"
+  - "Prophylactic antibiotics: Amox-clav x 3-5 days for cat bites, hand bites, deep punctures, immunocompromised"
+  - "Tetanus: Update if needed"
+  - "Rabies PEP: Contact public health - indicated for bats, wild carnivores, stray/unknown animals"
+
+disposition_guidance:
+  - "Home: Most bites with wound care and antibiotics as indicated"
+  - "ED: Deep wounds, joint/tendon/bone involvement, requiring sedation for repair"
+  - "Admit: Established infection requiring IV antibiotics, hand infections"
+  - "Report: Dog bites to animal control (local requirements vary)"
+  - "Follow-up: 24-48 hours for wound check, especially high-risk wounds"
+
+parent_styles: [panicked-about-rabies, wants-antibiotics, angry-at-animal-owner]
+
+sources:
+  - "Stevens DL, et al. IDSA Guidelines: Skin and Soft Tissue Infections (Bite Wound Section)"
+  - "AAP Red Book: Animal Bites, Rabies"
+  - "CDC: Rabies Post-Exposure Prophylaxis Guidelines"

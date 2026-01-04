@@ -1,0 +1,60 @@
+# Acute Otitis Media - Teaching Framework
+topic: "Acute Otitis Media"
+aliases: ["AOM", "ear infection"]
+category: infectious
+age_range_months: [6, 36]
+seasonality:
+  peak_months: [11, 12, 1, 2, 3]
+
+teaching_goals:
+  - "Distinguish AOM from otitis media with effusion (OME)"
+  - "Apply AAP observation criteria (age, severity, laterality)"
+  - "Choose appropriate first-line antibiotic and correct dosing"
+  - "Counsel on pain management as primary concern"
+  - "Recognize when to refer to ENT"
+
+common_mistakes:
+  - "Treating OME with antibiotics"
+  - "Using standard-dose amoxicillin instead of high-dose"
+  - "Not addressing pain management"
+  - "Missing bilateral vs unilateral distinction for observation"
+  - "Forgetting to reassess if no improvement in 48-72 hours"
+
+red_flags:
+  - "Mastoiditis (postauricular swelling, protrusion of pinna)"
+  - "Facial nerve palsy"
+  - "Signs of intracranial extension"
+  - "Toxic-appearing child"
+
+clinical_pearls:
+  - "Bulging TM is the key finding - redness alone is not diagnostic"
+  - "High-dose amoxicillin: 80-90 mg/kg/day divided BID"
+  - "Observation option: >2yo, unilateral, non-severe, reliable follow-up"
+  - "Pain control (ibuprofen/acetaminophen) is often more important than antibiotics"
+  - "Recent antibiotic use → consider amox-clav or ceftriaxone"
+
+key_history_questions:
+  - "Ear tugging or pain?"
+  - "Fever?"
+  - "Recent URI symptoms?"
+  - "Previous ear infections? How many?"
+  - "Any antibiotics in past 30 days?"
+  - "Daycare attendance?"
+
+key_exam_findings:
+  - "TM mobility (pneumatic otoscopy)"
+  - "TM position (bulging vs retracted vs neutral)"
+  - "TM color and translucency"
+  - "Presence of effusion"
+  - "Mastoid tenderness or swelling"
+
+treatment_principles:
+  - "First-line: High-dose amoxicillin"
+  - "Penicillin allergy: Cefdinir or azithromycin"
+  - "Treatment failure: Amoxicillin-clavulanate or ceftriaxone IM"
+  - "Duration: 10 days if <2yo, 5-7 days if >2yo with mild disease"
+
+parent_styles: [anxious, experienced, antibiotic-seeking, antibiotic-hesitant]
+
+sources:
+  - "AAP Clinical Practice Guideline: AOM (2013)"

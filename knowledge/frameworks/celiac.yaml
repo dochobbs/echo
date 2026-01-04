@@ -1,0 +1,67 @@
+# Celiac Disease - Teaching Framework
+topic: "Celiac Disease"
+aliases: ["celiac", "celiac sprue", "gluten intolerance"]
+category: gi
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Know who to screen and with what test"
+  - "Recognize non-GI presentations"
+  - "Understand testing requires gluten exposure"
+  - "Counsel on lifelong gluten-free diet"
+
+common_mistakes:
+  - "Testing after patient has already started gluten-free diet"
+  - "Using IgA TTG in IgA-deficient patient (false negative)"
+  - "Missing non-GI presentations (anemia, short stature)"
+  - "Not screening at-risk groups (Type 1 DM, Down syndrome)"
+
+red_flags:
+  - "Failure to thrive despite adequate intake"
+  - "Severe anemia unresponsive to iron"
+  - "Recurrent unexplained fractures (osteoporosis)"
+  - "Dermatitis herpetiformis"
+
+clinical_pearls:
+  - "Screen with IgA TTG + total IgA (TTG may be falsely negative if IgA deficient)"
+  - "Must be eating gluten for testing to be accurate - at least 2-4 weeks"
+  - "Screen at-risk: Type 1 DM, Down syndrome, Turner syndrome, family history"
+  - "Non-GI presentations: Iron deficiency anemia, short stature, dental enamel defects, delayed puberty"
+  - "Biopsy confirms diagnosis (though can skip if TTG very high + symptoms + EMA positive)"
+
+key_history_questions:
+  - "GI symptoms: Diarrhea, constipation, bloating, abdominal pain?"
+  - "Growth concerns? Weight trajectory?"
+  - "Anemia? Fatigue?"
+  - "Family history of celiac or autoimmune diseases?"
+  - "Age when gluten introduced?"
+  - "Associated conditions (Type 1 DM, thyroid disease)?"
+  - "Already on gluten-free diet? (Need to be eating gluten to test)"
+
+key_exam_findings:
+  - "Growth parameters - height, weight, BMI"
+  - "Abdominal exam - distension"
+  - "Signs of malnutrition"
+  - "Pallor (anemia)"
+  - "Dental enamel defects"
+  - "Dermatitis herpetiformis (vesicular, pruritic, elbows/knees)"
+
+treatment_principles:
+  - "Lifelong strict gluten-free diet"
+  - "GI referral for diagnosis confirmation and management"
+  - "Dietitian consultation essential"
+  - "Screen for nutritional deficiencies (iron, vitamin D, B12, folate)"
+  - "Monitor: TTG for adherence, growth, associated conditions"
+  - "Screen first-degree relatives"
+
+disposition_guidance:
+  - "GI referral: All suspected cases for biopsy confirmation"
+  - "Dietitian: Essential for education on gluten-free diet"
+  - "Screen siblings and parents"
+  - "Follow-up: Monitor growth, adherence, screen for complications"
+
+parent_styles: [overwhelmed-by-diet-change, skeptical, already-gluten-free]
+
+sources:
+  - "Hill ID, et al. NASPGHAN Clinical Report: Celiac Disease in Children"
+  - "ESPGHAN Guidelines: Diagnosis of Celiac Disease"

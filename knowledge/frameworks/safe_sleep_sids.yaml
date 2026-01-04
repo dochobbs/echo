@@ -1,0 +1,62 @@
+# Safe Sleep & SIDS Prevention - Teaching Framework
+topic: "Safe Sleep & SIDS Prevention"
+aliases: ["SIDS", "safe sleep", "sudden infant death"]
+category: newborn
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Counsel on ABCs: Alone, Back, Crib"
+  - "Understand why inclined sleepers are banned"
+  - "Know when to stop swaddling"
+  - "Distinguish room-sharing (good) from bed-sharing (risky)"
+
+common_mistakes:
+  - "Allowing inclined sleepers or 'reflux' wedges"
+  - "Continuing swaddling after rolling attempts begin"
+  - "Confusing room-sharing with bed-sharing"
+  - "Not addressing unsafe sleep at every visit"
+
+red_flags:
+  - "Bed-sharing with infant"
+  - "Prone or side sleeping"
+  - "Soft bedding, pillows, bumpers in crib"
+  - "Swaddling after rolling begins"
+  - "Inclined sleep surfaces"
+
+clinical_pearls:
+  - "ABCs: Alone, on their Back, in a Crib - every sleep"
+  - "Inclined sleepers are BANNED - sleep surface must be flat (0 degrees)"
+  - "Stop swaddling when infant attempts to roll (usually 2-3 months)"
+  - "Room-sharing (same room, different bed) reduces SIDS by 50%"
+  - "Bed-sharing (same bed) INCREASES risk"
+
+key_history_questions:
+  - "Where does baby sleep?"
+  - "What position do you put baby down to sleep?"
+  - "Any soft items in the sleep space?"
+  - "Do you use any sleep positioners or wedges?"
+  - "Do you swaddle? Is baby rolling yet?"
+  - "Does anyone share the bed with baby?"
+
+key_exam_findings:
+  - "Normal developmental exam"
+  - "No signs of positional head deformity"
+  - "Rolling ability assessment"
+
+treatment_principles:
+  - "Education at every well visit"
+  - "Model safe sleep in hospital"
+  - "Address specific unsafe practices without judgment"
+  - "Provide resources for safe sleep environments"
+
+disposition_guidance:
+  - "Outpatient counseling at every visit"
+  - "Social work referral if persistent unsafe practices"
+  - "Community resources for safe cribs if needed"
+
+parent_styles: [receptive, defensive, bed-sharing-by-choice]
+
+sources:
+  - "Moon RY, et al. AAP: Sleep-Related Infant Deaths (2022)"
+  - "AAP Clinical Report: Safe Sleep and Skin-to-Skin Care"
+  - "AAP Policy Statement: SIDS and Sleep-Related Infant Deaths"

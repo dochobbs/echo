@@ -1,0 +1,69 @@
+# Learning Disabilities - Teaching Framework
+topic: "Specific Learning Disorders"
+aliases: ["learning disability", "dyslexia", "dyscalculia", "dysgraphia", "LD"]
+category: developmental
+age_range_months: [60, 216]
+
+teaching_goals:
+  - "Recognize warning signs of learning disabilities"
+  - "Know evaluation is through school (not medical testing)"
+  - "Understand comorbidity with ADHD"
+  - "Advocate for appropriate accommodations"
+
+common_mistakes:
+  - "Ordering 'learning disability testing' in medical setting"
+  - "Missing ADHD comorbidity (30-40% overlap)"
+  - "Attributing LD to laziness or lack of effort"
+  - "Not advocating for school evaluation"
+
+red_flags:
+  - "Reading significantly below grade level"
+  - "Unexplained academic decline"
+  - "Significant discrepancy between ability and achievement"
+  - "School refusal secondary to academic struggles"
+
+clinical_pearls:
+  - "Specific LD: Dyslexia (reading), dyscalculia (math), dysgraphia (writing)"
+  - "Diagnosis through PSYCHOEDUCATIONAL testing at school - not medical tests"
+  - "Request evaluation in WRITING to trigger timeline requirements"
+  - "IEP vs 504: IEP for specialized instruction; 504 for accommodations only"
+  - "ADHD comorbidity: 30-40% have both - treat ADHD, it helps LD too"
+
+key_history_questions:
+  - "What grades? Which subjects are hardest?"
+  - "Reading level? Math skills?"
+  - "Writing difficulties?"
+  - "Attention/focus issues? (ADHD screen)"
+  - "Family history of learning problems?"
+  - "Prior evaluations or services?"
+  - "Anxiety or avoidance about school?"
+  - "Strengths - what does child do well?"
+
+key_exam_findings:
+  - "General developmental assessment"
+  - "Vision and hearing screening"
+  - "ADHD screening (Vanderbilt, Conners)"
+  - "Mental status, anxiety/depression screening"
+  - "Neurologic exam (usually normal)"
+
+treatment_principles:
+  - "Request psychoeducational evaluation from school IN WRITING"
+  - "IEP: If qualifies, includes specialized instruction"
+  - "504 Plan: Accommodations (extra time, preferential seating)"
+  - "Treat ADHD if present - improves academic function"
+  - "Evidence-based reading interventions (Orton-Gillingham for dyslexia)"
+  - "Assistive technology when appropriate"
+
+disposition_guidance:
+  - "School: Primary resource for evaluation and intervention"
+  - "Request evaluation in writing → triggers legal timeline"
+  - "Psychology: Private neuropsychological testing if school declines"
+  - "Consider: Vision therapy, audiologic processing evaluation if indicated"
+  - "Support: Advocacy organizations (Learning Disabilities Association)"
+
+parent_styles: [frustrated, advocating, blaming-school, in-denial]
+
+sources:
+  - "AAP Clinical Report: Learning Disabilities, Dyslexia, and Vision"
+  - "IDEA: Individuals with Disabilities Education Act"
+  - "Section 504 of Rehabilitation Act"

@@ -1,0 +1,74 @@
+# Child Abuse and Neglect - Teaching Framework
+topic: "Child Abuse and Neglect"
+aliases: ["NAT", "non-accidental trauma", "child maltreatment", "physical abuse"]
+category: emergency
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize concerning injury patterns"
+  - "Know mandatory reporting requirements"
+  - "Perform appropriate workup"
+  - "Document carefully and objectively"
+
+common_mistakes:
+  - "Not reporting due to 'nice family'"
+  - "Asking leading questions"
+  - "Incomplete documentation"
+  - "Not doing skeletal survey in young children with concerning injuries"
+
+red_flags:
+  - "TEN-4: Bruising on Torso, Ears, Neck in child <4 years (or any bruise <4 months old)"
+  - "Mechanism inconsistent with developmental stage"
+  - "Multiple injuries at different stages"
+  - "Delay in seeking care"
+  - "Changing/inconsistent story"
+  - "Pattern injuries (belt, cord, hand)"
+
+clinical_pearls:
+  - "TEN-4 Rule: Bruising on Torso, Ears, Neck in <4 year olds, OR any bruise in <4 month old"
+  - "Those who don't cruise rarely bruise - bruises in non-mobile infants concerning"
+  - "Skeletal survey: All children <2 years with suspected abuse"
+  - "Mandatory reporter: You MUST report if reasonable suspicion - investigation is CPS's job"
+  - "Document objectively: Describe what you see, quote statements, don't interpret"
+
+key_history_questions:
+  - "How did this injury happen?"
+  - "Who was present? When?"
+  - "How long ago? When did you notice?"
+  - "Was there delay in seeking care?"
+  - "Any prior injuries?"
+  - "Developmental level - can child do what's described?"
+  - "Who are the caregivers? Living situation?"
+  - "Interview child alone if verbal and appropriate"
+
+key_exam_findings:
+  - "Document ALL injuries with location, size, color, shape"
+  - "Photography (with measurement scale)"
+  - "Patterned injuries (loop marks, handprints)"
+  - "Bruises at various stages of healing"
+  - "Injuries in protected areas (ears, neck, torso, genitals)"
+  - "Oral injuries in non-mobile infants"
+  - "Fundoscopic exam (retinal hemorrhages = abusive head trauma)"
+
+treatment_principles:
+  - "Treat injuries as indicated"
+  - "Skeletal survey: All children <2 years with suspected abuse"
+  - "Head CT/MRI: If concern for abusive head trauma"
+  - "Ophthalmology: Dilated fundoscopic exam for abusive head trauma"
+  - "Labs: CBC, CMP, LFTs, lipase, UA (occult trauma)"
+  - "Report to Child Protective Services - mandatory"
+  - "Consult child abuse specialist if available"
+
+disposition_guidance:
+  - "Admit: If unsafe to discharge, needs further workup"
+  - "Report: Mandatory - call CPS hotline"
+  - "Social work: Involve immediately"
+  - "Document carefully: Objective, detailed, quoted statements"
+  - "Photography: With scale for measurements"
+  - "Follow-up skeletal survey: 2 weeks later to identify healing fractures"
+
+parent_styles: [defensive, minimizing, cooperative, overwhelmed]
+
+sources:
+  - "Christian CW, et al. AAP Clinical Report: Evaluation of Suspected Child Physical Abuse"
+  - "Sheets LK, et al. TEN-4 Bruising Rule. Pediatrics"

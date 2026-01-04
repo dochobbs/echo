@@ -1,0 +1,67 @@
+# Nursemaid's Elbow - Teaching Framework
+topic: "Nursemaid's Elbow"
+aliases: ["nursemaid's elbow", "radial head subluxation", "pulled elbow"]
+category: emergency
+age_range_months: [6, 60]
+
+teaching_goals:
+  - "Recognize classic presentation and mechanism"
+  - "Perform reduction maneuver confidently"
+  - "Know imaging is not needed for typical presentation"
+  - "Counsel on prevention"
+
+common_mistakes:
+  - "Ordering X-rays before attempting reduction"
+  - "Missing atypical mechanism (fall on outstretched hand)"
+  - "Not educating parents on prevention"
+  - "Misdiagnosing as clavicle or supracondylar fracture"
+
+red_flags:
+  - "Significant swelling or deformity (fracture)"
+  - "Point tenderness over bone"
+  - "Mechanism involving fall (consider supracondylar fracture)"
+  - "Child over 5 years (subluxation less common)"
+  - "Failure of reduction to restore function"
+
+clinical_pearls:
+  - "Classic mechanism: Longitudinal traction on extended, pronated arm (pulling toddler by hand)"
+  - "Child holds arm pronated, close to body, refuses to use"
+  - "No X-ray needed for classic presentation - go straight to reduction"
+  - "Reduction: Supination + flexion or hyperpronation - feel 'click'"
+  - "Child uses arm within 10-15 minutes after successful reduction"
+
+key_history_questions:
+  - "Mechanism - was arm pulled or yanked?"
+  - "Or did child fall? On outstretched hand?"
+  - "When did this happen?"
+  - "Has this happened before?"
+  - "Has child used the arm at all since?"
+  - "Any swelling or bruising?"
+
+key_exam_findings:
+  - "Arm held pronated, slightly flexed, close to body"
+  - "Refuses to use arm, cries when moved"
+  - "NO swelling (if swelling present, consider fracture)"
+  - "No point tenderness over clavicle, humerus, radius, ulna"
+  - "Elbow appears normal"
+  - "Wrist and hand move normally when not moving elbow"
+
+treatment_principles:
+  - "Reduction technique: Hyperpronation (higher success) OR supination-flexion"
+  - "Hyperpronation: Support elbow, fully pronate forearm with pressure on radial head"
+  - "Supination-flexion: Supinate forearm while flexing elbow, finger on radial head for 'click'"
+  - "Successful reduction: Child uses arm within 10-15 minutes"
+  - "If unsuccessful: X-ray to rule out fracture, try again"
+  - "Sling: Only if repeated reduction attempts needed"
+
+disposition_guidance:
+  - "Home: After successful reduction and observed use of arm"
+  - "No X-ray needed for typical presentation"
+  - "X-ray if: Mechanism atypical, swelling, failed reduction, no improvement"
+  - "Counsel: Don't pull on extended arm, recurrence common"
+
+parent_styles: [guilty, anxious, scared-about-fracture]
+
+sources:
+  - "Macias CG. Radial Head Subluxation. Pediatrics in Review"
+  - "Toupin P, et al. Comparison of Reduction Methods for Nursemaid's Elbow"

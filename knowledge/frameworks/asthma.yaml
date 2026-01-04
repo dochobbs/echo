@@ -1,0 +1,64 @@
+# Asthma Diagnosis & Management - Teaching Framework
+topic: "Asthma"
+aliases: ["reactive airway disease", "RAD", "wheezing"]
+category: respiratory
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Classify asthma severity and control"
+  - "Apply SMART therapy concept"
+  - "Use Rule of Twos for assessment"
+  - "Know spacers are as effective as nebulizers"
+
+common_mistakes:
+  - "Using albuterol alone for persistent asthma"
+  - "Not prescribing ICS for persistent symptoms"
+  - "Nebulizer preference over MDI with spacer"
+  - "Not teaching proper inhaler technique"
+
+red_flags:
+  - "Severe exacerbation (can't speak in sentences)"
+  - "History of ICU admission or intubation"
+  - "Poor adherence to controller medication"
+  - "Silent chest on auscultation"
+
+clinical_pearls:
+  - "SMART Therapy: ICS-Formoterol (Symbicort) as both controller AND reliever - superior to albuterol alone"
+  - "Rule of Twos: Symptoms >2x/week or Night awakening >2x/month = Persistent asthma = Needs controller"
+  - "MDIs with spacers are AS EFFECTIVE as nebulizers for acute flares"
+  - "Inhaler technique is often the problem, not the medication"
+
+key_history_questions:
+  - "How often do you use albuterol (reliever)?"
+  - "Night-time symptoms?"
+  - "Activity limitations?"
+  - "Missed school/daycare due to asthma?"
+  - "Any ED visits or hospitalizations?"
+  - "Current medications and adherence?"
+  - "Known triggers?"
+
+key_exam_findings:
+  - "Respiratory rate"
+  - "Work of breathing"
+  - "Wheezing (expiratory > inspiratory)"
+  - "Air entry"
+  - "Accessory muscle use"
+  - "Oxygen saturation"
+  - "Ability to speak in full sentences"
+
+treatment_principles:
+  - "Intermittent: SABA as needed only"
+  - "Persistent: Daily ICS, consider ICS-LABA for moderate-severe"
+  - "Acute: SABA + systemic steroids (prednisone 1-2 mg/kg)"
+  - "Always use spacer with MDI"
+
+disposition_guidance:
+  - "Outpatient: Mild exacerbation, good response to treatment"
+  - "Observe: Moderate exacerbation, assess response"
+  - "Admit: Severe exacerbation, poor response, high-risk features"
+
+parent_styles: [worried-about-steroids, non-adherent, well-controlled]
+
+sources:
+  - "NHLBI/EPR-4: 2020 Focused Updates to Asthma Management Guidelines"
+  - "GINA Report: Global Strategy for Asthma Management"

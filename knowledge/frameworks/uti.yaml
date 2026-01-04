@@ -1,0 +1,62 @@
+# Urinary Tract Infection (UTI) - Teaching Framework
+topic: "Urinary Tract Infection"
+aliases: ["UTI", "bladder infection", "cystitis", "pyelonephritis"]
+category: infectious
+age_range_months: [2, 24]
+
+teaching_goals:
+  - "Apply correct diagnostic criteria (pyuria AND culture)"
+  - "Know limitations of bag urine specimens"
+  - "Order appropriate imaging after first febrile UTI"
+  - "Understand when VCUG is indicated"
+
+common_mistakes:
+  - "Diagnosing UTI from bag urine alone"
+  - "Not requiring pyuria for diagnosis"
+  - "Ordering VCUG for all first UTIs (only if US abnormal or recurrent)"
+  - "Missing UTI in febrile infant without source"
+
+red_flags:
+  - "Febrile infant with no source"
+  - "Recurrent UTIs"
+  - "Abnormal renal ultrasound"
+  - "Poor response to antibiotics"
+
+clinical_pearls:
+  - "Diagnostic criteria: Pyuria (WBCs) AND >50k CFU/mL culture"
+  - "Bag urine is only good for RULING OUT (if negative)"
+  - "Catheter or suprapubic aspiration required for diagnosis"
+  - "RBUS for ALL febrile infants 2-24mo after first UTI"
+  - "VCUG only if: US abnormal OR recurrent UTI"
+
+key_history_questions:
+  - "Fever - how high, how long?"
+  - "Any urinary symptoms (older children)?"
+  - "Previous UTIs?"
+  - "Bowel habits - constipation?"
+  - "Prenatal ultrasound - any kidney abnormalities?"
+  - "Family history of vesicoureteral reflux?"
+
+key_exam_findings:
+  - "Temperature"
+  - "Abdominal exam (suprapubic/CVA tenderness)"
+  - "Genital exam (circumcision status, labial adhesions)"
+  - "Hydration status"
+
+treatment_principles:
+  - "Empiric antibiotics after proper urine collection"
+  - "Oral antibiotics as effective as IV for uncomplicated"
+  - "Duration: 7-14 days for febrile UTI"
+  - "Follow-up culture not routinely needed if clinically improved"
+
+disposition_guidance:
+  - "Outpatient: Well-appearing, tolerating PO, reliable follow-up"
+  - "Admit: Ill-appearing, unable to tolerate PO, very young infant"
+  - "Imaging: RBUS for all first febrile UTI 2-24 months"
+
+parent_styles: [worried-about-kidneys, experienced, wants-fast-results]
+
+sources:
+  - "AAP CPG: Diagnosis and Management of Initial UTI (2016)"
+  - "Choosing Wisely: Imaging After First Febrile UTI"
+  - "Pediatrics: Urine Sample Collection Methods"

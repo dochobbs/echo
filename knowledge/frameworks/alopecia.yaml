@@ -1,0 +1,64 @@
+# Alopecia - Teaching Framework
+topic: "Alopecia"
+aliases: ["hair loss", "alopecia areata", "telogen effluvium"]
+category: derm
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Differentiate alopecia areata from tinea capitis"
+  - "Recognize traction alopecia patterns"
+  - "Know telogen effluvium is usually self-limited"
+  - "Identify when evaluation for systemic disease is needed"
+
+common_mistakes:
+  - "Treating alopecia areata with antifungals (it's autoimmune)"
+  - "Missing tinea capitis (do KOH/culture)"
+  - "Not asking about hair care practices (traction alopecia)"
+  - "Over-investigating self-limited telogen effluvium"
+
+red_flags:
+  - "Signs of systemic illness (thyroid, lupus, iron deficiency)"
+  - "Scarring alopecia (permanent)"
+  - "Trichotillomania with other self-harm behaviors"
+  - "Rapid progression or total hair loss"
+
+clinical_pearls:
+  - "Alopecia areata: Smooth, round patches WITHOUT scale - 'exclamation point' hairs at border"
+  - "Tinea capitis: Scaling, broken hairs, may have lymphadenopathy"
+  - "Telogen effluvium: Diffuse shedding 2-3 months after stressor (illness, surgery, childbirth)"
+  - "Traction alopecia: Frontal/temporal hairline recession from tight hairstyles"
+
+key_history_questions:
+  - "When did hair loss start? Sudden or gradual?"
+  - "Any recent illness, surgery, or stress?"
+  - "Family history of autoimmune diseases?"
+  - "Hair care practices? Tight hairstyles?"
+  - "Any pulling or twisting of hair?"
+  - "Other symptoms (fatigue, weight changes)?"
+
+key_exam_findings:
+  - "Pattern of hair loss (patchy vs diffuse)"
+  - "Scalp appearance (scaling, erythema, scarring)"
+  - "Hair pull test (positive in telogen effluvium)"
+  - "Exclamation point hairs (alopecia areata)"
+  - "Check for nail pitting (associated with alopecia areata)"
+  - "Thyroid exam, signs of systemic disease"
+
+treatment_principles:
+  - "Alopecia areata: Often regrows spontaneously; topical steroids, minoxidil"
+  - "Telogen effluvium: Reassurance - regrows in 3-6 months"
+  - "Traction alopecia: Stop offending hairstyle - may be permanent if chronic"
+  - "Tinea capitis: Oral antifungal (see tinea framework)"
+  - "Trichotillomania: Behavioral therapy referral"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Dermatology referral: Alopecia areata, scarring alopecia, uncertain diagnosis"
+  - "Workup if indicated: TSH, CBC, ferritin, ANA"
+  - "Psychology/psychiatry: Trichotillomania"
+
+parent_styles: [concerned-about-appearance, wants-testing, anxious]
+
+sources:
+  - "Gilhar A, et al. Alopecia Areata. NEJM"
+  - "AAP: Hair Loss in Children"

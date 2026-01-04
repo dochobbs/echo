@@ -1,0 +1,63 @@
+# Pertussis (Whooping Cough) - Teaching Framework
+topic: "Pertussis"
+aliases: ["whooping cough", "100-day cough"]
+category: infectious
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize age-specific presentations"
+  - "Know treatment serves dual purpose (patient + contacts)"
+  - "Understand prophylaxis requirements"
+  - "Identify high-risk infants"
+
+common_mistakes:
+  - "Expecting 'whoop' in infants (they present with APNEA)"
+  - "Not testing teens with prolonged cough"
+  - "Forgetting prophylaxis for household contacts"
+  - "Not recognizing mild presentation in vaccinated children"
+
+red_flags:
+  - "Apnea in young infant"
+  - "Cyanosis with paroxysms"
+  - "Post-tussive vomiting"
+  - "Infant <6 months (high complication rate)"
+
+clinical_pearls:
+  - "INFANTS present with APNEA, not whoop"
+  - "TEENS present with persistent cough >2 weeks"
+  - "Azithromycin: Treats patient AND prevents spread"
+  - "Prophylaxis: ALL household contacts regardless of vaccination status"
+
+key_history_questions:
+  - "Duration of cough?"
+  - "Character - paroxysmal? Whooping sound?"
+  - "Post-tussive vomiting?"
+  - "Any apneic episodes?"
+  - "Vaccination status?"
+  - "Sick contacts?"
+  - "Household member vaccination status?"
+
+key_exam_findings:
+  - "Paroxysmal coughing"
+  - "Post-tussive gagging or vomiting"
+  - "Subconjunctival hemorrhage"
+  - "Oxygen saturation (check during and after paroxysm)"
+  - "Signs of respiratory distress"
+
+treatment_principles:
+  - "Azithromycin: 10 mg/kg day 1, then 5 mg/kg days 2-5"
+  - "Alternative: TMP-SMX"
+  - "Prophylaxis for all close contacts (same regimen)"
+  - "Treatment doesn't shorten course but reduces transmission"
+
+disposition_guidance:
+  - "Admit: Infants <6 months, apnea, hypoxia, feeding difficulties"
+  - "Outpatient: Older children without complications"
+  - "Public health notification required"
+
+parent_styles: [scared-about-infant, frustrated-with-cough-duration, needs-work-note]
+
+sources:
+  - "AAP Red Book: Pertussis"
+  - "CDC: Recommended Antimicrobial Agents for Pertussis Treatment and Prophylaxis"
+  - "American Family Physician: Pertussis Recognition and Management"

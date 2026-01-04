@@ -1,0 +1,64 @@
+# Breastfeeding & Nutrition - Teaching Framework
+topic: "Breastfeeding & Infant Nutrition"
+aliases: ["breastfeeding", "infant feeding", "nutrition"]
+category: newborn
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Counsel on Vitamin D supplementation for breastfed infants"
+  - "Recognize significant weight loss requiring intervention"
+  - "Understand early introduction of allergenic foods"
+  - "Know true contraindications to breastfeeding"
+
+common_mistakes:
+  - "Forgetting Vitamin D 400 IU daily for breastfed infants"
+  - "Not evaluating >10% weight loss in first week"
+  - "Delaying introduction of allergenic foods (increases allergy risk)"
+  - "Listing incorrect contraindications to breastfeeding"
+
+red_flags:
+  - ">10% weight loss in first week"
+  - "Poor latch with nipple trauma"
+  - "Inadequate wet/dirty diapers"
+  - "Excessive jaundice with poor feeding"
+  - "Maternal HIV (in developed nations)"
+  - "Infant galactosemia"
+
+clinical_pearls:
+  - "Vitamin D 400 IU daily starting at discharge for ALL breastfed infants"
+  - ">10% weight loss = evaluate transfer/supply immediately"
+  - "Start peanut/egg/dairy EARLY (4-6 months) to PREVENT allergies"
+  - "Only absolute contraindications: Galactosemia (infant), HIV (maternal in developed nations)"
+
+key_history_questions:
+  - "Feeding frequency and duration?"
+  - "Number of wet and dirty diapers per day?"
+  - "Breast discomfort or nipple pain?"
+  - "Vitamin D supplementation?"
+  - "Formula supplementation?"
+  - "Weight gain pattern?"
+
+key_exam_findings:
+  - "Weight gain (expect regain birth weight by 10-14 days)"
+  - "Hydration status"
+  - "Jaundice level"
+  - "Latch assessment"
+  - "Tongue-tie evaluation"
+
+treatment_principles:
+  - "Vitamin D 400 IU daily for all breastfed infants"
+  - "Lactation support for latch issues"
+  - "Supplementation if inadequate weight gain"
+  - "Early allergen introduction at 4-6 months"
+
+disposition_guidance:
+  - "Outpatient: Normal weight gain, adequate output"
+  - "Close follow-up: >7% weight loss, early jaundice"
+  - "Urgent evaluation: >10% weight loss, dehydration signs"
+
+parent_styles: [committed-to-breastfeeding, struggling, formula-curious]
+
+sources:
+  - "Meek JY, et al. AAP Policy: Breastfeeding and Human Milk (2022)"
+  - "ESPGHAN Position Paper: Complementary Feeding"
+  - "AAP Clinical Report: Iron Needs During Early Childhood"

@@ -1,0 +1,61 @@
+# Developmental Dysplasia of the Hip (DDH) - Teaching Framework
+topic: "Developmental Dysplasia of the Hip"
+aliases: ["DDH", "hip dysplasia", "congenital hip dislocation"]
+category: newborn
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Identify DDH risk factors requiring screening"
+  - "Know when ultrasound vs X-ray is indicated"
+  - "Perform Ortolani and Barlow maneuvers correctly"
+  - "Distinguish pathologic clunk from benign click"
+
+common_mistakes:
+  - "Not screening breech females with ultrasound at 6 weeks"
+  - "Ordering X-ray before 4-6 months (femoral head not ossified)"
+  - "Confusing benign hip clicks with pathologic clunks"
+  - "Missing asymmetric skin folds as a screening sign"
+
+red_flags:
+  - "Positive Ortolani or Barlow maneuver"
+  - "Asymmetric thigh or gluteal folds"
+  - "Leg length discrepancy"
+  - "Limited hip abduction"
+
+clinical_pearls:
+  - "Risk factors: Female, Breech (≥34 weeks), Family History"
+  - "Breech females require ultrasound at 6 weeks even if exam is normal"
+  - "Ultrasound for <4 months; X-ray (AP/Frog leg) for >4-6 months"
+  - "Ortolani/Barlow feel like a CLUNK (dislocation/reduction); clicks are benign"
+
+key_history_questions:
+  - "Presentation at birth - breech or vertex?"
+  - "Family history of hip dysplasia?"
+  - "Sex of infant?"
+  - "First-born child?"
+  - "Oligohydramnios during pregnancy?"
+
+key_exam_findings:
+  - "Ortolani maneuver (reducing a dislocated hip)"
+  - "Barlow maneuver (dislocating an unstable hip)"
+  - "Hip abduction symmetry"
+  - "Leg length comparison (Galeazzi sign)"
+  - "Thigh and gluteal fold symmetry"
+
+treatment_principles:
+  - "Pavlik harness for infants <6 months"
+  - "Closed or open reduction for older infants"
+  - "Early referral to pediatric orthopedics"
+  - "Serial imaging to monitor treatment"
+
+disposition_guidance:
+  - "Outpatient: Risk factor screening with ultrasound at 6 weeks"
+  - "Orthopedic referral: Positive exam findings or abnormal imaging"
+  - "Urgent referral: Late presentation with fixed dislocation"
+
+parent_styles: [anxious, curious, worried-about-treatment]
+
+sources:
+  - "Shaw BA, et al. AAP CPG: Evaluation and Referral for DDH (2016)"
+  - "Choosing Wisely: Ultrasound Screening for DDH"
+  - "AAOS: Detection and Management of Pediatric DDH"

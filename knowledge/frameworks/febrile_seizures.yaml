@@ -1,0 +1,70 @@
+# Febrile Seizures - Teaching Framework
+topic: "Febrile Seizures"
+aliases: ["febrile seizure", "fever seizure", "febrile convulsion"]
+category: emergency
+age_range_months: [6, 60]
+
+teaching_goals:
+  - "Distinguish simple from complex febrile seizures"
+  - "Know LP is NOT routine for simple febrile seizure in vaccinated child"
+  - "Counsel families on recurrence risk and benign prognosis"
+  - "Avoid unnecessary workup and hospitalization"
+
+common_mistakes:
+  - "Doing LP for every first febrile seizure"
+  - "Ordering EEG for simple febrile seizure"
+  - "Starting anti-epileptic medications"
+  - "Not reassuring about benign long-term prognosis"
+
+red_flags:
+  - "Complex features (focal, prolonged >15 min, recurs within 24h)"
+  - "Meningeal signs (still, need LP)"
+  - "Not back to baseline within 1 hour"
+  - "Under 6 months or over 5 years"
+  - "Incomplete or unimmunized"
+  - "Preexisting neurologic abnormality"
+
+clinical_pearls:
+  - "Simple febrile seizure: Generalized, <15 min, doesn't recur in 24h, baseline neuro"
+  - "LP NOT indicated for simple febrile seizure in fully immunized 6-12 month old per AAP"
+  - "EEG NOT indicated for simple febrile seizure (won't predict epilepsy)"
+  - "Recurrence risk: ~30% after first (higher if younger, lower fever, family history)"
+  - "Long-term prognosis: EXCELLENT - no increase in epilepsy risk for simple"
+
+key_history_questions:
+  - "Describe the seizure - focal or generalized?"
+  - "How long did it last?"
+  - "How many seizures today?"
+  - "How is child now? Back to normal?"
+  - "Temperature when seizure occurred?"
+  - "Any signs of meningitis (stiff neck, severe headache, photophobia)?"
+  - "Immunization status?"
+  - "Family history of febrile seizures or epilepsy?"
+
+key_exam_findings:
+  - "Neurologic exam - must be back to baseline"
+  - "Mental status - alert, interactive"
+  - "Meningeal signs (Kernig, Brudzinski)"
+  - "Source of fever"
+  - "Fontanelle if open (bulging concerning)"
+  - "Signs of focal neurologic deficit"
+
+treatment_principles:
+  - "Treat underlying fever source"
+  - "Simple febrile seizure: No labs, EEG, or neuro imaging routinely"
+  - "LP: Consider if <12 months, unimmunized, meningeal signs, or not back to baseline"
+  - "No daily anti-epileptic prophylaxis recommended"
+  - "Rescue medications (diazepam rectal) only for prolonged/recurrent seizures"
+  - "Antipyretics do NOT prevent recurrence"
+
+disposition_guidance:
+  - "Home: Simple febrile seizure, back to baseline, source identified"
+  - "ED: First seizure, complex features, not back to baseline"
+  - "Neurology: Complex febrile seizures, recurrent, parental anxiety"
+  - "Follow-up: PCP within 24-48 hours for first febrile seizure"
+
+parent_styles: [terrified, wants-medication-to-prevent, wants-EEG-for-reassurance]
+
+sources:
+  - "Subcommittee on Febrile Seizures. AAP Clinical Practice Guideline: Febrile Seizures (2011)"
+  - "Kimia A, et al. AAP Technical Report: Lumbar Puncture in Febrile Seizures"

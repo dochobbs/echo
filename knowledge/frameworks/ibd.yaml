@@ -1,0 +1,71 @@
+# Inflammatory Bowel Disease - Teaching Framework
+topic: "Inflammatory Bowel Disease"
+aliases: ["IBD", "Crohn's disease", "ulcerative colitis", "UC"]
+category: gi
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Recognize presenting features of IBD in children"
+  - "Distinguish Crohn's from ulcerative colitis"
+  - "Know fecal calprotectin as screening test"
+  - "Understand growth failure is major concern"
+
+common_mistakes:
+  - "Attributing chronic abdominal pain to functional disease without labs"
+  - "Missing growth failure as presenting sign"
+  - "Not checking inflammatory markers"
+  - "Delaying GI referral for chronic symptoms"
+
+red_flags:
+  - "Bloody diarrhea"
+  - "Weight loss, poor growth"
+  - "Perianal disease (fistulas, abscesses)"
+  - "Fever with GI symptoms"
+  - "Severe abdominal pain"
+  - "Toxic megacolon"
+
+clinical_pearls:
+  - "Crohn's: Any part of GI tract, skip lesions, transmural, perianal disease common"
+  - "UC: Rectum → colon only, continuous, mucosal, bloody diarrhea"
+  - "Fecal calprotectin: Excellent screening - normal rules out active IBD"
+  - "Growth failure may precede GI symptoms by months-years in Crohn's"
+  - "10-25% of IBD presents before age 20"
+
+key_history_questions:
+  - "Diarrhea - bloody? Nocturnal? How long?"
+  - "Abdominal pain - location, relation to meals/defecation?"
+  - "Weight loss? Poor appetite?"
+  - "Growth trajectory?"
+  - "Mouth ulcers? Joint pains? Eye redness?"
+  - "Skin rashes (erythema nodosum, pyoderma)?"
+  - "Family history of IBD?"
+  - "Perianal symptoms (pain, drainage)?"
+
+key_exam_findings:
+  - "Growth parameters - height, weight, BMI velocity"
+  - "Abdominal tenderness, masses (Crohn's)"
+  - "Perianal exam - tags, fissures, fistulas"
+  - "Signs of malnutrition, pallor"
+  - "Oral ulcers"
+  - "Joint swelling"
+  - "Eye exam (episcleritis, uveitis)"
+
+treatment_principles:
+  - "GI referral: All suspected IBD for endoscopy"
+  - "Diagnosis requires colonoscopy + upper endoscopy + histology"
+  - "Treatment depends on severity and location"
+  - "Induction: Steroids, exclusive enteral nutrition (Crohn's)"
+  - "Maintenance: Immunomodulators, biologics (anti-TNF)"
+  - "Monitor growth closely - optimize nutrition"
+
+disposition_guidance:
+  - "GI referral: Urgent for any suspected IBD"
+  - "ED: Severe symptoms, dehydration, high fever, toxic appearance"
+  - "Labs: CBC, CMP, ESR, CRP, fecal calprotectin, stool studies"
+  - "Multidisciplinary: GI, nutrition, psychology, surgery (if complications)"
+
+parent_styles: [scared-about-chronic-disease, wants-answers, frustrated-by-symptoms]
+
+sources:
+  - "Rosen MJ, et al. AAP Technical Report: IBD in Children"
+  - "NASPGHAN/CCFA: Guidelines for Pediatric IBD"

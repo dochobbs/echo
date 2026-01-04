@@ -1,0 +1,66 @@
+# Infantile Hemangiomas - Teaching Framework
+topic: "Infantile Hemangiomas"
+aliases: ["hemangioma", "strawberry hemangioma", "vascular birthmark"]
+category: derm
+age_range_months: [0, 24]
+
+teaching_goals:
+  - "Know the natural history (proliferate then involute)"
+  - "Recognize high-risk locations requiring treatment"
+  - "Understand propranolol is first-line for concerning hemangiomas"
+  - "Identify PHACE and LUMBAR syndromes"
+
+common_mistakes:
+  - "Treating all hemangiomas (most involute spontaneously)"
+  - "Waiting too long for high-risk locations (periocular, airway)"
+  - "Not referring periocular hemangiomas urgently (amblyopia risk)"
+  - "Missing segmental hemangiomas that may have associated anomalies"
+
+red_flags:
+  - "Periocular: Risk of amblyopia - urgent treatment"
+  - "Airway (beard distribution): Monitor for stridor"
+  - "Large facial/segmental: Evaluate for PHACE syndrome"
+  - "Lumbosacral midline: Evaluate for spinal dysraphism"
+  - "Ulceration: Pain, infection, scarring risk"
+
+clinical_pearls:
+  - "Natural history: Appear first weeks of life, proliferate until 9-12 months, then INVOLUTE over years"
+  - "Most resolve by age 4 with minimal residua - observation is often appropriate"
+  - "Propranolol: First-line for concerning hemangiomas - start 1-2 mg/kg/day"
+  - "PHACE: Posterior fossa, Hemangioma, Arterial, Cardiac, Eye anomalies"
+  - "5+ hemangiomas: Screen for hepatic hemangiomas (abdominal ultrasound)"
+
+key_history_questions:
+  - "When did it appear? Has it grown?"
+  - "Any color changes or ulceration?"
+  - "Location - near eye, nose, lip, airway?"
+  - "Any feeding difficulties or stridor?"
+  - "Family history of vascular anomalies?"
+
+key_exam_findings:
+  - "Bright red, raised, well-demarcated (superficial)"
+  - "Bluish hue if deep component"
+  - "Location and size documentation"
+  - "Segmental vs focal distribution"
+  - "Signs of ulceration"
+  - "Count total number of hemangiomas"
+
+treatment_principles:
+  - "Most: Observation and reassurance"
+  - "High-risk (periocular, airway, disfiguring): Oral propranolol"
+  - "Propranolol: 1-3 mg/kg/day divided BID-TID, monitor HR and glucose"
+  - "Ulcerated: Wound care, may need propranolol"
+  - "Timolol: Topical option for small, superficial lesions"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Urgent dermatology/ophthalmology: Periocular hemangioma"
+  - "Subspecialty evaluation: Large facial, segmental, or multiple"
+  - "MRI: Segmental lumbosacral (spinal dysraphism screen)"
+  - "Echo: Large segmental facial (PHACE)"
+
+parent_styles: [anxious-about-appearance, wants-reassurance, wants-immediate-treatment]
+
+sources:
+  - "Krowchuk DP, et al. AAP Clinical Practice Guideline: Infantile Hemangiomas"
+  - "Léauté-Labrèze C, et al. Propranolol for Severe Hemangiomas. NEJM"

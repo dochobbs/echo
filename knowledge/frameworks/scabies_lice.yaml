@@ -1,0 +1,62 @@
+# Scabies and Lice - Teaching Framework
+topic: "Scabies and Pediculosis"
+aliases: ["scabies", "head lice", "pediculosis", "lice infestation"]
+category: derm
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Recognize classic scabies distribution"
+  - "Understand scabies treatment includes whole family"
+  - "Know nit removal is cosmetic, not medical necessity"
+  - "Apply evidence-based lice treatment"
+
+common_mistakes:
+  - "Treating only symptomatic patient for scabies (need all contacts)"
+  - "Over-treating head lice with multiple agents"
+  - "Misdiagnosing scabies as eczema"
+  - "Sending home from school for nits (not evidence-based)"
+
+red_flags:
+  - "Crusted/Norwegian scabies (immunocompromised)"
+  - "Secondary bacterial superinfection"
+  - "Widespread excoriations with risk of impetigo"
+
+clinical_pearls:
+  - "Scabies: Pruritus WORSE at night, web spaces, waistline, genitals"
+  - "Scabies in INFANTS: Head and neck involved (unlike adults)"
+  - "Permethrin 5% for scabies - apply neck to toes, leave on 8-14 hours, repeat in 1 week"
+  - "Head lice: Live lice = active infestation; nits alone may be old"
+  - "No-nit policies are NOT recommended - nits don't spread disease"
+
+key_history_questions:
+  - "When did itching start? Worse at night?"
+  - "Anyone else in household itching?"
+  - "Any new contacts or sleepovers?"
+  - "What treatments have been tried?"
+  - "Any pets? (they don't carry human scabies)"
+
+key_exam_findings:
+  - "Scabies: Burrows, papules in web spaces, wrists, waistline"
+  - "Infants: May have face/scalp involvement, vesicles on palms/soles"
+  - "Lice: Live lice on scalp, nits cemented to hair shaft"
+  - "Secondary changes: excoriations, impetiginization"
+
+treatment_principles:
+  - "Scabies: Permethrin 5% cream, apply everywhere below chin, wash off in 8-14 hours"
+  - "Scabies: REPEAT in 1 week, treat ALL household contacts simultaneously"
+  - "Lice: Permethrin 1% (OTC) or malathion if resistant"
+  - "Lice: Wet combing with fine-tooth comb every 3-4 days x 2 weeks"
+  - "Wash bedding/clothing in hot water; bag items that can't be washed x 2 weeks"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "No school exclusion for nits - can return after treatment started"
+  - "Dermatology: Crusted scabies, treatment failure"
+  - "Follow-up: 2-4 weeks if symptoms persist"
+
+parent_styles: [embarrassed, wants-reassurance, over-treating]
+
+sources:
+  - "AAP Red Book: Scabies and Pediculosis"
+  - "CDC: Head Lice Treatment Guidelines"
+  - "AAP Clinical Report: Head Lice"

@@ -1,0 +1,71 @@
+# Headache and Migraine - Teaching Framework
+topic: "Headache and Migraine"
+aliases: ["headache", "migraine", "tension headache", "pediatric headache"]
+category: neuro
+age_range_months: [36, 216]
+
+teaching_goals:
+  - "Distinguish primary from secondary headaches"
+  - "Recognize migraine criteria in children"
+  - "Know when imaging is NOT indicated"
+  - "Understand medication overuse headache"
+
+common_mistakes:
+  - "Imaging for typical migraine (low yield)"
+  - "Not screening for medication overuse"
+  - "Missing abdominal migraine"
+  - "Not addressing lifestyle factors (sleep, hydration, screens)"
+
+red_flags:
+  - "Worst headache of life (sudden, severe)"
+  - "Headache with neurologic signs (papilledema, focal deficits)"
+  - "Headache worse with Valsalva, position change, or waking from sleep"
+  - "New headache pattern, progressive worsening"
+  - "Systemic symptoms (fever, weight loss, meningismus)"
+  - "Age <6 with new headaches"
+
+clinical_pearls:
+  - "Migraine in kids: SHORTER duration (1-72h vs 4-72h adults), bilateral ok, GI symptoms prominent"
+  - "No imaging for typical migraine with normal neuro exam"
+  - "Medication overuse: >2-3 days/week acute medications → rebound headaches"
+  - "Abdominal migraine: Recurrent midline abdominal pain with migraine features"
+  - "Lifestyle: Sleep, hydration, meals, exercise, screen limits - address FIRST"
+
+key_history_questions:
+  - "Location? Quality? Severity?"
+  - "Duration? Frequency?"
+  - "Triggers? Relieving factors?"
+  - "Associated symptoms (nausea, light/sound sensitivity, aura)?"
+  - "How many days/week taking pain medication?"
+  - "Sleep habits? Hydration? Meals?"
+  - "Screen time? Caffeine?"
+  - "Family history of migraines?"
+  - "School absences? Impact on activities?"
+
+key_exam_findings:
+  - "Vital signs including blood pressure"
+  - "Complete neurologic exam"
+  - "Fundoscopy (papilledema)"
+  - "Head circumference (if progressive)"
+  - "Palpate sinuses, TMJ, neck muscles"
+  - "Red flags should be ABSENT for primary headache"
+
+treatment_principles:
+  - "Lifestyle optimization: Sleep, hydration, meals, exercise, screen limits"
+  - "Acute migraine: Ibuprofen EARLY (within 30 min of onset), triptan if >12"
+  - "Limit acute medications to <2-3 days/week to prevent overuse"
+  - "Prophylaxis if frequent (>1/week): Topiramate, amitriptyline, propranolol"
+  - "Keep headache diary"
+  - "Behavioral: Biofeedback, relaxation, CBT"
+
+disposition_guidance:
+  - "Outpatient: Typical primary headache"
+  - "Urgent imaging: Any red flag features"
+  - "Neurology referral: Refractory, atypical, diagnostic uncertainty"
+  - "Follow-up with headache diary in 4-6 weeks"
+
+parent_styles: [wants-imaging, worried-about-brain-tumor, frustrated-by-school-absences]
+
+sources:
+  - "Oskoui M, et al. AAN/AHS Practice Guideline: Pharmacologic Treatment of Pediatric Migraine"
+  - "Lewis DW. Pediatric Migraine. Pediatrics in Review"

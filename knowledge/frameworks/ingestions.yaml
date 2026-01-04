@@ -1,0 +1,75 @@
+# Poisoning and Ingestions - Teaching Framework
+topic: "Poisoning and Ingestions"
+aliases: ["poisoning", "ingestion", "overdose", "toxic ingestion"]
+category: emergency
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Know which ingestions require immediate intervention"
+  - "Call Poison Control for guidance"
+  - "Recognize toxidromes"
+  - "Know decontamination is rarely indicated"
+
+common_mistakes:
+  - "Inducing vomiting (no longer recommended)"
+  - "Giving activated charcoal for all ingestions"
+  - "Not calling Poison Control"
+  - "Missing button battery (emergency!)"
+  - "Underestimating 'one pill can kill' medications"
+
+red_flags:
+  - "Button battery ingestion (emergency if esophageal)"
+  - "One pill can kill: CCBs, opioids, sulfonylureas, TCAs, clonidine"
+  - "Altered mental status"
+  - "Cardiac arrhythmias"
+  - "Symptomatic ingestion"
+  - "Intentional/suicidal ingestion"
+
+clinical_pearls:
+  - "CALL POISON CONTROL: 1-800-222-1222 - always call for guidance"
+  - "Button battery in esophagus: EMERGENCY - can cause perforation in 2 hours"
+  - "Activated charcoal: Only within 1-2 hours, contraindicated in caustic/hydrocarbon"
+  - "Do NOT induce vomiting - ineffective and potentially harmful"
+  - "Toxidromes: Anticholinergic, cholinergic, sympathomimetic, opioid, sedative-hypnotic"
+
+key_history_questions:
+  - "What was ingested? Exact product name?"
+  - "How much? Maximum possible amount?"
+  - "When was exposure?"
+  - "Intentional or accidental?"
+  - "Any symptoms?"
+  - "Any co-ingestions?"
+  - "Child's weight?"
+  - "Any treatments given at home?"
+
+key_exam_findings:
+  - "Vital signs - HR, BP, RR, temp, O2 sat"
+  - "Mental status - GCS"
+  - "Pupils - miosis (opioids) vs mydriasis (anticholinergic)"
+  - "Skin - diaphoresis, dry, flushed"
+  - "Cardiac - rhythm, rate"
+  - "Bowel sounds - hyper vs hypo"
+  - "Identify toxidrome"
+
+treatment_principles:
+  - "ABCs - stabilize first"
+  - "Call Poison Control for specific guidance"
+  - "Decontamination: Rarely indicated; activated charcoal if <1-2 hours and appropriate"
+  - "Antidotes: Specific to toxin (naloxone, N-acetylcysteine, etc.)"
+  - "Supportive care for most ingestions"
+  - "ECG for cardiotoxic medications"
+  - "Psych evaluation if intentional"
+
+disposition_guidance:
+  - "ED: Any symptomatic ingestion, high-risk medication, button battery"
+  - "Observation: Poison Control will guide duration"
+  - "Admit: Symptomatic, requiring monitoring or treatment"
+  - "Psych: Intentional ingestion requires mental health evaluation"
+  - "Home: If Poison Control clears (many pediatric ingestions are non-toxic)"
+
+parent_styles: [panicked, guilty, downplaying-severity]
+
+sources:
+  - "AAP: Prevention of Childhood Poisoning"
+  - "American Association of Poison Control Centers: 1-800-222-1222"
+  - "Button Battery Task Force: Ingestion Guidelines"

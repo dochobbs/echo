@@ -1,0 +1,67 @@
+# Failure to Thrive (FTT) - Teaching Framework
+topic: "Failure to Thrive"
+aliases: ["FTT", "poor weight gain", "growth failure"]
+category: newborn
+age_range_months: [0, 36]
+
+teaching_goals:
+  - "Apply correct definition of FTT"
+  - "Recognize non-organic (social/caloric) as most common cause"
+  - "Use history as primary diagnostic tool"
+  - "Know when to worry about refeeding syndrome"
+
+common_mistakes:
+  - "Ordering shotgun labs before thorough diet history"
+  - "Assuming organic cause without adequate social assessment"
+  - "Missing non-organic causes (inadequate intake, improper mixing)"
+  - "Initiating rapid refeeding in severely malnourished infant"
+
+red_flags:
+  - "Severe malnutrition requiring hospitalization"
+  - "Signs of neglect or abuse"
+  - "Developmental regression"
+  - "Dysmorphic features suggesting syndrome"
+
+clinical_pearls:
+  - "Definition: Weight crossing 2 major percentiles downward OR weight <5th percentile"
+  - ">90% is Non-Organic (social/caloric insufficiency), not medical"
+  - "History is the MOST IMPORTANT diagnostic tool - detailed diet history"
+  - "Shotgun labs are LOW YIELD - start with CBC, Lead, UA"
+  - "Severe malnutrition: Monitor Phos/K/Mag for refeeding syndrome"
+
+key_history_questions:
+  - "What does the child eat in a typical day? (detailed 24-hour recall)"
+  - "How is formula mixed? (show me)"
+  - "Who feeds the child? How long do feeds take?"
+  - "Any food insecurity or WIC issues?"
+  - "Family stressors or changes?"
+  - "Developmental milestones?"
+  - "Vomiting, diarrhea, or other GI symptoms?"
+
+key_exam_findings:
+  - "Accurate weight, length, head circumference"
+  - "Plotting on growth chart - pattern over time"
+  - "Signs of neglect"
+  - "Dysmorphic features"
+  - "Developmental assessment"
+  - "Signs of organic disease"
+
+treatment_principles:
+  - "Increase caloric intake first"
+  - "Close follow-up with weight checks"
+  - "Social work involvement if indicated"
+  - "Limited labs initially: CBC, Lead, UA"
+  - "Hospitalization for severe cases or supervision of intake"
+
+disposition_guidance:
+  - "Outpatient: Mild FTT, engaged family, adequate resources"
+  - "Close follow-up: Weekly weight checks initially"
+  - "Hospitalization: Severe FTT, concern for neglect, need for supervised feeding"
+  - "Social work: Food insecurity, family stressors"
+
+parent_styles: [overwhelmed, defensive, engaged, food-insecure]
+
+sources:
+  - "American Family Physician: Failure to Thrive (2011)"
+  - "AAP Clinical Report: Promoting Growth in FTT"
+  - "Pediatrics: Hospitalization for Failure to Thrive"

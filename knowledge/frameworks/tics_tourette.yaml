@@ -1,0 +1,68 @@
+# Tics and Tourette Syndrome - Teaching Framework
+topic: "Tics and Tourette Syndrome"
+aliases: ["tic disorder", "Tourette", "motor tics", "vocal tics"]
+category: behavioral
+age_range_months: [36, 216]
+
+teaching_goals:
+  - "Know most tics are transient and benign"
+  - "Recognize Tourette syndrome diagnostic criteria"
+  - "Understand tics often don't need treatment"
+  - "Screen for ADHD and OCD comorbidities"
+
+common_mistakes:
+  - "Over-treating benign transient tics"
+  - "Telling child to 'stop doing that'"
+  - "Missing comorbid ADHD (more impairing than tics)"
+  - "Attributing tics to stimulant medications incorrectly"
+
+red_flags:
+  - "Acute onset tics (consider PANDAS, drug-induced)"
+  - "Associated neurologic signs"
+  - "Severe self-injurious tics"
+  - "Sudden onset OCD with tics (PANDAS)"
+
+clinical_pearls:
+  - "Transient tic disorder: <1 year duration - most common, resolves"
+  - "Tourette: Motor + vocal tics for >1 year, onset before 18"
+  - "Tics wax and wane naturally - don't overreact to fluctuations"
+  - "Comorbidities often MORE impairing: ADHD (50%), OCD (30%)"
+  - "Stimulants can be used in ADHD + tics - may even improve tics"
+
+key_history_questions:
+  - "What movements or sounds? How long?"
+  - "Worsening with stress, fatigue?"
+  - "Premonitory urge?"
+  - "Impact on school, social life?"
+  - "Any OCD symptoms (intrusive thoughts, rituals)?"
+  - "ADHD symptoms?"
+  - "Recent strep infection? (PANDAS)"
+  - "Family history of tics?"
+
+key_exam_findings:
+  - "Observe for tics during visit"
+  - "Type: Simple vs complex, motor vs vocal"
+  - "Neurologic exam (should be normal)"
+  - "Signs of strep pharyngitis"
+  - "Look for OCD behaviors"
+  - "ADHD screening"
+
+treatment_principles:
+  - "Most transient tics: Watchful waiting, education, reassurance"
+  - "Don't call attention to tics - ignore if possible"
+  - "Treat comorbidities first (ADHD, OCD often more impairing)"
+  - "If tics impairing: CBIT (Comprehensive Behavioral Intervention for Tics)"
+  - "Medications: Clonidine, guanfacine (also help ADHD)"
+  - "Severe: Risperidone, aripiprazole (specialist use)"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Neurology: Complex, severe, sudden onset, atypical features"
+  - "Psychiatry: Significant OCD, ADHD, or mood comorbidity"
+  - "No treatment needed for mild, non-impairing tics"
+
+parent_styles: [worried-about-stigma, wants-medication, reassurance-seeking]
+
+sources:
+  - "Pringsheim T, et al. Practice Guideline: Treatment of Tics (AAN)"
+  - "Tourette Association of America: Patient Education"

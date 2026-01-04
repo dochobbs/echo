@@ -1,0 +1,70 @@
+# Acute Scrotum - Teaching Framework
+topic: "Acute Scrotum"
+aliases: ["testicular torsion", "acute scrotum", "scrotal pain"]
+category: urology
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize testicular torsion as surgical emergency"
+  - "Know 6-hour window for testicular salvage"
+  - "Differentiate torsion from epididymitis and torsion of appendix testis"
+  - "Never delay surgical consult for imaging"
+
+common_mistakes:
+  - "Waiting for ultrasound when torsion clinically suspected"
+  - "Reassuring based on 'normal' exam (torsion can have minimal findings early)"
+  - "Missing torsion in neonate"
+  - "Treating all scrotal pain as epididymitis"
+
+red_flags:
+  - "Acute, severe onset"
+  - "Absent cremasteric reflex"
+  - "High-riding horizontal testis"
+  - "Nausea/vomiting"
+  - "Neonatal scrotal swelling/discoloration"
+
+clinical_pearls:
+  - "Testicular torsion: Surgical emergency - 6 hours for optimal salvage"
+  - "TWIST score: Testis swelling, hard, elevated, absent reflex, nausea - high score = surgery"
+  - "Cremasteric reflex: Absent in torsion, present in epididymitis (but not 100%)"
+  - "Torsion of appendix testis: 'Blue dot sign', less acute, self-limited"
+  - "Epididymitis: Gradual onset, may have fever/dysuria, positive Prehn's sign"
+
+key_history_questions:
+  - "When did pain start? What were you doing?"
+  - "Onset sudden or gradual?"
+  - "Any trauma?"
+  - "Nausea or vomiting?"
+  - "Previous similar episodes?"
+  - "Dysuria, discharge, fever?"
+  - "Sexual activity? (STI risk)"
+
+key_exam_findings:
+  - "Cremasteric reflex (stroke inner thigh → testis elevates)"
+  - "Testis position (high-riding? Horizontal lie?)"
+  - "Testis consistency (hard, swollen)"
+  - "Epididymal tenderness (posterior - more suggests epididymitis)"
+  - "Blue dot sign (pathognomonic for torsion of appendix testis)"
+  - "Prehn's sign (elevation relieves pain → epididymitis; not reliable)"
+  - "Scrotal skin (erythema, discoloration)"
+
+treatment_principles:
+  - "Torsion suspected: Immediate urology consult - DO NOT delay for imaging"
+  - "Ultrasound: If diagnosis uncertain AND surgical availability rapid"
+  - "Manual detorsion: Can attempt 'open book' detorsion while awaiting surgery"
+  - "Surgery: Bilateral orchiopexy (contralateral fixation) if torsion confirmed"
+  - "Torsion of appendix: Conservative - NSAIDs, rest, usually resolves in 1-2 weeks"
+  - "Epididymitis: Antibiotics if infectious cause; STI treatment if adolescent"
+
+disposition_guidance:
+  - "Immediate urology consult: High suspicion for torsion"
+  - "Ultrasound: Low-intermediate suspicion, rapid access"
+  - "ED transfer: If torsion suspected and urology not immediately available"
+  - "Observation/home: Torsion of appendix testis, epididymitis"
+  - "Time is testis: 6 hours optimal, salvage drops significantly after 12 hours"
+
+parent_styles: [panicked, delaying-because-embarrassed, not-aware-of-emergency]
+
+sources:
+  - "Barbosa JA, et al. Testicular Torsion: A Narrative Review. CJASN"
+  - "AAP Section on Urology: Acute Scrotum Evaluation"

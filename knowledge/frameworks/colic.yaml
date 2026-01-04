@@ -1,0 +1,64 @@
+# Colic & Crying (PURPLE Crying) - Teaching Framework
+topic: "Colic & Excessive Crying"
+aliases: ["colic", "PURPLE crying", "infantile colic"]
+category: newborn
+age_range_months: [0, 4]
+
+teaching_goals:
+  - "Understand normal crying curve (peaks 6-8 weeks)"
+  - "Rule out serious causes of inconsolable crying"
+  - "Counsel on evidence-based management"
+  - "Recognize colic as abuse risk factor"
+
+common_mistakes:
+  - "Not checking for hair tourniquet in inconsolable infant"
+  - "Prescribing simethicone (no better than placebo)"
+  - "Over-promising that interventions will stop crying"
+  - "Missing the abuse education opportunity"
+
+red_flags:
+  - "Hair tourniquet on digits or penis"
+  - "Inconsolable crying in previously calm infant (acute change)"
+  - "Signs of injury or abuse"
+  - "Feeding difficulties or weight loss"
+
+clinical_pearls:
+  - "Crying normally peaks at 6-8 weeks and resolves by 3-4 months"
+  - "Always check digits AND penis for hair tourniquet"
+  - "Simethicone is placebo; reassurance is primary treatment"
+  - "Probiotics (L. reuteri) have mixed data - breastfed infants only"
+  - "Inconsolable crying is #1 trigger for Shaken Baby Syndrome"
+
+key_history_questions:
+  - "Age of onset and pattern of crying?"
+  - "When does crying occur - time of day?"
+  - "How are parents coping?"
+  - "Feeding history - breast or formula? Changes?"
+  - "Stooling pattern?"
+  - "Any concerning symptoms (fever, vomiting, blood in stool)?"
+
+key_exam_findings:
+  - "Check all digits for hair tourniquet"
+  - "Check penis if male for hair tourniquet"
+  - "Abdominal exam (distension, tenderness)"
+  - "General appearance during and after crying"
+  - "Signs of injury"
+
+treatment_principles:
+  - "Reassurance is the primary treatment"
+  - "Validate parental stress and frustration"
+  - "Education about PURPLE crying and shaken baby prevention"
+  - "Safe-to-put-down messaging"
+  - "Consider L. reuteri for breastfed infants only"
+
+disposition_guidance:
+  - "Outpatient: Healthy infant with typical colic pattern"
+  - "Close follow-up: Parental stress or coping concerns"
+  - "Urgent: Hair tourniquet, signs of injury, acute change in crying"
+
+parent_styles: [exhausted, desperate, skeptical]
+
+sources:
+  - "AAP Policy Statement: Prevention of Abusive Head Trauma"
+  - "Pediatrics in Review: Colic (2019)"
+  - "Cochrane Review: Dietary Modifications for Infantile Colic"

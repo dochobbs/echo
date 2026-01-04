@@ -1,0 +1,71 @@
+# Lower Extremity Alignment - Teaching Framework
+topic: "Lower Extremity Alignment"
+aliases: ["bowlegs", "knock-knees", "intoeing", "genu varum", "genu valgum", "metatarsus adductus"]
+category: msk
+age_range_months: [0, 144]
+
+teaching_goals:
+  - "Know normal physiologic progression of lower extremity alignment"
+  - "Distinguish physiologic from pathologic bowing/knock-knees"
+  - "Recognize when to refer vs reassure"
+  - "Understand intoeing causes by age"
+
+common_mistakes:
+  - "Referring physiologic bowlegs in toddlers"
+  - "Recommending special shoes (don't change outcome)"
+  - "Missing Blount's disease in older/heavier child"
+  - "Over-treating metatarsus adductus (most resolve)"
+
+red_flags:
+  - "Unilateral or asymmetric bowing"
+  - "Short stature (rickets, skeletal dysplasia)"
+  - "Progressive deformity after age 2"
+  - "Genu varum persisting beyond age 3"
+  - "Lateral thrust with walking"
+  - "History of rickets, renal disease"
+
+clinical_pearls:
+  - "Normal progression: Bowlegs at birth → straight by 2 → knock-knees by 3-4 → straighten by 7-8"
+  - "Physiologic genu varum: Symmetric, improving, no lateral thrust, normal growth"
+  - "Blount disease: Pathologic - persists after age 2, obese, unilateral or asymmetric"
+  - "Intoeing causes: Metatarsus adductus (<1yr), internal tibial torsion (1-3yr), femoral anteversion (3-8yr)"
+  - "Special shoes, orthotics do NOT change natural history"
+
+key_history_questions:
+  - "When did parents first notice? Getting better or worse?"
+  - "Any family history of similar issues?"
+  - "Any tripping or functional problems?"
+  - "Any pain?"
+  - "Growth history - is child growing normally?"
+  - "Diet history (vitamin D, calcium intake)?"
+  - "Any known bone or kidney problems?"
+
+key_exam_findings:
+  - "Observe gait - lateral thrust? Intoeing?"
+  - "Measure intercondylar or intermalleolar distance"
+  - "Symmetric vs asymmetric"
+  - "Height - plot on growth chart"
+  - "Thigh-foot angle (tibial torsion)"
+  - "Hip rotation (femoral anteversion = increased internal rotation)"
+  - "Foot shape (metatarsus adductus - medial border convex)"
+
+treatment_principles:
+  - "Physiologic bowlegs/knock-knees: Observation and reassurance"
+  - "Metatarsus adductus: Observe if flexible (90% resolve by age 4-6)"
+  - "Internal tibial torsion: Resolves spontaneously by age 4-5"
+  - "Femoral anteversion: Improves spontaneously until age 8-10"
+  - "Special shoes and braces: Do NOT work - save parents money"
+  - "Referral: Asymmetric, progressive, or persisting beyond expected age"
+
+disposition_guidance:
+  - "Reassurance: Physiologic variants within expected age"
+  - "X-ray: If asymmetric, progressive, or outside expected age range"
+  - "Orthopedics: Blount disease, progressive deformity, suspected rickets"
+  - "Labs (vitamin D, calcium, phosphorus, ALP): If rickets suspected"
+  - "Follow-up: Observe serially if near edge of normal"
+
+parent_styles: [worried-about-appearance, wants-braces-or-shoes, asking-about-surgery]
+
+sources:
+  - "Salenius P, et al. Normal Development of Tibiofemoral Angle in Children"
+  - "AAP: Lower Extremity Alignment in Children"

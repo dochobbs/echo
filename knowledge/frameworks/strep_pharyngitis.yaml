@@ -1,0 +1,69 @@
+# Strep Pharyngitis - Teaching Framework
+topic: "Streptococcal Pharyngitis"
+aliases: ["strep throat", "GAS pharyngitis", "sore throat"]
+category: infectious
+age_range_months: [36, 216]
+
+teaching_goals:
+  - "Know when to test and when NOT to test"
+  - "Understand negative rapid test requires culture backup in children"
+  - "Recognize carriers do not need treatment"
+  - "Prevent overtreatment of viral pharyngitis"
+
+common_mistakes:
+  - "Testing children <3 years routinely (rheumatic fever rare)"
+  - "Not backing up negative rapid test with culture in children"
+  - "Treating asymptomatic carriers"
+  - "Using clinical criteria alone to prescribe antibiotics"
+
+red_flags:
+  - "Peritonsillar abscess (trismus, uvula deviation, 'hot potato' voice)"
+  - "Drooling or inability to swallow"
+  - "Toxic appearance"
+  - "Severe unilateral swelling"
+
+clinical_pearls:
+  - "Do NOT routinely test children <3 years (rheumatic fever rare, atypical presentation)"
+  - "Negative rapid test in children MUST be backed up by throat culture"
+  - "Do NOT treat asymptomatic carriers (positive test after treatment, no symptoms)"
+  - "Centor/McIsaac criteria help stratify but don't replace testing"
+
+key_history_questions:
+  - "Duration of sore throat?"
+  - "Fever present?"
+  - "Any cough? (suggests viral if present)"
+  - "Sick contacts with strep?"
+  - "Abdominal pain, headache?"
+  - "Recent strep infections?"
+  - "Any rash?"
+
+key_exam_findings:
+  - "Tonsillar exudates"
+  - "Anterior cervical lymphadenopathy (tender)"
+  - "Palatal petechiae"
+  - "Scarlatiniform rash"
+  - "Absence of cough, rhinorrhea, conjunctivitis (viral features)"
+
+treatment_principles:
+  - "Penicillin VK or Amoxicillin - first line"
+  - "10-day course for strep pharyngitis"
+  - "Azithromycin for penicillin allergy"
+  - "Treatment prevents rheumatic fever, shortens symptoms"
+
+disposition_guidance:
+  - "Outpatient: Uncomplicated strep pharyngitis"
+  - "Return precautions: Worsening symptoms, difficulty breathing/swallowing"
+  - "Urgent: Peritonsillar abscess, inability to swallow"
+
+differential_diagnosis:
+  - "Viral pharyngitis"
+  - "Infectious mononucleosis"
+  - "Peritonsillar abscess"
+  - "Herpangina"
+
+parent_styles: [wants-antibiotics, concerned-about-spread, school-note-needed]
+
+sources:
+  - "Shulman ST, et al. IDSA CPG: GAS Pharyngitis (2012)"
+  - "AAP Red Book: Group A Streptococcal Infections"
+  - "Cochrane Review: Antibiotic Duration for GAS Pharyngitis"

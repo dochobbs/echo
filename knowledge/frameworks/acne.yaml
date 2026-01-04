@@ -1,0 +1,61 @@
+# Acne Vulgaris - Teaching Framework
+topic: "Acne Vulgaris"
+aliases: ["acne", "pimples", "teenage acne"]
+category: derm
+age_range_months: [96, 216]
+
+teaching_goals:
+  - "Understand retinoids are backbone of therapy"
+  - "Limit oral antibiotic duration"
+  - "Know to pair antibiotics with benzoyl peroxide"
+  - "Recognize when to refer for isotretinoin"
+
+common_mistakes:
+  - "Applying retinoid only to spots (should be whole face)"
+  - "Long-term oral antibiotics without benzoyl peroxide"
+  - "Not warning about initial purging/dryness with retinoids"
+  - "Missing hormonal acne pattern in females"
+
+red_flags:
+  - "Severe nodulocystic acne (scarring risk)"
+  - "Acne fulminans"
+  - "Acne unresponsive to standard therapy"
+  - "Signs of hyperandrogenism"
+
+clinical_pearls:
+  - "Retinoids: BACKBONE of therapy - apply to ENTIRE face, not just spots"
+  - "Expect purging and dryness initially - warn patients"
+  - "Oral antibiotics: Limit to 3-4 months, ALWAYS pair with benzoyl peroxide (prevents resistance)"
+  - "Doxycycline: First-line oral antibiotic for moderate-severe"
+
+key_history_questions:
+  - "When did acne start?"
+  - "What treatments have been tried?"
+  - "How is it applied? How often?"
+  - "Any scarring?"
+  - "Menstrual history (females)?"
+  - "Impact on self-esteem?"
+
+key_exam_findings:
+  - "Lesion types (comedones, papules, pustules, nodules)"
+  - "Distribution"
+  - "Scarring"
+  - "Signs of picking"
+  - "Severity assessment"
+
+treatment_principles:
+  - "Mild: Topical retinoid + benzoyl peroxide"
+  - "Moderate: Add topical antibiotic (clindamycin)"
+  - "Moderate-Severe: Oral doxycycline (3-4 months max) + topicals"
+  - "Severe/Refractory: Isotretinoin referral"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Dermatology referral: Severe, nodulocystic, refractory, isotretinoin candidate"
+  - "Follow-up: 6-8 weeks to assess response"
+
+parent_styles: [wants-quick-fix, concerned-about-scarring, resistant-to-treatment]
+
+sources:
+  - "Zaenglein AL, et al. JAAD: Guidelines for Management of Acne Vulgaris"
+  - "HealthyChildren.org: Acne Tips for Managing"

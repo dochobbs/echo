@@ -1,0 +1,65 @@
+# Phimosis and Paraphimosis - Teaching Framework
+topic: "Phimosis and Paraphimosis"
+aliases: ["phimosis", "paraphimosis", "tight foreskin"]
+category: urology
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Distinguish physiologic from pathologic phimosis"
+  - "Recognize paraphimosis as emergency"
+  - "Know when to refer vs reassure"
+  - "Avoid premature retraction"
+
+common_mistakes:
+  - "Forcibly retracting foreskin in young child (causes scarring)"
+  - "Missing paraphimosis (emergency)"
+  - "Treating physiologic phimosis as pathologic"
+  - "Not reducing paraphimosis promptly"
+
+red_flags:
+  - "Paraphimosis: Foreskin stuck behind glans with swelling (EMERGENCY)"
+  - "Balanitis with obstructive voiding"
+  - "Scarring (BXO/lichen sclerosus)"
+  - "Recurrent UTIs with phimosis"
+
+clinical_pearls:
+  - "Physiologic phimosis: Normal! Only 4% of newborns retractable; 90% by age 3, 99% by age 17"
+  - "Do NOT forcibly retract - causes adhesions and scarring"
+  - "Pathologic phimosis: Scarred (whitish ring), causing symptoms"
+  - "Paraphimosis: Foreskin stuck behind glans - REDUCE immediately or necrosis occurs"
+  - "Topical steroids: First-line for pathologic phimosis (0.05% betamethasone BID x 4-6 weeks)"
+
+key_history_questions:
+  - "Can foreskin retract at all?"
+  - "Any difficulty urinating? Ballooning?"
+  - "Pain? Redness?"
+  - "Previous attempts to retract?"
+  - "Any forced retraction by caregiver or provider?"
+  - "Recurrent infections?"
+
+key_exam_findings:
+  - "Observe foreskin - scarring? (White ring at tip = BXO)"
+  - "Gently assess retractability - DO NOT force"
+  - "If paraphimosis: Swollen glans with tight foreskin band behind"
+  - "Signs of balanitis (erythema, discharge)"
+  - "Meatal stenosis"
+
+treatment_principles:
+  - "Physiologic phimosis: Reassurance - will resolve with time"
+  - "Pathologic phimosis: Topical steroid (betamethasone 0.05%) BID x 4-6 weeks"
+  - "Paraphimosis reduction: Steady pressure on glans, ice/sugar to reduce edema, pull foreskin forward"
+  - "If reduction fails: Dorsal slit or circumcision (urology emergency)"
+  - "Surgery: Reserved for steroid failure, BXO, recurrent paraphimosis"
+
+disposition_guidance:
+  - "Reassurance: Physiologic phimosis - no retraction needed"
+  - "Topical steroids: For symptomatic pathologic phimosis"
+  - "ED/urgent: Paraphimosis - needs immediate reduction"
+  - "Urology referral: Steroid failure, BXO, recurrent balanitis, recurrent UTI"
+  - "Counsel: Never forcibly retract foreskin in young child"
+
+parent_styles: [worried-about-anatomy, wanting-circumcision, confused-about-care]
+
+sources:
+  - "McGregor TB, et al. Evaluation and Management of Phimosis. AFP"
+  - "AAP Technical Report: Circumcision (includes phimosis discussion)"

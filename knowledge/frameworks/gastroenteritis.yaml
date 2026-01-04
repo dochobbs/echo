@@ -1,0 +1,66 @@
+# Acute Gastroenteritis - Teaching Framework
+topic: "Acute Gastroenteritis"
+aliases: ["stomach flu", "viral gastroenteritis", "acute diarrhea"]
+category: gi
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Use oral rehydration as first-line for mild-moderate dehydration"
+  - "Know appropriate use of ondansetron"
+  - "Avoid unnecessary dietary restrictions"
+  - "Recognize dehydration requiring IV fluids"
+
+common_mistakes:
+  - "Jumping to IV fluids for mild-moderate dehydration"
+  - "Repeat ondansetron dosing (QT risk, masks pathology)"
+  - "Recommending BRAT diet (outdated)"
+  - "Prescribing antibiotics for viral gastroenteritis"
+
+red_flags:
+  - "Severe dehydration"
+  - "Bilious vomiting"
+  - "Bloody diarrhea with high fever"
+  - "Altered mental status"
+  - "Abdominal distension/rigidity"
+
+clinical_pearls:
+  - "ORT (oral rehydration) is as safe and effective as IV for mild-moderate dehydration"
+  - "Ondansetron: Single dose can facilitate ORT success - avoid repeat dosing"
+  - "NO BRAT diet - resume normal diet ASAP to shorten illness"
+  - "Most cases viral - antibiotics not indicated"
+
+key_history_questions:
+  - "Duration of vomiting and diarrhea?"
+  - "Frequency of episodes?"
+  - "Blood in stool?"
+  - "Fever?"
+  - "Wet diapers in last 8-12 hours?"
+  - "Able to keep fluids down?"
+  - "Sick contacts? Daycare? Recent travel?"
+
+key_exam_findings:
+  - "Dehydration assessment (mucous membranes, tears, skin turgor)"
+  - "Capillary refill"
+  - "Heart rate"
+  - "Fontanelle in infants"
+  - "Mental status"
+  - "Abdominal exam"
+
+treatment_principles:
+  - "ORT first-line: Small frequent sips"
+  - "Ondansetron single dose to facilitate ORT"
+  - "IV fluids only for severe dehydration or ORT failure"
+  - "Resume normal diet once tolerating fluids"
+  - "Probiotics may reduce duration slightly"
+
+disposition_guidance:
+  - "Outpatient: Mild-moderate dehydration, tolerating ORT"
+  - "ED observation: ORT trial, IV fluids if needed"
+  - "Admit: Severe dehydration, unable to rehydrate, very young infant"
+
+parent_styles: [worried-about-dehydration, wants-IV, experienced]
+
+sources:
+  - "CDC MMWR: Managing Acute Gastroenteritis Among Children"
+  - "AAP Clinical Report: Oral Rehydration Therapy"
+  - "Cochrane Review: Antiemetics for Acute Gastroenteritis"

@@ -1,0 +1,70 @@
+# Periorbital vs Orbital Cellulitis - Teaching Framework
+topic: "Periorbital & Orbital Cellulitis"
+aliases: ["preseptal cellulitis", "orbital cellulitis", "eye infection"]
+category: infectious
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Distinguish periorbital from orbital cellulitis"
+  - "Know red flags requiring imaging and admission"
+  - "Understand this can be sight and life-threatening"
+  - "Order appropriate imaging when indicated"
+
+common_mistakes:
+  - "Missing orbital involvement"
+  - "Not ordering CT when orbital signs present"
+  - "Treating orbital cellulitis as outpatient"
+  - "Assuming all periorbital swelling is cellulitis (consider other causes)"
+
+red_flags:
+  - "Pain with eye movement (ophthalmoplegia)"
+  - "Proptosis"
+  - "Diplopia"
+  - "Decreased visual acuity"
+  - "Fever with eye findings"
+
+clinical_pearls:
+  - "PERIORBITAL (preseptal): Eyelid swelling ONLY, normal eye movements"
+  - "ORBITAL (postseptal): Pain with movement, Proptosis, Diplopia - involves EOM"
+  - "Contrast CT required if ANY sign of orbital involvement"
+  - "Orbital cellulitis = Emergency admission + IV antibiotics"
+
+key_history_questions:
+  - "Duration of swelling?"
+  - "Any recent sinus infection or URI?"
+  - "Trauma or insect bite to area?"
+  - "Pain - at rest or with eye movement?"
+  - "Double vision?"
+  - "Fever?"
+
+key_exam_findings:
+  - "Eyelid edema and erythema"
+  - "Extraocular movements (CRITICAL)"
+  - "Proptosis assessment"
+  - "Visual acuity"
+  - "Pupillary response"
+  - "Chemosis"
+  - "Eye pain with movement"
+
+treatment_principles:
+  - "Periorbital: Oral antibiotics (Augmentin), close follow-up"
+  - "Orbital: IV antibiotics (Vanc + Ceftriaxone or Unasyn)"
+  - "Orbital: ENT and Ophthalmology consults"
+  - "May need surgical drainage if abscess present"
+
+disposition_guidance:
+  - "Outpatient: Periorbital only, mild, reliable follow-up"
+  - "Admit: ANY orbital signs, severe periorbital, not improving"
+  - "Emergent CT: Pain with eye movement, proptosis, diplopia"
+
+differential_diagnosis:
+  - "Allergic reaction"
+  - "Insect bite"
+  - "Chalazion/hordeolum"
+  - "Dacryocystitis"
+
+parent_styles: [scared-about-vision, wants-antibiotics, delayed-presentation]
+
+sources:
+  - "Pediatric Infectious Disease Journal: Diagnosis and Management of Orbital Cellulitis"
+  - "Pediatrics in Review: Periorbital and Orbital Cellulitis"

@@ -1,0 +1,71 @@
+# Pediatric Chest Pain - Teaching Framework
+topic: "Pediatric Chest Pain"
+aliases: ["chest pain", "chest discomfort"]
+category: emergency
+age_range_months: [48, 216]
+
+teaching_goals:
+  - "Recognize that cardiac causes are RARE in children"
+  - "Know the common benign causes"
+  - "Identify true red flags requiring cardiac workup"
+  - "Avoid unnecessary testing in typical presentations"
+
+common_mistakes:
+  - "Ordering ECG/echo for all chest pain (low yield)"
+  - "Missing musculoskeletal causes (most common)"
+  - "Not addressing anxiety as a cause"
+  - "Over-testing leading to more anxiety"
+
+red_flags:
+  - "Exertional chest pain (with exercise)"
+  - "Syncope or near-syncope with chest pain"
+  - "Palpitations"
+  - "Family history of sudden cardiac death, cardiomyopathy, Long QT"
+  - "History of Kawasaki, heart disease, or chest surgery"
+  - "Abnormal exam (murmur, irregular rhythm, abnormal BP)"
+
+clinical_pearls:
+  - "Chest pain in children is almost NEVER cardiac - musculoskeletal/idiopathic most common"
+  - "Musculoskeletal: Reproducible with palpation - NO further workup"
+  - "Costochondritis: Tender at costochondral junctions, often unilateral"
+  - "Cardiac workup only if: Exertional, syncope, palpitations, FH sudden death, abnormal exam"
+  - "Anxiety is common cause - especially with hyperventilation, associated stress"
+
+key_history_questions:
+  - "Sharp or dull? Where exactly?"
+  - "Associated with exercise? Rest?"
+  - "How long does it last? Frequency?"
+  - "Any palpitations? Racing heart?"
+  - "Any dizziness, syncope, near-fainting?"
+  - "Recent illness, trauma, heavy lifting, coughing?"
+  - "Anxiety, stress, life changes?"
+  - "Family history of heart disease, sudden death, cardiomyopathy?"
+
+key_exam_findings:
+  - "Vital signs including blood pressure in both arms"
+  - "Cardiac: Rate, rhythm, murmurs"
+  - "Chest wall: Reproducible tenderness (costochondritis = MSK cause)"
+  - "Respiratory: Breath sounds, wheezing"
+  - "Signs of anxiety"
+  - "Red flags: Abnormal vitals, murmur, hepatomegaly"
+
+treatment_principles:
+  - "Musculoskeletal (most common): NSAIDs, reassurance"
+  - "Costochondritis: NSAIDs, may last weeks"
+  - "Anxiety-related: Breathing exercises, reassurance, address underlying anxiety"
+  - "GERD: Trial of antacid if suspected"
+  - "Cardiac workup (ECG, echo) ONLY if red flags present"
+  - "Most: Reassurance is the treatment"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Cardiology: If red flags present (exertional, syncope, palpitations, FH, abnormal exam)"
+  - "ED: Acute severe chest pain, respiratory distress, abnormal vitals"
+  - "Follow-up: As needed based on diagnosis"
+  - "Reassure: Cardiac causes rare in pediatric chest pain"
+
+parent_styles: [terrified-of-heart-attack, wants-testing, anxious-child]
+
+sources:
+  - "Danduran MJ. Chest Pain in Pediatric Patients. Pediatric Clinics"
+  - "AAP: Chest Pain in Children - When to Worry"

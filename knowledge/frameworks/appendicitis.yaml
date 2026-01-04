@@ -1,0 +1,67 @@
+# Appendicitis - Teaching Framework
+topic: "Appendicitis"
+aliases: ["acute appendicitis", "appy", "RLQ pain"]
+category: gi
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Recognize classic presentation and atypical features"
+  - "Know ultrasound is first-line imaging in pediatrics"
+  - "Understand clinical scoring systems (Pediatric Appendicitis Score)"
+  - "Avoid CT radiation when possible"
+
+common_mistakes:
+  - "Going straight to CT without ultrasound first"
+  - "Missing early/atypical presentations"
+  - "Reassured by 'normal' WBC early in course"
+  - "Not considering appendicitis in young children"
+
+red_flags:
+  - "Signs of perforation (diffuse peritonitis, high fever)"
+  - "Peritoneal signs"
+  - "Prolonged symptoms (>48 hours) with worsening"
+  - "Toxic appearance"
+
+clinical_pearls:
+  - "Classic progression: Periumbilical pain → RLQ pain + anorexia + vomiting"
+  - "Pain BEFORE vomiting (opposite of gastroenteritis)"
+  - "Ultrasound FIRST in children - avoid CT radiation"
+  - "If US equivocal and high suspicion, MRI preferred over CT if available"
+  - "Pediatric Appendicitis Score: Helps risk stratify"
+
+key_history_questions:
+  - "When did pain start? Where?"
+  - "Has pain moved? (Migration to RLQ classic)"
+  - "Vomiting? When relative to pain onset?"
+  - "Appetite? (Anorexia very common)"
+  - "Fever?"
+  - "Last bowel movement? Diarrhea?"
+  - "Able to walk, jump without pain?"
+
+key_exam_findings:
+  - "RLQ tenderness (McBurney's point)"
+  - "Guarding, rigidity"
+  - "Rebound tenderness, Rovsing's sign"
+  - "Psoas sign, obturator sign"
+  - "Rectal exam rarely needed in typical presentation"
+  - "Observe gait - limp, guarding when walking"
+
+treatment_principles:
+  - "NPO, IV fluids"
+  - "Imaging: Ultrasound first, MRI if equivocal, CT if MRI unavailable"
+  - "Surgical consultation"
+  - "Uncomplicated: Appendectomy (laparoscopic)"
+  - "Perforation with abscess: May be managed non-operatively initially"
+  - "Antibiotics if perforated or delayed surgery"
+
+disposition_guidance:
+  - "ED referral: Suspected appendicitis"
+  - "Surgical consult: All confirmed cases"
+  - "Admit: For surgery or observation"
+  - "Low suspicion: Can observe at home with strict return precautions"
+
+parent_styles: [scared-about-surgery, wants-certainty, worried-about-pain]
+
+sources:
+  - "Kharbanda AB, et al. AAP Clinical Report: Diagnosis of Appendicitis"
+  - "ACR Appropriateness Criteria: RLQ Pain in Children"

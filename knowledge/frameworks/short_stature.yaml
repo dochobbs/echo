@@ -1,0 +1,73 @@
+# Short Stature - Teaching Framework
+topic: "Short Stature"
+aliases: ["short stature", "growth failure", "failure to grow", "growth delay"]
+category: endocrine
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Differentiate normal variants from pathologic causes"
+  - "Know how to calculate mid-parental height"
+  - "Recognize when growth failure indicates serious disease"
+  - "Order appropriate initial workup"
+
+common_mistakes:
+  - "Not plotting growth velocity (more important than single height)"
+  - "Missing hypothyroidism or celiac disease"
+  - "Not obtaining bone age"
+  - "Reassuring without appropriate workup"
+
+red_flags:
+  - "Crossing growth percentiles (declining velocity)"
+  - "Height significantly below mid-parental target"
+  - "Disproportionate body segments (skeletal dysplasia)"
+  - "Dysmorphic features"
+  - "Delayed puberty with short stature"
+  - "Associated symptoms (headache, vision changes)"
+
+clinical_pearls:
+  - "Normal variants: Familial short stature (short parents, normal velocity) and Constitutional delay (bone age delayed, late puberty, catch-up later)"
+  - "Mid-parental height: (Mom height + Dad height +/- 13cm) / 2; target range +/- 8.5cm"
+  - "Growth velocity more important than absolute height - crossing percentiles is concerning"
+  - "Bone age: Delayed in constitutional delay and some endocrine disorders; normal in familial short stature"
+  - "Common pathologic causes: Hypothyroidism, celiac disease, GH deficiency, Turner syndrome (girls)"
+
+key_history_questions:
+  - "Birth history: Weight, length, gestational age?"
+  - "Parent heights?"
+  - "Family history of late bloomers?"
+  - "Age of parent's puberty?"
+  - "Chronic illness? Medications?"
+  - "Diet, appetite?"
+  - "GI symptoms (celiac screen)?"
+  - "Fatigue, cold intolerance (thyroid)?"
+  - "Headaches, vision changes (pituitary)?"
+
+key_exam_findings:
+  - "Height, weight, BMI on growth curve"
+  - "Calculate growth velocity (need 2 points over 6+ months)"
+  - "Calculate mid-parental target height"
+  - "Body proportions (arm span, upper/lower segment ratio)"
+  - "Dysmorphic features (Turner, skeletal dysplasia)"
+  - "Tanner staging"
+  - "Thyroid exam"
+  - "Visual fields if pituitary suspected"
+
+treatment_principles:
+  - "Familial short stature: Reassurance - no treatment needed"
+  - "Constitutional delay: Reassurance; optional short course sex steroids"
+  - "Treat underlying cause if pathologic (hypothyroidism, celiac, etc.)"
+  - "Growth hormone: Only if GH deficiency proven"
+  - "Turner syndrome: GH + estrogen replacement"
+
+disposition_guidance:
+  - "Initial labs: CBC, CMP, TSH, celiac panel (tTG-IgA), IGF-1, +/- karyotype (girls)"
+  - "Bone age: Essential first step"
+  - "Endocrinology referral: Pathologic cause suspected, GH deficiency, declining velocity"
+  - "Genetics: Dysmorphic features, disproportionate"
+  - "Brain MRI: If GH deficiency confirmed or neurologic symptoms"
+
+parent_styles: [wants-growth-hormone, accepting-of-genetics, anxious-about-height]
+
+sources:
+  - "Grimberg A, et al. AAP Clinical Practice Guideline: Idiopathic Short Stature"
+  - "Rogol AD. Diagnostic Approach to Short Stature. Pediatric Clinics"

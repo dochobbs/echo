@@ -1,0 +1,75 @@
+# Febrile Infant (8-60 Days) - Teaching Framework
+topic: "Febrile Infant"
+aliases: ["fever in young infant", "neonatal fever", "infant fever workup"]
+category: newborn
+age_range_months: [0, 2]
+
+teaching_goals:
+  - "Apply age-stratified approach: 8-21 days vs 22-60 days"
+  - "Use inflammatory markers (Procalcitonin, ANC, CRP) to stratify risk"
+  - "Know when HSV testing is mandatory"
+  - "Understand urinalysis as most sensitive screen"
+  - "Recognize which infants require admission vs can be observed"
+
+common_mistakes:
+  - "Sending home ANY infant 8-21 days old with fever (all need admission)"
+  - "Forgetting to consider HSV in infants <21 days"
+  - "Using bag urine specimen (catheter or suprapubic required)"
+  - "Over-relying on 'well-appearing' in very young infants"
+  - "Forgetting to ask about maternal history (GBS, HSV, ROM)"
+
+red_flags:
+  - "Age 8-21 days (automatic high risk)"
+  - "Ill-appearing or inconsolable"
+  - "Vesicular rash (HSV)"
+  - "Seizure activity"
+  - "Bulging fontanelle"
+  - "Maternal HSV history"
+  - "Prematurity <37 weeks"
+
+clinical_pearls:
+  - "8-21 Days = Automatic Admission + Full sepsis workup + IV antibiotics"
+  - "22-60 Days = Use inflammatory markers to stratify risk"
+  - "HSV: Test in any infant <21 days or with seizures/vesicles/maternal history"
+  - "Urinalysis is the most sensitive screen - negative UA rules out most bacterial infections"
+  - "Procalcitonin <0.5 ng/mL has high negative predictive value"
+
+key_history_questions:
+  - "Exact age in days?"
+  - "Fever duration and maximum temperature?"
+  - "Feeding - how much, how often?"
+  - "Maternal history - GBS status, HSV, ROM duration, chorioamnionitis?"
+  - "Birth history - premature? NICU stay?"
+  - "Sick contacts?"
+
+key_exam_findings:
+  - "General appearance (well vs ill)"
+  - "Fontanelle (soft/flat vs bulging)"
+  - "Skin (vesicles, rashes, mottling)"
+  - "Capillary refill"
+  - "Consolability"
+
+treatment_principles:
+  - "8-21 days: Ampicillin + Cefotaxime (or Gentamicin) IV"
+  - "Consider Acyclovir if HSV risk factors"
+  - "22-60 days low-risk: May observe at home with guaranteed 24h follow-up"
+  - "Obtain Blood/Urine culture before antibiotics"
+
+disposition_guidance:
+  - "Admit ALL infants 8-21 days with fever"
+  - "22-60 days: Low-risk may observe outpatient with reliable follow-up"
+  - "Low-risk criteria: Well-appearing, negative UA, normal inflammatory markers"
+
+age_specific_considerations:
+  early_neonate:
+    age_days: [8, 21]
+    notes: "Full sepsis workup + Admission + IV antibiotics for ALL"
+  older_infant:
+    age_days: [22, 60]
+    notes: "Risk stratify with inflammatory markers"
+
+parent_styles: [terrified, experienced, hesitant-about-workup]
+
+sources:
+  - "Pantell RH, et al. AAP CPG: Febrile Infants 8-60 Days (2021)"
+  - "JAMA Pediatrics: Prevalence of Invasive Bacterial Infection"

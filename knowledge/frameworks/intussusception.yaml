@@ -1,0 +1,70 @@
+# Intussusception - Teaching Framework
+topic: "Intussusception"
+aliases: ["intussusception", "telescoping bowel"]
+category: gi
+age_range_months: [3, 36]
+
+teaching_goals:
+  - "Recognize classic triad (even though complete triad uncommon)"
+  - "Know ultrasound is diagnostic test of choice"
+  - "Understand air enema is both diagnostic and therapeutic"
+  - "Identify lead point concerns in older children"
+
+common_mistakes:
+  - "Missing diagnosis when currant jelly stool absent (late finding)"
+  - "Getting CT instead of ultrasound"
+  - "Not considering in infant with intermittent inconsolable crying"
+  - "Missing lead point in children >2-3 years"
+
+red_flags:
+  - "Signs of perforation or peritonitis"
+  - "Prolonged symptoms (>48-72 hours)"
+  - "Bilious vomiting"
+  - "Hemodynamic instability"
+  - "Palpable mass"
+
+clinical_pearls:
+  - "Peak age: 6-18 months - classic triad (colicky pain, vomiting, bloody stool) in only 20%"
+  - "Intermittent, severe, colicky abdominal pain with pain-free intervals"
+  - "Ultrasound: Target/doughnut sign diagnostic"
+  - "Air enema: Diagnostic AND therapeutic - 85-90% success rate"
+  - "Lead point: More likely if age >2-3 years (Meckel's, polyp, lymphoma)"
+
+key_history_questions:
+  - "Describe the episodes - sudden onset? Severe?"
+  - "Pain-free intervals between episodes?"
+  - "Vomiting? Bilious?"
+  - "Stools - any blood or mucus (currant jelly)?"
+  - "Last normal stool?"
+  - "Recent illness? (Post-viral most common trigger)"
+  - "Normal appetite and activity between episodes?"
+  - "Age of child?"
+
+key_exam_findings:
+  - "Assess hydration and hemodynamic status"
+  - "Abdominal exam - 'sausage-shaped' mass in RUQ"
+  - "Empty RLQ (Dance's sign)"
+  - "Lethargy (may be striking between episodes)"
+  - "Rectal exam - blood on glove (late finding)"
+  - "Signs of peritonitis"
+
+treatment_principles:
+  - "NPO, IV fluids, NG if vomiting"
+  - "Ultrasound for diagnosis"
+  - "Air or contrast enema: Reduction - 85-90% success"
+  - "Surgical consultation (before or concurrent with enema)"
+  - "Surgery: If enema fails, perforation, peritonitis, or shock"
+  - "Admit for observation after successful reduction (recurrence 5-10%)"
+
+disposition_guidance:
+  - "ED: All suspected cases"
+  - "Radiology: Ultrasound first, then therapeutic enema"
+  - "Surgery: Consult for all confirmed cases"
+  - "Admit: After reduction for observation (24-48 hours)"
+  - "Workup for lead point: If age >3 years or recurrent"
+
+parent_styles: [terrified, wants-answers-quickly]
+
+sources:
+  - "Waseem M, et al. Intussusception. Pediatrics in Review"
+  - "ACR Appropriateness Criteria: Suspected Intussusception"

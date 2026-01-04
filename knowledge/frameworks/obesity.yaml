@@ -1,0 +1,72 @@
+# Pediatric Obesity - Teaching Framework
+topic: "Pediatric Obesity"
+aliases: ["obesity", "overweight", "weight management"]
+category: endocrine
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Know BMI percentile definitions for overweight and obesity"
+  - "Screen for comorbidities"
+  - "Apply motivational interviewing"
+  - "Recognize when medication or surgery may be indicated"
+
+common_mistakes:
+  - "Not plotting BMI at every visit"
+  - "Not screening for comorbidities (especially NAFLD)"
+  - "Blaming/shaming approach (ineffective and harmful)"
+  - "Missing secondary causes"
+
+red_flags:
+  - "Acanthosis nigricans (insulin resistance)"
+  - "SCFE symptoms (hip/knee/thigh pain)"
+  - "Sleep apnea symptoms"
+  - "Signs of secondary cause (short stature, developmental delay)"
+  - "Severe obesity (BMI ≥120% of 95th percentile)"
+
+clinical_pearls:
+  - "Definitions: Overweight (85th-94th), Obesity (≥95th), Severe obesity (≥120% of 95th or BMI ≥35)"
+  - "Screen for comorbidities: Lipids, glucose/A1c, ALT (NAFLD) starting at age 10 or puberty"
+  - "Acanthosis nigricans = insulin resistance marker"
+  - "Motivational interviewing > prescriptive advice for behavior change"
+  - "5-2-1-0 daily goals: 5 fruits/veg, 2 hours max screen time, 1 hour physical activity, 0 sugary drinks"
+
+key_history_questions:
+  - "Diet: Typical day of eating? Sugary drinks? Fast food frequency?"
+  - "Activity: How much daily? Type?"
+  - "Screen time: How many hours?"
+  - "Sleep: How many hours? Snoring?"
+  - "Family history: Obesity, diabetes, heart disease?"
+  - "Medications that cause weight gain?"
+  - "Psychosocial: Bullying, depression, anxiety?"
+  - "Readiness to change?"
+
+key_exam_findings:
+  - "BMI percentile - plot on growth chart"
+  - "Blood pressure (use appropriate cuff size)"
+  - "Acanthosis nigricans (neck, axillae)"
+  - "Striae"
+  - "Hepatomegaly (NAFLD)"
+  - "Tanner staging"
+  - "Signs of secondary cause: Short stature, dysmorphisms"
+  - "Limited hip ROM (SCFE risk)"
+
+treatment_principles:
+  - "Motivational interviewing - meet patient where they are"
+  - "5-2-1-0 framework for lifestyle goals"
+  - "Family-based approach - whole family changes"
+  - "Intensive behavioral therapy for moderate-severe obesity"
+  - "Pharmacotherapy: Consider if BMI ≥95th + comorbidity or ≥120% of 95th (age ≥12)"
+  - "Bariatric surgery: Severe obesity with comorbidities, failed other treatments"
+
+disposition_guidance:
+  - "Labs: Lipids, fasting glucose or A1c, ALT (age ≥10 or puberty onset)"
+  - "Refer: Dietitian/nutrition, behavioral health if available"
+  - "Subspecialty obesity clinic: Severe obesity, comorbidities, considering medication"
+  - "Endocrine: If secondary cause suspected"
+  - "Follow-up: Every 3-6 months for weight management"
+
+parent_styles: [in-denial, wants-quick-fix, overwhelmed, genetic-fatalism]
+
+sources:
+  - "Hampl SE, et al. AAP Clinical Practice Guideline: Evaluation and Treatment of Pediatric Obesity"
+  - "Endocrine Society Guidelines: Pediatric Obesity"

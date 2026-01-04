@@ -1,0 +1,71 @@
+# Cervical Lymphadenopathy - Teaching Framework
+topic: "Cervical Lymphadenopathy"
+aliases: ["swollen lymph nodes", "neck mass", "lymphadenitis"]
+category: infectious
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Distinguish reactive from concerning lymphadenopathy"
+  - "Recognize bacterial lymphadenitis"
+  - "Know red flags for malignancy"
+  - "Choose appropriate antibiotic coverage"
+
+common_mistakes:
+  - "Missing supraclavicular nodes (always pathologic)"
+  - "Undertreating bacterial lymphadenitis"
+  - "Over-imaging reactive lymphadenopathy"
+  - "Not following up persistent nodes"
+
+red_flags:
+  - "Supraclavicular lymphadenopathy (malignancy)"
+  - "Fixed, non-tender, hard nodes"
+  - "Rapidly enlarging nodes"
+  - "Associated weight loss, night sweats"
+  - "Generalized lymphadenopathy"
+
+clinical_pearls:
+  - "Reactive: Small, mobile, bilateral = Viral, reassure"
+  - "Lymphadenitis: Unilateral, tender, red, >2-3cm = Bacterial (Staph/Strep)"
+  - "Bacterial lymphadenitis: Clindamycin covers both Staph and Strep"
+  - "SUPRACLAVICULAR nodes are ALWAYS PATHOLOGIC - think malignancy"
+
+key_history_questions:
+  - "How long has the swelling been present?"
+  - "Any recent illness, dental problems, or injury?"
+  - "Pain or tenderness?"
+  - "Fever?"
+  - "Weight loss, night sweats?"
+  - "Cat exposure (cat scratch disease)?"
+
+key_exam_findings:
+  - "Location of nodes"
+  - "Size (measure in cm)"
+  - "Unilateral vs bilateral"
+  - "Tenderness"
+  - "Mobility vs fixed"
+  - "Overlying skin changes (erythema, warmth)"
+  - "Generalized vs localized"
+
+treatment_principles:
+  - "Reactive: Observation, reassurance"
+  - "Bacterial lymphadenitis: Clindamycin 30-40 mg/kg/day divided TID"
+  - "Fluctuant nodes: May need I&D"
+  - "Persistent unexplained: Consider biopsy"
+
+disposition_guidance:
+  - "Outpatient: Most cases, with follow-up"
+  - "Urgent workup: Supraclavicular, fixed hard nodes, systemic symptoms"
+  - "Follow-up: Recheck in 2-4 weeks if observation"
+
+differential_diagnosis:
+  - "Reactive lymphadenopathy (viral)"
+  - "Bacterial lymphadenitis"
+  - "Cat scratch disease"
+  - "Mycobacterial infection"
+  - "Malignancy (lymphoma, leukemia)"
+
+parent_styles: [worried-about-cancer, reassurance-seeking, persistent-concern]
+
+sources:
+  - "Pediatrics in Review: Evaluation and Management of Lymphadenopathy"
+  - "Otolaryngology-Head Neck Surgery: CPG - Neck Masses"

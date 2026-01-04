@@ -1,0 +1,69 @@
+# Gastroesophageal Reflux - Teaching Framework
+topic: "Gastroesophageal Reflux"
+aliases: ["GER", "GERD", "reflux", "spitting up"]
+category: gi
+age_range_months: [0, 24]
+
+teaching_goals:
+  - "Distinguish physiologic GER from pathologic GERD"
+  - "Know 'happy spitter' needs no treatment"
+  - "Avoid routine acid suppression for uncomplicated reflux"
+  - "Recognize when workup is needed"
+
+common_mistakes:
+  - "Treating normal infant spit-up with PPIs"
+  - "Not addressing overfeeding"
+  - "Missing cow's milk protein intolerance"
+  - "Ordering imaging for typical presentation"
+
+red_flags:
+  - "Bilious vomiting (malrotation)"
+  - "Projectile vomiting (pyloric stenosis)"
+  - "Poor weight gain, failure to thrive"
+  - "Hematemesis"
+  - "Respiratory symptoms (apnea, recurrent pneumonia)"
+  - "Sandifer syndrome (arching, torticollis)"
+
+clinical_pearls:
+  - "GER (physiologic): Spitting up in happy, growing infant - peaks at 4 months, resolves by 12-18 months"
+  - "GERD (pathologic): Complications - poor growth, esophagitis, respiratory issues"
+  - "'Happy spitter' = NO treatment needed, just reassurance"
+  - "Avoid PPIs in infants without proven GERD - no benefit, potential harms"
+  - "Consider CMPI if persistent symptoms or blood in stool"
+
+key_history_questions:
+  - "Frequency and volume of spit-up?"
+  - "Forceful/projectile? Bilious?"
+  - "Feeding amount and frequency (overfeeding?)"
+  - "Any blood in spit-up?"
+  - "Weight gain? Following curve?"
+  - "Fussiness, arching, feeding refusal?"
+  - "Any respiratory symptoms (cough, wheeze, apnea)?"
+  - "Formula type? Any changes?"
+
+key_exam_findings:
+  - "Weight and growth trajectory"
+  - "Hydration status"
+  - "Abdominal exam (olive mass = pyloric stenosis)"
+  - "Signs of respiratory distress"
+  - "Generally normal in physiologic GER"
+
+treatment_principles:
+  - "Physiologic GER: Reassurance, feeding modifications"
+  - "Feeding adjustments: Smaller, more frequent feeds; upright positioning after feeds"
+  - "If formula-fed: Can trial thickened feeds (rice cereal)"
+  - "If breastfed: Continue - may try maternal dairy elimination if CMPI suspected"
+  - "Acid suppression (PPI): Only for proven GERD with complications"
+  - "Avoid: Positional devices, prone sleeping (SIDS risk)"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "GI referral: Failed conservative management, suspicion for GERD complications"
+  - "Urgent: Bilious vomiting, projectile vomiting, FTT, significant respiratory symptoms"
+  - "No imaging needed for typical GER"
+
+parent_styles: [wants-medication, exhausted, over-feeding, anxious]
+
+sources:
+  - "Rosen R, et al. NASPGHAN/ESPGHAN: Pediatric Gastroesophageal Reflux Guidelines"
+  - "AAP: Infant GERD Choosing Wisely Recommendation"

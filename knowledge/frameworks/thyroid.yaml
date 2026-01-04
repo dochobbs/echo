@@ -1,0 +1,71 @@
+# Thyroid Disorders - Teaching Framework
+topic: "Thyroid Disorders"
+aliases: ["hypothyroidism", "hyperthyroidism", "thyroid disease", "Hashimoto's", "Graves disease"]
+category: endocrine
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Know newborn screening includes congenital hypothyroidism"
+  - "Recognize acquired hypothyroidism and hyperthyroidism"
+  - "Understand Hashimoto's is most common cause of acquired hypothyroidism"
+  - "Know Graves disease presentation and management"
+
+common_mistakes:
+  - "Not repeating abnormal newborn screen promptly"
+  - "Missing subtle hypothyroidism symptoms (fatigue, constipation, weight gain)"
+  - "Not checking TSH in child with goiter"
+  - "Missing thyroid storm in severe Graves disease"
+
+red_flags:
+  - "Severe hyperthyroidism (thyroid storm): Fever, tachycardia, altered mental status"
+  - "Compressive symptoms from goiter (dysphagia, stridor)"
+  - "Thyroid nodule (evaluate for malignancy)"
+  - "Neonatal hypothyroidism untreated (developmental delay)"
+
+clinical_pearls:
+  - "Congenital hypothyroidism: Detected on newborn screen - treat by 2 weeks to prevent developmental delay"
+  - "Hashimoto's: Most common cause of acquired hypothyroidism; TPO antibodies positive"
+  - "Graves disease: Most common cause of hyperthyroidism; TSI antibodies positive"
+  - "Hyperthyroid symptoms: Weight loss, heat intolerance, palpitations, tremor, anxiety, diarrhea"
+  - "Hypothyroid symptoms: Fatigue, weight gain, cold intolerance, constipation, dry skin, delayed growth"
+
+key_history_questions:
+  - "Energy level? Fatigue?"
+  - "Weight changes? Appetite changes?"
+  - "Heat or cold intolerance?"
+  - "Bowel habits (constipation vs diarrhea)?"
+  - "Growth pattern?"
+  - "Menstrual irregularities?"
+  - "Anxiety, tremor, palpitations?"
+  - "Family history of thyroid disease?"
+  - "Any neck swelling or mass?"
+
+key_exam_findings:
+  - "Thyroid exam: Size, nodules, tenderness"
+  - "Heart rate, blood pressure"
+  - "Skin (dry vs moist, warm)"
+  - "Reflexes (sluggish vs brisk)"
+  - "Tremor"
+  - "Eye exam: Proptosis, lid lag (Graves)"
+  - "Growth velocity"
+  - "Pubertal status"
+
+treatment_principles:
+  - "Hypothyroidism: Levothyroxine replacement; dose by weight in children"
+  - "Congenital hypothyroidism: Start levothyroxine immediately (by 2 weeks of life)"
+  - "Graves disease: Methimazole first-line; beta-blocker for symptom control"
+  - "Graves: Definitive therapy = RAI or surgery if antithyroid medication fails"
+  - "Monitor: TSH and free T4 every 4-6 weeks during titration"
+
+disposition_guidance:
+  - "Urgent: Abnormal newborn screen (congenital hypothyroidism) - refer immediately"
+  - "Endocrinology: All Graves disease, thyroid nodules, complex cases"
+  - "Labs: TSH first; if abnormal, add free T4, +/- T3, antibodies"
+  - "ED: Thyroid storm, severe hyperthyroidism"
+  - "Ultrasound: Thyroid nodules, goiter"
+
+parent_styles: [worried-about-lifelong-treatment, confused-about-hypo-vs-hyper, wants-natural-remedies]
+
+sources:
+  - "AAP Clinical Report: Update on Newborn Screening for Congenital Hypothyroidism"
+  - "LaFranchi SH. Thyroid Disorders in Children. Pediatrics in Review"

@@ -1,0 +1,71 @@
+# Croup (Laryngotracheitis) - Teaching Framework
+topic: "Croup"
+aliases: ["laryngotracheitis", "viral croup", "barky cough"]
+category: respiratory
+age_range_months: [6, 72]
+
+teaching_goals:
+  - "Diagnose croup clinically without imaging"
+  - "Use Westley score to assess severity"
+  - "Know dexamethasone is indicated for ALL severities"
+  - "Understand racemic epinephrine observation requirements"
+
+common_mistakes:
+  - "Not giving steroids for mild croup"
+  - "Ordering neck X-ray routinely (steeple sign not needed)"
+  - "Sending home immediately after racemic epinephrine"
+  - "Missing severe croup requiring hospitalization"
+
+red_flags:
+  - "Stridor at rest"
+  - "Severe retractions"
+  - "Cyanosis or altered mental status"
+  - "Drooling or toxic appearance (consider epiglottitis)"
+  - "No response to steroids/epinephrine"
+
+clinical_pearls:
+  - "Dexamethasone 0.6 mg/kg (single dose) indicated for ALL severity levels"
+  - "Steroids reduce return visits and severity"
+  - "Westley Score: Stridor at rest + Retractions = Severe"
+  - "Racemic epinephrine: Observe 2-4 hours for 'rebound' effect"
+  - "Barky 'seal-like' cough is pathognomonic"
+
+key_history_questions:
+  - "Duration of symptoms?"
+  - "Barky cough present?"
+  - "Stridor - at rest or only when crying?"
+  - "Fever?"
+  - "URI symptoms preceding?"
+  - "Previous croup episodes?"
+  - "Able to drink fluids?"
+
+key_exam_findings:
+  - "Barky cough (listen for it)"
+  - "Stridor (inspiratory vs biphasic)"
+  - "Work of breathing (retractions)"
+  - "Air entry"
+  - "Mental status"
+  - "Oxygen saturation"
+  - "Drooling (suggests epiglottitis)"
+
+treatment_principles:
+  - "Dexamethasone 0.6 mg/kg PO/IM - single dose for all"
+  - "Racemic epinephrine for moderate-severe"
+  - "Observe 2-4 hours after racemic epinephrine"
+  - "Supportive care: Humidified air, comfort measures"
+
+disposition_guidance:
+  - "Discharge: Mild croup after steroids, no stridor at rest"
+  - "Observe: After racemic epinephrine (2-4 hours)"
+  - "Admit: Persistent stridor at rest, multiple epinephrine doses, hypoxia"
+
+seasonality:
+  peak_months: [10, 11, 12, 1, 2]
+  pattern: "Fall/Winter predominance"
+
+parent_styles: [scared-by-stridor, experienced-with-croup, wants-antibiotics]
+
+sources:
+  - "American Family Physician: Croup - An Overview"
+  - "Alberta Medical Association CPG: Diagnosis and Management of Croup"
+  - "Cochrane Database: Corticosteroids for Croup"

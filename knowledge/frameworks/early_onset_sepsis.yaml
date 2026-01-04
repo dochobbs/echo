@@ -1,0 +1,62 @@
+# Early-Onset Sepsis - Teaching Framework
+topic: "Early-Onset Sepsis"
+aliases: ["neonatal sepsis", "EOS", "newborn sepsis"]
+category: newborn
+age_range_months: [0, 1]
+
+teaching_goals:
+  - "Use the Kaiser Sepsis Calculator appropriately"
+  - "Understand value of serial physical exams in equivocal cases"
+  - "Know adequate GBS prophylaxis criteria"
+  - "Balance antibiotic stewardship with safety"
+
+common_mistakes:
+  - "Automatically treating all infants with maternal chorioamnionitis"
+  - "Not using Sepsis Calculator to guide decisions"
+  - "Forgetting serial exams as alternative to labs in equivocal cases"
+  - "Missing inadequate GBS prophylaxis (<4 hours before delivery)"
+
+red_flags:
+  - "Maternal chorioamnionitis"
+  - "GBS positive without adequate prophylaxis"
+  - "Prolonged rupture of membranes (>18 hours)"
+  - "Preterm delivery"
+  - "Clinical signs: temperature instability, tachypnea, poor feeding"
+
+clinical_pearls:
+  - "Sepsis Calculator significantly reduces unnecessary antibiotic use"
+  - "Serial exams q4h are as sensitive as lab work for detecting deterioration"
+  - "GBS prophylaxis is adequate if given >4 hours before delivery"
+  - "Clinical Observation zone: serial exams preferred over automatic labs"
+
+key_history_questions:
+  - "Maternal GBS status?"
+  - "Duration of rupture of membranes?"
+  - "Maternal fever or signs of chorioamnionitis?"
+  - "Intrapartum antibiotic timing and type?"
+  - "Gestational age?"
+
+key_exam_findings:
+  - "Temperature stability"
+  - "Respiratory effort and rate"
+  - "Feeding behavior"
+  - "Tone and activity"
+  - "Skin color and perfusion"
+
+treatment_principles:
+  - "Use Sepsis Calculator for risk stratification"
+  - "Serial clinical observation for equivocal risk"
+  - "Ampicillin + Gentamicin for empiric coverage"
+  - "Blood culture before antibiotics when possible"
+
+disposition_guidance:
+  - "Enhanced observation: Low-risk per calculator"
+  - "Admit for workup: High-risk or clinical signs"
+  - "Serial exams q4h: Equivocal risk zone"
+
+parent_styles: [anxious, trusting, questioning]
+
+sources:
+  - "Puopolo KM, et al. AAP Clinical Report: Early-Onset Sepsis (2018)"
+  - "Kaiser Permanente Neonatal Early-Onset Sepsis Calculator"
+  - "CDC Guidelines: Prevention of Perinatal GBS Disease"

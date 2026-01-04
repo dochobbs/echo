@@ -1,0 +1,69 @@
+# Iron Deficiency Anemia - Teaching Framework
+topic: "Iron Deficiency Anemia"
+aliases: ["IDA", "iron deficiency", "anemia", "low iron"]
+category: hematology
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Know peak ages and dietary risk factors"
+  - "Recognize symptoms and when to screen"
+  - "Prescribe iron correctly"
+  - "Identify red flags for other causes"
+
+common_mistakes:
+  - "Not counseling on dietary causes (excessive milk intake)"
+  - "Prescribing insufficient dose or duration"
+  - "Not giving with vitamin C (improves absorption)"
+  - "Missing other causes of microcytic anemia"
+
+red_flags:
+  - "Anemia not responding to iron (consider thalassemia, lead, GI blood loss)"
+  - "Severe anemia (Hgb <7) with symptoms"
+  - "Anemia with hepatosplenomegaly or lymphadenopathy"
+  - "Pica with lead poisoning risk"
+
+clinical_pearls:
+  - "Peak ages: 9-24 months (dietary transition) and menstruating adolescents"
+  - "Excessive cow's milk: >24 oz/day displaces iron-rich foods AND causes GI blood loss"
+  - "Iron dose: 3-6 mg/kg/day elemental iron, divided BID-TID, with vitamin C"
+  - "Reticulocyte count increases first (within 1 week), then Hgb (1-2 months)"
+  - "Mentzer index: MCV/RBC >13 suggests IDA; <13 suggests thalassemia trait"
+
+key_history_questions:
+  - "Diet: How much milk per day? Variety of foods?"
+  - "Picky eater? Eating non-food items (pica)?"
+  - "Any blood in stool? Dark stools?"
+  - "Menstrual history - heavy periods?"
+  - "Fatigue, pallor, decreased activity?"
+  - "Lead exposure risk?"
+  - "Family history of anemia, thalassemia?"
+
+key_exam_findings:
+  - "Pallor (conjunctival, palmar)"
+  - "Tachycardia (compensatory)"
+  - "Heart murmur (flow murmur from anemia)"
+  - "Splenomegaly (absent in IDA - if present, think other cause)"
+  - "Angular cheilitis, glossitis"
+  - "Pica (ice, dirt, starch)"
+
+treatment_principles:
+  - "Elemental iron: 3-6 mg/kg/day divided BID-TID"
+  - "Give with vitamin C (orange juice) to enhance absorption"
+  - "Avoid giving with milk or calcium"
+  - "Duration: 2-3 months after Hgb normalizes (replete stores)"
+  - "Dietary counseling: Limit milk to <20 oz/day, iron-rich foods"
+  - "Recheck CBC in 4 weeks - Hgb should rise 1-2 g/dL"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Screen: 9-12 months (risk-based), menstruating adolescents"
+  - "Labs: CBC, reticulocyte count; ferritin, iron studies if uncertain"
+  - "If no response: Lead level, consider thalassemia workup (Hgb electrophoresis)"
+  - "Hematology: Severe, unresponsive, uncertain diagnosis"
+  - "Transfusion: Rarely needed; only for severe symptomatic anemia"
+
+parent_styles: [didnt-know-about-diet, concerned-about-picky-eater, wants-quick-fix]
+
+sources:
+  - "Baker RD, et al. AAP Clinical Report: Diagnosis and Prevention of Iron Deficiency Anemia"
+  - "CDC: Pediatric Iron Deficiency Recommendations"

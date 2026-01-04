@@ -1,0 +1,64 @@
+# Infectious Mononucleosis (EBV) - Teaching Framework
+topic: "Infectious Mononucleosis"
+aliases: ["mono", "EBV", "glandular fever", "kissing disease"]
+category: infectious
+age_range_months: [48, 216]
+
+teaching_goals:
+  - "Recognize amoxicillin rash is NOT penicillin allergy"
+  - "Counsel on activity restriction for splenic rupture prevention"
+  - "Know when steroids are indicated"
+  - "Avoid unnecessary antibiotics"
+
+common_mistakes:
+  - "Labeling amoxicillin rash as penicillin allergy"
+  - "Not counseling on sports restriction"
+  - "Using spleen palpation to clear for sports"
+  - "Prescribing steroids for uncomplicated mono"
+
+red_flags:
+  - "Airway compromise ('kissing tonsils')"
+  - "Severe abdominal pain (splenic rupture)"
+  - "Significant hepatosplenomegaly"
+  - "Thrombocytopenia with bleeding"
+
+clinical_pearls:
+  - "Amoxicillin causes viral rash in 90% of mono patients - NOT a penicillin allergy"
+  - "No contact sports for minimum 21-28 days"
+  - "Splenic exam is UNRELIABLE - time is the best clearer"
+  - "'Kissing tonsils' require steroids to prevent airway obstruction"
+  - "Most cases self-limited - supportive care only"
+
+key_history_questions:
+  - "Duration of symptoms?"
+  - "Sore throat, fatigue, fever?"
+  - "Any difficulty swallowing or breathing?"
+  - "Abdominal pain?"
+  - "Any recent antibiotics? Rash?"
+  - "Participation in sports?"
+
+key_exam_findings:
+  - "Tonsillar size and exudates"
+  - "Cervical lymphadenopathy (posterior chain classic)"
+  - "Splenomegaly"
+  - "Hepatomegaly"
+  - "Rash (especially if received amoxicillin)"
+  - "Petechiae on palate"
+
+treatment_principles:
+  - "Supportive care: Rest, hydration, pain control"
+  - "Steroids: ONLY for airway compromise"
+  - "Activity restriction: No contact sports 21-28 days minimum"
+  - "Avoid amoxicillin/ampicillin (causes rash)"
+
+disposition_guidance:
+  - "Outpatient: Uncomplicated mononucleosis"
+  - "Admit: Airway compromise, severe symptoms"
+  - "Sports clearance: Time-based (3-4 weeks minimum), not exam-based"
+
+parent_styles: [worried-about-spleen, impatient-athlete, wants-antibiotics]
+
+sources:
+  - "American Family Physician: Epstein-Barr Virus Infectious Mononucleosis"
+  - "Clinical Journal of Sport Medicine: Return to Play After Mono"
+  - "Cochrane Review: Corticosteroids in Infectious Mononucleosis"

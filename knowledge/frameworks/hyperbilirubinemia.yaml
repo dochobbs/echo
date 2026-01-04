@@ -1,0 +1,61 @@
+# Hyperbilirubinemia (Jaundice) - Teaching Framework
+topic: "Neonatal Hyperbilirubinemia"
+aliases: ["jaundice", "newborn jaundice", "neonatal jaundice"]
+category: newborn
+age_range_months: [0, 1]
+
+teaching_goals:
+  - "Use 2022 AAP nomograms (BiliTool) for treatment thresholds"
+  - "Identify neurotoxicity risk factors that lower treatment threshold"
+  - "Recognize elevated direct bilirubin as never physiologic"
+  - "Know when rebound checks are needed vs unnecessary"
+
+common_mistakes:
+  - "Using outdated phototherapy thresholds (2022 guidelines are higher)"
+  - "Missing elevated direct bilirubin (>1.0 mg/dL or >20% of total)"
+  - "Ordering routine rebound checks when not indicated"
+  - "Failing to refer direct hyperbilirubinemia for biliary atresia workup"
+
+red_flags:
+  - "Elevated direct bilirubin (>1.0 mg/dL or >20% of total)"
+  - "Neurotoxicity risk factors (sepsis, acidosis, albumin <3.0)"
+  - "Isoimmune hemolytic disease"
+  - "Rapidly rising bilirubin"
+
+clinical_pearls:
+  - "2022 AAP thresholds are HIGHER than previous - reduces overtreatment"
+  - "Direct bili elevation is NEVER physiologic - rule out biliary atresia immediately"
+  - "Rebound checks only needed if hemolytic disease or treated <72h of life"
+  - "Neurotoxicity risk factors: sepsis, acidosis, albumin <3.0, isoimmune hemolysis"
+
+key_history_questions:
+  - "When did jaundice first appear?"
+  - "Feeding pattern - breast or formula? How often?"
+  - "Stool color - yellow/green or pale/acholic?"
+  - "Blood type incompatibility (mom vs baby)?"
+  - "Family history of hemolytic disease (G6PD, spherocytosis)?"
+  - "Any signs of infection or lethargy?"
+
+key_exam_findings:
+  - "Cephalocaudal progression of jaundice"
+  - "Hepatosplenomegaly"
+  - "Lethargy or poor feeding"
+  - "Stool color (acholic = biliary atresia)"
+  - "Signs of sepsis"
+
+treatment_principles:
+  - "Use BiliTool app for precise thresholds"
+  - "Phototherapy thresholds based on age in hours and risk factors"
+  - "Exchange transfusion for severe cases approaching neurotoxicity"
+  - "Optimize feeding to enhance bilirubin excretion"
+
+disposition_guidance:
+  - "Outpatient: Physiologic jaundice below phototherapy threshold"
+  - "Admit: Requires phototherapy, direct hyperbilirubinemia workup"
+  - "Urgent GI referral: Elevated direct bilirubin (biliary atresia)"
+
+parent_styles: [anxious, first-time, experienced]
+
+sources:
+  - "Kemper AR, et al. AAP CPG: Management of Hyperbilirubinemia (2022)"
+  - "ABM Clinical Protocol #22: Jaundice in Breastfeeding Infant"

@@ -1,0 +1,67 @@
+# Pediatric Sleep Disorders - Teaching Framework
+topic: "Pediatric Sleep Disorders"
+aliases: ["insomnia", "sleep problems", "behavioral insomnia", "night terrors", "sleepwalking"]
+category: behavioral
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Recognize behavioral insomnia of childhood"
+  - "Distinguish parasomnias from seizures"
+  - "Counsel on sleep hygiene"
+  - "Know when sleep study is indicated"
+
+common_mistakes:
+  - "Recommending melatonin before addressing sleep hygiene"
+  - "Not asking about snoring (OSA)"
+  - "Missing delayed sleep phase in adolescents"
+  - "Confusing night terrors with nightmares"
+
+red_flags:
+  - "Snoring + apneas + daytime sleepiness (OSA)"
+  - "Excessive daytime sleepiness despite adequate sleep"
+  - "Parasomnia with injury, stereotyped movements, or daily occurrence (seizure?)"
+  - "Cataplexy (narcolepsy)"
+
+clinical_pearls:
+  - "Sleep needs by age: Infants 12-16h, Toddlers 11-14h, Preschool 10-13h, School-age 9-12h, Teens 8-10h"
+  - "Behavioral insomnia: Sleep-onset association type vs limit-setting type"
+  - "Night terrors: Early night, no memory, hard to wake - reassurance, safety"
+  - "Adolescent delayed sleep phase: Normal biology - can't fall asleep until late, can't wake for school"
+  - "Melatonin: Low dose (0.5-1mg) 1-2 hours before target bedtime for sleep onset"
+
+key_history_questions:
+  - "Bedtime routine? How long to fall asleep?"
+  - "Where does child sleep? With whom?"
+  - "Night wakings? What happens?"
+  - "Wake time? Daytime sleepiness?"
+  - "Snoring? Gasping? Mouth breathing?"
+  - "Parasomnias (sleepwalking, terrors, talking)?"
+  - "Screen time before bed?"
+  - "Caffeine intake?"
+
+key_exam_findings:
+  - "Adenotonsillar hypertrophy"
+  - "Allergic facies, mouth breathing"
+  - "Weight (obesity increases OSA risk)"
+  - "Signs of sleep deprivation"
+  - "Developmental assessment (sleep affects learning)"
+
+treatment_principles:
+  - "Sleep hygiene first: Consistent schedule, dark/cool/quiet room, no screens before bed"
+  - "Behavioral insomnia: Extinction methods (graduated or unmodified)"
+  - "Night terrors: Safety measures, scheduled awakenings if predictable"
+  - "Delayed phase: Light exposure in morning, melatonin in evening"
+  - "OSA: Adenotonsillectomy if enlarged adenoids/tonsils"
+  - "Melatonin: Adjunct only after behavioral interventions"
+
+disposition_guidance:
+  - "Outpatient: Most behavioral sleep issues"
+  - "ENT: Significant adenotonsillar hypertrophy, suspected OSA"
+  - "Sleep study: Suspected OSA, narcolepsy, concerning parasomnia"
+  - "Neurology: Seizure concern, narcolepsy"
+
+parent_styles: [exhausted, co-sleeping-committed, wants-quick-fix, anxious]
+
+sources:
+  - "Mindell JA. AAP Clinical Practice Guideline: Behavioral Treatment of Bedtime Problems"
+  - "AAP Technical Report: Diagnosis and Management of Childhood OSA"

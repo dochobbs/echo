@@ -1,0 +1,68 @@
+# HSV Gingivostomatitis - Teaching Framework
+topic: "HSV Gingivostomatitis"
+aliases: ["herpes stomatitis", "cold sores", "oral herpes"]
+category: infectious
+age_range_months: [6, 60]
+
+teaching_goals:
+  - "Recognize primary HSV infection presentation"
+  - "Focus on dehydration prevention"
+  - "Know when acyclovir is helpful"
+  - "Distinguish from herpangina and HFMD"
+
+common_mistakes:
+  - "Incising herpetic whitlow (mistaking for felon)"
+  - "Starting acyclovir after 72-96 hours (limited benefit)"
+  - "Underestimating dehydration risk"
+  - "Confusing with strep pharyngitis"
+
+red_flags:
+  - "Severe dehydration"
+  - "Inability to take any fluids"
+  - "Eczema herpeticum (HSV on eczematous skin)"
+  - "Encephalitis symptoms"
+
+clinical_pearls:
+  - "Primary HSV: Toddlers with high fever, swollen bleeding gums, refusal to eat"
+  - "Dehydration is the MAIN risk - prioritize pain management and hydration"
+  - "Oral acyclovir helpful ONLY if started within 72-96 hours"
+  - "Herpetic whitlow: Do NOT I&D (spreads infection)"
+
+key_history_questions:
+  - "Duration of symptoms?"
+  - "Fever - how high?"
+  - "Eating and drinking - how much?"
+  - "Wet diapers?"
+  - "Drooling more than usual?"
+  - "Any known HSV exposure?"
+
+key_exam_findings:
+  - "Ulcerations on lips, gums, tongue, palate"
+  - "Swollen, friable gingiva"
+  - "Fever"
+  - "Cervical lymphadenopathy"
+  - "Dehydration assessment"
+  - "Check fingers for herpetic whitlow"
+
+treatment_principles:
+  - "Pain management: Topical lidocaine, systemic analgesics"
+  - "Hydration: Popsicles, cold liquids, avoid acidic"
+  - "Acyclovir: 15 mg/kg 5x/day if within 72-96 hours"
+  - "Most cases self-limited in 10-14 days"
+
+disposition_guidance:
+  - "Outpatient: Able to maintain hydration"
+  - "ED/Admit: Dehydration, unable to take any fluids"
+  - "Return: Worsening symptoms, signs of dehydration"
+
+differential_diagnosis:
+  - "Herpangina (posterior mouth only)"
+  - "Hand, foot, mouth disease"
+  - "Aphthous stomatitis"
+  - "Strep pharyngitis"
+
+parent_styles: [distressed-by-appearance, wants-magic-cure, experienced]
+
+sources:
+  - "CDC: Guidance on Management of Acyclovir-Resistant HSV"
+  - "AAP Red Book: Herpes Simplex Virus Infections"

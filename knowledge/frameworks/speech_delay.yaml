@@ -1,0 +1,71 @@
+# Speech and Language Delay - Teaching Framework
+topic: "Speech and Language Delay"
+aliases: ["speech delay", "language delay", "late talker"]
+category: developmental
+age_range_months: [12, 60]
+
+teaching_goals:
+  - "Know language milestones"
+  - "Distinguish speech (articulation) from language (comprehension/expression)"
+  - "Always rule out hearing loss first"
+  - "Refer early - don't wait and see"
+
+common_mistakes:
+  - "Reassuring 'boys talk late' without evaluation"
+  - "Not ordering hearing test"
+  - "Waiting for 'catch up' without intervention"
+  - "Missing ASD in child with language delay"
+
+red_flags:
+  - "No babbling by 12 months"
+  - "No single words by 16 months"
+  - "No 2-word phrases by 24 months"
+  - "Regression of language at any age"
+  - "Not following simple commands by 18 months"
+
+clinical_pearls:
+  - "ALWAYS rule out hearing loss first - audiogram for any speech delay"
+  - "Language milestones: 12mo 1-2 words, 18mo 10+ words, 24mo 50+ words + 2-word phrases"
+  - "Receptive > Expressive typically; if receptive delayed, more concerning"
+  - "Don't wait - refer to Early Intervention by 18-24 months if concerned"
+  - "Bilingual children should have same number of words across languages combined"
+
+key_history_questions:
+  - "Current vocabulary? Any phrases?"
+  - "Does child understand commands?"
+  - "Any concerns about hearing?"
+  - "Social engagement (eye contact, pointing, shared attention)?"
+  - "Motor milestones?"
+  - "Family history of speech delay, learning disabilities, ASD?"
+  - "Languages spoken at home?"
+  - "Screen time exposure?"
+
+key_exam_findings:
+  - "Developmental screening (ASQ, PEDS)"
+  - "ASD screening (M-CHAT at 18, 24 months)"
+  - "Observe communication attempts"
+  - "Response to name, joint attention"
+  - "Ear exam (effusion?)"
+  - "Oral motor exam"
+  - "Overall developmental status"
+
+treatment_principles:
+  - "Audiogram: Required for any speech delay"
+  - "Early Intervention: Refer immediately upon concern (before age 3)"
+  - "Speech-language therapy"
+  - "If social deficits: ASD evaluation"
+  - "Parent coaching on language stimulation"
+  - "Reduce screen time, increase interactive communication"
+
+disposition_guidance:
+  - "Audiology: For all speech delays"
+  - "Early Intervention (0-3 years): Refer immediately"
+  - "School district (3+ years): For continued services"
+  - "Developmental pediatrics: If global delay or ASD concern"
+  - "Follow-up: Closely until connected with services"
+
+parent_styles: [in-denial, blaming-screens, comparing-to-siblings, anxious-early-referral]
+
+sources:
+  - "Lipkin PH, et al. AAP Policy: Promoting Optimal Development (2020)"
+  - "ASHA: Speech and Language Developmental Milestones"

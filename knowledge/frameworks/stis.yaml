@@ -1,0 +1,69 @@
+# Sexually Transmitted Infections - Teaching Framework
+topic: "Sexually Transmitted Infections"
+aliases: ["STIs", "STDs", "chlamydia", "gonorrhea", "sexually transmitted"]
+category: adolescent
+age_range_months: [120, 216]
+
+teaching_goals:
+  - "Screen appropriately per guidelines"
+  - "Know syndromic management approach"
+  - "Treat empirically and expedited partner therapy"
+  - "Maintain confidentiality"
+
+common_mistakes:
+  - "Not screening sexually active adolescents"
+  - "Waiting for test results before treating symptomatic patients"
+  - "Not offering expedited partner therapy"
+  - "Breaching confidentiality"
+
+red_flags:
+  - "PID symptoms (fever, severe pelvic pain)"
+  - "Signs of disseminated gonococcal infection"
+  - "Possible sexual abuse in child or young adolescent"
+  - "HIV seroconversion illness"
+
+clinical_pearls:
+  - "Screen: All sexually active adolescents for chlamydia/gonorrhea annually"
+  - "High-risk: Screen more frequently (every 3-6 months)"
+  - "Syndromic treatment: Treat BOTH chlamydia and gonorrhea if symptomatic urethritis/cervicitis"
+  - "EPT (Expedited Partner Therapy): Give patient rx for partner - reduces reinfection"
+  - "Confidentiality: Minors can consent to STI care in most states"
+
+key_history_questions:
+  - "Sexually active? Partners (number, gender)?"
+  - "Condom use?"
+  - "Previous STIs?"
+  - "Symptoms: Discharge, dysuria, lesions, pelvic pain?"
+  - "Last menstrual period?"
+  - "Any new partners?"
+  - "Any concerning relationship dynamics? (safety)"
+  - "Obtain history CONFIDENTIALLY (without parent if possible)"
+
+key_exam_findings:
+  - "External genital exam: Lesions, discharge, warts"
+  - "Urethral discharge"
+  - "Cervical discharge, friability, motion tenderness (if pelvic exam)"
+  - "Inguinal lymphadenopathy"
+  - "Oral lesions"
+  - "Skin (rash, palmar lesions in syphilis)"
+
+treatment_principles:
+  - "Chlamydia: Doxycycline 100mg BID x 7 days (or azithromycin 1g x 1 if compliance concern)"
+  - "Gonorrhea: Ceftriaxone 500mg IM x 1"
+  - "Treat both empirically if symptomatic urethritis/cervicitis"
+  - "PID: Ceftriaxone + doxycycline +/- metronidazole"
+  - "Expedited Partner Therapy: Provide prescriptions for partners"
+  - "Test of cure: Not routine except in pregnancy or pharyngeal GC"
+
+disposition_guidance:
+  - "Outpatient: Most STIs"
+  - "Admit: Severe PID, tubo-ovarian abscess, disseminated infection"
+  - "Testing: NAAT for chlamydia/gonorrhea (urine or swab), HIV, syphilis"
+  - "Report: Gonorrhea, syphilis, HIV to public health (chlamydia varies)"
+  - "Retest: 3 months after treatment for chlamydia/gonorrhea (reinfection common)"
+
+parent_styles: [not-involved-confidential, involved-and-supportive, judgmental]
+
+sources:
+  - "Workowski KA, et al. CDC STI Treatment Guidelines 2021"
+  - "AAP Clinical Report: Adolescent Sexual Health"

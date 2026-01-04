@@ -1,0 +1,67 @@
+# ADHD - Teaching Framework
+topic: "Attention-Deficit/Hyperactivity Disorder"
+aliases: ["ADHD", "ADD", "attention deficit"]
+category: behavioral
+age_range_months: [48, 216]
+
+teaching_goals:
+  - "Know DSM-5 criteria and multi-setting requirement"
+  - "Recognize methylphenidate as first-line treatment"
+  - "Understand comorbidity is the rule, not exception"
+  - "Address parent concerns about medication"
+
+common_mistakes:
+  - "Diagnosing based on school report alone (need multiple settings)"
+  - "Not screening for comorbidities (anxiety, learning disabilities)"
+  - "Starting stimulant without baseline weight, BP, HR"
+  - "Not adjusting dose to optimize function"
+
+red_flags:
+  - "Symptoms only in one setting (consider other causes)"
+  - "Acute onset (consider medical causes, trauma, abuse)"
+  - "Significant cardiac history (pre-stimulant evaluation)"
+  - "Severe comorbid depression or anxiety"
+
+clinical_pearls:
+  - "DSM-5: 6+ symptoms, multiple settings, before age 12, >6 months"
+  - "Methylphenidate (Ritalin, Concerta) is FIRST-LINE pharmacotherapy"
+  - "Get ratings from BOTH parents and teachers (Vanderbilt, Conners)"
+  - "Comorbidities: 60-70% have at least one (anxiety, ODD, LD, depression)"
+  - "Monitor: Height, weight, BP, HR at every visit"
+
+key_history_questions:
+  - "What symptoms? In what settings (home, school, activities)?"
+  - "When did you first notice? (Must be before age 12)"
+  - "Academic performance? Social functioning?"
+  - "Family history of ADHD?"
+  - "Any anxiety, mood symptoms, tics?"
+  - "Birth/developmental history?"
+  - "Sleep habits? Screen time?"
+
+key_exam_findings:
+  - "Baseline height, weight (for stimulant monitoring)"
+  - "Blood pressure, heart rate"
+  - "Cardiac exam (murmurs)"
+  - "Developmental/neurologic exam"
+  - "Observe for tics"
+  - "Office behavior (may be normal - novel environment)"
+
+treatment_principles:
+  - "First-line: Stimulant medication (methylphenidate or amphetamine)"
+  - "Start low, titrate to optimal dose (not just 'adequate')"
+  - "Behavioral therapy: Recommended for all, especially preschool"
+  - "School: 504 plan or IEP accommodations"
+  - "Monitor: Growth, BP, HR, tics, mood at each visit"
+  - "Preschool (4-5): Behavioral therapy FIRST before medication"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Psychiatry/developmental pediatrics: Complex cases, treatment-refractory"
+  - "Cardiology: If significant cardiac history before starting stimulant"
+  - "Follow-up: Monthly during titration, then every 3-6 months"
+
+parent_styles: [anti-medication, wants-quick-diagnosis, exhausted, well-informed]
+
+sources:
+  - "Wolraich ML, et al. AAP Clinical Practice Guideline: ADHD (2019)"
+  - "CHADD: Children and Adults with ADHD Resources"

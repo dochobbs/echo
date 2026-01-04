@@ -1,0 +1,62 @@
+# Tongue-Tie (Ankyloglossia) - Teaching Framework
+topic: "Ankyloglossia"
+aliases: ["tongue-tie", "tongue tie", "frenulum"]
+category: newborn
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Know indications for frenotomy"
+  - "Understand evidence does NOT support clipping for speech"
+  - "Recognize posterior tongue-tie controversy"
+  - "Evaluate breastfeeding impact objectively"
+
+common_mistakes:
+  - "Referring for frenotomy for future speech concerns"
+  - "Over-diagnosing posterior tongue-tie"
+  - "Attributing all breastfeeding problems to tongue-tie"
+  - "Not involving lactation consultant first"
+
+red_flags:
+  - "Significant weight loss in infant"
+  - "Severe maternal nipple trauma"
+  - "Unable to latch despite lactation support"
+  - "Maternal desire to stop breastfeeding due to pain"
+
+clinical_pearls:
+  - "Frenotomy indicated ONLY if significant impact on breastfeeding (nipple pain, poor transfer)"
+  - "Evidence does NOT support clipping for future speech articulation"
+  - "Posterior tongue-tie is controversial diagnosis - beware laser clinics over-diagnosing"
+  - "Try lactation support before considering procedure"
+
+key_history_questions:
+  - "How is breastfeeding going?"
+  - "Any nipple pain or trauma?"
+  - "How long does feeding take?"
+  - "Is baby gaining weight appropriately?"
+  - "Have you seen a lactation consultant?"
+  - "Has anyone suggested tongue-tie?"
+
+key_exam_findings:
+  - "Frenulum attachment point"
+  - "Tongue mobility and elevation"
+  - "Heart-shaped tongue tip when crying"
+  - "Maternal nipple condition if breastfeeding"
+  - "Infant weight trajectory"
+
+treatment_principles:
+  - "Lactation consultation FIRST"
+  - "Frenotomy only for significant breastfeeding impact"
+  - "Simple office procedure with minimal bleeding"
+  - "Post-procedure stretching exercises"
+
+disposition_guidance:
+  - "Outpatient: Lactation evaluation first"
+  - "Frenotomy referral: Failed lactation support + significant breastfeeding impact"
+  - "Avoid: Preemptive clipping for speech, laser clinic referrals"
+
+parent_styles: [determined-to-breastfeed, already-researched, referred-by-friend]
+
+sources:
+  - "AAP Clinical Report: Ankyloglossia and its Management"
+  - "Academy of Breastfeeding Medicine Protocol #11: Ankyloglossia"
+  - "Cochrane Review: Frenotomy for Tongue-Tie in Newborns"

@@ -1,0 +1,68 @@
+# Hematuria and Proteinuria - Teaching Framework
+topic: "Hematuria and Proteinuria"
+aliases: ["hematuria", "proteinuria", "blood in urine", "protein in urine"]
+category: nephrology
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Distinguish microscopic from gross hematuria workup"
+  - "Know orthostatic proteinuria is benign"
+  - "Recognize glomerulonephritis vs UTI presentation"
+  - "Understand when to refer to nephrology"
+
+common_mistakes:
+  - "Extensive workup for single episode microscopic hematuria"
+  - "Missing orthostatic proteinuria (need first morning urine)"
+  - "Not confirming hematuria with microscopy"
+  - "Missing signs of glomerulonephritis"
+
+red_flags:
+  - "Gross hematuria with RBC casts, proteinuria (glomerulonephritis)"
+  - "Hypertension with hematuria"
+  - "Edema, oliguria"
+  - "Recent pharyngitis or impetigo (post-strep GN)"
+  - "Family history of kidney disease or hearing loss (Alport)"
+
+clinical_pearls:
+  - "Confirm hematuria: Dipstick positive → must have RBCs on microscopy"
+  - "False positive dipstick: Hemoglobinuria, myoglobinuria, medications"
+  - "Orthostatic proteinuria: Protein in afternoon urine, ABSENT in first morning urine - benign"
+  - "Glomerular hematuria: RBC casts, dysmorphic RBCs, proteinuria"
+  - "Post-strep GN: 1-2 weeks after pharyngitis or 3-6 weeks after impetigo"
+
+key_history_questions:
+  - "Color of urine? (Gross hematuria = tea/cola colored)"
+  - "Any recent pharyngitis or skin infection?"
+  - "Dysuria, frequency, fever? (UTI)"
+  - "Recent trauma?"
+  - "Family history of kidney disease, dialysis, hearing loss?"
+  - "Edema, decreased urine output?"
+  - "Recent strenuous exercise?"
+
+key_exam_findings:
+  - "Blood pressure"
+  - "Edema (periorbital, peripheral)"
+  - "Abdominal/flank masses"
+  - "Rashes (HSP, SLE)"
+  - "Throat, skin (recent infection)"
+  - "Signs of systemic disease"
+
+treatment_principles:
+  - "Isolated microscopic hematuria: Repeat UA in 1-2 weeks; if persistent, workup"
+  - "Orthostatic proteinuria: First morning urine protein/creatinine ratio - if normal, benign"
+  - "Post-strep GN: Supportive - BP control, fluid/salt restriction; resolves in weeks"
+  - "Glomerulonephritis: Nephrology referral, may need biopsy"
+  - "Significant proteinuria (>0.2 protein/creat ratio on first morning): Nephrology"
+
+disposition_guidance:
+  - "Repeat UA: Single episode microscopic hematuria"
+  - "Labs: BMP, C3/C4, ASO/anti-DNase B (if post-strep suspected)"
+  - "First morning urine: Protein/creatinine ratio (orthostatic proteinuria)"
+  - "Nephrology referral: Persistent hematuria, proteinuria, hypertension, renal dysfunction"
+  - "Urgent: Gross hematuria with hypertension, edema, oliguria"
+
+parent_styles: [worried-about-cancer, wants-reassurance, asking-about-diet]
+
+sources:
+  - "Massengill SF. Hematuria in Children. Pediatric Clinics"
+  - "AAP Clinical Report: Evaluation of Proteinuria"

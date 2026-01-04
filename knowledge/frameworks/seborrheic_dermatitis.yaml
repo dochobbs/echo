@@ -1,0 +1,61 @@
+# Seborrheic Dermatitis - Teaching Framework
+topic: "Seborrheic Dermatitis"
+aliases: ["cradle cap", "seborrhea", "dandruff"]
+category: derm
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize cradle cap as benign and self-limited"
+  - "Distinguish infantile from adolescent seborrheic dermatitis"
+  - "Know simple treatment approach"
+  - "Differentiate from atopic dermatitis and psoriasis"
+
+common_mistakes:
+  - "Over-treating cradle cap"
+  - "Confusing seborrheic dermatitis with atopic dermatitis"
+  - "Using potent steroids on infant scalp"
+  - "Not counseling parents that it will resolve"
+
+red_flags:
+  - "Widespread, severe seborrheic dermatitis in young infant (Leiner disease)"
+  - "Associated with failure to thrive (immunodeficiency)"
+  - "Not responding to standard treatment (consider psoriasis)"
+  - "Associated systemic symptoms"
+
+clinical_pearls:
+  - "Cradle cap: Greasy, yellow scales on scalp - common in first 3 months, resolves by 12 months"
+  - "Distribution: Scalp, face (nasolabial folds, eyebrows), diaper area"
+  - "NOT itchy (unlike atopic dermatitis)"
+  - "Treatment: Emollients and gentle scale removal usually sufficient"
+
+key_history_questions:
+  - "When did it start? Where?"
+  - "Is it itchy? (Usually not)"
+  - "Family history of eczema, psoriasis?"
+  - "What treatments have been tried?"
+  - "Any concerns about feeding or growth?"
+
+key_exam_findings:
+  - "Greasy, yellowish scales on erythematous base"
+  - "Scalp, eyebrows, nasolabial folds"
+  - "May involve diaper area"
+  - "NOT typically weeping or vesicular"
+  - "Check for similar lesions behind ears, axillae"
+
+treatment_principles:
+  - "Cradle cap: Mineral oil or emollient, gentle brushing, regular shampooing"
+  - "Scalp: Antidandruff shampoo (ketoconazole, selenium sulfide) for adolescents"
+  - "Face/body: Low-potency topical steroid (hydrocortisone 1%) briefly"
+  - "Ketoconazole cream for persistent facial lesions"
+  - "Reassurance: Will resolve, especially in infants"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "No routine follow-up needed for cradle cap"
+  - "Dermatology: Refractory, severe, or uncertain diagnosis"
+
+parent_styles: [wants-reassurance, cosmetic-concerns, worried-about-hygiene]
+
+sources:
+  - "AAP: Cradle Cap Parent Education"
+  - "Borda LJ. Seborrheic Dermatitis: A Comprehensive Review. J Dermatolog Treat"

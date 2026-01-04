@@ -1,0 +1,160 @@
+# Lightweight Teaching Framework Schema
+#
+# Each framework is ~40-60 lines focused on TEACHING, not patient simulation.
+# Claude generates patient details dynamically at case start.
+#
+# ============ REQUIRED FIELDS ============
+#
+# topic: Display name for the condition
+#   Example: "Acute Otitis Media"
+#
+# category: Clinical category
+#   Options: infectious | respiratory | gi | derm | behavioral | newborn |
+#            emergency | msk | endo | nephro | heme | adolescent | ent | neuro
+#
+# age_range_months: [min, max] typical age range
+#   Example: [6, 36]
+#
+# teaching_goals: List of 3-5 learning objectives (what learner should understand)
+#   - Should be specific and measurable
+#   - Focus on clinical decision-making, not just facts
+#   Example:
+#     - "Distinguish AOM from otitis media with effusion (OME)"
+#     - "Apply AAP observation vs treatment criteria"
+#
+# common_mistakes: List of 3-5 typical learner errors
+#   - Focus on clinically significant errors
+#   - Include both diagnostic and management errors
+#   Example:
+#     - "Treating OME with antibiotics"
+#     - "Using standard-dose instead of high-dose amoxicillin"
+#
+# red_flags: List of 3-5 must-not-miss findings
+#   - Safety-critical items that require immediate action
+#   Example:
+#     - "Mastoiditis (postauricular swelling)"
+#     - "Facial nerve palsy"
+#
+# clinical_pearls: List of 3-5 high-yield teaching points
+#   - Memorable, practical insights
+#   - Include specific numbers/thresholds where helpful
+#   Example:
+#     - "Bulging TM is the key finding - redness alone is not diagnostic"
+#     - "High-dose amox: 80-90 mg/kg/day divided BID"
+#
+# ============ RECOMMENDED FIELDS ============
+#
+# key_history_questions: What to ask in history
+#   - 5-8 essential questions the learner should ask
+#   Example:
+#     - "Duration of symptoms?"
+#     - "Fever pattern?"
+#     - "Previous ear infections?"
+#
+# key_exam_findings: What to look for on exam
+#   - 4-6 essential examination components
+#   Example:
+#     - "TM appearance (bulging, erythema, mobility)"
+#     - "Mastoid tenderness"
+#
+# treatment_principles: General approach (not specific doses)
+#   - High-level treatment guidance
+#   - Let CDS module handle specific dosing
+#   Example:
+#     - "High-dose amoxicillin is first-line"
+#     - "Consider observation in mild, unilateral cases age >2"
+#
+# disposition_guidance: When to admit, refer, or observe
+#   - Clear criteria for escalation
+#   Example:
+#     - "Admit: Mastoiditis, failed outpatient therapy"
+#     - "Outpatient: Uncomplicated AOM in well-appearing child"
+#
+# ============ OPTIONAL FIELDS ============
+#
+# aliases: Alternative names for the condition
+#   Example: ["ear infection", "AOM", "middle ear infection"]
+#
+# differential_diagnosis: What else to consider
+#   - 3-5 important differential considerations
+#   Example:
+#     - "Otitis media with effusion (no signs of acute infection)"
+#     - "Otitis externa (canal involvement, tragal tenderness)"
+#
+# seasonality: Seasonal patterns
+#   peak_months: [11, 12, 1, 2, 3]
+#   pattern: "winter predominance"
+#
+# parent_styles: Types of parent presentations to vary
+#   - Simple list of style keywords
+#   Example: [anxious, experienced, antibiotic-seeking, antibiotic-hesitant]
+#
+# age_specific_considerations: Different approaches by age
+#   - Use when age significantly changes management
+#   Example:
+#     infant:
+#       age_months: [6, 24]
+#       notes: "Lower threshold for treatment"
+#     older_child:
+#       age_months: [24, 144]
+#       notes: "Observation option for mild unilateral"
+#
+# sources: References for guidelines
+#   Example:
+#     - "AAP Clinical Practice Guideline (2013)"
+#     - "IDSA Guidelines"
+#
+# ============ EXAMPLE FRAMEWORK ============
+#
+# topic: "Acute Otitis Media"
+# aliases: ["ear infection", "AOM"]
+# category: infectious
+# age_range_months: [6, 36]
+#
+# teaching_goals:
+#   - "Distinguish AOM from OME using otoscopic criteria"
+#   - "Apply AAP observation criteria (age, severity, laterality)"
+#   - "Select appropriate antibiotic and dosing"
+#
+# common_mistakes:
+#   - "Treating OME with antibiotics"
+#   - "Using standard-dose amoxicillin instead of high-dose"
+#   - "Missing mastoiditis signs"
+#
+# red_flags:
+#   - "Mastoiditis (postauricular swelling, protrusion of pinna)"
+#   - "Facial nerve palsy"
+#   - "Meningismus"
+#
+# clinical_pearls:
+#   - "Bulging TM is key - redness alone isn't diagnostic"
+#   - "High-dose amox: 80-90 mg/kg/day divided BID"
+#   - "Observe option: >2 years, mild, unilateral, reliable follow-up"
+#
+# key_history_questions:
+#   - "Duration and progression of symptoms?"
+#   - "Fever pattern?"
+#   - "Previous ear infections? How many in past year?"
+#   - "Recent antibiotics?"
+#   - "Allergies to medications?"
+#
+# key_exam_findings:
+#   - "TM appearance (bulging, mobility, color)"
+#   - "Mastoid tenderness or swelling"
+#   - "Facial symmetry"
+#   - "Cervical lymphadenopathy"
+#
+# treatment_principles:
+#   - "High-dose amoxicillin is first-line"
+#   - "Amox-clav if recent antibiotics or treatment failure"
+#   - "Duration: 10 days if <2 years, 5-7 days if >2 years"
+#
+# disposition_guidance:
+#   - "Outpatient: Uncomplicated AOM"
+#   - "Urgent referral: Mastoiditis, facial palsy"
+#   - "Follow-up: 48-72 hours if not improving"
+#
+# parent_styles: [anxious, experienced, antibiotic-seeking, antibiotic-hesitant]
+#
+# sources:
+#   - "AAP Clinical Practice Guideline: AOM (2013)"

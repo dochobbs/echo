@@ -1,0 +1,68 @@
+# Inguinal Hernia and Hydrocele - Teaching Framework
+topic: "Inguinal Hernia and Hydrocele"
+aliases: ["inguinal hernia", "hydrocele", "scrotal swelling"]
+category: urology
+age_range_months: [0, 36]
+
+teaching_goals:
+  - "Distinguish hernia from hydrocele on exam"
+  - "Know hernia requires surgical repair"
+  - "Recognize incarcerated hernia as emergency"
+  - "Understand most hydroceles resolve spontaneously"
+
+common_mistakes:
+  - "Missing inguinal hernia (intermittent finding)"
+  - "Not recognizing incarcerated hernia"
+  - "Ordering imaging when diagnosis is clinical"
+  - "Failing to refer hernia for surgical repair"
+
+red_flags:
+  - "Incarcerated hernia: Firm, tender, irreducible, with vomiting"
+  - "Discoloration of overlying skin"
+  - "Inconsolable crying with groin mass"
+  - "Communicating hydrocele persisting beyond 1-2 years"
+
+clinical_pearls:
+  - "Hydrocele: Transilluminates, scrotal only, non-tender; most resolve by 12-18 months"
+  - "Hernia: Extends to inguinal canal, reducible, may increase with crying/straining"
+  - "Incarcerated: Can't reduce - emergency; ischemia → strangulation"
+  - "Premature infants: Higher risk of hernia; may need early repair"
+  - "Girls can have hernias too - ovary may be in hernia sac"
+
+key_history_questions:
+  - "When did swelling appear? Intermittent?"
+  - "Worse with crying, straining, activity?"
+  - "Any pain? Fussiness?"
+  - "Vomiting? Feeding normally?"
+  - "Has it ever been hard to reduce?"
+  - "Prematurity?"
+  - "Family history of hernias?"
+
+key_exam_findings:
+  - "Inspect groin and scrotum"
+  - "Transillumination (hydrocele positive, hernia may not)"
+  - "Palpate: Extends to inguinal canal? (Hernia)"
+  - "Can you reduce it? (Reducible hernia vs incarcerated)"
+  - "Tenderness? (Concerning if tender)"
+  - "'Silk glove sign': Thickened spermatic cord on affected side"
+  - "Exam with increased abdominal pressure (crying, standing)"
+
+treatment_principles:
+  - "Communicating hydrocele: Observation; most resolve by 12-18 months"
+  - "Non-communicating hydrocele: Also observe; may persist longer"
+  - "Inguinal hernia: Surgical repair (elective if reducible)"
+  - "Incarcerated hernia: Urgent reduction attempt, then emergent surgery"
+  - "Premature infants: May need repair before NICU discharge"
+
+disposition_guidance:
+  - "Surgical referral: All inguinal hernias - even if asymptomatic"
+  - "Emergent: Incarcerated hernia, signs of obstruction"
+  - "Hydrocele: Observe; refer if persists beyond 12-18 months or communicating"
+  - "Ultrasound: Usually not needed if diagnosis clear on exam"
+  - "Follow-up: Until resolved or surgically repaired"
+
+parent_styles: [worried-about-hernia, confused-about-difference, wanting-to-wait]
+
+sources:
+  - "Brandt ML. Inguinal Hernia in Children. AAP UptoDate"
+  - "AAP Section on Surgery: Inguinal Hernia Guidelines"

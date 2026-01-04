@@ -1,0 +1,69 @@
+# Pediatric Anxiety - Teaching Framework
+topic: "Pediatric Anxiety Disorders"
+aliases: ["anxiety", "GAD", "separation anxiety", "social anxiety", "panic disorder"]
+category: behavioral
+age_range_months: [36, 216]
+
+teaching_goals:
+  - "Differentiate normal worry from anxiety disorder"
+  - "Recognize somatic presentations of anxiety"
+  - "Know CBT is first-line treatment"
+  - "Understand when medication is appropriate"
+
+common_mistakes:
+  - "Extensive medical workup for somatic symptoms without considering anxiety"
+  - "Accommodating avoidance behaviors"
+  - "Starting medication without therapy"
+  - "Missing school refusal as anxiety presentation"
+
+red_flags:
+  - "Complete school refusal"
+  - "Panic attacks with agoraphobia"
+  - "Comorbid depression or suicidality"
+  - "Significant functional impairment"
+  - "OCD with severe rituals"
+
+clinical_pearls:
+  - "Somatic symptoms are COMMON: Headaches, stomachaches, chest pain"
+  - "CBT is FIRST-LINE for mild-moderate anxiety"
+  - "SSRIs for moderate-severe or CBT non-responders"
+  - "School refusal: Early intervention critical - don't accommodate avoidance"
+  - "Separation anxiety: Normal until age 3-4, concerning if severe/impairing later"
+
+key_history_questions:
+  - "What are the worries about? How often?"
+  - "Physical symptoms (headaches, stomachaches, chest pain)?"
+  - "Avoidance behaviors? School attendance?"
+  - "Sleep difficulties?"
+  - "Impact on daily life, friendships, activities?"
+  - "Family history of anxiety?"
+  - "Any traumatic events?"
+  - "Caffeine, substance use?"
+
+key_exam_findings:
+  - "Mental status: Anxious affect, fidgeting"
+  - "Vital signs (may be elevated with acute anxiety)"
+  - "Physical exam usually normal"
+  - "Rule out medical causes: Thyroid, cardiac arrhythmia"
+  - "Screen for depression (high comorbidity)"
+
+treatment_principles:
+  - "Mild: CBT (cognitive behavioral therapy)"
+  - "Moderate-Severe: CBT + SSRI (fluoxetine or sertraline)"
+  - "CAMS study: CBT + SSRI most effective for moderate-severe"
+  - "DO NOT accommodate avoidance - gradual exposure is key"
+  - "Parent training component important"
+  - "Benzodiazepines: Avoid in children (not first-line)"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Psychology/therapy referral: First-line for mild-moderate"
+  - "Psychiatry: Severe, treatment-refractory, complex comorbidity"
+  - "School: 504 plan for accommodations (not avoidance)"
+  - "Follow-up: Monthly until stable"
+
+parent_styles: [over-accommodating, anxious-themselves, minimizing, frustrated]
+
+sources:
+  - "Walter HJ, et al. AACAP Clinical Practice Parameter: Anxiety Disorders"
+  - "CAMS Study: Walkup JT, et al. NEJM 2008"

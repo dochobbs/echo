@@ -1,0 +1,70 @@
+# Type 2 Diabetes - Teaching Framework
+topic: "Type 2 Diabetes"
+aliases: ["T2DM", "type 2 diabetes", "pediatric type 2"]
+category: endocrine
+age_range_months: [120, 216]
+
+teaching_goals:
+  - "Know screening criteria"
+  - "Distinguish Type 2 from Type 1 diabetes"
+  - "Initiate metformin appropriately"
+  - "Address lifestyle modification"
+
+common_mistakes:
+  - "Not screening at-risk youth"
+  - "Missing Type 2 in thin patient or Type 1 in obese patient"
+  - "Starting insulin when metformin alone would suffice"
+  - "Not checking for complications at diagnosis"
+
+red_flags:
+  - "DKA at presentation (more common in pediatric T2D than adult)"
+  - "Significant hyperglycemia (glucose >250, A1c >9%)"
+  - "Signs of Type 1 (rapid weight loss, ketonuria despite eating)"
+  - "C-peptide low or autoantibodies positive"
+
+clinical_pearls:
+  - "Screen: BMI ≥85th + risk factors (family history, high-risk ethnicity, signs of insulin resistance) starting at age 10 or puberty"
+  - "Diagnosis: A1c ≥6.5%, FG ≥126, or 2-hr glucose ≥200 (or random ≥200 with symptoms)"
+  - "Up to 25% of pediatric T2D presents with DKA - don't assume it's Type 1"
+  - "Check C-peptide and autoantibodies if type unclear"
+  - "Metformin first-line; can add insulin if A1c >8.5% or symptomatic hyperglycemia"
+
+key_history_questions:
+  - "Polyuria, polydipsia, weight changes?"
+  - "Family history of Type 2 diabetes?"
+  - "Ethnicity (higher risk: African American, Hispanic, Native American, Asian)"
+  - "Diet and activity patterns?"
+  - "Any PCOS symptoms (females)?"
+  - "Medications (steroids, antipsychotics)?"
+  - "Any prior glucose testing?"
+
+key_exam_findings:
+  - "BMI - usually ≥85th percentile (but not always)"
+  - "Blood pressure"
+  - "Acanthosis nigricans"
+  - "Signs of PCOS (hirsutism, acne)"
+  - "Hepatomegaly"
+  - "Fundoscopic exam (retinopathy at diagnosis is possible)"
+  - "Foot exam"
+
+treatment_principles:
+  - "Metformin: First-line, start 500mg daily, titrate to 1000mg BID"
+  - "Lifestyle: Diet, exercise - family-based approach"
+  - "Insulin: Add if A1c >8.5%, ketosis, or symptoms despite metformin"
+  - "GLP-1 agonists: FDA approved for pediatric T2D (liraglutide)"
+  - "Screen for complications at diagnosis and annually"
+  - "A1c goal: <7%"
+
+disposition_guidance:
+  - "Endocrinology referral: All new diagnoses"
+  - "ED: DKA, severe hyperglycemia, significant ketones"
+  - "Baseline labs: A1c, lipids, LFTs, creatinine, urine microalbumin"
+  - "Ophthalmology: Dilated eye exam at diagnosis"
+  - "Dietitian: Essential for management"
+  - "Follow-up: Every 3 months initially"
+
+parent_styles: [in-denial, overwhelmed, blaming, motivated]
+
+sources:
+  - "ADA Standards of Care: Children and Adolescents with Diabetes"
+  - "Arslanian S, et al. Pediatric Type 2 Diabetes Guidelines"

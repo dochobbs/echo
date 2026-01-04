@@ -1,0 +1,62 @@
+# Atopic Dermatitis (Eczema) - Teaching Framework
+topic: "Atopic Dermatitis"
+aliases: ["eczema", "atopic eczema"]
+category: derm
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Master soak and seal technique"
+  - "Address steroid phobia"
+  - "Understand food rarely causes eczema"
+  - "Know when to escalate therapy"
+
+common_mistakes:
+  - "Under-treating due to steroid phobia"
+  - "Using creams instead of ointments"
+  - "Elimination diets without proven food allergy"
+  - "Not addressing skin barrier (moisturizers)"
+
+red_flags:
+  - "Eczema herpeticum (HSV superinfection)"
+  - "Severe, widespread disease"
+  - "Failure to respond to appropriate treatment"
+  - "Associated with failure to thrive"
+
+clinical_pearls:
+  - "SOAK AND SEAL: Bathe → Pat dry → Apply meds/moisturizer while DAMP"
+  - "Ointments > Creams (better hydration, fewer additives)"
+  - "Topical steroids are SAFE - under-treatment is the bigger risk"
+  - "Food allergy rarely CAUSES eczema - avoid elimination diets without proof"
+
+key_history_questions:
+  - "When did it start? Where?"
+  - "What makes it better or worse?"
+  - "Current skin care routine?"
+  - "What treatments have been tried?"
+  - "Family history of eczema, asthma, allergies?"
+  - "Any suspected food triggers?"
+
+key_exam_findings:
+  - "Distribution (flexural in older children, face/extensors in infants)"
+  - "Xerosis (dry skin)"
+  - "Lichenification (chronic changes)"
+  - "Signs of infection (crusting, pustules)"
+  - "Severity assessment"
+
+treatment_principles:
+  - "Moisturizers: Thick ointments, apply immediately after bathing"
+  - "Topical steroids: Match potency to severity and location"
+  - "Flare: Increase steroid potency temporarily"
+  - "Maintenance: Low-potency steroid or calcineurin inhibitor for chronic areas"
+  - "Bleach baths: For recurrent infections"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Dermatology referral: Severe, refractory, needing systemic therapy"
+  - "Urgent: Eczema herpeticum, severe bacterial superinfection"
+
+parent_styles: [steroid-phobic, exhausted, wants-elimination-diet]
+
+sources:
+  - "Eichenfield LF, et al. JAAD: Guidelines for Management of Atopic Dermatitis"
+  - "AAP Clinical Report: Management of Atopic Dermatitis"

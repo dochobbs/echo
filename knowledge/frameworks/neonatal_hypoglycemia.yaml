@@ -1,0 +1,62 @@
+# Neonatal Hypoglycemia - Teaching Framework
+topic: "Neonatal Hypoglycemia"
+aliases: ["newborn hypoglycemia", "low blood sugar newborn"]
+category: newborn
+age_range_months: [0, 1]
+
+teaching_goals:
+  - "Recognize symptomatic hypoglycemia requires immediate treatment"
+  - "Know target glucose thresholds"
+  - "Use dextrose gel as first-line intervention"
+  - "Identify at-risk infants for screening"
+
+common_mistakes:
+  - "Waiting for lab confirmation in symptomatic infant"
+  - "Not using dextrose gel before escalating to IV"
+  - "Failing to identify high-risk infants for screening"
+  - "Using incorrect glucose thresholds"
+
+red_flags:
+  - "Symptomatic hypoglycemia (jitteriness, lethargy, seizures)"
+  - "Glucose <25 mg/dL"
+  - "Persistent hypoglycemia despite feeding"
+  - "Large for gestational age or infant of diabetic mother"
+
+clinical_pearls:
+  - "Symptomatic (jitteriness/lethargy) = immediate treatment regardless of number"
+  - "Target glucose >45 mg/dL in first 24 hours"
+  - "40% Dextrose Gel (buccal) is FIRST-LINE to prevent NICU admission"
+  - "High-risk screening: IDM, LGA, SGA, late preterm"
+
+key_history_questions:
+  - "Maternal diabetes (gestational or preexisting)?"
+  - "Birth weight - large or small for gestational age?"
+  - "Gestational age - late preterm?"
+  - "Time of last feed?"
+  - "Any symptoms (jitteriness, poor feeding, lethargy)?"
+
+key_exam_findings:
+  - "Jitteriness"
+  - "Lethargy or hypotonia"
+  - "Poor feeding"
+  - "Tremors"
+  - "Seizure activity"
+  - "Temperature instability"
+
+treatment_principles:
+  - "Dextrose gel 40% (0.5 mL/kg) buccal - first line"
+  - "Feed immediately after gel"
+  - "Recheck glucose 30 minutes after intervention"
+  - "IV dextrose if gel fails or severe/symptomatic"
+
+disposition_guidance:
+  - "Routine care: Normal glucose, low-risk infant"
+  - "Close monitoring: High-risk infant, normal initial glucose"
+  - "NICU: Persistent hypoglycemia, symptomatic, failed gel treatment"
+
+parent_styles: [worried, diabetic-mother-guilt, first-time]
+
+sources:
+  - "AAP Clinical Report: Postnatal Glucose Homeostasis"
+  - "Pediatric Endocrine Society: Recommendations for Hypoglycemia"
+  - "The Lancet: Dextrose Gel for Neonatal Hypoglycemia"

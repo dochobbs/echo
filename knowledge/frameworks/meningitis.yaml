@@ -1,0 +1,66 @@
+# Meningitis (Bacterial & Viral) - Teaching Framework
+topic: "Meningitis"
+aliases: ["bacterial meningitis", "viral meningitis", "aseptic meningitis"]
+category: infectious
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize when NOT to wait for LP to start antibiotics"
+  - "Understand role of steroids in bacterial meningitis"
+  - "Know limitations of clinical signs"
+  - "Differentiate bacterial from viral meningitis"
+
+common_mistakes:
+  - "Delaying antibiotics for LP or CT"
+  - "Giving steroids after first antibiotic dose (less effective)"
+  - "Relying on Kernig/Brudzinski signs (specific but not sensitive)"
+  - "Missing meningitis in young infant (atypical presentation)"
+
+red_flags:
+  - "Altered mental status"
+  - "Bulging fontanelle"
+  - "Petechial/purpuric rash"
+  - "Seizures"
+  - "Signs of increased ICP"
+
+clinical_pearls:
+  - "Kernig/Brudzinski are SPECIFIC but NOT sensitive - don't rule out meningitis"
+  - "Fever + Altered Mental Status = key combination"
+  - "Start empiric antibiotics IMMEDIATELY - do NOT wait for LP if unstable"
+  - "Dexamethasone for H. flu and Pneumococcal meningitis - give BEFORE or WITH first antibiotic"
+
+key_history_questions:
+  - "Fever duration and pattern?"
+  - "Headache, neck stiffness?"
+  - "Vomiting?"
+  - "Mental status changes?"
+  - "Seizures?"
+  - "Recent sick contacts?"
+  - "Vaccination status (Hib, Pneumococcal, Meningococcal)?"
+
+key_exam_findings:
+  - "Mental status"
+  - "Nuchal rigidity"
+  - "Kernig sign (painful knee extension with hip flexed)"
+  - "Brudzinski sign (neck flexion causes hip flexion)"
+  - "Fontanelle (bulging in infants)"
+  - "Petechiae/purpura"
+  - "Focal neurologic findings"
+
+treatment_principles:
+  - "Empiric antibiotics: Vancomycin + Ceftriaxone (add Ampicillin if <1 month)"
+  - "Dexamethasone 0.15 mg/kg q6h x 2-4 days - give before/with first antibiotic"
+  - "LP after stabilization if no contraindication"
+  - "Head CT before LP if concern for increased ICP"
+
+disposition_guidance:
+  - "Admit: All suspected bacterial meningitis to ICU"
+  - "Admit: Viral meningitis if unable to tolerate PO or severe symptoms"
+  - "Outpatient: Mild viral meningitis with reliable follow-up"
+
+parent_styles: [terrified, wants-answers, concerned-about-long-term]
+
+sources:
+  - "IDSA Practice Guidelines: Management of Bacterial Meningitis (2004)"
+  - "Pediatrics in Review: Meningitis and Encephalitis in Children"
+  - "Cochrane Review: Steroids in Bacterial Meningitis"

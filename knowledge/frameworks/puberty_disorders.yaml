@@ -1,0 +1,70 @@
+# Puberty Disorders - Teaching Framework
+topic: "Puberty Disorders"
+aliases: ["precocious puberty", "delayed puberty", "early puberty", "late puberty"]
+category: endocrine
+age_range_months: [72, 216]
+
+teaching_goals:
+  - "Know age cutoffs for precocious and delayed puberty"
+  - "Differentiate central from peripheral precocious puberty"
+  - "Understand when to initiate workup"
+  - "Recognize constitutional delay (most common cause of delayed puberty)"
+
+common_mistakes:
+  - "Missing CNS pathology in precocious puberty (especially boys)"
+  - "Over-treating premature thelarche or adrenarche as precocious puberty"
+  - "Not checking bone age"
+  - "Reassuring delayed puberty without appropriate workup"
+
+red_flags:
+  - "Precocious puberty in boys <9 (higher likelihood of pathology)"
+  - "Rapid pubertal progression"
+  - "Neurologic symptoms with precocious puberty"
+  - "Discordant puberty (e.g., pubic hair without breast development)"
+  - "No puberty by age 13 (girls) or 14 (boys)"
+
+clinical_pearls:
+  - "Precocious puberty: <8 years girls, <9 years boys - any secondary sex characteristic"
+  - "Delayed puberty: No breast development by 13 (girls), no testicular enlargement by 14 (boys)"
+  - "Central precocious: GnRH-dependent (brain triggered); order brain MRI"
+  - "Peripheral precocious: GnRH-independent (adrenal, gonadal, exogenous); no MRI needed"
+  - "Constitutional delay: Most common cause of delayed puberty - family history, bone age delayed"
+
+key_history_questions:
+  - "First sign of puberty? When?"
+  - "Growth spurt?"
+  - "Family history of early or late puberty?"
+  - "Any headaches, visual changes? (CNS lesion)"
+  - "Exposure to hormones (creams, medications)?"
+  - "Chronic illness? (Can delay puberty)"
+  - "Menstrual history if applicable?"
+  - "Nutritional status? Eating disorder history?"
+
+key_exam_findings:
+  - "Tanner staging (breast, pubic hair, testicular volume)"
+  - "Height and growth velocity"
+  - "Signs of virilization"
+  - "Testicular exam - size (>4mL = puberty started)"
+  - "Thyroid exam"
+  - "Neurologic exam, visual fields"
+  - "Signs of chronic illness"
+
+treatment_principles:
+  - "Central precocious puberty: GnRH agonist (Lupron) to suppress axis"
+  - "Peripheral precocious: Treat underlying cause"
+  - "Constitutional delay: Reassurance; short course testosterone (boys) or estrogen (girls) optional"
+  - "Delayed puberty with pathology: Treat underlying cause, may need hormone replacement"
+  - "Brain MRI: All central precocious puberty (especially boys)"
+
+disposition_guidance:
+  - "Endocrinology referral: All suspected precocious or delayed puberty"
+  - "Labs: LH, FSH, estradiol/testosterone, +/- DHEA-S, thyroid"
+  - "Bone age: Essential for evaluation"
+  - "Brain MRI: Central precocious puberty, neurologic symptoms"
+  - "Premature thelarche/adrenarche: May observe without referral if isolated, non-progressive"
+
+parent_styles: [anxious-about-early-development, concerned-about-late-development, wanting-treatment]
+
+sources:
+  - "Carel JC, et al. Precocious Puberty. NEJM"
+  - "AAP Clinical Report: Evaluation and Referral for Pubertal Disorders"

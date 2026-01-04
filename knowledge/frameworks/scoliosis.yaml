@@ -1,0 +1,70 @@
+# Scoliosis - Teaching Framework
+topic: "Scoliosis"
+aliases: ["scoliosis", "spinal curvature", "idiopathic scoliosis"]
+category: msk
+age_range_months: [96, 216]
+
+teaching_goals:
+  - "Screen with forward bend test at well visits"
+  - "Know when to refer vs observe"
+  - "Understand idiopathic vs concerning causes"
+  - "Counsel on natural history and treatment options"
+
+common_mistakes:
+  - "Not screening at appropriate ages (10-16)"
+  - "Missing atypical features (pain, neurologic symptoms) suggesting other cause"
+  - "Over-referring minor curves that need only observation"
+  - "Recommending unproven treatments (chiropractic, bracing for minor curves)"
+
+red_flags:
+  - "Pain with scoliosis (not typical of idiopathic)"
+  - "Rapid progression"
+  - "Neurologic symptoms or exam findings"
+  - "Younger age at onset (<10 years)"
+  - "Left thoracic curve (more likely pathologic)"
+  - "Associated syndromes or stigmata"
+
+clinical_pearls:
+  - "Adolescent Idiopathic Scoliosis: Most common, girls > boys, painless"
+  - "Forward bend test (Adam's test): Rib hump or lumbar prominence indicates rotation"
+  - "Scoliometer: >5-7° asymmetry warrants X-ray"
+  - "Cobb angle on X-ray: <25° observe, 25-40° brace, >40-50° consider surgery"
+  - "Bracing: Effective if skeletally immature and curve 25-40°"
+
+key_history_questions:
+  - "Who first noticed the curve? When?"
+  - "Any back pain? (Atypical for idiopathic)"
+  - "Any neurologic symptoms (weakness, numbness, bowel/bladder)?"
+  - "Menarchal status? (Remaining growth determines treatment)"
+  - "Family history of scoliosis?"
+  - "Any other medical conditions or syndromes?"
+
+key_exam_findings:
+  - "Forward bend test - look for rib hump or lumbar prominence"
+  - "Shoulder height asymmetry"
+  - "Waist asymmetry, scapular prominence"
+  - "Leg length discrepancy"
+  - "Neurologic exam (should be normal in idiopathic)"
+  - "Skin exam (café-au-lait spots = NF, midline lesions = spinal dysraphism)"
+  - "Scoliometer measurement if available"
+
+treatment_principles:
+  - "Mild (<25°): Observation with serial exams/X-rays during growth"
+  - "Moderate (25-40°): Bracing if skeletally immature (Risser 0-2)"
+  - "Severe (>40-50°): Surgical consultation"
+  - "Bracing: Must be worn 16-23 hours/day to be effective"
+  - "Physical therapy: May help with pain, not proven to change curve"
+  - "No evidence for chiropractic, electrical stimulation"
+
+disposition_guidance:
+  - "X-ray: If scoliometer >5-7° or visible asymmetry on exam"
+  - "Observe: Cobb <25°, skeletally immature - recheck in 6 months"
+  - "Orthopedics referral: Cobb >25°, rapid progression, skeletal immaturity"
+  - "Urgent: Neurologic symptoms, significant pain, rapidly progressive"
+  - "Screen: Well-child visits ages 10-16"
+
+parent_styles: [worried-about-progression, wants-treatment, asking-about-alternatives]
+
+sources:
+  - "US Preventive Services Task Force: Screening for Adolescent Idiopathic Scoliosis"
+  - "SRS/AAP: Scoliosis Screening Recommendations"

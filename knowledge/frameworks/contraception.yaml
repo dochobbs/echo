@@ -1,0 +1,69 @@
+# Contraception - Teaching Framework
+topic: "Contraception"
+aliases: ["birth control", "contraception", "family planning"]
+category: adolescent
+age_range_months: [120, 216]
+
+teaching_goals:
+  - "Know LARC is first-line for adolescents"
+  - "Counsel using tiered effectiveness"
+  - "Address common misconceptions"
+  - "Provide confidential care"
+
+common_mistakes:
+  - "Not recommending LARC to adolescents"
+  - "Requiring pelvic exam before starting hormonal contraception"
+  - "Not starting same day ('quick start')"
+  - "Requiring parental consent when not legally mandated"
+
+red_flags:
+  - "Contraindications to estrogen (migraine with aura, VTE history)"
+  - "Possible pregnancy (offer testing before starting)"
+  - "Signs of coercion or trafficking"
+  - "IPV screening positive"
+
+clinical_pearls:
+  - "LARC (IUD, implant): FIRST-LINE for adolescents per AAP and ACOG - most effective, no user adherence"
+  - "Quick start: Can start any method same day if reasonably certain not pregnant"
+  - "No pelvic exam needed: To start pills, patch, ring, shot, or implant"
+  - "Condoms: Always recommend in ADDITION to other methods (STI prevention)"
+  - "Emergency contraception: OTC for all ages; Ella (ulipristal) by rx for higher BMI"
+
+key_history_questions:
+  - "Sexually active? Partners (number, gender)?"
+  - "Any previous pregnancies?"
+  - "Current or desired method?"
+  - "Medical history: Migraines? Blood clots? Smoking?"
+  - "Last menstrual period?"
+  - "Any current method use? Consistency?"
+  - "STI history? Current symptoms?"
+  - "Relationship status? Safety?"
+
+key_exam_findings:
+  - "Blood pressure (for combined hormonal methods)"
+  - "BMI (may affect method efficacy/choice)"
+  - "Pelvic exam NOT required before starting most methods"
+  - "Pelvic exam needed for IUD insertion"
+  - "Screen for STIs if symptomatic or risk factors"
+
+treatment_principles:
+  - "Tier 1 (most effective): IUD, implant - recommend first"
+  - "Tier 2: DMPA injection, pills, patch, ring"
+  - "Tier 3: Condoms, withdrawal, fertility awareness"
+  - "Quick start: Any method can be started same day"
+  - "Estrogen contraindications: Migraine with aura, VTE, smoking >35"
+  - "Always recommend condoms for STI prevention"
+
+disposition_guidance:
+  - "Outpatient: All contraception counseling/initiation"
+  - "Same-day start: Preferred when possible"
+  - "Labs: Pregnancy test if LMP uncertain; STI testing as indicated"
+  - "Follow-up: 3 months for new method, annually for LARC"
+  - "Confidentiality: Minors can consent in most states"
+
+parent_styles: [not-involved-confidential, supportive-parent, opposed-to-contraception]
+
+sources:
+  - "AAP Policy Statement: Contraception for Adolescents"
+  - "ACOG Committee Opinion: Adolescent Contraception"
+  - "CDC U.S. Medical Eligibility Criteria for Contraceptive Use"

@@ -1,0 +1,69 @@
+# Dysmenorrhea and Endometriosis - Teaching Framework
+topic: "Dysmenorrhea and Endometriosis"
+aliases: ["dysmenorrhea", "period pain", "menstrual cramps", "endometriosis"]
+category: adolescent
+age_range_months: [120, 216]
+
+teaching_goals:
+  - "Distinguish primary from secondary dysmenorrhea"
+  - "Know first-line treatment is NSAIDs and/or hormonal contraception"
+  - "Recognize endometriosis in adolescents"
+  - "Understand when to refer to gynecology"
+
+common_mistakes:
+  - "Dismissing adolescent menstrual pain as 'normal'"
+  - "Not prescribing NSAIDs on a scheduled basis"
+  - "Missing endometriosis (can present in teens)"
+  - "Not offering hormonal therapy for moderate-severe dysmenorrhea"
+
+red_flags:
+  - "Pain unresponsive to NSAIDs + hormonal therapy"
+  - "Progressive worsening over time"
+  - "Pain throughout cycle (not just menstrual)"
+  - "GI or urinary symptoms with menses"
+  - "School absences due to menstrual pain"
+
+clinical_pearls:
+  - "Primary dysmenorrhea: Starts within 2 years of menarche, no pelvic pathology"
+  - "Secondary dysmenorrhea: Suggests underlying cause (endometriosis, structural)"
+  - "NSAIDs: Start 1-2 days BEFORE menses begins, scheduled (not PRN)"
+  - "Hormonal therapy: Continuous OCPs (skip placebo) or hormonal IUD for refractory cases"
+  - "Endometriosis affects 11% of women; underdiagnosed in adolescents"
+
+key_history_questions:
+  - "When did periods start? When did pain start?"
+  - "Describe pain: Timing, severity, location, duration?"
+  - "School missed? Activities limited?"
+  - "Pain between periods?"
+  - "GI symptoms with menses (diarrhea, constipation, nausea)?"
+  - "Urinary symptoms with menses?"
+  - "Current treatments tried? Response?"
+  - "Family history of endometriosis or fibroids?"
+  - "Sexual activity?"
+
+key_exam_findings:
+  - "Often normal in primary dysmenorrhea"
+  - "Abdominal exam: Tenderness, masses"
+  - "Pelvic exam if sexually active or severe: Adnexal masses, uterosacral nodularity"
+  - "External genital exam: Rule out outflow obstruction"
+
+treatment_principles:
+  - "First-line: NSAIDs (ibuprofen 400-600mg q6-8h, naproxen 500mg BID) - start 1-2 days before menses"
+  - "Second-line: Add hormonal contraception (OCPs, patch, ring, hormonal IUD)"
+  - "Continuous hormonal therapy: Skip placebo to prevent withdrawal bleeding"
+  - "Hormonal IUD (Mirena): Excellent for dysmenorrhea, especially if also needing contraception"
+  - "Heat, exercise, TENS: Adjunctive therapies"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "No imaging needed for typical primary dysmenorrhea"
+  - "Ultrasound: If concern for structural abnormality"
+  - "Gynecology referral: Unresponsive to NSAIDs + hormonal therapy, suspected endometriosis"
+  - "Laparoscopy: Only way to definitively diagnose endometriosis"
+  - "Follow-up: 3 months to assess treatment response"
+
+parent_styles: [dismissive-of-pain, very-involved, wants-answers-quickly]
+
+sources:
+  - "ACOG Committee Opinion: Dysmenorrhea and Endometriosis in Adolescents"
+  - "AAP Clinical Report: Menstrual Problems in Adolescents"

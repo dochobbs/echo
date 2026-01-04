@@ -1,0 +1,69 @@
+# Type 1 Diabetes Sick Day Management - Teaching Framework
+topic: "Type 1 Diabetes Sick Day Management"
+aliases: ["DKA prevention", "sick day rules", "T1D sick day"]
+category: endocrine
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Know NEVER to stop insulin during illness"
+  - "Teach ketone monitoring and fluid management"
+  - "Recognize DKA warning signs"
+  - "Counsel families proactively"
+
+common_mistakes:
+  - "Stopping insulin because child isn't eating"
+  - "Not checking ketones during illness"
+  - "Waiting too long to contact endocrinology"
+  - "Not having sick day supplies at home"
+
+red_flags:
+  - "Moderate-large ketones not improving with fluids and correction"
+  - "Persistent vomiting (can't keep fluids down)"
+  - "Altered mental status, Kussmaul respirations"
+  - "Glucose persistently >300 despite correction"
+  - "Severe abdominal pain"
+
+clinical_pearls:
+  - "NEVER stop insulin - illness increases need even if not eating"
+  - "Check glucose every 2-4 hours; check ketones if glucose >250"
+  - "Fluids are critical - push sugar-free if glucose high, regular if low"
+  - "Give correction insulin for ketones even if glucose not severely elevated"
+  - "Rule of 15: If glucose <100, give 15g carbs, recheck in 15 minutes"
+
+key_history_questions:
+  - "What is the illness? Fever, vomiting, diarrhea?"
+  - "Can child keep fluids down?"
+  - "What was last glucose? Trend?"
+  - "Any ketones? What level?"
+  - "What insulin has been given today?"
+  - "Normal basal rates? (if on pump)"
+  - "Any signs of DKA (deep breathing, confusion, severe abdominal pain)?"
+
+key_exam_findings:
+  - "Hydration status"
+  - "Respiratory pattern (Kussmaul = deep, labored)"
+  - "Mental status"
+  - "Abdominal exam"
+  - "Point-of-care glucose if available"
+  - "Source of illness (URI, gastroenteritis)"
+
+treatment_principles:
+  - "Continue basal insulin ALWAYS"
+  - "Correction insulin every 2-4 hours based on glucose and ketones"
+  - "Fluids: 1-2 oz every 15-30 min; sugar-free if glucose >250, regular if <150"
+  - "Extra 5-10% of TDD as rapid-acting insulin for ketones"
+  - "Contact endocrinology if: Moderate-large ketones, persistent vomiting, glucose not responding"
+  - "ED if: Can't keep fluids down, moderate-large ketones not improving, altered mental status"
+
+disposition_guidance:
+  - "Home management: Mild illness, small or negative ketones, able to drink"
+  - "Contact endo team: Moderate ketones, not improving, uncertain what to do"
+  - "ED: Persistent vomiting, moderate-large ketones, signs of DKA"
+  - "Admit: DKA (glucose >250 + ketones + acidosis)"
+  - "Proactive education: All T1D families need sick day training"
+
+parent_styles: [panicked, experienced-confident, forgetting-rules]
+
+sources:
+  - "Laffel LM, et al. Sick Day Management in Type 1 Diabetes. Diabetes Care"
+  - "ISPAD Clinical Practice Consensus Guidelines: Sick Day Management"

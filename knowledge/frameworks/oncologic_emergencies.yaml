@@ -1,0 +1,70 @@
+# Oncologic Emergencies - Teaching Framework
+topic: "Oncologic Emergencies"
+aliases: ["tumor lysis syndrome", "SVC syndrome", "spinal cord compression", "oncologic emergency"]
+category: hematology_oncology
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize presentations suggesting malignancy"
+  - "Know life-threatening oncologic emergencies"
+  - "Understand tumor lysis syndrome prevention and treatment"
+  - "Know when to consult oncology urgently"
+
+common_mistakes:
+  - "Missing subtle signs of malignancy (night pain, weight loss, cytopenias)"
+  - "Delaying workup for nonspecific symptoms"
+  - "Not recognizing tumor lysis risk"
+  - "Not checking labs before starting chemotherapy"
+
+red_flags:
+  - "Bone pain waking child from sleep"
+  - "Unexplained cytopenias"
+  - "Mediastinal mass with respiratory distress"
+  - "Abdominal mass"
+  - "Abnormal bruising, petechiae"
+  - "Weight loss, persistent fever"
+
+clinical_pearls:
+  - "Tumor lysis syndrome (TLS): Uric acid, K, phosphate ↑; calcium ↓ - can cause renal failure, arrhythmias"
+  - "SVC syndrome: Facial/upper extremity swelling, cough, dyspnea - AVOID sedation (airway collapse)"
+  - "Spinal cord compression: Back pain, weakness, sensory changes, bladder/bowel dysfunction"
+  - "Febrile neutropenia: Fever + ANC <500 → cultures, broad-spectrum antibiotics IMMEDIATELY"
+  - "ALL: Peak 2-5 years; pancytopenia, bone pain, hepatosplenomegaly, lymphadenopathy"
+
+key_history_questions:
+  - "Bone or back pain? Worse at night?"
+  - "Fevers, night sweats, weight loss?"
+  - "Fatigue, pallor, bruising, bleeding?"
+  - "Any mass or swelling felt?"
+  - "Changes in gait, weakness?"
+  - "Urinary or bowel changes?"
+  - "Headaches, vomiting, vision changes?"
+
+key_exam_findings:
+  - "Pallor, petechiae, bruising"
+  - "Lymphadenopathy (location, character)"
+  - "Hepatosplenomegaly"
+  - "Abdominal mass"
+  - "Neurologic exam (strength, sensation, reflexes)"
+  - "Testicular exam (mass)"
+  - "Fundoscopy (papilledema)"
+
+treatment_principles:
+  - "TLS prevention: Aggressive hydration, allopurinol or rasburicase, avoid potassium/phosphate"
+  - "Febrile neutropenia: Blood cultures, broad-spectrum antibiotics (cefepime) within 1 hour"
+  - "SVC syndrome: Avoid sedation, steroids, possible radiation"
+  - "Spinal cord compression: High-dose steroids, urgent MRI, neurosurgery/radiation consult"
+  - "Hyperleukocytosis: Hydration, avoid transfusion unless critical, leukapheresis if severe"
+
+disposition_guidance:
+  - "ED: Any suspected malignancy, oncologic emergency"
+  - "Oncology consult: All new diagnoses, emergencies"
+  - "Labs: CBC with differential, CMP (including uric acid, LDH, phosphorus), coags"
+  - "Imaging: CXR (mediastinal mass), appropriate imaging based on symptoms"
+  - "Admit: All oncologic emergencies, new diagnosis, febrile neutropenia"
+
+parent_styles: [terrified, in-shock, wanting-answers-immediately]
+
+sources:
+  - "Ladas EJ, et al. Tumor Lysis Syndrome Prevention and Management. Pediatric Blood Cancer"
+  - "AAP Section on Hematology/Oncology: Oncologic Emergencies"

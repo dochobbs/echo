@@ -1,0 +1,63 @@
+# Umbilical Issues (Hernia & Granuloma) - Teaching Framework
+topic: "Umbilical Conditions"
+aliases: ["umbilical hernia", "umbilical granuloma", "belly button issues"]
+category: newborn
+age_range_months: [0, 60]
+
+teaching_goals:
+  - "Distinguish umbilical granuloma from other lesions"
+  - "Know natural history of umbilical hernia"
+  - "Understand treatment options for granuloma"
+  - "Recognize rare complications"
+
+common_mistakes:
+  - "Taping or strapping umbilical hernia (causes skin infection)"
+  - "Referring small umbilical hernia too early"
+  - "Missing patent urachus in persistent granuloma"
+  - "Confusing granuloma with umbilical polyp"
+
+red_flags:
+  - "Incarcerated umbilical hernia (rare but emergency)"
+  - "Umbilical discharge persisting despite treatment"
+  - "Periumbilical erythema or cellulitis"
+  - "Patent urachus (urine from umbilicus)"
+
+clinical_pearls:
+  - "Granuloma: Pink, moist stalk - treat with silver nitrate or topical salt"
+  - "If granuloma persists, consider patent urachus"
+  - "90% of umbilical hernias close spontaneously by age 4-5"
+  - "Incarceration is VERY RARE for umbilical hernias (unlike inguinal)"
+  - "Do NOT tape/strap hernias - causes skin infection, no benefit"
+
+key_history_questions:
+  - "When did the umbilical cord fall off?"
+  - "Any drainage from the umbilicus?"
+  - "Has the bulge changed in size?"
+  - "Any episodes of color change or pain with the bulge?"
+  - "Any previous treatment attempts?"
+
+key_exam_findings:
+  - "Granuloma: Pink, moist, pedunculated tissue"
+  - "Hernia: Reducible fascial defect"
+  - "Size of fascial defect"
+  - "Signs of incarceration (non-reducible, tender, discolored)"
+  - "Periumbilical skin condition"
+
+treatment_principles:
+  - "Granuloma: Silver nitrate application or topical salt"
+  - "Hernia: Observation until age 4-5 in most cases"
+  - "Surgery for hernia: >2cm defect, not closing by age 4-5"
+  - "Never tape or strap hernias"
+
+disposition_guidance:
+  - "Outpatient: Typical granuloma, reducible hernia"
+  - "Follow-up: Serial hernia measurement"
+  - "Surgery referral: Large defect (>2cm), age >4-5, symptomatic"
+  - "Urgent: Incarceration (very rare)"
+
+parent_styles: [anxious-about-appearance, wants-treatment, patient]
+
+sources:
+  - "Pediatrics in Review: Umbilical Conditions in Infants"
+  - "Cochrane Review: Silver Nitrate for Umbilical Granuloma"
+  - "AAP Section on Surgery: Management of Umbilical Hernias"

@@ -1,0 +1,69 @@
+# Functional Constipation - Teaching Framework
+topic: "Functional Constipation"
+aliases: ["constipation", "encopresis", "stool withholding"]
+category: gi
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Recognize functional constipation as behavioral (not organic)"
+  - "Know PEG 3350 is first-line maintenance therapy"
+  - "Understand disimpaction before maintenance"
+  - "Address overflow incontinence (encopresis)"
+
+common_mistakes:
+  - "Ordering imaging or labs for typical presentation"
+  - "Starting maintenance without adequate disimpaction first"
+  - "Stopping treatment too early (need months to years)"
+  - "Blaming child for encopresis (it's involuntary)"
+
+red_flags:
+  - "Constipation since birth (Hirschsprung disease)"
+  - "Delayed passage of meconium >48 hours"
+  - "Empty rectal vault on exam (Hirschsprung)"
+  - "Failure to thrive"
+  - "Bilious vomiting"
+  - "Abnormal neurologic exam, sacral anomalies"
+
+clinical_pearls:
+  - "Functional constipation: Stool is PALPABLE rectally (vs empty in Hirschsprung)"
+  - "Disimpact FIRST: PEG high dose (1-1.5 g/kg/day) x 3-6 days or enema"
+  - "Then maintenance: PEG 0.4-0.8 g/kg/day for MONTHS - don't stop too soon"
+  - "Encopresis = overflow incontinence - child doesn't feel it, don't punish"
+  - "Rome IV criteria for diagnosis - no labs/imaging needed for typical cases"
+
+key_history_questions:
+  - "Stool frequency? Consistency?"
+  - "Painful to pass? Blood on stool?"
+  - "Stool accidents (soiling)?"
+  - "Withholding behaviors (posturing, hiding)?"
+  - "When did meconium pass at birth?"
+  - "Diet - fiber, fluids?"
+  - "History of stool training? Any regression?"
+  - "Abdominal pain?"
+
+key_exam_findings:
+  - "Abdominal exam - stool palpable in LLQ"
+  - "Perianal inspection (fissures, tags)"
+  - "Rectal exam if indicated - stool in vault (NOT empty)"
+  - "Neurologic exam (lower extremity, sacral)"
+  - "Check for sacral dimple, tuft of hair"
+
+treatment_principles:
+  - "Step 1 - Disimpaction: PEG 1-1.5 g/kg/day x 3-6 days OR enema"
+  - "Step 2 - Maintenance: PEG 0.4-0.8 g/kg/day, adjust to soft daily stool"
+  - "Treat for MONTHS - minimum 2 months after symptoms resolve"
+  - "Behavioral: Sit on toilet after meals (gastrocolic reflex), 5-10 minutes"
+  - "Dietary: Fiber, fluids help but alone insufficient"
+  - "Wean slowly when stable"
+
+disposition_guidance:
+  - "Outpatient: Typical functional constipation"
+  - "GI referral: Red flags, failure to respond to treatment"
+  - "Surgery: If Hirschsprung suspected (rectal biopsy for diagnosis)"
+  - "Follow-up: 1 month, then every 2-3 months until resolved"
+
+parent_styles: [frustrated-by-soiling, punitive, wants-quick-fix, anxious]
+
+sources:
+  - "Tabbers MM, et al. ESPGHAN/NASPGHAN: Evaluation and Treatment of Functional Constipation"
+  - "AAP: Constipation in Infants and Children"

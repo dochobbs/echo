@@ -1,0 +1,64 @@
+# Cow's Milk Protein Intolerance (CMPI) - Teaching Framework
+topic: "Cow's Milk Protein Intolerance"
+aliases: ["CMPI", "milk protein allergy", "CMPA", "food protein proctocolitis"]
+category: gi
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Recognize typical presentation of CMPI"
+  - "Understand this is NOT IgE-mediated anaphylaxis"
+  - "Know appropriate formula choices"
+  - "Counsel on resolution timeline"
+
+common_mistakes:
+  - "Ordering IgE testing for CMPI (wrong mechanism)"
+  - "Switching to soy formula (30-50% cross-reactivity)"
+  - "Unnecessary restriction of maternal diet beyond dairy"
+  - "Delaying reintroduction past 12 months"
+
+red_flags:
+  - "Severe failure to thrive"
+  - "Anaphylactic symptoms (this is IgE allergy, not CMPI)"
+  - "Profuse bloody diarrhea"
+  - "FPIES symptoms (repetitive vomiting hours after feeding)"
+
+clinical_pearls:
+  - "Classic presentation: Healthy, THRIVING infant with blood-streaked stools"
+  - "This is NOT anaphylaxis (IgE-mediated) - it's cell-mediated"
+  - "30-50% soy cross-reactivity → go straight to extensively hydrolyzed formula"
+  - "90% resolve by age 1 year - can trial reintroduction"
+  - "For breastfed infants: maternal dairy elimination"
+
+key_history_questions:
+  - "Describe the stools - frequency, consistency, blood?"
+  - "Is baby gaining weight normally?"
+  - "Breast or formula fed?"
+  - "Any other symptoms - fussiness, eczema, vomiting?"
+  - "Family history of allergies?"
+  - "Any reactions to direct milk exposure?"
+
+key_exam_findings:
+  - "Growth parameters (typically normal in CMPI)"
+  - "Abdominal exam"
+  - "Perianal exam for fissures"
+  - "Skin exam for eczema"
+  - "Hydration status"
+
+treatment_principles:
+  - "Breastfed: Maternal dairy elimination (allow 2-4 weeks)"
+  - "Formula-fed: Switch to extensively hydrolyzed (Alimentum, Nutramigen)"
+  - "Skip soy - high cross-reactivity"
+  - "Amino acid formula if hydrolyzed fails"
+  - "Trial reintroduction around 12 months"
+
+disposition_guidance:
+  - "Outpatient: Typical presentation, thriving infant"
+  - "Follow-up: Confirm symptom resolution with diet change"
+  - "GI referral: Severe symptoms, failure to thrive, failed diet trials"
+
+parent_styles: [anxious, dairy-avoidant, wants-testing]
+
+sources:
+  - "ESPGHAN: Guidelines for Diagnosis and Management of CMPA (2012)"
+  - "Pediatrics in Review: Food Protein-Induced Proctocolitis"
+  - "JACI: Symptom-Based Diagnosis of FPIES"

@@ -1,0 +1,69 @@
+# Henoch-Schönlein Purpura - Teaching Framework
+topic: "Henoch-Schönlein Purpura"
+aliases: ["HSP", "IgA vasculitis", "anaphylactoid purpura"]
+category: msk
+age_range_months: [24, 144]
+
+teaching_goals:
+  - "Recognize classic tetrad of symptoms"
+  - "Know renal involvement determines long-term prognosis"
+  - "Understand management is primarily supportive"
+  - "Monitor for complications"
+
+common_mistakes:
+  - "Missing diagnosis in child with abdominal pain before rash appears"
+  - "Not checking urine for hematuria/proteinuria"
+  - "Not following long-term for renal involvement"
+  - "Over-treating with steroids (controversial benefit)"
+
+red_flags:
+  - "Severe abdominal pain (intussusception, GI bleeding)"
+  - "Altered mental status (CNS involvement, rare)"
+  - "Scrotal swelling/pain (orchitis)"
+  - "Significant renal involvement (nephrotic-range proteinuria, hypertension)"
+  - "Bloody stools"
+
+clinical_pearls:
+  - "Classic tetrad: Palpable purpura + arthritis/arthralgia + abdominal pain + renal involvement"
+  - "Rash: Palpable purpura on lower extremities and buttocks - DOES NOT blanch"
+  - "GI: Abdominal pain may precede rash by up to 2 weeks - consider in DDx"
+  - "Renal: Microscopic hematuria in 20-50% - determines long-term prognosis"
+  - "Most resolve in 4-6 weeks; up to 1/3 have recurrence"
+
+key_history_questions:
+  - "When did rash appear? Started where?"
+  - "Any joint pain or swelling?"
+  - "Abdominal pain? Blood in stool?"
+  - "Any blood in urine?"
+  - "Any recent URI or strep infection?"
+  - "Any testicular pain (boys)?"
+  - "Any headache or confusion?"
+
+key_exam_findings:
+  - "Rash: Palpable, non-blanching purpura - legs, buttocks"
+  - "Joints: Swelling, tenderness (knees, ankles most common)"
+  - "Abdominal tenderness, guarding"
+  - "Scrotal exam in boys (orchitis)"
+  - "Blood pressure (renal involvement)"
+  - "Edema (nephrotic syndrome)"
+
+treatment_principles:
+  - "Supportive care: Rest, hydration, NSAIDs for joint pain"
+  - "Corticosteroids: May help severe GI symptoms; don't prevent renal disease"
+  - "Monitor: Urinalysis weekly for 4-6 weeks, then monthly for 6 months"
+  - "Nephrology: If significant proteinuria, hypertension, or elevated creatinine"
+  - "Surgery: If intussusception (usually ileocolic)"
+
+disposition_guidance:
+  - "Outpatient: Most cases with mild symptoms"
+  - "Admit: Severe abdominal pain, GI bleeding, significant renal involvement"
+  - "Labs: Urinalysis (everyone), BMP if renal concern, CBC"
+  - "No imaging needed for typical presentation"
+  - "Nephrology: Significant proteinuria, hypertension, rising creatinine"
+  - "Follow urine: Weekly x4-6, then monthly x6 months, then periodic"
+
+parent_styles: [scared-by-rash, wants-steroids, confused-by-self-limited-course]
+
+sources:
+  - "Ozen S, et al. EULAR/PRINTO/PRES Criteria for Henoch-Schönlein Purpura"
+  - "Saulsbury FT. Henoch-Schönlein Purpura in Children. Lancet"

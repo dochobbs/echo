@@ -1,0 +1,70 @@
+# Burns - Teaching Framework
+topic: "Burns"
+aliases: ["burn injury", "scald burn", "thermal injury"]
+category: emergency
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Accurately estimate burn depth and TBSA"
+  - "Know criteria for burn center referral"
+  - "Recognize non-accidental trauma patterns"
+  - "Manage minor burns in office"
+
+common_mistakes:
+  - "Overestimating burn degree initially (edema obscures depth)"
+  - "Not considering NAT with concerning patterns"
+  - "Under-resuscitating fluid for significant burns"
+  - "Using ice on burns (causes more damage)"
+
+red_flags:
+  - "Circumferential burns (compartment syndrome risk)"
+  - "Inhalation injury (singed nasal hairs, soot, stridor)"
+  - "Burns to face, hands, feet, genitals, joints"
+  - "Electrical or chemical burns"
+  - "Pattern suggesting NAT (stocking/glove, immersion line, cigarette)"
+
+clinical_pearls:
+  - "TBSA: Child's palm = 1% TBSA; use modified Lund-Browder for accuracy"
+  - "Depth: 1st (red, painful, no blister) → 2nd (blister, painful) → 3rd (white/charred, painless)"
+  - "NAT patterns: Immersion burns (clear line), symmetric, protected areas, inconsistent story"
+  - "Cool running water x 20 minutes for acute burns (not ice!)"
+  - "Burn center: >10% TBSA, full-thickness, face/hands/feet/genitals/joints, inhalation, NAT"
+
+key_history_questions:
+  - "What caused the burn? Hot liquid, flame, chemical, electrical?"
+  - "When did it happen?"
+  - "What first aid was given?"
+  - "Is the story consistent with the burn pattern?"
+  - "Who was supervising?"
+  - "Tetanus immunization status?"
+  - "Past medical history (diabetes, immunocompromised)?"
+
+key_exam_findings:
+  - "TBSA calculation (palm = 1% or Lund-Browder)"
+  - "Depth assessment (may evolve over 48-72 hours)"
+  - "Location (high-risk areas)"
+  - "Circumferential? (Risk of compartment syndrome)"
+  - "Airway: Voice changes, stridor, singed hairs, soot"
+  - "Pattern concerning for NAT"
+
+treatment_principles:
+  - "First aid: Cool running water 20 min, remove clothing/jewelry, cover loosely"
+  - "Minor burns (<5% TBSA, superficial): Clean, antibiotic ointment, non-adherent dressing"
+  - "No ice, no butter, no home remedies"
+  - "Pain control: Acetaminophen, ibuprofen; oral opioids if severe"
+  - "Fluid resuscitation: >10% TBSA - Parkland formula (4 mL/kg/% TBSA LR over 24h)"
+  - "Tetanus update if needed"
+  - "Silvadene for partial thickness (not on face)"
+
+disposition_guidance:
+  - "Burn center: >10% TBSA, 3rd degree, face/hands/feet/genitals/joints, circumferential, inhalation, electrical, chemical, NAT"
+  - "ED: >5% TBSA, full thickness, high-risk location"
+  - "Home: <5% TBSA superficial/partial thickness, low-risk location"
+  - "Follow-up: 24-48 hours for wound check"
+  - "Report NAT to child protective services"
+
+parent_styles: [traumatized, guilty, defensive-if-nat-concern]
+
+sources:
+  - "American Burn Association: Burn Center Referral Criteria"
+  - "AAP: Burn Prevention and Treatment"

@@ -1,0 +1,70 @@
+# Apophysitis - Teaching Framework
+topic: "Apophysitis"
+aliases: ["Osgood-Schlatter", "Sever's disease", "apophysitis", "growing pains"]
+category: msk
+age_range_months: [96, 192]
+
+teaching_goals:
+  - "Recognize common apophysitis syndromes by location and age"
+  - "Know these are self-limited overuse injuries"
+  - "Understand imaging is not needed for typical presentation"
+  - "Counsel on activity modification and timeline"
+
+common_mistakes:
+  - "Ordering X-rays for classic presentation"
+  - "Restricting all activity (relative rest, not immobilization)"
+  - "Missing underlying pathology when presentation atypical"
+  - "Not addressing training errors"
+
+red_flags:
+  - "Night pain, rest pain"
+  - "Systemic symptoms (fever, weight loss)"
+  - "Progressive swelling or mass"
+  - "Locked knee or inability to bear weight"
+  - "Point tenderness over bone (not apophysis)"
+
+clinical_pearls:
+  - "Osgood-Schlatter: Tibial tubercle pain in active 10-15 year olds"
+  - "Sever's disease (calcaneal apophysitis): Heel pain in 8-14 year olds"
+  - "Little League elbow (medial epicondyle apophysitis): Throwing athletes"
+  - "Treatment: RELATIVE rest, ice, NSAIDs, stretching - resolves with skeletal maturity"
+  - "X-rays not needed for typical presentation - may show normal apophyseal changes"
+
+key_history_questions:
+  - "Location of pain? When did it start?"
+  - "What sport/activity? How often? Recent increase?"
+  - "Pain with activity or at rest?"
+  - "Any swelling?"
+  - "Any recent growth spurt?"
+  - "Any night pain or systemic symptoms?"
+  - "What makes it better or worse?"
+
+key_exam_findings:
+  - "Point tenderness at specific apophysis"
+  - "Osgood-Schlatter: Tibial tubercle prominence, tender"
+  - "Sever's: Squeeze test positive at calcaneus"
+  - "Swelling may be present"
+  - "No joint effusion (if present, consider other diagnosis)"
+  - "Full ROM typically (may have pain at extremes)"
+
+treatment_principles:
+  - "Relative rest: Decrease activity intensity, not complete rest"
+  - "Ice after activity"
+  - "NSAIDs for pain"
+  - "Stretching: Quadriceps (Osgood), gastrocnemius/soleus (Sever)"
+  - "Heel cups for Sever's disease"
+  - "Infrapatellar strap for Osgood-Schlatter"
+  - "Resolves with skeletal maturity (closure of growth plate)"
+
+disposition_guidance:
+  - "Outpatient: All typical cases"
+  - "X-ray: Only if atypical (acute trauma, night pain, systemic symptoms)"
+  - "Physical therapy: If severe or not improving"
+  - "Orthopedics: Atypical presentation, not improving, suspected other pathology"
+  - "Counsel: Will resolve with growth - may take 12-24 months"
+
+parent_styles: [wants-imaging, sports-focused, concerned-about-restrictions]
+
+sources:
+  - "Weiler R. Osgood-Schlatter Disease. BMJ"
+  - "AAP: Sever's Disease Patient Education"

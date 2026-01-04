@@ -1,0 +1,66 @@
+# Cryptorchidism - Teaching Framework
+topic: "Cryptorchidism"
+aliases: ["undescended testicle", "undescended testis", "cryptorchidism"]
+category: urology
+age_range_months: [0, 24]
+
+teaching_goals:
+  - "Distinguish true undescended from retractile testis"
+  - "Know referral timing (by 6 months of age)"
+  - "Understand risks of untreated cryptorchidism"
+  - "Recognize nonpalpable testis requires imaging/exploration"
+
+common_mistakes:
+  - "Waiting too long to refer (surgery by 6-12 months ideal)"
+  - "Confusing retractile testis with undescended (retractile can be milked into scrotum)"
+  - "Not checking for bilateral absence (ambiguous genitalia workup)"
+  - "Ordering imaging before surgical referral"
+
+red_flags:
+  - "Bilateral nonpalpable testes (DSD workup)"
+  - "Inguinal hernia symptoms with undescended testis"
+  - "Unilateral undescended with contralateral abnormality"
+  - "Any testicular torsion symptoms"
+
+clinical_pearls:
+  - "3% of term, 30% of preterm newborns have UDT - most descend by 3-6 months"
+  - "Retractile testis: Can be milked into scrotum and stays briefly - NO surgery needed"
+  - "Undescended: Cannot be brought into scrotum - needs orchiopexy"
+  - "Surgery: Ideal timing 6-12 months (latest by 18 months)"
+  - "Risks of untreated: Infertility, increased testicular cancer risk"
+
+key_history_questions:
+  - "Was testis ever in scrotum? (May have been documented at birth)"
+  - "Any painful episodes? (Torsion concern)"
+  - "Any swelling in groin? (Hernia)"
+  - "Family history of undescended testicle?"
+  - "Premature birth?"
+
+key_exam_findings:
+  - "Examine in warm room, patient relaxed"
+  - "Start at inguinal canal, milk toward scrotum"
+  - "Can testis be brought into scrotum? Does it stay?"
+  - "If in canal: Palpable vs nonpalpable"
+  - "Contralateral testis exam"
+  - "Signs of hernia"
+  - "If bilateral nonpalpable: Evaluate for ambiguous genitalia"
+
+treatment_principles:
+  - "Observation: If preterm or <3 months - most descend spontaneously"
+  - "Referral: By 6 months if still undescended"
+  - "Surgery (orchiopexy): 6-12 months, latest by 18 months"
+  - "Nonpalpable: Laparoscopy to locate and bring down or remove"
+  - "Retractile testis: Observation, annual exams (risk of ascending testis)"
+
+disposition_guidance:
+  - "Refer to urology: By 6 months if testis remains undescended"
+  - "Surgery: By 6-12 months ideally"
+  - "No imaging needed for palpable undescended - surgery will locate"
+  - "Imaging/hormonal workup: Bilateral nonpalpable (karyotype, hormones)"
+  - "Long-term: Annual testis exams, cancer awareness in adolescence"
+
+parent_styles: [worried-about-fertility, concerned-about-surgery-in-infant, wants-to-wait]
+
+sources:
+  - "Kolon TF, et al. AUA/AAP Guideline: Evaluation and Treatment of Cryptorchidism"
+  - "AAP Section on Urology: Cryptorchidism Patient Education"

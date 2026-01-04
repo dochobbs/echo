@@ -1,0 +1,62 @@
+# Lyme Disease - Teaching Framework
+topic: "Lyme Disease"
+aliases: ["Lyme", "erythema migrans", "tick-borne illness"]
+category: infectious
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Recognize erythema migrans as clinical diagnosis"
+  - "Know doxycycline is safe for short courses in children"
+  - "Understand when prophylaxis is indicated"
+  - "Avoid overtesting with serology early"
+
+common_mistakes:
+  - "Ordering serology for erythema migrans (will be negative early)"
+  - "Avoiding doxycycline in children <8 years (safe for <21 days)"
+  - "Missing prophylaxis opportunity for high-risk tick bites"
+  - "Treating every tick bite regardless of risk factors"
+
+red_flags:
+  - "Facial palsy (Lyme cranial neuritis)"
+  - "Heart block (Lyme carditis)"
+  - "Meningitis symptoms"
+  - "Arthritis (late manifestation)"
+
+clinical_pearls:
+  - "Erythema Migrans: CLINICAL diagnosis - do NOT order serology (negative early)"
+  - "Doxycycline is SAFE for children <8y for <21 days (no tooth staining)"
+  - "Doxycycline is preferred treatment for all ages"
+  - "Prophylaxis: Single-dose doxycycline if tick attached >36h, engorged, prevalence >20%"
+
+key_history_questions:
+  - "Known tick bite? When removed?"
+  - "How long was tick attached? Engorged?"
+  - "Geographic location of exposure?"
+  - "Rash - when appeared, expanding?"
+  - "Fever, fatigue, arthralgias?"
+  - "Any facial weakness or palpitations?"
+
+key_exam_findings:
+  - "Erythema migrans (expanding red ring, may have central clearing)"
+  - "Size and location of rash"
+  - "Facial nerve exam"
+  - "Joint exam"
+  - "Cardiac exam"
+  - "Neurologic exam"
+
+treatment_principles:
+  - "Early Lyme: Doxycycline 4.4 mg/kg/day divided BID x 10-14 days"
+  - "Alternatives: Amoxicillin, Cefuroxime"
+  - "Prophylaxis: Single dose doxycycline 4.4 mg/kg (max 200mg)"
+  - "Disseminated: Longer course, may need IV"
+
+disposition_guidance:
+  - "Outpatient: Early localized Lyme disease"
+  - "Cardiology/Neuro consult: Heart block, meningitis, facial palsy"
+  - "Admit: Severe carditis, CNS involvement"
+
+parent_styles: [anxious-about-Lyme, wants-testing, outdoor-family]
+
+sources:
+  - "IDSA/AAN/ACR CPG: Prevention, Diagnosis, Treatment of Lyme Disease (2021)"
+  - "AAP Red Book: Lyme Disease"

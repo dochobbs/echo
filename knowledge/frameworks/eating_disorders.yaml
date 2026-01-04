@@ -1,0 +1,73 @@
+# Eating Disorders - Teaching Framework
+topic: "Eating Disorders"
+aliases: ["anorexia nervosa", "bulimia", "ARFID", "binge eating"]
+category: behavioral
+age_range_months: [96, 216]
+
+teaching_goals:
+  - "Recognize medical instability requiring hospitalization"
+  - "Know vital sign and lab criteria for admission"
+  - "Screen routinely in adolescents"
+  - "Understand FBT is first-line for adolescent anorexia"
+
+common_mistakes:
+  - "Missing eating disorder in normal-weight patient"
+  - "Not checking orthostatic vitals"
+  - "Reassuring based on 'not underweight enough'"
+  - "Not involving family in treatment"
+
+red_flags:
+  - "Heart rate <50 awake or <45 asleep"
+  - "Blood pressure <80/50 or orthostatic changes"
+  - "Hypothermia (<96°F)"
+  - "Syncope"
+  - "QTc prolongation, arrhythmias"
+  - "Severe electrolyte abnormalities"
+  - "Suicidal ideation"
+
+clinical_pearls:
+  - "Vital signs don't lie: HR <50, BP <80/50, orthostatic changes = ADMIT"
+  - "ARFID: Avoidant/restrictive eating WITHOUT body image disturbance"
+  - "Family-Based Treatment (FBT/Maudsley): First-line for adolescent anorexia"
+  - "Refeeding syndrome: Monitor phosphorus closely when refeeding"
+  - "Normal weight doesn't rule out eating disorder - look at trajectory"
+
+key_history_questions:
+  - "Eating habits? Restricting? Binging? Purging?"
+  - "Weight history? Highest/lowest weight?"
+  - "Exercise habits? Compulsive?"
+  - "Body image concerns?"
+  - "Menstrual history (females)?"
+  - "Laxative, diet pill, or diuretic use?"
+  - "Mood symptoms? Anxiety?"
+  - "Family meals? Who prepares food?"
+
+key_exam_findings:
+  - "Vital signs with orthostatics"
+  - "BMI and growth trajectory"
+  - "Bradycardia, hypothermia"
+  - "Lanugo hair, dry skin"
+  - "Parotid enlargement, dental erosions (purging)"
+  - "Russell's sign (knuckle calluses from purging)"
+  - "Hair loss, brittle nails"
+
+treatment_principles:
+  - "Medical stabilization first if unstable"
+  - "Adolescent AN: Family-Based Treatment (FBT) first-line"
+  - "Nutritional rehabilitation with dietitian"
+  - "Treat comorbidities (depression, anxiety, OCD)"
+  - "Refeeding: Start low, advance slowly, monitor phosphorus"
+  - "Team approach: Medical, therapy, nutrition"
+
+disposition_guidance:
+  - "Admit: HR <50, BP <80/50, orthostatic, temp <96°F, severe electrolytes, suicidal"
+  - "Specialized eating disorder program: Ideal for severe cases"
+  - "Outpatient: Medically stable with engaged family"
+  - "Intensive outpatient or partial hospital: Moderate severity"
+  - "Frequent monitoring: Weekly weights, vital signs initially"
+
+parent_styles: [terrified, controlling-food, in-denial, guilt-ridden]
+
+sources:
+  - "Golden NH, et al. AAP Clinical Report: Eating Disorders (2023)"
+  - "Society for Adolescent Health and Medicine: Refeeding Guidelines"

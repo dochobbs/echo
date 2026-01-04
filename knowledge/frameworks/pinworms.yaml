@@ -1,0 +1,60 @@
+# Pinworms (Enterobiasis) - Teaching Framework
+topic: "Pinworms"
+aliases: ["enterobiasis", "pinworm infection", "threadworm"]
+category: infectious
+age_range_months: [12, 144]
+
+teaching_goals:
+  - "Recognize classic nocturnal presentation"
+  - "Perform and interpret tape test"
+  - "Treat entire household"
+  - "Know to repeat treatment in 2 weeks"
+
+common_mistakes:
+  - "Not treating the entire household"
+  - "Forgetting to repeat treatment in 2 weeks"
+  - "Not doing tape test in morning"
+  - "Missing vulvovaginitis as presentation"
+
+red_flags:
+  - "Secondary bacterial infection from scratching"
+  - "Severe vulvovaginitis"
+  - "Eosinophilia (consider other helminths)"
+
+clinical_pearls:
+  - "Nocturnal anal pruritus is classic presentation"
+  - "Can cause vulvovaginitis in girls"
+  - "Tape test: Morning scotch tape test to find eggs"
+  - "Treatment: Albendazole OR Pyrantel pamoate"
+  - "Treat ENTIRE household + Repeat in 2 weeks (for hatching eggs)"
+
+key_history_questions:
+  - "Anal itching - worse at night?"
+  - "Sleep disturbances?"
+  - "Any vaginal symptoms (girls)?"
+  - "Anyone else in household itching?"
+  - "Daycare or school attendance?"
+  - "Previous treatment attempts?"
+
+key_exam_findings:
+  - "Perianal excoriations"
+  - "May see worms in perianal area (small white threads)"
+  - "Vulvovaginitis in girls"
+  - "Secondary infection signs"
+
+treatment_principles:
+  - "Albendazole 400mg single dose OR Pyrantel 11mg/kg (max 1g)"
+  - "REPEAT treatment in 2 weeks"
+  - "Treat all household members"
+  - "Hygiene: Handwashing, short fingernails, wash bedding in hot water"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Follow-up: Only if symptoms persist after treatment"
+  - "Re-treat: If symptoms recur"
+
+parent_styles: [embarrassed, wants-confirmation, frustrated-with-recurrence]
+
+sources:
+  - "AAP Red Book: Enterobiasis"
+  - "American Family Physician: Pinworm Infection"

@@ -1,0 +1,68 @@
+# Pediatric Depression - Teaching Framework
+topic: "Pediatric Depression"
+aliases: ["depression", "major depressive disorder", "adolescent depression"]
+category: behavioral
+age_range_months: [72, 216]
+
+teaching_goals:
+  - "Know depression presents differently in children/teens"
+  - "Screen with PHQ-A at every adolescent visit"
+  - "Understand FDA black box warning context"
+  - "Apply GLAD-PC guidelines"
+
+common_mistakes:
+  - "Missing irritability as depression symptom in youth"
+  - "Avoiding SSRIs due to misunderstanding black box warning"
+  - "Not assessing for suicidality"
+  - "Diagnosing depression without ruling out bipolar, substance use"
+
+red_flags:
+  - "Suicidal ideation with plan or intent"
+  - "Access to lethal means"
+  - "Prior suicide attempt"
+  - "Psychosis, mania symptoms"
+  - "Active substance use"
+
+clinical_pearls:
+  - "Irritability often predominates over sad mood in youth"
+  - "PHQ-A: Screen ALL adolescents annually starting at age 12"
+  - "SSRIs are SAFE and EFFECTIVE - untreated depression has higher risk than treatment"
+  - "Fluoxetine: FDA-approved for depression in children 8+; first-line"
+  - "Black box: Monitor weekly x4, then biweekly x4 when starting SSRI"
+
+key_history_questions:
+  - "Mood changes? Irritability?"
+  - "Sleep changes? Appetite changes?"
+  - "Energy level? Concentration?"
+  - "Social withdrawal? Academic decline?"
+  - "Any thoughts of death or suicide?"
+  - "Any self-harm?"
+  - "Substance use? Screen time habits?"
+  - "Family history of depression, bipolar, suicide?"
+
+key_exam_findings:
+  - "Mental status: Mood, affect, thought content"
+  - "Assess for psychosis (hallucinations, delusions)"
+  - "Look for self-harm marks"
+  - "Energy level, psychomotor changes"
+  - "Weight changes"
+
+treatment_principles:
+  - "Mild: Supportive therapy, behavioral activation, monitor"
+  - "Moderate-Severe: SSRI + psychotherapy (CBT or IPT)"
+  - "Fluoxetine first-line (FDA approved 8+), escitalopram (12+)"
+  - "Start low, titrate slowly"
+  - "Weekly contact first 4 weeks, then biweekly"
+  - "Safety planning: Lethal means restriction"
+
+disposition_guidance:
+  - "Outpatient: Mild-moderate without active suicidality"
+  - "Urgent psychiatry: Moderate-severe, poor support, prior attempts"
+  - "Emergency: Active suicidal ideation with plan, psychosis"
+  - "Follow-up: Weekly x4, biweekly x4, then monthly"
+
+parent_styles: [minimizing, anxious, anti-medication, blaming-child]
+
+sources:
+  - "Cheung AH, et al. GLAD-PC Guidelines for Adolescent Depression in Primary Care (2018)"
+  - "AAP/AACAP: PHQ-A Screening Recommendations"

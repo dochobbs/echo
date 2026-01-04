@@ -1,0 +1,62 @@
+# Varicella (Chickenpox) & Zoster - Teaching Framework
+topic: "Varicella & Herpes Zoster"
+aliases: ["chickenpox", "shingles", "varicella-zoster"]
+category: infectious
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Know school exclusion criteria"
+  - "Recognize complications requiring attention"
+  - "Understand breakthrough varicella in vaccinated"
+  - "Identify high-risk patients"
+
+common_mistakes:
+  - "Sending child back to school before all lesions crusted"
+  - "Missing secondary bacterial superinfection"
+  - "Underestimating severity in immunocompromised"
+  - "Not recognizing breakthrough varicella"
+
+red_flags:
+  - "Bacterial superinfection (necrotizing fasciitis, Group A Strep)"
+  - "Encephalitis symptoms"
+  - "Pneumonia"
+  - "Immunocompromised patient with varicella"
+
+clinical_pearls:
+  - "Exclusion: Keep home until ALL lesions are crusted over"
+  - "Bacterial superinfection (especially Necrotizing Fasciitis/GAS) is major mortality risk"
+  - "Breakthrough varicella in vaccinated: <50 lesions, no fever, still contagious"
+  - "Acyclovir for immunocompromised, adolescents, adults, or complications"
+
+key_history_questions:
+  - "Vaccination status?"
+  - "Known exposure?"
+  - "Duration and progression of rash?"
+  - "Fever?"
+  - "Any lesions looking infected (red, pus, increasing pain)?"
+  - "Immunocompromised or on steroids?"
+
+key_exam_findings:
+  - "Rash in different stages (macules, papules, vesicles, crusts)"
+  - "Distribution (centripetal - more on trunk)"
+  - "Signs of bacterial superinfection"
+  - "Respiratory exam"
+  - "Neurologic exam"
+
+treatment_principles:
+  - "Supportive care for healthy children"
+  - "Acyclovir: Immunocompromised, adolescents >13y, pregnant, complications"
+  - "Bacterial superinfection: Aggressive antibiotics"
+  - "Antihistamines and calamine for itch"
+
+disposition_guidance:
+  - "Outpatient: Uncomplicated varicella in healthy child"
+  - "Admit: Immunocompromised, complications, severe disease"
+  - "Return: Signs of bacterial infection, neurologic symptoms"
+
+parent_styles: [worried-about-scarring, wants-antiviral, frustrated-about-exclusion]
+
+sources:
+  - "ACIP/CDC: Prevention of Varicella"
+  - "AAP Red Book: Varicella-Zoster Virus Infections"
+  - "American Family Physician: Treatment of Herpes Zoster"

@@ -1,0 +1,71 @@
+# Enuresis - Teaching Framework
+topic: "Enuresis"
+aliases: ["bedwetting", "nocturnal enuresis", "enuresis"]
+category: nephrology
+age_range_months: [60, 144]
+
+teaching_goals:
+  - "Know primary nocturnal enuresis is common and usually self-limited"
+  - "Distinguish primary from secondary enuresis"
+  - "Avoid extensive workup for typical presentation"
+  - "Counsel on behavioral treatments and medication options"
+
+common_mistakes:
+  - "Extensive workup for typical primary nocturnal enuresis"
+  - "Starting medication without behavioral interventions"
+  - "Not addressing psychosocial impact"
+  - "Missing secondary enuresis (new onset after 6+ months dry)"
+
+red_flags:
+  - "Secondary enuresis (was dry >6 months, now wetting)"
+  - "Daytime incontinence"
+  - "UTI symptoms"
+  - "Constipation (very common cause)"
+  - "Polyuria, polydipsia (diabetes)"
+  - "Signs of abuse or trauma"
+
+clinical_pearls:
+  - "Primary nocturnal enuresis: Normal development, never achieved dryness; 15% of 5-year-olds"
+  - "Resolves spontaneously: 15%/year (85% of 5-year-olds → 1-2% of teens)"
+  - "Constipation: VERY common cause - always address this first"
+  - "Alarm therapy: Most effective long-term; 70% success, low relapse"
+  - "Desmopressin: Fast-acting but high relapse when stopped; good for sleepovers"
+
+key_history_questions:
+  - "Ever been dry at night for 6+ months? (Primary vs secondary)"
+  - "Daytime wetting?"
+  - "Constipation? Stool pattern?"
+  - "Bedtime fluid intake?"
+  - "Snoring? (Sleep apnea)"
+  - "Polyuria, polydipsia?"
+  - "UTI symptoms?"
+  - "Family history of bedwetting?"
+  - "Psychosocial: Impact, sleepovers, punishments, stressors?"
+
+key_exam_findings:
+  - "Abdominal exam - stool burden (constipation)"
+  - "Genital exam - normal anatomy"
+  - "Lower back - dimple, tuft (spinal dysraphism)"
+  - "Neurologic exam - gait, reflexes, sensation"
+  - "Usually normal in primary nocturnal enuresis"
+
+treatment_principles:
+  - "Treat constipation FIRST - resolves many cases"
+  - "Behavioral: Limit evening fluids, void before bed, positive reinforcement"
+  - "Enuresis alarm: Most effective long-term treatment; takes 2-3 months, low relapse"
+  - "Desmopressin (DDAVP): For quick results, sleepovers; high relapse when stopped"
+  - "Imipramine: Second-line; risk of overdose toxicity"
+  - "Reassurance: Will get better with time"
+
+disposition_guidance:
+  - "Outpatient: Primary nocturnal enuresis"
+  - "Minimal workup: Urinalysis (to rule out UTI, glucosuria, proteinuria)"
+  - "No imaging for typical primary nocturnal enuresis"
+  - "Urology/nephrology: Secondary enuresis, daytime symptoms, treatment failure"
+  - "Follow-up: Every 3-6 months to assess progress"
+
+parent_styles: [frustrated-with-bedwetting, wanting-quick-fix, blaming-child, supportive]
+
+sources:
+  - "Caldwell PHY, et al. Interventions for Nocturnal Enuresis in Children. Cochrane"
+  - "AAP Clinical Report: Evaluation and Treatment of Enuresis"

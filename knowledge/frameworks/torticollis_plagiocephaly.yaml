@@ -1,0 +1,65 @@
+# Torticollis & Plagiocephaly - Teaching Framework
+topic: "Torticollis & Plagiocephaly"
+aliases: ["flat head", "positional plagiocephaly", "congenital torticollis"]
+category: newborn
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Understand cause-effect relationship between torticollis and plagiocephaly"
+  - "Know when helmet therapy is indicated vs not"
+  - "Recognize craniosynostosis red flags"
+  - "Initiate appropriate PT referral"
+
+common_mistakes:
+  - "Treating plagiocephaly before addressing torticollis"
+  - "Referring for helmet in mild/moderate cases (PT is equally effective)"
+  - "Missing craniosynostosis in persistent flat spot"
+  - "Not starting PT early enough"
+
+red_flags:
+  - "Palpable ridge along suture (craniosynostosis)"
+  - "Flat spot not improving with repositioning"
+  - "Torticollis not improving with stretching"
+  - "Associated developmental delays"
+
+clinical_pearls:
+  - "Tight SCM (torticollis) locks head → flat spot develops (plagiocephaly)"
+  - "TREAT THE NECK FIRST with PT/stretching"
+  - "Helmet therapy is controversial - repositioning + PT as effective for mild/moderate"
+  - "Helmets reserved for severe cases or late presentation (>6-8 months)"
+  - "If flat spot doesn't improve or ridge is palpable → Head CT for craniosynostosis"
+
+key_history_questions:
+  - "Which direction does baby prefer to look?"
+  - "Any difficulty with tummy time?"
+  - "Where does baby sleep - always same position?"
+  - "Birth history - prolonged labor, positioning?"
+  - "Has flat spot improved or worsened?"
+  - "Developmental milestones on track?"
+
+key_exam_findings:
+  - "Head shape - parallelogram vs brachycephaly"
+  - "Palpation of sutures for ridges"
+  - "SCM tightness and passive ROM"
+  - "Facial asymmetry"
+  - "Active head rotation"
+  - "Ear alignment"
+
+treatment_principles:
+  - "PT referral for stretching exercises - first line"
+  - "Repositioning (alternate head position, tummy time)"
+  - "Helmet: Severe cases, late presentation (>6-8 months)"
+  - "Craniosynostosis: Neurosurgery referral"
+
+disposition_guidance:
+  - "Outpatient: PT referral for torticollis"
+  - "Follow-up: Monitor head shape improvement"
+  - "Specialist referral: Not improving, concern for craniosynostosis"
+  - "Craniosynostosis workup: Palpable ridge, progressive deformity"
+
+parent_styles: [worried-about-appearance, wants-helmet, patient]
+
+sources:
+  - "APTA CPG: Physical Therapy Management of Congenital Muscular Torticollis"
+  - "AAP Clinical Report: Prevention and Management of Positional Skull Deformities"
+  - "Choosing Wisely: Use of Helmets for Plagiocephaly"

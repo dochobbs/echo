@@ -1,0 +1,61 @@
+# Warts and Molluscum - Teaching Framework
+topic: "Warts and Molluscum Contagiosum"
+aliases: ["verruca", "common warts", "molluscum", "water warts"]
+category: derm
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Recognize these are self-limited conditions"
+  - "Avoid over-treatment in immunocompetent children"
+  - "Know when treatment is warranted"
+  - "Counsel families on realistic timeline"
+
+common_mistakes:
+  - "Aggressive treatment causing more harm than the lesions"
+  - "Not counseling on self-resolution (especially molluscum)"
+  - "Sending for cryotherapy for every wart"
+  - "Missing extensive molluscum as sign of immunodeficiency"
+
+red_flags:
+  - "Extensive molluscum (>100 lesions) - consider immunodeficiency"
+  - "Giant molluscum (>1 cm)"
+  - "Facial/genital warts in young children (consider abuse)"
+  - "Warts unresponsive to treatment (immunocompromised)"
+
+clinical_pearls:
+  - "Molluscum: Umbilicated (central dimple) pearly papules - SELF-LIMITED in 6-18 months"
+  - "Warts: Rough, hyperkeratotic; disrupt skin lines; pinpoint bleeding when pared"
+  - "Watchful waiting is reasonable for both in immunocompetent children"
+  - "Treatment indicated: Pain, interference with function, psychosocial distress"
+
+key_history_questions:
+  - "How long have lesions been present?"
+  - "Are they spreading? To others?"
+  - "Any pain or itching?"
+  - "Previous treatments tried?"
+  - "Impact on child's life (embarrassment, activities)?"
+
+key_exam_findings:
+  - "Molluscum: 2-5mm umbilicated papules, often in clusters"
+  - "Warts: Rough, verrucous surface; interrupt dermatoglyphics"
+  - "Distribution (plantar, periungual, genital)"
+  - "Signs of inflammation or secondary infection"
+
+treatment_principles:
+  - "Watchful waiting is first-line for molluscum in healthy children"
+  - "Molluscum: Curettage, cantharidin (if treating)"
+  - "Warts: Salicylic acid (OTC) first-line, cryotherapy if needed"
+  - "Plantar warts: Duct tape occlusion + salicylic acid"
+  - "Avoid painful treatments in young children if lesions not bothersome"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Dermatology referral: Refractory, extensive, atypical location"
+  - "Counsel: Self-resolution expected; treatment not mandatory"
+  - "Immunology: If extensive with other infections"
+
+parent_styles: [wants-immediate-treatment, concerned-about-contagion, patient-with-observation]
+
+sources:
+  - "AAD: Molluscum Contagiosum Treatment Guidelines"
+  - "Sterling JC. British Association of Dermatologists: Warts Guidelines"

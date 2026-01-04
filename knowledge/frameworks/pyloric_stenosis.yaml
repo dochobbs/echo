@@ -1,0 +1,69 @@
+# Pyloric Stenosis - Teaching Framework
+topic: "Infantile Hypertrophic Pyloric Stenosis"
+aliases: ["pyloric stenosis", "projectile vomiting", "pyloric"]
+category: gi
+age_range_months: [0, 3]
+
+teaching_goals:
+  - "Recognize classic presentation of 'hungry vomiter'"
+  - "Know expected electrolyte abnormalities"
+  - "Understand this is a MEDICAL emergency before surgical"
+  - "Order appropriate imaging"
+
+common_mistakes:
+  - "Taking to OR before fluid resuscitation and electrolyte correction"
+  - "Missing diagnosis due to atypical presentation"
+  - "Confusing with GERD"
+  - "Not recognizing dehydration severity"
+
+red_flags:
+  - "Bilious vomiting (NOT pyloric stenosis - consider malrotation)"
+  - "Severe dehydration"
+  - "Lethargy from electrolyte imbalance"
+  - "Hypoglycemia"
+
+clinical_pearls:
+  - "Classic: Projectile NON-BILIOUS vomiting, 3-6 weeks, 'Hungry Vomiter'"
+  - "Electrolytes: Hypochloremic, Hypokalemic Metabolic ALKALOSIS"
+  - "Ultrasound is gold standard imaging"
+  - "Fluid resuscitation/electrolyte correction MUST occur BEFORE surgery"
+  - "It is a MEDICAL emergency first, SURGICAL second"
+
+key_history_questions:
+  - "Age at onset of vomiting?"
+  - "Projectile or just spitting up?"
+  - "Any bile (green) in vomit?"
+  - "Does baby want to eat after vomiting?"
+  - "Number of wet diapers? Weight loss?"
+  - "Family history of pyloric stenosis?"
+
+key_exam_findings:
+  - "Dehydration assessment"
+  - "Visible gastric peristalsis (waves across abdomen)"
+  - "'Olive' - palpable pyloric mass in RUQ (rarely felt)"
+  - "Fontanelle (sunken if dehydrated)"
+  - "Capillary refill"
+
+treatment_principles:
+  - "NPO and IV fluid resuscitation"
+  - "Correct electrolyte abnormalities before surgery"
+  - "Target: Chloride >100, Potassium normalized, pH <7.45"
+  - "Pyloromyotomy after medical stabilization"
+
+disposition_guidance:
+  - "Admit: All suspected pyloric stenosis"
+  - "Surgery: After fluid and electrolyte correction"
+  - "NEVER: Take to OR before medical stabilization"
+
+differential_diagnosis:
+  - "GERD"
+  - "Malrotation with volvulus (bilious - emergency)"
+  - "Overfeeding"
+  - "Formula intolerance"
+
+parent_styles: [worried, exhausted, frustrated]
+
+sources:
+  - "Pediatrics in Review: Infantile Hypertrophic Pyloric Stenosis (2012)"
+  - "Academic Radiology: Ultrasound Diagnosis of Pyloric Stenosis"
+  - "Pediatric Surgery International: Fluid Management in Pyloric Stenosis"

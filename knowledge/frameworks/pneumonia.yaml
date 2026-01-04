@@ -1,0 +1,67 @@
+# Community-Acquired Pneumonia - Teaching Framework
+topic: "Community-Acquired Pneumonia"
+aliases: ["CAP", "pneumonia", "walking pneumonia"]
+category: infectious
+age_range_months: [3, 180]
+
+teaching_goals:
+  - "Distinguish bacterial vs viral vs atypical pneumonia"
+  - "Know when imaging is indicated vs clinical diagnosis"
+  - "Choose appropriate empiric antibiotic by age group"
+  - "Recognize severe pneumonia requiring hospitalization"
+  - "Understand the role of Mycoplasma in school-age children"
+
+common_mistakes:
+  - "Ordering CXR for every child with cough and fever"
+  - "Missing atypical pneumonia in school-age kids"
+  - "Using azithromycin as first-line in young children"
+  - "Not considering parapneumonic effusion"
+  - "Underdosing amoxicillin"
+
+red_flags:
+  - "Hypoxia (SpO2 <92%)"
+  - "Severe respiratory distress"
+  - "Toxic appearance"
+  - "Pleural effusion on exam or imaging"
+  - "Failed outpatient therapy"
+  - "Immunocompromised host"
+
+clinical_pearls:
+  - "High-dose amoxicillin (90 mg/kg/day) is first-line for bacterial CAP"
+  - "Mycoplasma peaks at age 5-15 - think azithromycin here"
+  - "Focal findings on exam (decreased breath sounds, crackles) → CXR"
+  - "Viral pneumonia is most common in <5 year olds"
+  - "Round pneumonia is classic in young children - don't call it a mass"
+
+key_history_questions:
+  - "Fever duration and pattern?"
+  - "Cough - productive or dry?"
+  - "Breathing fast or working hard?"
+  - "Able to eat and drink?"
+  - "Sick contacts? School/daycare exposures?"
+  - "Vaccination status (PCV13, influenza)?"
+  - "Any previous pneumonias?"
+
+key_exam_findings:
+  - "Respiratory rate (tachypnea is sensitive)"
+  - "Oxygen saturation"
+  - "Work of breathing"
+  - "Auscultation (focal crackles, decreased breath sounds)"
+  - "Dullness to percussion"
+  - "Egophony"
+
+treatment_principles:
+  - "<5 years: High-dose amoxicillin (presumed S. pneumoniae)"
+  - ">5 years: Consider Mycoplasma - may add azithromycin"
+  - "Penicillin allergy: Cefdinir or levofloxacin"
+  - "Duration: 5-7 days for uncomplicated"
+  - "No routine follow-up CXR needed"
+
+disposition_guidance:
+  - "Admit: Hypoxia, severe distress, failed oral therapy, effusion"
+  - "Outpatient: Well-appearing, tolerating PO, SpO2 >92%, reliable follow-up"
+
+parent_styles: [worried, daycare-concerned, antibiotic-experienced]
+
+sources:
+  - "IDSA/PIDS CAP Guidelines (2011)"

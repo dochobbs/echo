@@ -1,0 +1,71 @@
+# Juvenile Idiopathic Arthritis - Teaching Framework
+topic: "Juvenile Idiopathic Arthritis"
+aliases: ["JIA", "juvenile arthritis", "JRA", "juvenile rheumatoid arthritis"]
+category: msk
+age_range_months: [12, 192]
+
+teaching_goals:
+  - "Know definition: Arthritis >6 weeks, onset <16 years, other causes excluded"
+  - "Recognize different JIA subtypes"
+  - "Understand uveitis screening is critical"
+  - "Refer early to rheumatology"
+
+common_mistakes:
+  - "Waiting too long to refer (permanent joint damage can occur)"
+  - "Missing uveitis screening (silent, can cause blindness)"
+  - "Confusing 'growing pains' with arthritis"
+  - "Checking RF/ANA first instead of referring"
+
+red_flags:
+  - "Systemic features (daily spiking fever, rash, hepatosplenomegaly)"
+  - "Uveitis symptoms (eye pain, redness, photophobia) - but often asymptomatic!"
+  - "Rapidly progressive joint destruction"
+  - "Features suggesting malignancy (night pain, weight loss, cytopenias)"
+
+clinical_pearls:
+  - "Definition: Arthritis (swelling OR 2 of: limited ROM, pain, warmth) for >6 WEEKS in <16 year old"
+  - "Morning stiffness, gelling phenomenon, better with activity - classic for inflammatory"
+  - "ANA positive + oligoarticular = HIGHEST uveitis risk - ophthalmology every 3 months"
+  - "Systemic JIA: Daily quotidian fever, salmon-pink rash - life-threatening complications"
+  - "Refer to rheumatology - don't delay for labs"
+
+key_history_questions:
+  - "Which joints? How long have they been swollen?"
+  - "Morning stiffness? How long? Better with activity?"
+  - "Any fevers? Pattern of fever?"
+  - "Any rash?"
+  - "Any eye symptoms? Redness?"
+  - "Family history of autoimmune diseases?"
+  - "Weight loss, night sweats?"
+  - "Recent infections?"
+
+key_exam_findings:
+  - "Joint swelling - effusion, synovial thickening"
+  - "Warmth (not typically red)"
+  - "Limited range of motion, pain with motion"
+  - "Leg length discrepancy (if chronic knee arthritis)"
+  - "Count involved joints"
+  - "Lymphadenopathy, hepatosplenomegaly (systemic JIA)"
+  - "Rash (salmon-pink, evanescent with fever in systemic)"
+
+treatment_principles:
+  - "Refer to pediatric rheumatology early"
+  - "NSAIDs: First-line symptom control"
+  - "DMARDs: Methotrexate for polyarticular"
+  - "Biologics: TNF inhibitors, IL-1/IL-6 inhibitors for refractory"
+  - "Intra-articular steroids for oligoarticular"
+  - "Physical/occupational therapy"
+  - "Ophthalmology screening: Critical to prevent blindness"
+
+disposition_guidance:
+  - "Rheumatology referral: All suspected JIA"
+  - "Labs: CBC, CMP, ESR, CRP (to rule out other causes, not to diagnose JIA)"
+  - "Ophthalmology: Slit-lamp exam for uveitis screening (frequency depends on subtype/ANA)"
+  - "Urgent: Systemic symptoms, concern for MAS (macrophage activation syndrome)"
+  - "Don't delay referral for extensive workup"
+
+parent_styles: [scared-about-chronic-disease, wants-answers, frustrated-by-process]
+
+sources:
+  - "Ringold S, et al. ACR/Arthritis Foundation Guidelines for JIA"
+  - "AAP Section on Rheumatology: JIA Resource"

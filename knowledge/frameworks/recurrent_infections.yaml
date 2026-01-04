@@ -1,0 +1,63 @@
+# Evaluation of Recurrent Infections - Teaching Framework
+topic: "Recurrent Infections"
+aliases: ["frequent infections", "immunodeficiency evaluation", "sick all the time"]
+category: infectious
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Distinguish normal infection frequency from pathologic"
+  - "Know warning signs of primary immunodeficiency"
+  - "Order appropriate initial screening"
+  - "Reassure appropriately when normal"
+
+common_mistakes:
+  - "Extensive workup for normal daycare illness frequency"
+  - "Missing warning signs of immunodeficiency"
+  - "Not checking vaccine titers as part of workup"
+  - "Over-reassuring without thorough history"
+
+red_flags:
+  - "Need for IV antibiotics for infections"
+  - ">2 serious bacterial infections (sepsis, meningitis, osteomyelitis)"
+  - "Failure to thrive with infections"
+  - "Infections with unusual organisms"
+  - "Family history of early death from infection"
+
+clinical_pearls:
+  - "8-12 viral URIs/year in daycare is NORMAL"
+  - "Warning signs: IV antibiotics needed, >2 deep infections, failure to thrive"
+  - "Initial screen: CBC with diff, Immunoglobulins (IgG/A/M), Vaccine titers"
+  - "Jeffrey Modell Foundation: 10 Warning Signs of Primary Immunodeficiency"
+
+key_history_questions:
+  - "How many infections in past year? What type?"
+  - "Any hospitalizations or IV antibiotics?"
+  - "Growth pattern - any concerns?"
+  - "Daycare attendance?"
+  - "Family history of immunodeficiency or early death?"
+  - "Vaccination history and response?"
+  - "Any unusual organisms isolated?"
+
+key_exam_findings:
+  - "Growth parameters"
+  - "Lymph node assessment"
+  - "Tonsil size"
+  - "Skin exam (eczema, abscesses)"
+  - "Developmental assessment"
+
+treatment_principles:
+  - "Reassurance if normal frequency"
+  - "Initial workup: CBC, IgG/A/M, vaccine titers"
+  - "Immunology referral if abnormal screening or red flags"
+  - "Optimize nutrition, sleep, daycare practices"
+
+disposition_guidance:
+  - "Outpatient: Initial evaluation and screening"
+  - "Immunology referral: Abnormal screen, warning signs present"
+  - "Reassurance: Normal infection frequency, healthy growth"
+
+parent_styles: [worried, frustrated, wants-answers, wants-immune-boosters]
+
+sources:
+  - "Jeffrey Modell Foundation: 10 Warning Signs of Primary Immunodeficiency"
+  - "Pediatrics in Review: Evaluation of the Child with Recurrent Infections"

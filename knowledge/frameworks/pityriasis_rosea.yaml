@@ -1,0 +1,62 @@
+# Pityriasis Rosea - Teaching Framework
+topic: "Pityriasis Rosea"
+aliases: ["christmas tree rash", "herald patch"]
+category: derm
+age_range_months: [60, 216]
+
+teaching_goals:
+  - "Recognize herald patch and Christmas tree pattern"
+  - "Know this is self-limited - no treatment needed"
+  - "Differentiate from secondary syphilis"
+  - "Counsel on expected duration"
+
+common_mistakes:
+  - "Over-treating a self-limited condition"
+  - "Missing secondary syphilis in sexually active adolescent"
+  - "Diagnosing without recognizing herald patch history"
+  - "Alarming family about extensive rash"
+
+red_flags:
+  - "Sexually active adolescent (rule out secondary syphilis)"
+  - "Palm/sole involvement (syphilis, not PR)"
+  - "Oral or genital lesions"
+  - "Systemic symptoms (fever, lymphadenopathy)"
+
+clinical_pearls:
+  - "Herald patch: Large single lesion appears 1-2 weeks BEFORE generalized eruption"
+  - "Christmas tree pattern: Oval lesions follow skin cleavage lines on back"
+  - "Self-limited: Resolves in 6-8 weeks without treatment"
+  - "Secondary syphilis: Consider RPR in sexually active teens with similar rash"
+
+key_history_questions:
+  - "Did a single large spot appear first?"
+  - "How long ago? Has rash spread since?"
+  - "Any itching?"
+  - "Any recent illness (viral prodrome)?"
+  - "Sexual activity? (if adolescent)"
+
+key_exam_findings:
+  - "Herald patch: 2-10 cm oval, salmon-colored with collarette scale"
+  - "Generalized eruption: Smaller oval patches in Christmas tree distribution"
+  - "Spares face, palms, soles (unlike syphilis)"
+  - "Collarette scale (trailing edge)"
+  - "May have mild lymphadenopathy"
+
+treatment_principles:
+  - "No treatment needed - self-limited"
+  - "Symptomatic: Antihistamines for pruritus"
+  - "Topical steroids if very itchy"
+  - "Sun exposure or UVB may accelerate resolution"
+  - "Reassurance is the main intervention"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "No follow-up needed unless symptoms worsen"
+  - "Counsel: Expect 6-8 weeks for resolution"
+  - "RPR: If sexually active adolescent"
+
+parent_styles: [worried-about-appearance, wants-reassurance]
+
+sources:
+  - "Browning JC. Pityriasis Rosea. BMJ"
+  - "AAD: Pityriasis Rosea Patient Education"

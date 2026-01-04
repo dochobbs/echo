@@ -1,0 +1,61 @@
+# Tinea Infections - Teaching Framework
+topic: "Tinea Infections"
+aliases: ["ringworm", "tinea capitis", "tinea corporis", "tinea pedis", "athlete's foot"]
+category: derm
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Recognize tinea capitis requires ORAL therapy"
+  - "Distinguish tinea from other annular lesions"
+  - "Know griseofulvin dosing and duration"
+  - "Understand kerion management"
+
+common_mistakes:
+  - "Treating tinea capitis with topical antifungals alone (won't work)"
+  - "Missing tinea capitis because of atypical presentation"
+  - "Confusing nummular eczema with tinea corporis"
+  - "Not treating long enough"
+
+red_flags:
+  - "Kerion (inflammatory mass) - needs oral antifungal + may need steroids"
+  - "Id reaction (widespread papular eruption)"
+  - "Immunocompromised patient with extensive disease"
+
+clinical_pearls:
+  - "Tinea CAPITIS = ORAL therapy - topicals don't penetrate hair follicle"
+  - "Griseofulvin: Give with fatty food for absorption, treat 6-8 weeks"
+  - "KOH prep or fungal culture to confirm diagnosis"
+  - "Kerion: Oral antifungal + short course steroids (prevents scarring alopecia)"
+
+key_history_questions:
+  - "Where is the rash? How long?"
+  - "Any pets with skin problems?"
+  - "Anyone else in household affected?"
+  - "Any scalp scaling, hair loss, or tender bumps?"
+  - "What treatments have been tried?"
+
+key_exam_findings:
+  - "Annular, scaly plaques with central clearing (corporis)"
+  - "Scalp: scaling, broken hairs, 'black dot' pattern"
+  - "Kerion: boggy, tender mass with pustules"
+  - "Posterior cervical lymphadenopathy (capitis)"
+  - "Fluorescence under Wood's lamp (some species)"
+
+treatment_principles:
+  - "Tinea corporis: Topical antifungal (clotrimazole, terbinafine) x 2-4 weeks"
+  - "Tinea capitis: Griseofulvin 20-25 mg/kg/day x 6-8 weeks"
+  - "Alternative: Terbinafine (shorter course, but griseofulvin preferred in kids)"
+  - "Kerion: Add prednisone 1 mg/kg x 1-2 weeks"
+  - "Selenium sulfide shampoo to reduce spore shedding"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Dermatology referral: Kerion, refractory cases"
+  - "Follow-up: 4-6 weeks to assess response"
+  - "Return to school: After starting treatment"
+
+parent_styles: [concerned-about-contagion, wants-quick-fix, pet-owners]
+
+sources:
+  - "AAP Red Book: Tinea Capitis and Corporis"
+  - "Chen X, et al. Cochrane: Interventions for Tinea Capitis"

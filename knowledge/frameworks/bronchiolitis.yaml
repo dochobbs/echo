@@ -1,0 +1,70 @@
+# Bronchiolitis - Teaching Framework
+topic: "Bronchiolitis"
+aliases: ["RSV bronchiolitis", "viral bronchiolitis"]
+category: infectious
+age_range_months: [1, 24]
+seasonality:
+  peak_months: [11, 12, 1, 2, 3]
+
+teaching_goals:
+  - "Recognize clinical diagnosis - no testing needed in typical cases"
+  - "Understand supportive care is the mainstay of treatment"
+  - "Know what interventions DON'T work (bronchodilators, steroids)"
+  - "Identify risk factors for severe disease"
+  - "Apply appropriate disposition criteria"
+
+common_mistakes:
+  - "Ordering RSV testing in straightforward cases"
+  - "Prescribing albuterol or steroids"
+  - "Obtaining chest X-ray without specific indication"
+  - "Underestimating feeding difficulty as severity marker"
+  - "Discharging before observing adequate oral intake"
+
+red_flags:
+  - "Apnea (especially in young infants)"
+  - "Respiratory rate >70"
+  - "SpO2 <90% on room air"
+  - "Severe retractions or nasal flaring"
+  - "Poor feeding (<50% of normal)"
+  - "Prematurity <32 weeks"
+  - "Age <6 weeks"
+
+clinical_pearls:
+  - "AAP says: No albuterol, no steroids, no antibiotics, no chest X-ray"
+  - "Suctioning + feeding support + O2 if needed = treatment"
+  - "Illness peaks day 3-5, can take 2-3 weeks to fully resolve"
+  - "Feeding difficulty is often the rate-limiting step for discharge"
+  - "Palivizumab for high-risk infants is prevention, not treatment"
+
+key_history_questions:
+  - "How is feeding going? How much are they taking?"
+  - "Wet diapers in past 24 hours?"
+  - "Any pauses in breathing or color changes?"
+  - "Prematurity? Gestational age?"
+  - "Any chronic lung or heart disease?"
+  - "Sick contacts?"
+
+key_exam_findings:
+  - "Work of breathing (retractions, nasal flaring, grunting)"
+  - "Respiratory rate"
+  - "Oxygen saturation"
+  - "Hydration status"
+  - "Wheezing and/or crackles"
+  - "Level of alertness"
+
+treatment_principles:
+  - "Supportive care only"
+  - "Nasal suctioning before feeds"
+  - "Supplemental O2 to maintain SpO2 >90%"
+  - "IV/NG fluids if not tolerating PO"
+  - "No bronchodilators, no steroids, no antibiotics"
+
+disposition_guidance:
+  - "Admit if: O2 requirement, poor feeding, high-risk factors, apnea"
+  - "Discharge if: Stable SpO2 on RA, feeding adequately, reliable follow-up"
+  - "Peak illness 3-5 days - set expectations"
+
+parent_styles: [anxious-first-time, experienced, sleep-deprived]
+
+sources:
+  - "AAP Clinical Practice Guideline: Bronchiolitis (2014)"

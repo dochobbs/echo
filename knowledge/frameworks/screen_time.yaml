@@ -1,0 +1,68 @@
+# Screen Time and Media Use - Teaching Framework
+topic: "Screen Time and Digital Media"
+aliases: ["screen time", "media use", "video games", "social media"]
+category: behavioral
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Know AAP age-based recommendations"
+  - "Counsel on quality over quantity"
+  - "Address problematic media use patterns"
+  - "Create Family Media Plan"
+
+common_mistakes:
+  - "Blanket prohibition (not realistic)"
+  - "Not asking about screen time at visits"
+  - "Ignoring impact on sleep"
+  - "Not discussing content quality"
+
+red_flags:
+  - "Screen use interfering with sleep, school, relationships"
+  - "Inability to stop despite wanting to"
+  - "Withdrawal symptoms when removed"
+  - "Exposure to inappropriate content"
+  - "Cyberbullying victim or perpetrator"
+
+clinical_pearls:
+  - "0-18 months: NO screens except video chat"
+  - "18-24 months: High-quality programming WITH parent co-viewing"
+  - "2-5 years: Limit to 1 hour/day, high-quality educational content"
+  - "6+: Consistent limits, prioritize sleep, physical activity, homework"
+  - "No screens in bedroom or during meals - establish media-free zones"
+
+key_history_questions:
+  - "How much screen time daily? What type?"
+  - "Screens in bedroom? At meals?"
+  - "What content (games, social media, videos)?"
+  - "Impact on sleep? When is last screen before bed?"
+  - "Impact on physical activity, homework, family time?"
+  - "Any concerning online interactions?"
+  - "Parental controls in use?"
+
+key_exam_findings:
+  - "Weight status (associated with sedentary behavior)"
+  - "Sleep history, signs of sleep deprivation"
+  - "Attention, focus (ADHD screening if concern)"
+  - "Social skills, peer relationships"
+  - "Screen for depression, anxiety"
+
+treatment_principles:
+  - "Create Family Media Plan (HealthyChildren.org/MediaUsePlan)"
+  - "Model healthy media use"
+  - "Co-view and discuss content"
+  - "Establish media-free times (meals, before bed) and zones (bedrooms)"
+  - "Prioritize: Sleep, physical activity, homework, family time BEFORE discretionary screen time"
+  - "No screens 1 hour before bed"
+
+disposition_guidance:
+  - "Outpatient: All counseling"
+  - "Address at every well visit"
+  - "Behavioral health: If problematic gaming disorder, significant impact on function"
+  - "Family Media Plan as intervention"
+
+parent_styles: [exhausted-using-screens-as-babysitter, strict-no-screens, permissive, unaware]
+
+sources:
+  - "AAP Policy Statement: Media and Young Minds (2016)"
+  - "AAP Council on Communications and Media: Digital Advertising"
+  - "HealthyChildren.org: Family Media Plan Tool"

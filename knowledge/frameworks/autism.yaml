@@ -1,0 +1,69 @@
+# Autism Spectrum Disorder - Teaching Framework
+topic: "Autism Spectrum Disorder"
+aliases: ["autism", "ASD", "autism spectrum"]
+category: behavioral
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Recognize early signs (18-24 months)"
+  - "Know screening tools (M-CHAT-R/F)"
+  - "Understand early intervention is critical"
+  - "Counsel families appropriately after diagnosis"
+
+common_mistakes:
+  - "Waiting to screen ('He'll grow out of it')"
+  - "Confusing speech delay with autism"
+  - "Not referring for early intervention immediately"
+  - "Missing high-functioning/less obvious presentations"
+
+red_flags:
+  - "No babbling by 12 months"
+  - "No gestures (pointing, waving) by 12 months"
+  - "No single words by 16 months"
+  - "No 2-word phrases by 24 months"
+  - "ANY loss of language or social skills at any age"
+
+clinical_pearls:
+  - "Screen ALL children at 18 and 24 months (AAP recommendation)"
+  - "M-CHAT-R/F: Free, validated screener for 16-30 months"
+  - "Don't wait for formal diagnosis to refer for early intervention"
+  - "Core deficits: Social communication + restricted/repetitive behaviors"
+  - "Regression occurs in ~25% - always concerning"
+
+key_history_questions:
+  - "Eye contact? Response to name?"
+  - "Does child point to show you things?"
+  - "Pretend play? Interactive play with others?"
+  - "Any words? Any loss of words or skills?"
+  - "Repetitive behaviors or intense interests?"
+  - "Sensory sensitivities?"
+  - "Family history of ASD, language delays?"
+
+key_exam_findings:
+  - "Observe: Eye contact, joint attention, response to name"
+  - "Social reciprocity during play"
+  - "Language: Echolalia, pronoun reversal, scripted speech"
+  - "Repetitive movements (hand flapping, spinning)"
+  - "Developmental milestones"
+  - "Rule out hearing loss"
+
+treatment_principles:
+  - "Early intervention: Refer IMMEDIATELY upon suspicion"
+  - "Applied Behavior Analysis (ABA): Evidence-based therapy"
+  - "Speech therapy, occupational therapy"
+  - "No medication for core symptoms - only for comorbidities"
+  - "School: IEP with specialized supports"
+  - "Parent training and support"
+
+disposition_guidance:
+  - "Refer to developmental pediatrics/neurology for formal diagnosis"
+  - "Refer to Early Intervention (0-3) or school district (3+) immediately"
+  - "Audiology: Rule out hearing loss"
+  - "Genetics: Consider if dysmorphic features or regression"
+  - "Follow-up: Regularly for comorbidities, family support"
+
+parent_styles: [in-denial, grieving, seeking-answers, well-informed-advocates]
+
+sources:
+  - "Hyman SL, et al. AAP Clinical Report: ASD Identification and Management (2020)"
+  - "M-CHAT-R/F: mchatscreen.com"

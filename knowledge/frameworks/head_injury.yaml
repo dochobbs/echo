@@ -1,0 +1,71 @@
+# Head Injury and Concussion - Teaching Framework
+topic: "Head Injury and Concussion"
+aliases: ["head injury", "concussion", "TBI", "traumatic brain injury", "head trauma"]
+category: emergency
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Apply PECARN rules to avoid unnecessary CT"
+  - "Recognize signs of increased ICP"
+  - "Counsel on concussion management and return to activity"
+  - "Know red flags for NAT (non-accidental trauma)"
+
+common_mistakes:
+  - "CT for every head bump"
+  - "Returning to contact sports before symptom resolution"
+  - "Missing NAT in infant with unexplained head injury"
+  - "Not educating on post-concussive symptoms"
+
+red_flags:
+  - "GCS <15"
+  - "Signs of skull fracture (palpable, Battle's sign, raccoon eyes)"
+  - "Altered mental status"
+  - "Severe headache, vomiting"
+  - "Mechanism inconsistent with developmental stage (NAT)"
+  - "Focal neurologic deficit"
+
+clinical_pearls:
+  - "PECARN rules: Validated to identify very low risk - can avoid CT"
+  - "Under 2: Altered mental status, scalp hematoma (non-frontal), severe mechanism, LOC >5sec, palpable skull fracture, acting abnormal per parent"
+  - "Over 2: Altered mental status, signs of basilar fracture, severe mechanism, LOC, vomiting, severe headache"
+  - "Concussion: Return to learn BEFORE return to play"
+  - "NAT: Any significant head injury in non-mobile infant is concerning"
+
+key_history_questions:
+  - "Mechanism of injury? Witnessed?"
+  - "Loss of consciousness? How long?"
+  - "Vomiting? How many times?"
+  - "Headache severity?"
+  - "Behavior changes? Acting normally?"
+  - "Seizure?"
+  - "Developmental stage - is this plausible mechanism?"
+  - "Previous concussions?"
+
+key_exam_findings:
+  - "GCS score (and Pediatric GCS for young children)"
+  - "Scalp inspection - hematoma location and size"
+  - "Skull palpation - step-off, crepitus"
+  - "Signs of basilar fracture (hemotympanum, Battle's, raccoon eyes)"
+  - "Neurologic exam - pupils, motor, reflexes"
+  - "Fontanelle if open (bulging = ICP)"
+
+treatment_principles:
+  - "Apply PECARN - observe vs CT based on risk stratification"
+  - "Low risk: 4-6 hours observation, discharge with precautions"
+  - "Concussion: Cognitive and physical rest initially"
+  - "Return to activity: Stepwise protocol after 24-48h asymptomatic"
+  - "Return to LEARN before return to PLAY"
+  - "No same-day return to contact sports after concussion"
+
+disposition_guidance:
+  - "ED: Moderate-high risk per PECARN, any concerning features"
+  - "CT: Based on PECARN criteria"
+  - "Admit: Abnormal CT, persistent altered mental status"
+  - "Low risk: Home with strict return precautions"
+  - "Follow-up: In 1-2 weeks for concussion, sooner if symptoms worsen"
+
+parent_styles: [terrified, wants-CT-for-reassurance, sports-parent-eager-to-return]
+
+sources:
+  - "Kuppermann N, et al. PECARN Head Injury Study. Lancet"
+  - "Halstead ME, et al. AAP Clinical Report: Sport-Related Concussion"

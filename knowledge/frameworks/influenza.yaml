@@ -1,0 +1,66 @@
+# Influenza - Teaching Framework
+topic: "Influenza"
+aliases: ["flu", "influenza-like illness"]
+category: infectious
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Know when antiviral treatment is indicated"
+  - "Identify high-risk groups requiring prompt treatment"
+  - "Understand vaccine schedule for children"
+  - "Recognize complications requiring admission"
+
+common_mistakes:
+  - "Not treating high-risk children because >48 hours from onset"
+  - "Forgetting 2-dose series for children <9 years first time"
+  - "Missing complications (secondary bacterial pneumonia)"
+  - "Over-testing in classic presentation during flu season"
+
+red_flags:
+  - "Respiratory distress"
+  - "Altered mental status"
+  - "Dehydration"
+  - "Secondary bacterial infection signs"
+  - "High-risk group with severe symptoms"
+
+clinical_pearls:
+  - "Oseltamivir works best if started <48h, but still indicated >48h for severe/hospitalized"
+  - "High-risk: Children <2y, asthma, neuro/metabolic conditions - treat promptly"
+  - "Children <9y receiving FIRST flu vaccine need 2 doses separated by 4 weeks"
+  - "During flu season, clinical diagnosis often sufficient"
+
+key_history_questions:
+  - "Duration of symptoms?"
+  - "Fever, cough, body aches?"
+  - "Sick contacts with confirmed flu?"
+  - "Underlying conditions (asthma, diabetes, neuromuscular)?"
+  - "Vaccination status?"
+  - "Able to eat and drink?"
+
+key_exam_findings:
+  - "Temperature"
+  - "Respiratory exam (rate, effort, sounds)"
+  - "Hydration status"
+  - "Mental status"
+  - "Signs of secondary infection (focal lung findings)"
+
+treatment_principles:
+  - "Oseltamivir: <48h ideal, but use >48h if severe or high-risk"
+  - "Supportive care: Hydration, antipyretics"
+  - "High-risk patients: Lower threshold for treatment"
+  - "Prophylaxis for high-risk exposed contacts"
+
+disposition_guidance:
+  - "Outpatient: Uncomplicated flu in healthy child"
+  - "Close follow-up: High-risk patients"
+  - "Admit: Respiratory distress, dehydration, altered mental status"
+
+seasonality:
+  peak_months: [12, 1, 2, 3]
+  pattern: "Winter epidemic"
+
+parent_styles: [wants-Tamiflu, vaccine-hesitant, worried-about-complications]
+
+sources:
+  - "AAP Policy Statement: Recommendations for Prevention and Control of Influenza"
+  - "IDSA CPG: Diagnosis and Treatment of Influenza"

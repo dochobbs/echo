@@ -1,0 +1,62 @@
+# Anaphylaxis - Teaching Framework
+topic: "Anaphylaxis"
+aliases: ["allergic reaction", "severe allergy", "anaphylactic shock"]
+category: emergency
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize epinephrine has NO contraindications in anaphylaxis"
+  - "Know biphasic reaction risk"
+  - "Understand positioning importance"
+  - "Prescribe epinephrine auto-injector appropriately"
+
+common_mistakes:
+  - "Giving antihistamines instead of epinephrine"
+  - "Delaying epinephrine for 'mild' reactions"
+  - "Letting patient sit or stand (Empty Vena Cava syndrome)"
+  - "Not warning about biphasic reaction"
+
+red_flags:
+  - "Respiratory compromise (stridor, wheeze, hypoxia)"
+  - "Cardiovascular compromise (hypotension, tachycardia)"
+  - "Rapidly progressing symptoms"
+  - "History of severe reactions"
+
+clinical_pearls:
+  - "EPINEPHRINE FIRST - NO contraindications in anaphylaxis"
+  - "Antihistamines do NOT treat respiratory/cardiovascular collapse"
+  - "Biphasic reaction: Can occur 1-72h later - warn about return precautions"
+  - "Keep SUPINE with legs elevated - prevents Empty Vena Cava syndrome"
+
+key_history_questions:
+  - "What was the exposure (food, insect, medication)?"
+  - "Time from exposure to symptoms?"
+  - "Symptoms - skin, respiratory, GI, cardiovascular?"
+  - "Previous reactions to this trigger?"
+  - "Do you have an epinephrine auto-injector? Did you use it?"
+  - "Any medications taken before coming in?"
+
+key_exam_findings:
+  - "Vital signs (hypotension, tachycardia)"
+  - "Skin (urticaria, flushing, angioedema)"
+  - "Respiratory (stridor, wheeze, work of breathing)"
+  - "Oxygenation"
+  - "Mental status"
+
+treatment_principles:
+  - "Epinephrine IM 0.01 mg/kg (max 0.5mg) - FIRST LINE"
+  - "Repeat epinephrine q5-15min as needed"
+  - "Position: Supine, legs elevated"
+  - "Adjuncts: Antihistamines, steroids, fluids"
+  - "Observe minimum 4-6 hours for biphasic reaction"
+
+disposition_guidance:
+  - "Observe: Minimum 4-6 hours after resolution"
+  - "Admit: Severe reaction, multiple epinephrine doses, high-risk features"
+  - "Discharge with: Epinephrine auto-injector prescription, action plan"
+
+parent_styles: [terrified, wants-allergy-testing, experienced-with-allergies]
+
+sources:
+  - "Shaker MS, et al. JACI: Anaphylaxis 2020 Practice Parameter Update"
+  - "Epinephrine Auto-Injector Prescribing Information"

@@ -1,0 +1,69 @@
+# Adrenal Insufficiency - Teaching Framework
+topic: "Adrenal Insufficiency"
+aliases: ["adrenal crisis", "adrenal insufficiency", "CAH", "Addison disease"]
+category: endocrine
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize adrenal crisis as life-threatening emergency"
+  - "Know stress dosing for known adrenal insufficiency"
+  - "Understand CAH is most common cause in pediatrics"
+  - "Counsel families on emergency management"
+
+common_mistakes:
+  - "Not stress dosing during illness"
+  - "Not recognizing subtle signs of adrenal crisis"
+  - "Missing CAH in ambiguous genitalia (salt-wasting)"
+  - "Delaying treatment while waiting for labs"
+
+red_flags:
+  - "Hypotension, shock (adrenal crisis)"
+  - "Hyponatremia, hyperkalemia"
+  - "Hypoglycemia"
+  - "Ambiguous genitalia in newborn (CAH)"
+  - "Hyperpigmentation (primary adrenal insufficiency)"
+
+clinical_pearls:
+  - "Adrenal crisis: TREAT FIRST with stress dose steroids if suspected - don't wait for labs"
+  - "CAH (21-hydroxylase deficiency): Most common cause in children; on newborn screen"
+  - "Salt-wasting CAH presents at 1-2 weeks: Vomiting, dehydration, hyponatremia, hyperkalemia"
+  - "Stress dosing: 3x usual dose for illness, IM hydrocortisone for vomiting/unable to take PO"
+  - "All patients with AI need emergency injection kit and medic alert"
+
+key_history_questions:
+  - "Known adrenal insufficiency? On steroids?"
+  - "Current illness? Fever, vomiting, diarrhea?"
+  - "What steroids taken today? Missed doses?"
+  - "Recent surgery or trauma?"
+  - "Chronic steroid use for any reason? (Iatrogenic AI)"
+  - "Fatigue, weight loss, salt craving?"
+  - "Skin darkening?"
+
+key_exam_findings:
+  - "Vital signs: Hypotension, tachycardia"
+  - "Hydration status"
+  - "Mental status"
+  - "Hyperpigmentation (creases, scars, gingiva - primary AI)"
+  - "Ambiguous genitalia in newborn (CAH)"
+  - "Signs of virilization"
+
+treatment_principles:
+  - "Adrenal crisis: IV hydrocortisone 50-100 mg/m2 immediately + IV fluids"
+  - "Stress dosing illness: Oral hydrocortisone 3x usual dose"
+  - "Vomiting: IM hydrocortisone (50 mg for children, 25 mg for infants)"
+  - "CAH: Hydrocortisone + fludrocortisone maintenance"
+  - "Surgery: Stress dose steroids perioperatively"
+  - "Never stop steroids abruptly"
+
+disposition_guidance:
+  - "ED: Any suspected adrenal crisis"
+  - "Admit: Adrenal crisis, significant illness requiring IV steroids"
+  - "Labs: Glucose, sodium, potassium, cortisol (before treatment if possible)"
+  - "Endocrinology: All new diagnoses"
+  - "Education: Emergency injection, medic alert, stress dosing"
+
+parent_styles: [well-trained-experienced, anxious-new-diagnosis, undertreating-illness]
+
+sources:
+  - "Bornstein SR, et al. Diagnosis and Treatment of Primary Adrenal Insufficiency. JCEM"
+  - "AAP Clinical Report: Congenital Adrenal Hyperplasia"

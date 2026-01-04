@@ -1,0 +1,62 @@
+# Impetigo & MRSA - Teaching Framework
+topic: "Impetigo & Skin Infections"
+aliases: ["impetigo", "MRSA", "skin abscess", "staph infection"]
+category: infectious
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Recognize classic impetigo presentation"
+  - "Know when I&D alone is sufficient"
+  - "Understand MRSA decolonization strategies"
+  - "Avoid unnecessary systemic antibiotics"
+
+common_mistakes:
+  - "Prescribing oral antibiotics for small abscess (I&D is primary treatment)"
+  - "Not draining fluctuant abscess"
+  - "Using beta-lactams for suspected MRSA"
+  - "Missing bullous impetigo"
+
+red_flags:
+  - "Cellulitis >2cm surrounding abscess"
+  - "Systemic symptoms (fever, toxic appearance)"
+  - "Rapidly spreading infection"
+  - "Immunocompromised patient"
+
+clinical_pearls:
+  - "Honey crust = Classic non-bullous impetigo - treat with topical Mupirocin"
+  - "Abscess: If fluctuant, I&D is PRIMARY treatment - antibiotics often unnecessary"
+  - "Add oral antibiotics only if: cellulitis >2cm, systemic signs, or I&D not possible"
+  - "Recurrent MRSA: Dilute bleach baths for decolonization"
+
+key_history_questions:
+  - "How long has the lesion been present?"
+  - "Any trauma or bug bite preceding?"
+  - "Previous skin infections? Recurrent?"
+  - "Anyone else in household with similar?"
+  - "Sports participation (wrestling, football)?"
+  - "Any fever?"
+
+key_exam_findings:
+  - "Lesion characteristics (crusted, bullous, fluctuant)"
+  - "Size and location"
+  - "Surrounding cellulitis"
+  - "Regional lymphadenopathy"
+  - "Temperature"
+  - "Fluctuance assessment"
+
+treatment_principles:
+  - "Impetigo: Topical mupirocin if localized"
+  - "Abscess: I&D primary treatment"
+  - "Oral antibiotics: TMP-SMX or Clindamycin for MRSA coverage"
+  - "Decolonization: Bleach baths, mupirocin to nares"
+
+disposition_guidance:
+  - "Outpatient: Localized infection, successful I&D"
+  - "Admit: Extensive cellulitis, systemic toxicity, immunocompromised"
+  - "Follow-up: 48-72 hours to assess response"
+
+parent_styles: [worried-about-MRSA, wants-antibiotics, frustrated-with-recurrence]
+
+sources:
+  - "IDSA Practice Guidelines: Skin and Soft Tissue Infections (2014)"
+  - "Pediatrics in Review: Impetigo"

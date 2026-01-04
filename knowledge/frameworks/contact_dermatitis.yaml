@@ -1,0 +1,62 @@
+# Contact Dermatitis - Teaching Framework
+topic: "Contact Dermatitis"
+aliases: ["allergic contact dermatitis", "poison ivy", "irritant dermatitis"]
+category: derm
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Distinguish allergic from irritant contact dermatitis"
+  - "Recognize poison ivy/oak pattern"
+  - "Know when systemic steroids are indicated"
+  - "Counsel on prevention and allergen avoidance"
+
+common_mistakes:
+  - "Using too weak a steroid for acute allergic contact dermatitis"
+  - "Short course of oral steroids causing rebound"
+  - "Missing nickel allergy (earrings, belt buckles, phone)"
+  - "Not counseling on urushiol persistence on clothing/pets"
+
+red_flags:
+  - "Facial involvement with significant swelling"
+  - "Genital involvement"
+  - "Secondary bacterial infection"
+  - "Airway involvement (inhaled smoke from burning poison ivy)"
+
+clinical_pearls:
+  - "Poison ivy: Linear streaks are DIAGNOSTIC - urushiol spreads on skin contact"
+  - "Rash does NOT spread from blister fluid - it's not contagious"
+  - "Nickel: #1 contact allergen - look for belt buckle/jewelry pattern"
+  - "Oral steroids for severe: 2-3 WEEKS taper to prevent rebound"
+
+key_history_questions:
+  - "What contacted the skin? When?"
+  - "Any outdoor activities? New jewelry, soaps, cosmetics?"
+  - "Is the rash spreading or stable?"
+  - "Previous reactions to this substance?"
+  - "What treatments have been tried?"
+
+key_exam_findings:
+  - "Distribution pattern (linear = poison ivy, circular = nickel)"
+  - "Vesicles, bullae in acute cases"
+  - "Sharply demarcated borders"
+  - "Erythema, edema, weeping"
+  - "Signs of secondary infection"
+
+treatment_principles:
+  - "Mild/localized: High-potency topical steroid (triamcinolone, clobetasol)"
+  - "Severe/widespread: Oral prednisone 1 mg/kg/day"
+  - "Taper over 2-3 WEEKS for poison ivy (short courses cause rebound)"
+  - "Cool compresses, calamine for symptomatic relief"
+  - "Barrier creams for prevention (before exposure)"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Allergist referral: Recurrent unexplained dermatitis, patch testing needed"
+  - "Urgent: Severe facial/eyelid swelling, signs of infection"
+  - "Follow-up: 1-2 weeks if on systemic steroids"
+
+parent_styles: [wants-quick-fix, concerned-about-steroids, outdoor-family]
+
+sources:
+  - "AAD: Contact Dermatitis Guidelines"
+  - "Usatine RP. Diagnosis and Treatment of Contact Dermatitis. AFP"

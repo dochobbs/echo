@@ -1,0 +1,73 @@
+# The Limping Child - Teaching Framework
+topic: "The Limping Child"
+aliases: ["limping", "limp", "antalgic gait", "refusal to walk"]
+category: msk
+age_range_months: [12, 192]
+
+teaching_goals:
+  - "Develop systematic approach to limping child by age"
+  - "Differentiate transient synovitis from septic arthritis"
+  - "Know when to image and which imaging to order"
+  - "Recognize life-threatening causes"
+
+common_mistakes:
+  - "Missing septic arthritis (orthopedic emergency)"
+  - "Not examining the hip in child with knee pain (referred pain)"
+  - "Missing Legg-Calvé-Perthes or SCFE"
+  - "Not considering malignancy or osteomyelitis"
+
+red_flags:
+  - "Fever + limp (septic arthritis until proven otherwise)"
+  - "Inability to bear weight"
+  - "Ill appearance"
+  - "Night pain, constitutional symptoms"
+  - "Hip with limited internal rotation (SCFE)"
+  - "Obese adolescent with hip/knee/thigh pain (SCFE)"
+
+clinical_pearls:
+  - "Age helps narrow differential: Toddler (toddler's fracture, septic hip), 4-10 (transient synovitis, Perthes), Adolescent (SCFE, apophysitis)"
+  - "Transient synovitis vs septic hip: Kocher criteria (fever >38.5, non-WB, ESR >40, WBC >12K)"
+  - "SCFE: Obese adolescent with groin/thigh/knee pain, externally rotated leg, limited internal rotation"
+  - "Knee pain may be REFERRED from hip - always examine the hip!"
+  - "Toddler's fracture: Spiral tibial fracture, may walk with limp, X-ray can be subtle"
+
+key_history_questions:
+  - "How long has child been limping?"
+  - "Any fever?"
+  - "Any recent illness or trauma?"
+  - "Can child bear weight at all?"
+  - "Which leg? Point to where it hurts?"
+  - "Night pain? Pain at rest?"
+  - "Any swelling?"
+  - "Any recent vaccinations or infections?"
+
+key_exam_findings:
+  - "Observe gait - antalgic (short stance phase on affected side)"
+  - "Inspect for swelling, erythema, deformity"
+  - "Palpate systematically: Spine, hips, knees, ankles, feet"
+  - "Range of motion: Especially hip internal rotation"
+  - "Leg length discrepancy"
+  - "Log roll of hip (pain with passive rotation = hip pathology)"
+  - "Temperature"
+
+treatment_principles:
+  - "Transient synovitis: NSAIDs, rest, follow-up in 24-48 hours"
+  - "Septic arthritis: Orthopedic emergency - drainage + IV antibiotics"
+  - "SCFE: Non-weight bearing, urgent orthopedic referral, surgical pinning"
+  - "Perthes: Orthopedic referral, treatment depends on age and severity"
+  - "Toddler's fracture: Cast or boot immobilization"
+  - "Osteomyelitis: IV antibiotics, possible surgical drainage"
+
+disposition_guidance:
+  - "ED/urgent: Fever + limp, non-weight bearing, concern for septic arthritis or SCFE"
+  - "Labs: CBC, ESR, CRP if infection suspected"
+  - "X-ray: Hip and knee of affected side (start here)"
+  - "Ultrasound: If hip effusion suspected"
+  - "MRI: If osteomyelitis, malignancy, or occult fracture suspected"
+  - "Orthopedics: Septic arthritis (emergent), SCFE (urgent), Perthes, osteomyelitis"
+
+parent_styles: [worried-about-serious-cause, frustrated-by-workup, wants-quick-answer]
+
+sources:
+  - "Kocher MS, et al. Differentiating Septic Arthritis from Transient Synovitis. JBJS"
+  - "Herman MJ. The Limping Child. Pediatrics in Review"

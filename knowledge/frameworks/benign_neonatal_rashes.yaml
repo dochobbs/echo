@@ -1,0 +1,67 @@
+# Benign Neonatal Rashes - Teaching Framework
+topic: "Benign Neonatal Rashes"
+aliases: ["newborn rash", "baby rash", "erythema toxicum", "milia"]
+category: derm
+age_range_months: [0, 2]
+
+teaching_goals:
+  - "Identify common benign neonatal rashes by appearance"
+  - "Reassure parents appropriately"
+  - "Know what NOT to do (don't pop, don't treat)"
+  - "Recognize when rash is NOT benign"
+
+common_mistakes:
+  - "Treating erythema toxicum with antibiotics"
+  - "Picking or popping milia"
+  - "Ordering cultures for benign pustular lesions"
+  - "Failing to reassure parents about self-limited conditions"
+
+red_flags:
+  - "Vesicles in grouped pattern (HSV)"
+  - "Pustules with surrounding cellulitis"
+  - "Ill-appearing infant with rash"
+  - "Petechiae or purpura"
+
+clinical_pearls:
+  - "Erythema Toxicum: 'Flea bite' appearance - red blotch with central white pustule, Day 2-3, eosinophil-filled"
+  - "Transient Pustular Melanosis: Pustules AT BIRTH, rupture leaving pigmented freckle with collarette of scale"
+  - "Milia: 'Whiteheads' on nose - keratin cysts. Do NOT pick/pop"
+  - "All resolve spontaneously - reassurance is the treatment"
+
+key_history_questions:
+  - "When did the rash appear?"
+  - "Is baby eating and acting normally?"
+  - "Any fever?"
+  - "Was rash present at birth or appeared after?"
+  - "Any changes in the rash?"
+
+key_exam_findings:
+  - "Distribution and pattern of lesions"
+  - "Type of lesion (papule, pustule, vesicle)"
+  - "Surrounding erythema"
+  - "General appearance of infant"
+  - "Temperature"
+
+treatment_principles:
+  - "Reassurance - primary treatment"
+  - "No topical treatments needed"
+  - "Do not pick or squeeze lesions"
+  - "Education about self-resolution"
+
+disposition_guidance:
+  - "Outpatient: Typical appearance, well infant"
+  - "Workup: Atypical appearance, vesicles, ill-appearing"
+  - "Urgent: Concern for HSV, bacterial infection"
+
+differential_diagnosis:
+  - "HSV (vesicles in groups)"
+  - "Bacterial pustulosis"
+  - "Candidiasis"
+  - "Scabies"
+
+parent_styles: [worried, photo-comparing-online, reassured-easily]
+
+sources:
+  - "Pediatrics in Review: Benign Neonatal Dermatoses (2019)"
+  - "American Family Physician: Visual Diagnosis of Neonatal Rashes"
+  - "UpToDate: Neonatal Pustular Eruption"
