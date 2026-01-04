@@ -38,8 +38,15 @@ Key components:
 - Embeddable widget for external integration
 
 ### Knowledge Base
-- **Location**: `knowledge/conditions/` - YAML files with medical condition data
-- Covers pediatric conditions: asthma, bronchiolitis, croup, UTI, etc.
+- **Location**: `knowledge/conditions/` - YAML files with patient generation data (demographics, symptoms, vitals)
+- **Location**: `knowledge/frameworks/` - 100 YAML teaching frameworks with learning objectives
+- Covers full pediatric curriculum: infectious, respiratory, GI, derm, behavioral, emergency, etc.
+
+### Teaching Frameworks Module
+- **Location**: `src/frameworks/`
+- **Loader**: `src/frameworks/loader.py` - Loads and queries 100 teaching frameworks
+- **Router**: `src/frameworks/router.py` - API endpoints for framework access
+- Each framework includes: teaching_goals, common_mistakes, red_flags, clinical_pearls, key_history_questions, key_exam_findings, treatment_principles
 
 ## Database Schema (PostgreSQL)
 Uses Replit's built-in PostgreSQL database with SQLAlchemy ORM.
@@ -85,6 +92,10 @@ Without DATABASE_URL configured, the app works with in-memory storage per sessio
 - `POST /case/debrief` - Get case debrief
 - `GET /case/history` - Get user's case history
 - `GET /case/me/active` - Get active cases (requires auth)
+- `GET /frameworks` - List all 100 teaching frameworks
+- `GET /frameworks/{key}` - Get specific framework by key
+- `GET /frameworks/categories` - List all categories with counts
+- `GET /frameworks/category/{category}` - Get frameworks in category
 
 ## Design System
 The app uses a "Clinical Calm" dark theme with Geist Mono font:
@@ -107,6 +118,12 @@ The app uses a "Clinical Calm" dark theme with Geist Mono font:
 - `Toast` - Notification toasts for milestones
 
 ## Recent Changes
+- 2026-01-04: Integrated 100 teaching frameworks for dynamic case generation
+  - Added knowledge/frameworks/ with full pediatric curriculum YAML files
+  - Created src/frameworks/ module with loader and API router
+  - Frameworks provide teaching_goals, common_mistakes, red_flags, clinical_pearls
+  - Case generator now merges framework data with patient generation
+  - Tutor prompts enhanced with key questions, exam findings, treatment principles
 - 2026-01-04: Fixed History page crash - updated to match backend API response format (patient_name, patient_age fields)
 - 2026-01-04: FocusTextarea now auto-grows as users type new lines (min 56px, max 300px)
 - 2026-01-04: Fixed authentication and replaced emojis with animated icons

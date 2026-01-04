@@ -366,10 +366,22 @@ Switch between these naturally - mid-response if needed. The learner should feel
 {chr(10).join(['- ' + goal for goal in condition_info.get('teaching_goals', [])])}
 
 ### Common Learner Mistakes to Watch For:
-{chr(10).join(['- ' + mistake for mistake in condition_info.get('common_learner_mistakes', [])])}
+{chr(10).join(['- ' + mistake for mistake in condition_info.get('common_mistakes', condition_info.get('common_learner_mistakes', []))])}
 
 ### Red Flags (must not be missed):
 {chr(10).join(['- ' + flag for flag in condition_info.get('red_flags', [])])}
+
+### Clinical Pearls (high-yield points):
+{chr(10).join(['- ' + pearl for pearl in condition_info.get('clinical_pearls', [])])}
+
+### Key History Questions to Elicit:
+{chr(10).join(['- ' + q for q in condition_info.get('key_history_questions', [])])}
+
+### Key Exam Findings to Discover:
+{chr(10).join(['- ' + f for f in condition_info.get('key_exam_findings', [])])}
+
+### Treatment Principles:
+{chr(10).join(['- ' + t for t in condition_info.get('treatment_principles', [])])}
 
 ## Current Case Phase: {case_state.phase.value}
 

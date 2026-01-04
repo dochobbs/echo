@@ -6,8 +6,9 @@ from typing import Optional
 import yaml
 
 from .models import GeneratedPatient, CaseState, LearnerLevel
+from ..frameworks import get_framework, get_all_framework_keys, get_random_framework
 
-# Load conditions from YAML
+# Load conditions from YAML (legacy patient generation data)
 KNOWLEDGE_DIR = Path(__file__).parent.parent.parent / "knowledge" / "conditions"
 
 # First names for generated patients
@@ -195,8 +196,40 @@ class CaseGenerator:
     )
 
   def get_condition_info(self, condition_key: str) -> dict:
-    """Get full condition information for tutor context."""
-    return self.conditions.get(condition_key, {})
+    """Get full condition information for tutor context.
+    
+    Merges legacy condition data with new teaching framework data.
+    """
+    condition_data = self.conditions.get(condition_key, {})
+    framework_data = get_framework(condition_key)
+    
+    if framework_data:
+      merged = {**condition_data}
+      merged["teaching_goals"] = framework_data.get("teaching_goals", [])
+      merged["common_mistakes"] = framework_data.get("common_mistakes", [])
+      merged["common_learner_mistakes"] = framework_data.get("common_mistakes", [])
+      merged["red_flags"] = framework_data.get("red_flags", [])
+      merged["clinical_pearls"] = framework_data.get("clinical_pearls", [])
+      merged["key_history_questions"] = framework_data.get("key_history_questions", [])
+      merged["key_exam_findings"] = framework_data.get("key_exam_findings", [])
+      merged["treatment_principles"] = framework_data.get("treatment_principles", [])
+      merged["disposition_guidance"] = framework_data.get("disposition_guidance", [])
+      merged["framework_topic"] = framework_data.get("topic", condition_key)
+      merged["framework_category"] = framework_data.get("category", "unknown")
+      merged["framework_sources"] = framework_data.get("sources", [])
+      return merged
+    
+    return condition_data
+  
+  def get_teaching_framework(self, condition_key: str) -> dict:
+    """Get teaching framework for a condition."""
+    return get_framework(condition_key) or {}
+  
+  def get_available_conditions(self) -> list[str]:
+    """Get list of all available conditions (from both legacy and frameworks)."""
+    legacy_keys = set(self.conditions.keys())
+    framework_keys = set(get_all_framework_keys())
+    return sorted(legacy_keys | framework_keys)
 
 
 # Singleton instance

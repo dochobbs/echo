@@ -7,6 +7,7 @@ from .config import get_settings
 from .routers import feedback, question, debrief, voice
 from .cases import case_router
 from .auth.router import router as auth_router
+from .frameworks.router import router as frameworks_router
 from .database import is_database_configured, create_tables
 
 app = FastAPI(
@@ -31,6 +32,7 @@ app.include_router(question.router, prefix="/question", tags=["question"])
 app.include_router(debrief.router, prefix="/debrief", tags=["debrief"])
 app.include_router(voice.router, prefix="/voice", tags=["voice"])
 app.include_router(case_router, tags=["cases"])
+app.include_router(frameworks_router)
 
 
 @app.on_event("startup")
