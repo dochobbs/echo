@@ -107,6 +107,7 @@ The app uses a "Clinical Calm" dark theme with Geist Mono font:
 - `Toast` - Notification toasts for milestones
 
 ## Recent Changes
+- 2026-01-04: Fixed History page crash - updated to match backend API response format (patient_name, patient_age fields)
 - 2026-01-04: FocusTextarea now auto-grows as users type new lines (min 56px, max 300px)
 - 2026-01-04: Fixed authentication and replaced emojis with animated icons
   - Rewired useAuth hook to use local JWT endpoints (/auth/login, /auth/register)

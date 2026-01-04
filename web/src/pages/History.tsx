@@ -2,10 +2,22 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { api } from '../api/client';
-import type { CaseSession } from '../types';
+
+interface CaseSummary {
+  session_id: string;
+  condition_display: string;
+  patient_name: string;
+  patient_age: string;
+  learner_level: string;
+  completed_at: string;
+  duration_minutes?: number;
+  teaching_moments_count: number;
+  status?: string;
+  hints_given?: number;
+}
 
 export function History() {
-  const [cases, setCases] = useState<CaseSession[]>([]);
+  const [cases, setCases] = useState<CaseSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -13,7 +25,7 @@ export function History() {
     async function loadHistory() {
       try {
         const data = await api.getCaseHistory();
-        setCases(data.cases as CaseSession[]);
+        setCases((data.cases || []) as CaseSummary[]);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load history');
       } finally {
@@ -31,12 +43,6 @@ export function History() {
       day: 'numeric',
       year: 'numeric',
     });
-  };
-
-  const formatDuration = (seconds?: number) => {
-    if (!seconds) return '-';
-    const mins = Math.floor(seconds / 60);
-    return `${mins} min`;
   };
 
   if (loading) {
@@ -84,7 +90,7 @@ export function History() {
         <div className="space-y-4">
           {cases.map((c, index) => (
             <motion.div
-              key={c.id}
+              key={c.session_id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
@@ -96,33 +102,33 @@ export function History() {
                     {c.condition_display}
                   </h3>
                   <p className="text-sm text-gray-500">
-                    {c.patient_data.name}, {c.patient_data.age}
+                    {c.patient_name}, {c.patient_age}
                   </p>
                 </div>
                 <span
                   className={`px-2.5 py-1 text-xs font-medium rounded-full ${
-                    c.status === 'completed'
+                    c.status === 'completed' || !c.status
                       ? 'bg-echo-500/20 text-echo-400 border border-echo-500/30'
                       : c.status === 'active'
                       ? 'bg-copper-500/20 text-copper-400 border border-copper-500/30'
                       : 'bg-surface-4 text-gray-400'
                   }`}
                 >
-                  {c.status}
+                  {c.status || 'completed'}
                 </span>
               </div>
 
               <div className="mt-3 flex items-center gap-4 text-sm text-gray-500">
-                <span>{formatDate(c.started_at)}</span>
+                <span>{formatDate(c.completed_at)}</span>
                 <span className="w-1 h-1 bg-surface-4 rounded-full" />
-                <span>{formatDuration(c.duration_seconds)}</span>
+                <span>{c.duration_minutes ? `${c.duration_minutes} min` : '-'}</span>
                 <span className="w-1 h-1 bg-surface-4 rounded-full" />
-                <span>{c.hints_given} hints</span>
+                <span>{c.teaching_moments_count} teaching moments</span>
               </div>
 
               {c.status === 'active' && (
                 <Link
-                  to={`/case/${c.id}`}
+                  to={`/case/${c.session_id}`}
                   className="mt-3 inline-block text-sm text-echo-400 hover:text-echo-300 font-medium transition-colors"
                 >
                   Continue case →
