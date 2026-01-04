@@ -1,0 +1,112 @@
+# Bronchiolitis - Echo Teaching Condition
+# Adapted from Oread with teaching enhancements
+
+display_name: "Bronchiolitis"
+aliases: ["RSV bronchiolitis", "Viral bronchiolitis"]
+
+billing_codes:
+  icd10: ["J21.0", "J21.9"]
+  snomed: "4120002"
+
+category: acute
+system: respiratory
+
+demographics:
+  age_months: { min: 0, peak: [2, 6], max: 24 }
+  gender_bias: { male: 0.55, female: 0.45 }
+  risk_factors: ["premature_birth", "daycare", "smoke_exposure", "older_siblings"]
+
+seasonality:
+  peak_months: [11, 12, 1, 2, 3]
+
+vitals_impact:
+  temp_f: [99.5, 101.5]
+  hr_multiplier: 1.20
+  rr_multiplier: 1.40
+  spo2_min: 90
+
+presentation:
+  chief_complaints:
+    - "She's breathing really fast and won't eat"
+    - "He has a cold but now he's wheezing"
+    - "She seems to be working really hard to breathe"
+  symptoms:
+    - "wheezing"
+    - "tachypnea"
+    - "nasal flaring"
+    - "retractions"
+    - "cough"
+    - "rhinorrhea"
+    - "poor feeding"
+  duration_days: [7, 14]
+  physical_exam:
+    - { system: "general", finding: "Infant with increased work of breathing" }
+    - { system: "respiratory", finding: "Diffuse wheezes and crackles bilaterally" }
+    - { system: "respiratory", finding: "Subcostal and intercostal retractions" }
+    - { system: "respiratory", finding: "Nasal flaring present" }
+    - { system: "heent", finding: "Copious clear rhinorrhea" }
+
+treatment:
+  approach: "Supportive care - nasal suctioning and hydration"
+  medications: []  # No routine medications
+  supportive:
+    - "Nasal suctioning before feeds"
+    - "Frequent small feeds to maintain hydration"
+    - "Supplemental oxygen if SpO2 <90%"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Assess work of breathing systematically (RR, retractions, grunting, flaring)"
+  - "Understand why bronchodilators don't work (small airway edema, not bronchospasm)"
+  - "Calculate appropriate IV fluid rates if needed for dehydration"
+  - "Know admission criteria (hypoxia, inability to feed, apnea history)"
+  - "Counsel parents on the typical 10-14 day course"
+
+common_learner_mistakes:
+  - "Ordering albuterol trial (not recommended per AAP guidelines)"
+  - "Prescribing systemic steroids (no benefit in bronchiolitis)"
+  - "Getting a chest X-ray on all patients (leads to unnecessary antibiotics)"
+  - "Underestimating feeding difficulty as a marker of severity"
+  - "Not asking about prematurity or history of apnea"
+
+clinical_pearls:
+  - "Peak symptoms are typically days 3-5, not at presentation"
+  - "RSV testing doesn't change management - don't routinely order"
+  - "High-flow nasal cannula has changed hospitalization patterns"
+  - "Hypertonic saline nebulizers only help inpatients, not outpatients"
+  - "Passive antibody (palivizumab) only for high-risk premature infants"
+
+red_flags:
+  - "SpO2 <90% on room air"
+  - "Severe retractions or grunting"
+  - "Apnea episodes"
+  - "Poor feeding (<50% of normal intake)"
+  - "Prematurity <32 weeks or age <6 weeks"
+  - "Underlying heart or lung disease"
+
+parent_styles:
+  - key: anxious
+    description: "Terrified by the breathing difficulty"
+    sample_lines:
+      - "She's never had trouble breathing before. Is she going to be okay?"
+      - "Should we go to the hospital? She looks like she's struggling."
+      - "Her brother just had RSV - did she catch it from him?"
+  - key: experienced
+    description: "Older child had RSV before"
+    sample_lines:
+      - "Her big brother had this. I remember the suctioning helped."
+      - "How long until this passes? Last time it was about two weeks."
+      - "Is there anything we can give her this time?"
+  - key: hesitant
+    description: "Unsure about hospitalization"
+    sample_lines:
+      - "Do we really need to go to the hospital?"
+      - "Can't we just do oxygen at home?"
+      - "I'm worried about her catching something else there."
+  - key: rushed
+    description: "Single parent juggling multiple kids"
+    sample_lines:
+      - "I have two other kids at home. What's the minimum we need to do?"
+      - "How often do I need to suction her?"
+      - "When can she go back to daycare?"

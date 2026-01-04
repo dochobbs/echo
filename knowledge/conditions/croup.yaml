@@ -1,0 +1,110 @@
+# Croup - Echo Teaching Condition
+# Adapted from Oread with teaching enhancements
+
+display_name: "Croup"
+aliases: ["Laryngotracheobronchitis", "Viral croup"]
+
+billing_codes:
+  icd10: ["J05.0"]
+  snomed: "71186008"
+
+category: acute
+system: respiratory
+
+demographics:
+  age_months: { min: 3, peak: [6, 36], max: 72 }
+  gender_bias: { male: 0.60, female: 0.40 }
+
+seasonality:
+  peak_months: [9, 10, 11, 12]
+
+vitals_impact:
+  temp_f: [99.0, 101.5]
+  hr_multiplier: 1.15
+  rr_multiplier: 1.10
+  spo2_min: 94
+
+presentation:
+  chief_complaints:
+    - "He's making this weird barking sound when he coughs"
+    - "She woke up with a seal-like cough"
+    - "His cough sounds terrible and he's having trouble breathing"
+  symptoms:
+    - "barking cough"
+    - "stridor"
+    - "hoarseness"
+    - "low-grade fever"
+  worse_at_night: true
+  physical_exam:
+    - { system: "general", finding: "Child with characteristic seal-like barking cough" }
+    - { system: "respiratory", finding: "Inspiratory stridor, worsens with agitation" }
+    - { system: "respiratory", finding: "Clear lung sounds, no wheezes" }
+    - { system: "heent", finding: "Hoarse voice or cry" }
+
+treatment:
+  approach: "Single dose dexamethasone typically curative"
+  medications:
+    - agent: "Dexamethasone"
+      dose_mg_kg: 0.6
+      max_dose_mg: 10
+      frequency: "x1 dose"
+      route: "oral"
+  supportive:
+    - "Cool mist or night air for temporary relief"
+    - "Keep child calm - agitation worsens stridor"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Recognize the classic triad: barking cough, stridor, hoarseness"
+  - "Assess severity using the Westley Croup Score"
+  - "Understand why steroids work (reduce airway edema)"
+  - "Know when to escalate (stridor at rest, hypoxia, drooling)"
+  - "Counsel parents that symptoms are typically worse at night"
+
+common_learner_mistakes:
+  - "Ordering a chest X-ray (not needed for classic croup)"
+  - "Prescribing antibiotics (viral etiology)"
+  - "Using albuterol (doesn't help - different mechanism than asthma)"
+  - "Not giving steroids early enough"
+  - "Forgetting to warn parents about nighttime worsening"
+
+clinical_pearls:
+  - "The 'steeple sign' on X-ray is interesting but imaging is rarely needed"
+  - "Racemic epi is for severe cases - requires observation afterward"
+  - "A single dose of dex is as effective as multiple doses"
+  - "Cold air (opening the freezer, going outside) can temporarily help"
+  - "Peak severity is typically days 2-3, not day 1"
+
+red_flags:
+  - "Stridor at rest (not just when upset)"
+  - "Drooling or difficulty swallowing (consider epiglottitis)"
+  - "High fever >104F (atypical for viral croup)"
+  - "Toxic appearance"
+  - "SpO2 <92%"
+
+parent_styles:
+  - key: anxious
+    description: "Very worried, first time seeing this cough"
+    sample_lines:
+      - "Oh my god, he sounds like he can't breathe!"
+      - "Should we go to the ER? This sounds so scary."
+      - "I've never heard a cough like this before."
+  - key: experienced
+    description: "Has seen croup before, knows the drill"
+    sample_lines:
+      - "This looks like croup again. Last time we got steroids."
+      - "The cool air helped last time when we went outside."
+      - "He had this last year too."
+  - key: hesitant
+    description: "Unsure about steroids"
+    sample_lines:
+      - "I've heard steroids can have side effects..."
+      - "Is there a more natural treatment?"
+      - "Will one dose really fix it?"
+  - key: rushed
+    description: "Needs to get back to work"
+    sample_lines:
+      - "So what do we need to do here?"
+      - "How long until he's better?"
+      - "Can he go to daycare tomorrow?"

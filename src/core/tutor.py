@@ -2,6 +2,7 @@
 
 from functools import lru_cache
 from pathlib import Path
+from typing import Optional
 import anthropic
 import json
 import re
@@ -13,6 +14,11 @@ from ..models.feedback import (
   QuestionRequest, QuestionResponse,
   DebriefRequest, DebriefResponse,
 )
+
+# Import these at the module level for type hints, but actual classes imported later
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+  from ..cases.models import CaseState, CasePhase, DescribeCaseState, DescribedCase
 
 
 # Prompts directory
@@ -72,9 +78,10 @@ def format_patient_context(patient: PatientContext) -> str:
 class Tutor:
   """Claude-powered medical tutor."""
 
-  def __init__(self, api_key: str, model: str):
-    self.client = anthropic.Anthropic(api_key=api_key)
-    self.model = model
+  def __init__(self, api_key: str = None, model: str = None):
+    settings = get_settings()
+    self.client = anthropic.Anthropic(api_key=api_key or settings.anthropic_api_key)
+    self.model = model or settings.claude_model
     self.system_prompt = get_system_prompt()
 
   def _build_feedback_prompt(self, request: FeedbackRequest, patient_context: str) -> str:
@@ -319,6 +326,575 @@ Respond with valid JSON only. No markdown, no code blocks:
         missed_items=[],
         teaching_points=[],
       )
+
+  # ==================== CASE-BASED TEACHING METHODS ====================
+
+  def _build_case_system_prompt(self, case_state: "CaseState", condition_info: dict) -> str:
+    """Build a system prompt for case-based teaching with fluid voice."""
+    patient = case_state.patient
+    parent_styles = condition_info.get("parent_styles", [])
+    parent_style_info = next(
+      (s for s in parent_styles if s.get("key") == patient.parent_style),
+      {"description": "Concerned parent", "sample_lines": []}
+    )
+
+    return f"""{self.system_prompt}
+
+## CURRENT CASE
+
+You are running a case with a learner. You will fluidly switch between:
+- **Roleplay as the parent** ({patient.parent_name}, who is {parent_style_info.get('description', 'concerned')})
+- **Teaching/attending voice** (when they need guidance or you want to highlight something)
+
+Switch between these naturally - mid-response if needed. The learner should feel like they're talking to one brilliant, helpful attending who knows when to be the patient and when to step out and teach.
+
+### Patient Details (HIDDEN from learner - reveal only as they discover)
+- **Name**: {patient.name}
+- **Age**: {patient.age} {patient.age_unit}
+- **Sex**: {patient.sex}
+- **Weight**: {patient.weight_kg} kg
+- **Actual condition**: {patient.condition_display} (don't reveal - let them figure it out)
+
+### Symptoms present: {', '.join(patient.symptoms)}
+### Vitals: Temp {patient.vitals.get('temp_f', 98.6)}°F, HR {patient.vitals.get('heart_rate', 100)}, RR {patient.vitals.get('respiratory_rate', 20)}, SpO2 {patient.vitals.get('spo2', 98)}%
+### Exam findings: {', '.join([f.get('finding', '') for f in patient.exam_findings])}
+
+### Parent Voice Sample Lines:
+{chr(10).join(['- ' + line for line in parent_style_info.get('sample_lines', [])])}
+
+### Teaching Goals:
+{chr(10).join(['- ' + goal for goal in condition_info.get('teaching_goals', [])])}
+
+### Common Learner Mistakes to Watch For:
+{chr(10).join(['- ' + mistake for mistake in condition_info.get('common_learner_mistakes', [])])}
+
+### Red Flags (must not be missed):
+{chr(10).join(['- ' + flag for flag in condition_info.get('red_flags', [])])}
+
+## Current Case Phase: {case_state.phase.value}
+
+## CRITICAL RULES
+
+1. **Stay in roleplay by default** - Respond as the parent unless you need to teach
+2. **Reveal information only when asked** - Don't volunteer symptoms they haven't asked about
+3. **Signal role switches naturally** - Use brief, conversational transitions
+4. **Never interrogate** - After 2-3 questions from you, give support instead
+5. **Celebrate insights** - "Nice thinking" when they make good connections
+6. **Help when stuck** - Notice silence or confusion, offer to share what you'd consider
+
+## ROLE TRANSITION PHRASES
+
+When stepping OUT of parent roleplay into attending voice:
+- "[Stepping out for a moment] That's exactly the question I'd want you to ask."
+- "[Quick teaching point] Nice instinct there."
+- "[Attending hat on] Let me highlight something..."
+- "[Pause from the case] Think about what that symptom tells you."
+
+When stepping BACK into parent roleplay:
+- "[Back to mom] So doctor, what do you think is going on?"
+- "[Resuming] Anyway, she's been so fussy..."
+- Just continue as the parent - no transition needed if smooth
+
+Keep transitions BRIEF - one short bracketed phrase, then your content. Don't over-explain the switch."""
+
+  async def generate_case_opening(self, case_state: "CaseState", condition_info: dict) -> str:
+    """Generate the opening message for a case."""
+    patient = case_state.patient
+
+    prompt = f"""You're starting a new case with a {case_state.learner_level.value} learner.
+
+The patient is {patient.name}, a {patient.age} {patient.age_unit} old {patient.sex}.
+The parent ({patient.parent_name}) is bringing them in with this chief complaint:
+
+"{patient.chief_complaint}"
+
+Start the encounter:
+1. Briefly set the scene (you're the attending, they're the learner)
+2. Present as the parent bringing in the child
+3. Give the chief complaint in the parent's voice
+4. End with something that invites them to take the lead
+
+Keep it natural and conversational. No more than 3-4 sentences from the parent to start.
+This is their first interaction - make it feel welcoming and zero-pressure."""
+
+    system = self._build_case_system_prompt(case_state, condition_info)
+
+    response = self.client.messages.create(
+      model=self.model,
+      max_tokens=512,
+      system=system,
+      messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response.content[0].text
+
+  def _detect_stuck(self, message: str, case_state: "CaseState") -> bool:
+    """Detect if the learner seems stuck based on their message patterns.
+
+    Signs of being stuck:
+    - Very short responses (< 10 chars)
+    - Confusion phrases ("I don't know", "not sure", "help")
+    - Repetitive questions about what to do
+    - Long gaps between messages (tracked elsewhere)
+    """
+    msg_lower = message.lower().strip()
+
+    # Very short response
+    if len(msg_lower) < 10:
+      return True
+
+    # Confusion indicators
+    stuck_phrases = [
+      "i don't know",
+      "i'm not sure",
+      "not sure",
+      "what should i",
+      "what do i",
+      "help",
+      "stuck",
+      "confused",
+      "no idea",
+      "can you help",
+      "i'm lost",
+      "what now",
+      "um",
+      "uh",
+      "?",  # Just a question mark
+    ]
+
+    for phrase in stuck_phrases:
+      if phrase in msg_lower:
+        return True
+
+    # Check for pattern of short responses in recent conversation
+    recent_user_msgs = [
+      turn["content"] for turn in case_state.conversation[-6:]
+      if turn["role"] == "user"
+    ]
+
+    if len(recent_user_msgs) >= 2:
+      avg_len = sum(len(m) for m in recent_user_msgs) / len(recent_user_msgs)
+      if avg_len < 20:
+        return True
+
+    return False
+
+  async def process_case_message(
+    self,
+    message: str,
+    case_state: "CaseState",
+    condition_info: dict,
+  ) -> tuple[str, "CaseState", Optional[str], bool]:
+    """Process a learner message during a case.
+
+    Returns (response, updated_case_state, optional_teaching_moment, hint_offered)
+    """
+    # Detect if learner seems stuck
+    is_stuck = self._detect_stuck(message, case_state)
+
+    # Build conversation history for context
+    messages = []
+    for turn in case_state.conversation:
+      role = "user" if turn["role"] == "user" else "assistant"
+      messages.append({"role": role, "content": turn["content"]})
+
+    # Add the current message
+    messages.append({"role": "user", "content": message})
+
+    # Detect phase transitions and update state
+    updated_state = self._update_case_phase(message, case_state)
+
+    # Build prompt based on current phase
+    phase_guidance = self._get_phase_guidance(updated_state.phase)
+
+    # Add stuck guidance if detected
+    stuck_guidance = ""
+    if is_stuck:
+      stuck_guidance = """
+
+IMPORTANT: The learner seems stuck or uncertain. Shift into supportive attending mode:
+- Don't ask another question - give them something to work with
+- Offer a helpful frame: "Here's how I might think about this..."
+- Or give a gentle nudge: "What if we consider..."
+- Keep it warm and supportive - no shame for being stuck
+- You might say something like: "Let me share what I'd be thinking at this point..."
+"""
+      updated_state.hints_given += 1
+
+    prompt_prefix = f"""[Current phase: {updated_state.phase.value}]
+{phase_guidance}
+{stuck_guidance}
+The learner says: "{message}"
+
+Respond naturally - as the parent, as a teaching attending, or fluidly between both.
+If they're asking questions, answer in character as the parent.
+If they're making clinical decisions, you can slide into attending voice to comment.
+
+Remember: help, don't interrogate."""
+
+    messages[-1] = {"role": "user", "content": prompt_prefix}
+
+    system = self._build_case_system_prompt(updated_state, condition_info)
+
+    response = self.client.messages.create(
+      model=self.model,
+      max_tokens=1024,
+      system=system,
+      messages=messages,
+    )
+
+    response_text = response.content[0].text
+
+    # Extract any teaching moment (for tracking, not shown separately)
+    teaching_moment = None
+    if "[TEACHING:" in response_text:
+      # Extract and clean
+      match = re.search(r'\[TEACHING:(.*?)\]', response_text)
+      if match:
+        teaching_moment = match.group(1).strip()
+        updated_state.teaching_moments.append(teaching_moment)
+        response_text = re.sub(r'\[TEACHING:.*?\]', '', response_text).strip()
+
+    return response_text, updated_state, teaching_moment, is_stuck
+
+  def _update_case_phase(self, message: str, case_state: "CaseState") -> "CaseState":
+    """Update case phase based on learner's message."""
+    from ..cases.models import CasePhase
+
+    msg_lower = message.lower()
+
+    # Simple phase detection - can be made more sophisticated
+    if case_state.phase == CasePhase.INTRO:
+      # Any substantive question moves to history
+      if any(word in msg_lower for word in ["when", "how long", "fever", "pain", "eating", "sleeping", "happened"]):
+        case_state.phase = CasePhase.HISTORY
+
+    elif case_state.phase == CasePhase.HISTORY:
+      # Exam-related words move to exam phase
+      if any(word in msg_lower for word in ["examine", "look at", "check", "ears", "throat", "lungs", "heart", "belly"]):
+        case_state.phase = CasePhase.EXAM
+
+    elif case_state.phase == CasePhase.EXAM:
+      # Assessment words
+      if any(word in msg_lower for word in ["think", "diagnosis", "differential", "could be", "looks like", "probably"]):
+        case_state.phase = CasePhase.ASSESSMENT
+
+    elif case_state.phase == CasePhase.ASSESSMENT:
+      # Plan words
+      if any(word in msg_lower for word in ["prescribe", "give", "recommend", "treat", "plan", "antibiotic", "medicine"]):
+        case_state.phase = CasePhase.PLAN
+
+    return case_state
+
+  def _get_phase_guidance(self, phase: "CasePhase") -> str:
+    """Get phase-specific guidance for the tutor."""
+    from ..cases.models import CasePhase
+
+    guidance = {
+      CasePhase.INTRO: "The learner is just starting. Let them take the lead.",
+      CasePhase.HISTORY: "They're gathering history. Answer their questions as the parent would. Don't volunteer information they haven't asked about.",
+      CasePhase.EXAM: "They want to examine. Describe what they find based on the exam findings. Be specific about normal and abnormal findings.",
+      CasePhase.ASSESSMENT: "They're forming an assessment. Listen to their thinking. Gently probe if their differential is incomplete.",
+      CasePhase.PLAN: "They're making a plan. Validate good choices, gently question problematic ones. Remember: shared decision-making with the parent matters.",
+      CasePhase.DEBRIEF: "Time to debrief. Summarize what they did well and areas to improve.",
+      CasePhase.COMPLETE: "The case is complete.",
+    }
+    return guidance.get(phase, "Continue the encounter naturally.")
+
+  async def generate_debrief(self, case_state: "CaseState", condition_info: dict) -> dict:
+    """Generate end-of-case debrief with structured data.
+
+    Returns a dict with: summary, strengths, areas_for_improvement,
+    missed_items, teaching_points, follow_up_resources
+    """
+    patient = case_state.patient
+
+    debrief_prompt = f"""The case is complete. Time for a debrief.
+
+## Case Summary
+- **Patient**: {patient.name}, {patient.age} {patient.age_unit} old
+- **Condition**: {patient.condition_display}
+- **Learner Level**: {case_state.learner_level.value}
+
+## What Was Discovered
+- **History gathered**: {', '.join(case_state.history_gathered) if case_state.history_gathered else 'Limited history'}
+- **Exam performed**: {', '.join(case_state.exam_performed) if case_state.exam_performed else 'Limited exam'}
+- **Differential considered**: {', '.join(case_state.differential) if case_state.differential else 'Not clearly stated'}
+- **Plan proposed**: {', '.join(case_state.plan_proposed) if case_state.plan_proposed else 'Not clearly stated'}
+
+## Teaching Goals for This Condition
+{chr(10).join(['- ' + goal for goal in condition_info.get('teaching_goals', [])])}
+
+## Clinical Pearls
+{chr(10).join(['- ' + pearl for pearl in condition_info.get('clinical_pearls', [])])}
+
+## Instructions
+
+Provide a warm, encouraging debrief that helps them learn and grow.
+
+Be specific:
+- Reference actual things they said/did
+- Explain WHY things matter, not just THAT they're important
+- Share 1-2 clinical pearls they can use next time
+- End the summary with a brief check-in
+
+## Response Format
+
+Return valid JSON only. No markdown, no code blocks:
+
+{{"summary": "2-3 sentences capturing how the encounter went overall. End with a brief check-in: 'How did that feel?' or 'Anything you want to talk through?'", "strengths": ["Specific things done well - reference actual actions from the conversation"], "areas_for_improvement": ["Specific areas to work on - explain why it matters for patient care"], "missed_items": ["Things that should have been caught - if any, otherwise empty array"], "teaching_points": ["1-3 clinical pearls from this case that they can apply next time"], "follow_up_resources": ["Optional: relevant guidelines or resources - can be empty array"]}}"""
+
+    response = self.client.messages.create(
+      model=self.model,
+      max_tokens=1024,
+      system=self.system_prompt,
+      messages=[{"role": "user", "content": debrief_prompt}]
+    )
+
+    content = clean_json_response(response.content[0].text)
+    try:
+      data = json.loads(content)
+      return data
+    except json.JSONDecodeError:
+      # Fallback to unstructured response
+      return {
+        "summary": response.content[0].text,
+        "strengths": [],
+        "areas_for_improvement": [],
+        "missed_items": [],
+        "teaching_points": [],
+        "follow_up_resources": [],
+      }
+
+
+  # ==================== DESCRIBE-A-CASE MODE ====================
+
+  async def start_describe_session(self, learner_level: str) -> str:
+    """Generate opening message for describe-a-case mode."""
+    prompt = f"""A {learner_level} learner wants to discuss a case they've seen.
+
+Your job: Be an engaged, curious attending who wants to hear about their case and help them learn from it.
+
+Start with a warm invitation to tell you about the case. Something like:
+- "I'd love to hear about it. Tell me what happened."
+- "Sure, walk me through it. What brought the patient in?"
+
+Keep it brief and welcoming. They should feel like you're genuinely interested, not testing them."""
+
+    response = self.client.messages.create(
+      model=self.model,
+      max_tokens=256,
+      system=self.system_prompt,
+      messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response.content[0].text
+
+  async def process_describe_message(
+    self,
+    message: str,
+    state: "DescribeCaseState",
+  ) -> tuple[str, "DescribeCaseState", Optional[list[dict]]]:
+    """Process a message in describe-a-case mode.
+
+    Returns: (response, updated_state, citations_if_any)
+    """
+    from ..cases.models import DescribeCasePhase
+    from .citations import get_citation_search
+
+    # Build conversation history
+    messages = []
+    for turn in state.conversation:
+      role = "user" if turn["role"] == "user" else "assistant"
+      messages.append({"role": role, "content": turn["content"]})
+
+    messages.append({"role": "user", "content": message})
+
+    # Determine phase and build appropriate prompt
+    phase_prompt = self._get_describe_phase_prompt(message, state)
+
+    # Check if we should search for citations
+    citations = None
+    citation_context = ""
+    if self._should_search_citations(message, state):
+      search = get_citation_search()
+      # Extract topic from the case
+      topic = self._extract_citation_topic(message, state)
+      if topic:
+        result = await search.search(topic, num_results=3)
+        if result.citations:
+          citations = [c.model_dump() for c in result.citations]
+          state.citations.extend(citations)
+          citation_context = self._format_citations_for_prompt(result.citations)
+
+    # Build the prompt
+    case_summary = self._summarize_described_case(state.case)
+
+    prompt = f"""[Describe-a-case mode - Phase: {state.phase.value}]
+
+## Case So Far
+{case_summary if case_summary else "Just starting - learner hasn't shared details yet."}
+
+## Current Message
+Learner: "{message}"
+
+{phase_prompt}
+
+{citation_context}
+
+## Remember
+- Be curious, not testing
+- Help them see what they did well
+- If something seems off, explore it gently ("Tell me more about...")
+- Share teaching points naturally, not as lectures
+- If they're uncertain about something, help them reason through it"""
+
+    messages[-1] = {"role": "user", "content": prompt}
+
+    response = self.client.messages.create(
+      model=self.model,
+      max_tokens=1024,
+      system=self.system_prompt,
+      messages=messages,
+    )
+
+    response_text = response.content[0].text
+
+    # Update phase based on conversation
+    updated_state = self._update_describe_phase(message, state)
+
+    return response_text, updated_state, citations
+
+  def _get_describe_phase_prompt(self, message: str, state: "DescribeCaseState") -> str:
+    """Get phase-specific guidance for describe mode."""
+    from ..cases.models import DescribeCasePhase
+
+    if state.phase == DescribeCasePhase.LISTENING:
+      return """## Your Task
+You're gathering the case. Ask follow-up questions to understand:
+- The chief complaint and history
+- Key exam findings
+- What they were thinking (differential)
+- What they did or planned to do
+
+Be curious and engaged. "And then what happened?" "What were you thinking at that point?"
+"""
+
+    elif state.phase == DescribeCasePhase.DISCUSSING:
+      return """## Your Task
+You have enough of the case to discuss it. Focus on:
+- What they did well (be specific)
+- Any teaching opportunities (share insights, not criticisms)
+- Alternative approaches they might consider
+- Clinical pearls relevant to this case
+
+Stay conversational. You're colleagues discussing an interesting case, not a formal evaluation."""
+
+    elif state.phase == DescribeCasePhase.TEACHING:
+      return """## Your Task
+Time for focused teaching. Share:
+- Key clinical pearls for this type of case
+- Evidence-based guidelines if relevant
+- Things to watch for next time
+
+Keep it practical and memorable. They should leave with 2-3 things they'll actually use."""
+
+    return "Continue the discussion naturally."
+
+  def _update_describe_phase(self, message: str, state: "DescribeCaseState") -> "DescribeCaseState":
+    """Update phase based on conversation progress."""
+    from ..cases.models import DescribeCasePhase
+
+    msg_lower = message.lower()
+
+    # Transition from LISTENING to DISCUSSING once we have basic case info
+    if state.phase == DescribeCasePhase.LISTENING:
+      case = state.case
+      # Have we gathered enough info?
+      has_complaint = case.chief_complaint is not None or "came in" in msg_lower or "presented" in msg_lower
+      has_details = len(case.key_history) > 0 or len(case.key_findings) > 0 or len(state.conversation) >= 4
+
+      if has_complaint and has_details:
+        state.phase = DescribeCasePhase.DISCUSSING
+
+    elif state.phase == DescribeCasePhase.DISCUSSING:
+      # Transition to TEACHING if they ask for teaching or we've discussed enough
+      if any(phrase in msg_lower for phrase in ["what should i", "teach me", "guidelines", "evidence", "best practice"]):
+        state.phase = DescribeCasePhase.TEACHING
+      elif len(state.conversation) >= 10:  # After substantial discussion
+        state.phase = DescribeCasePhase.TEACHING
+
+    return state
+
+  def _should_search_citations(self, message: str, state: "DescribeCaseState") -> bool:
+    """Determine if we should search for citations."""
+    msg_lower = message.lower()
+
+    # Search if they ask about evidence, guidelines, or best practice
+    evidence_triggers = [
+      "evidence", "guideline", "protocol", "recommendation",
+      "best practice", "standard of care", "what does the literature",
+      "aap says", "cdc", "should i have"
+    ]
+
+    return any(trigger in msg_lower for trigger in evidence_triggers)
+
+  def _extract_citation_topic(self, message: str, state: "DescribeCaseState") -> Optional[str]:
+    """Extract a topic to search for citations."""
+    case = state.case
+
+    # Use chief complaint if available
+    if case.chief_complaint:
+      return case.chief_complaint
+
+    # Otherwise try to extract from recent conversation
+    if state.conversation:
+      last_few = state.conversation[-3:]
+      combined = " ".join([t.get("content", "") for t in last_few])
+      # Simple extraction - could be more sophisticated
+      if "fever" in combined.lower():
+        return "pediatric fever management"
+      if "ear" in combined.lower():
+        return "acute otitis media treatment"
+      if "cough" in combined.lower():
+        return "pediatric cough evaluation"
+
+    return None
+
+  def _format_citations_for_prompt(self, citations: list) -> str:
+    """Format citations for inclusion in prompt."""
+    if not citations:
+      return ""
+
+    lines = ["## Relevant Evidence (you can reference these)"]
+    for c in citations[:3]:
+      lines.append(f"- **{c.source}**: {c.title}")
+      if c.snippet:
+        lines.append(f"  {c.snippet[:150]}...")
+
+    return "\n".join(lines)
+
+  def _summarize_described_case(self, case: "DescribedCase") -> str:
+    """Summarize what we know about the described case."""
+    from ..cases.models import DescribedCase
+
+    parts = []
+    if case.age_description:
+      parts.append(f"**Patient**: {case.age_description}")
+    if case.chief_complaint:
+      parts.append(f"**Chief Complaint**: {case.chief_complaint}")
+    if case.key_history:
+      parts.append(f"**History**: {', '.join(case.key_history)}")
+    if case.key_findings:
+      parts.append(f"**Findings**: {', '.join(case.key_findings)}")
+    if case.learner_assessment:
+      parts.append(f"**Learner's Assessment**: {case.learner_assessment}")
+    if case.learner_plan:
+      parts.append(f"**Plan**: {case.learner_plan}")
+    if case.actual_outcome:
+      parts.append(f"**Outcome**: {case.actual_outcome}")
+
+    return "\n".join(parts) if parts else ""
 
 
 @lru_cache

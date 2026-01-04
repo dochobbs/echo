@@ -270,3 +270,40 @@ Oread/Syrinx/Mneme → [PatientContext/EncounterContext] → Echo
 | Oread | `synpat/` | Patient generation |
 | Syrinx | `synvoice/` | Voice encounters |
 | Mneme | `synchart/` | EMR interface |
+
+## UI Resources
+
+### Animated Icons - Its Hover
+
+**Source:** https://www.itshover.com/icons
+
+Animated icons for UI components. Relevant icons for Echo/MedEd:
+
+**Medical/Health:**
+- Ambulance, Heart, Scan Heart, Shield Check, Bulb
+
+**Communication:**
+- Message Circle, Send, Send Horizontal, Mail Filled, Bell, Filled Bell, Bell Off
+
+**Status/Feedback:**
+- Checked, Simple Checked, Double Check, Filled Checked, Rosette Discount Check
+- Triangle Alert, Info Circle, Question Mark
+
+**Actions:**
+- Refresh, Expand, External Link, Copy, Trash, Pen, Toggle
+
+**Users:**
+- User Check, User Plus, Users, Users Group
+
+**Media:**
+- Player, Volume 2, Volume X, Camera, Camera Off, Eye, Eye Off
+
+**Navigation:**
+- Arrow Narrow Right, Arrow Narrow Left, Arrow Back, Down Cheveron, Right Cheveron
+- Home, Logout, Magnifier
+
+**Learning/Progress:**
+- Book, Bookmark, History Circle, Star, Target, Sparkles, Rocket
+
+**Full icon list:**
+Accessibility, Alarm Clock Plus, Align Center, Align Vertical Space Around, Ambulance, Angry, Annoyed, Apple Brand Logo, Arrow Back, Arrow Back Up, Arrow Big Left Dash, Arrow Big Left, Arrow Big Right Dash, Arrow Big Right, Arrow Big Up Dash, Arrow Big Up, Arrow Down 1-0, Arrow Down A-Z, Arrow Narrow Down Dashed, Arrow Narrow Down, Arrow Narrow Left Dashed, Arrow Narrow Left, Arrow Narrow Right Dashed, Arrow Narrow Right, Arrow Narrow Up Dashed, Arrow Narrow Up, At Sign, Banana, Battery Charging, Battery, Battery Pause, Bell Off, Bluetooth Connected, Book, Bookmark, Brand Google, Brightness Down, Bulb, Camera, Camera Off, Candy Cane, Cart, Chart Bar, Chart Covariate, Chart Histogram, Chart Line, Chart Pie, Checked, Clock, Code, Code XML, Coffee, Copy, Copy Off, CPU, Credit Card, Currency Bitcoin, Currency Dollar, Currency Ethereum, Currency Euro, Currency Rupee, Device Airpods, Dialpad, Discord, Docker, Dots Horizontal, Dots Vertical, Double Check, Down Cheveron, Drum, Expand, External Link, Eye, Eye Off, Facebook, Figma, File Description, Filled Bell, Filled Checked, Flame, Focus, Gauge, Gear, Ghost, GitHub Copilot, GitHub, GitLab, Globe, Gmail, Hand Heart, Hashtag, Heart, History Circle, Home, Info Circle, Instagram, JavaScript, Keyframes, Layers, Layout Bottombar Collapse, Layout Sidebar Right, Like, Link, LinkedIn, Lock, Logout, Magnifier, Mail Filled, Meh, Message Circle, Moon, Mouse Pointer 2, MySQL, Node.js, Paint, Party Popper, Pen, Phone Volume, Pinterest, Player, Plug Connected, Plug Connected X, Python, QR Code, Question Mark, Radio, Rainbow, Refresh, Right Cheveron, Rocket, Rosette Discount Check, Rosette Discount, Router, Satellite Dish, Scan Barcode, Scan Heart, Send Horizontal, Send, Shield Check, Shopping Cart, Simple Checked, Skull Emoji, Slack, Snapchat, Soup, Sparkles, Spotify, Stack 3, Stack, Star, Subscript, Target, Telephone, Terminal, Toggle, Trash, Triangle Alert, Truck Electric, Twitter, Twitter X, TypeScript, Unlink, Unordered List, User Check, User Plus, Users Group, Users, Vercel, Vinyl, Volume 2, Volume X, Washing Machine, WhatsApp, WiFi, WiFi Off, World, X, YouTube

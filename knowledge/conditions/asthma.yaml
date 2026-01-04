@@ -1,0 +1,168 @@
+# Asthma - Echo Teaching Condition
+# From Master Pediatric Primary Care Curriculum
+
+display_name: "Asthma"
+aliases: ["Reactive airway disease", "Asthma exacerbation", "Asthma flare", "Wheezing"]
+
+billing_codes:
+  icd10: ["J45.20", "J45.21", "J45.22", "J45.30", "J45.40", "J45.50"]
+  snomed: "195967001"
+
+category: chronic
+system: respiratory
+
+demographics:
+  age_months: { min: 12, peak: [48, 144], max: 264 }
+  gender_bias: { male: 0.6, female: 0.4 }  # Boys more common in childhood
+  risk_factors: ["family_history", "eczema", "allergic_rhinitis", "prematurity", "smoke_exposure", "obesity"]
+
+seasonality:
+  peak_months: [9, 10, 11, 3, 4, 5]  # Fall (back to school) and spring
+
+vitals_impact:
+  temp_f: [98.6, 100.0]
+  hr_multiplier: 1.20
+  rr_multiplier: 1.40
+  spo2_min: 88
+
+presentation:
+  chief_complaints:
+    - "She's been coughing all night and can't catch her breath"
+    - "His inhaler isn't working like it used to"
+    - "He's wheezing and using his belly to breathe"
+    - "She wakes up coughing every night this week"
+  symptoms:
+    - "wheezing"
+    - "cough"
+    - "shortness of breath"
+    - "chest tightness"
+    - "nocturnal cough"
+    - "exercise intolerance"
+  physical_exam:
+    - { system: "general", finding: "Child in mild respiratory distress, speaking in sentences" }
+    - { system: "respiratory", finding: "Diffuse expiratory wheezes bilaterally" }
+    - { system: "respiratory", finding: "Mild intercostal retractions" }
+    - { system: "respiratory", finding: "Prolonged expiratory phase" }
+    - { system: "respiratory", finding: "Good air movement" }
+
+treatment:
+  approach: "Step-wise therapy based on severity classification; SMART therapy for moderate-severe"
+  acute_exacerbation:
+    - agent: "Albuterol"
+      dose: "4-8 puffs MDI with spacer OR 2.5mg nebulized"
+      frequency: "Q20min x 3, then Q1-4H as needed"
+      indication: "Acute bronchodilation"
+    - agent: "Ipratropium"
+      dose: "4-8 puffs MDI OR 0.5mg nebulized"
+      frequency: "Q20min x 3 doses"
+      indication: "Add in moderate-severe exacerbation"
+    - agent: "Prednisone/Prednisolone"
+      dose_mg_kg: 2
+      max_dose_mg: 60
+      frequency: "Daily x 3-5 days"
+      indication: "Systemic inflammation control"
+    - agent: "Dexamethasone"
+      dose_mg_kg: 0.6
+      max_dose_mg: 16
+      frequency: "Daily x 1-2 days"
+      indication: "Alternative to prednisone (better compliance)"
+  controller_medications:
+    - agent: "Fluticasone (low dose ICS)"
+      dose: "44-88 mcg BID"
+      indication: "Step 2 - mild persistent"
+    - agent: "Fluticasone-Salmeterol (ICS-LABA)"
+      dose: "100/50 mcg BID"
+      indication: "Step 3-4 - moderate persistent"
+    - agent: "Budesonide-Formoterol (SMART therapy)"
+      dose: "80/4.5 mcg"
+      indication: "Controller AND reliever for moderate-severe"
+    - agent: "Montelukast"
+      dose: "4mg (2-5y), 5mg (6-14y), 10mg (>15y)"
+      frequency: "Daily"
+      indication: "Add-on therapy, exercise-induced, or allergic component"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Apply the Rule of Twos to classify persistent vs intermittent asthma"
+  - "Understand SMART therapy (ICS-Formoterol as controller AND reliever)"
+  - "Know that MDI with spacer is as effective as nebulizer for acute flares"
+  - "Recognize undertreated asthma (night symptoms, activity limitation)"
+  - "Create and review Asthma Action Plans with families"
+
+common_learner_mistakes:
+  - "Prescribing albuterol alone without assessing need for controller"
+  - "Not using spacers with MDIs (reduces lung deposition significantly)"
+  - "Forgetting to assess inhaler technique at every visit"
+  - "Over-relying on nebulizers when MDI+spacer equally effective"
+  - "Not stepping down therapy when well-controlled for 3+ months"
+  - "Prescribing oral steroids repeatedly without optimizing controller"
+
+clinical_pearls:
+  - "SMART Therapy: ICS-Formoterol (Symbicort) as BOTH controller AND reliever is superior to albuterol alone for moderate-severe."
+  - "Rule of Twos: Symptoms >2x/week OR Night awakening >2x/month = Persistent Asthma = Needs Controller."
+  - "Spacers: MDIs with spacers are AS EFFECTIVE as nebulizers for acute flares. Easier, faster."
+  - "Technique matters: 80% of patients use inhalers incorrectly. Check at every visit."
+  - "Dexamethasone 0.6 mg/kg x 1-2 days = Prednisone x 5 days for exacerbations."
+  - "Eczema + Allergic rhinitis + Family history = High probability of asthma (atopic triad)."
+
+red_flags:
+  - "SpO2 <92% on room air"
+  - "Unable to speak in sentences"
+  - "Severe retractions or nasal flaring"
+  - "Silent chest (no air movement)"
+  - "Altered mental status"
+  - "Previous ICU admission or intubation"
+  - "Using accessory muscles"
+
+severity_classification:
+  intermittent:
+    symptoms: "≤2 days/week"
+    night_symptoms: "≤2x/month"
+    interference: "None"
+    fev1: ">80%"
+    treatment: "Step 1 - SABA PRN"
+  mild_persistent:
+    symptoms: ">2 days/week but not daily"
+    night_symptoms: "3-4x/month"
+    interference: "Minor limitation"
+    fev1: ">80%"
+    treatment: "Step 2 - Low dose ICS"
+  moderate_persistent:
+    symptoms: "Daily"
+    night_symptoms: ">1x/week"
+    interference: "Some limitation"
+    fev1: "60-80%"
+    treatment: "Step 3-4 - Medium ICS or ICS-LABA"
+  severe_persistent:
+    symptoms: "Throughout the day"
+    night_symptoms: "Often 7x/week"
+    interference: "Extremely limited"
+    fev1: "<60%"
+    treatment: "Step 5 - High ICS-LABA, consider biologics"
+
+parent_styles:
+  - key: anxious
+    description: "Scared by breathing difficulty"
+    sample_lines:
+      - "Is she going to be okay? She's working so hard to breathe."
+      - "Should we go to the ER? I'm really worried."
+      - "The inhaler doesn't seem to be helping anymore."
+  - key: experienced
+    description: "Has managed asthma flares before"
+    sample_lines:
+      - "I gave him three treatments at home but he's still wheezing."
+      - "We have an action plan - I think we need the oral steroids."
+      - "Does he need a stronger controller? We've been using his rescue inhaler a lot."
+  - key: hesitant
+    description: "Worried about daily medications"
+    sample_lines:
+      - "Do we really need a daily inhaler? I don't want him dependent on it."
+      - "Are steroids safe? I've heard they stunt growth."
+      - "Can we try natural remedies first?"
+  - key: rushed
+    description: "Needs quick relief and school clearance"
+    sample_lines:
+      - "She has a soccer game tomorrow - will she be able to play?"
+      - "Can we just do the breathing treatment and go?"
+      - "How long until she's better?"

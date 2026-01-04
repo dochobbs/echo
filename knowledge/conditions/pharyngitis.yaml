@@ -1,0 +1,118 @@
+# Pharyngitis - Echo Teaching Condition
+# Adapted from Oread with teaching enhancements
+
+display_name: "Pharyngitis"
+aliases: ["Sore throat", "Strep throat", "Streptococcal pharyngitis"]
+
+billing_codes:
+  icd10: ["J02.9", "J02.0"]
+  snomed: "405737000"
+
+category: acute
+system: ent
+
+demographics:
+  age_months: { min: 24, peak: [60, 180], max: 264 }
+  gender_bias: { male: 0.5, female: 0.5 }
+  risk_factors: ["school_exposure", "household_contact"]
+
+seasonality:
+  peak_months: [11, 12, 1, 2, 3, 4]
+
+vitals_impact:
+  temp_f: [100.5, 103.0]
+  hr_multiplier: 1.10
+  rr_multiplier: 1.0
+  spo2_min: 98
+
+presentation:
+  chief_complaints:
+    - "His throat really hurts and he can barely swallow"
+    - "She woke up with a high fever and won't eat"
+    - "His friend at school just had strep"
+  symptoms:
+    - "sore throat"
+    - "fever"
+    - "tonsillar exudate"
+    - "cervical lymphadenopathy"
+    - "headache"
+    - "abdominal pain"
+  strep_positive_rate: 0.30
+  physical_exam:
+    - { system: "heent", finding: "Pharynx erythematous with tonsillar hypertrophy" }
+    - { system: "heent", finding: "Tonsillar exudate present" }
+    - { system: "heent", finding: "Palatal petechiae" }
+    - { system: "neck", finding: "Tender anterior cervical lymphadenopathy" }
+
+diagnostics:
+  - name: "Rapid Strep Test"
+    loinc: "78012-2"
+
+treatment:
+  approach: "Test and treat - antibiotics only if strep positive"
+  medications:
+    - agent: "Amoxicillin"
+      dose_mg_kg: 50
+      max_dose_mg: 1000
+      frequency: "once daily"
+      duration_days: 10
+    - agent: "Ibuprofen"
+      dose_mg_kg: 10
+      max_dose_mg: 400
+      frequency: "Q6H PRN"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Use Centor/McIsaac criteria to assess strep probability"
+  - "Understand when to test vs. treat empirically"
+  - "Know why we treat strep (prevent rheumatic fever, not just symptom relief)"
+  - "Counsel on return to school (24 hours after antibiotics)"
+  - "Recognize signs of peritonsillar abscess"
+
+common_learner_mistakes:
+  - "Prescribing antibiotics before testing (leads to overuse)"
+  - "Not testing school-age children with classic symptoms"
+  - "Missing the abdominal pain presentation in younger kids"
+  - "Forgetting to ask about penicillin allergy"
+  - "Not explaining why completing the full course matters"
+
+clinical_pearls:
+  - "Cough and rhinorrhea suggest viral cause - strep is less likely"
+  - "Scarlet fever is just strep pharyngitis with a rash"
+  - "Throat culture backup if rapid is negative but suspicion high"
+  - "Once-daily amoxicillin is as effective as divided doses"
+  - "Palatal petechiae are suggestive but not pathognomonic for strep"
+
+red_flags:
+  - "Unilateral tonsillar swelling (peritonsillar abscess)"
+  - "Trismus (difficulty opening mouth)"
+  - "Drooling or 'hot potato' voice"
+  - "Neck stiffness"
+  - "Respiratory distress"
+
+parent_styles:
+  - key: anxious
+    description: "Worried about complications"
+    sample_lines:
+      - "Can strep spread to the heart? I read about that online."
+      - "Should we test the whole family?"
+      - "Is it going to turn into something worse?"
+  - key: experienced
+    description: "Older child has had strep before"
+    sample_lines:
+      - "This looks like when her brother had strep."
+      - "We know the drill - amoxicillin works for us."
+      - "How long until he's not contagious?"
+  - key: hesitant
+    description: "Worried about antibiotic overuse"
+    sample_lines:
+      - "Do we really need antibiotics? I've heard they're overused."
+      - "Can we wait and see if it gets better on its own?"
+      - "What about just treating the symptoms?"
+  - key: rushed
+    description: "Needs to know about school/work"
+    sample_lines:
+      - "When can she go back to school?"
+      - "I can't miss another day of work."
+      - "Is it contagious to adults?"

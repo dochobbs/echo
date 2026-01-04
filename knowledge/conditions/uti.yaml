@@ -1,0 +1,149 @@
+# Urinary Tract Infection - Echo Teaching Condition
+# From Master Pediatric Primary Care Curriculum
+
+display_name: "Urinary Tract Infection"
+aliases: ["UTI", "Bladder infection", "Pyelonephritis", "Febrile UTI"]
+
+billing_codes:
+  icd10: ["N39.0", "N10"]
+  snomed: "68566005"
+
+category: acute
+system: genitourinary
+
+demographics:
+  age_months: { min: 2, peak: [6, 24], max: 264 }
+  gender_bias: { male: 0.3, female: 0.7 }  # After infancy, females predominate
+  risk_factors: ["uncircumcised_male", "vesicoureteral_reflux", "constipation", "dysfunctional_voiding", "previous_UTI"]
+
+vitals_impact:
+  temp_f: [101.0, 104.0]
+  hr_multiplier: 1.15
+  rr_multiplier: 1.0
+  spo2_min: 98
+
+presentation:
+  chief_complaints:
+    - "She's had a fever for two days and I can't figure out why"
+    - "He's been crying when he pees and his diaper smells bad"
+    - "She keeps saying her tummy hurts and she has to pee all the time"
+  symptoms:
+    - { name: "fever", probability: 0.9 }
+    - { name: "dysuria", probability: 0.6 }
+    - { name: "frequency", probability: 0.5 }
+    - { name: "abdominal pain", probability: 0.5 }
+    - { name: "foul-smelling urine", probability: 0.4 }
+    - { name: "vomiting", probability: 0.3 }
+    - { name: "irritability", probability: 0.7 }
+  duration_days: [1, 5]
+  physical_exam:
+    - { system: "general", finding: "Febrile child, mildly ill-appearing" }
+    - { system: "abdomen", finding: "Soft, mild suprapubic tenderness" }
+    - { system: "back", finding: "CVA tenderness (if pyelonephritis)" }
+    - { system: "genitourinary", finding: "Normal external genitalia, no discharge" }
+
+diagnostics:
+  - name: "Urinalysis"
+    loinc: "24356-8"
+    interpretation: "Pyuria (>5 WBC/hpf) AND bacteriuria"
+  - name: "Urine culture"
+    loinc: "630-4"
+    interpretation: ">50,000 CFU/mL from catheter or >100,000 from clean catch"
+  - name: "Renal Bladder Ultrasound"
+    indication: "All febrile infants 2-24 months after first UTI"
+
+treatment:
+  approach: "Antibiotic therapy based on local resistance patterns; imaging per guidelines"
+  medications:
+    - agent: "Cephalexin"
+      dose_mg_kg: 25
+      max_dose_mg: 500
+      frequency: "Q6H"
+      duration_days: 7
+      indication: "First-line oral for uncomplicated UTI"
+    - agent: "Cefixime"
+      dose_mg_kg: 8
+      max_dose_mg: 400
+      frequency: "Q12H or daily"
+      duration_days: 7
+      indication: "Alternative oral option"
+    - agent: "TMP-SMX"
+      dose_mg_kg: 4  # TMP component
+      max_dose_mg: 160
+      frequency: "Q12H"
+      duration_days: 7
+      indication: "If susceptible and no sulfa allergy"
+    - agent: "Ceftriaxone"
+      dose_mg_kg: 50
+      max_dose_mg: 2000
+      frequency: "Q24H IV/IM"
+      indication: "If unable to tolerate oral or toxic-appearing"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Understand diagnostic criteria: Pyuria AND >50k CFU/mL culture required"
+  - "Know proper urine collection methods by age (catheter vs clean catch)"
+  - "Apply AAP imaging guidelines: RBUS for all 2-24mo, VCUG only if abnormal or recurrent"
+  - "Recognize that bag urine is only useful to RULE OUT (negative has value)"
+  - "Identify risk factors for recurrent UTI and VUR"
+
+common_learner_mistakes:
+  - "Diagnosing UTI based on positive UA alone without culture confirmation"
+  - "Using bag urine specimens to diagnose (only to rule out)"
+  - "Ordering VCUG for all first-time UTIs (only if US abnormal or recurrent)"
+  - "Forgetting to ask about constipation (major risk factor)"
+  - "Not recognizing that fever without source in infant may be UTI"
+  - "Treating asymptomatic bacteriuria (colonization, not infection)"
+
+clinical_pearls:
+  - "Diagnostic Criteria: Requires Pyuria (WBCs) AND >50k CFU/mL culture. Both needed."
+  - "Bag urine is only good for ruling OUT - if negative, UTI very unlikely."
+  - "Imaging: RBUS for all febrile infants 2-24mo after first UTI. VCUG only if US abnormal or recurrent."
+  - "Constipation causes 40% of recurrent UTIs - always address it."
+  - "Uncircumcised males <1 year have 10x higher UTI risk than circumcised."
+  - "Fever without source in infant 2-24 months = think UTI, get catheterized specimen."
+
+red_flags:
+  - "Toxic appearance"
+  - "Unable to tolerate oral fluids"
+  - "Age <2 months (manage as febrile infant)"
+  - "Known urologic abnormality"
+  - "Immunocompromised"
+  - "No improvement after 48-72 hours of appropriate antibiotics"
+
+imaging_guidelines:
+  first_uti:
+    age_2_24_months: "RBUS within 48 hours or after treatment"
+    older_child: "Consider RBUS if atypical or recurrent"
+  vcug_indications:
+    - "Abnormal renal bladder ultrasound"
+    - "Recurrent febrile UTI"
+    - "Atypical organism"
+    - "Poor response to antibiotics"
+
+parent_styles:
+  - key: anxious
+    description: "Worried about kidney damage"
+    sample_lines:
+      - "Will this hurt her kidneys? I've heard UTIs can cause permanent damage."
+      - "Why does she keep getting these? Is something wrong with her?"
+      - "The catheter sounds painful - is there another way?"
+  - key: experienced
+    description: "Older sibling had UTIs"
+    sample_lines:
+      - "Her sister had a lot of UTIs. Is this going to keep happening?"
+      - "We did the ultrasound before with her brother."
+      - "Should we see a urologist?"
+  - key: hesitant
+    description: "Uncertain about catheterization"
+    sample_lines:
+      - "Can't we just get a bag sample?"
+      - "She's potty trained - can't she pee in a cup?"
+      - "Do we really need all these tests?"
+  - key: rushed
+    description: "Needs quick diagnosis and treatment"
+    sample_lines:
+      - "Can you just give her antibiotics now? She's miserable."
+      - "How long until we know the culture results?"
+      - "When can she go back to daycare?"

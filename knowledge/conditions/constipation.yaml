@@ -1,0 +1,155 @@
+# Functional Constipation - Echo Teaching Condition
+# From Master Pediatric Primary Care Curriculum
+
+display_name: "Functional Constipation"
+aliases: ["Constipation", "Encopresis", "Fecal retention", "Stool withholding"]
+
+billing_codes:
+  icd10: ["K59.00", "K59.09", "R15.9"]
+  snomed: "14760008"
+
+category: chronic
+system: gastrointestinal
+
+demographics:
+  age_months: { min: 6, peak: [24, 60], max: 264 }
+  gender_bias: { male: 0.55, female: 0.45 }
+  risk_factors: ["low_fiber_diet", "inadequate_fluids", "toilet_training_stress", "painful_defecation", "family_history"]
+
+vitals_impact:
+  temp_f: [98.6, 98.6]
+  hr_multiplier: 1.0
+  rr_multiplier: 1.0
+  spo2_min: 98
+
+presentation:
+  chief_complaints:
+    - "He hasn't pooped in 5 days and says his tummy hurts"
+    - "She's having accidents at school and I don't understand why"
+    - "Every time he tries to go, he screams and holds it in"
+    - "There's poop in her underwear but she says she didn't feel it"
+  symptoms:
+    - "infrequent bowel movements"
+    - "hard/painful stools"
+    - "abdominal pain"
+    - "stool withholding behavior"
+    - "fecal soiling (encopresis)"
+    - "decreased appetite"
+    - "rectal bleeding (fissure)"
+  physical_exam:
+    - { system: "abdomen", finding: "Soft, nontender or mild LLQ tenderness" }
+    - { system: "abdomen", finding: "Palpable stool in LLQ (fecal mass)" }
+    - { system: "rectal", finding: "Stool in rectal vault on external inspection", note: "Digital exam usually not needed" }
+    - { system: "back", finding: "Normal lumbosacral spine (no dimple/tuft)" }
+
+diagnostics:
+  - name: "Abdominal X-ray"
+    indication: "NOT routinely needed - clinical diagnosis"
+    note: "Consider if uncertain or to show family the fecal burden"
+
+treatment:
+  approach: "Disimpaction followed by long-term maintenance; behavior modification"
+  disimpaction:
+    - agent: "PEG 3350 (Miralax)"
+      dose: "1-1.5 g/kg/day"
+      max_dose: "100g/day"
+      duration: "3-6 days"
+      indication: "Oral disimpaction (preferred)"
+    - agent: "Glycerin suppository"
+      indication: "Infants"
+    - agent: "Enema (Fleet or mineral oil)"
+      indication: "If oral fails, use cautiously"
+  maintenance:
+    - agent: "PEG 3350 (Miralax)"
+      dose: "0.4-0.8 g/kg/day (start 17g = 1 capful)"
+      frequency: "Daily"
+      duration: "Months - wean slowly"
+      indication: "Long-term softening"
+    - agent: "Lactulose"
+      dose_ml_kg: 1
+      max_dose_ml: 30
+      frequency: "Daily to BID"
+      indication: "Alternative if PEG not tolerated"
+    - agent: "Senna"
+      indication: "Add stimulant if osmotic alone insufficient"
+      frequency: "Daily or every other day"
+  supportive:
+    - "Toilet sitting after meals (gastrocolic reflex) x 5-10 min"
+    - "Feet flat on floor or stool (squatty potty position)"
+    - "Positive reinforcement - reward sitting, NOT producing"
+    - "Increase fiber (fruits, vegetables, whole grains)"
+    - "Adequate fluids"
+    - "Do NOT punish for accidents"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Understand the withholding cycle: Pain -> Hold -> Harder stool -> More pain"
+  - "Know that maintenance therapy is MONTHS, not days - set expectations"
+  - "Recognize that encopresis is overflow incontinence, not behavioral"
+  - "Learn to wean Miralax slowly once regular for 2+ months"
+  - "Know when red flags warrant further workup (Hirschsprung's, spinal)"
+
+common_learner_mistakes:
+  - "Stopping Miralax too soon (needs months of maintenance)"
+  - "Using short bursts of laxatives expecting quick cure"
+  - "Blaming child or punishing for encopresis (it's involuntary overflow)"
+  - "Ordering unnecessary testing (X-ray, labs) for straightforward cases"
+  - "Not addressing behavioral component (toilet time, rewards)"
+  - "Recommending fiber alone without adequate softener"
+
+clinical_pearls:
+  - "Maintenance: PEG 3350 (Miralax) for MONTHS, not days. Wean slowly."
+  - "The Cycle: Pain -> Withholding -> Harder Stool -> More Pain. BREAK the cycle with soft stools."
+  - "Encopresis: Overflow incontinence around impacted stool. Child doesn't feel it. NOT behavioral."
+  - "Goal: Soft stool EVERY DAY. Titrate Miralax to achieve this. One capful is starting dose, not max."
+  - "Weaning: Don't stop abruptly. Decrease by 1/4 capful every 2 weeks after 2+ months of daily soft stools."
+  - "Fiber myth: Adding fiber without adequate water and softener makes it worse."
+
+red_flags:
+  - "Failure to pass meconium in first 48 hours (Hirschsprung's)"
+  - "Onset in first month of life"
+  - "Ribbon stools"
+  - "Empty rectum with abdominal distension"
+  - "Failure to thrive"
+  - "Sacral dimple, tuft, or abnormal neurologic exam"
+  - "Severe abdominal distension"
+  - "Bilious vomiting"
+
+rome_iv_criteria:
+  description: "Must have 2+ for at least 1 month"
+  criteria:
+    - "≤2 defecations per week"
+    - "History of excessive stool retention"
+    - "History of painful or hard bowel movements"
+    - "Presence of large fecal mass in rectum"
+    - "History of large diameter stools that may obstruct toilet"
+  with_toilet_training:
+    - "At least 1 episode of incontinence per week (after trained)"
+    - "History of retentive posturing or stool withholding"
+
+parent_styles:
+  - key: anxious
+    description: "Worried something is seriously wrong"
+    sample_lines:
+      - "Could this be something more serious? Why won't he go?"
+      - "Is the Miralax safe to give every day? It's a laxative."
+      - "He screams when he tries to poop. Is something wrong with his bowels?"
+  - key: experienced
+    description: "Older sibling had constipation issues"
+    sample_lines:
+      - "Her brother had this too. We were on Miralax for a year."
+      - "I know it takes time. Just tell me what to do."
+      - "Should we see a GI specialist?"
+  - key: hesitant
+    description: "Worried about long-term laxative use"
+    sample_lines:
+      - "Won't he become dependent on Miralax?"
+      - "Can we try prune juice instead?"
+      - "I don't want to give him medicine every day."
+  - key: frustrated
+    description: "Dealing with encopresis accidents"
+    sample_lines:
+      - "The school keeps calling. She's pooping her pants every day."
+      - "He's 6 years old - why can't he control this?"
+      - "I've tried everything. Nothing works."

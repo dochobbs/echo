@@ -1,0 +1,162 @@
+# Echo Case Condition: Acute Otitis Media
+# Ported from Oread (synpat) with teaching enhancements
+
+otitis_media:
+  display_name: "Acute Otitis Media"
+  aliases: ["Ear infection", "AOM", "Middle ear infection"]
+
+  billing_codes:
+    icd10: ["H66.90", "H66.91", "H66.92"]
+    snomed: "65363002"
+
+  category: acute
+  system: ent
+
+  # Teaching focus areas for Echo
+  teaching_goals:
+    - "History-taking: Ask about ear tugging, fever, preceding URI"
+    - "Physical exam: Understand pneumatic otoscopy findings"
+    - "Diagnosis: Distinguish AOM from OME"
+    - "Treatment: Watchful waiting vs antibiotics decision"
+    - "Parent communication: Explain natural course, when to return"
+
+  common_learner_mistakes:
+    - "Prescribing antibiotics for all cases (watch & wait appropriate for mild cases)"
+    - "Not asking about recent antibiotic use (affects drug choice)"
+    - "Forgetting to assess pain level and prescribe analgesics"
+    - "Not explaining tympanic membrane findings to parent"
+    - "Missing the preceding URI history"
+
+  demographics:
+    age_months: { min: 6, peak: [6, 36], max: 144 }
+    gender_bias: { male: 0.52, female: 0.48 }
+    risk_factors: ["daycare", "bottle_propping", "smoke_exposure", "pacifier_use", "no_breastfeeding"]
+
+  # Parent styles for roleplay
+  parent_styles:
+    - key: "anxious"
+      description: "First-time parent, very worried, lots of questions"
+      sample_lines:
+        - "I'm so worried - she's never been this sick before"
+        - "Is she going to need surgery? My friend's kid needed tubes"
+        - "Should I be concerned about meningitis?"
+    - key: "experienced"
+      description: "Has other kids, has seen ear infections before"
+      sample_lines:
+        - "My older one had these all the time"
+        - "Is this the same thing? She's been tugging at her ear just like he did"
+        - "Last time they gave us the pink medicine"
+    - key: "hesitant"
+      description: "Concerned about antibiotics, prefers natural approaches"
+      sample_lines:
+        - "Do we really need antibiotics? I've read they don't always help"
+        - "Is there anything natural we could try first?"
+        - "What about just waiting to see if it gets better?"
+    - key: "rushed"
+      description: "Busy, wants quick answers, limited time"
+      sample_lines:
+        - "I have to get back to work - what do we need to do?"
+        - "Just tell me what medicine to give her"
+        - "Can you write the prescription so I can pick it up later?"
+
+  vitals_impact:
+    temp_f: [100.4, 102.5]
+    hr_multiplier: 1.10
+    rr_multiplier: 1.0
+    spo2_min: 97
+
+  presentation:
+    chief_complaints:
+      - "My baby has been tugging at her ear and has a fever"
+      - "He woke up screaming last night holding his ear"
+      - "She hasn't been sleeping and keeps touching her ear"
+      - "Fever and fussiness for the past day"
+
+    symptoms:
+      - { name: "ear pain", probability: 0.90, description: "otalgia, pulling/tugging at ear", age_min: 6 }
+      - { name: "fever", probability: 0.70, description: "temperature 100-102F" }
+      - { name: "irritability", probability: 0.85, description: "fussiness, poor sleep, crying" }
+      - { name: "decreased hearing", probability: 0.50, description: "not responding to sounds" }
+      - { name: "preceding URI", probability: 0.60, description: "rhinorrhea, congestion before onset" }
+
+    duration_days: [3, 7]
+
+    # What the learner should discover through history
+    history_elements:
+      must_ask:
+        - "Duration of symptoms"
+        - "Fever (presence, temperature if measured)"
+        - "Preceding cold symptoms"
+        - "Any ear drainage"
+        - "Recent antibiotic use"
+      nice_to_ask:
+        - "Daycare attendance"
+        - "Siblings with recent illness"
+        - "Previous ear infections"
+        - "Pain relief measures tried"
+        - "Feeding/appetite changes"
+
+    physical_exam:
+      - { system: "heent", finding: "TM erythematous and bulging with loss of light reflex", probability: 0.85 }
+      - { system: "heent", finding: "Decreased TM mobility on pneumatic otoscopy", probability: 0.90 }
+      - { system: "heent", finding: "Middle ear effusion visible", probability: 0.75 }
+      - { system: "heent", finding: "Mild pharyngeal erythema", probability: 0.40 }
+      - { system: "neck", finding: "Cervical lymphadenopathy", probability: 0.30 }
+
+  treatment:
+    approach: "antibiotic_or_watchful_waiting"
+
+    decision_points:
+      - question: "Should this patient receive antibiotics now?"
+        considerations:
+          - "Age (under 6 months = treat, 6-24 months = treat if bilateral or severe)"
+          - "Severity (severe = treat: temp ≥102.2°F, moderate-severe otalgia, >48h symptoms)"
+          - "Certainty of diagnosis (certain AOM vs possible AOM)"
+        acceptable_answers:
+          - "Yes, prescribe antibiotics"
+          - "Watchful waiting with safety net prescription"
+
+    medications:
+      - agent: "Amoxicillin"
+        rxnorm: "723"
+        dose_mg_kg: 90
+        max_dose_mg: 3000
+        frequency: "divided BID"
+        duration_days: 10
+        route: "oral"
+        indication: "first-line for AOM"
+      - agent: "Amoxicillin-Clavulanate"
+        rxnorm: "1043"
+        dose_mg_kg: 90
+        max_dose_mg: 3000
+        frequency: "divided BID"
+        duration_days: 10
+        route: "oral"
+        indication: "if amoxicillin failure or recent antibiotic use"
+      - agent: "Ibuprofen"
+        rxnorm: "5640"
+        dose_mg_kg: 10
+        max_dose_mg: 400
+        frequency: "Q6H PRN"
+        indication: "pain management"
+        prn: true
+
+    patient_instructions:
+      - "Complete full course of antibiotics"
+      - "Ibuprofen or acetaminophen for pain control"
+      - "Return if no improvement in 48-72 hours"
+      - "Return immediately for high fever, facial swelling, or severe pain"
+
+  # Red flags that learner must not miss
+  red_flags:
+    - "Mastoid tenderness or swelling (mastoiditis)"
+    - "Facial weakness (facial nerve involvement)"
+    - "Severe headache or neck stiffness (meningitis)"
+    - "Altered mental status"
+
+  clinical_pearls:
+    - "Pneumatic otoscopy is the gold standard for diagnosis"
+    - "Most cases resolve within 48-72 hours even without antibiotics"
+    - "Pain control is often more important than antibiotics"
+    - "Watchful waiting is appropriate for mild cases in children over 2"
+    - "Always ask about penicillin allergy before prescribing amoxicillin"

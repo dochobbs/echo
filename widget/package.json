@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "idb-keyval": "^6.2.1",
-    "lucide-react": "^0.562.0"
+    "motion": "^11.15.0"
   },
   "keywords": [
     "echo",

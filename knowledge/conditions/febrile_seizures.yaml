@@ -1,0 +1,168 @@
+# Febrile Seizures - Echo Teaching Condition
+# From Master Pediatric Primary Care Curriculum
+
+display_name: "Febrile Seizures"
+aliases: ["Febrile convulsion", "Fever seizure", "Simple febrile seizure", "Complex febrile seizure"]
+
+billing_codes:
+  icd10: ["R56.00", "R56.01"]
+  snomed: "41497008"
+
+category: acute
+system: neurological
+
+demographics:
+  age_months: { min: 6, peak: [12, 18], max: 60 }
+  gender_bias: { male: 0.55, female: 0.45 }
+  risk_factors: ["family_history_febrile_seizures", "daycare_attendance", "developmental_delay", "nicu_stay"]
+
+vitals_impact:
+  temp_f: [101.0, 105.0]
+  hr_multiplier: 1.20
+  rr_multiplier: 1.10
+  spo2_min: 94
+
+presentation:
+  chief_complaints:
+    - "He was burning up and then his whole body started shaking"
+    - "She had a seizure! Her eyes rolled back and she went stiff"
+    - "I thought he was dying - he turned blue and wouldn't respond"
+    - "She was sick with a fever and then started convulsing"
+  symptoms:
+    - "generalized tonic-clonic movements"
+    - "loss of consciousness"
+    - "fever"
+    - "postictal drowsiness"
+    - "eye deviation"
+    - "cyanosis during event"
+  duration_minutes: [1, 5]
+  physical_exam:
+    - { system: "general", finding: "Postictal child, sleepy but arousable", timing: "after seizure" }
+    - { system: "neurological", finding: "Back to baseline mental status within 1 hour", timing: "recovered" }
+    - { system: "neurological", finding: "Normal neurologic exam at baseline" }
+    - { system: "general", finding: "Source of fever identified (viral URI, AOM, roseola)" }
+
+treatment:
+  approach: "Supportive care; identify fever source; reassure family"
+  acute_management:
+    - "Protect airway - position on side"
+    - "Do NOT put anything in mouth"
+    - "Time the seizure"
+    - "Call 911 if >5 minutes"
+    - agent: "Midazolam (intranasal/buccal)"
+      dose_mg_kg: 0.2
+      max_dose_mg: 10
+      indication: "If seizure >5 minutes (status epilepticus)"
+    - agent: "Diazepam (rectal)"
+      dose_mg_kg: 0.5
+      max_dose_mg: 20
+      indication: "Alternative for prolonged seizure"
+  antipyretics:
+    - agent: "Acetaminophen"
+      dose_mg_kg: 15
+      max_dose_mg: 1000
+      frequency: "Q4-6H PRN"
+      indication: "Comfort, NOT seizure prevention"
+    - agent: "Ibuprofen"
+      dose_mg_kg: 10
+      max_dose_mg: 400
+      frequency: "Q6-8H PRN"
+      indication: "Comfort (if >6 months)"
+  supportive:
+    - "Reassurance - febrile seizures do NOT cause brain damage"
+    - "Fever source treatment"
+    - "Seizure first aid education"
+    - "NO daily anticonvulsant prophylaxis needed"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Distinguish simple vs complex febrile seizures"
+  - "Know that workup is minimal for simple febrile seizure in well-appearing child"
+  - "Understand that antipyretics do NOT prevent febrile seizures"
+  - "Counsel families on recurrence risk and benign prognosis"
+  - "Recognize when LP is needed (age <12mo, complex features, not back to baseline)"
+
+common_learner_mistakes:
+  - "Ordering EEG for simple febrile seizure (not indicated)"
+  - "Ordering CT/MRI for simple febrile seizure (not indicated)"
+  - "Recommending aggressive antipyretic dosing to prevent recurrence (doesn't work)"
+  - "Starting anticonvulsant prophylaxis (reserved for special circumstances only)"
+  - "Not reassuring parents about benign nature and excellent prognosis"
+  - "Performing LP on all febrile seizures (only if <12mo, complex, or not recovering)"
+
+clinical_pearls:
+  - "Simple: <15 min, generalized, once in 24h, returns to baseline. NO workup needed in well-appearing child 12-60mo."
+  - "Prophylaxis: Antipyretics do NOT prevent febrile seizures. They're for comfort only."
+  - "Prognosis: Simple febrile seizures do NOT cause brain damage, epilepsy risk only slightly elevated."
+  - "Recurrence: ~30% will have another febrile seizure. Higher if young age, low fever, family history."
+  - "LP consideration: Age <12 months, complex features, Hib/Pneumo unvaccinated, on antibiotics, not back to baseline."
+  - "Roseola: Classic cause - seizure on day 1 (fever), rash appears day 3-4 when fever breaks."
+
+red_flags:
+  - "Duration >15 minutes (complex)"
+  - "Focal features (one-sided, eye deviation to one side)"
+  - "Multiple seizures in 24 hours"
+  - "Not returning to baseline within 1 hour"
+  - "Age <6 months or >6 years"
+  - "Signs of meningitis (bulging fontanelle, nuchal rigidity)"
+  - "Developmental delay at baseline"
+  - "Recent head trauma"
+
+classification:
+  simple:
+    duration: "<15 minutes"
+    type: "Generalized"
+    occurrence: "Single in 24 hours"
+    recovery: "Returns to baseline quickly"
+    workup: "Minimal - find fever source only"
+    prognosis: "Excellent"
+  complex:
+    features:
+      - "Duration >15 minutes"
+      - "Focal features"
+      - ">1 seizure in 24 hours"
+      - "Prolonged postictal period"
+    workup: "Consider LP, neuroimaging, EEG based on features"
+    followup: "Neurology referral"
+
+recurrence_risk:
+  overall: "30-35%"
+  risk_factors:
+    - "Age <18 months at first seizure"
+    - "Low grade fever at time of seizure"
+    - "Short duration of fever before seizure"
+    - "Family history of febrile seizures"
+  with_0_risk_factors: "~15%"
+  with_4_risk_factors: "~70%"
+
+epilepsy_risk:
+  general_population: "1%"
+  after_simple_febrile_seizure: "1-2%"
+  after_complex_febrile_seizure: "4-6%"
+
+parent_styles:
+  - key: terrified
+    description: "Just witnessed seizure, extremely scared"
+    sample_lines:
+      - "I thought she was dying. I've never been so scared in my life."
+      - "Is she going to be okay? Did it hurt her brain?"
+      - "Will this happen again? How do I prevent it?"
+  - key: anxious
+    description: "Worried about epilepsy and brain damage"
+    sample_lines:
+      - "Does this mean she has epilepsy?"
+      - "Should we see a neurologist? Do we need an MRI?"
+      - "Will she be developmentally normal?"
+  - key: experienced
+    description: "Older sibling or parent had febrile seizures"
+    sample_lines:
+      - "I had these as a kid. My mom said I'd outgrow them."
+      - "Her brother had one last year. I knew what to do."
+      - "Do we need to do anything differently this time?"
+  - key: information_seeking
+    description: "Wants to understand and prepare"
+    sample_lines:
+      - "What should I do if it happens again?"
+      - "Should I give Tylenol around the clock when she has a fever?"
+      - "When should I call 911 versus just wait it out?"

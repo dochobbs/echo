@@ -1,0 +1,125 @@
+# Viral Gastroenteritis - Echo Teaching Condition
+# Adapted from Oread with teaching enhancements
+
+display_name: "Viral Gastroenteritis"
+aliases: ["Stomach flu", "Gastro", "Acute diarrhea", "Vomiting illness"]
+
+billing_codes:
+  icd10: ["A08.4", "A09"]
+  snomed: "25374005"
+
+category: acute
+system: gastrointestinal
+
+demographics:
+  age_months: { min: 2, peak: [6, 60], max: 264 }
+  gender_bias: { male: 0.5, female: 0.5 }
+  risk_factors: ["daycare", "household_contact"]
+
+seasonality:
+  peak_months: [11, 12, 1, 2, 3]
+  summer_peak: [6, 7, 8]
+
+vitals_impact:
+  temp_f: [99.0, 101.5]
+  hr_multiplier: 1.15
+  rr_multiplier: 1.0
+  spo2_min: 98
+
+presentation:
+  chief_complaints:
+    - "She's been throwing up all day and now has diarrhea"
+    - "He can't keep anything down"
+    - "She had five diaper blowouts today and looks really tired"
+  symptoms:
+    - "vomiting"
+    - "diarrhea"
+    - "abdominal cramps"
+    - "low-grade fever"
+    - "decreased appetite"
+  duration_days: [3, 7]
+  physical_exam:
+    - { system: "general", finding: "Child appears mildly dehydrated" }
+    - { system: "abdomen", finding: "Soft, diffusely tender, hyperactive bowel sounds" }
+    - { system: "skin", finding: "Mucous membranes slightly dry, skin turgor normal" }
+
+treatment:
+  approach: "Oral rehydration is the cornerstone of treatment"
+  medications:
+    - agent: "Ondansetron"
+      dose_mg_kg: 0.15
+      max_dose_mg: 8
+      frequency: "x1 dose PRN"
+      indication: "To enable oral rehydration in persistent vomiting"
+  supportive:
+    - "Small frequent sips of Pedialyte (1-2 tsp every 5 minutes)"
+    - "Advance diet as tolerated - no BRAT restriction needed"
+    - "Breastfeeding should continue"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Assess dehydration using clinical signs (cap refill, skin turgor, tears, urine output)"
+  - "Calculate oral rehydration volumes (50-100 mL/kg over 4 hours for mild-moderate)"
+  - "Know when ondansetron is appropriate (enables ORT, not just for comfort)"
+  - "Understand why diet advancement is preferred over restriction"
+  - "Recognize red flags suggesting something other than viral gastro"
+
+common_learner_mistakes:
+  - "Ordering stool studies on uncomplicated cases"
+  - "Prescribing anti-diarrheal medications (can prolong illness)"
+  - "Recommending strict BRAT diet (outdated, nutritionally inadequate)"
+  - "Not giving specific rehydration instructions"
+  - "Missing signs of moderate-severe dehydration"
+
+clinical_pearls:
+  - "Ondansetron single dose reduces vomiting AND reduces ED/clinic revisits"
+  - "Breastfed infants should continue nursing - breast milk is rehydrating"
+  - "Sugary drinks (juice, soda) worsen diarrhea via osmotic effect"
+  - "Rotavirus vaccine has dramatically reduced hospitalizations"
+  - "Probiotics may shorten duration by 1 day but aren't required"
+
+red_flags:
+  - "Bloody stool (consider bacterial, intussusception)"
+  - "Bilious (green) vomiting (consider obstruction)"
+  - "Severe abdominal pain (consider surgical causes)"
+  - "No urine output >8 hours"
+  - "Unable to tolerate any oral fluids"
+  - "Altered mental status"
+
+dehydration_assessment:
+  mild:
+    signs: ["slightly dry mucous membranes", "normal skin turgor", "normal cap refill"]
+    treatment: "Oral rehydration at home"
+  moderate:
+    signs: ["dry mucous membranes", "decreased skin turgor", "cap refill 2-3 seconds"]
+    treatment: "Oral rehydration with close observation"
+  severe:
+    signs: ["very dry membranes", "tenting skin turgor", "cap refill >3 seconds", "lethargy"]
+    treatment: "IV fluids required"
+
+parent_styles:
+  - key: anxious
+    description: "Worried about dehydration"
+    sample_lines:
+      - "She hasn't peed in 6 hours. Is that bad?"
+      - "How do I know if she's getting dehydrated?"
+      - "Should I be giving her Gatorade?"
+  - key: experienced
+    description: "Has dealt with stomach bugs before"
+    sample_lines:
+      - "This is going around daycare. Everyone's got it."
+      - "I've been doing the Pedialyte thing. Is there anything else?"
+      - "How long until this passes?"
+  - key: hesitant
+    description: "Reluctant about medication"
+    sample_lines:
+      - "Is there a natural way to stop the vomiting?"
+      - "I don't want to give him too much medicine."
+      - "Will the Zofran affect his development?"
+  - key: rushed
+    description: "Needs quick answers"
+    sample_lines:
+      - "When can he go back to daycare?"
+      - "Is this going to spread to the rest of us?"
+      - "What should I feed him when he's ready?"

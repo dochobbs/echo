@@ -24,6 +24,13 @@ class Settings(BaseSettings):
   anthropic_api_key: str = ""
   eleven_api_key: str = ""  # Maps to ELEVEN_API_KEY env var
   deepgram_api_key: str = ""
+  exa_api_key: str = ""  # For medical citations
+
+  # Supabase
+  supabase_url: str = ""
+  supabase_anon_key: str = ""
+  supabase_service_key: str = ""  # For admin operations
+  jwt_secret: str = ""  # For signing JWTs
 
   # Eleven Labs
   echo_voice_id: str = ECHO_VOICES[DEFAULT_VOICE]

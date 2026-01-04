@@ -2,7 +2,7 @@
  * Error display component for Echo widget
  */
 
-import { AlertCircle, RefreshCw, X } from 'lucide-react';
+import { TriangleAlertIcon, RefreshIcon, XIcon } from '../icons';
 
 interface EchoErrorProps {
   message: string;
@@ -14,7 +14,7 @@ export function EchoError({ message, onRetry, onDismiss }: EchoErrorProps) {
   return (
     <div className="echo-error">
       <div className="echo-error-content">
-        <AlertCircle size={16} />
+        <TriangleAlertIcon size={16} />
         <span>{message}</span>
       </div>
       <div className="echo-error-actions">
@@ -24,7 +24,7 @@ export function EchoError({ message, onRetry, onDismiss }: EchoErrorProps) {
             onClick={onRetry}
             title="Try again"
           >
-            <RefreshCw size={14} />
+            <RefreshIcon size={14} />
           </button>
         )}
         {onDismiss && (
@@ -33,7 +33,7 @@ export function EchoError({ message, onRetry, onDismiss }: EchoErrorProps) {
             onClick={onDismiss}
             title="Dismiss"
           >
-            <X size={14} />
+            <XIcon size={14} />
           </button>
         )}
       </div>

@@ -1,0 +1,156 @@
+# Febrile Infant (8-60 Days) - Echo Teaching Condition
+# Safety-critical topic from Master Pediatric Primary Care Curriculum
+
+display_name: "Febrile Infant"
+aliases: ["Fever in young infant", "Neonatal fever", "Infant fever workup"]
+
+billing_codes:
+  icd10: ["R50.9", "P81.9"]
+  snomed: "386661006"
+
+category: acute
+system: infectious
+
+demographics:
+  age_months: { min: 0, peak: [1, 2], max: 2 }
+  gender_bias: { male: 0.55, female: 0.45 }
+  risk_factors: ["prematurity", "maternal_fever", "prolonged_ROM", "GBS_positive"]
+
+vitals_impact:
+  temp_f: [100.4, 102.5]
+  hr_multiplier: 1.25
+  rr_multiplier: 1.15
+  spo2_min: 97
+
+presentation:
+  chief_complaints:
+    - "She felt warm when I picked her up from the bassinet"
+    - "The thermometer said 100.8 and he's only 3 weeks old"
+    - "She's been fussy and feels hot - I'm really scared"
+  symptoms:
+    - "fever"
+    - "irritability"
+    - "poor feeding"
+    - "lethargy"
+  physical_exam:
+    - { system: "general", finding: "Well-appearing infant, interactive" }
+    - { system: "general", finding: "Mildly fussy but consolable" }
+    - { system: "skin", finding: "Warm to touch, no rashes" }
+    - { system: "fontanelle", finding: "Soft and flat" }
+
+diagnostics:
+  - name: "CBC with differential"
+    loinc: "58410-2"
+  - name: "Blood culture"
+    loinc: "600-7"
+  - name: "Urinalysis"
+    loinc: "24356-8"
+  - name: "Urine culture"
+    loinc: "630-4"
+  - name: "Lumbar puncture"
+    loinc: "29584-0"
+  - name: "Procalcitonin"
+    loinc: "75241-0"
+  - name: "CRP"
+    loinc: "1988-5"
+
+treatment:
+  approach: "Age-stratified risk assessment determines management intensity"
+  medications:
+    - agent: "Ampicillin"
+      dose_mg_kg: 50
+      max_dose_mg: 2000
+      frequency: "Q6H IV"
+      indication: "Empiric coverage including Listeria"
+    - agent: "Cefotaxime"
+      dose_mg_kg: 50
+      max_dose_mg: 2000
+      frequency: "Q8H IV"
+      indication: "Gram-negative and pneumococcal coverage"
+    - agent: "Gentamicin"
+      dose_mg_kg: 4
+      max_dose_mg: 120
+      frequency: "Q24H IV"
+      indication: "Alternative to cefotaxime for gram-negatives"
+    - agent: "Acyclovir"
+      dose_mg_kg: 20
+      max_dose_mg: 500
+      frequency: "Q8H IV"
+      indication: "If HSV suspected (vesicles, seizures, maternal history)"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Apply age-stratified approach: 8-21 days vs 22-60 days"
+  - "Use inflammatory markers (Procalcitonin, ANC, CRP) to stratify risk in older infants"
+  - "Know when HSV testing is mandatory"
+  - "Understand why urinalysis is the most sensitive screen"
+  - "Recognize which infants can be observed at home vs require admission"
+
+common_learner_mistakes:
+  - "Sending home ANY infant 8-21 days old with fever (all need admission)"
+  - "Forgetting to consider HSV in infants <21 days"
+  - "Not obtaining urine by catheter or suprapubic (bag specimens unreliable)"
+  - "Over-relying on 'well-appearing' in very young infants"
+  - "Forgetting to ask about maternal history (GBS, HSV, ROM)"
+
+clinical_pearls:
+  - "8-21 Days = Automatic Admission. Full sepsis workup + IV antibiotics. Risk too high to miss."
+  - "22-60 Days = Use inflammatory markers to stratify. Low-risk may observe at home IF reliable follow-up."
+  - "HSV: Test (swabs + blood/CSF PCR) in any infant <21 days or with seizures/vesicles/maternal history."
+  - "Urinalysis is the most sensitive screen - negative UA rules out majority of bacterial infections."
+  - "Procalcitonin <0.5 ng/mL has high negative predictive value for serious bacterial infection."
+  - "WBC count is less useful than procalcitonin and ANC in risk stratification."
+
+red_flags:
+  - "Age 8-21 days (automatic high risk)"
+  - "Ill-appearing or inconsolable"
+  - "Vesicular rash (HSV)"
+  - "Seizure activity"
+  - "Bulging fontanelle"
+  - "Maternal HSV history"
+  - "Prematurity <37 weeks"
+  - "Temperature >38.5C (101.3F)"
+
+age_stratification:
+  early_neonate:
+    age_days: [8, 21]
+    approach: "Full sepsis workup + Admission + IV antibiotics"
+    disposition: "Admit all"
+  older_infant:
+    age_days: [22, 60]
+    approach: "Risk stratify with inflammatory markers"
+    low_risk_criteria:
+      - "Well-appearing"
+      - "No source on exam"
+      - "WBC 5,000-15,000"
+      - "ANC <4,000"
+      - "Procalcitonin <0.5"
+      - "UA negative"
+    disposition: "Low-risk may observe at home with guaranteed 24h follow-up"
+
+parent_styles:
+  - key: anxious
+    description: "Terrified first-time parent"
+    sample_lines:
+      - "Is she going to be okay? She's so tiny."
+      - "Do you really need to do a spinal tap? That sounds so scary."
+      - "I just took her temperature because she felt warm - I didn't expect this."
+  - key: experienced
+    description: "Has older children, knows fever protocol"
+    sample_lines:
+      - "I know young babies with fevers need to be checked. That's why I came right in."
+      - "My older kids had fevers all the time, but I know this is different."
+      - "What tests do you need to do?"
+  - key: hesitant
+    description: "Reluctant about invasive workup"
+    sample_lines:
+      - "Can't you just give her antibiotics without all those tests?"
+      - "Do you really need to do a spinal tap? She seems fine to me."
+      - "I read online that most fevers are viral."
+  - key: rushed
+    description: "Wants quick answers"
+    sample_lines:
+      - "How long is this going to take?"
+      - "I have two other kids at home."
+      - "When will we know what's wrong?"

@@ -4,14 +4,14 @@
 
 import { useState, useRef, useEffect } from 'react';
 import {
-  GraduationCap,
-  X,
-  Star,
-  Trash2,
-  BookOpen,
-  AlertCircle,
-  RefreshCw,
-} from 'lucide-react';
+  MessageCircleIcon,
+  XIcon,
+  StarIcon,
+  TrashIcon,
+  BookIcon,
+  TriangleAlertIcon,
+  RefreshIcon,
+} from '../icons';
 import type { EchoMessage, EchoMemoryItem, EchoWidgetProps } from '../types';
 
 interface EchoPanelProps {
@@ -85,7 +85,7 @@ export function EchoPanel({
       {/* Header */}
       <div className="echo-header">
         <div className="echo-header-title">
-          <GraduationCap size={20} />
+          <MessageCircleIcon size={20} />
           <span>Echo</span>
         </div>
         <div className="echo-header-actions">
@@ -94,7 +94,7 @@ export function EchoPanel({
             onClick={onClose}
             title="Close"
           >
-            <X size={18} />
+            <XIcon size={18} />
           </button>
         </div>
       </div>
@@ -119,7 +119,7 @@ export function EchoPanel({
       {error && (
         <div className="echo-error">
           <div className="echo-error-content">
-            <AlertCircle size={16} />
+            <TriangleAlertIcon size={16} />
             <span>{error}</span>
           </div>
           <div className="echo-error-actions">
@@ -129,7 +129,7 @@ export function EchoPanel({
                 onClick={onRetry}
                 title="Try again"
               >
-                <RefreshCw size={14} />
+                <RefreshIcon size={14} />
               </button>
             )}
             {onClearError && (
@@ -138,7 +138,7 @@ export function EchoPanel({
                 onClick={onClearError}
                 title="Dismiss"
               >
-                <X size={14} />
+                <XIcon size={14} />
               </button>
             )}
           </div>
@@ -152,7 +152,7 @@ export function EchoPanel({
           <div className="echo-messages">
             {messages.length === 0 && !isLoading && (
               <div className="echo-empty">
-                <GraduationCap size={48} strokeWidth={1.5} />
+                <MessageCircleIcon size={48} strokeWidth={1.5} />
                 <p>Hi! I'm Echo, your AI tutor.</p>
                 <p>Ask me anything about your case.</p>
               </div>
@@ -166,7 +166,7 @@ export function EchoPanel({
                 <div>{msg.content}</div>
                 {msg.failed && (
                   <div className="echo-message-failed">
-                    <AlertCircle size={12} />
+                    <TriangleAlertIcon size={12} />
                     <span>Failed to send</span>
                     {onRetry && (
                       <button className="echo-message-retry" onClick={onRetry}>
@@ -226,7 +226,7 @@ export function EchoPanel({
         <div className="echo-messages">
           {memories.length === 0 ? (
             <div className="echo-empty">
-              <BookOpen size={48} strokeWidth={1.5} />
+              <BookIcon size={48} strokeWidth={1.5} />
               <p>No saved interactions yet.</p>
               <p>Your conversations with Echo will appear here.</p>
             </div>
@@ -252,7 +252,7 @@ export function EchoPanel({
                         onMemoryStar(memory.id);
                       }}
                     >
-                      <Star size={14} fill={memory.starred ? 'currentColor' : 'none'} />
+                      <StarIcon size={14} filled={memory.starred} />
                     </button>
                     <button
                       className="echo-message-btn"
@@ -261,7 +261,7 @@ export function EchoPanel({
                         onMemoryDelete(memory.id);
                       }}
                     >
-                      <Trash2 size={14} />
+                      <TrashIcon size={14} />
                     </button>
                   </div>
                 </div>

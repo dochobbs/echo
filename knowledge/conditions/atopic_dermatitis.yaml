@@ -1,0 +1,150 @@
+# Atopic Dermatitis (Eczema) - Echo Teaching Condition
+# From Master Pediatric Primary Care Curriculum
+
+display_name: "Atopic Dermatitis"
+aliases: ["Eczema", "Atopic eczema", "Infantile eczema"]
+
+billing_codes:
+  icd10: ["L20.9", "L20.89", "L20.84"]
+  snomed: "24079001"
+
+category: chronic
+system: dermatology
+
+demographics:
+  age_months: { min: 2, peak: [3, 24], max: 264 }
+  gender_bias: { male: 0.5, female: 0.5 }
+  risk_factors: ["family_history_atopy", "asthma", "allergic_rhinitis", "food_allergy", "dry_climate"]
+
+seasonality:
+  peak_months: [10, 11, 12, 1, 2]  # Winter exacerbation (dry air)
+
+vitals_impact:
+  temp_f: [98.6, 98.6]
+  hr_multiplier: 1.0
+  rr_multiplier: 1.0
+  spo2_min: 98
+
+presentation:
+  chief_complaints:
+    - "She scratches herself all night and can't sleep"
+    - "His skin is so dry and red, nothing seems to help"
+    - "The rash keeps coming back no matter what we do"
+    - "She scratches until she bleeds"
+  symptoms:
+    - "pruritus (itching)"
+    - "dry skin"
+    - "erythematous patches"
+    - "lichenification"
+    - "sleep disturbance"
+  physical_exam:
+    - { system: "skin", finding: "Erythematous, scaly patches on cheeks and extensor surfaces", age_note: "infants" }
+    - { system: "skin", finding: "Lichenified plaques in flexural areas (antecubital, popliteal)", age_note: "older children" }
+    - { system: "skin", finding: "Xerosis (generalized dry skin)" }
+    - { system: "skin", finding: "Excoriations from scratching" }
+    - { system: "skin", finding: "Dennie-Morgan folds under eyes" }
+
+treatment:
+  approach: "Soak and seal with emollients; step-up topical steroids for flares"
+  supportive:
+    - "Daily bathing (lukewarm, 10-15 min) followed immediately by moisturizer"
+    - "Soak and Seal: Apply emollient within 3 minutes of bathing while skin still damp"
+    - "Fragrance-free moisturizers (Vanicream, CeraVe, Eucerin)"
+    - "Avoid triggers: harsh soaps, wool, fragrances"
+    - "Keep nails short to minimize excoriation"
+  medications:
+    - agent: "Hydrocortisone 1%"
+      indication: "Face, intertriginous areas - mild"
+      frequency: "BID during flares"
+    - agent: "Hydrocortisone 2.5%"
+      indication: "Face, neck - moderate"
+      frequency: "BID during flares"
+    - agent: "Triamcinolone 0.1%"
+      indication: "Body - moderate flares"
+      frequency: "BID x 2 weeks"
+    - agent: "Fluocinonide 0.05%"
+      indication: "Thick/lichenified areas - severe"
+      frequency: "BID x 1-2 weeks (not face)"
+    - agent: "Tacrolimus 0.03% or 0.1%"
+      indication: "Face, steroid-sparing, maintenance"
+      frequency: "BID during flares"
+    - agent: "Pimecrolimus 1%"
+      indication: "Face, mild-moderate, steroid-sparing"
+      frequency: "BID during flares"
+    - agent: "Hydroxyzine"
+      dose_mg_kg: 0.5
+      max_dose_mg: 25
+      frequency: "Q6H PRN or QHS"
+      indication: "Nighttime itch relief (sedating)"
+
+# ============= TEACHING ENHANCEMENTS =============
+
+teaching_goals:
+  - "Master the Soak and Seal technique (bathe -> pat dry -> apply while damp)"
+  - "Overcome steroid phobia - explain safety of appropriate topical use"
+  - "Know which potency steroids for which body locations"
+  - "Recognize when eczema is infected (impetiginization)"
+  - "Understand that food allergy rarely CAUSES eczema (don't do elimination diets)"
+
+common_learner_mistakes:
+  - "Under-treating with weak steroids for severe flares (steroid phobia)"
+  - "Using high-potency steroids on face/groin (causes atrophy)"
+  - "Recommending food elimination diets without evidence of allergy"
+  - "Prescribing only PRN instead of consistent moisturizing routine"
+  - "Not recognizing secondary bacterial infection (honey crusting = impetigo)"
+  - "Forgetting to address sleep disturbance from itching"
+
+clinical_pearls:
+  - "Soak and Seal: Bathe 10-15min -> Pat dry -> Apply meds/moisturizer while skin STILL DAMP. This is the cornerstone."
+  - "Steroid Phobia: Ointments > Creams. Topical steroids are SAFE; under-treatment is the bigger risk."
+  - "Food: Food allergy rarely CAUSES eczema. Avoid elimination diets without clear IgE-mediated reaction."
+  - "Ointments > Creams: Ointments occlude better, have fewer preservatives, and are more effective."
+  - "Infected eczema: Honey crusting, weeping, rapid worsening = staph superinfection. Add mupirocin or oral antibiotics."
+  - "Maintenance: Continue daily moisturizing even when clear. Proactive weekend steroid application prevents flares."
+
+red_flags:
+  - "Eczema herpeticum (punched-out erosions, fever) - HSV superinfection"
+  - "Widespread impetiginization (honey crusting)"
+  - "Failure to respond to appropriate treatment"
+  - "Growth failure or systemic symptoms"
+  - "Erythroderma (>90% body surface involvement)"
+
+severity_classification:
+  mild:
+    involvement: "<10% BSA"
+    features: "Dry skin, mild erythema, minimal itch"
+    treatment: "Moisturizers + low-potency steroids PRN"
+  moderate:
+    involvement: "10-30% BSA"
+    features: "Erythema, papules, excoriations, sleep disturbance"
+    treatment: "Moisturizers + medium-potency steroids + consider calcineurin inhibitors"
+  severe:
+    involvement: ">30% BSA or significant face/hand involvement"
+    features: "Lichenification, severe itch, major sleep/QOL impact"
+    treatment: "Aggressive topicals, wet wraps, consider systemic therapy referral"
+
+parent_styles:
+  - key: anxious
+    description: "Worried about steroids and scarring"
+    sample_lines:
+      - "I've heard steroids thin the skin. Is it safe to use every day?"
+      - "Will she have scars from all the scratching?"
+      - "Could this be a food allergy? Should we do testing?"
+  - key: experienced
+    description: "Family history of eczema, knows the drill"
+    sample_lines:
+      - "I had eczema as a kid. It runs in the family."
+      - "We've tried everything - Aquaphor, Eucerin, nothing works."
+      - "Is this ever going to go away?"
+  - key: hesitant
+    description: "Wants natural approaches, worried about medications"
+    sample_lines:
+      - "Are there any natural remedies we can try first?"
+      - "I really don't want to use steroids on her skin."
+      - "Can we just use coconut oil?"
+  - key: rushed
+    description: "Needs quick fix for flare"
+    sample_lines:
+      - "We have family photos next week - can we clear this up fast?"
+      - "Daycare keeps calling about the rash."
+      - "What's the strongest cream you can prescribe?"

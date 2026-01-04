@@ -2,7 +2,7 @@
  * Floating icon button to summon Echo
  */
 
-import { GraduationCap, X } from 'lucide-react';
+import { MessageCircleIcon, XIcon } from '../icons';
 import type { EchoWidgetProps } from '../types';
 
 interface EchoIconProps {
@@ -20,9 +20,9 @@ export function EchoIcon({ position = 'bottom-right', onClick, isOpen }: EchoIco
       title={isOpen ? 'Close Echo' : 'Ask Echo'}
     >
       {isOpen ? (
-        <X size={28} color="white" />
+        <XIcon size={28} color="white" />
       ) : (
-        <GraduationCap size={28} color="white" />
+        <MessageCircleIcon size={28} color="white" />
       )}
     </button>
   );

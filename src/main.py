@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .config import get_settings
 from .routers import feedback, question, debrief, voice
+from .cases import case_router
 
 app = FastAPI(
   title="Echo",
@@ -26,6 +27,7 @@ app.include_router(feedback.router, prefix="/feedback", tags=["feedback"])
 app.include_router(question.router, prefix="/question", tags=["question"])
 app.include_router(debrief.router, prefix="/debrief", tags=["debrief"])
 app.include_router(voice.router, prefix="/voice", tags=["voice"])
+app.include_router(case_router, tags=["cases"])
 
 
 @app.get("/")

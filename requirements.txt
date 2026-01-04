@@ -16,6 +16,10 @@ deepgram-sdk>=3.0.0
 # WebSocket
 websockets>=12.0
 
+# Database
+supabase>=2.0.0
+
 # Utilities
 httpx>=0.26.0
 python-multipart>=0.0.6
+pyyaml>=6.0
