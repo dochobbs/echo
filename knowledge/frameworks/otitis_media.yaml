@@ -54,6 +54,12 @@ treatment_principles:
   - "Treatment failure: Amoxicillin-clavulanate or ceftriaxone IM"
   - "Duration: 10 days if <2yo, 5-7 days if >2yo with mild disease"
 
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Observation option: >2yo, unilateral, non-severe, reliable follow-up"
+  - "Reassess in 48-72 hours if no improvement"
+  - "ENT referral: Recurrent AOM (3+ in 6 months, 4+ in 12 months), chronic OME >3 months"
+
 parent_styles: [anxious, experienced, antibiotic-seeking, antibiotic-hesitant]
 
 sources:
