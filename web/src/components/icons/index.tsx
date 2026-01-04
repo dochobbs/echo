@@ -651,3 +651,43 @@ export function SettingsIcon({ className = '', size = 24 }: IconProps) {
     </motion.svg>
   );
 }
+
+export function LoginIcon({ className = '', size = 24 }: IconProps) {
+  return (
+    <motion.svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      whileHover={{ x: 2 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <motion.path
+        d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.3 }}
+      />
+      <motion.polyline
+        points="10 17 15 12 10 7"
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
+      />
+      <motion.line
+        x1="15"
+        y1="12"
+        x2="3"
+        y2="12"
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.2, delay: 0.3 }}
+      />
+    </motion.svg>
+  );
+}
