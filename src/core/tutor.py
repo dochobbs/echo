@@ -518,6 +518,12 @@ IMPORTANT: The learner seems stuck or uncertain. Shift into supportive attending
 - Or give a gentle nudge: "What if we consider..."
 - Keep it warm and supportive - no shame for being stuck
 - You might say something like: "Let me share what I'd be thinking at this point..."
+
+CRITICAL: After giving your hint or guidance, STOP. Do not continue the conversation.
+- Do NOT have the parent ask a follow-up question
+- Do NOT roleplay the parent asking something else
+- End your response after the teaching moment
+- Wait for the learner to respond before continuing the case
 """
       updated_state.hints_given += 1
 
