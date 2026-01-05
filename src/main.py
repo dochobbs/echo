@@ -50,9 +50,13 @@ async def startup():
     print("Database not configured - running without persistence.")
 
 
+STATIC_DIR = Path(__file__).parent.parent / "web" / "dist"
+
 @app.get("/")
 async def root():
-  """Root endpoint."""
+  """Root endpoint - serve frontend in production, API info in dev."""
+  if STATIC_DIR.exists() and (STATIC_DIR / "index.html").exists():
+    return FileResponse(STATIC_DIR / "index.html")
   return {
     "service": "Echo",
     "version": "0.1.0",
@@ -75,8 +79,6 @@ async def health():
 
 
 # Serve static frontend files in production
-STATIC_DIR = Path(__file__).parent.parent / "web" / "dist"
-
 if STATIC_DIR.exists():
   # Mount assets directory for static files (JS, CSS, images)
   assets_dir = STATIC_DIR / "assets"
