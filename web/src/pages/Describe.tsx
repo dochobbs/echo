@@ -1,18 +1,27 @@
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { api } from '../api/client';
 import { MessageBubble } from '../components/MessageBubble';
 import { TypingIndicator } from '../components/TypingIndicator';
 import type { Message, LearnerLevel } from '../types';
 
+interface LocationState {
+  initialDescription?: string;
+}
+
 export function Describe() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const locationState = location.state as LocationState | null;
+  const initialDescription = locationState?.initialDescription;
+  
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [describeState, setDescribeState] = useState<any>(null);
+  const [hasProcessedInitial, setHasProcessedInitial] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -38,6 +47,43 @@ export function Describe() {
   }, []);
 
   useEffect(() => {
+    async function sendInitialDescription() {
+      if (!initialDescription || !describeState || hasProcessedInitial || loading) return;
+      
+      setHasProcessedInitial(true);
+      
+      const userMessage: Message = {
+        id: crypto.randomUUID(),
+        session_id: 'describe',
+        role: 'user',
+        content: initialDescription,
+        created_at: new Date().toISOString(),
+      };
+      setMessages(prev => [...prev, userMessage]);
+      setLoading(true);
+
+      try {
+        const response = await api.sendDescribeMessage(initialDescription, describeState);
+        setDescribeState(response.state);
+        
+        setMessages(prev => [...prev, {
+          id: crypto.randomUUID(),
+          session_id: 'describe',
+          role: 'echo',
+          content: response.message,
+          created_at: new Date().toISOString(),
+        }]);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Failed to send');
+      } finally {
+        setLoading(false);
+      }
+    }
+    
+    sendInitialDescription();
+  }, [initialDescription, describeState, hasProcessedInitial, loading]);
+
+  useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
@@ -59,22 +105,14 @@ export function Describe() {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/case/describe/message', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMsg, state: describeState }),
-      });
-      
-      if (!response.ok) throw new Error('Failed to send message');
-      
-      const data = await response.json();
-      setDescribeState(data.state);
+      const response = await api.sendDescribeMessage(userMsg, describeState);
+      setDescribeState(response.state);
       
       setMessages(prev => [...prev, {
         id: crypto.randomUUID(),
         session_id: 'describe',
         role: 'echo',
-        content: data.message,
+        content: response.message,
         created_at: new Date().toISOString(),
       }]);
     } catch (err) {

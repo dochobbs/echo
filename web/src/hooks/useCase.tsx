@@ -9,6 +9,7 @@ interface CaseContextType {
   error: string | null;
   debrief: DebriefData | null;
   startCase: (options?: { level?: LearnerLevel; condition?: string }) => Promise<BackendCaseResponse>;
+  loadCase: (sessionId: string) => Promise<BackendCaseResponse>;
   sendMessage: (message: string) => Promise<BackendCaseResponse>;
   endCase: () => Promise<BackendCaseResponse>;
   clearError: () => void;
@@ -50,6 +51,36 @@ export function CaseProvider({ children }: { children: ReactNode }) {
       return response;
     } catch (err) {
       const msg = err instanceof Error ? err.message : 'Failed to start case';
+      setError(msg);
+      throw err;
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  const loadCase = useCallback(async (sessionId: string) => {
+    setLoading(true);
+    setError(null);
+    setDebrief(null);
+
+    try {
+      const response = await api.getCaseById(sessionId);
+
+      setCaseState(response.case_state);
+
+      const loadedMessages: Message[] = response.case_state.conversation.map((msg, index) => ({
+        id: `loaded-${index}`,
+        session_id: response.case_state.session_id,
+        role: msg.role as 'user' | 'echo',
+        content: msg.content,
+        phase: response.case_state.phase as CasePhase,
+        created_at: new Date().toISOString(),
+      }));
+
+      setMessages(loadedMessages);
+      return response;
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Failed to load case';
       setError(msg);
       throw err;
     } finally {
@@ -157,6 +188,7 @@ export function CaseProvider({ children }: { children: ReactNode }) {
         error,
         debrief,
         startCase,
+        loadCase,
         sendMessage,
         endCase,
         clearError,

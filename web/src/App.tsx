@@ -36,6 +36,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/case" element={<Case />} />
+            <Route path="/case/:sessionId" element={<Case />} />
             <Route path="/describe" element={<Describe />} />
             <Route path="/history" element={
               <ProtectedRoute>

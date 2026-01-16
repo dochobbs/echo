@@ -11,6 +11,9 @@ from .models import (
     CaseExport,
     CompletedCaseSummary,
     LearningMaterials,
+    GeneratedPatient,
+    CasePhase,
+    LearnerLevel,
 )
 
 
@@ -196,6 +199,84 @@ class CasePersistence:
             }
         except Exception as e:
             print(f"Error getting case session: {e}")
+            return None
+        finally:
+            db.close()
+
+    def get_session_with_state(self, session_id: str, user_id: Optional[str] = None) -> Optional[CaseState]:
+        """Get a case session with full CaseState for resuming."""
+        if not is_db_configured():
+            return None
+
+        db = next(get_db())
+        try:
+            session_uuid = _to_uuid(session_id)
+            query = db.query(db_models.CaseSession).filter(
+                db_models.CaseSession.id == session_uuid
+            )
+            if user_id:
+                query = query.filter(db_models.CaseSession.user_id == _to_uuid(user_id))
+
+            session = query.first()
+            if not session:
+                return None
+
+            messages = db.query(db_models.Message).filter(
+                db_models.Message.session_id == session_uuid
+            ).order_by(db_models.Message.created_at).all()
+
+            conversation = []
+            for msg in messages:
+                conversation.append({
+                    "role": msg.role,
+                    "content": msg.content,
+                })
+
+            patient_data = session.patient_data or {}
+
+            patient = GeneratedPatient(
+                name=patient_data.get("name", "Unknown"),
+                age=patient_data.get("age", 0),
+                age_unit=patient_data.get("age_unit", "years"),
+                sex=patient_data.get("sex", "unknown"),
+                weight_kg=patient_data.get("weight_kg", 0),
+                chief_complaint=patient_data.get("chief_complaint", ""),
+                condition_key=session.condition_key or "unknown",
+                condition_display=session.condition_display or "Unknown",
+                parent_name=patient_data.get("parent_name", ""),
+                vitals=patient_data.get("vitals", {}),
+                history=patient_data.get("history", {}),
+                physical_exam=patient_data.get("physical_exam", {}),
+            )
+
+            phase_str = session.phase or "history"
+            try:
+                phase = CasePhase(phase_str)
+            except ValueError:
+                phase = CasePhase.HISTORY
+
+            level_str = patient_data.get("learner_level", "student")
+            try:
+                level = LearnerLevel(level_str)
+            except ValueError:
+                level = LearnerLevel.STUDENT
+
+            return CaseState(
+                session_id=str(session.id),
+                patient=patient,
+                phase=phase,
+                learner_level=level,
+                conversation=conversation,
+                history_gathered=session.history_gathered or [],
+                exam_performed=session.exam_performed or [],
+                differential=session.differential or [],
+                plan_proposed=session.plan_proposed or [],
+                hints_given=session.hints_given or 0,
+                teaching_moments=session.teaching_moments or [],
+                started_at=session.started_at or datetime.utcnow(),
+            )
+        except Exception as e:
+            print(f"Error getting case session with state: {e}")
             return None
         finally:
             db.close()

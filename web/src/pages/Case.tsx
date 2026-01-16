@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useCase } from '../hooks/useCase';
 import { DebriefCard } from '../components/DebriefCard';
@@ -9,9 +9,22 @@ import { CaseTimeline } from '../components/CaseTimeline';
 
 export function Case() {
   const navigate = useNavigate();
-  const { caseState, messages, loading, error, debrief, sendMessage, endCase, clearError } = useCase();
+  const { sessionId } = useParams<{ sessionId?: string }>();
+  const { caseState, messages, loading, error, debrief, sendMessage, endCase, loadCase, clearError } = useCase();
   const [input, setInput] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  const [loadError, setLoadError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (sessionId && !caseState && !isLoading && !loadError) {
+      setIsLoading(true);
+      loadCase(sessionId)
+        .catch(err => setLoadError(err instanceof Error ? err.message : 'Failed to load case'))
+        .finally(() => setIsLoading(false));
+    }
+  }, [sessionId, caseState, loadCase, isLoading, loadError]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -39,7 +52,7 @@ export function Case() {
     }
   };
 
-  if (!caseState && !loading) {
+  if (!caseState && !loading && !isLoading) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-12 text-center">
         <motion.div
@@ -48,6 +61,36 @@ export function Case() {
           className="card p-8"
         >
           <p className="text-gray-400 mb-6">No active case. Start a new one from the home page.</p>
+          <button onClick={() => navigate('/')} className="btn btn-primary">
+            Go Home
+          </button>
+        </motion.div>
+      </div>
+    );
+  }
+
+  if (isLoading) {
+    return (
+      <div className="max-w-4xl mx-auto px-4 py-12 text-center">
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+          className="w-8 h-8 border-2 border-echo-500 border-t-transparent rounded-full mx-auto"
+        />
+        <p className="text-gray-400 mt-4">Loading case...</p>
+      </div>
+    );
+  }
+
+  if (loadError) {
+    return (
+      <div className="max-w-4xl mx-auto px-4 py-12 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="card p-8"
+        >
+          <p className="text-red-400 mb-6">{loadError}</p>
           <button onClick={() => navigate('/')} className="btn btn-primary">
             Go Home
           </button>

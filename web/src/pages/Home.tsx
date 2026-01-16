@@ -23,7 +23,7 @@ export function Home() {
 
   const handleDescribeSubmit = () => {
     if (caseDescription.trim()) {
-      navigate('/describe');
+      navigate('/describe', { state: { initialDescription: caseDescription.trim() } });
     }
   };
 

@@ -369,6 +369,27 @@ async def get_active_cases(
   )
 
 
+@router.get("/{session_id}")
+async def get_case_by_id(
+  session_id: str,
+  user: User = Depends(get_current_user),
+) -> CaseResponse:
+  """Get a case by session ID with its full state for resuming."""
+  if not is_db_configured():
+    raise HTTPException(status_code=404, detail="Case not found")
+
+  persistence = get_case_persistence()
+  case_data = persistence.get_session_with_state(session_id, user_id=str(user.id))
+  
+  if not case_data:
+    raise HTTPException(status_code=404, detail="Case not found")
+
+  return CaseResponse(
+    message="Case loaded successfully",
+    case_state=case_data,
+  )
+
+
 async def _generate_reading_list(
   condition_key: str,
   condition_display: str,
