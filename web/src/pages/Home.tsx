@@ -2,28 +2,18 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useCase } from '../hooks/useCase';
-import { FocusTextarea } from '../components/FocusTextarea';
 import type { LearnerLevel } from '../types';
 
 export function Home() {
   const navigate = useNavigate();
   const { startCase, loading, error } = useCase();
   const [level, setLevel] = useState<LearnerLevel>('student');
-  const [caseDescription, setCaseDescription] = useState('');
-  const [mode, setMode] = useState<'quick' | 'describe'>('quick');
 
   const handleStartCase = async () => {
     try {
       await startCase({ level });
       navigate('/case');
     } catch {
-      // Error handled by hook
-    }
-  };
-
-  const handleDescribeSubmit = () => {
-    if (caseDescription.trim()) {
-      navigate('/describe', { state: { initialDescription: caseDescription.trim() } });
     }
   };
 
@@ -50,102 +40,44 @@ export function Home() {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="space-y-6"
       >
-        <div className="flex gap-2 p-1 bg-surface-2 rounded-xl">
-          <button
-            onClick={() => setMode('quick')}
-            className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-medium transition-all ${
-              mode === 'quick'
-                ? 'bg-surface-4 text-gray-100 shadow-sm'
-                : 'text-gray-400 hover:text-gray-200'
-            }`}
+        <div className="card p-4">
+          <label className="block text-sm font-medium text-gray-400 mb-2">
+            Your level
+          </label>
+          <select
+            value={level}
+            onChange={(e) => setLevel(e.target.value as LearnerLevel)}
+            className="input text-center"
           >
-            Quick Start
-          </button>
-          <button
-            onClick={() => setMode('describe')}
-            className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-medium transition-all ${
-              mode === 'describe'
-                ? 'bg-surface-4 text-gray-100 shadow-sm'
-                : 'text-gray-400 hover:text-gray-200'
-            }`}
-          >
-            Describe Case
-          </button>
+            <option value="student">Medical Student</option>
+            <option value="np_student">NP Student</option>
+            <option value="resident">Resident</option>
+            <option value="fellow">Fellow</option>
+            <option value="attending">Attending</option>
+          </select>
         </div>
 
-        {mode === 'quick' ? (
-          <motion.div
-            key="quick"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 20 }}
-            className="space-y-4"
-          >
-            <div className="card p-4">
-              <label className="block text-sm font-medium text-gray-400 mb-2">
-                Your level
-              </label>
-              <select
-                value={level}
-                onChange={(e) => setLevel(e.target.value as LearnerLevel)}
-                className="input text-center"
+        <motion.button
+          onClick={handleStartCase}
+          disabled={loading}
+          className="btn btn-primary w-full py-4 text-base"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          {loading ? (
+            <span className="flex items-center justify-center gap-2">
+              <motion.span
+                animate={{ rotate: 360 }}
+                transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
               >
-                <option value="student">Medical Student</option>
-                <option value="np_student">NP Student</option>
-                <option value="resident">Resident</option>
-                <option value="fellow">Fellow</option>
-                <option value="attending">Attending</option>
-              </select>
-            </div>
-
-            <motion.button
-              onClick={handleStartCase}
-              disabled={loading}
-              className="btn btn-primary w-full py-4 text-base"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              {loading ? (
-                <span className="flex items-center justify-center gap-2">
-                  <motion.span
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                  >
-                    ⟳
-                  </motion.span>
-                  Starting...
-                </span>
-              ) : (
-                'Start Random Case'
-              )}
-            </motion.button>
-          </motion.div>
-        ) : (
-          <motion.div
-            key="describe"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            className="space-y-4"
-          >
-            <FocusTextarea
-              value={caseDescription}
-              onChange={setCaseDescription}
-              onSubmit={handleDescribeSubmit}
-              placeholder="Tell me about a patient you saw today..."
-            />
-
-            <motion.button
-              onClick={handleDescribeSubmit}
-              disabled={!caseDescription.trim()}
-              className="btn btn-copper w-full py-4 text-base"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Discuss This Case
-            </motion.button>
-          </motion.div>
-        )}
+                ⟳
+              </motion.span>
+              Starting...
+            </span>
+          ) : (
+            'Start Case'
+          )}
+        </motion.button>
       </motion.div>
 
       {error && (
@@ -165,7 +97,7 @@ export function Home() {
         className="mt-12 text-center"
       >
         <p className="text-xs text-gray-600">
-          Practice with AI-generated cases or discuss real patients
+          Practice with AI-generated cases
         </p>
       </motion.div>
     </div>

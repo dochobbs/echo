@@ -4,7 +4,6 @@ import { CaseProvider } from './hooks/useCase';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { Case } from './pages/Case';
-import { Describe } from './pages/Describe';
 import { History } from './pages/History';
 import { Login } from './pages/Login';
 import { Profile } from './pages/Profile';
@@ -37,7 +36,6 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/case" element={<Case />} />
             <Route path="/case/:sessionId" element={<Case />} />
-            <Route path="/describe" element={<Describe />} />
             <Route path="/history" element={
               <ProtectedRoute>
                 <History />

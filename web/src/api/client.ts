@@ -296,12 +296,6 @@ class ApiClient {
     return this.fetch(`/case/${sessionId}`);
   }
 
-  async sendDescribeMessage(message: string, state: unknown): Promise<{ message: string; state: unknown; citations?: unknown[] }> {
-    return this.fetch('/case/describe/message', {
-      method: 'POST',
-      body: JSON.stringify({ message, state }),
-    });
-  }
 }
 
 export const api = new ApiClient();
