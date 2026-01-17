@@ -21,14 +21,76 @@ from .models import (
   CaseExport,
   LearningMaterials,
   CaseHistoryResponse,
+  # Post-debrief Q&A
+  DebriefDetail,
+  PostDebriefQuestionRequest,
+  PostDebriefQuestionResponse,
 )
 from .generator import get_generator
+from .dynamic_generator import get_dynamic_generator
 from .history import get_case_history
 from .persistence import get_case_persistence, is_db_configured
 from ..auth.deps import get_optional_user, get_current_user
 from ..auth.models import User
 
 router = APIRouter(prefix="/case", tags=["cases"])
+
+
+@router.get("/frameworks")
+async def list_frameworks():
+  """List available teaching frameworks for dynamic case generation."""
+  generator = get_dynamic_generator()
+  return {
+    "frameworks": generator.list_conditions(),
+    "total": len(generator.list_conditions()),
+  }
+
+
+@router.post("/start/dynamic")
+async def start_dynamic_case(request: StartCaseRequest) -> CaseResponse:
+  """Start a new case using dynamic generation (Claude + teaching frameworks).
+
+  This generates unique patient details each time while maintaining
+  curated teaching goals from the framework.
+
+  Supports variant parameters for case customization:
+  - severity: mild/moderate/severe
+  - age_bracket: neonate/infant/toddler/child/adolescent
+  - presentation: typical/atypical/early/late
+  - complexity: straightforward/nuanced/challenging
+  """
+  from ..core.tutor import Tutor
+
+  generator = get_dynamic_generator()
+
+  # Generate the case dynamically with variant parameters
+  case_state = await generator.generate_case(
+    condition_key=request.condition_key,
+    learner_level=request.learner_level,
+    time_constraint=request.time_constraint,
+    severity=request.severity,
+    age_bracket=request.age_bracket,
+    presentation=request.presentation,
+    complexity=request.complexity,
+  )
+
+  # Get framework for tutor context (teaching goals, common mistakes, etc.)
+  framework = generator.get_framework(case_state.patient.condition_key)
+
+  # Get the tutor's opening message
+  tutor = Tutor()
+  opening = await tutor.generate_case_opening(case_state, framework)
+
+  # Add to conversation history
+  case_state.conversation.append({
+    "role": "echo",
+    "content": opening,
+  })
+
+  return CaseResponse(
+    message=opening,
+    case_state=case_state,
+  )
 
 
 @router.post("/start")
@@ -163,71 +225,73 @@ async def get_debrief(
 
 
 # ==================== DESCRIBE-A-CASE MODE ====================
+# DISABLED 2026-01 - describe-a-case on hold
+# Keeping code commented out for potential future use
 
-@router.post("/describe/start")
-async def start_describe_case(request: StartDescribeCaseRequest) -> DescribeCaseResponse:
-  """Start a describe-a-case session.
+# @router.post("/describe/start")
+# async def start_describe_case(request: StartDescribeCaseRequest) -> DescribeCaseResponse:
+#   """Start a describe-a-case session.
+#
+#   The learner will describe a real case they've seen, and Echo will
+#   discuss it with them in a Socratic way.
+#   """
+#   from ..core.tutor import Tutor
+#
+#   # Create initial state
+#   state = DescribeCaseState(learner_level=request.learner_level)
+#
+#   # Get tutor's opening
+#   tutor = Tutor()
+#   opening = await tutor.start_describe_session(request.learner_level.value)
+#
+#   # Add to conversation
+#   state.conversation.append({
+#     "role": "echo",
+#     "content": opening,
+#   })
+#
+#   return DescribeCaseResponse(
+#     message=opening,
+#     state=state,
+#   )
 
-  The learner will describe a real case they've seen, and Echo will
-  discuss it with them in a Socratic way.
-  """
-  from ..core.tutor import Tutor
 
-  # Create initial state
-  state = DescribeCaseState(learner_level=request.learner_level)
-
-  # Get tutor's opening
-  tutor = Tutor()
-  opening = await tutor.start_describe_session(request.learner_level.value)
-
-  # Add to conversation
-  state.conversation.append({
-    "role": "echo",
-    "content": opening,
-  })
-
-  return DescribeCaseResponse(
-    message=opening,
-    state=state,
-  )
-
-
-@router.post("/describe/message")
-async def describe_case_message(request: DescribeCaseMessageRequest) -> DescribeCaseResponse:
-  """Send a message in a describe-a-case session.
-
-  Echo will engage with the case, ask clarifying questions,
-  and provide teaching when appropriate. May include citations
-  from medical literature.
-  """
-  from ..core.tutor import Tutor
-
-  state = request.state
-
-  # Add learner message to conversation
-  state.conversation.append({
-    "role": "user",
-    "content": request.message,
-  })
-
-  # Process the message
-  tutor = Tutor()
-  response, updated_state, citations = await tutor.process_describe_message(
-    message=request.message,
-    state=state,
-  )
-
-  # Add Echo's response to conversation
-  updated_state.conversation.append({
-    "role": "echo",
-    "content": response,
-  })
-
-  return DescribeCaseResponse(
-    message=response,
-    state=updated_state,
-    citations=citations,
-  )
+# @router.post("/describe/message")
+# async def describe_case_message(request: DescribeCaseMessageRequest) -> DescribeCaseResponse:
+#   """Send a message in a describe-a-case session.
+#
+#   Echo will engage with the case, ask clarifying questions,
+#   and provide teaching when appropriate. May include citations
+#   from medical literature.
+#   """
+#   from ..core.tutor import Tutor
+#
+#   state = request.state
+#
+#   # Add learner message to conversation
+#   state.conversation.append({
+#     "role": "user",
+#     "content": request.message,
+#   })
+#
+#   # Process the message
+#   tutor = Tutor()
+#   response, updated_state, citations = await tutor.process_describe_message(
+#     message=request.message,
+#     state=state,
+#   )
+#
+#   # Add Echo's response to conversation
+#   updated_state.conversation.append({
+#     "role": "echo",
+#     "content": response,
+#   })
+#
+#   return DescribeCaseResponse(
+#     message=response,
+#     state=updated_state,
+#     citations=citations,
+#   )
 
 
 # ==================== CASE EXPORT & HISTORY ====================
@@ -387,6 +451,117 @@ async def get_case_by_id(
   return CaseResponse(
     message="Case loaded successfully",
     case_state=case_data,
+  )
+
+
+# ==================== POST-DEBRIEF Q&A ====================
+
+@router.get("/{session_id}/debrief")
+async def get_case_debrief(
+  session_id: str,
+  user: Optional[User] = Depends(get_optional_user),
+) -> DebriefDetail:
+  """Get debrief details for a completed case.
+
+  Returns structured debrief data including summary, strengths,
+  areas for improvement, and teaching points.
+  """
+  # Try database first
+  if user and is_db_configured():
+    persistence = get_case_persistence()
+    export = persistence.get_case_export(session_id, user_id=str(user.id))
+    if export:
+      patient = export.patient_summary
+      learning = export.learning_materials
+      return DebriefDetail(
+        session_id=export.session_id,
+        condition_display=export.condition_display,
+        patient_name=patient.get("name", "Unknown"),
+        patient_age=f"{patient.get('age', '?')} {patient.get('age_unit', '')}",
+        summary=learning.teaching_goals[0] if learning.teaching_goals else "Case completed.",
+        strengths=[],  # Not stored separately in current schema
+        areas_for_improvement=[],
+        missed_items=[],
+        teaching_points=learning.teaching_goals,
+        follow_up_resources=[r.get("title", "") for r in learning.reading_list],
+        completed_at=export.completed_at,
+      )
+
+  # Try in-memory history
+  history = get_case_history()
+  export = history.get_by_session_id(session_id)
+
+  if not export:
+    raise HTTPException(status_code=404, detail=f"Debrief not found for case {session_id}")
+
+  patient = export.patient_summary
+  learning = export.learning_materials
+
+  return DebriefDetail(
+    session_id=export.session_id,
+    condition_display=export.condition_display,
+    patient_name=patient.get("name", "Unknown"),
+    patient_age=f"{patient.get('age', '?')} {patient.get('age_unit', '')}",
+    summary=learning.teaching_goals[0] if learning.teaching_goals else "Case completed.",
+    strengths=[],
+    areas_for_improvement=[],
+    missed_items=[],
+    teaching_points=learning.teaching_goals,
+    follow_up_resources=[r.get("title", "") for r in learning.reading_list],
+    completed_at=export.completed_at,
+  )
+
+
+@router.post("/{session_id}/question")
+async def ask_post_debrief_question(
+  session_id: str,
+  request: PostDebriefQuestionRequest,
+  user: Optional[User] = Depends(get_optional_user),
+) -> PostDebriefQuestionResponse:
+  """Ask a follow-up question about a completed case.
+
+  Allows learners to clarify, explore alternatives, or dive deeper
+  into teaching points from a case they've completed.
+  """
+  from ..core.tutor import Tutor
+
+  # Get the case export (need full context for Q&A)
+  export = None
+
+  if user and is_db_configured():
+    persistence = get_case_persistence()
+    export = persistence.get_case_export(session_id, user_id=str(user.id))
+
+  if not export:
+    history = get_case_history()
+    export = history.get_by_session_id(session_id)
+
+  if not export:
+    raise HTTPException(status_code=404, detail=f"Case {session_id} not found")
+
+  # Convert CaseExport to dict for tutor
+  export_dict = {
+    "session_id": export.session_id,
+    "condition_display": export.condition_display,
+    "patient_summary": export.patient_summary,
+    "case_summary": export.case_summary,
+    "learning_materials": export.learning_materials.model_dump() if hasattr(export.learning_materials, 'model_dump') else export.learning_materials,
+    "conversation_transcript": export.conversation_transcript,
+    "teaching_moments": export.teaching_moments,
+  }
+
+  # Get tutor response
+  tutor = Tutor()
+  result = await tutor.answer_post_debrief_question(
+    question=request.question,
+    case_export=export_dict,
+    previous_qa=request.previous_questions,
+  )
+
+  return PostDebriefQuestionResponse(
+    answer=result.get("answer", ""),
+    related_teaching_points=result.get("related_teaching_points", []),
+    citations=result.get("citations"),
   )
 
 

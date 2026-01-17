@@ -72,11 +72,48 @@ class CaseState(BaseModel):
   conversation: list[dict] = Field(default_factory=list)
 
 
+class CaseSeverity(str, Enum):
+  """Severity levels for case variants."""
+  MILD = "mild"
+  MODERATE = "moderate"
+  SEVERE = "severe"
+
+
+class AgeBracket(str, Enum):
+  """Age brackets for case variants."""
+  NEONATE = "neonate"      # 0-28 days
+  INFANT = "infant"        # 1-12 months
+  TODDLER = "toddler"      # 1-3 years
+  CHILD = "child"          # 3-12 years
+  ADOLESCENT = "adolescent"  # 12-18 years
+
+
+class CasePresentation(str, Enum):
+  """Presentation types for case variants."""
+  TYPICAL = "typical"
+  ATYPICAL = "atypical"
+  EARLY = "early"
+  LATE = "late"
+
+
+class CaseComplexity(str, Enum):
+  """Complexity levels for case variants."""
+  STRAIGHTFORWARD = "straightforward"
+  NUANCED = "nuanced"
+  CHALLENGING = "challenging"
+
+
 class StartCaseRequest(BaseModel):
   """Request to start a new case."""
   learner_level: LearnerLevel = LearnerLevel.STUDENT
   condition_key: Optional[str] = None  # Optional: request specific condition
   time_constraint: Optional[int] = None  # Minutes available
+
+  # Variant controls - None means Claude picks randomly
+  severity: Optional[CaseSeverity] = None
+  age_bracket: Optional[AgeBracket] = None
+  presentation: Optional[CasePresentation] = None
+  complexity: Optional[CaseComplexity] = None
 
 
 class CaseMessageRequest(BaseModel):
@@ -210,3 +247,34 @@ class CaseHistoryResponse(BaseModel):
   """List of completed cases."""
   cases: list[CompletedCaseSummary]
   total_count: int
+
+
+# ==================== POST-DEBRIEF Q&A ====================
+
+class DebriefDetail(BaseModel):
+  """Full debrief details for a completed case."""
+  session_id: str
+  condition_display: str
+  patient_name: str
+  patient_age: str
+  summary: str
+  strengths: list[str] = Field(default_factory=list)
+  areas_for_improvement: list[str] = Field(default_factory=list)
+  missed_items: list[str] = Field(default_factory=list)
+  teaching_points: list[str] = Field(default_factory=list)
+  follow_up_resources: list[str] = Field(default_factory=list)
+  completed_at: Optional[datetime] = None
+
+
+class PostDebriefQuestionRequest(BaseModel):
+  """Request to ask a follow-up question about a completed case."""
+  question: str
+  # Optional: include previous Q&A context for multi-turn conversation
+  previous_questions: list[dict] = Field(default_factory=list)  # [{question, answer}]
+
+
+class PostDebriefQuestionResponse(BaseModel):
+  """Response to a post-debrief question."""
+  answer: str
+  related_teaching_points: list[str] = Field(default_factory=list)
+  citations: Optional[list[dict]] = None

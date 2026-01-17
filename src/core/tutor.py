@@ -333,10 +333,20 @@ Respond with valid JSON only. No markdown, no code blocks:
     """Build a system prompt for case-based teaching with fluid voice."""
     patient = case_state.patient
     parent_styles = condition_info.get("parent_styles", [])
-    parent_style_info = next(
-      (s for s in parent_styles if s.get("key") == patient.parent_style),
-      {"description": "Concerned parent", "sample_lines": []}
-    )
+
+    # Handle both formats: list of dicts (old YAML) or list of strings (frameworks)
+    parent_style_info = {"description": "Concerned parent", "sample_lines": []}
+    if parent_styles:
+      if isinstance(parent_styles[0], dict):
+        # Old format: list of dicts with key, description, sample_lines
+        parent_style_info = next(
+          (s for s in parent_styles if s.get("key") == patient.parent_style),
+          {"description": "Concerned parent", "sample_lines": []}
+        )
+      elif isinstance(parent_styles[0], str):
+        # New framework format: just a list of style names
+        if patient.parent_style in parent_styles:
+          parent_style_info = {"description": patient.parent_style, "sample_lines": []}
 
     return f"""{self.system_prompt}
 
@@ -913,6 +923,108 @@ Keep it practical and memorable. They should leave with 2-3 things they'll actua
       parts.append(f"**Outcome**: {case.actual_outcome}")
 
     return "\n".join(parts) if parts else ""
+
+  # ==================== POST-DEBRIEF Q&A ====================
+
+  async def answer_post_debrief_question(
+    self,
+    question: str,
+    case_export: dict,
+    previous_qa: list[dict] = None,
+  ) -> dict:
+    """Answer a follow-up question about a completed case.
+
+    Args:
+      question: The learner's question
+      case_export: Full case export data (patient, conversation, debrief)
+      previous_qa: Previous questions and answers in this conversation
+
+    Returns:
+      dict with answer, related_teaching_points, citations
+    """
+    previous_qa = previous_qa or []
+
+    # Build case context
+    patient = case_export.get("patient_summary", {})
+    case_summary = case_export.get("case_summary", {})
+    learning_materials = case_export.get("learning_materials", {})
+    conversation = case_export.get("conversation_transcript", [])
+
+    # Summarize the conversation (limit to key exchanges)
+    convo_summary = []
+    for msg in conversation[-20:]:  # Last 20 messages max
+      role = "Learner" if msg.get("role") == "user" else "Echo"
+      convo_summary.append(f"{role}: {msg.get('content', '')[:200]}...")
+
+    # Build previous Q&A context
+    prev_qa_text = ""
+    if previous_qa:
+      prev_qa_text = "\n## Previous Questions in This Session\n"
+      for qa in previous_qa[-5:]:  # Last 5 Q&A pairs
+        prev_qa_text += f"Q: {qa.get('question', '')}\nA: {qa.get('answer', '')}\n\n"
+
+    prompt = f"""A learner has completed a case and is now asking a follow-up question during debrief review.
+
+## Case Context
+- **Patient**: {patient.get('name', 'Unknown')}, {patient.get('age', '?')} {patient.get('age_unit', '')}
+- **Condition**: {case_export.get('condition_display', 'Unknown')}
+- **Chief Complaint**: {patient.get('chief_complaint', 'Not recorded')}
+
+## What the Learner Did
+- **History gathered**: {', '.join(case_summary.get('history_gathered', [])) or 'Not recorded'}
+- **Exam performed**: {', '.join(case_summary.get('exam_performed', [])) or 'Not recorded'}
+- **Differential**: {', '.join(case_summary.get('differential', [])) or 'Not recorded'}
+- **Plan proposed**: {', '.join(case_summary.get('plan_proposed', [])) or 'Not recorded'}
+
+## Key Conversation Moments
+{chr(10).join(convo_summary[-10:])}
+
+## Teaching Points from This Case
+{chr(10).join(['- ' + tp for tp in learning_materials.get('teaching_points', [])])}
+
+## Clinical Pearls
+{chr(10).join(['- ' + cp for cp in learning_materials.get('clinical_pearls', [])])}
+
+{prev_qa_text}
+
+## Learner's Question
+"{question}"
+
+## Your Task
+Answer their question helpfully. You have full context of what happened in the case.
+
+Guidelines:
+- Be specific - reference what actually happened in the case
+- If they're asking "why", explain the clinical reasoning
+- If they're asking about alternatives, discuss trade-offs
+- Keep it conversational, not lecture-y
+- If the question relates to teaching points, reinforce them
+
+## Response Format
+Return valid JSON only:
+{{"answer": "Your helpful response", "related_teaching_points": ["Any teaching points this reinforces"]}}"""
+
+    response = self.client.messages.create(
+      model=self.model,
+      max_tokens=1024,
+      system=self.system_prompt,
+      messages=[{"role": "user", "content": prompt}]
+    )
+
+    content = clean_json_response(response.content[0].text)
+    try:
+      data = json.loads(content)
+      return {
+        "answer": data.get("answer", response.content[0].text),
+        "related_teaching_points": data.get("related_teaching_points", []),
+        "citations": None,
+      }
+    except json.JSONDecodeError:
+      return {
+        "answer": response.content[0].text,
+        "related_teaching_points": [],
+        "citations": None,
+      }
 
 
 @lru_cache

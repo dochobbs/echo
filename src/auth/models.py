@@ -8,6 +8,7 @@ from pydantic import BaseModel, EmailStr, Field
 
 
 LearnerLevel = Literal["student", "resident", "np_student", "fellow", "attending"]
+UserRole = Literal["learner", "admin"]
 
 
 class UserBase(BaseModel):
@@ -15,6 +16,7 @@ class UserBase(BaseModel):
   email: EmailStr
   name: Optional[str] = None
   level: LearnerLevel = "student"
+  role: UserRole = "learner"
   specialty_interest: Optional[str] = None
   institution: Optional[str] = None
 

@@ -14,6 +14,7 @@ class User(Base):
     password_hash = Column(String(255), nullable=False)
     name = Column(String(255))
     level = Column(String(50), default="student")
+    role = Column(String(50), default="learner")  # learner or admin
     specialty_interest = Column(String(255))
     institution = Column(String(255))
     created_at = Column(DateTime, default=datetime.utcnow)

@@ -12,6 +12,8 @@ from .config import get_settings
 from .routers import feedback, question, debrief, voice
 from .cases import case_router
 from .auth.router import router as auth_router
+from .admin.router import router as admin_router
+from .patients.router import router as patients_router
 from .frameworks.router import router as frameworks_router
 from .database import is_database_configured, create_tables
 
@@ -32,6 +34,8 @@ app.add_middleware(
 
 # Include routers
 app.include_router(auth_router)
+app.include_router(admin_router)
+app.include_router(patients_router)
 app.include_router(feedback.router, prefix="/feedback", tags=["feedback"])
 app.include_router(question.router, prefix="/question", tags=["question"])
 app.include_router(debrief.router, prefix="/debrief", tags=["debrief"])
