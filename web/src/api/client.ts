@@ -296,6 +296,49 @@ class ApiClient {
     return this.fetch(`/case/${sessionId}`);
   }
 
+  async getPatients(): Promise<{ patients: ImportedPatient[]; total_count: number }> {
+    return this.fetch('/patients');
+  }
+
+  async importPatient(file: File): Promise<{ patient: ImportedPatient; parse_warnings: string[] }> {
+    const formData = new FormData();
+    formData.append('file', file);
+    
+    const base = getApiBase();
+    const response = await fetch(`${base}/patients/import`, {
+      method: 'POST',
+      headers: {
+        ...(this.token ? { Authorization: `Bearer ${this.token}` } : {}),
+      },
+      body: formData,
+    });
+    
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ detail: 'Import failed' }));
+      throw new Error(error.detail || 'Import failed');
+    }
+    
+    return response.json();
+  }
+
+  async deletePatient(patientId: string): Promise<void> {
+    return this.fetch(`/patients/${patientId}`, { method: 'DELETE' });
+  }
+}
+
+export interface ImportedPatient {
+  id: string;
+  name: string;
+  birth_date?: string;
+  sex?: string;
+  age_months?: number;
+  problems: Array<{ display: string; status: string }>;
+  medications: Array<{ display: string; dose?: string; status: string }>;
+  allergies: Array<{ display: string; reaction?: string; severity?: string }>;
+  encounters: Array<{ date?: string; type?: string; reason?: string }>;
+  source: string;
+  source_file?: string;
+  imported_at: string;
 }
 
 export const api = new ApiClient();

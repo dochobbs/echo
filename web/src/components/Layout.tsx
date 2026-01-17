@@ -27,6 +27,7 @@ export function Layout() {
               { path: '/', label: 'Home' },
               ...(user ? [
                 { path: '/history', label: 'History' },
+                { path: '/patients', label: 'Patients' },
                 { path: '/profile', label: 'Profile' },
               ] : []),
             ].map((item) => (

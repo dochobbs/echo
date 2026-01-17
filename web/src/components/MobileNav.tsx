@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useAuth } from '../hooks/useAuth';
-import { HomeIcon, HistoryIcon, UserIcon, StethoscopeIcon, LoginIcon } from './icons';
+import { HomeIcon, HistoryIcon, UserIcon, StethoscopeIcon, LoginIcon, FolderIcon } from './icons';
 
 export function MobileNav() {
   const location = useLocation();
@@ -12,6 +12,7 @@ export function MobileNav() {
     { path: '/case', label: 'Case', Icon: StethoscopeIcon, requiresCase: true },
     ...(user ? [
       { path: '/history', label: 'History', Icon: HistoryIcon },
+      { path: '/patients', label: 'Patients', Icon: FolderIcon },
       { path: '/profile', label: 'Profile', Icon: UserIcon },
     ] : [
       { path: '/login', label: 'Sign in', Icon: LoginIcon },

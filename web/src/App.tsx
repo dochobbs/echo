@@ -7,6 +7,7 @@ import { Case } from './pages/Case';
 import { History } from './pages/History';
 import { Login } from './pages/Login';
 import { Profile } from './pages/Profile';
+import { Patients } from './pages/Patients';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -39,6 +40,11 @@ export default function App() {
             <Route path="/history" element={
               <ProtectedRoute>
                 <History />
+              </ProtectedRoute>
+            } />
+            <Route path="/patients" element={
+              <ProtectedRoute>
+                <Patients />
               </ProtectedRoute>
             } />
             <Route path="/profile" element={
