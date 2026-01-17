@@ -29,6 +29,7 @@ export function Layout() {
                 { path: '/history', label: 'History' },
                 { path: '/patients', label: 'Patients' },
                 { path: '/profile', label: 'Profile' },
+                ...(user.role === 'admin' ? [{ path: '/admin', label: 'Admin' }] : []),
               ] : []),
             ].map((item) => (
               <Link

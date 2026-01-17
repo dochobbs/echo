@@ -324,6 +324,69 @@ class ApiClient {
   async deletePatient(patientId: string): Promise<void> {
     return this.fetch(`/patients/${patientId}`, { method: 'DELETE' });
   }
+
+  async getAdminMetrics(): Promise<AdminMetrics> {
+    return this.fetch('/admin/metrics');
+  }
+
+  async getAdminUsers(limit = 50, offset = 0): Promise<AdminUser[]> {
+    return this.fetch(`/admin/users?limit=${limit}&offset=${offset}`);
+  }
+
+  async getAdminCases(limit = 50, offset = 0): Promise<AdminCase[]> {
+    return this.fetch(`/admin/cases?limit=${limit}&offset=${offset}`);
+  }
+
+  async getStruggleMetrics(): Promise<StruggleMetrics> {
+    return this.fetch('/admin/metrics/struggles');
+  }
+}
+
+export interface AdminMetrics {
+  total_users: number;
+  active_last_7_days: number;
+  active_last_30_days: number;
+  total_cases: number;
+  completed_cases: number;
+  active_cases: number;
+  avg_case_duration_minutes?: number;
+  avg_hints_per_case?: number;
+  completion_rate?: number;
+  most_practiced_conditions: Array<{ condition: string; count: number }>;
+  cases_by_day: Array<{ date: string; count: number }>;
+}
+
+export interface AdminUser {
+  id: string;
+  email: string;
+  name?: string;
+  level: string;
+  role: string;
+  institution?: string;
+  created_at: string;
+  last_active: string;
+  total_cases: number;
+  completed_cases: number;
+}
+
+export interface AdminCase {
+  session_id: string;
+  user_id?: string;
+  user_email?: string;
+  condition_display: string;
+  patient_name: string;
+  status: string;
+  phase: string;
+  started_at: string;
+  completed_at?: string;
+  duration_minutes?: number;
+  hints_given: number;
+}
+
+export interface StruggleMetrics {
+  common_stuck_phases: Array<{ phase: string; count: number }>;
+  high_hint_conditions: Array<{ condition: string; avg_hints: number }>;
+  avg_hints_by_level: Array<{ level: string; avg_hints: number }>;
 }
 
 export interface ImportedPatient {

@@ -6,6 +6,7 @@ export interface User {
   email: string;
   name?: string;
   level: LearnerLevel;
+  role?: 'learner' | 'admin';
   specialty_interest?: string;
   institution?: string;
   created_at: string;
