@@ -14,13 +14,16 @@ Echo is an AI-powered attending tutor for medical education. It provides persona
 
 Key modules:
 - `src/auth/` - Authentication with local JWT tokens
-- `src/cases/` - Case generation and history
+- `src/cases/` - Case generation, history, and dynamic case variants
 - `src/cds/` - Clinical decision support (dosing, guidelines)
 - `src/core/` - Core tutor functionality, citations, voice
 - `src/routers/` - API endpoints (feedback, question, debrief, voice)
 - `src/prompts/` - LLM prompt templates
 - `src/database.py` - SQLAlchemy database connection
 - `src/db_models.py` - SQLAlchemy ORM models (User, CaseSession, Message)
+- `src/admin/` - Admin dashboard and management endpoints
+- `src/patients/` - Patient import (CCDA parser) and management
+- `src/knowledge/` - Framework loader for teaching frameworks
 
 ### Frontend (React + Vite + TypeScript)
 - **Location**: `web/`
@@ -118,6 +121,17 @@ The app uses a "Clinical Calm" dark theme with Geist Mono font:
 - `Toast` - Notification toasts for milestones
 
 ## Recent Changes
+- 2026-01-17: Incorporated major platform updates
+  - Added 25 new pediatric teaching frameworks (now 125 total)
+  - Added admin dashboard module (`src/admin/`)
+  - Added patient import with CCDA parser (`src/patients/`)
+  - Added dynamic case variants generator
+  - Enhanced debrief with Q&A capability
+  - Improved tutor prompt with framework integration
+- 2026-01-17: Fixed case resumption and describe feature
+  - Users can now resume active cases from history page
+  - "Describe a Case" properly sends initial description
+  - Added error handling for failed case loads
 - 2026-01-04: Integrated 100 teaching frameworks for dynamic case generation
   - Added knowledge/frameworks/ with full pediatric curriculum YAML files
   - Created src/frameworks/ module with loader and API router
