@@ -1,0 +1,74 @@
+# Roseola - Teaching Framework
+topic: "Roseola Infantum"
+aliases: ["exanthem subitum", "sixth disease", "HHV-6", "three-day fever"]
+category: infectious
+age_range_months: [6, 36]
+
+teaching_goals:
+  - "Recognize classic presentation pattern"
+  - "Understand rash appears as fever resolves"
+  - "Know about febrile seizure risk"
+  - "Differentiate from other viral exanthems"
+  - "Counsel on supportive care"
+
+common_mistakes:
+  - "Treating with antibiotics during fever phase"
+  - "Diagnosing rash too early (before fever defervescence)"
+  - "Missing febrile seizure as presenting symptom"
+  - "Unnecessary workup during high fever phase"
+  - "Confusing with measles or rubella"
+
+red_flags:
+  - "Prolonged or complex febrile seizure"
+  - "Persistent fever > 5 days"
+  - "Toxic appearance"
+  - "Signs of encephalitis (altered mental status)"
+  - "Immunocompromised patient"
+
+clinical_pearls:
+  - "Classic: 3-5 days high fever (often 104F+), then rash as fever breaks"
+  - "Rash: rose-pink macules and papules, starts on trunk, spreads outward"
+  - "Rash is non-pruritic, blanching"
+  - "Child typically looks well despite high fever"
+  - "HHV-6 causes 95% of cases; HHV-7 causes remainder"
+  - "Peak age: 6-15 months"
+  - "Febrile seizures occur in 10-15% of cases"
+  - "By age 2, nearly all children have been infected"
+
+key_history_questions:
+  - "Duration and pattern of fever?"
+  - "When did rash appear relative to fever?"
+  - "Child's behavior during fever - well-appearing or ill?"
+  - "Any seizure activity?"
+  - "Rash itchy?"
+  - "Other symptoms: URI, diarrhea?"
+  - "Sick contacts?"
+  - "Immunization status?"
+
+key_exam_findings:
+  - "Rash distribution: trunk first, then extremities"
+  - "Rash character: blanching, maculopapular, rose-pink"
+  - "Periorbital edema (common)"
+  - "Mild lymphadenopathy (occipital, cervical)"
+  - "Examination otherwise unremarkable"
+  - "Red tympanic membranes common (not necessarily AOM)"
+
+treatment_principles:
+  - "Supportive care only"
+  - "Antipyretics for fever/comfort"
+  - "Adequate hydration"
+  - "No antiviral treatment needed"
+  - "No isolation necessary once afebrile"
+  - "Febrile seizure precautions during fever phase"
+
+disposition_guidance:
+  - "Outpatient: All typical cases"
+  - "Return precautions: Persistent fever > 5 days, seizure, lethargy"
+  - "Daycare: Can return when afebrile; rash is not contagious stage"
+  - "Follow-up: Not routinely needed if classic presentation"
+
+parent_styles: [anxious, first-time-parent, fever-phobic]
+
+sources:
+  - "AAP Red Book: Human Herpesvirus 6 and 7"
+  - "CDC: Exanthem Subitum"

@@ -1,0 +1,77 @@
+# Molluscum Contagiosum - Teaching Framework
+topic: "Molluscum Contagiosum"
+aliases: ["molluscum", "water warts"]
+category: dermatology
+age_range_months: [12, 144]
+
+teaching_goals:
+  - "Recognize characteristic appearance"
+  - "Understand natural history and resolution"
+  - "Know treatment options and when to treat"
+  - "Counsel on transmission prevention"
+  - "Recognize when to refer"
+
+common_mistakes:
+  - "Over-treating a self-limited condition"
+  - "Not counseling on transmission"
+  - "Missing extensive disease in immunocompromised"
+  - "Confusing with warts"
+  - "Aggressive treatment causing scarring"
+
+red_flags:
+  - "Extensive or rapidly spreading lesions"
+  - "Giant molluscum (> 1 cm)"
+  - "Facial involvement near eyes"
+  - "Immunocompromised patient"
+  - "Secondary bacterial infection"
+  - "Lesions in genital area (consider abuse in children)"
+
+clinical_pearls:
+  - "Pearly, flesh-colored papules with central umbilication"
+  - "Central dimple (umbilication) is key diagnostic feature"
+  - "Caused by poxvirus, spread by direct contact or fomites"
+  - "Self-limited: resolves in 6-18 months (range 6 months to 5 years)"
+  - "Autoinoculation common - lesions spread in clusters"
+  - "Eczema predisposes to widespread disease"
+  - "BOTE (beginning of the end) sign: surrounding dermatitis heralds resolution"
+  - "Curettage, cryotherapy, cantharidin are treatment options"
+
+key_history_questions:
+  - "How long have lesions been present?"
+  - "Are they spreading?"
+  - "Any itching?"
+  - "History of eczema?"
+  - "Sick contacts with similar lesions?"
+  - "Swimming or contact sports?"
+  - "Any treatments tried?"
+  - "Immunocompromising conditions?"
+
+key_exam_findings:
+  - "Discrete, dome-shaped papules"
+  - "Central umbilication (dimple)"
+  - "Flesh-colored, pink, or white"
+  - "Usually 2-5 mm diameter"
+  - "Distribution: trunk, extremities, face"
+  - "May have surrounding eczematous dermatitis"
+  - "Signs of secondary infection"
+
+treatment_principles:
+  - "Watchful waiting is appropriate - self-limited"
+  - "Treat if: symptomatic, spreading rapidly, social impact, sports restriction"
+  - "Options: cryotherapy, curettage, cantharidin"
+  - "Topical: imiquimod, tretinoin (off-label)"
+  - "Avoid sharing towels, direct skin contact with lesions"
+  - "Cover lesions for swimming, contact sports"
+  - "Aggressive treatment may cause scarring"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Observation: Acceptable for limited, non-bothersome lesions"
+  - "Dermatology referral: Extensive, facial, immunocompromised, treatment failure"
+  - "Follow-up: As needed for treatment or progression"
+
+parent_styles: [cosmetically-concerned, worried-about-spread, wanting-quick-fix]
+
+sources:
+  - "AAP Red Book: Molluscum Contagiosum"
+  - "AAD: Molluscum Contagiosum Treatment"

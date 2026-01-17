@@ -1,0 +1,84 @@
+# Chronic Cough - Teaching Framework
+topic: "Chronic Cough"
+aliases: ["persistent cough", "prolonged cough"]
+category: respiratory
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Define chronic cough (> 4 weeks)"
+  - "Recognize common causes by age group"
+  - "Know when chest X-ray and other workup needed"
+  - "Understand cough pointers suggesting specific diagnoses"
+  - "Avoid unnecessary cough suppressants"
+
+common_mistakes:
+  - "Treating with cough suppressants without diagnosis"
+  - "Missing asthma as cause"
+  - "Not asking about cough quality and timing"
+  - "Overlooking post-nasal drip"
+  - "Missing foreign body aspiration"
+  - "Not considering pertussis"
+
+red_flags:
+  - "Hemoptysis"
+  - "Digital clubbing"
+  - "Failure to thrive"
+  - "Wet/productive cough daily for > 4 weeks"
+  - "Recurrent pneumonia"
+  - "Choking episode suggesting aspiration"
+  - "Night sweats, weight loss"
+  - "Neonatal onset"
+
+clinical_pearls:
+  - "Chronic cough: > 4 weeks duration"
+  - "Wet cough: suggests bacterial bronchitis, bronchiectasis"
+  - "Dry cough + wheeze: think asthma"
+  - "Barky cough: croup, habit cough"
+  - "Paroxysmal with whoop/post-tussive vomiting: pertussis"
+  - "Worse at night: asthma, post-nasal drip"
+  - "Post-viral cough can last 3-4 weeks (not chronic yet)"
+  - "Habit cough: absent during sleep, honking quality"
+
+key_history_questions:
+  - "Duration of cough?"
+  - "Dry or wet/productive?"
+  - "Worse at certain times (night, exercise, eating)?"
+  - "Associated wheeze or shortness of breath?"
+  - "Any choking episode or aspiration risk?"
+  - "Fever, weight loss, night sweats?"
+  - "Environmental exposures (smoke, allergens)?"
+  - "Response to previous treatments?"
+  - "History of atopy (eczema, allergies)?"
+  - "Immunization status (pertussis)?"
+
+key_exam_findings:
+  - "Respiratory rate and work of breathing"
+  - "Auscultation: wheeze, crackles, asymmetry"
+  - "Digital clubbing"
+  - "Nasal exam: allergic rhinitis signs"
+  - "Tonsil and adenoid size"
+  - "Growth parameters"
+  - "Eczema or other atopic signs"
+
+treatment_principles:
+  - "Treat underlying cause, not just the cough"
+  - "Post-nasal drip: treat allergic rhinitis"
+  - "Asthma: inhaled corticosteroids, bronchodilators"
+  - "Bacterial bronchitis: 2-4 weeks amoxicillin-clavulanate"
+  - "Pertussis: macrolide (azithromycin)"
+  - "Avoid OTC cough suppressants (ineffective, potentially harmful)"
+  - "Habit cough: speech therapy, suggestion therapy"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "CXR indicated: Wet cough > 4 weeks, red flags, no clear cause"
+  - "Pulmonology referral: Failed empiric treatment, concerning features"
+  - "Sweat test: Recurrent pneumonia, failure to thrive"
+  - "Bronchoscopy: Suspected foreign body, localized findings"
+  - "Follow-up: 2-4 weeks after treatment initiation"
+
+parent_styles: [frustrated-by-persistence, antibiotic-seeking, worried-about-lungs]
+
+sources:
+  - "ATS/CHEST: Chronic Cough in Children Guidelines"
+  - "AAP: Approach to Chronic Cough"

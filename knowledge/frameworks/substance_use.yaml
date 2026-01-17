@@ -1,0 +1,86 @@
+# Substance Use - Teaching Framework
+topic: "Adolescent Substance Use"
+aliases: ["substance abuse", "drug use", "alcohol use", "vaping"]
+category: mental_health
+age_range_months: [120, 216]
+
+teaching_goals:
+  - "Screen all adolescents using CRAFFT or similar"
+  - "Perform brief intervention (motivational interviewing)"
+  - "Recognize substance use disorders"
+  - "Know when referral to treatment is needed"
+  - "Understand harm reduction principles"
+
+common_mistakes:
+  - "Not screening confidentially"
+  - "Being judgmental or confrontational"
+  - "Missing co-occurring mental health disorders"
+  - "Underestimating vaping/nicotine addiction"
+  - "Not involving appropriate family support"
+  - "Breaking confidentiality inappropriately"
+
+red_flags:
+  - "Opioid use (overdose risk)"
+  - "IV drug use"
+  - "Withdrawal symptoms"
+  - "Blackouts or loss of control"
+  - "Interference with school, relationships, functioning"
+  - "Co-occurring suicidality or psychosis"
+  - "Driving while intoxicated"
+  - "Polysubstance use"
+
+clinical_pearls:
+  - "CRAFFT screening: Car, Relax, Alone, Forget, Friends, Trouble"
+  - "Score ≥ 2 suggests problem use requiring intervention"
+  - "Confidentiality is essential for honest disclosure"
+  - "Most adolescents experiment; identify those with disorder"
+  - "Brief intervention: non-judgmental feedback, change talk"
+  - "Vaping: nicotine dependence develops quickly"
+  - "Cannabis use in adolescence affects brain development"
+  - "Early use = higher addiction risk"
+
+key_history_questions:
+  - "Have you ever ridden in a CAR driven by someone using drugs/alcohol?"
+  - "Do you use drugs/alcohol to RELAX or fit in?"
+  - "Do you ever use ALONE?"
+  - "Do you ever FORGET things while using?"
+  - "Do FRIENDS or family tell you to cut down?"
+  - "Have you gotten into TROUBLE while using?"
+  - "What substances and how often?"
+  - "Any consequences: school, legal, relationships?"
+  - "Mental health symptoms: depression, anxiety?"
+  - "Family history of addiction?"
+
+key_exam_findings:
+  - "Vital signs (tachycardia with stimulants, withdrawal)"
+  - "Pupil size and reactivity"
+  - "Nasal mucosa (irritation from snorting)"
+  - "Track marks (IV use)"
+  - "Dental exam (meth mouth)"
+  - "Mental status exam"
+  - "Signs of intoxication or withdrawal"
+
+treatment_principles:
+  - "Screen all adolescents at well visits (SBIRT model)"
+  - "Brief intervention for risky use"
+  - "Motivational interviewing: explore ambivalence"
+  - "Referral to treatment for substance use disorder"
+  - "Treat co-occurring mental health conditions"
+  - "Harm reduction: safer use, naloxone education"
+  - "Consider medication-assisted treatment for opioids"
+  - "Family involvement when appropriate"
+
+disposition_guidance:
+  - "Outpatient brief intervention: Risky use without disorder"
+  - "Outpatient addiction treatment: Mild-moderate SUD"
+  - "Intensive outpatient/day treatment: Moderate SUD"
+  - "Residential treatment: Severe SUD, failed outpatient"
+  - "Emergency: Intoxication, overdose, withdrawal, suicidality"
+  - "Naloxone prescription: For opioid users and their families"
+
+parent_styles: [in-denial, angry, enabling, supportive-and-scared]
+
+sources:
+  - "AAP: Substance Use Screening and Brief Intervention"
+  - "NIDA: Principles of Adolescent Substance Use Disorder Treatment"
+  - "SAMHSA: SBIRT Resources"

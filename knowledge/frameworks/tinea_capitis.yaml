@@ -1,0 +1,75 @@
+# Tinea Capitis - Teaching Framework
+topic: "Tinea Capitis"
+aliases: ["scalp ringworm", "ringworm of the scalp"]
+category: dermatology
+age_range_months: [24, 144]
+
+teaching_goals:
+  - "Recognize varied presentations"
+  - "Know that oral treatment is required (topical inadequate)"
+  - "Understand importance of adjunctive antifungal shampoo"
+  - "Identify kerion as inflammatory variant"
+  - "Counsel on transmission prevention"
+
+common_mistakes:
+  - "Treating with topical antifungals alone (doesn't penetrate hair follicle)"
+  - "Mistaking kerion for bacterial abscess and incising"
+  - "Missing seborrheic dermatitis or alopecia areata"
+  - "Not treating for adequate duration"
+  - "Not checking contacts"
+
+red_flags:
+  - "Kerion (boggy, painful, purulent mass) - NOT an abscess"
+  - "Permanent scarring alopecia"
+  - "Cervical lymphadenopathy (common with kerion)"
+  - "Secondary bacterial infection"
+  - "Id reaction (widespread dermatitis)"
+
+clinical_pearls:
+  - "Scaly patches with hair loss and broken hairs ('black dot')"
+  - "Most common cause in US: Trichophyton tonsurans"
+  - "Kerion: inflammatory boggy mass, often misdiagnosed as abscess"
+  - "Do NOT incise kerion - treat with oral antifungal + steroids"
+  - "Oral griseofulvin is first-line: 6-8 weeks (sometimes longer)"
+  - "Terbinafine: 2-4 weeks, increasing use"
+  - "Antifungal shampoo (selenium sulfide, ketoconazole) reduces transmission"
+  - "Can return to school after starting treatment"
+
+key_history_questions:
+  - "When did you first notice hair loss or scaling?"
+  - "Is it itchy?"
+  - "Any other family members or contacts with similar symptoms?"
+  - "Any pets (cats, dogs) with skin problems?"
+  - "Previous treatments tried?"
+  - "Any drainage or pain?"
+
+key_exam_findings:
+  - "Scaly patches on scalp"
+  - "Broken hairs, black dots at follicles"
+  - "Patchy alopecia"
+  - "Kerion: boggy, tender mass with pustules"
+  - "Posterior cervical lymphadenopathy"
+  - "Wood's lamp: usually negative (T. tonsurans doesn't fluoresce)"
+
+treatment_principles:
+  - "Oral antifungal REQUIRED (topical doesn't penetrate)"
+  - "First-line: griseofulvin microsize 20-25 mg/kg/day x 6-8 weeks"
+  - "Alternative: terbinafine (weight-based dosing) x 2-4 weeks"
+  - "Take with fatty food to improve absorption (griseofulvin)"
+  - "Adjunctive: antifungal shampoo 2-3x/week"
+  - "Kerion: oral antifungal + short course oral steroids"
+  - "Treat until clinical AND microscopic cure"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Confirm diagnosis: KOH prep or fungal culture if uncertain"
+  - "School: Can attend with treatment + adjunctive shampoo"
+  - "Household contacts: Examine, treat if affected, use antifungal shampoo"
+  - "Follow-up: 4-6 weeks to assess response, may need extended treatment"
+  - "Dermatology referral: Treatment failure, uncertain diagnosis"
+
+parent_styles: [embarrassed, worried-about-permanent-hair-loss, school-policy-focused]
+
+sources:
+  - "AAP Red Book: Tinea Capitis"
+  - "AAD: Tinea Capitis Treatment Guidelines"

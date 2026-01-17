@@ -1,0 +1,75 @@
+# Innocent Heart Murmurs - Teaching Framework
+topic: "Innocent Heart Murmurs"
+aliases: ["functional murmur", "benign murmur", "Still's murmur", "physiologic murmur"]
+category: cardiovascular
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Recognize characteristics of innocent murmurs"
+  - "Distinguish innocent from pathologic murmurs"
+  - "Know when referral to cardiology is needed"
+  - "Counsel families appropriately"
+  - "Understand types: Still's, venous hum, pulmonary flow"
+
+common_mistakes:
+  - "Referring every murmur to cardiology"
+  - "Obtaining unnecessary echocardiograms"
+  - "Missing red flags suggesting pathology"
+  - "Inadequate parental counseling causing anxiety"
+  - "Not examining in multiple positions"
+
+red_flags:
+  - "Diastolic murmur"
+  - "Grade 3+ holosystolic murmur"
+  - "Harsh or blowing quality"
+  - "Associated symptoms (syncope, chest pain, dyspnea)"
+  - "Abnormal pulses or blood pressure"
+  - "Failure to thrive"
+  - "Cyanosis or poor perfusion"
+  - "Family history of sudden cardiac death"
+
+clinical_pearls:
+  - "Still's murmur: musical, vibratory, grade 1-2, LLSB, louder supine"
+  - "Venous hum: continuous, disappears when supine or with neck turning"
+  - "Pulmonary flow murmur: soft systolic at LUSB, common in thin children"
+  - "Innocent murmurs are ALWAYS systolic (except venous hum)"
+  - "Change with position - pathologic murmurs typically don't"
+  - "50-90% of children have an audible murmur at some point"
+  - "Fever, anemia, anxiety increase intensity of innocent murmurs"
+
+key_history_questions:
+  - "Any symptoms: chest pain, palpitations, syncope, exercise intolerance?"
+  - "Blue spells or shortness of breath?"
+  - "Failure to thrive or feeding difficulties (infants)?"
+  - "Family history of congenital heart disease or sudden death?"
+  - "When was murmur first noted?"
+  - "Recent illness or fever?"
+  - "Activity level compared to peers?"
+
+key_exam_findings:
+  - "Murmur characteristics: timing, location, grade, radiation, quality"
+  - "Change with position (supine vs sitting vs standing)"
+  - "Peripheral pulses (femoral, brachial)"
+  - "Blood pressure in arms"
+  - "Hepatomegaly"
+  - "Signs of heart failure"
+  - "Growth parameters"
+
+treatment_principles:
+  - "Reassurance for classic innocent murmur"
+  - "No activity restrictions needed"
+  - "No endocarditis prophylaxis required"
+  - "Re-examine if febrile or symptomatic"
+  - "Document murmur characteristics for future comparison"
+
+disposition_guidance:
+  - "Outpatient: Classic innocent murmur with no red flags"
+  - "Cardiology referral: Diastolic murmur, symptoms, abnormal pulses, FTT"
+  - "Echo indicated: Pathologic features, symptomatic, family history"
+  - "Follow-up: Routine well visits, re-examine if symptomatic"
+
+parent_styles: [anxious, reassurance-seeking, family-history-concerned]
+
+sources:
+  - "AAP: Evaluation of Heart Murmurs in Children"
+  - "AHA Scientific Statement on Innocent Murmurs"

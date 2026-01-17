@@ -1,0 +1,82 @@
+# Growing Pains - Teaching Framework
+topic: "Growing Pains"
+aliases: ["benign nocturnal limb pains", "recurrent limb pain of childhood"]
+category: musculoskeletal
+age_range_months: [36, 144]
+
+teaching_goals:
+  - "Recognize classic pattern of growing pains"
+  - "Distinguish from concerning causes of limb pain"
+  - "Know when workup is indicated"
+  - "Counsel on benign nature and management"
+  - "Identify red flags suggesting other diagnoses"
+
+common_mistakes:
+  - "Ordering unnecessary imaging for classic presentation"
+  - "Missing inflammatory or malignant causes"
+  - "Attributing daytime or joint pain to growing pains"
+  - "Not examining for joint swelling or limited ROM"
+  - "Failing to provide reassurance"
+
+red_flags:
+  - "Daytime pain or limping"
+  - "Joint swelling, warmth, or redness"
+  - "Systemic symptoms (fever, weight loss, fatigue)"
+  - "Pain that wakes from sleep and doesn't resolve with comfort"
+  - "Unilateral bone pain"
+  - "Morning stiffness > 15 minutes"
+  - "Limited range of motion"
+  - "Point tenderness over bone"
+
+clinical_pearls:
+  - "Classic: bilateral, lower extremity, muscle pain (not joints)"
+  - "Occurs late day or awakens child at night"
+  - "Relieved by massage, heat, or comfort measures"
+  - "Completely normal exam the next morning"
+  - "Peak ages: 3-5 and 8-12 years"
+  - "Not actually related to growth - mechanism unknown"
+  - "May be related to overuse or low pain threshold"
+  - "Family history often positive"
+
+key_history_questions:
+  - "Location: muscles or joints?"
+  - "Bilateral or unilateral?"
+  - "Time of day pain occurs?"
+  - "Does pain wake from sleep? Does it resolve?"
+  - "Any limping?"
+  - "Activity level - increased recently?"
+  - "Systemic symptoms: fever, weight loss, fatigue?"
+  - "Morning stiffness?"
+  - "Family history of growing pains?"
+
+key_exam_findings:
+  - "Normal examination required for diagnosis"
+  - "No joint swelling, warmth, or redness"
+  - "Full range of motion"
+  - "Normal gait"
+  - "No point tenderness over bones"
+  - "Normal muscle strength"
+  - "Normal growth parameters"
+
+treatment_principles:
+  - "Reassurance - benign and self-limited"
+  - "Massage affected areas"
+  - "Heating pad or warm bath before bed"
+  - "Stretching exercises"
+  - "NSAIDs or acetaminophen for severe episodes"
+  - "Regular physical activity (not restriction)"
+  - "Typically resolves by adolescence"
+
+disposition_guidance:
+  - "Outpatient: Classic presentation with normal exam"
+  - "Labs if concerning: CBC, ESR, CRP"
+  - "Imaging if: limp, unilateral, bone tenderness, abnormal exam"
+  - "Rheumatology referral: Joint involvement, morning stiffness, systemic symptoms"
+  - "Oncology workup: Night sweats, weight loss, bone pain, cytopenias"
+  - "Follow-up: If symptoms worsen or new features develop"
+
+parent_styles: [worried-about-serious-illness, seeking-reassurance, experienced]
+
+sources:
+  - "AAP: Growing Pains in Children"
+  - "Pediatric Rheumatology Clinical Practice"

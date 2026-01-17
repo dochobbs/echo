@@ -1,0 +1,71 @@
+# Hand-Foot-Mouth Disease - Teaching Framework
+topic: "Hand-Foot-Mouth Disease"
+aliases: ["HFMD", "coxsackie", "enterovirus"]
+category: infectious
+age_range_months: [6, 60]
+
+teaching_goals:
+  - "Recognize classic distribution of lesions"
+  - "Understand it's a clinical diagnosis"
+  - "Know when to worry about dehydration"
+  - "Counsel on pain management and oral intake"
+  - "Understand atypical presentations"
+
+common_mistakes:
+  - "Prescribing antibiotics"
+  - "Confusing with HSV gingivostomatitis"
+  - "Not addressing dehydration risk"
+  - "Excessive daycare exclusion"
+  - "Missing atypical presentations (widespread rash)"
+
+red_flags:
+  - "Severe dehydration"
+  - "Neurological symptoms (rare EV71 complication)"
+  - "High persistent fever > 3 days"
+  - "Lethargy or irritability out of proportion"
+  - "Nail changes weeks later (onychomadesis - benign)"
+
+clinical_pearls:
+  - "Classic triad: oral ulcers, palmar/plantar vesicles, +/- buttock lesions"
+  - "Oral lesions most painful - cause poor intake"
+  - "Self-limited: 7-10 days"
+  - "Most contagious in first week"
+  - "Atypical HFMD: widespread vesicles, can mimic chickenpox"
+  - "Coxsackie A6 causes more extensive rash"
+  - "Onychomadesis (nail shedding) can occur weeks later - benign"
+
+key_history_questions:
+  - "Fever history?"
+  - "Oral intake - any signs of dehydration?"
+  - "Rash distribution?"
+  - "Sick contacts or daycare outbreak?"
+  - "Prior HFMD (can recur with different serotypes)?"
+  - "Pain with eating?"
+
+key_exam_findings:
+  - "Oral ulcers (tongue, buccal mucosa, palate)"
+  - "Vesicles on hands (palms, fingers)"
+  - "Vesicles on feet (soles)"
+  - "Buttock or knee involvement"
+  - "Hydration status"
+  - "General appearance"
+
+treatment_principles:
+  - "Supportive care only"
+  - "Pain control: acetaminophen, ibuprofen"
+  - "Magic mouthwash for oral pain if needed"
+  - "Cold foods and fluids for comfort"
+  - "Monitor for dehydration"
+  - "No antibiotics or antivirals"
+
+disposition_guidance:
+  - "Outpatient: Nearly all cases"
+  - "Urgent evaluation: Signs of dehydration, neurological symptoms"
+  - "Daycare: Can return when fever-free, lesions not necessarily crusted"
+  - "Follow-up: If worsening or poor oral intake"
+
+parent_styles: [anxious, daycare-policy-focused, experienced]
+
+sources:
+  - "CDC: Hand, Foot, and Mouth Disease"
+  - "AAP Red Book"

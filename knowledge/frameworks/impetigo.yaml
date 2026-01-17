@@ -1,0 +1,76 @@
+# Impetigo - Teaching Framework
+topic: "Impetigo"
+aliases: ["school sores", "bullous impetigo", "non-bullous impetigo"]
+category: infectious
+age_range_months: [6, 144]
+
+teaching_goals:
+  - "Distinguish non-bullous from bullous impetigo"
+  - "Know when topical vs oral antibiotics indicated"
+  - "Understand transmission and school exclusion"
+  - "Recognize complications"
+  - "Choose appropriate antibiotic coverage"
+
+common_mistakes:
+  - "Using topical antibiotics for extensive disease"
+  - "Missing MRSA in treatment failures"
+  - "Inadequate wound hygiene instruction"
+  - "Not covering for S. aureus"
+  - "Excessive school exclusion"
+
+red_flags:
+  - "Periorbital involvement (risk of cellulitis)"
+  - "Rapidly spreading despite treatment"
+  - "Systemic symptoms (fever, lymphadenopathy)"
+  - "Signs of deeper infection"
+  - "Immunocompromised patient"
+  - "Post-streptococcal glomerulonephritis (hematuria, edema)"
+
+clinical_pearls:
+  - "Non-bullous (most common): honey-crusted lesions, S. aureus and/or GAS"
+  - "Bullous: flaccid blisters that rupture, S. aureus toxin-mediated"
+  - "Ecthyma: ulcerative form, deeper dermis involvement"
+  - "Topical mupirocin or retapamulin for localized disease"
+  - "Oral antibiotics for extensive, bullous, or treatment failure"
+  - "Cover for S. aureus (including MRSA in high-prevalence areas)"
+  - "Post-strep glomerulonephritis can follow GAS impetigo"
+  - "Contagious until 24-48h after starting antibiotics"
+
+key_history_questions:
+  - "When did lesions start?"
+  - "How are they spreading?"
+  - "Any preceding insect bites, cuts, or eczema?"
+  - "Fever?"
+  - "Sick contacts?"
+  - "Previous skin infections? MRSA history?"
+  - "Any treatments tried?"
+
+key_exam_findings:
+  - "Non-bullous: erythematous papules → vesicles → honey-crusted erosions"
+  - "Bullous: flaccid bullae with clear/cloudy fluid → thin brown crust"
+  - "Distribution: face (around nose, mouth), extremities"
+  - "Regional lymphadenopathy"
+  - "Signs of secondary spread"
+  - "Deeper tissue involvement (ecthyma)"
+
+treatment_principles:
+  - "Localized non-bullous: topical mupirocin TID x 5-7 days"
+  - "Extensive, bullous, or treatment failure: oral antibiotics"
+  - "First-line oral: cephalexin or dicloxacillin"
+  - "MRSA coverage: TMP-SMX, clindamycin, or doxycycline (if > 8 years)"
+  - "Wound hygiene: gentle washing, remove crusts"
+  - "Cover lesions"
+  - "Treat underlying eczema if present"
+
+disposition_guidance:
+  - "Outpatient: All typical cases"
+  - "School exclusion: Until 24h after starting treatment and lesions can be covered"
+  - "Return: Worsening despite 48h of treatment, new systemic symptoms"
+  - "Monitor urine: Dark/cola-colored urine suggests PSGN (1-2 weeks after GAS)"
+  - "Culture: Treatment failure, recurrent, suspected MRSA"
+
+parent_styles: [worried-about-scarring, frustrated-by-spread, school-policy-focused]
+
+sources:
+  - "AAP Red Book: Staphylococcal and Streptococcal Skin Infections"
+  - "IDSA: Skin and Soft Tissue Infections Guidelines"

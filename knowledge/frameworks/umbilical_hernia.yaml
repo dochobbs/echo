@@ -1,0 +1,75 @@
+# Umbilical Hernia - Teaching Framework
+topic: "Umbilical Hernia"
+aliases: ["belly button hernia", "umbilical bulge"]
+category: surgical
+age_range_months: [0, 60]
+
+teaching_goals:
+  - "Recognize umbilical hernia and distinguish from other masses"
+  - "Understand natural history and resolution rates"
+  - "Know indications for surgical referral"
+  - "Counsel families on watchful waiting"
+  - "Identify signs of incarceration"
+
+common_mistakes:
+  - "Referring all umbilical hernias for surgery"
+  - "Recommending taping or binding (doesn't work)"
+  - "Not recognizing signs of incarceration"
+  - "Missing other causes of umbilical mass"
+  - "Unnecessary worry in small hernias"
+
+red_flags:
+  - "Irreducible hernia (possible incarceration)"
+  - "Pain, tenderness at hernia site"
+  - "Skin color change over hernia"
+  - "Vomiting with distension"
+  - "Hernia > 2 cm that isn't closing by age 4-5"
+  - "Rapidly enlarging hernia"
+
+clinical_pearls:
+  - "Very common: 10-30% of newborns, higher in African Americans"
+  - "Most close spontaneously by age 4-5 years"
+  - "Defect < 1 cm: 90% close by age 4"
+  - "Defect > 1.5 cm: less likely to close spontaneously"
+  - "Incarceration rare in children (unlike adults)"
+  - "Taping, coins, binders do NOT help and may cause skin breakdown"
+  - "Proboscoid (long, protruding) hernias often referred earlier"
+  - "Usually reducible - demonstrate this to reassure parents"
+
+key_history_questions:
+  - "When first noticed?"
+  - "Getting bigger or same size?"
+  - "Does it reduce when baby is calm/sleeping?"
+  - "Any episodes where it wouldn't go back in?"
+  - "Pain, vomiting, or behavior changes?"
+  - "Does it bother the child?"
+  - "Prematurity?"
+
+key_exam_findings:
+  - "Soft, non-tender bulge at umbilicus"
+  - "Increases with crying, straining, coughing"
+  - "Easily reducible"
+  - "Measure fascial defect size"
+  - "No skin changes"
+  - "If irreducible: concerning for incarceration"
+
+treatment_principles:
+  - "Watchful waiting for most hernias < age 4-5"
+  - "No taping, binding, or home remedies"
+  - "Surgery if: still present at age 4-5, defect > 1.5-2 cm, symptoms"
+  - "Earlier surgery for: incarceration, symptomatic, proboscoid"
+  - "Outpatient umbilical herniorrhaphy when needed"
+  - "Reduce incarcerated hernia if possible, then urgent surgery"
+
+disposition_guidance:
+  - "Outpatient: Most cases with observation"
+  - "Pediatric surgery referral: Large defect (> 1.5-2 cm), age > 4-5, symptomatic"
+  - "Urgent surgical evaluation: Incarcerated hernia, irreducible"
+  - "Emergency: Signs of strangulation (skin changes, severe pain, vomiting)"
+  - "Follow-up: Annual well-child visits to monitor size"
+
+parent_styles: [worried-about-appearance, wanting-surgery, reassured-by-watchful-waiting]
+
+sources:
+  - "AAP: Umbilical Hernia"
+  - "Pediatric Surgery Guidelines"

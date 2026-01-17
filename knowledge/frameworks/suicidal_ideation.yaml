@@ -1,0 +1,84 @@
+# Suicidal Ideation - Teaching Framework
+topic: "Suicidal Ideation"
+aliases: ["SI", "suicidality", "self-harm thoughts"]
+category: mental_health
+age_range_months: [120, 216]
+
+teaching_goals:
+  - "Screen all adolescents for suicidal ideation"
+  - "Distinguish passive from active ideation"
+  - "Assess plan, means, and intent"
+  - "Know safety planning principles"
+  - "Understand when hospitalization is needed"
+
+common_mistakes:
+  - "Not asking directly about suicidal thoughts"
+  - "Assuming talking about it increases risk (myth)"
+  - "Missing warning signs"
+  - "Not involving parents appropriately"
+  - "Sending home without safety plan"
+  - "Not assessing means access"
+
+red_flags:
+  - "Active suicidal ideation with plan"
+  - "Access to means (firearms, medications)"
+  - "Recent attempt"
+  - "Psychosis or severe depression"
+  - "Command auditory hallucinations"
+  - "Intoxication"
+  - "No protective factors or support"
+  - "Previous suicide attempt"
+
+clinical_pearls:
+  - "Ask directly: 'Have you had thoughts of hurting yourself or ending your life?'"
+  - "Asking does NOT increase risk"
+  - "Passive SI: 'I wish I were dead' without plan"
+  - "Active SI: thoughts with plan, intent, or means"
+  - "Assess: ideation, plan, intent, means, timeline"
+  - "Protective factors: reasons for living, future orientation, support"
+  - "Lethal means restriction is evidence-based prevention"
+  - "Suicide is leading cause of death in adolescents"
+
+key_history_questions:
+  - "Have you had thoughts of hurting yourself?"
+  - "Thoughts of wanting to die or not wanting to be alive?"
+  - "Have you thought about how you would do it?"
+  - "Have you taken any steps to prepare?"
+  - "What stops you from acting on these thoughts?"
+  - "Previous attempts or self-harm?"
+  - "Access to firearms, medications, other means?"
+  - "Drug or alcohol use?"
+  - "Recent losses or stressors?"
+  - "Who knows about these feelings? Support system?"
+
+key_exam_findings:
+  - "Mental status exam"
+  - "Affect and mood"
+  - "Psychomotor changes"
+  - "Evidence of self-harm (cuts, scars)"
+  - "Signs of intoxication"
+  - "Level of engagement and future orientation"
+
+treatment_principles:
+  - "Take all suicidal statements seriously"
+  - "Ensure immediate safety"
+  - "Remove access to lethal means (especially firearms)"
+  - "Create safety plan with coping strategies"
+  - "Involve trusted adult/family"
+  - "Connect to mental health services"
+  - "Hospitalize if high risk"
+  - "Follow up within 24-72 hours of discharge"
+
+disposition_guidance:
+  - "Inpatient psychiatric: Active SI with plan/intent, recent attempt, psychosis, no support"
+  - "ED evaluation: New disclosure, intoxication, high-risk features"
+  - "Outpatient with safety plan: Passive SI, good support, no plan/means, engaged in treatment"
+  - "Means restriction: Required for all discharges to home"
+  - "Follow-up: Within 24-72 hours, warm handoff to mental health"
+
+parent_styles: [shocked, in-denial, blaming-themselves, supportive]
+
+sources:
+  - "AAP: Suicide and Suicide Attempts in Adolescents"
+  - "Columbia Suicide Severity Rating Scale"
+  - "Stanley-Brown Safety Planning Intervention"

@@ -1,0 +1,78 @@
+# Syncope - Teaching Framework
+topic: "Syncope"
+aliases: ["fainting", "passing out", "vasovagal syncope"]
+category: cardiovascular
+age_range_months: [60, 216]
+
+teaching_goals:
+  - "Distinguish benign from dangerous causes of syncope"
+  - "Recognize red flags for cardiac syncope"
+  - "Know when ECG and further workup is needed"
+  - "Understand vasovagal mechanism and triggers"
+  - "Counsel on prevention strategies"
+
+common_mistakes:
+  - "Missing cardiac syncope red flags"
+  - "Not obtaining ECG in all cases"
+  - "Confusing syncope with seizure"
+  - "Over-testing low-risk vasovagal syncope"
+  - "Not asking about exertional symptoms"
+  - "Missing family history of sudden death"
+
+red_flags:
+  - "Syncope during exercise (not after)"
+  - "Syncope while supine or swimming"
+  - "Associated chest pain or palpitations"
+  - "Family history of sudden cardiac death < 50 years"
+  - "Family history of cardiomyopathy, Long QT, Brugada"
+  - "Abnormal cardiac exam"
+  - "No prodrome (abrupt loss of consciousness)"
+  - "Recurrent episodes"
+
+clinical_pearls:
+  - "Vasovagal: prodrome (lightheaded, warm, nausea), trigger, quick recovery"
+  - "Cardiac: sudden onset, during exertion, no prodrome, chest pain"
+  - "Convulsive movements can occur with syncope - doesn't mean seizure"
+  - "ECG should be done on ALL patients with syncope"
+  - "Long QT interval > 470ms in males, > 480ms in females is concerning"
+  - "Most pediatric syncope is vasovagal and benign"
+  - "Dehydration and prolonged standing are common triggers"
+
+key_history_questions:
+  - "What were they doing when it happened?"
+  - "Any warning signs before (prodrome)?"
+  - "Position at time of event?"
+  - "How long were they unconscious?"
+  - "Any witnessed movements, incontinence, tongue biting?"
+  - "Recovery time and post-event confusion?"
+  - "Recent illness, hydration status, sleep?"
+  - "Family history of sudden death, fainting, heart conditions?"
+  - "Previous episodes?"
+  - "Drug or medication use?"
+
+key_exam_findings:
+  - "Cardiac auscultation (murmur, irregular rhythm)"
+  - "Blood pressure (orthostatic measurements)"
+  - "Heart rate"
+  - "Neurologic exam"
+  - "Stigmata of genetic syndromes (Marfan features)"
+
+treatment_principles:
+  - "ECG for all patients"
+  - "Vasovagal: increase salt and fluid intake"
+  - "Counter-pressure maneuvers (leg crossing, hand grip)"
+  - "Avoid triggers (prolonged standing, dehydration, heat)"
+  - "Recognize prodrome and assume safe position"
+  - "No driving restrictions for vasovagal (when applicable)"
+
+disposition_guidance:
+  - "Outpatient: Classic vasovagal with normal ECG and exam"
+  - "Cardiology referral: Any red flags, abnormal ECG, exertional syncope"
+  - "Emergency: Syncope with chest pain, arrhythmia, or abnormal vitals"
+  - "Neurology: Features suggesting seizure (prolonged confusion, postictal)"
+
+parent_styles: [anxious, worried-about-heart, experienced]
+
+sources:
+  - "AAP Clinical Report: Syncope in the Pediatric Patient"
+  - "AHA/ACC Guidelines on Syncope"

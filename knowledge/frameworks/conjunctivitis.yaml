@@ -1,0 +1,74 @@
+# Conjunctivitis - Teaching Framework
+topic: "Conjunctivitis"
+aliases: ["pink eye", "red eye"]
+category: infectious
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Distinguish bacterial, viral, and allergic conjunctivitis"
+  - "Recognize ophthalmia neonatorum as an emergency"
+  - "Know when antibiotics are indicated vs watchful waiting"
+  - "Identify red flags requiring ophthalmology referral"
+  - "Understand school/daycare return policies"
+
+common_mistakes:
+  - "Prescribing antibiotics for clearly viral conjunctivitis"
+  - "Missing gonococcal ophthalmia in neonates"
+  - "Not asking about contact lens use in adolescents"
+  - "Overlooking associated periorbital cellulitis"
+  - "Missing foreign body as cause"
+
+red_flags:
+  - "Neonatal conjunctivitis (< 28 days) - gonococcal emergency"
+  - "Decreased visual acuity"
+  - "Severe pain out of proportion"
+  - "Corneal opacity or ulceration"
+  - "Periorbital swelling (cellulitis)"
+  - "Contact lens wearer with pain"
+  - "Photophobia"
+
+clinical_pearls:
+  - "Viral: watery discharge, preauricular lymphadenopathy, often bilateral"
+  - "Bacterial: purulent discharge, often unilateral initially"
+  - "Allergic: itching prominent, bilateral, boggy conjunctiva"
+  - "Most bacterial conjunctivitis is self-limited (5-7 days)"
+  - "Antibiotics shorten duration by ~1 day"
+  - "Ophthalmia neonatorum: Chlamydia (5-14 days), Gonococcal (2-5 days)"
+
+key_history_questions:
+  - "Discharge character - watery vs purulent?"
+  - "One eye or both?"
+  - "Itching?"
+  - "Pain or photophobia?"
+  - "Recent cold symptoms?"
+  - "Contact lens use?"
+  - "Sick contacts?"
+  - "For neonates: maternal STI history?"
+
+key_exam_findings:
+  - "Conjunctival injection pattern"
+  - "Discharge character"
+  - "Preauricular lymphadenopathy"
+  - "Eyelid swelling"
+  - "Visual acuity (if cooperative)"
+  - "Pupil reactivity"
+  - "Cornea clarity"
+
+treatment_principles:
+  - "Viral: supportive care, cool compresses, hand hygiene"
+  - "Bacterial: polymyxin-trimethoprim or erythromycin drops"
+  - "Allergic: antihistamine/mast cell stabilizer drops"
+  - "Gonococcal neonatal: IV ceftriaxone, ophthalmology STAT"
+  - "Chlamydial neonatal: oral erythromycin x 14 days"
+
+disposition_guidance:
+  - "Outpatient: Most cases"
+  - "Urgent ophthalmology: Corneal involvement, severe pain, vision change"
+  - "Emergency: Neonatal gonococcal, periorbital cellulitis"
+  - "Return to school: 24h after starting antibiotics (bacterial) or when discharge resolves"
+
+parent_styles: [anxious, school-policy-focused, experienced]
+
+sources:
+  - "AAP Red Book"
+  - "Uptodate: Conjunctivitis in children"

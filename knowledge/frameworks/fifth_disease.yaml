@@ -1,0 +1,73 @@
+# Fifth Disease - Teaching Framework
+topic: "Erythema Infectiosum"
+aliases: ["fifth disease", "slapped cheek disease", "parvovirus B19"]
+category: infectious
+age_range_months: [24, 144]
+
+teaching_goals:
+  - "Recognize classic slapped cheek and lacy rash"
+  - "Understand timing: no longer contagious when rash appears"
+  - "Know high-risk groups: pregnant women, hemoglobinopathies"
+  - "Differentiate from other viral exanthems"
+  - "Counsel on benign course in healthy children"
+
+common_mistakes:
+  - "Excluding from school/daycare when rash present"
+  - "Missing risk to pregnant contacts"
+  - "Not asking about hemoglobinopathy history"
+  - "Treating with unnecessary antibiotics"
+  - "Confusing with allergic reaction"
+
+red_flags:
+  - "Known hemoglobinopathy (sickle cell - aplastic crisis risk)"
+  - "Immunocompromised patient"
+  - "Pregnant contact (especially first trimester)"
+  - "Severe anemia symptoms"
+  - "Arthritis/arthralgia (more common in adults)"
+
+clinical_pearls:
+  - "Classic 3-stage rash: slapped cheeks -> lacy/reticular on extremities -> recurrent with triggers"
+  - "By time rash appears, child is no longer contagious"
+  - "Rash may recur for weeks with sun, heat, bathing, stress"
+  - "Low-grade or no fever when rash appears"
+  - "Most contagious 5-14 days before rash (during prodrome)"
+  - "Can cause aplastic crisis in sickle cell disease"
+  - "Hydrops fetalis risk if maternal infection in pregnancy"
+
+key_history_questions:
+  - "When did rash start?"
+  - "Pattern of rash: face first?"
+  - "Any prodromal illness before rash?"
+  - "Fever?"
+  - "Does rash come and go?"
+  - "Any pregnant women in household or close contacts?"
+  - "History of sickle cell or other blood disorders?"
+  - "Sick contacts or school outbreak?"
+
+key_exam_findings:
+  - "Bright red cheeks (slapped cheek appearance)"
+  - "Circumoral pallor"
+  - "Lacy, reticular rash on trunk and extremities"
+  - "Rash blanches"
+  - "May have mild joint swelling (older children/teens)"
+  - "Generally well-appearing"
+
+treatment_principles:
+  - "Supportive care only in healthy children"
+  - "Antipyretics/analgesics for joint pain if needed"
+  - "Rash is self-limited, no treatment needed"
+  - "Counsel about recurrent rash with triggers"
+  - "No isolation needed once rash appears"
+
+disposition_guidance:
+  - "Outpatient: All healthy children"
+  - "Hematology alert: Child with sickle cell or hemoglobinopathy"
+  - "School/daycare: Can attend with rash (not contagious at that point)"
+  - "Pregnant contact: Advise to notify OB for serology testing"
+  - "Follow-up: Not routinely needed"
+
+parent_styles: [school-policy-focused, worried-about-pregnant-contact, reassurance-seeking]
+
+sources:
+  - "AAP Red Book: Parvovirus B19"
+  - "CDC: Fifth Disease (Parvovirus B19)"

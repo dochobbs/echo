@@ -1,0 +1,73 @@
+# Allergic Rhinitis - Teaching Framework
+topic: "Allergic Rhinitis"
+aliases: ["hay fever", "seasonal allergies", "nasal allergies"]
+category: allergy
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Distinguish allergic from non-allergic rhinitis"
+  - "Recognize the allergic salute, shiners, and nasal crease"
+  - "Understand stepwise treatment approach"
+  - "Know when to refer for allergy testing"
+  - "Recognize comorbidities (asthma, eczema, sinusitis)"
+
+common_mistakes:
+  - "Overtreating with oral decongestants in young children"
+  - "Not recognizing chronic mouth breathing consequences"
+  - "Missing concurrent asthma"
+  - "Incorrect nasal spray technique instruction"
+  - "Using first-generation antihistamines (sedating)"
+
+red_flags:
+  - "Unilateral symptoms (foreign body, tumor)"
+  - "Bloody discharge without trauma"
+  - "Anosmia"
+  - "Severe nasal obstruction affecting sleep/growth"
+  - "Recurrent sinusitis"
+
+clinical_pearls:
+  - "Allergic shiners: dark circles from venous congestion"
+  - "Allergic salute: upward nose rubbing causing nasal crease"
+  - "Pale, boggy turbinates classic for allergic rhinitis"
+  - "Intranasal steroids more effective than antihistamines for congestion"
+  - "Start nasal steroids 2 weeks before allergy season"
+  - "Strong association with atopic triad: rhinitis, asthma, eczema"
+
+key_history_questions:
+  - "Seasonal vs year-round symptoms?"
+  - "Sneezing, itching, congestion, rhinorrhea?"
+  - "Eye symptoms?"
+  - "Triggers identified?"
+  - "Family history of atopy?"
+  - "Mouth breathing or snoring?"
+  - "Impact on sleep and school?"
+  - "Previous treatments tried?"
+
+key_exam_findings:
+  - "Turbinate appearance (pale, boggy vs erythematous)"
+  - "Nasal crease"
+  - "Allergic shiners"
+  - "Conjunctival injection"
+  - "Tonsil size"
+  - "Mouth breathing"
+  - "Listen for wheeze (asthma)"
+
+treatment_principles:
+  - "Allergen avoidance when possible"
+  - "First-line: intranasal corticosteroids"
+  - "Add oral second-generation antihistamine for itching/sneezing"
+  - "Nasal saline irrigation helpful adjunct"
+  - "Avoid oral decongestants in young children"
+  - "Consider immunotherapy for severe, refractory cases"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Allergy referral: Severe symptoms, failed empiric treatment, considering immunotherapy"
+  - "ENT referral: Structural concerns, nasal polyps, chronic sinusitis"
+  - "Pulmonology: Concurrent uncontrolled asthma"
+
+parent_styles: [frustrated-by-chronic-symptoms, natural-remedy-seeking, experienced]
+
+sources:
+  - "AAP Clinical Practice Guideline: Allergic Rhinitis"
+  - "AAAAI Practice Parameters"

@@ -1,0 +1,76 @@
+# Teething - Teaching Framework
+topic: "Teething"
+aliases: ["tooth eruption", "cutting teeth"]
+category: developmental
+age_range_months: [4, 30]
+
+teaching_goals:
+  - "Understand normal eruption timeline"
+  - "Know what symptoms are and aren't from teething"
+  - "Counsel on safe comfort measures"
+  - "Avoid dangerous teething remedies"
+  - "Recognize dental pathology vs normal teething"
+
+common_mistakes:
+  - "Attributing fever > 101°F to teething"
+  - "Missing infections blamed on teething"
+  - "Recommending benzocaine products (dangerous)"
+  - "Using amber teething necklaces (choking hazard)"
+  - "Delaying evaluation of ill child due to teething"
+
+red_flags:
+  - "High fever (> 101°F, 38.3°C)"
+  - "Persistent vomiting or diarrhea"
+  - "Rash beyond drool rash"
+  - "Lethargy or significant behavior change"
+  - "Gum swelling with pus (abscess)"
+  - "Refusal to eat beyond 24-48 hours"
+
+clinical_pearls:
+  - "First tooth usually 6-10 months (lower central incisors)"
+  - "Can range from 4-15 months and still be normal"
+  - "Teething does NOT cause: high fever (>101°F), vomiting, significant diarrhea"
+  - "Teething CAN cause: drooling, irritability, gum swelling, low-grade temp (<101°F)"
+  - "20 primary teeth by age 2.5-3 years"
+  - "Benzocaine can cause methemoglobinemia - FDA warning"
+  - "Homeopathic tablets may contain belladonna - dangerous"
+  - "Chilled (not frozen) teething rings are safe"
+
+key_history_questions:
+  - "What symptoms are you concerned about?"
+  - "Fever? How high?"
+  - "Eating and drinking normally?"
+  - "Other symptoms: vomiting, diarrhea, rash, cough?"
+  - "How long have symptoms been present?"
+  - "What have you tried for comfort?"
+  - "Sick contacts?"
+
+key_exam_findings:
+  - "Gum examination: swelling, eruption cyst, teeth visible"
+  - "Temperature"
+  - "Drool rash around mouth"
+  - "Otherwise well-appearing"
+  - "No signs of infection elsewhere"
+  - "Hydration status"
+
+treatment_principles:
+  - "Chilled (not frozen) teething rings or washcloth"
+  - "Gum massage with clean finger"
+  - "Acetaminophen or ibuprofen (if > 6 months) for pain"
+  - "Avoid: benzocaine, lidocaine products"
+  - "Avoid: homeopathic teething tablets"
+  - "Avoid: teething necklaces (strangulation, choking)"
+  - "Avoid: frozen objects (can injure gums)"
+
+disposition_guidance:
+  - "Outpatient: All typical teething"
+  - "Return: Fever > 101°F, poor feeding > 24h, other illness symptoms"
+  - "Dental referral: Delayed eruption (no teeth by 15 months), eruption cysts"
+  - "Medical evaluation: High fever, ill appearance, dehydration"
+
+parent_styles: [exhausted, seeking-quick-fix, natural-remedy-focused]
+
+sources:
+  - "AAP: Teething Pain"
+  - "FDA Warning on Benzocaine Products"
+  - "ADA: Teething"

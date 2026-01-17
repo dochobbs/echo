@@ -1,0 +1,70 @@
+# Sinusitis - Teaching Framework
+topic: "Acute Bacterial Sinusitis"
+aliases: ["sinus infection", "rhinosinusitis"]
+category: infectious
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Apply AAP diagnostic criteria (persistent, severe, worsening)"
+  - "Distinguish bacterial sinusitis from viral URI"
+  - "Know when antibiotics are indicated"
+  - "Understand appropriate first-line antibiotic choice"
+  - "Recognize complications requiring urgent referral"
+
+common_mistakes:
+  - "Treating every URI with antibiotics"
+  - "Diagnosing sinusitis too early (< 10 days symptoms)"
+  - "Ordering imaging for uncomplicated sinusitis"
+  - "Using decongestants in young children"
+  - "Not recognizing orbital complications"
+
+red_flags:
+  - "Periorbital edema or erythema (orbital cellulitis)"
+  - "Proptosis or limited eye movement"
+  - "Severe headache or altered mental status"
+  - "High fever with toxic appearance"
+  - "Frontal swelling (Pott's puffy tumor)"
+
+clinical_pearls:
+  - "3 patterns suggest bacterial: persistent (>10 days), severe onset, worsening (double-sickening)"
+  - "Color of nasal discharge does NOT distinguish viral from bacterial"
+  - "Maxillary sinuses develop by age 4, frontal by age 7-8"
+  - "Imaging NOT recommended for uncomplicated acute sinusitis"
+  - "Most bacterial sinusitis is from S. pneumoniae, H. flu, M. catarrhalis"
+
+key_history_questions:
+  - "Duration of symptoms?"
+  - "Pattern: persistent, severe onset, or worsening?"
+  - "Fever history?"
+  - "Facial pain or pressure?"
+  - "Nasal discharge character?"
+  - "Cough (especially nocturnal)?"
+  - "Any eye swelling or vision changes?"
+  - "Recent antibiotics?"
+
+key_exam_findings:
+  - "Nasal mucosa and discharge"
+  - "Facial tenderness (unreliable in children)"
+  - "Periorbital area - any swelling or erythema"
+  - "Throat - postnasal drip"
+  - "Transillumination (limited utility)"
+  - "Eye movements if orbital concern"
+
+treatment_principles:
+  - "First-line: high-dose amoxicillin (80-90 mg/kg/day)"
+  - "Amox-clav if: recent antibiotics, daycare, or treatment failure"
+  - "Duration: 10-14 days (or 7 days after improvement)"
+  - "Adjuncts: saline irrigation, pain control"
+  - "Avoid oral decongestants in young children"
+  - "No role for routine antihistamines or mucolytics"
+
+disposition_guidance:
+  - "Outpatient: Uncomplicated sinusitis"
+  - "Urgent evaluation: Orbital symptoms, severe headache, toxic appearance"
+  - "ENT referral: Recurrent sinusitis, chronic sinusitis, anatomic concerns"
+  - "Follow-up in 48-72 hours if no improvement"
+
+parent_styles: [antibiotic-seeking, frustrated-by-recurrence, experienced]
+
+sources:
+  - "AAP Clinical Practice Guideline: Sinusitis (2013)"

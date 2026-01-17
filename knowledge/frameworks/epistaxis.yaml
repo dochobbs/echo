@@ -1,0 +1,80 @@
+# Epistaxis - Teaching Framework
+topic: "Epistaxis"
+aliases: ["nosebleed", "nasal bleeding"]
+category: ENT
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Teach proper first aid technique"
+  - "Identify anterior vs posterior bleeding"
+  - "Recognize when bleeding disorder workup is needed"
+  - "Know preventive measures"
+  - "Understand when referral is indicated"
+
+common_mistakes:
+  - "Tilting head back (aspiration risk)"
+  - "Packing nose too early before trying pressure"
+  - "Missing signs of bleeding disorder"
+  - "Not examining for septal pathology"
+  - "Over-investigating single episode"
+
+red_flags:
+  - "Bilateral spontaneous bleeding"
+  - "Bleeding from other sites (gums, easy bruising)"
+  - "Family history of bleeding disorders"
+  - "Difficult to control bleeding (> 20 minutes)"
+  - "Hemodynamic instability"
+  - "Anticoagulant use"
+  - "Posterior bleeding (blood down throat)"
+
+clinical_pearls:
+  - "90% anterior from Kiesselbach's plexus"
+  - "Nose picking is #1 cause in children"
+  - "Dry air and allergies predispose to bleeding"
+  - "Proper technique: lean forward, pinch soft part of nose, 10-15 min"
+  - "Consider bleeding disorder if: recurrent, bilateral, other bleeding"
+  - "Topical oxymetazoline can help with vasoconstriction"
+  - "Posterior bleeds are rare in children but serious"
+
+key_history_questions:
+  - "Which nostril? Both?"
+  - "How long did it bleed?"
+  - "What were they doing when it started?"
+  - "How often does this happen?"
+  - "Any nose picking or trauma?"
+  - "Recent URI or allergies?"
+  - "Bleeding from anywhere else?"
+  - "Easy bruising?"
+  - "Family history of bleeding problems?"
+  - "Medications including NSAIDs?"
+
+key_exam_findings:
+  - "Anterior rhinoscopy - identify bleeding source"
+  - "Kiesselbach's plexus vessels"
+  - "Septal deviation or perforation"
+  - "Signs of allergic rhinitis"
+  - "Foreign body"
+  - "Skin exam for petechiae, bruising"
+  - "Gum exam for bleeding"
+
+treatment_principles:
+  - "First aid: sit upright, lean forward, pinch soft nose 10-15 min"
+  - "No peeking - continuous pressure"
+  - "Topical oxymetazoline spray if available"
+  - "Saline gel or petroleum jelly to prevent recurrence"
+  - "Humidifier for dry environments"
+  - "Treat underlying allergies"
+  - "Silver nitrate cautery if visible vessel (ENT)"
+
+disposition_guidance:
+  - "Outpatient: Single episode, easily controlled"
+  - "Labs if concerning: CBC, PT/PTT, VWF panel"
+  - "ENT referral: Recurrent, failed home measures, needs cautery"
+  - "Hematology referral: Suspected bleeding disorder"
+  - "Emergency: Uncontrolled bleeding, posterior source, hemodynamic instability"
+
+parent_styles: [frightened-by-blood, seeking-prevention-tips, experienced]
+
+sources:
+  - "AAP: Management of Epistaxis in Children"
+  - "UpToDate: Epistaxis in Children"

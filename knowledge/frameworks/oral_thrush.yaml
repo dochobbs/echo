@@ -1,0 +1,71 @@
+# Oral Thrush - Teaching Framework
+topic: "Oral Candidiasis"
+aliases: ["thrush", "oral thrush", "candida"]
+category: infectious
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Recognize classic appearance of thrush"
+  - "Distinguish from milk residue"
+  - "Understand predisposing factors"
+  - "Know appropriate treatment options"
+  - "Recognize concurrent diaper candidiasis"
+
+common_mistakes:
+  - "Confusing with milk residue"
+  - "Not treating concurrent diaper candidiasis"
+  - "Not treating breastfeeding mother's nipples"
+  - "Incomplete treatment course"
+  - "Missing immunodeficiency in recurrent cases"
+
+red_flags:
+  - "Recurrent or persistent despite treatment"
+  - "Extending to esophagus (dysphagia, feeding refusal)"
+  - "Concurrent systemic illness"
+  - "Immunocompromised patient"
+  - "Failure to thrive"
+
+clinical_pearls:
+  - "White plaques that DON'T wipe off easily (vs milk)"
+  - "When scraped, reveals erythematous base"
+  - "Common in first 6 months of life"
+  - "Treat mother's nipples if breastfeeding to prevent reinfection"
+  - "Check for concurrent diaper dermatitis with satellite lesions"
+  - "Sterilize pacifiers and bottle nipples"
+
+key_history_questions:
+  - "Feeding difficulties or refusal?"
+  - "Breast or bottle fed?"
+  - "Recent antibiotic use (infant or mother)?"
+  - "Diaper rash present?"
+  - "Previous episodes?"
+  - "Steroid inhaler use?"
+  - "Mother's nipple pain?"
+
+key_exam_findings:
+  - "White plaques on tongue, buccal mucosa, palate"
+  - "Try to wipe off - thrush won't easily remove"
+  - "Erythematous base if scraped"
+  - "Check diaper area for satellite lesions"
+  - "Overall infant appearance"
+
+treatment_principles:
+  - "First-line: nystatin suspension 100,000 units QID"
+  - "Apply after feeds, swab on affected areas"
+  - "Continue 2-3 days after lesions clear"
+  - "Duration: typically 7-14 days"
+  - "Fluconazole for resistant cases"
+  - "Treat mother's nipples with topical antifungal if breastfeeding"
+  - "Sterilize pacifiers and bottle nipples daily"
+
+disposition_guidance:
+  - "Outpatient: All typical cases"
+  - "Follow-up: If not improving in 1 week"
+  - "Workup: Consider immune evaluation if recurrent/persistent"
+  - "Referral: GI if esophageal involvement suspected"
+
+parent_styles: [first-time-parent, anxious, breastfeeding-focused]
+
+sources:
+  - "AAP Red Book"
+  - "UpToDate: Candidiasis in children"

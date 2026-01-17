@@ -1,0 +1,76 @@
+# Foreign Body (Ear/Nose) - Teaching Framework
+topic: "Foreign Body - Ear and Nose"
+aliases: ["FB ear", "FB nose", "nasal foreign body", "aural foreign body"]
+category: ENT
+age_range_months: [12, 72]
+
+teaching_goals:
+  - "Recognize signs of foreign body in ear or nose"
+  - "Know removal techniques and when to refer"
+  - "Understand button battery emergency"
+  - "Identify high-risk foreign bodies"
+  - "Know when not to attempt removal"
+
+common_mistakes:
+  - "Multiple failed removal attempts causing trauma"
+  - "Missing button battery (emergency)"
+  - "Not identifying type of foreign body before removal"
+  - "Using wrong technique for FB type"
+  - "Missing second foreign body"
+  - "Irrigating ear with organic material (swells)"
+
+red_flags:
+  - "Button battery (nasal emergency - tissue necrosis in 2-4 hours)"
+  - "Magnet (especially multiple magnets)"
+  - "Unilateral foul-smelling nasal discharge (chronic FB)"
+  - "Signs of infection or abscess"
+  - "Penetrating foreign body"
+  - "Live insect in ear (remove before other attempts)"
+
+clinical_pearls:
+  - "Button battery in nose: < 2 hour window to prevent septal perforation"
+  - "Nasal FB: unilateral purulent, foul-smelling discharge classic"
+  - "Ear FB: may be asymptomatic or present with pain, discharge, hearing loss"
+  - "Smooth round objects: positive pressure (parent kiss) or suction"
+  - "Insects: kill first with mineral oil or lidocaine, then remove"
+  - "Never irrigate organic material (beans, peas - they swell)"
+  - "One or two attempts max before ENT referral"
+
+key_history_questions:
+  - "Did anyone witness insertion?"
+  - "What type of object?"
+  - "How long ago?"
+  - "Any nasal discharge, odor, ear pain, drainage?"
+  - "Previous attempts at removal?"
+  - "Could there be more than one?"
+  - "Is it a button battery? (emergency)"
+
+key_exam_findings:
+  - "Visualize foreign body with otoscope/nasal speculum"
+  - "Assess for infection, granulation tissue"
+  - "Identify FB type and characteristics"
+  - "Check both sides (may be bilateral)"
+  - "Signs of trauma from previous removal attempts"
+  - "TM integrity if ear FB"
+
+treatment_principles:
+  - "Button battery: immediate removal - do not delay"
+  - "Identify FB type before choosing technique"
+  - "Nasal positive pressure (parent kiss) for round objects"
+  - "Ear irrigation (water) for non-organic, non-battery objects"
+  - "Alligator forceps for graspable objects"
+  - "Suction catheter for smooth objects"
+  - "Insects: instill mineral oil first to kill, then remove"
+  - "Limit to 1-2 attempts to avoid trauma"
+
+disposition_guidance:
+  - "Emergency: Button battery - immediate removal or transfer"
+  - "ENT referral: Failed attempts, deep FB, uncooperative child, TM involvement"
+  - "Outpatient: Simple removal successful, no complications"
+  - "Follow-up: After removal for ear to check TM; nose to confirm no residual"
+
+parent_styles: [panicked, guilty, matter-of-fact]
+
+sources:
+  - "AAP: Management of Foreign Bodies"
+  - "NCPC Button Battery Guidelines"

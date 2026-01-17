@@ -1,0 +1,77 @@
+# Night Terrors - Teaching Framework
+topic: "Sleep Terrors"
+aliases: ["night terrors", "pavor nocturnus"]
+category: neurology
+age_range_months: [18, 144]
+
+teaching_goals:
+  - "Distinguish night terrors from nightmares"
+  - "Understand they occur during non-REM sleep"
+  - "Recognize benign nature"
+  - "Know when further evaluation is needed"
+  - "Counsel parents on management"
+
+common_mistakes:
+  - "Confusing with nightmares (different sleep stage)"
+  - "Trying to wake child during episode"
+  - "Ordering unnecessary EEGs"
+  - "Attributing to psychological trauma"
+  - "Missing sleep deprivation as trigger"
+
+red_flags:
+  - "Episodes occurring multiple times per night"
+  - "Stereotyped movements concerning for seizure"
+  - "Daytime sleepiness"
+  - "Symptoms of sleep apnea (snoring, pauses)"
+  - "Developmental concerns"
+  - "Onset in adolescence"
+
+clinical_pearls:
+  - "Night terrors: 1-3 hours after falling asleep (non-REM)"
+  - "Nightmares: later in night (REM sleep), child recalls dream"
+  - "Child sits up, screams, appears terrified, inconsolable"
+  - "Eyes open but not responsive to environment"
+  - "No memory of event in morning"
+  - "Episode lasts 1-15 minutes"
+  - "Sleep deprivation and irregular schedules are triggers"
+  - "Family history common"
+
+key_history_questions:
+  - "What time does episode occur after falling asleep?"
+  - "What happens during episode? Describe behaviors."
+  - "Does child remember episode in morning?"
+  - "Can you wake or console them during episode?"
+  - "Regular bedtime? Getting enough sleep?"
+  - "Snoring or breathing pauses?"
+  - "Recent schedule changes, stress, illness?"
+  - "Family history of sleep disorders?"
+  - "Any daytime sleepiness or behavior issues?"
+
+key_exam_findings:
+  - "Normal examination"
+  - "Normal neurologic exam"
+  - "Tonsil size (adenotonsillar hypertrophy can worsen)"
+  - "Growth and development normal"
+  - "No signs of sleep deprivation in daytime"
+
+treatment_principles:
+  - "Reassurance - benign and typically outgrown"
+  - "Maintain consistent sleep schedule"
+  - "Ensure adequate sleep duration"
+  - "Keep child safe during episode - don't try to wake"
+  - "Wait for episode to end naturally"
+  - "Scheduled awakening if predictable timing"
+  - "Address underlying sleep disorders if present"
+
+disposition_guidance:
+  - "Outpatient: Classic presentation"
+  - "Sleep study: Suspected sleep apnea, frequent episodes"
+  - "Neurology referral: Atypical features, concern for seizures"
+  - "ENT referral: Significant adenotonsillar hypertrophy"
+  - "Follow-up: Routine, typically resolve by adolescence"
+
+parent_styles: [terrified, worried-about-trauma, reassurance-seeking]
+
+sources:
+  - "AAP: Sleep Disorders in Children"
+  - "AASM Practice Parameters for Parasomnias"

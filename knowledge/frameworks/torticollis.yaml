@@ -1,0 +1,78 @@
+# Torticollis - Teaching Framework
+topic: "Torticollis"
+aliases: ["wry neck", "congenital muscular torticollis", "CMT"]
+category: musculoskeletal
+age_range_months: [0, 24]
+
+teaching_goals:
+  - "Recognize congenital muscular torticollis"
+  - "Distinguish from acquired torticollis"
+  - "Know when imaging or urgent evaluation needed"
+  - "Understand physical therapy as primary treatment"
+  - "Recognize red flags for serious causes"
+
+common_mistakes:
+  - "Missing posterior fossa tumor presenting as torticollis"
+  - "Not screening for developmental dysplasia of hip"
+  - "Delaying physical therapy referral"
+  - "Missing Sandifer syndrome (GERD-related)"
+  - "Not reassessing if not improving with therapy"
+
+red_flags:
+  - "Acquired torticollis in older child (> 4 months without history)"
+  - "Neurologic symptoms (headache, vomiting, ataxia)"
+  - "Pain out of proportion"
+  - "No improvement with stretching"
+  - "Acute onset after trauma"
+  - "Associated with fever (Grisel syndrome)"
+  - "Visual disturbances"
+
+clinical_pearls:
+  - "CMT: head tilted to one side, chin rotated to opposite side"
+  - "SCM muscle tightness/mass (pseudotumor of infancy)"
+  - "Associated with DDH in 2-29% - screen hips"
+  - "Plagiocephaly (flat head) from preferred position"
+  - "PT is first-line: stretching, positioning, tummy time"
+  - "90% resolve with PT by age 1"
+  - "Acquired torticollis in older child - think posterior fossa tumor"
+  - "Sandifer: torticollis with GERD symptoms, episodic"
+
+key_history_questions:
+  - "When first noticed?"
+  - "Congenital or acquired?"
+  - "Birth history (breech, difficult delivery)?"
+  - "Getting better or worse?"
+  - "Any trauma?"
+  - "Pain?"
+  - "Neurologic symptoms: headache, vomiting, vision changes?"
+  - "GERD symptoms?"
+
+key_exam_findings:
+  - "Direction of head tilt and chin rotation"
+  - "SCM muscle tightness or mass"
+  - "Active and passive range of motion"
+  - "Plagiocephaly assessment"
+  - "Hip exam (Ortolani, Barlow)"
+  - "Neurologic exam"
+  - "Eye movements (cranial nerve palsies)"
+
+treatment_principles:
+  - "CMT: early referral to physical therapy"
+  - "Home stretching program"
+  - "Positioning and tummy time"
+  - "Helmet therapy if significant plagiocephaly"
+  - "Botox or surgery for refractory cases"
+  - "Treat underlying cause in acquired cases"
+
+disposition_guidance:
+  - "Outpatient PT referral: CMT identified early, no red flags"
+  - "Hip ultrasound: If < 6 months with torticollis (DDH screening)"
+  - "Imaging (MRI spine/brain): Acquired, not improving, neurologic signs"
+  - "Urgent evaluation: Acute onset, trauma, fever, neurologic symptoms"
+  - "Orthopedics/neurosurgery: C-spine abnormality, refractory CMT"
+
+parent_styles: [worried-about-development, compliant-with-exercises, impatient-for-results]
+
+sources:
+  - "AAP: Congenital Muscular Torticollis"
+  - "APTA: Physical Therapy Management of CMT"

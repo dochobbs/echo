@@ -1,0 +1,81 @@
+# Functional Abdominal Pain - Teaching Framework
+topic: "Functional Abdominal Pain"
+aliases: ["recurrent abdominal pain", "chronic abdominal pain", "FAP", "IBS pediatric"]
+category: gastrointestinal
+age_range_months: [48, 216]
+
+teaching_goals:
+  - "Recognize patterns of functional abdominal pain disorders"
+  - "Apply Rome IV criteria for diagnosis"
+  - "Distinguish from organic causes"
+  - "Know when further workup is indicated"
+  - "Counsel on biopsychosocial model and treatment"
+
+common_mistakes:
+  - "Excessive testing causing iatrogenic harm"
+  - "Missing alarm symptoms suggesting organic disease"
+  - "Dismissing pain as 'not real'"
+  - "Not addressing psychosocial factors"
+  - "Repeated imaging for same symptoms"
+  - "Failing to involve mental health early"
+
+red_flags:
+  - "Weight loss or growth failure"
+  - "Blood in stool or persistent vomiting"
+  - "Fever"
+  - "Pain that wakes from sleep consistently"
+  - "Right upper or right lower quadrant localized pain"
+  - "Family history of IBD, celiac, or peptic ulcer disease"
+  - "Joint symptoms or rash"
+  - "Dysphagia or odynophagia"
+
+clinical_pearls:
+  - "Rome IV: pain at least 4 days/month for 2+ months"
+  - "Periumbilical pain without radiation is classic"
+  - "Pain rarely wakes child from sleep (organic pain does)"
+  - "Normal growth and development strongly reassuring"
+  - "Stress and anxiety commonly trigger symptoms"
+  - "School avoidance may be associated"
+  - "Validate that pain is real while explaining mechanism"
+
+key_history_questions:
+  - "Location, character, duration, frequency of pain?"
+  - "Relation to meals, bowel movements, stress?"
+  - "Associated symptoms: nausea, vomiting, diarrhea, constipation?"
+  - "Any blood in stool or weight loss?"
+  - "Does pain wake from sleep?"
+  - "Impact on school attendance and activities?"
+  - "Any stressors: school, family, peers?"
+  - "Dietary triggers identified?"
+  - "Family history of GI disorders?"
+
+key_exam_findings:
+  - "Growth parameters - height, weight, BMI percentiles"
+  - "Abdominal exam - distension, masses, organomegaly"
+  - "Periumbilical vs localized tenderness"
+  - "Signs of chronic disease"
+  - "Perianal exam if appropriate"
+  - "General affect and interaction"
+
+treatment_principles:
+  - "Reassurance with validation (pain is real)"
+  - "Explain biopsychosocial model"
+  - "Return to normal activities including school"
+  - "Dietary modifications: fiber, limit lactose if indicated"
+  - "Stress management and coping strategies"
+  - "Consider cognitive behavioral therapy"
+  - "Medications: peppermint oil, low-dose amitriptyline for severe cases"
+  - "Avoid reinforcing sick role"
+
+disposition_guidance:
+  - "Outpatient: Classic presentation without alarm symptoms"
+  - "Limited workup: CBC, inflammatory markers, celiac screen, stool studies"
+  - "GI referral: Alarm symptoms, failed empiric management, diagnostic uncertainty"
+  - "Mental health referral: Significant anxiety, depression, school avoidance"
+  - "Follow-up: 2-4 weeks to reassess"
+
+parent_styles: [frustrated-by-chronic-symptoms, seeking-diagnosis, worried-about-missing-something]
+
+sources:
+  - "Rome IV Diagnostic Criteria for Pediatric Functional GI Disorders"
+  - "AAP: Chronic Abdominal Pain in Children"
