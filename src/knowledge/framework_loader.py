@@ -126,6 +126,13 @@ class FrameworkLoader:
         if not fw:
             return {}
 
+        # Filter images to only include those with valid URLs (not PLACEHOLDER)
+        raw_images = fw.get("images", [])
+        valid_images = [
+            img for img in raw_images
+            if img.get("url") and img.get("url") != "PLACEHOLDER"
+        ]
+
         return {
             "topic": fw.get("topic"),
             "teaching_goals": fw.get("teaching_goals", []),
@@ -137,6 +144,7 @@ class FrameworkLoader:
             "treatment_principles": fw.get("treatment_principles", []),
             "disposition_guidance": fw.get("disposition_guidance", []),
             "parent_styles": fw.get("parent_styles", []),
+            "images": valid_images,
         }
 
     def build_case_prompt(self, key: str, learner_level: str = "student") -> str:

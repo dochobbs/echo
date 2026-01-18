@@ -329,6 +329,23 @@ Respond with valid JSON only. No markdown, no code blocks:
 
   # ==================== CASE-BASED TEACHING METHODS ====================
 
+  def _format_images_for_prompt(self, images: list) -> str:
+    """Format available images for inclusion in the system prompt."""
+    if not images:
+      return "No images available for this condition."
+
+    lines = []
+    for img in images:
+      phase = img.get("phase", "exam")
+      caption = img.get("caption", "")
+      key = img.get("key", "")
+      lines.append(f"- [{phase}] {key}: {caption}")
+
+    lines.append("")
+    lines.append("Note: Images are shown to the learner automatically based on case phase.")
+    lines.append("You can reference what an image shows (e.g., 'As you can see in the image...')")
+    return "\n".join(lines)
+
   def _build_case_system_prompt(self, case_state: "CaseState", condition_info: dict) -> str:
     """Build a system prompt for case-based teaching with fluid voice."""
     patient = case_state.patient
@@ -392,6 +409,9 @@ Switch between these naturally - mid-response if needed. The learner should feel
 
 ### Treatment Principles:
 {chr(10).join(['- ' + t for t in condition_info.get('treatment_principles', [])])}
+
+### Available Teaching Images:
+{self._format_images_for_prompt(condition_info.get('images', []))}
 
 ## Current Case Phase: {case_state.phase.value}
 

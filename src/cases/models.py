@@ -18,6 +18,16 @@ class CasePhase(str, Enum):
   COMPLETE = "complete"
 
 
+class CaseImage(BaseModel):
+  """An image associated with a case for teaching purposes."""
+  key: str  # e.g., "target_lesion", "slapped_cheek"
+  url: str  # Public URL to the image
+  caption: str  # Description shown with the image
+  phase: str  # When to show: intro, history, exam, assessment, debrief
+  alt_text: Optional[str] = None  # Accessibility text
+  source: Optional[str] = None  # Attribution, e.g., "CDC PHIL #4508"
+
+
 class LearnerLevel(str, Enum):
   """Learner experience levels."""
   STUDENT = "student"
@@ -139,6 +149,7 @@ class CaseResponse(BaseModel):
   teaching_moment: Optional[str] = None
   debrief: Optional[DebriefData] = None  # Present when phase is complete
   hint_offered: bool = False  # True if Echo offered help due to detected struggle
+  images: list[CaseImage] = Field(default_factory=list)  # Images relevant to current phase
 
 
 # ==================== DESCRIBE-A-CASE MODE ====================

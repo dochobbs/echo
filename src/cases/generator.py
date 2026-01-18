@@ -197,12 +197,12 @@ class CaseGenerator:
 
   def get_condition_info(self, condition_key: str) -> dict:
     """Get full condition information for tutor context.
-    
+
     Merges legacy condition data with new teaching framework data.
     """
     condition_data = self.conditions.get(condition_key, {})
     framework_data = get_framework(condition_key)
-    
+
     if framework_data:
       merged = {**condition_data}
       merged["teaching_goals"] = framework_data.get("teaching_goals", [])
@@ -217,8 +217,14 @@ class CaseGenerator:
       merged["framework_topic"] = framework_data.get("topic", condition_key)
       merged["framework_category"] = framework_data.get("category", "unknown")
       merged["framework_sources"] = framework_data.get("sources", [])
+      # Include images - filter out PLACEHOLDERs
+      raw_images = framework_data.get("images", [])
+      merged["images"] = [
+        img for img in raw_images
+        if img.get("url") and img.get("url") != "PLACEHOLDER"
+      ]
       return merged
-    
+
     return condition_data
   
   def get_teaching_framework(self, condition_key: str) -> dict:

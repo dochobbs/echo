@@ -9,6 +9,7 @@ from .models import (
   CaseResponse,
   CaseState,
   CasePhase,
+  CaseImage,
   DebriefData,
   # Describe-a-case mode
   StartDescribeCaseRequest,
@@ -34,6 +35,55 @@ from ..auth.deps import get_optional_user, get_current_user
 from ..auth.models import User
 
 router = APIRouter(prefix="/case", tags=["cases"])
+
+
+def _get_images_for_phase(condition_info: dict, phase: CasePhase) -> list[CaseImage]:
+  """Filter images to those appropriate for the current case phase.
+
+  Images are tagged with phases: intro, history, exam, assessment, debrief.
+  Returns CaseImage objects for the matching phase.
+  """
+  raw_images = condition_info.get("images", [])
+  if not raw_images:
+    return []
+
+  phase_value = phase.value
+
+  # Map case phases to image phases
+  # intro -> intro
+  # history -> history (also show intro images)
+  # exam -> exam
+  # assessment -> assessment
+  # plan -> assessment (plans build on assessment)
+  # debrief -> debrief (show all accumulated images)
+  # complete -> debrief
+
+  phase_mapping = {
+    "intro": ["intro"],
+    "history": ["intro", "history"],
+    "exam": ["exam"],
+    "assessment": ["assessment"],
+    "plan": ["assessment"],
+    "debrief": ["intro", "history", "exam", "assessment", "debrief"],
+    "complete": ["intro", "history", "exam", "assessment", "debrief"],
+  }
+
+  allowed_phases = phase_mapping.get(phase_value, [phase_value])
+
+  result = []
+  for img in raw_images:
+    img_phase = img.get("phase", "exam")
+    if img_phase in allowed_phases:
+      result.append(CaseImage(
+        key=img.get("key", ""),
+        url=img.get("url", ""),
+        caption=img.get("caption", ""),
+        phase=img_phase,
+        alt_text=img.get("alt_text"),
+        source=img.get("source"),
+      ))
+
+  return result
 
 
 @router.get("/frameworks")
@@ -87,9 +137,13 @@ async def start_dynamic_case(request: StartCaseRequest) -> CaseResponse:
     "content": opening,
   })
 
+  # Get images appropriate for intro phase
+  images = _get_images_for_phase(framework, case_state.phase)
+
   return CaseResponse(
     message=opening,
     case_state=case_state,
+    images=images,
   )
 
 
@@ -127,9 +181,13 @@ async def start_case(
     persistence = get_case_persistence()
     persistence.save_session(case_state, user_id=str(user.id))
 
+  # Get images appropriate for intro phase
+  images = _get_images_for_phase(condition_info, case_state.phase)
+
   return CaseResponse(
     message=opening,
     case_state=case_state,
+    images=images,
   )
 
 
@@ -172,11 +230,15 @@ async def send_message(
     persistence = get_case_persistence()
     persistence.save_session(updated_state, user_id=str(user.id))
 
+  # Get images appropriate for current phase
+  images = _get_images_for_phase(condition_info, updated_state.phase)
+
   return CaseResponse(
     message=response,
     case_state=updated_state,
     teaching_moment=teaching_moment,
     hint_offered=hint_offered,
+    images=images,
   )
 
 
@@ -217,10 +279,14 @@ async def get_debrief(
       user_id=str(user.id),
     )
 
+  # Get all images for debrief (all phases)
+  images = _get_images_for_phase(condition_info, CasePhase.DEBRIEF)
+
   return CaseResponse(
     message=debrief.summary,
     case_state=case_state,
     debrief=debrief,
+    images=images,
   )
 
 
