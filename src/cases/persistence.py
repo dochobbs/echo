@@ -235,6 +235,7 @@ class CasePersistence:
             patient_data = session.patient_data or {}
 
             patient = GeneratedPatient(
+                id=patient_data.get("id", str(session.id)),
                 name=patient_data.get("name", "Unknown"),
                 age=patient_data.get("age", 0),
                 age_unit=patient_data.get("age_unit", "years"),
@@ -244,9 +245,10 @@ class CasePersistence:
                 condition_key=session.condition_key or "unknown",
                 condition_display=session.condition_display or "Unknown",
                 parent_name=patient_data.get("parent_name", ""),
+                parent_style=patient_data.get("parent_style", "concerned"),
+                symptoms=patient_data.get("symptoms", []),
                 vitals=patient_data.get("vitals", {}),
-                history=patient_data.get("history", {}),
-                physical_exam=patient_data.get("physical_exam", {}),
+                exam_findings=patient_data.get("exam_findings", []),
             )
 
             phase_str = session.phase or "history"

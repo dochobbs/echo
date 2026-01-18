@@ -510,13 +510,26 @@ async def get_case_by_id(
 
   persistence = get_case_persistence()
   case_data = persistence.get_session_with_state(session_id, user_id=str(user.id))
-  
+
   if not case_data:
     raise HTTPException(status_code=404, detail="Case not found")
 
+  # Get the last Echo message to show where they left off
+  last_echo_message = "Welcome back! Let's continue where you left off."
+  for msg in reversed(case_data.conversation):
+    if msg.get("role") == "echo":
+      last_echo_message = msg.get("content", last_echo_message)
+      break
+
+  # Get images for current phase
+  generator = get_generator()
+  condition_info = generator.get_condition_info(case_data.patient.condition_key)
+  images = _get_images_for_phase(condition_info, case_data.phase)
+
   return CaseResponse(
-    message="Case loaded successfully",
+    message=last_echo_message,
     case_state=case_data,
+    images=images,
   )
 
 
