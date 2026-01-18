@@ -75,11 +75,11 @@ parent_styles: [alarmed-by-appearance, drug-reaction-concerned]
 
 images:
   - key: "target_lesion"
-    url: "PLACEHOLDER"
-    caption: "Classic target lesion - 3 zones: central dusky, pale ring, erythematous border"
+    url: "https://phil.cdc.gov/PHIL_Images/17530/17530_lores.jpg"
+    caption: "Erythema multiforme - coin-shaped lesions on upper extremities and mouth"
     phase: exam
-    alt_text: "Skin lesion with three concentric color zones forming bullseye pattern"
-    source: "CDC PHIL"
+    alt_text: "Patient with corporeal rash showing numerous coin-shaped lesions from erythema multiforme"
+    source: "CDC PHIL #17530"
   - key: "em_palms"
     url: "PLACEHOLDER"
     caption: "Erythema multiforme on palms - acral distribution is typical"

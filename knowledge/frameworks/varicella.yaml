@@ -58,11 +58,11 @@ parent_styles: [worried-about-scarring, wants-antiviral, frustrated-about-exclus
 
 images:
   - key: "varicella_stages"
-    url: "PLACEHOLDER"
-    caption: "Varicella 'dew drops on rose petal' - lesions in different stages on same exam"
+    url: "https://phil.cdc.gov/PHIL_Images/20040908/2d4664936550421d85a71364ed879b68/6121_lores.jpg"
+    caption: "Varicella lesions - blister-like lesions on child's back"
     phase: exam
-    alt_text: "Child's trunk showing papules, vesicles, and crusted lesions simultaneously"
-    source: "CDC PHIL"
+    alt_text: "Posterior view of child's back with characteristic varicella (chickenpox) lesions"
+    source: "CDC PHIL #6121"
   - key: "varicella_vesicle"
     url: "PLACEHOLDER"
     caption: "Classic varicella vesicle - clear fluid on erythematous base"

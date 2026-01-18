@@ -73,11 +73,11 @@ parent_styles: [worried-about-scarring, frustrated-by-spread, school-policy-focu
 
 images:
   - key: "nonbullous_impetigo"
-    url: "PLACEHOLDER"
-    caption: "Non-bullous impetigo - honey-colored crusted lesions around nose and mouth"
+    url: "https://phil.cdc.gov/PHIL_Images/5155/5155_lores.jpg"
+    caption: "Impetigo - maculopapular lesions from bacterial skin infection"
     phase: exam
-    alt_text: "Child's face with golden-crusted erosions around nose and upper lip"
-    source: "CDC PHIL"
+    alt_text: "Child with maculopapular lesions from impetigo"
+    source: "CDC PHIL #5155"
   - key: "bullous_impetigo"
     url: "PLACEHOLDER"
     caption: "Bullous impetigo - flaccid blisters with clear/cloudy fluid, thin brown crust when ruptured"

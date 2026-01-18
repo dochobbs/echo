@@ -70,11 +70,11 @@ parent_styles: [school-policy-focused, worried-about-pregnant-contact, reassuran
 
 images:
   - key: "slapped_cheek"
-    url: "PLACEHOLDER"
-    caption: "Slapped cheek appearance - bright erythema of both cheeks with circumoral pallor"
+    url: "https://phil.cdc.gov/PHIL_Images/4508/4508_lores.jpg"
+    caption: "Slapped cheek appearance - erythema infectiosum with bright red cheeks"
     phase: exam
-    alt_text: "Child's face with bright red cheeks and pale area around mouth"
-    source: "CDC PHIL"
+    alt_text: "Close left lateral view of boy's face showing erythema infectiosum (fifth disease)"
+    source: "CDC PHIL #4508"
   - key: "lacy_rash"
     url: "PLACEHOLDER"
     caption: "Lacy, reticular rash on extremities - classic second stage of fifth disease"
