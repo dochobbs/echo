@@ -64,6 +64,26 @@ disposition_guidance:
 
 parent_styles: [scared-by-rash, wants-steroids, confused-by-self-limited-course]
 
+images:
+  - key: "hsp_purpura_legs"
+    url: "PLACEHOLDER"
+    caption: "Palpable purpura on lower extremities - non-blanching, classic HSP distribution"
+    phase: exam
+    alt_text: "Child's legs with raised purple-red spots that don't blanch with pressure"
+    source: "CDC PHIL"
+  - key: "hsp_buttocks"
+    url: "PLACEHOLDER"
+    caption: "HSP purpura on buttocks - gravity-dependent distribution"
+    phase: exam
+    alt_text: "Buttocks with palpable purpuric lesions"
+    source: "NIH DermNet"
+  - key: "blanching_test"
+    url: "PLACEHOLDER"
+    caption: "Non-blanching purpura: pressing on lesions does not cause them to fade"
+    phase: exam
+    alt_text: "Side-by-side comparison of blanching erythema versus non-blanching purpura"
+    source: "AAP"
+
 sources:
   - "Ozen S, et al. EULAR/PRINTO/PRES Criteria for Henoch-Schönlein Purpura"
   - "Saulsbury FT. Henoch-Schönlein Purpura in Children. Lancet"

@@ -69,6 +69,32 @@ disposition_guidance:
 
 parent_styles: [anxious, school-policy-focused, experienced]
 
+images:
+  - key: "bacterial_conjunctivitis"
+    url: "PLACEHOLDER"
+    caption: "Bacterial conjunctivitis - purulent discharge, lid matting, conjunctival injection"
+    phase: exam
+    alt_text: "Child's eye with thick yellow-green discharge and red conjunctiva"
+    source: "CDC PHIL"
+  - key: "viral_conjunctivitis"
+    url: "PLACEHOLDER"
+    caption: "Viral conjunctivitis - watery discharge, diffuse injection, often bilateral"
+    phase: exam
+    alt_text: "Red watery eye with clear discharge"
+    source: "CDC PHIL"
+  - key: "allergic_conjunctivitis"
+    url: "PLACEHOLDER"
+    caption: "Allergic conjunctivitis - boggy, edematous conjunctiva (chemosis), bilateral"
+    phase: exam
+    alt_text: "Eyes with swollen, puffy conjunctiva and watery discharge"
+    source: "NIH"
+  - key: "ophthalmia_neonatorum"
+    url: "PLACEHOLDER"
+    caption: "Ophthalmia neonatorum - purulent discharge in neonate, EMERGENCY"
+    phase: exam
+    alt_text: "Newborn eye with copious purulent discharge requiring urgent evaluation"
+    source: "CDC PHIL"
+
 sources:
   - "AAP Red Book"
   - "Uptodate: Conjunctivitis in children"

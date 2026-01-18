@@ -57,6 +57,32 @@ disposition_guidance:
 
 parent_styles: [steroid-phobic, exhausted, wants-elimination-diet]
 
+images:
+  - key: "infant_eczema"
+    url: "PLACEHOLDER"
+    caption: "Infant eczema - erythematous, scaly patches on cheeks and extensor surfaces"
+    phase: exam
+    alt_text: "Infant with red, rough patches on cheeks and outer arms"
+    source: "NIH DermNet"
+  - key: "flexural_eczema"
+    url: "PLACEHOLDER"
+    caption: "Flexural eczema in older child - lichenified patches in antecubital and popliteal fossae"
+    phase: exam
+    alt_text: "Child's arm bend showing thickened, darkened skin with accentuated lines"
+    source: "NIH DermNet"
+  - key: "eczema_herpeticum"
+    url: "PLACEHOLDER"
+    caption: "Eczema herpeticum - EMERGENCY - punched-out erosions, vesicles in eczematous skin"
+    phase: exam
+    alt_text: "Skin with clustered vesicles and punched-out ulcers in area of eczema"
+    source: "CDC PHIL"
+  - key: "soak_and_seal"
+    url: "PLACEHOLDER"
+    caption: "Soak and Seal technique: bathe → pat dry → apply medication/moisturizer while damp"
+    phase: debrief
+    alt_text: "Diagram showing three-step soak and seal moisturizing process"
+    source: "AAP"
+
 sources:
   - "Eichenfield LF, et al. JAAD: Guidelines for Management of Atopic Dermatitis"
   - "AAP Clinical Report: Management of Atopic Dermatitis"

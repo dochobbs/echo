@@ -104,6 +104,23 @@
 #     - "AAP Clinical Practice Guideline (2013)"
 #     - "IDSA Guidelines"
 #
+# images: Visual aids for teaching (curated public domain)
+#   - Use CDC, NIH, AAP public domain images when available
+#   - key: identifier for the image (used in code)
+#   - url: full URL to image (or "PLACEHOLDER" if not yet sourced)
+#   - caption: educational caption explaining what to observe
+#   - phase: when to show the image (intro, history, exam, assessment, debrief)
+#   - alt_text: accessibility description
+#   - source: attribution (e.g., "CDC Public Health Image Library")
+#   Example:
+#     images:
+#       - key: "tm_bulging"
+#         url: "https://phil.cdc.gov/Details.aspx?pid=..."
+#         caption: "Bulging, erythematous tympanic membrane diagnostic of AOM"
+#         phase: exam
+#         alt_text: "Otoscopic view of bulging red tympanic membrane"
+#         source: "CDC PHIL"
+#
 # ============ EXAMPLE FRAMEWORK ============
 #
 # topic: "Acute Otitis Media"

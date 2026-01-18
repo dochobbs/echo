@@ -68,6 +68,26 @@ disposition_guidance:
 
 parent_styles: [school-policy-focused, worried-about-pregnant-contact, reassurance-seeking]
 
+images:
+  - key: "slapped_cheek"
+    url: "PLACEHOLDER"
+    caption: "Slapped cheek appearance - bright erythema of both cheeks with circumoral pallor"
+    phase: exam
+    alt_text: "Child's face with bright red cheeks and pale area around mouth"
+    source: "CDC PHIL"
+  - key: "lacy_rash"
+    url: "PLACEHOLDER"
+    caption: "Lacy, reticular rash on extremities - classic second stage of fifth disease"
+    phase: exam
+    alt_text: "Child's arm showing lacy, net-like pink rash pattern"
+    source: "CDC PHIL"
+  - key: "fifth_disease_timeline"
+    url: "PLACEHOLDER"
+    caption: "Fifth disease stages: prodrome (contagious) → slapped cheeks → lacy rash (not contagious)"
+    phase: debrief
+    alt_text: "Diagram showing disease progression and contagious period"
+    source: "CDC"
+
 sources:
   - "AAP Red Book: Parvovirus B19"
   - "CDC: Fifth Disease (Parvovirus B19)"

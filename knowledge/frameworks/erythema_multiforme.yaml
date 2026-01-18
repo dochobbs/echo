@@ -73,6 +73,32 @@ disposition_guidance:
 
 parent_styles: [alarmed-by-appearance, drug-reaction-concerned]
 
+images:
+  - key: "target_lesion"
+    url: "PLACEHOLDER"
+    caption: "Classic target lesion - 3 zones: central dusky, pale ring, erythematous border"
+    phase: exam
+    alt_text: "Skin lesion with three concentric color zones forming bullseye pattern"
+    source: "CDC PHIL"
+  - key: "em_palms"
+    url: "PLACEHOLDER"
+    caption: "Erythema multiforme on palms - acral distribution is typical"
+    phase: exam
+    alt_text: "Palms showing multiple target lesions"
+    source: "NIH DermNet"
+  - key: "em_vs_sjs"
+    url: "PLACEHOLDER"
+    caption: "EM vs SJS: EM has typical targets, acral; SJS has atypical targets, widespread, +/- mucosal"
+    phase: debrief
+    alt_text: "Comparison table distinguishing erythema multiforme from Stevens-Johnson syndrome"
+    source: "AAP"
+  - key: "em_oral_lesions"
+    url: "PLACEHOLDER"
+    caption: "Oral mucosal erosions in EM major - lips and buccal mucosa involvement"
+    phase: exam
+    alt_text: "Lip erosions and oral ulcers seen in erythema multiforme major"
+    source: "NIH DermNet"
+
 sources:
   - "AAD: Erythema Multiforme"
   - "JAAD: Erythema Multiforme in Children"

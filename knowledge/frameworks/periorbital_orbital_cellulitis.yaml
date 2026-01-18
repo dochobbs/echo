@@ -65,6 +65,32 @@ differential_diagnosis:
 
 parent_styles: [scared-about-vision, wants-antibiotics, delayed-presentation]
 
+images:
+  - key: "periorbital_cellulitis"
+    url: "PLACEHOLDER"
+    caption: "Periorbital (preseptal) cellulitis - eyelid swelling, erythema, normal eye movements"
+    phase: exam
+    alt_text: "Child with swollen, red eyelid but eye movements and vision intact"
+    source: "NIH"
+  - key: "orbital_cellulitis"
+    url: "PLACEHOLDER"
+    caption: "Orbital cellulitis - proptosis, limited eye movement, may have pain"
+    phase: exam
+    alt_text: "Child with eyelid swelling and eye pushed forward with limited movement"
+    source: "NIH"
+  - key: "periorbital_vs_orbital"
+    url: "PLACEHOLDER"
+    caption: "Key distinction: periorbital = normal EOM; orbital = pain with movement, proptosis, diplopia"
+    phase: debrief
+    alt_text: "Comparison diagram of periorbital versus orbital cellulitis features"
+    source: "AAP"
+  - key: "orbital_ct"
+    url: "PLACEHOLDER"
+    caption: "CT showing orbital abscess - postseptal collection requiring surgical drainage"
+    phase: debrief
+    alt_text: "CT scan of orbits showing fluid collection behind the septum"
+    source: "NIH Radiopaedia"
+
 sources:
   - "Pediatric Infectious Disease Journal: Diagnosis and Management of Orbital Cellulitis"
   - "Pediatrics in Review: Periorbital and Orbital Cellulitis"

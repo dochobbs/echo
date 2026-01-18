@@ -62,5 +62,31 @@ disposition_guidance:
 
 parent_styles: [anxious, experienced, antibiotic-seeking, antibiotic-hesitant]
 
+images:
+  - key: "tm_normal"
+    url: "PLACEHOLDER"
+    caption: "Normal tympanic membrane - pearly gray, translucent, landmarks visible"
+    phase: exam
+    alt_text: "Otoscopic view of normal tympanic membrane"
+    source: "CDC PHIL"
+  - key: "tm_bulging_aom"
+    url: "PLACEHOLDER"
+    caption: "Bulging, erythematous tympanic membrane - hallmark of AOM"
+    phase: exam
+    alt_text: "Otoscopic view of bulging red tympanic membrane with middle ear effusion"
+    source: "CDC PHIL"
+  - key: "tm_ome"
+    url: "PLACEHOLDER"
+    caption: "OME - retracted TM with air-fluid level, no signs of acute infection"
+    phase: exam
+    alt_text: "Otoscopic view showing effusion behind tympanic membrane without inflammation"
+    source: "CDC PHIL"
+  - key: "mastoiditis"
+    url: "PLACEHOLDER"
+    caption: "Mastoiditis - postauricular swelling with protrusion of pinna"
+    phase: exam
+    alt_text: "Child with swelling behind ear pushing ear forward"
+    source: "NIH"
+
 sources:
   - "AAP Clinical Practice Guideline: AOM (2013)"

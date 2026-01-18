@@ -57,6 +57,26 @@ disposition_guidance:
 
 parent_styles: [over-using-products, wants-quick-fix, natural-remedies]
 
+images:
+  - key: "irritant_diaper_rash"
+    url: "PLACEHOLDER"
+    caption: "Irritant diaper dermatitis - erythema on convex surfaces, SPARES creases"
+    phase: exam
+    alt_text: "Baby's diaper area with red rash on buttocks but skin folds clear"
+    source: "AAP"
+  - key: "candidal_diaper_rash"
+    url: "PLACEHOLDER"
+    caption: "Candidal diaper dermatitis - beefy red, INVOLVES creases, satellite pustules"
+    phase: exam
+    alt_text: "Bright red rash in diaper area with involvement of skin folds and small pustules"
+    source: "CDC PHIL"
+  - key: "satellite_lesions"
+    url: "PLACEHOLDER"
+    caption: "Satellite pustules - small red papules/pustules surrounding main rash, pathognomonic for candida"
+    phase: exam
+    alt_text: "Close-up showing small red spots scattered beyond edge of main diaper rash"
+    source: "NIH DermNet"
+
 sources:
   - "Blume-Peytavi U, et al. Prevention and Treatment of Diaper Dermatitis. Pediatric Dermatology"
   - "AAP: Diaper Rash Care"

@@ -66,6 +66,32 @@ disposition_guidance:
 
 parent_styles: [anxious, daycare-policy-focused, experienced]
 
+images:
+  - key: "hfmd_oral_lesions"
+    url: "PLACEHOLDER"
+    caption: "Oral ulcers in HFMD - shallow ulcers on tongue, buccal mucosa, palate"
+    phase: exam
+    alt_text: "Child's mouth showing small ulcers on tongue and inner cheeks"
+    source: "CDC PHIL"
+  - key: "hfmd_hand_vesicles"
+    url: "PLACEHOLDER"
+    caption: "HFMD hand lesions - vesicles on palms and fingers, often with red halo"
+    phase: exam
+    alt_text: "Child's hand with small blisters on palm and finger sides"
+    source: "CDC PHIL"
+  - key: "hfmd_foot_lesions"
+    url: "PLACEHOLDER"
+    caption: "HFMD foot lesions - vesicles on soles and toes"
+    phase: exam
+    alt_text: "Child's foot with vesicular lesions on sole"
+    source: "CDC PHIL"
+  - key: "hfmd_buttock_rash"
+    url: "PLACEHOLDER"
+    caption: "HFMD buttock involvement - papulovesicular rash, common extension"
+    phase: exam
+    alt_text: "Buttock area with scattered red papules and small vesicles"
+    source: "CDC"
+
 sources:
   - "CDC: Hand, Foot, and Mouth Disease"
   - "AAP Red Book"

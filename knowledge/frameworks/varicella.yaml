@@ -56,6 +56,32 @@ disposition_guidance:
 
 parent_styles: [worried-about-scarring, wants-antiviral, frustrated-about-exclusion]
 
+images:
+  - key: "varicella_stages"
+    url: "PLACEHOLDER"
+    caption: "Varicella 'dew drops on rose petal' - lesions in different stages on same exam"
+    phase: exam
+    alt_text: "Child's trunk showing papules, vesicles, and crusted lesions simultaneously"
+    source: "CDC PHIL"
+  - key: "varicella_vesicle"
+    url: "PLACEHOLDER"
+    caption: "Classic varicella vesicle - clear fluid on erythematous base"
+    phase: exam
+    alt_text: "Close-up of small blister with clear fluid surrounded by red skin"
+    source: "CDC PHIL"
+  - key: "varicella_crusted"
+    url: "PLACEHOLDER"
+    caption: "Crusted varicella lesions - child can return to school when all lesions crusted"
+    phase: debrief
+    alt_text: "Child's skin with all lesions dried and crusted over"
+    source: "CDC"
+  - key: "varicella_superinfection"
+    url: "PLACEHOLDER"
+    caption: "Bacterial superinfection - honey crusting, spreading erythema, needs antibiotics"
+    phase: exam
+    alt_text: "Varicella lesion with surrounding redness and golden crust indicating bacterial infection"
+    source: "NIH"
+
 sources:
   - "ACIP/CDC: Prevention of Varicella"
   - "AAP Red Book: Varicella-Zoster Virus Infections"

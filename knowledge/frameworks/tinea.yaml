@@ -56,6 +56,32 @@ disposition_guidance:
 
 parent_styles: [concerned-about-contagion, wants-quick-fix, pet-owners]
 
+images:
+  - key: "tinea_corporis"
+    url: "PLACEHOLDER"
+    caption: "Tinea corporis - annular plaque with raised scaly border and central clearing"
+    phase: exam
+    alt_text: "Ring-shaped red patch on skin with clear center and scaly edge"
+    source: "CDC PHIL"
+  - key: "tinea_capitis"
+    url: "PLACEHOLDER"
+    caption: "Tinea capitis - scalp scaling with black dot pattern (broken hairs)"
+    phase: exam
+    alt_text: "Child's scalp with patchy hair loss and visible broken hair stubs"
+    source: "CDC PHIL"
+  - key: "kerion"
+    url: "PLACEHOLDER"
+    caption: "Kerion - inflammatory boggy mass with pustules, needs oral antifungal + steroids"
+    phase: exam
+    alt_text: "Inflamed, swollen boggy scalp mass with pus and surrounding hair loss"
+    source: "NIH DermNet"
+  - key: "koh_prep"
+    url: "PLACEHOLDER"
+    caption: "KOH preparation showing fungal hyphae - confirms tinea diagnosis"
+    phase: debrief
+    alt_text: "Microscopic view of branching fungal hyphae on KOH mount"
+    source: "CDC PHIL"
+
 sources:
   - "AAP Red Book: Tinea Capitis and Corporis"
   - "Chen X, et al. Cochrane: Interventions for Tinea Capitis"

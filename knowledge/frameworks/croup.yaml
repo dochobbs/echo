@@ -65,6 +65,26 @@ seasonality:
 
 parent_styles: [scared-by-stridor, experienced-with-croup, wants-antibiotics]
 
+images:
+  - key: "steeple_sign"
+    url: "PLACEHOLDER"
+    caption: "Steeple sign on AP neck X-ray - subglottic narrowing (imaging rarely needed)"
+    phase: debrief
+    alt_text: "X-ray of neck showing tapered narrowing of trachea in steeple shape"
+    source: "NIH Radiopaedia"
+  - key: "westley_score"
+    url: "PLACEHOLDER"
+    caption: "Westley Croup Severity Score - stridor, retractions, air entry, cyanosis, consciousness"
+    phase: assessment
+    alt_text: "Table showing Westley score components and point values"
+    source: "AAP"
+  - key: "croup_vs_epiglottitis"
+    url: "PLACEHOLDER"
+    caption: "Differentiating croup (gradual onset, barky cough) from epiglottitis (rapid, drooling, toxic)"
+    phase: debrief
+    alt_text: "Comparison table of croup versus epiglottitis features"
+    source: "AAP"
+
 sources:
   - "American Family Physician: Croup - An Overview"
   - "Alberta Medical Association CPG: Diagnosis and Management of Croup"

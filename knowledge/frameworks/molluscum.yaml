@@ -72,6 +72,26 @@ disposition_guidance:
 
 parent_styles: [cosmetically-concerned, worried-about-spread, wanting-quick-fix]
 
+images:
+  - key: "molluscum_lesions"
+    url: "PLACEHOLDER"
+    caption: "Molluscum contagiosum - pearly, dome-shaped papules with central umbilication"
+    phase: exam
+    alt_text: "Skin showing multiple flesh-colored papules with central dimples"
+    source: "CDC PHIL"
+  - key: "molluscum_umbilication"
+    url: "PLACEHOLDER"
+    caption: "Close-up of molluscum showing central umbilication (dimple) - key diagnostic feature"
+    phase: exam
+    alt_text: "Close-up of single molluscum lesion showing central depression"
+    source: "NIH DermNet"
+  - key: "bote_sign"
+    url: "PLACEHOLDER"
+    caption: "BOTE sign - surrounding eczematous dermatitis heralds spontaneous resolution"
+    phase: debrief
+    alt_text: "Molluscum lesion with surrounding red, inflamed skin indicating immune response"
+    source: "AAD"
+
 sources:
   - "AAP Red Book: Molluscum Contagiosum"
   - "AAD: Molluscum Contagiosum Treatment"

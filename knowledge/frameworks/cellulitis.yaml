@@ -75,6 +75,32 @@ disposition_guidance:
 
 parent_styles: [anxious, MRSA-concerned, antibiotic-seeking]
 
+images:
+  - key: "cellulitis_leg"
+    url: "PLACEHOLDER"
+    caption: "Cellulitis - spreading erythema, warmth, tenderness without clear fluid collection"
+    phase: exam
+    alt_text: "Leg with diffuse red, swollen area spreading from central point"
+    source: "CDC PHIL"
+  - key: "erysipelas"
+    url: "PLACEHOLDER"
+    caption: "Erysipelas - sharply demarcated, raised borders (superficial dermis)"
+    phase: exam
+    alt_text: "Facial skin with bright red raised area with well-defined sharp border"
+    source: "NIH DermNet"
+  - key: "cellulitis_vs_abscess"
+    url: "PLACEHOLDER"
+    caption: "Cellulitis (diffuse) vs abscess (fluctuant collection) - key distinction for treatment"
+    phase: exam
+    alt_text: "Side-by-side comparison of spreading cellulitis versus localized abscess"
+    source: "AAP"
+  - key: "border_marking"
+    url: "PLACEHOLDER"
+    caption: "Mark borders with pen - track progression over 24-48 hours"
+    phase: exam
+    alt_text: "Arm with cellulitis showing pen mark at edge of redness to track spread"
+    source: "IDSA"
+
 sources:
   - "IDSA: Skin and Soft Tissue Infections"
   - "AAP Red Book"

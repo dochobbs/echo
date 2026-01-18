@@ -63,6 +63,32 @@ differential_diagnosis:
 
 parent_styles: [wants-antibiotics, concerned-about-spread, school-note-needed]
 
+images:
+  - key: "tonsillar_exudates"
+    url: "PLACEHOLDER"
+    caption: "Tonsillar exudates - white patches on enlarged tonsils, suggestive of strep"
+    phase: exam
+    alt_text: "Oral exam showing enlarged tonsils with white exudates"
+    source: "CDC PHIL"
+  - key: "palatal_petechiae"
+    url: "PLACEHOLDER"
+    caption: "Palatal petechiae - small red spots on soft palate, highly specific for GAS"
+    phase: exam
+    alt_text: "Soft palate with scattered petechial hemorrhages"
+    source: "CDC PHIL"
+  - key: "scarlet_fever_rash"
+    url: "PLACEHOLDER"
+    caption: "Scarlatiniform rash - sandpaper texture, sparing nasolabial folds"
+    phase: exam
+    alt_text: "Child's trunk with fine erythematous rash with sandpaper texture"
+    source: "CDC PHIL"
+  - key: "strawberry_tongue"
+    url: "PLACEHOLDER"
+    caption: "Strawberry tongue - red, bumpy tongue seen with scarlet fever"
+    phase: exam
+    alt_text: "Tongue with prominent red papillae resembling a strawberry"
+    source: "CDC PHIL"
+
 sources:
   - "Shulman ST, et al. IDSA CPG: GAS Pharyngitis (2012)"
   - "AAP Red Book: Group A Streptococcal Infections"

@@ -64,6 +64,38 @@ disposition_guidance:
 
 parent_styles: [terrified-about-heart, wants-answers, frustrated-by-delayed-diagnosis]
 
+images:
+  - key: "kawasaki_conjunctivitis"
+    url: "PLACEHOLDER"
+    caption: "Bilateral conjunctival injection without exudate - spares limbus"
+    phase: exam
+    alt_text: "Child's eyes showing bilateral red sclera without pus or discharge"
+    source: "CDC PHIL"
+  - key: "kawasaki_lips"
+    url: "PLACEHOLDER"
+    caption: "Cracked, erythematous lips in Kawasaki disease"
+    phase: exam
+    alt_text: "Red, dry, cracked lips typical of Kawasaki disease"
+    source: "NIH"
+  - key: "strawberry_tongue_kd"
+    url: "PLACEHOLDER"
+    caption: "Strawberry tongue - erythematous with prominent papillae"
+    phase: exam
+    alt_text: "Tongue with red, bumpy surface resembling strawberry"
+    source: "CDC PHIL"
+  - key: "kawasaki_hands"
+    url: "PLACEHOLDER"
+    caption: "Hand edema and erythema - early extremity changes; peeling occurs later"
+    phase: exam
+    alt_text: "Swollen, red hands and fingers in acute phase of Kawasaki disease"
+    source: "NIH"
+  - key: "kawasaki_peeling"
+    url: "PLACEHOLDER"
+    caption: "Periungual desquamation - peeling of fingertips, occurs in subacute phase"
+    phase: exam
+    alt_text: "Fingertips with skin peeling off around nail beds"
+    source: "AAP"
+
 sources:
   - "McCrindle BW, et al. AHA Scientific Statement: Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease"
   - "AAP Clinical Report: Kawasaki Disease"

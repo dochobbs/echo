@@ -73,6 +73,32 @@ disposition_guidance:
 
 parent_styles: [cosmetically-concerned, impatient-for-resolution, experienced]
 
+images:
+  - key: "external_hordeolum"
+    url: "PLACEHOLDER"
+    caption: "External hordeolum (stye) - acute, painful, pointing at lid margin"
+    phase: exam
+    alt_text: "Eyelid with red, swollen bump at lash line"
+    source: "NIH"
+  - key: "internal_hordeolum"
+    url: "PLACEHOLDER"
+    caption: "Internal hordeolum - meibomian gland infection, seen on inner eyelid"
+    phase: exam
+    alt_text: "Inner surface of eyelid showing swollen meibomian gland"
+    source: "AAO"
+  - key: "chalazion"
+    url: "PLACEHOLDER"
+    caption: "Chalazion - chronic, painless, firm nodule (lipogranuloma)"
+    phase: exam
+    alt_text: "Eyelid with non-tender firm bump away from lid margin"
+    source: "NIH"
+  - key: "warm_compress_technique"
+    url: "PLACEHOLDER"
+    caption: "Warm compress technique: apply 10-15 min, 4x daily, followed by gentle massage"
+    phase: debrief
+    alt_text: "Illustration showing proper application of warm compress to closed eyelid"
+    source: "AAO"
+
 sources:
   - "AAO Preferred Practice Pattern: Blepharitis"
   - "UpToDate: Hordeolum and Chalazion"

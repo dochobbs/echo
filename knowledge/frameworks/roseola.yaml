@@ -69,6 +69,20 @@ disposition_guidance:
 
 parent_styles: [anxious, first-time-parent, fever-phobic]
 
+images:
+  - key: "roseola_rash"
+    url: "PLACEHOLDER"
+    caption: "Roseola rash - rose-pink maculopapular rash on trunk as fever resolves"
+    phase: exam
+    alt_text: "Infant's trunk with diffuse pink blanching rash"
+    source: "CDC PHIL"
+  - key: "roseola_timeline"
+    url: "PLACEHOLDER"
+    caption: "Classic roseola pattern: 3-5 days high fever, then rash appears as fever breaks"
+    phase: debrief
+    alt_text: "Diagram showing fever curve dropping as rash appears"
+    source: "AAP"
+
 sources:
   - "AAP Red Book: Human Herpesvirus 6 and 7"
   - "CDC: Exanthem Subitum"

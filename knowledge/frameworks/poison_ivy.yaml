@@ -73,6 +73,32 @@ disposition_guidance:
 
 parent_styles: [frustrated-by-recurrence, steroid-hesitant, natural-remedy-seeking]
 
+images:
+  - key: "linear_vesicles"
+    url: "PLACEHOLDER"
+    caption: "Linear, streaky vesicular rash - pathognomonic for contact with plant"
+    phase: exam
+    alt_text: "Arm showing line of blisters following pattern of plant contact"
+    source: "CDC PHIL"
+  - key: "poison_ivy_bullae"
+    url: "PLACEHOLDER"
+    caption: "Severe reaction with bullae - may need systemic steroids"
+    phase: exam
+    alt_text: "Large fluid-filled blisters from severe poison ivy reaction"
+    source: "NIH DermNet"
+  - key: "poison_ivy_plant"
+    url: "PLACEHOLDER"
+    caption: "Poison ivy - 'Leaves of three, let it be' - pointed leaves, shiny surface"
+    phase: debrief
+    alt_text: "Poison ivy plant showing characteristic three-leaf cluster"
+    source: "USDA"
+  - key: "urushiol_spread"
+    url: "PLACEHOLDER"
+    caption: "Urushiol (oil) spreads rash - new lesions from touching contaminated objects"
+    phase: debrief
+    alt_text: "Diagram showing how oil spreads from plant to objects to skin"
+    source: "AAD"
+
 sources:
   - "AAD: Poison Ivy, Oak, and Sumac"
   - "AAP: Contact Dermatitis"

@@ -71,6 +71,26 @@ disposition_guidance:
 
 parent_styles: [worried-about-scarring, frustrated-by-spread, school-policy-focused]
 
+images:
+  - key: "nonbullous_impetigo"
+    url: "PLACEHOLDER"
+    caption: "Non-bullous impetigo - honey-colored crusted lesions around nose and mouth"
+    phase: exam
+    alt_text: "Child's face with golden-crusted erosions around nose and upper lip"
+    source: "CDC PHIL"
+  - key: "bullous_impetigo"
+    url: "PLACEHOLDER"
+    caption: "Bullous impetigo - flaccid blisters with clear/cloudy fluid, thin brown crust when ruptured"
+    phase: exam
+    alt_text: "Skin showing flaccid bullae with surrounding erythema"
+    source: "CDC PHIL"
+  - key: "ecthyma"
+    url: "PLACEHOLDER"
+    caption: "Ecthyma - ulcerative impetigo with punched-out ulcers and thick crust"
+    phase: exam
+    alt_text: "Leg with deep ulcerative lesions covered by thick adherent crust"
+    source: "CDC PHIL"
+
 sources:
   - "AAP Red Book: Staphylococcal and Streptococcal Skin Infections"
   - "IDSA: Skin and Soft Tissue Infections Guidelines"
