@@ -121,6 +121,11 @@ The app uses a "Clinical Calm" dark theme with Geist Mono font:
 - `Toast` - Notification toasts for milestones
 
 ## Recent Changes
+- 2026-01-18: Added bulk C-CDA upload feature
+  - New `/patients/import/bulk` endpoint accepts up to 50 files at once
+  - Frontend file picker now supports multiple file selection
+  - Shows success/failure count and lists failed filenames
+  - Per-file error handling - one bad file doesn't block others
 - 2026-01-17: Incorporated major platform updates
   - Added 25 new pediatric teaching frameworks (now 125 total)
   - Added admin dashboard module (`src/admin/`)

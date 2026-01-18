@@ -27,23 +27,46 @@ export function Patients() {
   };
 
   const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
 
     setImporting(true);
     setError(null);
     setSuccess(null);
 
     try {
-      const response = await api.importPatient(file);
-      setPatients(prev => [...prev, response.patient]);
-      setSuccess(`Imported ${response.patient.name}`);
-      
-      if (response.parse_warnings.length > 0) {
-        console.log('Parse warnings:', response.parse_warnings);
+      if (files.length === 1) {
+        const response = await api.importPatient(files[0]);
+        setPatients(prev => [...prev, response.patient]);
+        setSuccess(`Imported ${response.patient.name}`);
+        
+        if (response.parse_warnings.length > 0) {
+          console.log('Parse warnings:', response.parse_warnings);
+        }
+      } else {
+        const fileArray = Array.from(files);
+        const response = await api.bulkImportPatients(fileArray);
+        
+        const newPatients = response.results
+          .filter(r => r.success && r.patient)
+          .map(r => r.patient!);
+        
+        setPatients(prev => [...prev, ...newPatients]);
+        
+        if (response.failed > 0) {
+          const failedFiles = response.results
+            .filter(r => !r.success)
+            .map(r => r.filename)
+            .join(', ');
+          setError(`Failed to import ${response.failed} file(s): ${failedFiles}`);
+        }
+        
+        if (response.successful > 0) {
+          setSuccess(`Successfully imported ${response.successful} patient${response.successful > 1 ? 's' : ''}`);
+        }
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to import patient');
+      setError(err instanceof Error ? err.message : 'Failed to import patient(s)');
     } finally {
       setImporting(false);
       if (fileInputRef.current) {
@@ -94,6 +117,7 @@ export function Patients() {
           ref={fileInputRef}
           type="file"
           accept=".xml,.cda,.ccda"
+          multiple
           onChange={handleFileSelect}
           className="hidden"
           id="ccda-upload"
@@ -112,11 +136,11 @@ export function Patients() {
             <UploadIcon size={24} className="text-gray-400" />
           )}
           <span className="text-gray-300">
-            {importing ? 'Importing...' : 'Upload C-CDA File'}
+            {importing ? 'Importing...' : 'Upload C-CDA Files'}
           </span>
         </label>
         <p className="text-xs text-gray-500 mt-2 text-center">
-          Accepts .xml, .cda, or .ccda files
+          Accepts .xml, .cda, or .ccda files (select multiple for bulk upload)
         </p>
       </motion.div>
 

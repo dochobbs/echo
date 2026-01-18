@@ -325,6 +325,31 @@ class ApiClient {
     return this.fetch(`/patients/${patientId}`, { method: 'DELETE' });
   }
 
+  async bulkImportPatients(files: File[]): Promise<BulkImportResponse> {
+    const formData = new FormData();
+    for (const file of files) {
+      formData.append('files', file);
+    }
+
+    const headers: Record<string, string> = {};
+    if (this.token) {
+      headers['Authorization'] = `Bearer ${this.token}`;
+    }
+
+    const response = await fetch(`${getApiBase()}/patients/import/bulk`, {
+      method: 'POST',
+      headers,
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error.detail || 'Bulk import failed');
+    }
+
+    return response.json();
+  }
+
   async getAdminMetrics(): Promise<AdminMetrics> {
     return this.fetch('/admin/metrics');
   }
@@ -387,6 +412,21 @@ export interface StruggleMetrics {
   common_stuck_phases: Array<{ phase: string; count: number }>;
   high_hint_conditions: Array<{ condition: string; avg_hints: number }>;
   avg_hints_by_level: Array<{ level: string; avg_hints: number }>;
+}
+
+export interface BulkImportResult {
+  filename: string;
+  success: boolean;
+  patient?: ImportedPatient;
+  error?: string;
+  warnings: string[];
+}
+
+export interface BulkImportResponse {
+  results: BulkImportResult[];
+  total_files: number;
+  successful: number;
+  failed: number;
 }
 
 export interface ImportedPatient {

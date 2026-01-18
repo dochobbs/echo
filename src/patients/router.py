@@ -3,7 +3,7 @@
 from typing import Optional, List
 from uuid import UUID
 
-from fastapi import APIRouter, HTTPException, Depends, UploadFile, File
+from fastapi import APIRouter, HTTPException, Depends, UploadFile, File, status
 from pydantic import BaseModel
 
 from ..auth.deps import get_current_user, get_optional_user
@@ -14,6 +14,8 @@ from .models import (
   ImportedPatient,
   PatientListResponse,
   PatientImportResponse,
+  BulkImportResponse,
+  BulkImportResult,
 )
 from .ccda_parser import parse_ccda
 
@@ -81,6 +83,74 @@ async def import_patient(
   return PatientImportResponse(
     patient=patient,
     parse_warnings=warnings,
+  )
+
+
+@router.post("/import/bulk", response_model=BulkImportResponse)
+async def bulk_import_patients(
+  files: List[UploadFile] = File(...),
+  user: User = Depends(get_current_user),
+):
+  """Import multiple patients from C-CDA XML files.
+
+  Accepts up to 50 files at once. Returns results for each file.
+  """
+  if len(files) > 50:
+    raise HTTPException(
+      status_code=status.HTTP_400_BAD_REQUEST,
+      detail="Maximum 50 files allowed per upload",
+    )
+
+  results: List[BulkImportResult] = []
+  patients = _get_user_patients(str(user.id))
+
+  for file in files:
+    filename = file.filename or "unknown"
+    
+    if not filename.endswith((".xml", ".cda", ".ccda")):
+      results.append(BulkImportResult(
+        filename=filename,
+        success=False,
+        error="File must be XML format (.xml, .cda, or .ccda)",
+      ))
+      continue
+
+    try:
+      content = await file.read()
+      xml_content = content.decode("utf-8")
+    except UnicodeDecodeError:
+      results.append(BulkImportResult(
+        filename=filename,
+        success=False,
+        error="File must be valid UTF-8 encoded XML",
+      ))
+      continue
+
+    try:
+      patient, warnings = parse_ccda(xml_content, source_file=filename)
+      patient.user_id = str(user.id)
+      patients.append(patient)
+      
+      results.append(BulkImportResult(
+        filename=filename,
+        success=True,
+        patient=patient,
+        warnings=warnings,
+      ))
+    except ValueError as e:
+      results.append(BulkImportResult(
+        filename=filename,
+        success=False,
+        error=str(e),
+      ))
+
+  successful = sum(1 for r in results if r.success)
+  
+  return BulkImportResponse(
+    results=results,
+    total_files=len(files),
+    successful=successful,
+    failed=len(files) - successful,
   )
 
 

@@ -78,3 +78,20 @@ class PatientImportResponse(BaseModel):
   """Response after importing a patient."""
   patient: ImportedPatient
   parse_warnings: List[str] = Field(default_factory=list)
+
+
+class BulkImportResult(BaseModel):
+  """Result for a single file in bulk import."""
+  filename: str
+  success: bool
+  patient: Optional[ImportedPatient] = None
+  error: Optional[str] = None
+  warnings: List[str] = Field(default_factory=list)
+
+
+class BulkImportResponse(BaseModel):
+  """Response after bulk importing patients."""
+  results: List[BulkImportResult]
+  total_files: int
+  successful: int
+  failed: int
