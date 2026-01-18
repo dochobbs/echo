@@ -1,0 +1,79 @@
+# Skin Abscess - Teaching Framework
+topic: "Skin Abscess"
+aliases: ["boil", "furuncle", "carbuncle", "I&D", "abscess drainage"]
+category: infectious
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Distinguish abscess from cellulitis"
+  - "Know when incision and drainage is needed"
+  - "Understand role of antibiotics with I&D"
+  - "Recognize MRSA and risk factors"
+  - "Perform basic I&D technique"
+
+common_mistakes:
+  - "Treating abscess with antibiotics alone (needs drainage)"
+  - "Incising too early before fluctuance"
+  - "Inadequate incision for drainage"
+  - "Not breaking up loculations"
+  - "Routine cultures in simple abscess"
+
+red_flags:
+  - "Periorbital, perirectal, or hand abscess"
+  - "Immunocompromised patient"
+  - "Signs of systemic infection (fever, tachycardia)"
+  - "Rapidly spreading cellulitis"
+  - "Concern for necrotizing fasciitis"
+  - "Failed outpatient I&D"
+  - "Deep or large abscess requiring OR"
+
+clinical_pearls:
+  - "Fluctuance = fluid collection = needs drainage"
+  - "I&D is the treatment - antibiotics alone don't work"
+  - "Antibiotics after I&D: debated, consider if surrounding cellulitis"
+  - "CA-MRSA common cause - TMP-SMX or doxycycline if antibiotics used"
+  - "Packing controversial - evidence mixed, may not be needed"
+  - "Warm compresses can help small abscesses drain spontaneously"
+  - "Recurrent abscesses: consider decolonization, check glucose"
+
+key_history_questions:
+  - "How long has it been there?"
+  - "Getting bigger?"
+  - "Any fever?"
+  - "Previous similar infections?"
+  - "Anyone else at home with skin infections?"
+  - "Diabetes or immune problems?"
+  - "Recent antibiotics?"
+  - "Insect bite or injury before this?"
+
+key_exam_findings:
+  - "Fluctuance (key finding)"
+  - "Erythema, warmth, tenderness"
+  - "Surrounding cellulitis"
+  - "Point of maximal fluctuance"
+  - "Regional lymphadenopathy"
+  - "Fever"
+  - "Location (face, hand, perirectal = higher risk)"
+
+treatment_principles:
+  - "I&D is primary treatment if fluctuant"
+  - "Anesthesia: local infiltration around abscess"
+  - "Linear incision over fluctuant area"
+  - "Break up loculations with hemostat"
+  - "Irrigate cavity"
+  - "Packing optional (no clear benefit in evidence)"
+  - "Antibiotics: TMP-SMX or doxycycline if cellulitis, immunocompromised"
+  - "Wound care: keep clean, warm compresses, follow-up for packing removal"
+
+disposition_guidance:
+  - "Outpatient: Simple abscess with successful I&D"
+  - "Referral: Periorbital, hand, perirectal abscess"
+  - "ED/OR: Large or deep abscess, failed I&D, systemic illness"
+  - "Return in 48 hours for recheck/packing change"
+  - "Decolonization: Recurrent infections - mupirocin nares, chlorhexidine washes"
+
+parent_styles: [anxious, MRSA-fearful, frustrated-by-recurrence]
+
+sources:
+  - "IDSA: Skin and Soft Tissue Infections"
+  - "AAP Red Book: Staphylococcal Infections"

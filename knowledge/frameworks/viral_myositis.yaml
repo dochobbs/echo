@@ -1,0 +1,79 @@
+# Viral Myositis - Teaching Framework
+topic: "Benign Acute Childhood Myositis"
+aliases: ["viral myositis", "post-influenza myositis", "calf pain after flu"]
+category: musculoskeletal
+age_range_months: [36, 144]
+
+teaching_goals:
+  - "Recognize classic post-viral presentation"
+  - "Distinguish from more serious causes"
+  - "Know appropriate workup"
+  - "Counsel on self-limited nature"
+  - "Identify when further evaluation needed"
+
+common_mistakes:
+  - "Extensive workup for classic presentation"
+  - "Missing compartment syndrome"
+  - "Confusing with dermatomyositis or polymyositis"
+  - "Not checking CK level"
+  - "Missing rhabdomyolysis in severe cases"
+
+red_flags:
+  - "Dark urine (myoglobinuria/rhabdomyolysis)"
+  - "CK > 10,000 (rhabdomyolysis risk)"
+  - "Fever with muscle weakness (not just pain)"
+  - "Progressive weakness"
+  - "Rash (dermatomyositis)"
+  - "Swallowing or breathing difficulty"
+  - "Compartment syndrome signs"
+
+clinical_pearls:
+  - "Classic: school-age child, 1-7 days after influenza or viral URI"
+  - "Bilateral calf pain and tenderness"
+  - "Refuses to walk or walks on toes"
+  - "Influenza B more common than A"
+  - "Boys > girls"
+  - "CK elevated (usually 1,000-10,000)"
+  - "Self-limited: resolves in 3-7 days"
+  - "Upper extremity involvement or weakness = think other diagnoses"
+
+key_history_questions:
+  - "Recent viral illness? Influenza?"
+  - "When did leg pain start relative to illness?"
+  - "Bilateral or unilateral?"
+  - "Can they walk? How are they walking?"
+  - "Any weakness (vs just pain)?"
+  - "Dark urine?"
+  - "Rash?"
+  - "Fever still present?"
+
+key_exam_findings:
+  - "Bilateral calf tenderness (classic)"
+  - "Toe walking or refusal to walk"
+  - "Full strength (pain-limited but no true weakness)"
+  - "Full range of motion (pain-limited)"
+  - "No rash"
+  - "Compartments soft"
+  - "Normal neurologic exam"
+
+treatment_principles:
+  - "Supportive care"
+  - "Rest and hydration"
+  - "Pain control with NSAIDs or acetaminophen"
+  - "Check CK - expect elevated"
+  - "If CK very high (>10k): IV fluids, monitor renal function"
+  - "Activity as tolerated"
+  - "Should improve daily"
+
+disposition_guidance:
+  - "Outpatient: Classic presentation, CK < 10,000, well hydrated"
+  - "Observation/admission: CK > 10,000, dark urine, unable to hydrate"
+  - "Labs: CK, consider BMP (renal function) if concerned"
+  - "Return: Dark urine, worsening pain, not improving in 3-5 days"
+  - "Further workup: Progressive, unilateral, upper extremity, true weakness"
+
+parent_styles: [worried-about-paralysis, frustrated-child-wont-walk]
+
+sources:
+  - "Pediatrics: Benign Acute Childhood Myositis"
+  - "AAP: Post-Influenza Myositis"

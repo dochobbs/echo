@@ -1,0 +1,77 @@
+# Viral URI / Common Cold - Teaching Framework
+topic: "Viral Upper Respiratory Infection"
+aliases: ["common cold", "viral URI", "rhinitis", "nasopharyngitis"]
+category: infectious
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Recognize viral URI as self-limited illness"
+  - "Distinguish from bacterial complications"
+  - "Avoid unnecessary antibiotic prescribing"
+  - "Counsel on symptomatic management"
+  - "Set appropriate expectations for duration"
+
+common_mistakes:
+  - "Prescribing antibiotics for viral illness"
+  - "Using cough/cold medications in young children"
+  - "Diagnosing sinusitis before 10 days of symptoms"
+  - "Not setting expectations for symptom duration"
+  - "Missing bacterial superinfection"
+
+red_flags:
+  - "Respiratory distress"
+  - "High fever > 5 days"
+  - "Worsening after initial improvement (double-sickening)"
+  - "Severe unilateral facial pain"
+  - "Toxic appearance"
+  - "Symptoms > 10 days without improvement"
+
+clinical_pearls:
+  - "Average duration: 7-10 days, cough can persist 2-3 weeks"
+  - "Children average 6-8 URIs per year"
+  - "Nasal discharge color does NOT indicate bacterial infection"
+  - "Peak symptoms days 2-3, gradual improvement thereafter"
+  - "OTC cough/cold meds not recommended < 6 years (FDA)"
+  - "Honey (> 1 year) may help nocturnal cough"
+  - "Antibiotics provide no benefit and cause harm"
+
+key_history_questions:
+  - "How many days of symptoms?"
+  - "Getting better, worse, or same?"
+  - "Fever? How high and for how long?"
+  - "Able to drink fluids?"
+  - "Any breathing difficulty?"
+  - "Previous URIs this season?"
+  - "Sick contacts?"
+  - "Any underlying conditions (asthma, immunodeficiency)?"
+
+key_exam_findings:
+  - "Nasal congestion and rhinorrhea"
+  - "Pharyngeal erythema (without exudate)"
+  - "Clear or colored nasal discharge"
+  - "Mild conjunctival injection"
+  - "Cervical lymphadenopathy"
+  - "Clear lungs"
+  - "No respiratory distress"
+
+treatment_principles:
+  - "Supportive care only - no antibiotics"
+  - "Saline nasal drops/spray"
+  - "Humidifier"
+  - "Adequate hydration"
+  - "Acetaminophen/ibuprofen for fever/discomfort"
+  - "Honey for cough (> 1 year old)"
+  - "Avoid OTC cough/cold medications < 6 years"
+  - "Nasal suctioning for infants"
+
+disposition_guidance:
+  - "Outpatient: All uncomplicated cases"
+  - "Return if: Symptoms > 10 days, worsening after improvement, high fever > 5 days"
+  - "Return if: Difficulty breathing, refusing fluids, ear pain"
+  - "No school exclusion needed unless fever or unable to participate"
+
+parent_styles: [antibiotic-seeking, anxious, frustrated-by-recurrence, experienced]
+
+sources:
+  - "AAP: Upper Respiratory Infections"
+  - "CDC: Antibiotic Prescribing and Use"

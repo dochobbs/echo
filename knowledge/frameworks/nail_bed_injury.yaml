@@ -1,0 +1,80 @@
+# Nail Bed Injuries - Teaching Framework
+topic: "Nail Bed Injuries"
+aliases: ["subungual hematoma", "nail avulsion", "crushed finger", "smashed finger"]
+category: trauma
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Know when trephination is appropriate"
+  - "Recognize injuries requiring nail bed repair"
+  - "Identify associated distal phalanx fracture"
+  - "Understand nail regrowth expectations"
+  - "Know when hand surgery referral needed"
+
+common_mistakes:
+  - "Trephinating when nail bed repair is needed"
+  - "Not obtaining X-ray (missing tuft fracture)"
+  - "Replacing nail without repairing nail bed laceration"
+  - "Over-treating simple subungual hematoma"
+  - "Missing amputation/near-amputation"
+
+red_flags:
+  - "Nail avulsed with visible nail bed laceration"
+  - "Amputation of fingertip"
+  - "Open fracture"
+  - "Severely displaced fracture"
+  - "Significant loss of tissue"
+  - "Tendon or joint involvement"
+
+clinical_pearls:
+  - "Subungual hematoma < 50% nail, intact nail and margins: trephination OK"
+  - "Subungual hematoma > 50% or nail disrupted: remove nail, repair nail bed"
+  - "Seymour fracture: open physeal fracture through nail bed - needs OR"
+  - "Tuft fracture usually heals well with splint protection"
+  - "Nail takes 3-6 months to fully regrow"
+  - "Replace nail (or foil) to splint nail fold open during healing"
+  - "Absorbable sutures (6-0 chromic) for nail bed repair"
+  - "Children have excellent healing potential"
+
+key_history_questions:
+  - "Mechanism - crush, laceration, saw?"
+  - "When did it happen?"
+  - "Any tissue loss?"
+  - "Nail still attached?"
+  - "Tetanus status?"
+  - "Dominant hand?"
+  - "Numbness?"
+
+key_exam_findings:
+  - "Nail plate intact or disrupted"
+  - "Size of subungual hematoma (percentage)"
+  - "Nail fold margins intact"
+  - "Visible nail bed laceration"
+  - "DIP joint stability"
+  - "Sensation distal to injury"
+  - "Flexor and extensor function"
+  - "Tissue viability"
+
+treatment_principles:
+  - "X-ray: Always - rule out fracture"
+  - "Simple subungual hematoma (<50%, nail intact): trephination"
+  - "Trephination: heated paper clip or cautery through nail"
+  - "Large hematoma or nail disrupted: remove nail, repair bed"
+  - "Nail bed repair: 6-0 absorbable suture under magnification"
+  - "Replace cleaned nail (or foil) under nail fold as splint"
+  - "Tuft fracture: protective splint 3-4 weeks"
+  - "Antibiotics if open fracture"
+
+disposition_guidance:
+  - "Office/ED: Simple hematoma trephination, simple tuft fracture"
+  - "Hand surgery: Nail bed laceration needing repair, complex injuries"
+  - "Urgent hand surgery: Seymour fracture, amputation, replantation candidate"
+  - "Splint protection: Tuft fractures, post-repair"
+  - "Follow-up: 1 week wound check, longer for nail regrowth monitoring"
+  - "Counsel: New nail may look different; takes months to regrow"
+
+parent_styles: [panicked, worried-about-permanent-damage, cosmetic-concern]
+
+sources:
+  - "ASSH: Fingertip Injuries"
+  - "Pediatric Hand Surgery Guidelines"

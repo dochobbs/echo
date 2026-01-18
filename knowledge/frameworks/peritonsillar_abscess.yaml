@@ -1,0 +1,80 @@
+# Peritonsillar Abscess - Teaching Framework
+topic: "Peritonsillar Abscess"
+aliases: ["PTA", "quinsy", "tonsillar abscess"]
+category: ENT
+age_range_months: [60, 216]
+
+teaching_goals:
+  - "Recognize clinical presentation"
+  - "Distinguish from severe pharyngitis and other deep neck infections"
+  - "Know when imaging is needed"
+  - "Understand drainage options"
+  - "Identify airway compromise"
+
+common_mistakes:
+  - "Missing abscess in child with 'bad sore throat'"
+  - "Not examining for trismus and uvula deviation"
+  - "Delaying drainage"
+  - "Missing retropharyngeal or parapharyngeal extension"
+  - "Not considering in mononucleosis patients"
+
+red_flags:
+  - "Airway compromise (stridor, drooling, tripod positioning)"
+  - "Bilateral abscess (rare)"
+  - "Rapid progression"
+  - "Extension to parapharyngeal or retropharyngeal space"
+  - "Sepsis"
+  - "Immunocompromised patient"
+
+clinical_pearls:
+  - "Trismus (difficulty opening mouth) is key finding"
+  - "Uvula deviation away from affected side"
+  - "'Hot potato' or muffled voice"
+  - "Unilateral tonsillar bulge and erythema"
+  - "Often follows strep pharyngitis or mononucleosis"
+  - "Fusobacterium and Group A strep common pathogens"
+  - "Needle aspiration or I&D is treatment"
+  - "Can often be done in ED without OR in cooperative patient"
+
+key_history_questions:
+  - "Duration and progression of sore throat?"
+  - "Fever?"
+  - "Difficulty opening mouth?"
+  - "Difficulty swallowing, drooling?"
+  - "Voice changes - muffled?"
+  - "Neck stiffness or swelling?"
+  - "Previous sore throats or tonsillitis?"
+  - "Recent treatment for pharyngitis?"
+
+key_exam_findings:
+  - "Trismus - inability to open mouth fully"
+  - "Uvula deviation"
+  - "Unilateral tonsillar bulge"
+  - "Peritonsillar erythema and swelling"
+  - "Cervical lymphadenopathy"
+  - "'Hot potato' voice"
+  - "Drooling"
+  - "Torticollis (neck tilted to affected side)"
+
+treatment_principles:
+  - "Drainage: needle aspiration or I&D"
+  - "IV antibiotics: ampicillin-sulbactam or clindamycin"
+  - "Steroids: dexamethasone reduces inflammation"
+  - "Pain control and hydration"
+  - "Most can be done in ED with cooperative patient"
+  - "OR drainage if uncooperative, complex, or airway concern"
+  - "Tonsillectomy not usually needed acutely (consider if recurrent)"
+
+disposition_guidance:
+  - "Admission: Most patients after drainage for IV antibiotics"
+  - "Observation: Mild cases, adequate PO, reliable follow-up"
+  - "ENT consultation: All cases"
+  - "CT neck: If concern for deeper space infection"
+  - "Airway management: Anesthesia involvement if airway concern"
+  - "Follow-up: ENT to discuss tonsillectomy if recurrent"
+
+parent_styles: [anxious, concerned-about-airway, antibiotic-questioning]
+
+sources:
+  - "AAP: Peritonsillar Abscess"
+  - "IDSA: Pharyngitis Guidelines"

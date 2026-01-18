@@ -1,0 +1,81 @@
+# Prepubertal Vulvovaginitis - Teaching Framework
+topic: "Prepubertal Vulvovaginitis"
+aliases: ["vulvitis", "vaginitis", "vaginal discharge child", "vulvar irritation"]
+category: gynecology
+age_range_months: [12, 120]
+
+teaching_goals:
+  - "Recognize nonspecific vulvovaginitis as most common cause"
+  - "Distinguish infectious from non-infectious causes"
+  - "Know when to suspect foreign body"
+  - "Identify when sexual abuse evaluation needed"
+  - "Counsel on hygiene and prevention"
+
+common_mistakes:
+  - "Assuming STI without appropriate evaluation"
+  - "Missing foreign body"
+  - "Over-treating with antibiotics"
+  - "Not counseling on hygiene factors"
+  - "Failing to consider pinworms"
+
+red_flags:
+  - "Bloody discharge (foreign body, trauma, tumor)"
+  - "Foul-smelling persistent discharge (foreign body)"
+  - "Suspected sexual abuse"
+  - "STI in prepubertal child"
+  - "Labial or vaginal trauma"
+  - "Precocious puberty signs"
+
+clinical_pearls:
+  - "Hypoestrogenic prepubertal vagina is vulnerable to irritation"
+  - "Nonspecific vulvovaginitis: most common - hygiene related"
+  - "Common irritants: bubble bath, tight clothing, poor wiping"
+  - "Foreign body: foul discharge, bloody, toilet paper most common"
+  - "Pinworms can cause vulvar itching and irritation"
+  - "Group A strep can cause vulvovaginitis (perianal too)"
+  - "Any STI in prepubertal child = abuse until proven otherwise"
+
+key_history_questions:
+  - "Discharge - color, odor, amount?"
+  - "Itching or pain?"
+  - "Bloody discharge?"
+  - "Bathing habits - bubble bath, soaps?"
+  - "Wiping technique - front to back?"
+  - "Type of underwear?"
+  - "Recent illness (strep throat, GI illness)?"
+  - "Nighttime itching (pinworms)?"
+  - "Any concerns for abuse?"
+
+key_exam_findings:
+  - "External vulvar exam - erythema, excoriation"
+  - "Discharge character"
+  - "Labial adhesions"
+  - "Frog-leg or knee-chest position for visualization"
+  - "Foreign body visible?"
+  - "Signs of trauma"
+  - "Perianal exam (strep, pinworms)"
+  - "Hygiene status"
+
+treatment_principles:
+  - "Nonspecific: hygiene measures are treatment"
+  - "Sitz baths in plain warm water"
+  - "White cotton underwear"
+  - "Wipe front to back"
+  - "Avoid irritants (bubble bath, harsh soaps)"
+  - "Barrier cream (petroleum jelly, zinc oxide)"
+  - "Specific infections: treat organism (GAS, pinworms)"
+  - "Foreign body: removal (may need sedation)"
+
+disposition_guidance:
+  - "Outpatient: All non-traumatic cases"
+  - "Cultures: If discharge purulent or persistent"
+  - "Pinworm test: Nighttime itching"
+  - "Foreign body removal: May need exam under sedation"
+  - "Abuse evaluation: Any STI, trauma, concerning history"
+  - "GYN referral: Refractory, structural concerns, labial adhesions not responding"
+
+parent_styles: [embarrassed, abuse-worried, hygiene-focused]
+
+sources:
+  - "AAP: Vulvovaginitis in the Prepubertal Child"
+  - "ACOG: Pediatric Gynecology"

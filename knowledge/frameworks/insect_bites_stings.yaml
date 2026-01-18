@@ -1,0 +1,79 @@
+# Insect Bites and Stings - Teaching Framework
+topic: "Insect Bites and Stings"
+aliases: ["bug bites", "bee sting", "mosquito bites", "spider bite"]
+category: environmental
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Distinguish local reaction from cellulitis"
+  - "Recognize anaphylaxis and systemic reactions"
+  - "Know when antibiotics are indicated"
+  - "Identify high-risk bites (brown recluse, black widow)"
+  - "Counsel on prevention and symptomatic care"
+
+common_mistakes:
+  - "Treating local reaction as cellulitis"
+  - "Diagnosing 'spider bite' without evidence (usually staph)"
+  - "Missing embedded stinger"
+  - "Not asking about systemic symptoms"
+  - "Prescribing antibiotics for uncomplicated bites"
+
+red_flags:
+  - "Anaphylaxis symptoms (throat tightness, wheezing, hypotension)"
+  - "Large local reaction with fever"
+  - "Spreading erythema with streaking"
+  - "Necrotic center (brown recluse concern)"
+  - "Muscle cramps, abdominal pain (black widow)"
+  - "Multiple stings (>10)"
+  - "Sting in mouth/throat"
+
+clinical_pearls:
+  - "Local reaction: immediate swelling, peaks 24-48h, can be large"
+  - "Cellulitis: develops 24-48h later, warm, spreading, +/- fever"
+  - "Large local reactions (>10cm) are IgE-mediated, not infection"
+  - "Most 'spider bites' are actually MRSA skin infections"
+  - "Bee stingers should be scraped off, not squeezed"
+  - "Fire ant stings cause sterile pustules - don't pop"
+  - "Serum sickness-like reaction can occur days later"
+
+key_history_questions:
+  - "What bit/stung? Did you see it?"
+  - "When did it happen?"
+  - "Any breathing difficulty or throat tightness?"
+  - "Any dizziness, hives elsewhere, or swelling of lips/face?"
+  - "Previous reactions to stings?"
+  - "Is it getting better or worse?"
+  - "Any fever?"
+  - "Where did it happen (geography, indoors/outdoors)?"
+
+key_exam_findings:
+  - "Local swelling, erythema size"
+  - "Warmth and tenderness"
+  - "Central punctum or stinger"
+  - "Lymphangitic streaking"
+  - "Regional lymphadenopathy"
+  - "Assess for systemic: vitals, wheezing, urticaria"
+  - "Necrosis or eschar"
+  - "Mark edges to monitor spread"
+
+treatment_principles:
+  - "Local reaction: ice, elevation, antihistamine, topical steroid"
+  - "Remove stinger by scraping (not squeezing)"
+  - "Oral antihistamine for itching"
+  - "Oral steroids for large local reactions"
+  - "Antibiotics only if true cellulitis develops"
+  - "Epinephrine for anaphylaxis"
+  - "Tetanus update if needed"
+
+disposition_guidance:
+  - "Outpatient: Most local reactions"
+  - "Observation: Large local reaction with oral steroids"
+  - "ED: Any systemic symptoms, anaphylaxis"
+  - "Allergist referral: Systemic reaction to Hymenoptera for venom immunotherapy"
+  - "Return: Spreading redness, fever, worsening after 48h"
+
+parent_styles: [anxious, allergy-concerned, demanding-antibiotics]
+
+sources:
+  - "AAP: Insect Bites and Stings"
+  - "ACAAI: Insect Sting Allergy"

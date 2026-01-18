@@ -1,0 +1,78 @@
+# Stye and Chalazion - Teaching Framework
+topic: "Hordeolum and Chalazion"
+aliases: ["stye", "hordeolum", "chalazion", "eyelid bump"]
+category: ophthalmology
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Distinguish hordeolum (stye) from chalazion"
+  - "Differentiate internal from external hordeolum"
+  - "Know conservative management as first-line"
+  - "Recognize when referral is needed"
+  - "Identify preseptal cellulitis complication"
+
+common_mistakes:
+  - "Prescribing oral antibiotics for simple stye"
+  - "Recommending incision too early"
+  - "Missing preseptal cellulitis"
+  - "Not counseling on warm compress technique"
+  - "Confusing with chalazion management"
+
+red_flags:
+  - "Fever with eyelid swelling"
+  - "Proptosis or limited eye movement"
+  - "Vision changes"
+  - "Spreading erythema beyond eyelid"
+  - "Multiple recurrent lesions (blepharitis)"
+  - "Not improving after 1-2 weeks"
+
+clinical_pearls:
+  - "Hordeolum (stye): acute, painful, infected gland - S. aureus"
+  - "External: eyelash follicle (gland of Zeis/Moll)"
+  - "Internal: meibomian gland"
+  - "Chalazion: chronic, painless, lipogranuloma - NOT infected"
+  - "Warm compresses 4x daily for 10-15 minutes"
+  - "Most resolve spontaneously in 1-2 weeks"
+  - "Never squeeze or pop"
+
+key_history_questions:
+  - "How long has the bump been present?"
+  - "Painful or painless?"
+  - "Getting bigger or smaller?"
+  - "Previous similar episodes?"
+  - "Any vision changes?"
+  - "Fever?"
+  - "Contact lens use?"
+  - "Eyelid hygiene routine?"
+
+key_exam_findings:
+  - "Location: lid margin (external) vs inner lid (internal)"
+  - "Tender vs non-tender"
+  - "Pointing/draining vs firm nodule"
+  - "Eyelid erythema and edema"
+  - "Conjunctival injection"
+  - "Visual acuity"
+  - "Extraocular movements"
+  - "Signs of preseptal cellulitis"
+
+treatment_principles:
+  - "Warm compresses: 10-15 min, 4x daily"
+  - "Gentle lid massage after compress"
+  - "Lid hygiene with baby shampoo"
+  - "Topical antibiotic ointment (erythromycin) - optional for hordeolum"
+  - "No oral antibiotics unless cellulitis"
+  - "Chalazion: may need steroid injection or I&D if persistent"
+  - "Never incise acute hordeolum"
+
+disposition_guidance:
+  - "Outpatient: All simple cases"
+  - "Ophthalmology referral: Chalazion > 6-8 weeks, recurrent, affecting vision"
+  - "Urgent evaluation: Preseptal cellulitis signs"
+  - "Return: Not improving in 1-2 weeks, spreading redness, fever"
+  - "Recurrent: Evaluate for blepharitis, consider lid hygiene regimen"
+
+parent_styles: [cosmetically-concerned, impatient-for-resolution, experienced]
+
+sources:
+  - "AAO Preferred Practice Pattern: Blepharitis"
+  - "UpToDate: Hordeolum and Chalazion"

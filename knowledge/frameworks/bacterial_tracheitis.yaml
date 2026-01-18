@@ -1,0 +1,80 @@
+# Bacterial Tracheitis - Teaching Framework
+topic: "Bacterial Tracheitis"
+aliases: ["pseudomembranous croup", "bacterial croup", "membranous laryngotracheobronchitis"]
+category: respiratory
+age_range_months: [6, 96]
+
+teaching_goals:
+  - "Distinguish from viral croup"
+  - "Recognize as airway emergency"
+  - "Know typical pathogens and treatment"
+  - "Understand need for ICU/airway management"
+  - "Identify when to suspect this diagnosis"
+
+common_mistakes:
+  - "Treating as simple croup when not responding"
+  - "Delayed recognition of airway emergency"
+  - "Not involving ENT/anesthesia early"
+  - "Inadequate antibiotic coverage"
+  - "Missing in child with 'croup not responding to treatment'"
+
+red_flags:
+  - "High fever with stridor"
+  - "Toxic appearance"
+  - "Not responding to croup treatment"
+  - "Rapidly progressive airway symptoms"
+  - "Thick purulent secretions"
+  - "Increasing work of breathing despite treatment"
+
+clinical_pearls:
+  - "Average age 4-5 years (older than typical croup)"
+  - "Often follows viral URI or croup"
+  - "High fever + stridor + toxic = think bacterial tracheitis"
+  - "S. aureus most common (including MRSA)"
+  - "Also: Strep, H. flu, Moraxella"
+  - "Subglottic narrowing with irregular margins/pseudomembranes"
+  - "May need bronchoscopy for diagnosis and debridement"
+  - "Higher intubation rate than croup"
+
+key_history_questions:
+  - "How did this start? Preceding croup or URI?"
+  - "Fever - how high?"
+  - "Stridor - at rest?"
+  - "Any treatment for croup given? Response?"
+  - "Getting better or worse?"
+  - "Drooling or difficulty swallowing?"
+  - "How does child look - playful or sick?"
+
+key_exam_findings:
+  - "Toxic appearance (unlike most croup)"
+  - "High fever"
+  - "Stridor (inspiratory or biphasic)"
+  - "Barky cough with thick secretions"
+  - "Increased work of breathing"
+  - "May have voice changes"
+  - "NOT typically drooling (vs epiglottitis)"
+  - "Can tolerate lying flat (vs epiglottitis)"
+
+treatment_principles:
+  - "Airway is priority - prepare for potential intubation"
+  - "Humidified oxygen"
+  - "Nebulized epinephrine"
+  - "Dexamethasone (as for croup)"
+  - "IV antibiotics: cover S. aureus (including MRSA), strep"
+  - "Options: vancomycin + ceftriaxone, or ampicillin-sulbactam + vanc"
+  - "ENT/pulmonology: may need bronchoscopy for debridement"
+  - "ICU admission typically required"
+
+disposition_guidance:
+  - "Admit all: PICU or monitored bed"
+  - "Early ENT and anesthesia involvement"
+  - "Bronchoscopy: diagnostic and therapeutic"
+  - "Intubation: significant percentage require"
+  - "Duration antibiotics: typically 10-14 days"
+  - "Prognosis: excellent with appropriate treatment"
+
+parent_styles: [terrified, airway-anxious]
+
+sources:
+  - "AAP: Bacterial Tracheitis"
+  - "Pediatric Infectious Disease Society Guidelines"

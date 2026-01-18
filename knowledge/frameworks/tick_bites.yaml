@@ -1,0 +1,82 @@
+# Tick Bites - Teaching Framework
+topic: "Tick Bites and Tick-Borne Disease Prevention"
+aliases: ["tick bite", "tick removal", "tick prophylaxis"]
+category: environmental
+age_range_months: [6, 216]
+
+teaching_goals:
+  - "Know proper tick removal technique"
+  - "Understand Lyme prophylaxis indications"
+  - "Recognize when testing is and isn't indicated"
+  - "Counsel on prevention"
+  - "Know tick-borne diseases in your region"
+
+common_mistakes:
+  - "Using folk remedies for removal (petroleum jelly, heat)"
+  - "Giving prophylaxis for all tick bites"
+  - "Sending tick for testing (rarely helpful)"
+  - "Testing patient immediately after bite (too early)"
+  - "Missing attached tick during exam"
+
+red_flags:
+  - "Erythema migrans (expanding rash >5cm)"
+  - "Fever, headache, myalgias after tick bite"
+  - "Facial palsy"
+  - "Signs of Rocky Mountain Spotted Fever (petechial rash, high fever)"
+  - "Multiple tick bites"
+  - "Tick attached > 36 hours"
+
+clinical_pearls:
+  - "Proper removal: fine-tipped tweezers, grasp close to skin, pull straight up"
+  - "Don't squeeze, twist, or burn the tick"
+  - "Local reaction at bite site is normal (doesn't mean Lyme)"
+  - "Erythema migrans: expanding, usually > 5cm, central clearing classic"
+  - "Lyme prophylaxis: only if high-risk criteria met"
+  - "Prophylaxis criteria: Ixodes tick, attached ≥36h, endemic area, within 72h"
+  - "Doxycycline single dose: 4.4 mg/kg (max 200mg) for prophylaxis"
+  - "Doxycycline safe in children < 8 for short courses"
+
+key_history_questions:
+  - "When did you find the tick?"
+  - "How long was it attached (estimate)?"
+  - "Where were you (geographic location)?"
+  - "Was tick engorged?"
+  - "How was tick removed?"
+  - "Any part of tick left in skin?"
+  - "Any symptoms: fever, rash, headache?"
+  - "When was the bite (within 72 hours for prophylaxis)?"
+
+key_exam_findings:
+  - "Identify bite site"
+  - "Retained tick parts (rare if properly removed)"
+  - "Local reaction (small, non-expanding erythema is normal)"
+  - "Expanding erythema > 5cm (erythema migrans)"
+  - "Complete skin exam for other ticks or rashes"
+  - "Lymphadenopathy"
+  - "Signs of systemic illness"
+
+treatment_principles:
+  - "Remove tick properly if still attached"
+  - "Clean bite site with soap and water"
+  - "Prophylaxis (doxycycline) if ALL criteria met:"
+  - "  - Ixodes scapularis (deer tick) identified"
+  - "  - Attached ≥ 36 hours (or engorged)"
+  - "  - Endemic area for Lyme"
+  - "  - Within 72 hours of removal"
+  - "Doxycycline 4.4 mg/kg x 1 dose (max 200mg)"
+  - "No prophylaxis needed for most tick bites"
+  - "Observation: watch for rash or symptoms x 30 days"
+
+disposition_guidance:
+  - "Outpatient: All tick bites"
+  - "Prophylaxis: Only if criteria met, can be given in office"
+  - "No testing: Tick testing not recommended, patient testing too early"
+  - "Return: Expanding rash, fever, headache, myalgias in next 30 days"
+  - "Treat: If erythema migrans develops, full Lyme treatment (not just prophylaxis)"
+  - "Prevention: DEET, permethrin on clothes, daily tick checks"
+
+parent_styles: [Lyme-anxious, prophylaxis-demanding, nature-family]
+
+sources:
+  - "IDSA/AAN/ACR: Lyme Disease Guidelines"
+  - "CDC: Tick Removal and Prevention"

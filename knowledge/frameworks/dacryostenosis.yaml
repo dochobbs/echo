@@ -1,0 +1,75 @@
+# Nasolacrimal Duct Obstruction - Teaching Framework
+topic: "Nasolacrimal Duct Obstruction"
+aliases: ["dacryostenosis", "blocked tear duct", "NLDO", "dacryocystitis"]
+category: ophthalmology
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Recognize congenital NLDO presentation"
+  - "Distinguish from conjunctivitis"
+  - "Know conservative management techniques"
+  - "Identify when referral for probing is needed"
+  - "Recognize dacryocystitis as complication"
+
+common_mistakes:
+  - "Treating with antibiotics chronically"
+  - "Diagnosing as recurrent conjunctivitis"
+  - "Not teaching massage technique properly"
+  - "Referring too early (most resolve by 12 months)"
+  - "Missing acute dacryocystitis"
+
+red_flags:
+  - "Dacryocystitis (erythema and swelling over lacrimal sac)"
+  - "Periorbital cellulitis"
+  - "Fever with eye findings"
+  - "Eye itself red and inflamed (may be true conjunctivitis)"
+  - "Not resolving by 12 months"
+
+clinical_pearls:
+  - "Present in 6% of newborns"
+  - "90%+ resolve spontaneously by age 12 months"
+  - "Caused by membrane at distal nasolacrimal duct (valve of Hasner)"
+  - "Tearing (epiphora) and crusting, especially in morning"
+  - "Eye itself is NOT red (unlike conjunctivitis)"
+  - "Crigler massage: press over lacrimal sac, stroke downward"
+  - "Massage 2-3 times daily helps open duct"
+  - "Probing if not resolved by 9-12 months"
+
+key_history_questions:
+  - "Since birth or new onset?"
+  - "One eye or both?"
+  - "Excessive tearing?"
+  - "Crusting or discharge?"
+  - "Eye redness?"
+  - "Swelling between eye and nose?"
+  - "Any fever?"
+  - "Previous treatments?"
+
+key_exam_findings:
+  - "Tearing (epiphora)"
+  - "Mucopurulent discharge at medial canthus"
+  - "No conjunctival injection (eye white is white)"
+  - "Reflux of mucoid material with lacrimal sac pressure"
+  - "Lacrimal sac area: any erythema or swelling?"
+  - "Eyelid position and lashes normal"
+
+treatment_principles:
+  - "Conservative management first-line"
+  - "Crigler massage: 10 strokes, 2-3 times daily"
+  - "Clean discharge with warm water and cotton ball"
+  - "Topical antibiotics only for mucopurulent discharge episodes"
+  - "Antibiotics don't cure obstruction, just treat secondary infection"
+  - "Dacryocystitis: oral antibiotics, possible admission"
+
+disposition_guidance:
+  - "Outpatient: All uncomplicated NLDO"
+  - "Ophthalmology referral: Not resolved by 9-12 months for probing"
+  - "Earlier referral: Recurrent dacryocystitis"
+  - "Urgent referral: Acute dacryocystitis, periorbital cellulitis"
+  - "Follow-up: Routine well visits, refer if not improving by 9-12 months"
+
+parent_styles: [frustrated-by-persistence, antibiotic-seeking, reassurance-seeking]
+
+sources:
+  - "AAO: Nasolacrimal Duct Obstruction in Children"
+  - "AAP: Eye Disorders in Children"

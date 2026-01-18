@@ -1,0 +1,80 @@
+# Lacerations and Wound Care - Teaching Framework
+topic: "Lacerations and Wound Care"
+aliases: ["cuts", "wound", "laceration repair", "stitches"]
+category: trauma
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Assess wounds for closure method"
+  - "Know time limits for primary closure"
+  - "Choose appropriate closure technique"
+  - "Recognize wounds requiring specialist referral"
+  - "Provide appropriate wound care instructions"
+
+common_mistakes:
+  - "Closing contaminated wounds primarily"
+  - "Missing tendon or nerve injury"
+  - "Inadequate wound exploration"
+  - "Forgetting tetanus prophylaxis"
+  - "Using tissue adhesive on high-tension areas"
+
+red_flags:
+  - "Arterial bleeding not controlled with pressure"
+  - "Suspected tendon, nerve, or joint involvement"
+  - "Open fracture"
+  - "Bite wounds to hand or face"
+  - "Heavily contaminated wounds"
+  - "Signs of compartment syndrome"
+  - "Immunocompromised patient"
+
+clinical_pearls:
+  - "Clean wounds: close within 12-24h (face up to 24h)"
+  - "Contaminated wounds: 6h or less, consider delayed closure"
+  - "Tissue adhesive: low-tension, clean, non-hair-bearing"
+  - "Dermabond: don't get wet for 5 days"
+  - "Sutures face: 5-7 days; scalp: 7-10; extremities: 10-14"
+  - "LET gel (lidocaine-epi-tetracaine) great for kids before injection"
+  - "Always check motor/sensory before anesthesia"
+
+key_history_questions:
+  - "What caused the injury? When?"
+  - "Contamination (dirt, saliva, etc.)?"
+  - "Tetanus immunization status?"
+  - "Any numbness or weakness?"
+  - "Can you move fingers/toes normally?"
+  - "Foreign body possible?"
+  - "Bleeding controlled with pressure?"
+  - "Medical conditions affecting healing (diabetes)?"
+
+key_exam_findings:
+  - "Wound length, depth, location"
+  - "Active bleeding vs controlled"
+  - "Wound edges (clean vs ragged)"
+  - "Contamination or foreign body"
+  - "Neurovascular status distal to injury"
+  - "Tendon function"
+  - "Joint involvement (can see joint capsule)"
+  - "Underlying bone or fracture"
+
+treatment_principles:
+  - "Irrigate copiously with saline"
+  - "Explore wound for foreign body, depth"
+  - "Check neurovascular and tendon function"
+  - "Anesthesia: topical LET first, then infiltrate if needed"
+  - "Closure options: sutures, staples, adhesive, steri-strips"
+  - "Tetanus: if >5 years since booster (or >10 clean wound)"
+  - "Antibiotics only for contaminated, bites, immunocompromised"
+  - "Wound care: keep clean and dry, return for suture removal"
+
+disposition_guidance:
+  - "Outpatient: Most simple lacerations"
+  - "Specialist referral: Face (cosmetic), hand (tendons), eyelid, lip vermillion"
+  - "ED/OR: Deep, arterial, tendon/nerve repair, open fracture"
+  - "Delayed primary closure: Contaminated wounds"
+  - "Follow-up: Suture removal per location, sooner if signs of infection"
+
+parent_styles: [anxious, scar-concerned, experienced]
+
+sources:
+  - "AAP: Wound Management in Children"
+  - "UpToDate: Minor Wound Repair"

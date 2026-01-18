@@ -1,0 +1,80 @@
+# Retropharyngeal Abscess - Teaching Framework
+topic: "Retropharyngeal Abscess"
+aliases: ["RPA", "deep neck space infection", "retropharyngeal infection"]
+category: ENT
+age_range_months: [6, 60]
+
+teaching_goals:
+  - "Recognize clinical presentation"
+  - "Distinguish from other causes of neck stiffness"
+  - "Know imaging approach"
+  - "Understand airway risk"
+  - "Know when surgery is needed"
+
+common_mistakes:
+  - "Missing in child with neck stiffness and fever"
+  - "Assuming meningitis without considering deep neck infection"
+  - "Delaying CT imaging"
+  - "Not involving ENT early"
+  - "Inadequate antibiotic coverage"
+
+red_flags:
+  - "Stridor or respiratory distress"
+  - "Drooling, inability to swallow"
+  - "Torticollis with fever"
+  - "Rapidly progressive symptoms"
+  - "Mediastinal extension"
+  - "Sepsis"
+
+clinical_pearls:
+  - "Peak age: < 4 years (retropharyngeal nodes involute by age 5)"
+  - "Often follows URI or pharyngitis"
+  - "Classic triad: fever, neck stiffness/torticollis, pharyngeal swelling"
+  - "Neck extended (not flexed like meningitis)"
+  - "Refusal to swallow, drooling"
+  - "CT with contrast is diagnostic"
+  - "Retropharyngeal space can extend to mediastinum"
+  - "Phlegmon vs abscess - affects treatment (medical vs surgical)"
+
+key_history_questions:
+  - "Fever duration and height?"
+  - "Sore throat or difficulty swallowing?"
+  - "Neck stiffness or head position?"
+  - "Drooling?"
+  - "Recent URI or pharyngitis?"
+  - "Breathing difficulty?"
+  - "Trauma or foreign body?"
+
+key_exam_findings:
+  - "Fever (often high)"
+  - "Neck stiffness with extension (not flexion)"
+  - "Torticollis"
+  - "Drooling, difficulty swallowing"
+  - "Muffled voice"
+  - "Pharyngeal bulge (may be subtle)"
+  - "Cervical lymphadenopathy"
+  - "Stridor (concerning)"
+
+treatment_principles:
+  - "Airway management is priority"
+  - "NPO, IV access"
+  - "CT neck with contrast for diagnosis"
+  - "IV antibiotics: ampicillin-sulbactam or clindamycin"
+  - "Cover: strep, staph (including MRSA), anaerobes"
+  - "Phlegmon/small abscess: IV antibiotics, may not need drainage"
+  - "Large abscess: surgical drainage (transoral or external)"
+  - "ENT consultation essential"
+
+disposition_guidance:
+  - "Admit all: Need IV antibiotics and close monitoring"
+  - "ICU: Airway compromise, sepsis"
+  - "CT with contrast: Confirm diagnosis, assess extent"
+  - "ENT: All patients for evaluation"
+  - "Serial exams: Monitor for clinical improvement"
+  - "Repeat imaging: If not improving clinically"
+
+parent_styles: [terrified, airway-worried]
+
+sources:
+  - "AAP: Deep Neck Space Infections"
+  - "Pediatric Infectious Disease Society"

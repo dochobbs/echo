@@ -1,0 +1,80 @@
+# Transient Synovitis - Teaching Framework
+topic: "Transient Synovitis"
+aliases: ["toxic synovitis", "irritable hip", "observation hip"]
+category: musculoskeletal
+age_range_months: [18, 120]
+
+teaching_goals:
+  - "Distinguish transient synovitis from septic arthritis"
+  - "Apply Kocher criteria appropriately"
+  - "Know when joint aspiration is indicated"
+  - "Understand natural history and treatment"
+  - "Recognize when further workup needed"
+
+common_mistakes:
+  - "Missing septic arthritis"
+  - "Over-investigating classic transient synovitis"
+  - "Not following up to ensure resolution"
+  - "Missing Legg-Calve-Perthes as cause of persistent symptoms"
+  - "Not considering referred pain from spine or knee"
+
+red_flags:
+  - "Fever (septic arthritis)"
+  - "Inability to bear weight at all"
+  - "Severely ill appearance"
+  - "Elevated WBC, ESR, CRP"
+  - "Not improving in 24-48 hours"
+  - "Symptoms persisting > 10 days"
+  - "Infant or very young child (higher septic risk)"
+
+clinical_pearls:
+  - "Peak age: 3-8 years, more common in boys"
+  - "Often follows viral illness"
+  - "Hip held in flexion, abduction, external rotation"
+  - "Kocher criteria: non-weight bearing, fever, WBC>12k, ESR>40"
+  - "0 criteria: <0.2% septic risk"
+  - "4 criteria: 99% septic risk - aspirate"
+  - "Usually unilateral (bilateral think other diagnosis)"
+  - "Self-limited: resolves in 1-2 weeks"
+
+key_history_questions:
+  - "When did limp/pain start?"
+  - "Recent viral illness?"
+  - "Fever?"
+  - "Able to walk or bear weight?"
+  - "Hip, thigh, or knee pain?"
+  - "Any trauma?"
+  - "Previous similar episodes?"
+  - "How is child acting - playful or ill?"
+
+key_exam_findings:
+  - "Limp or refusal to walk"
+  - "Hip ROM - limited internal rotation most sensitive"
+  - "Hip held in flexion, abduction, external rotation"
+  - "Pain with log roll of leg"
+  - "Temperature"
+  - "Exam of knee, spine (referred pain)"
+  - "General appearance - well vs ill"
+
+treatment_principles:
+  - "NSAIDs (ibuprofen) for pain and inflammation"
+  - "Rest and limited weight bearing as tolerated"
+  - "No antibiotics (this is not infectious)"
+  - "Usually resolves in 7-10 days"
+  - "If Kocher criteria suggest septic arthritis: aspirate"
+  - "Follow-up to ensure resolution"
+
+disposition_guidance:
+  - "Outpatient: Classic presentation, 0-1 Kocher criteria"
+  - "Labs: Consider CBC, ESR, CRP if any concern for septic"
+  - "Ultrasound: Can confirm effusion"
+  - "Aspiration: If septic arthritis cannot be excluded"
+  - "Follow-up: 48-72 hours to ensure improving"
+  - "X-ray: If symptoms persist >10 days (Perthes, SCFE)"
+  - "Orthopedics: Septic concern, not improving, recurrent"
+
+parent_styles: [worried-about-serious-infection, limping-child-anxious]
+
+sources:
+  - "Kocher MS, et al: Differentiating Septic Arthritis and Transient Synovitis"
+  - "AAP: The Limping Child"

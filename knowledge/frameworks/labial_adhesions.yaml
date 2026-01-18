@@ -1,0 +1,75 @@
+# Labial Adhesions - Teaching Framework
+topic: "Labial Adhesions"
+aliases: ["labial fusion", "labial agglutination", "fused labia"]
+category: gynecology
+age_range_months: [3, 72]
+
+teaching_goals:
+  - "Recognize labial adhesions on exam"
+  - "Understand hypoestrogenic cause"
+  - "Know when treatment is needed"
+  - "Apply topical estrogen appropriately"
+  - "Counsel on natural resolution"
+
+common_mistakes:
+  - "Forcibly separating adhesions (painful, high recurrence)"
+  - "Over-treating asymptomatic adhesions"
+  - "Missing urinary retention in complete adhesions"
+  - "Not counseling on estrogen side effects"
+  - "Confusing with congenital absence of vagina"
+
+red_flags:
+  - "Complete adhesion with urinary symptoms"
+  - "Urinary retention"
+  - "Recurrent UTIs"
+  - "Inability to identify urethral meatus"
+  - "Suspected sexual abuse"
+
+clinical_pearls:
+  - "Peak incidence: 13-23 months (hypoestrogenic state)"
+  - "Thin, pale midline raphe = fused labia minora"
+  - "Usually starts posteriorly, can become complete"
+  - "Most asymptomatic and resolve spontaneously by puberty"
+  - "Treatment only if symptomatic or complete"
+  - "Estrogen cream dissolves adhesions in 2-6 weeks"
+  - "Apply thin layer BID to line of fusion"
+  - "Recurrence common after treatment"
+
+key_history_questions:
+  - "When did you notice this?"
+  - "Any urinary symptoms - pain, dribbling, retention?"
+  - "UTI history?"
+  - "Any vulvar irritation or discharge?"
+  - "Previous treatment attempts?"
+
+key_exam_findings:
+  - "Thin, pale midline line where labia should separate"
+  - "Partial vs complete fusion"
+  - "Can identify urethral meatus?"
+  - "Can identify vaginal opening?"
+  - "Signs of vulvovaginitis"
+  - "Signs of irritation or trauma"
+
+treatment_principles:
+  - "Asymptomatic, partial: observation and reassurance"
+  - "Symptomatic or complete: topical estrogen cream"
+  - "Estrogen cream: thin layer BID x 2-6 weeks"
+  - "Then emollient (petroleum jelly) to prevent recurrence"
+  - "NEVER manually separate (painful, high recurrence)"
+  - "Counsel on estrogen side effects (breast budding, rare)"
+  - "Alternative: betamethasone 0.05% if estrogen concerns"
+  - "Most resolve by puberty without treatment"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Treat if: Complete adhesion, urinary symptoms, recurrent UTI"
+  - "Observation if: Partial, asymptomatic"
+  - "Follow-up: 4-6 weeks after starting treatment"
+  - "GYN referral: Not responding, recurrent, urinary obstruction"
+  - "Recurrence prevention: Barrier ointment nightly after treatment"
+
+parent_styles: [concerned-about-anatomy, worried-about-estrogen, reassurance-seeking]
+
+sources:
+  - "ACOG: Pediatric Gynecology"
+  - "AAP: Labial Adhesions"

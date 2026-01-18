@@ -1,0 +1,78 @@
+# Sprains and Strains - Teaching Framework
+topic: "Sprains and Strains"
+aliases: ["ankle sprain", "twisted ankle", "pulled muscle", "ligament injury"]
+category: musculoskeletal
+age_range_months: [60, 216]
+
+teaching_goals:
+  - "Distinguish sprain (ligament) from strain (muscle/tendon)"
+  - "Apply Ottawa Ankle and Knee Rules"
+  - "Grade sprains appropriately"
+  - "Know RICE/PRICE protocol"
+  - "Recognize injuries requiring imaging or referral"
+
+common_mistakes:
+  - "X-raying every ankle injury (Ottawa rules)"
+  - "Missing Salter-Harris fracture in skeletally immature"
+  - "Not assessing joint stability"
+  - "Insufficient immobilization for grade 2-3 sprains"
+  - "Not recommending physical therapy for moderate sprains"
+
+red_flags:
+  - "Unable to bear weight (4 steps)"
+  - "Point tenderness over bone (malleolus, base 5th MT)"
+  - "Gross instability"
+  - "Neurovascular compromise"
+  - "Open injury"
+  - "Growth plate tenderness in children"
+  - "Syndesmosis tenderness (high ankle sprain)"
+
+clinical_pearls:
+  - "In children, growth plate often weaker than ligament - consider Salter-Harris"
+  - "Ottawa Ankle: X-ray if bony tenderness or can't bear weight"
+  - "Ottawa Knee: X-ray if can't flex 90°, patella tenderness, fibular head"
+  - "Grade 1: stretching, minimal swelling, stable"
+  - "Grade 2: partial tear, moderate swelling, some laxity"
+  - "Grade 3: complete tear, severe swelling, unstable"
+  - "RICE: Rest, Ice, Compression, Elevation"
+  - "Ankle sprains: lateral (inversion) most common - ATFL"
+
+key_history_questions:
+  - "Mechanism of injury?"
+  - "Hear or feel a pop?"
+  - "Able to bear weight after injury?"
+  - "Swelling - immediate or delayed?"
+  - "Previous injuries to same joint?"
+  - "Sport or activity when injured?"
+  - "Current pain level?"
+
+key_exam_findings:
+  - "Swelling and ecchymosis location"
+  - "Point tenderness (bone vs ligament)"
+  - "Range of motion"
+  - "Stability testing (anterior drawer, talar tilt for ankle)"
+  - "Weight-bearing ability"
+  - "Neurovascular status"
+  - "Comparison to uninjured side"
+
+treatment_principles:
+  - "RICE: Rest, Ice (20 min q2-3h), Compression, Elevation"
+  - "NSAIDs for pain and inflammation"
+  - "Grade 1: weight-bear as tolerated, ankle brace"
+  - "Grade 2: air stirrup or walking boot, crutches, PT"
+  - "Grade 3: immobilization, orthopedic referral"
+  - "Early mobilization better than prolonged immobilization"
+  - "Physical therapy for moderate-severe sprains"
+
+disposition_guidance:
+  - "Outpatient: All grade 1 and most grade 2"
+  - "X-ray: Ottawa rules positive, growth plate tenderness"
+  - "Orthopedic referral: Grade 3, syndesmosis injury, suspected fracture"
+  - "Sports medicine/PT: Recurrent sprains, athlete returning to sport"
+  - "Return to sport: Full ROM, strength, and proprioception restored"
+
+parent_styles: [athlete-family, return-to-sport-focused, worried-about-future]
+
+sources:
+  - "AAP: Ankle Sprains in Children"
+  - "Ottawa Ankle Rules"

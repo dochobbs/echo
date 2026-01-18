@@ -1,0 +1,81 @@
+# Nasal Trauma - Teaching Framework
+topic: "Nasal Trauma"
+aliases: ["broken nose", "nasal fracture", "nose injury"]
+category: trauma
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Recognize septal hematoma as emergency"
+  - "Know when imaging is and isn't needed"
+  - "Understand timing of reduction"
+  - "Identify other facial injuries"
+  - "Know appropriate referral timing"
+
+common_mistakes:
+  - "Missing septal hematoma"
+  - "Ordering X-rays for nasal fracture (clinical diagnosis)"
+  - "Referring for immediate reduction (wait for swelling to decrease)"
+  - "Missing associated injuries"
+  - "Not reassessing after swelling resolves"
+
+red_flags:
+  - "Septal hematoma (dark purple bulge on septum - emergency)"
+  - "CSF rhinorrhea (clear fluid, halo sign)"
+  - "Periorbital ecchymosis (orbital fracture)"
+  - "Infraorbital numbness (orbital floor fracture)"
+  - "Malocclusion (mandible or maxilla fracture)"
+  - "Telecanthus (NOE fracture)"
+  - "Epistaxis not controlled"
+
+clinical_pearls:
+  - "Septal hematoma: dark purple bulging of septum - drain within 24-48h"
+  - "X-rays not helpful - diagnosis is clinical"
+  - "Swelling obscures deformity initially"
+  - "Reassess for deformity after 3-5 days (swelling down)"
+  - "Reduction ideally within 7-10 days (before healing)"
+  - "Children heal faster - narrower window for reduction"
+  - "Most pediatric nasal injuries are cartilaginous, not bony"
+  - "Ice and elevation initially"
+
+key_history_questions:
+  - "Mechanism of injury?"
+  - "Nose bleeding - controlled now?"
+  - "Previous nose shape?"
+  - "Difficulty breathing through nose?"
+  - "Any numbness of face or teeth?"
+  - "Vision changes?"
+  - "Head injury or loss of consciousness?"
+
+key_exam_findings:
+  - "External deformity (may be obscured by swelling)"
+  - "Septal exam - LOOK FOR HEMATOMA (bilateral purple bulge)"
+  - "Nasal airway patency"
+  - "Crepitus or instability"
+  - "Epistaxis - active or controlled?"
+  - "CSF rhinorrhea (clear fluid, halo sign)"
+  - "Periorbital exam (ecchymosis, EOM, vision)"
+  - "Facial stability, dental occlusion"
+
+treatment_principles:
+  - "SEPTAL HEMATOMA: drain immediately (I&D, packing)"
+  - "If untreated: septal abscess, saddle nose deformity"
+  - "Epistaxis: direct pressure, can pack if needed"
+  - "Ice and elevation for swelling"
+  - "Pain control"
+  - "No nose blowing"
+  - "Sleep with head elevated"
+  - "Reassess after swelling decreases (3-5 days)"
+
+disposition_guidance:
+  - "Emergency: Septal hematoma (drain now), uncontrolled epistaxis"
+  - "Urgent ENT (24-48h): Septal hematoma"
+  - "ENT/plastics: Obvious deformity - refer for reduction in 5-10 days"
+  - "Facial CT: If concern for other facial fractures, CSF leak"
+  - "No X-ray needed for isolated nasal fracture"
+  - "Return: Difficulty breathing, recurrent bleeding, worsening deformity"
+
+parent_styles: [cosmetically-concerned, worried-about-permanent-damage, sports-injury]
+
+sources:
+  - "AAO-HNS: Nasal Fractures"
+  - "Pediatric Facial Trauma Guidelines"

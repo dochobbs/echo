@@ -1,0 +1,79 @@
+# Balanitis - Teaching Framework
+topic: "Balanitis and Balanoposthitis"
+aliases: ["balanitis", "balanoposthitis", "foreskin infection", "glans inflammation"]
+category: urology
+age_range_months: [12, 144]
+
+teaching_goals:
+  - "Distinguish balanitis from physiologic phimosis"
+  - "Recognize infectious vs non-infectious causes"
+  - "Know appropriate treatment"
+  - "Identify when urology referral needed"
+  - "Counsel on hygiene and prevention"
+
+common_mistakes:
+  - "Forcing foreskin retraction"
+  - "Missing candidal balanitis"
+  - "Over-prescribing antibiotics for simple irritation"
+  - "Not considering diabetes in recurrent cases"
+  - "Confusing with paraphimosis"
+
+red_flags:
+  - "Paraphimosis (retracted foreskin trapped - emergency)"
+  - "Urinary retention"
+  - "Cellulitis extending to shaft or suprapubic area"
+  - "Systemic illness (fever)"
+  - "Recurrent episodes (consider diabetes)"
+  - "Meatal stenosis"
+
+clinical_pearls:
+  - "Balanitis: inflammation of glans only"
+  - "Balanoposthitis: inflammation of glans AND foreskin"
+  - "Most common in uncircumcised boys"
+  - "Causes: poor hygiene, irritants, infection (bacterial, candida)"
+  - "Diaper dermatitis can cause balanitis in infants"
+  - "Candida: white discharge, satellite lesions"
+  - "Do NOT forcibly retract foreskin"
+  - "Recurrent balanitis is indication for circumcision"
+
+key_history_questions:
+  - "Redness, swelling, discharge?"
+  - "Pain with urination?"
+  - "Able to urinate normally?"
+  - "Recent irritants (soap, bubble bath)?"
+  - "Foreskin retractable?"
+  - "Previous episodes?"
+  - "Recent antibiotics (candida risk)?"
+  - "Diabetes?"
+
+key_exam_findings:
+  - "Erythema of glans and/or foreskin"
+  - "Swelling"
+  - "Discharge (purulent or cheesy)"
+  - "Foreskin appearance"
+  - "Attempt gentle retraction (do not force)"
+  - "Phimosis (can't retract)"
+  - "Paraphimosis (foreskin stuck behind glans)"
+  - "Meatal appearance"
+
+treatment_principles:
+  - "Hygiene: warm water soaks, gentle cleaning"
+  - "Avoid irritants (bubble bath, harsh soaps)"
+  - "Bacterial: topical mupirocin or oral cephalexin if more severe"
+  - "Candidal: topical antifungal (clotrimazole, nystatin)"
+  - "Topical steroid-antifungal combo can help with inflammation"
+  - "Pain relief: warm soaks, NSAIDs"
+  - "Foreskin care education"
+
+disposition_guidance:
+  - "Outpatient: All uncomplicated cases"
+  - "Urgent urology: Paraphimosis, urinary retention"
+  - "Urology referral: Recurrent balanitis (circumcision discussion)"
+  - "Return: Not improving in 48-72 hours, worsening, unable to urinate"
+  - "Screen for diabetes: If recurrent without clear cause"
+
+parent_styles: [circumcision-questioning, hygiene-focused, anxious]
+
+sources:
+  - "AAP: Care of the Uncircumcised Penis"
+  - "UpToDate: Balanitis in Children"

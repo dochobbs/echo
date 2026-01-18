@@ -1,0 +1,78 @@
+# Poison Ivy/Oak/Sumac - Teaching Framework
+topic: "Toxicodendron Dermatitis"
+aliases: ["poison ivy", "poison oak", "poison sumac", "rhus dermatitis"]
+category: dermatology
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Recognize classic linear vesicular rash"
+  - "Understand that spreading is from ongoing exposure, not fluid"
+  - "Know when systemic steroids are indicated"
+  - "Counsel on prevention and decontamination"
+  - "Manage severe or widespread cases"
+
+common_mistakes:
+  - "Thinking fluid spreads the rash (it doesn't)"
+  - "Using short steroid courses that cause rebound"
+  - "Under-treating severe cases"
+  - "Missing secondary bacterial infection"
+  - "Not counseling on decontamination of objects"
+
+red_flags:
+  - "Facial involvement, especially periorbital"
+  - "Genital involvement"
+  - "Widespread (> 10-20% BSA)"
+  - "Secondary bacterial infection (honey crusting, spreading redness)"
+  - "Difficulty breathing (smoke inhalation from burning plants)"
+  - "Significant swelling"
+
+clinical_pearls:
+  - "Linear or streaky vesicular rash is classic"
+  - "Delayed hypersensitivity: appears 24-72h after exposure"
+  - "New lesions can appear over 2-3 weeks (areas with less oil, thicker skin)"
+  - "Blister fluid is NOT contagious"
+  - "Urushiol (oil) can persist on objects for months/years"
+  - "20-30% of population not sensitive"
+  - "Barrier creams before exposure may help prevent"
+  - "Wash skin within 30 min of exposure can prevent reaction"
+
+key_history_questions:
+  - "Outdoor activity in past 1-3 days?"
+  - "Contact with plants, pets, or objects from outside?"
+  - "When did rash start?"
+  - "Is it spreading?"
+  - "Itching severity?"
+  - "Previous poison ivy reactions?"
+  - "Location of rash?"
+  - "Any signs of infection?"
+
+key_exam_findings:
+  - "Linear or streaky distribution"
+  - "Vesicles, sometimes bullae"
+  - "Erythema and edema"
+  - "Crusting in older lesions"
+  - "Distribution reflects exposure (lines of contact)"
+  - "Secondary impetiginization"
+  - "Periorbital or genital involvement"
+
+treatment_principles:
+  - "Mild/localized: high-potency topical steroid, cool compresses"
+  - "Moderate-severe: systemic steroids (prednisone 1 mg/kg)"
+  - "Steroid taper: 14-21 days minimum (short courses cause rebound)"
+  - "Antihistamines for itch (limited efficacy)"
+  - "Calamine lotion, cool baths for comfort"
+  - "Secondary infection: oral antibiotics"
+  - "Decontaminate clothing, shoes, tools"
+
+disposition_guidance:
+  - "Outpatient: All cases"
+  - "Systemic steroids if: Face, genitals, widespread, severe itch"
+  - "Antibiotic: If secondary impetiginization"
+  - "Return: Signs of infection, not improving, worsening"
+  - "Prevention counseling: Learn to identify plants, wear protective clothing"
+
+parent_styles: [frustrated-by-recurrence, steroid-hesitant, natural-remedy-seeking]
+
+sources:
+  - "AAD: Poison Ivy, Oak, and Sumac"
+  - "AAP: Contact Dermatitis"

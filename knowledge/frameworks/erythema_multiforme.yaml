@@ -1,0 +1,78 @@
+# Erythema Multiforme - Teaching Framework
+topic: "Erythema Multiforme"
+aliases: ["EM", "target lesions", "EM minor", "EM major"]
+category: dermatology
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Recognize classic target lesions"
+  - "Distinguish from urticaria and SJS/TEN"
+  - "Identify common triggers"
+  - "Know EM minor vs EM major"
+  - "Understand self-limited nature"
+
+common_mistakes:
+  - "Confusing with Stevens-Johnson syndrome"
+  - "Missing HSV as trigger"
+  - "Over-treating with systemic steroids"
+  - "Not evaluating for drug cause"
+  - "Confusing targetoid urticaria with EM"
+
+red_flags:
+  - "Extensive mucosal involvement (SJS concern)"
+  - "Skin sloughing or positive Nikolsky sign (TEN)"
+  - "Fever with toxic appearance"
+  - "Respiratory or GI mucosal involvement"
+  - "Widespread atypical targets (SJS)"
+  - "> 10% BSA detachment (TEN)"
+
+clinical_pearls:
+  - "Classic target: 3 zones - central dusky, pale ring, erythematous border"
+  - "Fixed lesions (don't migrate like urticaria)"
+  - "Acral distribution: palms, soles, dorsal hands"
+  - "HSV is #1 trigger (can cause recurrent EM)"
+  - "Drug-induced: usually 1-3 weeks after starting"
+  - "EM minor: skin only, no or minimal oral lesions"
+  - "EM major: oral +/- genital mucosal involvement"
+  - "EM is distinct from SJS/TEN (different pathophysiology)"
+
+key_history_questions:
+  - "When did rash start?"
+  - "Recent herpes cold sore or genital herpes?"
+  - "Recent infection?"
+  - "Any new medications in past 1-4 weeks?"
+  - "Previous similar episodes?"
+  - "Mouth sores or genital lesions?"
+  - "Fever or feeling sick?"
+  - "Any skin peeling or blistering?"
+
+key_exam_findings:
+  - "Target lesions (pathognomonic)"
+  - "Distribution: palms, soles, extensor surfaces"
+  - "Oral mucosal lesions (EM major)"
+  - "Nikolsky sign negative (if positive = SJS/TEN)"
+  - "No bullae or skin sloughing"
+  - "Genital mucosa exam if symptoms"
+  - "Assess BSA involvement"
+
+treatment_principles:
+  - "Self-limited: resolves in 1-4 weeks"
+  - "Supportive care: antihistamines for itch, analgesia"
+  - "Oral mucosal involvement: topical analgesics, magic mouthwash"
+  - "Systemic steroids: controversial, not routinely recommended"
+  - "Identify and treat trigger (HSV: consider suppressive antivirals)"
+  - "Discontinue causative drug if identified"
+  - "Recurrent EM: consider HSV suppression (acyclovir/valacyclovir)"
+
+disposition_guidance:
+  - "Outpatient: EM minor and most EM major"
+  - "Admission: Extensive mucosal involvement, dehydration, diagnostic uncertainty"
+  - "Dermatology referral: Recurrent episodes, diagnostic uncertainty"
+  - "Return: Worsening rash, skin blistering/peeling, difficulty eating/drinking"
+  - "HSV suppression: Consider if recurrent EM (valacyclovir prophylaxis)"
+
+parent_styles: [alarmed-by-appearance, drug-reaction-concerned]
+
+sources:
+  - "AAD: Erythema Multiforme"
+  - "JAAD: Erythema Multiforme in Children"

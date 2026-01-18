@@ -1,0 +1,81 @@
+# Pediatric Fractures - Teaching Framework
+topic: "Pediatric Fractures"
+aliases: ["broken bone", "fracture", "buckle fracture", "greenstick", "Salter-Harris"]
+category: trauma
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Recognize pediatric-specific fracture patterns"
+  - "Understand Salter-Harris classification"
+  - "Know which fractures need urgent orthopedic referral"
+  - "Identify non-accidental trauma patterns"
+  - "Provide appropriate immobilization"
+
+common_mistakes:
+  - "Missing Salter-Harris I fracture (normal X-ray)"
+  - "Not considering NAT with certain patterns"
+  - "Over-treating buckle fractures"
+  - "Missing plastic deformation injuries"
+  - "Not assessing neurovascular status"
+
+red_flags:
+  - "Open fracture"
+  - "Neurovascular compromise"
+  - "Compartment syndrome signs (pain with passive stretch)"
+  - "Fracture inconsistent with history (NAT)"
+  - "Multiple fractures in different stages of healing"
+  - "Supracondylar fracture (vascular injury risk)"
+  - "Femur fracture in non-ambulatory child"
+
+clinical_pearls:
+  - "Buckle (torus): compression of cortex, stable, splint only"
+  - "Greenstick: incomplete break, one cortex intact"
+  - "Plastic deformation: bent bone without fracture line"
+  - "Salter-Harris: involves growth plate - SALTR mnemonic"
+  - "SH-I: Slipped - through physis, X-ray may be normal"
+  - "SH-II: Above - through physis and metaphysis (most common)"
+  - "SH-III: Lower - through physis and epiphysis"
+  - "SH-IV: Through all - through metaphysis, physis, epiphysis"
+  - "SH-V: Rammed/crushed - compression of physis (worst prognosis)"
+
+key_history_questions:
+  - "Mechanism of injury?"
+  - "Witnessed or unwitnessed?"
+  - "Able to use extremity after?"
+  - "Swelling - immediate or delayed?"
+  - "Developmental stage (ambulatory, crawling)?"
+  - "History consistent with injury pattern?"
+  - "Previous fractures?"
+
+key_exam_findings:
+  - "Deformity"
+  - "Swelling and ecchymosis"
+  - "Point tenderness"
+  - "Range of motion (if tolerated)"
+  - "Neurovascular status (pulses, cap refill, sensation, motor)"
+  - "Growth plate tenderness"
+  - "Skin integrity (open vs closed)"
+  - "Compartments (firm, pain with passive stretch)"
+
+treatment_principles:
+  - "Immobilize in position of comfort"
+  - "Ice and elevation"
+  - "Neurovascular checks before and after splinting"
+  - "Buckle fracture: removable splint 3-4 weeks, ortho follow-up optional"
+  - "Greenstick: reduction if angulated, casting"
+  - "Salter-Harris II+: orthopedic referral"
+  - "Open fracture: antibiotics, tetanus, urgent OR"
+  - "Pain control appropriate to injury"
+
+disposition_guidance:
+  - "Outpatient with splint: Buckle fractures, non-displaced SH-I/II"
+  - "Same-day orthopedics: Displaced fractures, SH-III/IV, angulated"
+  - "ED/urgent: Open, neurovascular compromise, compartment syndrome"
+  - "NAT evaluation: Inconsistent history, high-risk patterns, multiple injuries"
+  - "Follow-up: All growth plate injuries need orthopedic follow-up"
+
+parent_styles: [anxious, guilty, NAT-concern, seeking-reassurance]
+
+sources:
+  - "AAP: Fractures in Children"
+  - "Salter-Harris Classification"

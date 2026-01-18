@@ -1,0 +1,78 @@
+# Finger Injuries - Teaching Framework
+topic: "Finger Injuries"
+aliases: ["jammed finger", "mallet finger", "jersey finger", "finger sprain"]
+category: trauma
+age_range_months: [60, 216]
+
+teaching_goals:
+  - "Distinguish sprain from more serious injury"
+  - "Recognize mallet and jersey finger"
+  - "Know which injuries need splinting vs surgery"
+  - "Identify fractures requiring reduction"
+  - "Understand buddy taping and splinting"
+
+common_mistakes:
+  - "Missing mallet finger (droopy DIP)"
+  - "Missing jersey finger (can't flex DIP)"
+  - "Calling all jammed fingers 'sprains'"
+  - "Not examining tendon function"
+  - "Inadequate splinting duration for mallet finger"
+
+red_flags:
+  - "Unable to flex DIP (jersey finger - needs surgery)"
+  - "Open fracture"
+  - "Rotational deformity"
+  - "Significantly displaced fracture"
+  - "PIP dislocation that won't reduce"
+  - "Vascular compromise"
+
+clinical_pearls:
+  - "Mallet finger: forced flexion of extended DIP - extensor tendon rupture"
+  - "Mallet: unable to actively extend DIP (can passively extend)"
+  - "Jersey finger: grabbed jersey, forced extension of flexed DIP - FDP rupture"
+  - "Jersey: unable to flex DIP against resistance - needs surgery"
+  - "Jammed finger: usually PIP sprain, check for fracture"
+  - "Buddy tape: immobilize with adjacent finger"
+  - "Mallet splint: DIP in extension 6-8 weeks continuously"
+  - "If mallet splint removed and droops, restart clock"
+
+key_history_questions:
+  - "Mechanism - ball strike, pulling, hyperextension?"
+  - "Which joint hurts most?"
+  - "Can you bend and straighten all joints?"
+  - "Which sport/activity?"
+  - "Dominant hand?"
+  - "Previous finger injuries?"
+
+key_exam_findings:
+  - "Swelling location"
+  - "Active ROM at each joint (DIP, PIP, MCP)"
+  - "Passive ROM"
+  - "FDP function: hold PIP extended, ask to flex DIP"
+  - "Extensor function: can extend DIP fully?"
+  - "Rotational alignment (look at fingernails with fingers flexed)"
+  - "Collateral ligament stability"
+  - "Volar plate tenderness"
+
+treatment_principles:
+  - "X-ray: All significant finger injuries"
+  - "Jammed finger (sprain): buddy tape 2-4 weeks, ice, NSAIDs"
+  - "Mallet finger: DIP splint in extension 6-8 weeks full time"
+  - "  Must not flex DIP at all during treatment (restarts clock)"
+  - "Jersey finger: urgent hand surgery referral (tendon repair)"
+  - "PIP dislocation: reduce, check stability, buddy tape"
+  - "Fractures: splint, many can be buddy taped if stable"
+
+disposition_guidance:
+  - "Outpatient: Sprains, stable fractures, mallet finger"
+  - "Hand surgery referral: Jersey finger, unstable fractures, open injuries"
+  - "Urgent hand surgery: Jersey finger (sooner is better for repair)"
+  - "Mallet finger: Stack splint, strict compliance counseling"
+  - "Return for mallet: If splint comes off and DIP droops, restart 6-8 weeks"
+  - "Sports return: After full ROM and strength, sport-specific protection"
+
+parent_styles: [sports-injury, return-to-play-focused, worried-about-function]
+
+sources:
+  - "ASSH: Finger Injuries"
+  - "Sports Medicine: Hand and Finger Injuries"

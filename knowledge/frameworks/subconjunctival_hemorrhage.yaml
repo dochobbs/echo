@@ -1,0 +1,78 @@
+# Subconjunctival Hemorrhage - Teaching Framework
+topic: "Subconjunctival Hemorrhage"
+aliases: ["SCH", "red eye", "eye bleed", "bloody eye"]
+category: ophthalmology
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Recognize benign nature of isolated SCH"
+  - "Distinguish from more serious eye injuries"
+  - "Know when workup is indicated"
+  - "Identify associated causes"
+  - "Counsel on natural resolution"
+
+common_mistakes:
+  - "Extensive workup for simple SCH"
+  - "Missing associated globe injury"
+  - "Not asking about bleeding history with recurrent SCH"
+  - "Prescribing unnecessary eye drops"
+  - "Missing Valsalva triggers"
+
+red_flags:
+  - "Associated eye pain or vision change"
+  - "Hyphema (blood in anterior chamber)"
+  - "Pupil abnormality"
+  - "Globe rupture (mechanism, irregular pupil)"
+  - "Recurrent without clear cause"
+  - "Bleeding elsewhere (bruising, epistaxis)"
+  - "Significant trauma"
+
+clinical_pearls:
+  - "Bright red, flat, well-demarcated blood under conjunctiva"
+  - "Looks dramatic but is benign"
+  - "Vision and pupil are normal"
+  - "Causes: coughing, sneezing, Valsalva, minor trauma, spontaneous"
+  - "In newborns: birth trauma - resolves spontaneously"
+  - "Resolves in 1-2 weeks, may spread before clearing"
+  - "No treatment needed"
+  - "Color change: red -> purple -> yellow (like bruise)"
+
+key_history_questions:
+  - "Any trauma?"
+  - "Coughing, sneezing, vomiting, straining?"
+  - "Any pain?"
+  - "Vision changes?"
+  - "History of easy bruising or bleeding?"
+  - "Blood thinners (in adolescents/household)?"
+  - "Previous similar episodes?"
+
+key_exam_findings:
+  - "Bright red blood under clear conjunctiva"
+  - "Flat (not raised)"
+  - "Does NOT involve cornea"
+  - "Visual acuity normal"
+  - "Pupil normal in shape and reactivity"
+  - "No pain with eye movement"
+  - "Anterior chamber clear (no hyphema)"
+
+treatment_principles:
+  - "No treatment necessary"
+  - "Reassurance - looks worse than it is"
+  - "Resolves spontaneously in 1-2 weeks"
+  - "Artificial tears for comfort if mild irritation"
+  - "Cool compresses optional"
+  - "May use sunglasses if self-conscious"
+  - "If on blood thinners: no need to stop"
+
+disposition_guidance:
+  - "Outpatient: All simple SCH"
+  - "Ophthalmology: Vision change, pain, hyphema, globe injury concern"
+  - "Hematology workup: Recurrent SCH, other bleeding, family history"
+  - "Return: Vision changes, increasing pain, not resolving in 2-3 weeks"
+  - "Counsel: Will likely spread and change colors before resolving"
+
+parent_styles: [alarmed-by-appearance, worried-about-eye-damage, reassured-easily]
+
+sources:
+  - "AAO: Subconjunctival Hemorrhage"
+  - "AAP: Eye Emergencies"

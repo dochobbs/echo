@@ -1,0 +1,80 @@
+# Corneal Abrasion - Teaching Framework
+topic: "Corneal Abrasion"
+aliases: ["scratched eye", "cornea scratch", "eye injury"]
+category: ophthalmology
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Perform fluorescein examination"
+  - "Distinguish simple abrasion from complicated injury"
+  - "Know current evidence on patching (don't patch)"
+  - "Recognize contact lens-related abrasions (Pseudomonas risk)"
+  - "Identify when ophthalmology referral needed"
+
+common_mistakes:
+  - "Patching the eye (no longer recommended)"
+  - "Missing foreign body"
+  - "Prescribing topical anesthetics for home use"
+  - "Not checking visual acuity"
+  - "Missing corneal ulcer in contact lens wearer"
+
+red_flags:
+  - "Contact lens wearer (Pseudomonas risk)"
+  - "White infiltrate on cornea (ulcer)"
+  - "Deep or large abrasion"
+  - "Hyphema (blood in anterior chamber)"
+  - "Irregular or fixed pupil"
+  - "Decreased visual acuity"
+  - "Organic material or high-velocity injury (penetrating)"
+  - "Not improving in 24-48 hours"
+
+clinical_pearls:
+  - "Fluorescein: uptake indicates epithelial defect"
+  - "Use cobalt blue light or Wood's lamp to see uptake"
+  - "Vertical linear abrasions: think foreign body under upper lid"
+  - "Patching does NOT improve healing and may delay it"
+  - "Most heal in 24-72 hours"
+  - "Tetracaine at visit OK, but never prescribe for home (toxic)"
+  - "Contact lens wearers: antipseudomonal coverage, NO patching"
+  - "Topical NSAIDs provide analgesia without anesthetic toxicity"
+
+key_history_questions:
+  - "What happened? Mechanism?"
+  - "When did it happen?"
+  - "Contact lens wearer?"
+  - "Foreign body sensation or actual FB?"
+  - "Vision changes?"
+  - "Tearing, photophobia?"
+  - "High-velocity injury (grinding, hammering)?"
+
+key_exam_findings:
+  - "Visual acuity (each eye)"
+  - "External exam: lids, lashes, conjunctiva"
+  - "Evert upper lid: look for foreign body"
+  - "Fluorescein uptake pattern"
+  - "Pupil shape and reactivity"
+  - "Anterior chamber: hyphema, hypopyon"
+  - "Seidel test if penetrating injury suspected"
+
+treatment_principles:
+  - "NO patching (evidence shows no benefit, may delay healing)"
+  - "Topical antibiotic: erythromycin ointment or fluoroquinolone drops"
+  - "Contact lens: fluoroquinolone drops (antipseudomonal)"
+  - "Pain: oral analgesics, topical NSAIDs (ketorolac)"
+  - "NO topical anesthetics for home use (delays healing, toxic)"
+  - "Cycloplegic (cyclopentolate) optional for severe pain"
+  - "Remove foreign body if present"
+  - "Tetanus if dirty injury and not up to date"
+
+disposition_guidance:
+  - "Outpatient: Simple small abrasions"
+  - "24-hour follow-up: Contact lens related, large abrasions"
+  - "Ophthalmology same day: Ulcer, infiltrate, deep injury, not improving"
+  - "ED/ophthalmology: Penetrating injury, hyphema, vision loss"
+  - "Return: Not improving in 24-48h, worsening pain, vision change"
+
+parent_styles: [anxious, patch-requesting, contact-lens-user]
+
+sources:
+  - "AAO Preferred Practice Pattern: Corneal Abrasion"
+  - "Cochrane: Eye patching for corneal abrasion"

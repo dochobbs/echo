@@ -1,0 +1,75 @@
+# Otitis Externa - Teaching Framework
+topic: "Otitis Externa"
+aliases: ["swimmer's ear", "external otitis", "AOE"]
+category: infectious
+age_range_months: [24, 216]
+
+teaching_goals:
+  - "Distinguish otitis externa from otitis media"
+  - "Recognize typical presentation and risk factors"
+  - "Know appropriate topical treatment"
+  - "Identify when wick placement is needed"
+  - "Recognize malignant otitis externa"
+
+common_mistakes:
+  - "Treating with oral antibiotics (topical is first-line)"
+  - "Missing canal occlusion requiring wick"
+  - "Confusing with otitis media"
+  - "Not counseling on water precautions"
+  - "Missing fungal otitis externa"
+
+red_flags:
+  - "Diabetic or immunocompromised patient (malignant OE risk)"
+  - "Granulation tissue in canal"
+  - "Severe pain out of proportion"
+  - "Cranial nerve involvement"
+  - "Fever with toxic appearance"
+  - "Failure to improve with appropriate treatment"
+
+clinical_pearls:
+  - "Tragal tenderness and pain with pinna manipulation = OE"
+  - "TM should be normal (if visible)"
+  - "Canal edema, erythema, debris"
+  - "Common after swimming, Q-tip use, hearing aids"
+  - "Pseudomonas and S. aureus most common pathogens"
+  - "Topical fluoroquinolone preferred if TM perforation possible"
+  - "Wick needed if canal too swollen for drops to penetrate"
+
+key_history_questions:
+  - "Ear pain - worse with chewing or touching ear?"
+  - "Recent swimming or water exposure?"
+  - "Use of cotton swabs or ear buds?"
+  - "Hearing aid or ear plug use?"
+  - "Discharge from ear?"
+  - "Previous episodes?"
+  - "Diabetes or immune problems?"
+
+key_exam_findings:
+  - "Pain with tragal pressure"
+  - "Pain with pinna manipulation"
+  - "Canal erythema and edema"
+  - "Debris in canal"
+  - "TM appearance (if visible - should be normal)"
+  - "Periauricular lymphadenopathy"
+  - "Assess for cellulitis of pinna"
+
+treatment_principles:
+  - "Topical antibiotic drops first-line (not oral)"
+  - "Options: ofloxacin, ciprofloxacin-dexamethasone"
+  - "Acetic acid (VoSol) for mild cases or prevention"
+  - "Wick placement if canal too edematous for drops"
+  - "Keep ear dry during treatment"
+  - "Pain control with NSAIDs/acetaminophen"
+  - "Duration: 7-10 days"
+
+disposition_guidance:
+  - "Outpatient: All uncomplicated cases"
+  - "Return: No improvement in 48-72 hours"
+  - "ENT referral: Severe edema requiring debridement, recurrent cases"
+  - "Urgent evaluation: Diabetic/immunocompromised with severe symptoms"
+  - "Prevention: Ear plugs for swimmers, avoid Q-tips"
+
+parent_styles: [frustrated-by-recurrence, swimmer-family, experienced]
+
+sources:
+  - "AAP/AAFP Clinical Practice Guideline: Acute Otitis Externa"

@@ -1,0 +1,83 @@
+# BRUE - Teaching Framework
+topic: "Brief Resolved Unexplained Event"
+aliases: ["BRUE", "ALTE", "apparent life-threatening event"]
+category: emergency
+age_range_months: [0, 12]
+
+teaching_goals:
+  - "Apply AAP BRUE criteria correctly"
+  - "Risk stratify low vs higher risk"
+  - "Know appropriate workup by risk level"
+  - "Understand BRUE replaced ALTE terminology"
+  - "Counsel families on prognosis and monitoring"
+
+common_mistakes:
+  - "Extensive workup for low-risk BRUE"
+  - "Missing higher-risk features"
+  - "Confusing BRUE with explained events"
+  - "Not observing for adequate period"
+  - "Discharging without appropriate follow-up"
+
+red_flags:
+  - "Age < 60 days (higher risk)"
+  - "Prematurity < 32 weeks or corrected age < 45 weeks"
+  - "Event duration > 1 minute"
+  - "Required CPR by trained provider"
+  - "Multiple events"
+  - "Concerning history features (abuse, toxic exposure)"
+  - "Abnormal physical exam"
+
+clinical_pearls:
+  - "BRUE = Brief, Resolved, Unexplained, Event"
+  - "Replaces ALTE (apparent life-threatening event)"
+  - "Must be < 1 year old"
+  - "Event must be resolved by time of evaluation"
+  - "Low-risk: >60 days, no prematurity, first event, <1 min, no CPR needed"
+  - "Low-risk BRUE: no testing required, observe 1-4 hours"
+  - "Higher-risk: more extensive evaluation indicated"
+  - "Most low-risk BRUEs do not recur and have excellent outcomes"
+
+key_history_questions:
+  - "Describe exactly what happened"
+  - "How long did the episode last?"
+  - "Color change - what color?"
+  - "Breathing - stopped, labored, irregular?"
+  - "Muscle tone - stiff, limp, shaking?"
+  - "Responsiveness during event?"
+  - "What did you do? Did you need to stimulate or do CPR?"
+  - "Completely back to normal now?"
+  - "Any similar events before?"
+  - "Feeding history, choking, or reflux?"
+  - "Prematurity? Gestational age?"
+
+key_exam_findings:
+  - "Complete physical exam must be normal for BRUE diagnosis"
+  - "Vital signs including oxygen saturation"
+  - "Mental status and tone"
+  - "Signs of infection"
+  - "Signs of trauma (NAT)"
+  - "Dysmorphic features"
+  - "Cardiac exam"
+  - "Respiratory exam"
+
+treatment_principles:
+  - "Low-risk BRUE: observation, no mandatory testing"
+  - "Low-risk: may consider pertussis testing, ECG (not required)"
+  - "Education on CPR and safe sleep"
+  - "DO NOT order: labs, imaging, EEG for low-risk"
+  - "Higher-risk: workup based on clinical suspicion"
+  - "Consider: ECG, glucose, pertussis, RSV, urinalysis"
+  - "Home monitoring NOT routinely recommended"
+
+disposition_guidance:
+  - "Low-risk BRUE: May discharge after 1-4 hour observation"
+  - "Higher-risk BRUE: Admission for monitoring and evaluation"
+  - "All: Close follow-up within 24-48 hours"
+  - "CPR education for caregivers"
+  - "Return precautions: Any repeat event"
+  - "Subspecialty referral: Recurrent events, abnormal findings"
+
+parent_styles: [terrified, CPR-seeking, reassurance-seeking]
+
+sources:
+  - "AAP Clinical Practice Guideline: BRUE (2016)"

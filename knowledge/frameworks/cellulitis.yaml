@@ -1,0 +1,80 @@
+# Cellulitis - Teaching Framework
+topic: "Cellulitis"
+aliases: ["skin infection", "erysipelas"]
+category: infectious
+age_range_months: [1, 216]
+
+teaching_goals:
+  - "Distinguish cellulitis from abscess"
+  - "Choose appropriate antibiotic coverage"
+  - "Recognize when IV antibiotics needed"
+  - "Identify high-risk locations and complications"
+  - "Know when to image and when to refer"
+
+common_mistakes:
+  - "Missing underlying abscess"
+  - "Not marking borders to track progression"
+  - "Inadequate MRSA coverage in appropriate populations"
+  - "Treating insect bite reaction as cellulitis"
+  - "Missing periorbital vs orbital cellulitis distinction"
+
+red_flags:
+  - "Orbital cellulitis (proptosis, ophthalmoplegia, vision change)"
+  - "Rapidly spreading despite antibiotics"
+  - "Crepitus (necrotizing fasciitis)"
+  - "Pain out of proportion to exam"
+  - "Signs of sepsis"
+  - "Periorbital in young child (bacteremia risk)"
+  - "Immunocompromised patient"
+
+clinical_pearls:
+  - "Cellulitis: spreading erythema, warmth, without clear fluid collection"
+  - "Erysipelas: sharply demarcated, raised borders (superficial)"
+  - "Mark borders with pen to track progression"
+  - "Beta-hemolytic strep and S. aureus most common"
+  - "Purulent cellulitis: add MRSA coverage"
+  - "Non-purulent cellulitis: beta-lactam usually adequate"
+  - "Periorbital vs orbital: EOM, proptosis, vision = orbital (CT needed)"
+  - "Improvement takes 48-72 hours - don't change antibiotics too soon"
+
+key_history_questions:
+  - "When did it start?"
+  - "Getting better or worse?"
+  - "Any drainage or pus?"
+  - "Fever?"
+  - "Recent wound, bite, or break in skin?"
+  - "Diabetes or immune problems?"
+  - "Previous skin infections or MRSA?"
+  - "Recent antibiotics?"
+
+key_exam_findings:
+  - "Erythema borders - mark with pen"
+  - "Warmth and tenderness"
+  - "Fluctuance (suggests abscess)"
+  - "Lymphangitic streaking"
+  - "Regional lymphadenopathy"
+  - "Crepitus (concerning for necrotizing)"
+  - "Fever"
+  - "If face: eye exam - EOM, proptosis, vision"
+
+treatment_principles:
+  - "Non-purulent: cephalexin or dicloxacillin (cover strep and MSSA)"
+  - "Purulent/MRSA risk: TMP-SMX or doxycycline + cephalexin"
+  - "Mark borders and recheck in 24-48 hours"
+  - "Elevation of affected extremity"
+  - "Treat underlying wound or entry point"
+  - "Duration: 5-7 days (can extend if slow response)"
+  - "IV antibiotics: failed oral, rapid spread, systemic illness"
+
+disposition_guidance:
+  - "Outpatient: Localized cellulitis, non-toxic, reliable follow-up"
+  - "24-hour recheck: To ensure improvement"
+  - "ED/admission: Orbital cellulitis, rapid spread, sepsis, facial cellulitis in infant"
+  - "Imaging (CT): Periorbital not improving, any orbital symptoms"
+  - "Return: Spreading despite antibiotics, fever, worsening pain"
+
+parent_styles: [anxious, MRSA-concerned, antibiotic-seeking]
+
+sources:
+  - "IDSA: Skin and Soft Tissue Infections"
+  - "AAP Red Book"

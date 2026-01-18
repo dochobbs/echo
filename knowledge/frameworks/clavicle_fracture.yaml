@@ -1,0 +1,78 @@
+# Clavicle Fracture - Teaching Framework
+topic: "Clavicle Fracture"
+aliases: ["broken collarbone", "clavicular fracture", "birth injury clavicle"]
+category: trauma
+age_range_months: [0, 216]
+
+teaching_goals:
+  - "Recognize presentation in different age groups"
+  - "Know typical mechanism by age"
+  - "Understand conservative management as standard"
+  - "Identify rare surgical indications"
+  - "Recognize neonatal clavicle fracture"
+
+common_mistakes:
+  - "Over-treating with rigid immobilization"
+  - "Missing in neonate (pseudoparalysis)"
+  - "Ordering excessive imaging"
+  - "Not recognizing figure-8 brace is optional"
+  - "Missing associated injuries in high-energy trauma"
+
+red_flags:
+  - "Tenting of skin (near open fracture)"
+  - "Neurovascular compromise"
+  - "Open fracture"
+  - "Floating shoulder (scapula + clavicle fracture)"
+  - "High-energy mechanism (associated injuries)"
+  - "Distal fracture with significant displacement"
+
+clinical_pearls:
+  - "Most common fracture in children"
+  - "Middle third most common location (80%)"
+  - "Newborns: birth trauma, large for gestational age"
+  - "Neonatal: pseudoparalysis, asymmetric Moro, palpable crepitus"
+  - "Older children: FOOSH or direct blow"
+  - "Heals well conservatively in children"
+  - "Bump at fracture site (callus) is normal, resolves over months"
+  - "Figure-8 brace vs sling - both acceptable, comfort is key"
+
+key_history_questions:
+  - "Mechanism - fall, direct blow?"
+  - "Arm movement since injury?"
+  - "For newborn: delivery history, size?"
+  - "Pain location?"
+  - "Any numbness or tingling in arm/hand?"
+  - "Previous injuries?"
+
+key_exam_findings:
+  - "Point tenderness over clavicle"
+  - "Swelling, deformity, crepitus"
+  - "Arm held at side, resists movement"
+  - "Tenting of skin?"
+  - "Distal neurovascular exam (pulses, sensation, motor)"
+  - "Neonate: asymmetric Moro, pseudoparalysis"
+  - "Scapula exam (floating shoulder)"
+
+treatment_principles:
+  - "Conservative treatment for nearly all pediatric clavicle fractures"
+  - "Sling for comfort (2-4 weeks)"
+  - "Figure-8 brace: optional, no proven advantage over sling"
+  - "Pain control: acetaminophen, NSAIDs"
+  - "Ice for swelling"
+  - "Neonates: gentle handling, usually heals in 7-10 days"
+  - "Return to activity when pain-free, full ROM (usually 4-6 weeks)"
+  - "Contact sports: 6-8 weeks or when healed"
+
+disposition_guidance:
+  - "Outpatient: All closed midshaft fractures"
+  - "Orthopedics referral: Distal fractures, significantly displaced, skin tenting"
+  - "Urgent ortho: Open fracture, neurovascular compromise"
+  - "Neonatal: Reassurance, careful handling, no immobilization needed"
+  - "Follow-up: 1-2 weeks for recheck, healing at 4-6 weeks"
+  - "Counsel: Visible/palpable bump is normal, remodels over time"
+
+parent_styles: [worried-about-healing, birth-injury-guilt, sports-return-focused]
+
+sources:
+  - "POSNA: Pediatric Clavicle Fractures"
+  - "AAP: Birth Injuries"

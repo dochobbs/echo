@@ -1,0 +1,75 @@
+# Paronychia and Felon - Teaching Framework
+topic: "Paronychia and Felon"
+aliases: ["paronychia", "felon", "finger infection", "nail infection", "whitlow"]
+category: infectious
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Distinguish paronychia from felon"
+  - "Know when drainage is needed"
+  - "Recognize herpetic whitlow"
+  - "Perform appropriate drainage technique"
+  - "Identify chronic paronychia"
+
+common_mistakes:
+  - "Missing felon (deep pulp space infection)"
+  - "Incising herpetic whitlow (contraindicated)"
+  - "Inadequate drainage of established abscess"
+  - "Not recognizing chronic paronychia"
+  - "Antibiotic-only treatment for abscess"
+
+red_flags:
+  - "Felon: tense, very painful pulp"
+  - "Flexor tenosynovitis (finger held flexed, pain with passive extension)"
+  - "Lymphangitis or spreading cellulitis"
+  - "Osteomyelitis concern"
+  - "Immunocompromised patient"
+  - "Vesicles (herpetic whitlow)"
+
+clinical_pearls:
+  - "Paronychia: infection of lateral nail fold"
+  - "Felon: infection of finger pulp (volar fat pad)"
+  - "Acute paronychia: S. aureus most common"
+  - "Chronic paronychia: Candida, often in thumb-suckers"
+  - "Herpetic whitlow: vesicles, very painful, do NOT incise"
+  - "Drainage needed if fluctuance present"
+  - "Felon requires incision of septae in pulp space"
+
+key_history_questions:
+  - "How long has it been there?"
+  - "Getting worse?"
+  - "Nail biting or thumb sucking?"
+  - "Any injury - hangnail, splinter?"
+  - "Pus draining?"
+  - "Previous episodes?"
+  - "Any vesicles or blisters?"
+  - "Fever?"
+
+key_exam_findings:
+  - "Paronychia: erythema, swelling at lateral nail fold"
+  - "Felon: tense, swollen finger pulp (pad)"
+  - "Fluctuance"
+  - "Point of maximal tenderness"
+  - "Vesicles (herpetic whitlow)"
+  - "Kanavel signs (flexor tenosynovitis): finger flexed, fusiform swelling, pain with passive extension, tenderness along sheath"
+
+treatment_principles:
+  - "Early paronychia (no pus): warm soaks, antibiotics"
+  - "Paronychia with abscess: drainage - lift nail fold with blade"
+  - "Felon: formal I&D, break up septae"
+  - "Antibiotics: cephalexin or TMP-SMX if MRSA concern"
+  - "Chronic paronychia: topical antifungal, keep dry"
+  - "Herpetic whitlow: supportive only, do NOT incise"
+
+disposition_guidance:
+  - "Outpatient: Simple paronychia with or without drainage"
+  - "Hand surgery referral: Felon (can be done in ED by trained provider)"
+  - "Urgent hand surgery: Flexor tenosynovitis"
+  - "Follow-up: 48 hours for wound check"
+  - "Return: Worsening, fever, not improving"
+
+parent_styles: [nail-biter-family, anxious, seeking-quick-fix]
+
+sources:
+  - "AAP: Hand Infections in Children"
+  - "ASSH: Felon and Paronychia"

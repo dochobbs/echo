@@ -1,0 +1,79 @@
+# ITP - Teaching Framework
+topic: "Immune Thrombocytopenia"
+aliases: ["ITP", "idiopathic thrombocytopenic purpura", "immune thrombocytopenic purpura"]
+category: hematology
+age_range_months: [12, 144]
+
+teaching_goals:
+  - "Recognize classic presentation in otherwise well child"
+  - "Distinguish from leukemia and other serious causes"
+  - "Know when bone marrow biopsy is indicated"
+  - "Understand treatment thresholds"
+  - "Counsel on activity restrictions and bleeding precautions"
+
+common_mistakes:
+  - "Missing leukemia or aplastic anemia"
+  - "Over-treating mild ITP"
+  - "Not checking for other cytopenias"
+  - "Unnecessary bone marrow biopsy in classic cases"
+  - "Over-restricting activity"
+
+red_flags:
+  - "Abnormalities in other cell lines (WBC, RBC)"
+  - "Lymphadenopathy or hepatosplenomegaly"
+  - "Bone pain"
+  - "Systemic symptoms (fever, weight loss)"
+  - "Not responding to treatment"
+  - "Intracranial hemorrhage symptoms (headache, altered mental status)"
+  - "Atypical age (< 1 year or adolescent)"
+
+clinical_pearls:
+  - "Peak age: 2-6 years"
+  - "Often 1-4 weeks after viral illness"
+  - "Isolated thrombocytopenia - other lines normal"
+  - "Otherwise well-appearing child"
+  - "Petechiae, purpura, bruising without other symptoms"
+  - "No hepatosplenomegaly (if present, think leukemia)"
+  - "Platelet count often < 20,000 at diagnosis"
+  - "Bleeding risk correlates poorly with platelet count"
+
+key_history_questions:
+  - "When did bruising/petechiae start?"
+  - "Any recent viral illness?"
+  - "Any bleeding - nose, gums, blood in stool/urine?"
+  - "Fever, weight loss, bone pain, fatigue?"
+  - "Any new medications?"
+  - "Family history of bleeding disorders or autoimmune conditions?"
+  - "How is the child acting - sick or well?"
+
+key_exam_findings:
+  - "Petechiae (especially dependent areas, oral mucosa)"
+  - "Purpura and ecchymoses"
+  - "NO lymphadenopathy"
+  - "NO hepatosplenomegaly"
+  - "NO pallor (unless significant bleeding)"
+  - "Otherwise well-appearing child"
+  - "Signs of mucosal bleeding"
+
+treatment_principles:
+  - "Observation often appropriate if platelet > 20,000 and no bleeding"
+  - "Treatment if: platelets < 10-20k, significant bleeding, or upcoming procedure"
+  - "IVIG: 0.8-1 g/kg - rapid platelet rise"
+  - "Corticosteroids: prednisone 2-4 mg/kg/day"
+  - "Anti-D (WinRho): if Rh-positive, non-splenectomized"
+  - "Activity restriction: avoid contact sports, helmets for toddlers"
+  - "Avoid NSAIDs and aspirin"
+
+disposition_guidance:
+  - "Outpatient: Platelet > 10-20k, no significant bleeding, reliable follow-up"
+  - "Admission: Active bleeding, very low platelets, uncertain diagnosis"
+  - "Hematology consultation: All new diagnoses"
+  - "Bone marrow: Atypical features, not responding, before steroids if any doubt"
+  - "Follow-up: Weekly CBC until stable, then less frequent"
+  - "Education: Bleeding precautions, when to return"
+
+parent_styles: [terrified-of-bleeding, activity-restriction-questioning]
+
+sources:
+  - "ASH Guidelines: ITP"
+  - "AAP: Immune Thrombocytopenia in Children"

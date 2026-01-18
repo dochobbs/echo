@@ -1,0 +1,79 @@
+# Toddler's Fracture - Teaching Framework
+topic: "Toddler's Fracture"
+aliases: ["CAST fracture", "occult tibial fracture", "spiral tibial fracture"]
+category: trauma
+age_range_months: [9, 48]
+
+teaching_goals:
+  - "Recognize clinical presentation in limping toddler"
+  - "Know that X-ray may be normal initially"
+  - "Understand appropriate imaging approach"
+  - "Know when to treat empirically"
+  - "Identify non-accidental trauma concerns"
+
+common_mistakes:
+  - "Dismissing when initial X-ray is negative"
+  - "Missing in child who 'just stopped walking'"
+  - "Not considering in appropriate age group"
+  - "Excessive workup (MRI rarely needed)"
+  - "Missing subtle X-ray findings"
+
+red_flags:
+  - "History inconsistent with injury"
+  - "Non-ambulatory child with fracture"
+  - "Multiple bruises or other injuries"
+  - "Delay in seeking care"
+  - "Bilateral injuries"
+  - "Metaphyseal corner fractures (NAT)"
+
+clinical_pearls:
+  - "Peak age: 9 months to 3 years"
+  - "Classic: child suddenly won't walk or is limping"
+  - "Minimal or no recalled trauma"
+  - "Spiral or oblique fracture of distal tibial shaft"
+  - "Initial X-ray negative in up to 40%"
+  - "Periosteal reaction visible in 1-2 weeks"
+  - "Point tenderness over distal tibia is key finding"
+  - "Low threshold to treat empirically with splint if suspicious"
+
+key_history_questions:
+  - "When did limping start?"
+  - "Any witnessed injury or fall?"
+  - "Fever or illness?"
+  - "Walking normally before this?"
+  - "Any leg pain before?"
+  - "Who was with the child when this started?"
+  - "Developmental stage - cruising, walking, running?"
+
+key_exam_findings:
+  - "Refusal to bear weight or limping"
+  - "Point tenderness over distal tibia (key finding)"
+  - "May have mild swelling"
+  - "Hip, knee exam normal"
+  - "No warmth or erythema (vs infection)"
+  - "Neurovascular intact"
+  - "Well-appearing (vs septic joint)"
+
+treatment_principles:
+  - "If X-ray positive: long leg cast or walking boot"
+  - "If X-ray negative but clinically suspicious: treat empirically"
+  - "Empiric treatment: posterior splint or walking boot"
+  - "Pain control"
+  - "Duration: 3-4 weeks immobilization"
+  - "Repeat X-ray in 2 weeks may show healing/callus"
+  - "Most heal uneventfully"
+
+disposition_guidance:
+  - "Outpatient: All uncomplicated cases"
+  - "X-ray: AP and lateral tibia/fibula"
+  - "If negative but suspicious: treat empirically, repeat films in 1-2 weeks"
+  - "Orthopedic referral: Confirmation and casting"
+  - "MRI: Rarely needed, consider if not improving"
+  - "NAT evaluation: If mechanism doesn't fit or concerning features"
+  - "Follow-up: 1-2 weeks for repeat X-ray if initial negative"
+
+parent_styles: [worried-about-limping, NAT-defensive, looking-for-answers]
+
+sources:
+  - "POSNA: Toddler's Fracture"
+  - "Pediatric Radiology: Occult Fractures"

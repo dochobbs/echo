@@ -1,0 +1,82 @@
+# Oral and Lip Lacerations - Teaching Framework
+topic: "Oral and Lip Lacerations"
+aliases: ["lip laceration", "tongue laceration", "mouth cut", "oral injury"]
+category: trauma
+age_range_months: [6, 144]
+
+teaching_goals:
+  - "Know which oral lacerations need repair"
+  - "Identify vermillion border injuries"
+  - "Understand tongue laceration management"
+  - "Recognize through-and-through lip injuries"
+  - "Know which injuries can heal without sutures"
+
+common_mistakes:
+  - "Missing through-and-through lip injury"
+  - "Not aligning vermillion border precisely"
+  - "Suturing small tongue lacerations (most heal)"
+  - "Missing dental injuries"
+  - "Not evaluating for foreign body"
+
+red_flags:
+  - "Uncontrolled bleeding"
+  - "Through-and-through lip laceration"
+  - "Large or gaping tongue laceration"
+  - "Injury to floor of mouth (sublingual hematoma)"
+  - "Associated dental injury"
+  - "Deep injury near parotid duct or facial nerve"
+  - "Signs of abuse"
+
+clinical_pearls:
+  - "Oral mucosa heals extremely well - many lacerations don't need sutures"
+  - "Vermillion border: even 1mm mismatch is noticeable - repair carefully"
+  - "Through-and-through: close in layers (mucosa, muscle, skin)"
+  - "Tongue: most < 2cm, not gaping, edges approximate = no sutures"
+  - "Tongue sutures: absorbable, may need sedation"
+  - "Mucosal lacerations: absorbable sutures if needed"
+  - "Oral wounds have low infection rate despite bacteria"
+  - "Lip lacerations: good cosmetic alignment important"
+
+key_history_questions:
+  - "Mechanism - fall, bite, object?"
+  - "When did it happen?"
+  - "Bleeding controlled?"
+  - "Any teeth loose, broken, or missing?"
+  - "Could there be a foreign body?"
+  - "Tetanus status?"
+  - "For falls: concerning mechanism (abuse screen)?"
+
+key_exam_findings:
+  - "Bleeding controlled?"
+  - "Location: lip, tongue, buccal mucosa, gingiva"
+  - "Length and depth of laceration"
+  - "Vermillion border involvement"
+  - "Through-and-through (feel inside and out)"
+  - "Foreign body (tooth fragment, debris)"
+  - "Dental exam: loose, broken, missing teeth"
+  - "Tongue: gaping? actively bleeding?"
+
+treatment_principles:
+  - "Pressure for bleeding control"
+  - "Irrigate wound (saline)"
+  - "Small mucosal lacerations (<1-2cm, not gaping): observation"
+  - "Tongue: most heal without sutures"
+  - "Tongue repair if: >2cm, gaping, bisecting edge, persistent bleeding"
+  - "Vermillion border: meticulous alignment, fine suture (6-0)"
+  - "Through-and-through: layered closure (mucosa-muscle-skin)"
+  - "Sedation often needed for young children"
+
+disposition_guidance:
+  - "Outpatient: Most oral lacerations"
+  - "Repair indicated: Vermillion border, gaping, through-and-through, large tongue"
+  - "Plastics/OMFS referral: Complex, cosmetically sensitive, parotid/nerve concern"
+  - "Dental referral: Associated dental injuries"
+  - "Follow-up: Large repairs 5-7 days"
+  - "Diet: Soft foods, avoid straws, avoid citrus/spicy"
+  - "Return: Persistent bleeding, signs of infection, wound opening"
+
+parent_styles: [panicked-by-blood, cosmetically-concerned, worried-about-scarring]
+
+sources:
+  - "AAP: Facial Laceration Repair"
+  - "Pediatric Emergency Medicine: Oral Trauma"

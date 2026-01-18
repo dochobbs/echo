@@ -1,0 +1,81 @@
+# Dental Trauma - Teaching Framework
+topic: "Dental Trauma"
+aliases: ["tooth injury", "avulsed tooth", "knocked out tooth", "chipped tooth"]
+category: trauma
+age_range_months: [12, 216]
+
+teaching_goals:
+  - "Know management of avulsed permanent tooth (emergency)"
+  - "Distinguish primary from permanent tooth management"
+  - "Recognize different injury types"
+  - "Know when dental referral is urgent"
+  - "Provide appropriate first aid guidance"
+
+common_mistakes:
+  - "Reimplanting primary teeth (don't do this)"
+  - "Letting avulsed permanent tooth dry out"
+  - "Scrubbing the root of avulsed tooth"
+  - "Delaying reimplantation of permanent tooth"
+  - "Missing associated injuries (jaw fracture, head injury)"
+
+red_flags:
+  - "Avulsed permanent tooth (time-sensitive emergency)"
+  - "Unable to close jaw (mandible fracture)"
+  - "Multiple loose teeth (alveolar fracture)"
+  - "Significant bleeding not controlled"
+  - "Associated head injury"
+  - "Aspiration risk (missing tooth)"
+
+clinical_pearls:
+  - "PRIMARY tooth avulsed: DO NOT reimplant (risk to permanent tooth bud)"
+  - "PERMANENT tooth avulsed: reimplant ASAP, best outcomes < 30 min"
+  - "Handle avulsed tooth by crown only (don't touch root)"
+  - "Rinse gently with saline, don't scrub"
+  - "Storage: tooth in milk, saline, or in patient's cheek"
+  - "Splinting needed after reimplantation"
+  - "Primary teeth: upper central incisors most common age 1-3"
+  - "Permanent teeth: upper central incisors, boys > girls"
+
+key_history_questions:
+  - "What happened? When?"
+  - "Primary or permanent tooth?"
+  - "Where is the tooth now?"
+  - "Any jaw pain or abnormal bite?"
+  - "Able to fully open and close mouth?"
+  - "Any head injury or loss of consciousness?"
+  - "Tetanus status?"
+  - "Any missing teeth unaccounted for (aspiration risk)?"
+
+key_exam_findings:
+  - "Identify injured tooth/teeth"
+  - "Bleeding controlled?"
+  - "Tooth mobility, displacement"
+  - "Jaw alignment and mobility"
+  - "Ability to occlude normally"
+  - "Soft tissue injuries (lip, gingiva)"
+  - "Signs of jaw fracture"
+  - "Neurologic exam if head injury"
+
+treatment_principles:
+  - "AVULSED PERMANENT: reimplant immediately if possible"
+  - "  Handle by crown, rinse briefly with saline"
+  - "  Have patient bite on gauze to hold in place"
+  - "  Urgent dental follow-up for splinting"
+  - "AVULSED PRIMARY: do NOT reimplant"
+  - "Luxation/intrusion: dental referral (urgent for permanent)"
+  - "Fractures: dental referral, cover exposed dentin/pulp"
+  - "Soft tissue: suture if needed, tetanus update"
+  - "Pain control, soft diet"
+
+disposition_guidance:
+  - "Immediate dental/OMFS: Avulsed permanent tooth, alveolar fracture"
+  - "Urgent dental (24-48h): Luxation, intrusion, crown fracture exposing pulp"
+  - "Routine dental: Minor chip, primary tooth injuries"
+  - "CXR/abd film: If tooth missing and not accounted for (aspiration)"
+  - "Return: Increased pain, swelling, fever, color change in tooth"
+
+parent_styles: [panicked, cosmetically-concerned, saving-the-tooth]
+
+sources:
+  - "IADT: Dental Trauma Guidelines"
+  - "AAP: Management of Dental Trauma"
