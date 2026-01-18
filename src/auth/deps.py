@@ -25,6 +25,7 @@ def db_user_to_schema(user: db_models.User) -> UserSchema:
         email=user.email,
         name=user.name,
         level=user.level or "student",
+        role=user.role or "learner",
         specialty_interest=user.specialty_interest,
         institution=user.institution,
         created_at=user.created_at,
