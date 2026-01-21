@@ -1,6 +1,6 @@
 # Echo Project Worklist
 
-**Last Updated:** 2026-01-04
+**Last Updated:** 2026-01-20
 
 ## Vision
 
@@ -51,6 +51,10 @@ Target: Medical learner with 30 minutes at lunch wanting to run a case.
 - [x] Framework schema with teaching fields (goals, mistakes, pearls, red flags)
 - [x] Framework loader module (`src/knowledge/framework_loader.py`)
 - [x] Replit deployment bundle (`frameworks_bundle.tar.gz`)
+
+### Licensing ✅ 2026-01-20
+- [x] Added AGPL-3.0 license (copyleft, covers network use)
+- [x] Copyright: Michael Hobbs <michael@hobbs.md>
 
 ---
 
