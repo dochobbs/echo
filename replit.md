@@ -121,6 +121,11 @@ The app uses a "Clinical Calm" dark theme with Geist Mono font:
 - `Toast` - Notification toasts for milestones
 
 ## Recent Changes
+- 2026-01-18: Enhanced admin dashboard with case drill-down
+  - Click on a user to see all their cases
+  - Click on a case to view full conversation transcript
+  - Shows debrief summary, history gathered, exam performed, differential, plan
+  - Back button navigation between views
 - 2026-01-18: Added bulk C-CDA upload feature
   - New `/patients/import/bulk` endpoint accepts up to 50 files at once
   - Frontend file picker now supports multiple file selection

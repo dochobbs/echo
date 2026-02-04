@@ -365,6 +365,14 @@ class ApiClient {
   async getStruggleMetrics(): Promise<StruggleMetrics> {
     return this.fetch('/admin/metrics/struggles');
   }
+
+  async getAdminUserCases(userId: string): Promise<AdminCase[]> {
+    return this.fetch(`/admin/cases?user_id=${userId}`);
+  }
+
+  async getAdminCaseDetail(sessionId: string): Promise<AdminCaseDetail> {
+    return this.fetch(`/admin/cases/${sessionId}`);
+  }
 }
 
 export interface AdminMetrics {
@@ -412,6 +420,37 @@ export interface StruggleMetrics {
   common_stuck_phases: Array<{ phase: string; count: number }>;
   high_hint_conditions: Array<{ condition: string; avg_hints: number }>;
   avg_hints_by_level: Array<{ level: string; avg_hints: number }>;
+}
+
+export interface AdminCaseDetail {
+  session_id: string;
+  user?: {
+    id: string;
+    email: string;
+    name?: string;
+    level: string;
+  };
+  condition_key: string;
+  condition_display: string;
+  patient_data: Record<string, unknown>;
+  status: string;
+  phase: string;
+  started_at?: string;
+  completed_at?: string;
+  duration_seconds?: number;
+  history_gathered: string[];
+  exam_performed: string[];
+  differential: string[];
+  plan_proposed: string[];
+  hints_given: number;
+  teaching_moments: string[];
+  debrief_summary?: string;
+  learning_materials?: Record<string, unknown>;
+  conversation: Array<{
+    role: string;
+    content: string;
+    created_at: string;
+  }>;
 }
 
 export interface BulkImportResult {
