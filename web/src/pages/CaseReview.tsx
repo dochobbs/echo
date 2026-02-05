@@ -38,7 +38,11 @@ export function CaseReview() {
 
   useEffect(() => {
     async function loadCase() {
-      if (!sessionId) return;
+      if (!sessionId) {
+        setError('No case ID provided');
+        setLoading(false);
+        return;
+      }
       
       try {
         const data = await api.getCaseExport(sessionId);
@@ -151,51 +155,51 @@ export function CaseReview() {
         </motion.div>
       )}
 
-      {(caseData.history_gathered.length > 0 || 
-        caseData.exam_performed.length > 0 ||
-        caseData.differential.length > 0 ||
-        caseData.plan_proposed.length > 0) && (
+      {((caseData.history_gathered ?? []).length > 0 || 
+        (caseData.exam_performed ?? []).length > 0 ||
+        (caseData.differential ?? []).length > 0 ||
+        (caseData.plan_proposed ?? []).length > 0) && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8"
         >
-          {caseData.history_gathered.length > 0 && (
+          {(caseData.history_gathered ?? []).length > 0 && (
             <div className="card p-4">
               <h3 className="text-sm font-medium text-gray-400 mb-3">History Gathered</h3>
               <ul className="text-sm text-gray-300 space-y-1">
-                {caseData.history_gathered.map((h, i) => (
+                {(caseData.history_gathered ?? []).map((h, i) => (
                   <li key={i}>• {h}</li>
                 ))}
               </ul>
             </div>
           )}
-          {caseData.exam_performed.length > 0 && (
+          {(caseData.exam_performed ?? []).length > 0 && (
             <div className="card p-4">
               <h3 className="text-sm font-medium text-gray-400 mb-3">Exam Performed</h3>
               <ul className="text-sm text-gray-300 space-y-1">
-                {caseData.exam_performed.map((e, i) => (
+                {(caseData.exam_performed ?? []).map((e, i) => (
                   <li key={i}>• {e}</li>
                 ))}
               </ul>
             </div>
           )}
-          {caseData.differential.length > 0 && (
+          {(caseData.differential ?? []).length > 0 && (
             <div className="card p-4">
               <h3 className="text-sm font-medium text-gray-400 mb-3">Differential Diagnosis</h3>
               <ul className="text-sm text-gray-300 space-y-1">
-                {caseData.differential.map((d, i) => (
+                {(caseData.differential ?? []).map((d, i) => (
                   <li key={i}>• {d}</li>
                 ))}
               </ul>
             </div>
           )}
-          {caseData.plan_proposed.length > 0 && (
+          {(caseData.plan_proposed ?? []).length > 0 && (
             <div className="card p-4">
               <h3 className="text-sm font-medium text-gray-400 mb-3">Plan Proposed</h3>
               <ul className="text-sm text-gray-300 space-y-1">
-                {caseData.plan_proposed.map((p, i) => (
+                {(caseData.plan_proposed ?? []).map((p, i) => (
                   <li key={i}>• {p}</li>
                 ))}
               </ul>
@@ -204,7 +208,7 @@ export function CaseReview() {
         </motion.div>
       )}
 
-      {caseData.teaching_moments.length > 0 && (
+      {(caseData.teaching_moments ?? []).length > 0 && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -213,7 +217,7 @@ export function CaseReview() {
         >
           <h2 className="text-lg font-semibold text-gray-100 mb-4">Teaching Moments</h2>
           <ul className="text-gray-300 space-y-2">
-            {caseData.teaching_moments.map((t, i) => (
+            {(caseData.teaching_moments ?? []).map((t, i) => (
               <li key={i} className="flex gap-2">
                 <span className="text-echo-400">•</span>
                 <span>{t}</span>
