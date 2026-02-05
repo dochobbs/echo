@@ -140,6 +140,8 @@ class ApiClient {
     endpoint: string,
     options: RequestInit = {}
   ): Promise<T> {
+    this.ensureInitialized();
+
     const headers: Record<string, string> = {
       'Content-Type': 'application/json',
       ...((options.headers as Record<string, string>) || {}),
