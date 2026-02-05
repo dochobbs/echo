@@ -9,6 +9,7 @@ import { Login } from './pages/Login';
 import { Profile } from './pages/Profile';
 import { Patients } from './pages/Patients';
 import { Admin } from './pages/Admin';
+import { CaseReview } from './pages/CaseReview';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -38,6 +39,11 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/case" element={<Case />} />
             <Route path="/case/:sessionId" element={<Case />} />
+            <Route path="/case/:sessionId/review" element={
+              <ProtectedRoute>
+                <CaseReview />
+              </ProtectedRoute>
+            } />
             <Route path="/history" element={
               <ProtectedRoute>
                 <History />

@@ -151,7 +151,7 @@ export function History() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
-                className="card p-4 hover:border-surface-3 transition-colors"
+                className="card p-4 hover:border-echo-500/30 transition-colors"
               >
                 <div className="flex items-start justify-between">
                   <div>
@@ -174,6 +174,12 @@ export function History() {
                   <span className="w-1 h-1 bg-surface-4 rounded-full" />
                   <span>{c.teaching_moments_count} teaching moments</span>
                 </div>
+                <Link
+                  to={`/case/${c.session_id}/review`}
+                  className="mt-3 inline-block text-sm text-echo-400 hover:text-echo-300 font-medium transition-colors"
+                >
+                  Review case →
+                </Link>
               </motion.div>
             ))}
           </div>

@@ -290,6 +290,10 @@ class ApiClient {
     return this.fetch('/case/history');
   }
 
+  async getCaseExport(sessionId: string): Promise<CaseExport> {
+    return this.fetch(`/case/history/${sessionId}`);
+  }
+
   async getActiveCases(): Promise<{ cases: unknown[] }> {
     return this.fetch('/case/me/active');
   }
@@ -483,6 +487,32 @@ export interface ImportedPatient {
   source: string;
   source_file?: string;
   imported_at: string;
+}
+
+export interface CaseExport {
+  session_id: string;
+  condition_key: string;
+  condition_display: string;
+  patient_name: string;
+  patient_age: string;
+  learner_level: string;
+  started_at: string;
+  completed_at?: string;
+  duration_minutes?: number;
+  status: string;
+  phase: string;
+  history_gathered: string[];
+  exam_performed: string[];
+  differential: string[];
+  plan_proposed: string[];
+  hints_given: number;
+  teaching_moments: string[];
+  debrief_summary?: string;
+  conversation?: Array<{
+    role: string;
+    content: string;
+    timestamp?: string;
+  }>;
 }
 
 export const api = new ApiClient();
