@@ -235,24 +235,41 @@ async def get_my_stats(user: UserSchema = Depends(get_current_user)):
 
     db = next(get_db())
     try:
-        from sqlalchemy import func
+        from sqlalchemy import func, case
+        
+        user_uuid = user.id
         
         stats = db.query(
             func.count(db_models.CaseSession.id).label("total_cases"),
-            func.count(db_models.CaseSession.id).filter(db_models.CaseSession.status == "completed").label("completed_cases"),
+            func.sum(case((db_models.CaseSession.status == "completed", 1), else_=0)).label("completed_cases"),
             func.count(func.distinct(db_models.CaseSession.condition_key)).label("unique_conditions"),
-            func.avg(db_models.CaseSession.duration_seconds).filter(db_models.CaseSession.status == "completed").label("avg_duration_seconds"),
-            func.max(db_models.CaseSession.completed_at).label("last_case_completed"),
-        ).filter(db_models.CaseSession.user_id == user.id).first()
+        ).filter(db_models.CaseSession.user_id == user_uuid).first()
+        
+        avg_duration = db.query(
+            func.avg(db_models.CaseSession.duration_seconds)
+        ).filter(
+            db_models.CaseSession.user_id == user_uuid,
+            db_models.CaseSession.status == "completed"
+        ).scalar()
+        
+        last_completed = db.query(
+            func.max(db_models.CaseSession.completed_at)
+        ).filter(
+            db_models.CaseSession.user_id == user_uuid,
+            db_models.CaseSession.status == "completed"
+        ).scalar()
 
         return UserStats(
-            total_cases=stats.total_cases or 0,
-            completed_cases=stats.completed_cases or 0,
-            unique_conditions=stats.unique_conditions or 0,
-            avg_duration_seconds=float(stats.avg_duration_seconds) if stats.avg_duration_seconds else None,
-            last_case_completed=stats.last_case_completed,
+            total_cases=int(stats.total_cases or 0),
+            completed_cases=int(stats.completed_cases or 0),
+            unique_conditions=int(stats.unique_conditions or 0),
+            avg_duration_seconds=float(avg_duration) if avg_duration else None,
+            last_case_completed=last_completed,
         )
-    except Exception:
+    except Exception as e:
+        print(f"Error getting user stats: {e}")
+        import traceback
+        traceback.print_exc()
         return UserStats()
     finally:
         db.close()

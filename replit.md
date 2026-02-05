@@ -121,6 +121,11 @@ The app uses a "Clinical Calm" dark theme with Geist Mono font:
 - `Toast` - Notification toasts for milestones
 
 ## Recent Changes
+- 2026-02-05: Fixed user case history and stats display
+  - Fixed stats query in /auth/me/stats using proper SQLAlchemy case() syntax
+  - Added "Review case" links on History page for completed cases
+  - Created CaseReview page at /case/:sessionId/review for viewing completed cases
+  - Shows full conversation transcript, debrief, teaching moments, clinical data
 - 2026-01-18: Enhanced admin dashboard with case drill-down
   - Click on a user to see all their cases
   - Click on a case to view full conversation transcript
