@@ -1,6 +1,6 @@
 # Echo Project Worklist
 
-**Last Updated:** 2026-01-20
+**Last Updated:** 2026-02-04
 
 ## Vision
 
@@ -74,11 +74,18 @@ Target: Medical learner with 30 minutes at lunch wanting to run a case.
 
 ## Pending
 
+### Auth Bug Fix (2026-02-04)
+- [x] Fix: ApiClient.fetch() not loading stored JWT after page refresh
+  - Learners could not access old cases after refresh/return visit
+  - Root cause: `ensureInitialized()` missing from `fetch()` method
+
 ### Sprint 3: Identity + Persistence
 - [x] Supabase setup - Schema created, client ready
 - [x] Auth module structure - `src/auth/`
-- [ ] Server-side case storage
-- [ ] Cross-device case resume
+- [x] Server-side case storage
+- [ ] Cross-device case resume (partially fixed - auth token now persists)
+- [ ] Harden case history endpoints (require auth, remove in-memory fallback)
+- [ ] Fix in-memory history user isolation (no user filtering when DB is down)
 
 ### Sprint 4: Memory + Personalization
 - [ ] Case history tracking per user
