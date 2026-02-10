@@ -246,6 +246,14 @@ uvicorn src.main:app --port 8001
 # API at http://localhost:8001
 ```
 
+### Cross-Service Integration (February 2026)
+
+**Echo had ZERO code changes** in the integration work. Its existing endpoints (`/feedback`, `/question`, `/debrief`) already accept `PatientContext` with `source: "oread"`. The Metis Dashboard now sends real patient data from Oread to Echo's `/question` endpoint via the Vite proxy.
+
+**Important:** Echo routes have **no `/api/` prefix** — the Vite proxy rewrites `/api/echo/question` to `/question`. Mneme's `EchoClient` was fixed to point to port 8001 (was incorrectly 8002).
+
+See **`docs/INTEGRATION.md`** for the full cross-service integration guide.
+
 ### Data Flow
 
 ```
