@@ -87,13 +87,25 @@ def _get_images_for_phase(condition_info: dict, phase: CasePhase) -> list[CaseIm
 
 
 @router.get("/frameworks")
-async def list_frameworks():
-  """List available teaching frameworks for dynamic case generation."""
+async def list_frameworks(type: Optional[str] = None):
+  """List available teaching frameworks. Filter by type: 'sick', 'well_child', or None for all."""
+  if type == "well_child":
+    from .well_child_generator import get_well_child_generator
+    gen = get_well_child_generator()
+    ages = gen.list_visit_ages()
+    return {"frameworks": ages, "total": len(ages)}
+
   generator = get_dynamic_generator()
-  return {
-    "frameworks": generator.list_conditions(),
-    "total": len(generator.list_conditions()),
-  }
+  sick_frameworks = generator.list_conditions()
+
+  if type == "sick":
+    return {"frameworks": sick_frameworks, "total": len(sick_frameworks)}
+
+  # Return all
+  from .well_child_generator import get_well_child_generator
+  wc_gen = get_well_child_generator()
+  all_frameworks = sick_frameworks + wc_gen.list_visit_ages()
+  return {"frameworks": all_frameworks, "total": len(all_frameworks)}
 
 
 @router.post("/start/dynamic")
@@ -108,24 +120,35 @@ async def start_dynamic_case(request: StartCaseRequest) -> CaseResponse:
   - age_bracket: neonate/infant/toddler/child/adolescent
   - presentation: typical/atypical/early/late
   - complexity: straightforward/nuanced/challenging
+
+  For well-child visits, provide visit_type='well_child' and visit_age_months.
   """
   from ..core.tutor import Tutor
+  from .models import VisitType
 
-  generator = get_dynamic_generator()
-
-  # Generate the case dynamically with variant parameters
-  case_state = await generator.generate_case(
-    condition_key=request.condition_key,
-    learner_level=request.learner_level,
-    time_constraint=request.time_constraint,
-    severity=request.severity,
-    age_bracket=request.age_bracket,
-    presentation=request.presentation,
-    complexity=request.complexity,
-  )
-
-  # Get framework for tutor context (teaching goals, common mistakes, etc.)
-  framework = generator.get_framework(case_state.patient.condition_key)
+  if request.visit_type == VisitType.WELL_CHILD:
+    from .well_child_generator import get_well_child_generator
+    wc_generator = get_well_child_generator()
+    if request.visit_age_months is None:
+      raise HTTPException(status_code=400, detail="visit_age_months required for well-child cases")
+    case_state = await wc_generator.generate_case(
+      visit_age_months=request.visit_age_months,
+      learner_level=request.learner_level,
+      time_constraint=request.time_constraint,
+    )
+    framework = wc_generator.get_framework(case_state.patient.condition_key) or {}
+  else:
+    generator = get_dynamic_generator()
+    case_state = await generator.generate_case(
+      condition_key=request.condition_key,
+      learner_level=request.learner_level,
+      time_constraint=request.time_constraint,
+      severity=request.severity,
+      age_bracket=request.age_bracket,
+      presentation=request.presentation,
+      complexity=request.complexity,
+    )
+    framework = generator.get_framework(case_state.patient.condition_key)
 
   # Get the tutor's opening message
   tutor = Tutor()
@@ -211,8 +234,14 @@ async def send_message(
     "content": request.message,
   })
 
-  generator = get_generator()
-  condition_info = generator.get_condition_info(case_state.patient.condition_key)
+  from .models import VisitType
+  if case_state.visit_type == VisitType.WELL_CHILD:
+    from .well_child_generator import get_well_child_generator
+    wc_gen = get_well_child_generator()
+    condition_info = wc_gen.get_framework(case_state.patient.condition_key) or {}
+  else:
+    generator = get_generator()
+    condition_info = generator.get_condition_info(case_state.patient.condition_key)
 
   tutor = Tutor()
   response, updated_state, teaching_moment, hint_offered = await tutor.process_case_message(
@@ -253,9 +282,15 @@ async def get_debrief(
   Returns structured debrief data for rich UI display.
   """
   from ..core.tutor import Tutor
+  from .models import VisitType
 
-  generator = get_generator()
-  condition_info = generator.get_condition_info(case_state.patient.condition_key)
+  if case_state.visit_type == VisitType.WELL_CHILD:
+    from .well_child_generator import get_well_child_generator
+    wc_gen = get_well_child_generator()
+    condition_info = wc_gen.get_framework(case_state.patient.condition_key) or {}
+  else:
+    generator = get_generator()
+    condition_info = generator.get_condition_info(case_state.patient.condition_key)
 
   tutor = Tutor()
   debrief_data = await tutor.generate_debrief(case_state, condition_info)
@@ -269,6 +304,7 @@ async def get_debrief(
     missed_items=debrief_data.get("missed_items", []),
     teaching_points=debrief_data.get("teaching_points", []),
     follow_up_resources=debrief_data.get("follow_up_resources", []),
+    well_child_scores=debrief_data.get("well_child_scores"),
   )
 
   if user and is_db_configured():
