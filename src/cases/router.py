@@ -179,18 +179,31 @@ async def start_case(
 
   Returns an opening message from Echo and the initial case state.
   If authenticated, the case will be persisted to the user's history.
+
+  For well-child visits, provide visit_type='well_child' and visit_age_months.
   """
   from ..core.tutor import Tutor
+  from .models import VisitType
 
-  generator = get_generator()
-
-  case_state = generator.create_case(
-    condition_key=request.condition_key,
-    learner_level=request.learner_level,
-    time_constraint=request.time_constraint,
-  )
-
-  condition_info = generator.get_condition_info(case_state.patient.condition_key)
+  if request.visit_type == VisitType.WELL_CHILD:
+    from .well_child_generator import get_well_child_generator
+    wc_generator = get_well_child_generator()
+    if request.visit_age_months is None:
+      raise HTTPException(status_code=400, detail="visit_age_months required for well-child cases")
+    case_state = await wc_generator.generate_case(
+      visit_age_months=request.visit_age_months,
+      learner_level=request.learner_level,
+      time_constraint=request.time_constraint,
+    )
+    condition_info = wc_generator.get_framework(case_state.patient.condition_key) or {}
+  else:
+    generator = get_generator()
+    case_state = generator.create_case(
+      condition_key=request.condition_key,
+      learner_level=request.learner_level,
+      time_constraint=request.time_constraint,
+    )
+    condition_info = generator.get_condition_info(case_state.patient.condition_key)
 
   tutor = Tutor()
   opening = await tutor.generate_case_opening(case_state, condition_info)
