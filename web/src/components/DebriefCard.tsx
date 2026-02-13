@@ -1,24 +1,92 @@
 import { motion } from 'motion/react';
-import type { DebriefData } from '../api/client';
+import type { DebriefData, WellChildDomainScore } from '../api/client';
 
 interface DebriefCardProps {
   debrief: DebriefData;
   onNewCase: () => void;
 }
 
+const DOMAIN_LABELS: Record<string, string> = {
+  growth_interpretation: 'Growth Interpretation',
+  milestone_assessment: 'Milestone Assessment',
+  exam_thoroughness: 'Exam Thoroughness',
+  anticipatory_guidance: 'Anticipatory Guidance',
+  immunization_knowledge: 'Immunization Knowledge',
+  communication_skill: 'Communication Skill',
+};
+
+function scoreColor(score: number): string {
+  if (score >= 8) return 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30';
+  if (score >= 5) return 'text-yellow-400 bg-yellow-500/10 border-yellow-500/30';
+  return 'text-red-400 bg-red-500/10 border-red-500/30';
+}
+
+function DomainScoreCard({ domain, score }: { domain: string; score: WellChildDomainScore }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      className={`rounded-xl border p-3 ${scoreColor(score.score)}`}
+    >
+      <div className="flex items-center justify-between mb-1">
+        <span className="text-xs font-semibold uppercase tracking-wide opacity-80">
+          {DOMAIN_LABELS[domain] || domain}
+        </span>
+        <span className="text-lg font-bold">{score.score}/10</span>
+      </div>
+      <p className="text-xs text-gray-400 leading-relaxed">{score.feedback}</p>
+    </motion.div>
+  );
+}
+
 export function DebriefCard({ debrief, onNewCase }: DebriefCardProps) {
+  const hasWellChildScores = !!debrief.well_child_scores;
+
+  const avgScore = hasWellChildScores
+    ? Math.round(
+        Object.values(debrief.well_child_scores!).reduce((sum, d) => sum + d.score, 0) / 6 * 10
+      ) / 10
+    : null;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       className="card overflow-hidden"
     >
-      <div className="bg-gradient-to-r from-echo-500/20 to-copper-500/20 px-6 py-4 border-b border-surface-3">
-        <h3 className="text-lg font-semibold text-gray-100">Case Debrief 🎉</h3>
+      <div className={`px-6 py-4 border-b border-surface-3 ${
+        hasWellChildScores
+          ? 'bg-gradient-to-r from-emerald-500/20 to-echo-500/20'
+          : 'bg-gradient-to-r from-echo-500/20 to-copper-500/20'
+      }`}>
+        <div className="flex items-center justify-between">
+          <h3 className="text-lg font-semibold text-gray-100">
+            {hasWellChildScores ? 'Well-Child Visit Debrief' : 'Case Debrief'}
+          </h3>
+          {avgScore !== null && (
+            <span className={`text-2xl font-bold ${
+              avgScore >= 8 ? 'text-emerald-400' : avgScore >= 5 ? 'text-yellow-400' : 'text-red-400'
+            }`}>
+              {avgScore}/10
+            </span>
+          )}
+        </div>
         <p className="mt-2 text-gray-300">{debrief.summary}</p>
       </div>
 
       <div className="p-6 space-y-6">
+        {hasWellChildScores && (
+          <section>
+            <h4 className="text-sm font-semibold text-emerald-400 uppercase tracking-wide mb-3">
+              Domain Scores
+            </h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {Object.entries(debrief.well_child_scores!).map(([domain, score]) => (
+                <DomainScoreCard key={domain} domain={domain} score={score as WellChildDomainScore} />
+              ))}
+            </div>
+          </section>
+        )}
         {debrief.strengths.length > 0 && (
           <section>
             <h4 className="flex items-center gap-2 text-sm font-semibold text-echo-400 uppercase tracking-wide mb-3">

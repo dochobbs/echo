@@ -8,7 +8,7 @@ interface CaseContextType {
   loading: boolean;
   error: string | null;
   debrief: DebriefData | null;
-  startCase: (options?: { level?: LearnerLevel; condition?: string }) => Promise<BackendCaseResponse>;
+  startCase: (options?: { level?: LearnerLevel; condition?: string; visitType?: 'sick' | 'well_child'; visitAgeMonths?: number }) => Promise<BackendCaseResponse>;
   loadCase: (sessionId: string) => Promise<BackendCaseResponse>;
   sendMessage: (message: string) => Promise<BackendCaseResponse>;
   endCase: () => Promise<BackendCaseResponse>;
@@ -25,7 +25,7 @@ export function CaseProvider({ children }: { children: ReactNode }) {
   const [error, setError] = useState<string | null>(null);
   const [debrief, setDebrief] = useState<DebriefData | null>(null);
 
-  const startCase = useCallback(async (options?: { level?: LearnerLevel; condition?: string }) => {
+  const startCase = useCallback(async (options?: { level?: LearnerLevel; condition?: string; visitType?: 'sick' | 'well_child'; visitAgeMonths?: number }) => {
     setLoading(true);
     setError(null);
     setDebrief(null);  // Clear any previous debrief
@@ -34,6 +34,8 @@ export function CaseProvider({ children }: { children: ReactNode }) {
       const response = await api.startCase({
         learner_level: options?.level || 'student',
         condition_key: options?.condition,
+        visit_type: options?.visitType,
+        visit_age_months: options?.visitAgeMonths,
       });
 
       setCaseState(response.case_state);

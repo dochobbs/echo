@@ -1,0 +1,239 @@
+# Adolescent Well-Child Visit - Teaching Framework
+topic: "Adolescent Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 144
+category: "well_child"
+
+teaching_goals:
+  - "Establish confidential time with the adolescent separate from the parent"
+  - "Perform a structured psychosocial assessment using HEEADSSS 3.0"
+  - "Screen for depression (PHQ-A) and substance use (CRAFFT 2.1) annually starting at age 12"
+  - "Assess pubertal development using Tanner staging and address concerns appropriately"
+  - "Administer age-appropriate immunizations including Tdap, HPV, and MenACWY"
+  - "Deliver anticipatory guidance on healthy relationships, substance avoidance, mental health, and safe driving"
+
+expected_milestones:
+  # Note: Adolescent milestones are psychosocial, not CDC developmental milestones.
+  # Based on normal adolescent psychosocial development stages.
+  psychosocial:
+    - "Developing peer-oriented identity separate from family"
+    - "Increasing capacity for empathy and perspective-taking"
+    - "Forming close friendships and early romantic relationships"
+    - "Developing personal moral and ethical frameworks"
+    - "Increasing need for autonomy with appropriate limit-testing"
+    - "Growing awareness of consequences and risk assessment"
+  cognitive:
+    - "Abstract thinking and hypothetical reasoning emerging"
+    - "Future-oriented planning developing (career, education goals)"
+    - "Understanding nuance, gray areas, and multiple perspectives"
+    - "Metacognition - ability to think about own thinking"
+    - "Developing capacity for complex problem-solving"
+  identity:
+    - "Exploring personal identity (values, beliefs, interests)"
+    - "Sexual orientation and gender identity awareness"
+    - "Body image development and relationship with physical self"
+    - "Developing sense of competence and self-efficacy"
+    - "Consolidating cultural and ethnic identity"
+
+screening_tools:
+  - tool: "PHQ-A (Patient Health Questionnaire - Adolescent)"
+    when: "Annual screening starting at age 12 per AAP/USPSTF"
+  - tool: "CRAFFT 2.1 (Substance Use Screening)"
+    when: "Annual screening starting at age 12"
+  - tool: "HEEADSSS 3.0 (Psychosocial Assessment)"
+    when: "Structured interview at every adolescent visit"
+  - tool: "Vision screening (Snellen)"
+    when: "Routine at each well visit"
+  - tool: "Hearing screening (pure tone audiometry)"
+    when: "Once during adolescence (per Bright Futures)"
+  - tool: "Scoliosis screening (Adam forward bend test)"
+    when: "Girls age 10-12, boys age 13-14 per AAP; some recommend at each visit 10-16"
+  - tool: "Lipid screening (non-fasting or fasting panel)"
+    when: "Universal once between ages 9-11; repeat at 17-21"
+  - tool: "Blood pressure measurement"
+    when: "Every well visit; use age/sex/height-based percentiles for children <13yr, adult thresholds for 13+"
+  - tool: "STI screening (Chlamydia, Gonorrhea, HIV)"
+    when: "If sexually active; Chlamydia/GC in all sexually active females annually; HIV at least once 15-18"
+  - tool: "Columbia Suicide Severity Rating Scale (C-SSRS)"
+    when: "If PHQ-A positive or clinical concern for suicidality"
+
+anticipatory_guidance:
+  safety:
+    - "Motor vehicle safety: seatbelts always, no texting while driving, no riding with impaired drivers"
+    - "Graduated driver licensing awareness - nighttime and passenger restrictions"
+    - "Helmet use for bicycles, skateboards, ATVs, and contact sports"
+    - "Firearm safety: lethal means restriction, safe storage counseling"
+    - "Water safety: no swimming alone, no alcohol near water"
+    - "Consent education: understanding personal boundaries and consent in relationships"
+    - "Social media safety: privacy settings, cyberbullying recognition, not sharing personal information"
+    - "Avoid vaping, e-cigarettes, and tobacco products"
+  nutrition:
+    - "Balanced diet with fruits, vegetables, whole grains, and lean protein"
+    - "Calcium 1300 mg/day and Vitamin D 600 IU/day for bone health during growth"
+    - "Limit sugar-sweetened beverages and energy drinks"
+    - "Promote positive body image; avoid labeling foods as good or bad"
+    - "Recognize disordered eating patterns: restriction, binging, purging, excessive exercise"
+    - "Discuss protein and supplement myths common in teen athletes"
+    - "Encourage family meals when possible (protective against eating disorders)"
+  development:
+    - "Normalize pubertal changes; address concerns about timing and appearance"
+    - "Discuss healthy vs unhealthy relationships and recognizing abuse"
+    - "Support identity exploration (personal, cultural, sexual, gender)"
+    - "Encourage extracurricular activities and community involvement"
+    - "Discuss academic planning and future goals without excessive pressure"
+    - "Reinforce importance of trusted adults and support networks"
+  behavior:
+    - "Substance avoidance: alcohol, marijuana, vaping, prescription drug misuse"
+    - "Mental health awareness: normalize seeking help, reduce stigma"
+    - "Stress management and healthy coping strategies"
+    - "Healthy social media use: time limits, recognizing impact on self-esteem"
+    - "Sexual health education: contraception, STI prevention, consent"
+    - "Discuss consequences of sexting and legal implications"
+    - "Screen time balance: academic, social, and recreational"
+  sleep:
+    - "Recommend 8-10 hours of sleep per night (AAP)"
+    - "Consistent sleep/wake schedule even on weekends"
+    - "No screens 30-60 minutes before bed; remove devices from bedroom"
+    - "Discuss circadian shift in adolescents (delayed sleep phase is physiologic)"
+    - "Caffeine avoidance after early afternoon"
+    - "Address school start time impact on sleep health"
+
+immunizations_due:
+  - vaccine: "Tdap (Tetanus, Diphtheria, Pertussis)"
+    cvx: 115
+    dose_number: "1 dose"
+    notes: "Routinely given at 11-12 years; booster from childhood DTaP series"
+  - vaccine: "HPV 9-valent (Human Papillomavirus)"
+    cvx: 165
+    dose_number: "2-dose series"
+    notes: "Ages 11-12 routinely; 2 doses if series started before age 15 (0, 6-12 months); 3 doses if started at 15+ or immunocompromised"
+  - vaccine: "MenACWY (Meningococcal conjugate)"
+    cvx: 114
+    dose_number: "1st dose at 11-12yr, booster at 16yr"
+    notes: "First dose at 11-12 years; booster dose at age 16 for continued protection through college entry"
+  - vaccine: "Influenza (Inactivated or Recombinant)"
+    cvx: 150
+    dose_number: "Annual"
+    notes: "Annual vaccination for all persons 6 months and older; IIV or RIV; LAIV (CVX 151) is an alternative for healthy non-pregnant adolescents"
+  - vaccine: "MenB (Meningococcal B)"
+    cvx: 162
+    dose_number: "Shared clinical decision"
+    notes: "Not routinely recommended; shared clinical decision-making for ages 16-18 (Bexsero CVX 163 = 2 doses, Trumenba CVX 162 = 2-3 doses); recommended if asplenia, complement deficiency, or outbreak"
+  - vaccine: "COVID-19 (updated formulation)"
+    cvx: 229
+    dose_number: "Per current ACIP guidance"
+    notes: "Updated formulation per current season; check ACIP recommendations for dosing based on prior vaccination history"
+
+physical_exam_focus:
+  - area: "Vital signs and growth parameters"
+    detail: "Blood pressure (use correct cuff size), height, weight, BMI with percentile plotting"
+    teaching_point: "BMI percentiles: <5th underweight, 85-94th overweight, >=95th obesity. Use adult BP thresholds (120/80) for ages 13+. BMI trajectory is more informative than single measurement."
+  - area: "Tanner staging (Sexual Maturity Rating)"
+    detail: "Breast/genital development and pubic hair staging (Tanner I-V)"
+    teaching_point: "Know normal timing: girls breast bud 8-13yr (mean 10), menarche 2-3yr after thelarche; boys testicular enlargement 9-14yr (mean 11.5). Precocious if <8yr girls/<9yr boys. Delayed if no breast by 13 or no testicular enlargement by 14."
+  - area: "Skin examination"
+    detail: "Acne assessment (comedonal, inflammatory, nodulocystic), self-harm marks, tattoos/piercings"
+    teaching_point: "Grade acne severity to guide treatment. Inspect forearms, thighs, and abdomen for non-suicidal self-injury. Approach findings non-judgmentally and explore with the adolescent privately."
+  - area: "Spine examination"
+    detail: "Adam forward bend test for scoliosis, assess shoulder/hip symmetry, scoliometer if available"
+    teaching_point: "Screen girls 10-12, boys 13-14. Scoliometer >5-7 degrees warrants AP spine X-ray. Pain with scoliosis is NOT typical of idiopathic scoliosis - investigate further."
+  - area: "Thyroid examination"
+    detail: "Inspect and palpate for goiter, nodules, or asymmetry"
+    teaching_point: "Thyroid disease is common in adolescents, especially females. Hashimoto thyroiditis is the most common cause of hypothyroidism in this age group. Palpable nodules >1cm need ultrasound."
+  - area: "Cardiovascular examination"
+    detail: "Auscultation in supine and standing; assess for murmurs, clicks, irregular rhythm"
+    teaching_point: "Ask about exercise-related syncope, chest pain, palpitations, and family history of sudden cardiac death. New murmurs in adolescence warrant investigation. Innocent murmurs decrease with standing."
+  - area: "Musculoskeletal screening"
+    detail: "Sports preparticipation exam elements; assess joints, gait, and strength"
+    teaching_point: "Apophysitis (Osgood-Schlatter, Sever disease) is common during growth spurts. Ask about sports injuries. Identify overuse injuries early, especially in single-sport athletes."
+  - area: "Mental status assessment"
+    detail: "Observe affect, eye contact, engagement; assess mood during confidential interview"
+    teaching_point: "This is NOT a formal mental status exam - it is integrating behavioral observation with clinical interview. Teens with depression may present as irritable rather than sad. Establish rapport before sensitive topics."
+
+common_mistakes:
+  - "Skipping confidential time alone with the adolescent"
+  - "Performing the entire visit with the parent present, preventing honest disclosure"
+  - "Not explaining confidentiality and its limits (harm to self, harm to others, abuse) to both teen and parent"
+  - "Forgetting to screen for depression (PHQ-A) and substance use (CRAFFT) at every annual visit from age 12"
+  - "Counseling on abstinence only without providing comprehensive sexual health education"
+  - "Missing HPV vaccine opportunity or accepting parental refusal without thorough education on cancer prevention"
+  - "Not assessing Tanner stage or being uncomfortable with pubertal assessment"
+  - "Ignoring sleep complaints as 'normal teen behavior' without assessing for depression or circadian disruption"
+  - "Failing to perform a structured HEEADSSS assessment and instead asking only surface-level questions"
+  - "Not asking about suicidality when depression screen is positive"
+  - "Missing the 16-year MenACWY booster dose"
+  - "Overlooking signs of eating disorders in male adolescents"
+
+possible_findings:
+  - finding: "Depression/Anxiety"
+    description: "PHQ-A score >= 10, persistent sadness or irritability, social withdrawal, academic decline, sleep or appetite changes"
+    probability: 0.15
+    framework_link: "depression"
+    age_relevance: "Prevalence increases sharply after puberty; affects ~15-20% of adolescents by age 18"
+  - finding: "Eating disorder signs"
+    description: "BMI trajectory change, preoccupation with weight/food, excessive exercise, purging behaviors, lanugo, dental erosions"
+    probability: 0.05
+    framework_link: "eating_disorders"
+    age_relevance: "Peak onset 14-18 years; often missed in males and athletes"
+  - finding: "Adolescent idiopathic scoliosis"
+    description: "Asymmetric rib hump on forward bend test, shoulder height discrepancy, waistline asymmetry"
+    probability: 0.03
+    framework_link: "scoliosis"
+    age_relevance: "Most common during growth spurt; girls > boys for curves requiring treatment"
+  - finding: "Acne (moderate-severe)"
+    description: "Inflammatory papules, pustules, or nodules on face, chest, or back; may include scarring"
+    probability: 0.35
+    framework_link: "acne"
+    age_relevance: "Affects 85% of adolescents to some degree; moderate-severe in ~15-35%"
+  - finding: "Substance use"
+    description: "Positive CRAFFT screen (score >= 2), vaping/e-cigarette use, alcohol or marijuana use"
+    probability: 0.12
+    framework_link: "n/a"
+    age_relevance: "Experimentation increases with age; vaping epidemic peaked but remains prevalent"
+  - finding: "Hypertension"
+    description: "BP >= 130/80 in adolescents 13+ (adult criteria) or >= 95th percentile for age/sex/height if <13"
+    probability: 0.05
+    framework_link: "hypertension"
+    age_relevance: "Increasingly common due to obesity; essential hypertension becomes more common than secondary in adolescence"
+  - finding: "Obesity"
+    description: "BMI >= 95th percentile; assess for acanthosis nigricans, striae, comorbidities"
+    probability: 0.20
+    framework_link: "obesity"
+    age_relevance: "~20% prevalence in US adolescents; screen for T2DM, dyslipidemia, NAFLD, sleep apnea"
+  - finding: "Suicidal ideation"
+    description: "Disclosed during confidential interview or on PHQ-A item 9; may present with self-harm"
+    probability: 0.08
+    framework_link: "depression"
+    age_relevance: "Suicide is 2nd leading cause of death ages 10-24; ideation is common (~18% of high schoolers in past year)"
+  - finding: "Puberty concerns (early or delayed)"
+    description: "Precocious puberty (<8yr girls, <9yr boys) or delayed puberty (no breast by 13, no testicular enlargement by 14)"
+    probability: 0.04
+    framework_link: "puberty_disorders"
+    age_relevance: "Late bloomers cause significant anxiety; constitutional delay is most common cause"
+  - finding: "STI"
+    description: "Vaginal/urethral discharge, dysuria, genital lesions, or asymptomatic positive screen in sexually active teen"
+    probability: 0.06
+    framework_link: "stis"
+    age_relevance: "Highest rates of chlamydia and gonorrhea in 15-24 year olds; most infections are asymptomatic"
+
+parent_styles:
+  - "helicopter-parent (over-involved, resists confidential time, answers for teen)"
+  - "disengaged (minimal involvement, teen managing own healthcare)"
+  - "anti-vaccine (concerned about HPV vaccine specifically)"
+  - "anxious-about-puberty (worried about early or late development)"
+  - "mental-health-stigma (dismisses emotional concerns as normal teenage behavior)"
+  - "culturally-conservative (uncomfortable with sexual health discussion)"
+  - "substance-use-denial (minimizes or normalizes teen experimentation)"
+  - "achievement-focused (prioritizes academics/sports over mental wellbeing)"
+
+sources:
+  - "AAP Bright Futures Guidelines, 4th Edition (2017) - Adolescent Visits"
+  - "CDC/ACIP Recommended Immunization Schedule for Children and Adolescents, 2025"
+  - "USPSTF Screening for Depression in Children and Adolescents (2016, reaffirmed 2022)"
+  - "AAP Clinical Report: Adolescent Well-Care Visits (2024)"
+  - "Goldenring JM, Rosen DS. Getting into adolescent heads: An essential update. HEEADSSS 3.0. Contemporary Pediatrics (2004, updated)"
+  - "Knight JR, et al. CRAFFT 2.1 Substance Use Screening Tool. Boston Children's Hospital"
+  - "Kroenke K, et al. PHQ-A: Screening for Depression in Adolescents. AAP/AACAP (2018)"
+  - "SRS/AAOS/POSNA: Screening for Adolescent Idiopathic Scoliosis Position Statement"
+  - "NHLBI Expert Panel: Integrated Guidelines for Cardiovascular Health and Risk Reduction in Children and Adolescents (2011) - Lipid Screening"
+  - "CDC: STI Treatment Guidelines (2021, updated 2023)"

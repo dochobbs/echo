@@ -1,0 +1,213 @@
+# 3 Year Well-Child Visit - Teaching Framework
+topic: "3 Year Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 36
+category: "well_child"
+
+teaching_goals:
+  - "Perform a comprehensive physical exam with emphasis on first blood pressure measurement (correct cuff size, right arm, seated technique)"
+  - "Assess developmental milestones using the CDC 2022 checklist (75th percentile standard) with focus on speech intelligibility and social skills"
+  - "Administer influenza vaccine if due per 2025 ACIP schedule and counsel on annual administration"
+  - "Initiate annual vision screening using age-appropriate methods (instrument-based preferred, Snellen if cooperative)"
+  - "Calculate and plot BMI on CDC growth charts; begin annual BMI tracking"
+  - "Deliver anticipatory guidance on screen time limits, preschool readiness, safety (helmet, water, sun, stranger danger)"
+  - "Screen for speech delay, behavioral concerns, and social-emotional development"
+
+expected_milestones:
+  gross_motor:
+    - "Pedals a tricycle"
+    - "Runs easily without frequent falling"
+    - "Climbs stairs alternating feet (one foot per step going up)"
+    - "Jumps and hops on one foot briefly"
+  fine_motor:
+    - "Draws a circle when shown how"
+    - "Draws a person with at least 3 body parts (emerging)"
+    - "Uses a fork independently"
+    - "Turns pages one at a time"
+    - "Dresses and undresses self partially (pulls on simple clothing, may need help with buttons/zippers)"
+  language:
+    - "Carries on a conversation with 2 or more back-and-forth exchanges"
+    - "Asks who, what, where, and why questions"
+    - "Says first name when asked"
+    - "Talks well enough to be understood by strangers about 75% of the time"
+    - "Uses 3-4 word sentences"
+  social_emotional:
+    - "Plays with other children (not just beside them -- interactive, cooperative play emerging)"
+    - "Takes turns in games"
+    - "Shows concern for a crying friend (developing empathy)"
+    - "Shows affection for friends without prompting"
+    - "Separates from parent without major distress in familiar settings"
+  cognitive:
+    - "Names common colors (at least 3-4)"
+    - "Understands concepts of 'same' and 'different'"
+    - "Plays make-believe with dolls, animals, and people (imaginative play)"
+    - "Counts to 3 or higher"
+    - "Works buttons, levers, and moving parts on toys"
+
+screening_tools:
+  - tool: "Blood Pressure Measurement"
+    when: "routine (annual starting at age 3)"
+  - tool: "Vision Screening (instrument-based or Snellen chart)"
+    when: "routine (annual starting at age 3, if cooperative)"
+  - tool: "BMI Calculation and Plotting"
+    when: "routine (annual starting at age 2 on CDC charts)"
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "if concern or if 30-month screen was missed"
+  - tool: "Developmental surveillance (clinical observation)"
+    when: "routine"
+  - tool: "Oral health risk assessment"
+    when: "routine"
+
+anticipatory_guidance:
+  safety:
+    - "Bicycle helmet use starting from first tricycle ride -- properly fitted (two finger widths above eyebrows, snug chin strap)"
+    - "Sun safety: sunscreen SPF 30+ with reapplication every 2 hours, protective clothing, hats, avoid peak sun hours (10am-2pm)"
+    - "Water safety: never leave unsupervised near water (pools, tubs, buckets), fence around pools with self-latching gate, consider swim lessons (AAP endorses after age 1)"
+    - "Stranger danger: teach child their full name, parent's name, and basic safety rules about adults they do not know"
+    - "Car seat: rear-facing as long as possible (up to seat limits), then forward-facing with 5-point harness in the back seat"
+    - "Firearm safety: if guns in the home, store locked and unloaded with ammunition locked separately"
+    - "Choking hazards: hot dogs (cut lengthwise), grapes (quartered), popcorn, nuts, hard candy, raw carrots still pose risk"
+    - "Playground safety: supervise at all times, age-appropriate equipment, soft landing surface"
+  nutrition:
+    - "Transition to low-fat or fat-free milk (16-20 oz per day maximum to avoid iron deficiency)"
+    - "Offer 3 meals and 2 scheduled snacks daily; avoid grazing throughout the day"
+    - "Encourage fruits, vegetables, whole grains, and lean proteins at each meal"
+    - "Limit juice to 4 oz per day of 100% fruit juice; water is the preferred beverage"
+    - "Avoid sugar-sweetened beverages entirely"
+    - "Expect food jags and picky eating -- continue offering variety without pressure or force"
+    - "Family meals together when possible to model healthy eating"
+  development:
+    - "Encourage interactive play with peers -- playdates, preschool, park visits"
+    - "Read together daily -- ask questions about the story, encourage the child to point and name"
+    - "Support make-believe and imaginative play (dress-up, dolls, action figures, pretend kitchen)"
+    - "Encourage drawing, coloring, and craft activities to develop fine motor skills"
+    - "Preschool readiness: separation tolerance, following 2-3 step instructions, sharing, taking turns"
+    - "Name colors, count objects, and identify shapes in daily activities"
+  behavior:
+    - "Set consistent limits and follow through with logical consequences"
+    - "Use positive reinforcement and specific praise ('I like how you shared with your friend')"
+    - "Expect testing of boundaries and assertion of independence -- normal for this age"
+    - "Time-outs: 1 minute per year of age (3 minutes), in a boring but safe location"
+    - "Address aggression (hitting, biting, pushing) immediately and calmly -- redirect and teach words for feelings"
+    - "Validate emotions while setting limits on behavior ('You can be angry, but you cannot hit')"
+    - "Discuss toilet training progress; most children achieve daytime continence by 3 years, nighttime may take longer"
+  sleep:
+    - "Total sleep: 10-13 hours per 24-hour period (including nap)"
+    - "Many children still nap once daily (1-2 hours); some begin dropping the nap between 3-4 years"
+    - "Consistent bedtime routine: bath, brush teeth, books, bed"
+    - "Bedtime resistance and stalling are common -- maintain calm, firm boundaries"
+    - "Night fears and nightmares may emerge; provide reassurance without reinforcing fear"
+    - "Screen time: maximum 1 hour per day of high-quality programming, no screens within 1 hour of bedtime"
+  screen_time:
+    - "Limit to 1 hour per day maximum of high-quality, educational programming"
+    - "Co-view with the child and discuss content to enhance learning"
+    - "No screens during meals or within 1 hour of bedtime"
+    - "No screens in the child's bedroom"
+    - "Prioritize active play, reading, and social interaction over screen time"
+
+immunizations_due:
+  - vaccine: "Influenza (IIV or LAIV)"
+    cvx: 150
+    dose_number: "annual dose"
+    notes: "Annual influenza vaccination recommended for all children 6 months and older. If this is the first season receiving influenza vaccine, the child needs 2 doses separated by at least 4 weeks. IIV (injectable) is standard; LAIV (nasal spray, CVX 151) is an alternative for children 2 years and older without contraindications (asthma, immunocompromised)."
+
+physical_exam_focus:
+  - area: "Blood pressure measurement"
+    detail: "First routine BP measurement at age 3. Use the right arm, patient seated with feet supported, arm at heart level. Select correct cuff size: bladder width approximately 40% of mid-arm circumference, length 80-100% of arm circumference. Cuff too small will falsely elevate; too large will falsely lower. Obtain 2-3 readings and average."
+    teaching_point: "This is the visit where annual BP screening BEGINS. Correct technique is essential and is a high-yield teaching point. Normal BP at age 3 is less than 90th percentile for age, sex, and height. Elevated BP (90th-95th percentile) or hypertension (greater than or equal to 95th percentile) requires confirmation with repeat measurements on 2 additional visits. Use the AAP 2017 Clinical Practice Guideline tables. The most common mistake is using an incorrect cuff size."
+  - area: "Vision screening"
+    detail: "First routine vision screening at age 3. Instrument-based screening (photoscreener or autorefractor) is preferred for this age. If cooperative, Snellen or LEA symbol chart at 10 feet may be used. Refer if unable to screen by age 4."
+    teaching_point: "Amblyopia is the most common cause of vision loss in children and is treatable if caught early (before age 7 is ideal, but earlier is better). Risk factors include strabismus, significant refractive error, anisometropia, and family history. A 2-line difference between eyes on chart testing warrants referral."
+  - area: "Growth parameters and BMI"
+    detail: "Plot weight, height (standing height replaces recumbent length at age 2+), and head circumference on CDC growth charts (used for ages 2-20 years). Calculate and plot BMI-for-age percentile."
+    teaching_point: "BMI interpretation in children is age- and sex-specific using percentiles, NOT adult cutoffs. Overweight is BMI 85th-94th percentile; obesity is 95th percentile or above. This visit establishes the annual BMI tracking pattern. Identify trends early -- crossing percentiles upward is concerning even if not yet in the overweight range."
+  - area: "Speech and language assessment"
+    detail: "Assess speech clarity, sentence length, and conversational ability. The child should be approximately 75% intelligible to strangers by age 3. Listen for age-appropriate articulation -- some sound substitutions are still normal (r, l, s, th, ch, sh may not be mastered until 5-7 years)."
+    teaching_point: "If the child is less than 50% intelligible to strangers at age 3, refer for speech-language evaluation. Red flags include no 2-word phrases, loss of previously acquired speech, no interest in communicating, or significant frustration when trying to communicate. Early intervention is more effective than watchful waiting for true speech delay."
+  - area: "Dental assessment"
+    detail: "Inspect teeth for caries, enamel defects, malocclusion, and crowding. Ask about dental home, twice-daily brushing with fluoride toothpaste (pea-sized amount), and fluoride varnish application history."
+    teaching_point: "Dental caries is the most common chronic disease in childhood. All children should have a dental home by age 1. Fluoride varnish can be applied in the primary care setting every 3-6 months for high-risk children. Inquire about juice in sippy cups, nighttime bottles (should be discontinued), and sugary snacks."
+  - area: "Gait and lower extremity alignment"
+    detail: "Observe gait pattern -- should be smooth and symmetric by age 3. Assess for in-toeing (metatarsus adductus, internal tibial torsion, femoral anteversion), out-toeing, and flat feet. Check for leg length discrepancy."
+    teaching_point: "Physiologic flat feet and mild in-toeing are common and almost always self-correcting. Asymmetric findings, limp, pain, or progressive deformity warrant further evaluation. Special shoes, inserts, and braces do not change the natural history of physiologic variants."
+  - area: "Genitourinary"
+    detail: "Males: confirm bilateral descended testes, assess for hernia. Females: assess for labial adhesions, signs of vulvovaginitis. Ask about toilet training progress."
+    teaching_point: "Most children achieve daytime urinary continence by age 3-4 years. Nocturnal enuresis is not considered abnormal until age 5 (girls) or 6 (boys). Avoid pressuring toilet training -- readiness cues are more important than age targets. Stool withholding and encopresis may emerge during toilet training."
+
+common_mistakes:
+  - "Using an incorrectly sized blood pressure cuff (most common source of inaccurate BP readings in pediatrics)"
+  - "Not measuring blood pressure at all, forgetting that annual screening begins at age 3"
+  - "Skipping vision screening because the child is not cooperative -- should attempt and document, refer if unable by age 4"
+  - "Using adult BMI cutoffs instead of age- and sex-specific CDC percentile charts"
+  - "Dismissing speech that is less than 75% intelligible as normal variation without recommending evaluation"
+  - "Not asking about screen time or accepting parental underestimates without exploring further"
+  - "Failing to address behavioral concerns (aggression, tantrums, anxiety) because they are common at this age"
+  - "Not counseling on helmet use for tricycle riding (parents often wait until a bicycle)"
+  - "Overlooking dental caries risk -- not asking about dental home or applying fluoride varnish"
+  - "Forgetting that influenza vaccine requires 2 doses in the first season it is given"
+  - "Using WHO growth charts instead of CDC growth charts for children over 24 months"
+  - "Not addressing toilet training readiness or creating anxiety around toilet training timelines"
+
+possible_findings:
+  - finding: "Speech delay"
+    description: "Speech less than 50-75% intelligible to strangers, limited vocabulary, short sentences, or difficulty with conversational exchanges. May have difficulty being understood by unfamiliar adults."
+    probability: 0.10
+    framework_link: "speech_delay.yaml"
+    age_relevance: "Age 3 is a critical screening point for speech and language. By this age, most children should be understood by strangers the majority of the time. Early intervention significantly improves outcomes."
+  - finding: "Vision abnormality (amblyopia risk factors)"
+    description: "Failed instrument-based screening, strabismus on cover-uncover test, significant refractive error, or anisometropia detected on photoscreening. Child may squint, tilt head, or hold objects close."
+    probability: 0.05
+    framework_link: "vision_screening.yaml"
+    age_relevance: "First formal vision screening at age 3. Amblyopia affects 2-3% of children and is most treatable when detected early (before age 7). This visit is the earliest routine opportunity for detection."
+  - finding: "Behavioral concern (aggression, anxiety, or oppositional behavior)"
+    description: "Persistent aggressive behavior (hitting, biting, kicking beyond typical toddler level), excessive anxiety (separation anxiety beyond developmental norm, new fears, avoidance), or oppositional defiance (constant refusal, frequent prolonged tantrums beyond 15-20 minutes)."
+    probability: 0.12
+    framework_link: "anxiety.yaml"
+    age_relevance: "Behavioral concerns are increasingly identifiable at age 3 as children enter social settings (preschool, playgroups). Distinguishing normal boundary-testing from pathologic behavior requires careful history and longitudinal assessment."
+  - finding: "Overweight or obesity"
+    description: "BMI at or above the 85th percentile for age and sex (overweight) or at or above the 95th percentile (obesity). May have acanthosis nigricans, striae, or early adiposity rebound."
+    probability: 0.15
+    framework_link: "obesity.yaml"
+    age_relevance: "This is the first visit where BMI is routinely tracked annually. Early adiposity rebound (before age 5-6) is a risk factor for later obesity. Establishing healthy habits now is more effective than intervention later."
+  - finding: "Elevated blood pressure"
+    description: "BP reading at or above the 90th percentile for age, sex, and height on initial measurement. Must be confirmed with repeat measurements on 2 additional visits before diagnosis. May be spurious due to incorrect cuff size, anxiety, or recent activity."
+    probability: 0.04
+    framework_link: "hypertension.yaml"
+    age_relevance: "This is the first routine BP measurement. An elevated reading at this visit is often due to technique (wrong cuff size, child anxious or crying). True sustained hypertension in a 3-year-old is uncommon and warrants evaluation for secondary causes (renal, renovascular, coarctation)."
+  - finding: "Dental caries"
+    description: "Visible white spot lesions, brown or black discoloration, or cavitation on primary teeth. Most commonly affects upper incisors and primary molars. May note bottle-pattern caries (early childhood caries)."
+    probability: 0.15
+    framework_link: "dental_caries.yaml"
+    age_relevance: "Dental caries prevalence rises sharply in the preschool years. By age 3, about 25% of children have at least one cavity. Ask about dental home, fluoride exposure, and dietary risk factors."
+  - finding: "Autism spectrum disorder features"
+    description: "Limited eye contact, lack of shared enjoyment or pointing, repetitive behaviors, restricted interests, difficulty with peer interaction, regression or plateau in language or social skills."
+    probability: 0.03
+    framework_link: "autism.yaml"
+    age_relevance: "While formal ASD screening occurs at 18 and 24 months, some children are not identified until preschool age when social demands increase. Subtle features may become more apparent at age 3 when cooperative play is expected."
+  - finding: "Flat feet (pes planus)"
+    description: "Loss of the medial longitudinal arch when standing. Flexible (arch visible when on tiptoe or non-weight-bearing) vs rigid (arch absent in all positions). Usually bilateral."
+    probability: 0.15
+    framework_link: "lower_extremity_alignment.yaml"
+    age_relevance: "Physiologic flat feet are nearly universal in toddlers and very common at age 3. The arch continues to develop until age 6-8. Flexible flat feet that are painless require no treatment. Rigid flat feet or those with pain warrant further evaluation."
+
+parent_styles:
+  - "helicopter parent concerned about every developmental milestone and comparing to peers"
+  - "parent struggling with behavioral challenges (tantrums, aggression, defiance) and seeking discipline strategies"
+  - "vaccine-hesitant parent declining influenza vaccine"
+  - "parent worried about screen time but finding it difficult to limit"
+  - "overwhelmed working parent concerned about preschool readiness"
+  - "parent with family history of obesity asking about weight management"
+  - "parent noting speech differences compared to older sibling at same age"
+  - "parent anxious about toilet training delays or regression"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Clinical Practice Guideline for Screening and Management of High Blood Pressure in Children and Adolescents, 2017"
+  - "AAP Policy Statement: Visual System Assessment in Infants, Children, and Young Adults by Pediatricians, 2022"
+  - "USPSTF Recommendation: Vision Screening in Children Aged 3 to 5 Years"
+  - "AAP Policy Statement: Media and Young Minds (Council on Communications and Media), 2016"
+  - "CDC Growth Charts for the United States (ages 2-20 years)"
+  - "AAP Policy Statement: Maintaining and Improving the Oral Health of Young Children, 2014"
+  - "AAP Bright Futures Nutrition, 3rd Edition"

@@ -1,0 +1,235 @@
+# 4 Year Well-Child Visit - Teaching Framework
+topic: "4 Year Well-Child Visit (Pre-Kindergarten)"
+visit_type: "well_child"
+visit_age_months: 48
+category: "well_child"
+
+teaching_goals:
+  - "Administer school-entry immunization doses (DTaP #5, IPV #4, MMR #2, Varicella #2) and counsel families on the significance of this large vaccine visit"
+  - "Perform the first reliable formal vision screening using Snellen letters or LEA symbols and identify amblyopia risk"
+  - "Perform the first reliable formal hearing screening using pure-tone audiometry"
+  - "Assess developmental milestones using the CDC 2022 checklist (75th percentile standard) with focus on school readiness skills"
+  - "Calculate and plot BMI for the first time (BMI screening begins at age 2) and counsel on healthy weight"
+  - "Screen blood pressure using age-, sex-, and height-appropriate normative tables"
+  - "Deliver anticipatory guidance on school readiness, safety (helmet, water, pedestrian), physical activity, nutrition, and screen time limits"
+  - "Identify emerging behavioral concerns including ADHD features, speech articulation issues, and social-emotional readiness for school"
+
+expected_milestones:
+  gross_motor:
+    - "Hops on one foot"
+    - "Catches a large ball most of the time"
+    - "Runs and kicks a ball"
+    - "Climbs playground structures with confidence"
+  fine_motor:
+    - "Draws a person with at least 3 body parts (head, body, limbs)"
+    - "Holds crayon or pencil between fingers and thumb (not fist grip)"
+    - "Uses scissors to cut along a line"
+    - "Begins to copy some capital letters"
+    - "Unbuttons some buttons"
+  language:
+    - "Says sentences with 4 or more words"
+    - "Says some words from a song, story, or nursery rhyme"
+    - "Tells you at least one color of an item"
+    - "Names some letters and numbers"
+    - "Speaks clearly enough for strangers to understand most of the time"
+  social_emotional:
+    - "Enjoys pretend play and makes up elaborate stories (playing house, superheroes)"
+    - "Would rather play with other children than alone"
+    - "Comforts others who are hurt or sad"
+    - "Avoids danger (does not jump from tall heights)"
+    - "Likes to be a helper"
+    - "Adjusts behavior based on where they are (library vs playground)"
+  cognitive:
+    - "Names some colors of items"
+    - "Tells what comes next in a well-known story"
+    - "Draws a person with at least 3 body parts"
+    - "Names some letters when pointed to"
+    - "Counts to 10"
+    - "Understands concepts of 'same' and 'different'"
+
+screening_tools:
+  - tool: "Snellen chart or LEA symbols (visual acuity)"
+    when: "routine"
+  - tool: "Pure-tone audiometry (hearing screening)"
+    when: "routine"
+  - tool: "Blood pressure measurement"
+    when: "routine"
+  - tool: "BMI calculation and plotting"
+    when: "routine"
+  - tool: "Dental assessment (caries risk)"
+    when: "routine"
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "if concern"
+  - tool: "PSC-17 (Pediatric Symptom Checklist)"
+    when: "if concern"
+  - tool: "Vanderbilt ADHD Rating Scales"
+    when: "if concern"
+
+anticipatory_guidance:
+  safety:
+    - "Bicycle helmet every ride -- properly fitted (two finger-widths above eyebrows, snug chin strap, no side-to-side movement)"
+    - "Swim safety: never swim without adult supervision, begin swim lessons (AAP supports lessons for children 1 year and older), discuss pool fencing and layers of protection"
+    - "Pedestrian safety: hold an adult's hand near traffic, look both ways, no independent street crossing until age 10"
+    - "Car seat: forward-facing car seat with harness until child outgrows weight or height limits (typically 40-65 lbs depending on seat); keep in back seat"
+    - "Firearm safety: if guns in the home, store locked and unloaded with ammunition stored separately; ask about guns in homes the child visits"
+    - "Sun protection: sunscreen SPF 30+, protective clothing, limit midday sun exposure"
+    - "Choking hazards still relevant: grapes cut lengthwise, hot dogs cut into small pieces, avoid hard candy, popcorn, whole nuts"
+  nutrition:
+    - "Serve 3 meals and 2 planned snacks per day; child decides how much to eat (division of responsibility)"
+    - "Encourage variety: fruits, vegetables, whole grains, lean protein, dairy"
+    - "Limit juice to 4 oz or less per day (prefer whole fruits); water and milk as primary beverages"
+    - "Milk: 16-20 oz per day of low-fat or fat-free milk (transition from whole milk at age 2)"
+    - "Avoid sugar-sweetened beverages and excessive processed snacks"
+    - "Family meals together when possible -- promotes healthy eating habits and social skills"
+    - "No force-feeding or using food as reward/punishment"
+  development:
+    - "Read together daily -- ask open-ended questions about the story to build literacy skills"
+    - "Encourage pretend play, drawing, and creative activities to develop imagination and fine motor skills"
+    - "Practice school readiness: following 2-3 step directions, taking turns, sharing, sitting for a short activity"
+    - "Support separation skills -- brief separations from caregivers (preschool, playdates) build independence"
+    - "Name letters, colors, shapes, and numbers in everyday activities"
+    - "Encourage social play with peers to develop cooperation and conflict resolution skills"
+  behavior:
+    - "Use consistent, predictable discipline: clear rules with logical consequences"
+    - "Offer limited choices to foster autonomy (pick between two outfits, two snacks)"
+    - "Praise specific positive behaviors rather than general praise ('You did a great job sharing your toys' vs 'Good job')"
+    - "Expect and validate emotions while teaching coping strategies (deep breaths, counting, using words)"
+    - "Normal for this age: testing limits, occasional tantrums (decreasing from age 3), magical thinking, imaginary friends"
+    - "Discuss what to expect at kindergarten -- new routines, new friends, being away from home"
+  sleep:
+    - "Total sleep: 10-13 hours per 24-hour period (including nap if still napping)"
+    - "Many children drop naps between ages 3-5 -- adjust bedtime earlier if nap is dropped"
+    - "Consistent bedtime routine: bath, brush teeth, story, lights out at the same time each night"
+    - "No screens in the bedroom and no screen time for at least 1 hour before bed"
+    - "Night fears and nightmares are common at this age -- provide reassurance, nightlight if needed, avoid scary media"
+  physical_activity:
+    - "At least 60 minutes of physical activity daily -- a mix of structured and unstructured active play"
+    - "Encourage running, jumping, climbing, throwing, catching, and balancing activities"
+    - "Limit total screen time to 1 hour or less per day of high-quality programming; co-view when possible"
+    - "Outdoor play daily when weather permits"
+
+immunizations_due:
+  - vaccine: "Diphtheria, Tetanus, Pertussis (DTaP)"
+    cvx: 20
+    dose_number: "5th dose (school entry)"
+    notes: "Intramuscular, deltoid. Final dose in DTaP primary series. Minimum interval 6 months from 4th dose and child must be at least 4 years old. Counsel on expected local reactions -- injection site swelling at the 4th and 5th doses may be more pronounced than earlier doses."
+  - vaccine: "Inactivated Poliovirus (IPV)"
+    cvx: 10
+    dose_number: "4th dose (school entry)"
+    notes: "Intramuscular. Final dose in the primary IPV series. Must be given on or after 4th birthday AND at least 6 months after 3rd dose. If the 3rd dose was given on or after age 4, a 4th dose is not needed."
+  - vaccine: "Measles, Mumps, Rubella (MMR)"
+    cvx: 3
+    dose_number: "2nd dose (school entry)"
+    notes: "Subcutaneous. Minimum interval 4 weeks from 1st dose (typically given at 12-15 months). May be given as MMRV (Proquad) if parent prefers fewer injections -- discuss slightly increased febrile seizure risk with MMRV vs separate MMR + Varicella in children 12-47 months (risk is lower at age 4-6)."
+  - vaccine: "Varicella (VAR)"
+    cvx: 21
+    dose_number: "2nd dose (school entry)"
+    notes: "Subcutaneous. Minimum interval 3 months from 1st dose. May be given as MMRV combination. Counsel that breakthrough varicella (mild case despite vaccination) is possible but rare and typically very mild."
+  - vaccine: "Influenza (IIV or LAIV)"
+    cvx: 150
+    dose_number: "Annual dose"
+    notes: "Give annually during influenza season. Children who have received fewer than 2 lifetime doses of influenza vaccine need 2 doses at least 4 weeks apart. LAIV (FluMist, intranasal) is an option for healthy children aged 2 years and older -- may be preferred at this age to reduce needle burden at this visit."
+
+physical_exam_focus:
+  - area: "Visual acuity screening"
+    detail: "Use Snellen chart (if child knows letters) or LEA symbols (preferred for pre-literate children). Screen each eye separately with the opposite eye fully occluded. Test at 10 feet (LEA) or 20 feet (Snellen). Refer if visual acuity is worse than 20/40 in either eye or if there is a 2-line difference between eyes."
+    teaching_point: "This is the first visit where reliable formal vision screening is possible. Amblyopia is treatable if caught before age 7 but outcomes are much better with earlier detection. Unilateral amblyopia may not be noticed by the family because the child compensates with the good eye. Always test each eye individually."
+  - area: "Hearing screening"
+    detail: "Pure-tone audiometry at 1000, 2000, and 4000 Hz at 20 dB in each ear. Child must be able to follow instructions for conditioned play audiometry. Refer if child fails to respond at any frequency in either ear."
+    teaching_point: "This is the first reliable formal hearing screening. Mild hearing loss may be missed by parents and presents as inattention, behavioral issues, or speech articulation problems. Chronic otitis media with effusion is a common cause of conductive hearing loss at this age."
+  - area: "Blood pressure"
+    detail: "Use age-appropriate cuff (bladder width at least 40% of arm circumference). Compare to normative tables for age, sex, and height percentile. Elevated BP: >= 90th percentile. Stage 1 HTN: >= 95th percentile."
+    teaching_point: "Blood pressure screening begins at age 3 per AAP. Use the correct cuff size -- a too-small cuff will falsely elevate readings. If elevated, repeat at 2 additional visits before diagnosing hypertension. Obesity is the most common cause of elevated BP in children."
+  - area: "BMI and growth parameters"
+    detail: "Measure height (standing, without shoes) and weight. Calculate BMI and plot on CDC growth charts (used for ages 2-20). Underweight: < 5th percentile. Healthy weight: 5th-84th percentile. Overweight: 85th-94th percentile. Obese: >= 95th percentile."
+    teaching_point: "BMI screening is a routine part of well-child visits from age 2 onward. Use CDC growth charts (not WHO) for children 2 years and older. A BMI at the 85th percentile or above warrants counseling on nutrition and activity. Avoid shaming language -- use motivational interviewing techniques with the family."
+  - area: "Dental assessment"
+    detail: "Inspect teeth for caries (white spots, brown/black discoloration, cavities), enamel defects, and malocclusion. Confirm the child has a dental home and is seeing a dentist every 6 months. Ask about fluoride toothpaste use and brushing habits."
+    teaching_point: "Dental caries is the most common chronic disease of childhood. By age 4, children should have all 20 primary teeth. Early childhood caries (formerly 'bottle caries') can affect any teeth at this age. Fluoride varnish application can be done in the medical office if the child lacks dental access."
+  - area: "Musculoskeletal and gait"
+    detail: "Observe gait for symmetry and fluidity. Assess for in-toeing, out-toeing, genu varum, or genu valgum. Check for flat feet (flexible vs rigid). Observe child hopping, jumping, and climbing."
+    teaching_point: "Mild genu valgum (knock knees) is normal at age 3-4 and should improve by age 7. Persistent in-toeing at age 4 is usually benign (femoral anteversion) but warrants monitoring. Inability to hop on one foot or frequent falling may indicate motor delay or an underlying neuromuscular condition."
+  - area: "Speech and language assessment"
+    detail: "Engage child in conversation. Assess sentence length (expect 4+ words), intelligibility (should be 75-100% understandable to strangers), and articulation. Listen for specific sound errors -- by age 4, most consonant sounds should be mastered except r, l, s, z, sh, ch, th, j."
+    teaching_point: "Speech should be largely intelligible to unfamiliar adults by age 4. Persistent articulation errors beyond expected ages, stuttering lasting more than 6 months, or limited sentence complexity warrant speech-language pathology referral. Ask about the child's language environment -- bilingual children may code-switch but should have similar total vocabulary."
+  - area: "Skin"
+    detail: "Full skin exam. Look for atopic dermatitis, molluscum contagiosum, warts, tinea, insect bites, and signs of trauma. Note any bruising patterns."
+    teaching_point: "Bruising on the shins and knees is normal for an active 4-year-old. Bruising on the torso, ears, neck, or in patterns (linear, loop-shaped) raises concern for non-accidental trauma. This is an age where children begin reporting what happens at home -- listen carefully."
+
+common_mistakes:
+  - "Failing to screen vision and hearing formally -- relying on parental report alone is insufficient at this age"
+  - "Not testing each eye individually during vision screening (missing unilateral amblyopia)"
+  - "Using a too-small blood pressure cuff and falsely diagnosing hypertension"
+  - "Forgetting that this is a large vaccine visit (4 injections) and not preparing the family in advance"
+  - "Not offering LAIV (FluMist) as an option to reduce needle count at this already needle-heavy visit"
+  - "Skipping BMI calculation or not plotting on CDC growth charts"
+  - "Overlooking speech articulation issues and attributing unclear speech to 'he'll grow out of it'"
+  - "Missing early ADHD features (inattention, impulsivity) that present as 'behavioral problems' or 'not listening'"
+  - "Not assessing school readiness and assuming all 4-year-olds are ready for kindergarten"
+  - "Failing to perform a dental assessment or ask about fluoride and dental home"
+  - "Not counseling on pedestrian and water safety -- leading causes of injury death in preschoolers"
+  - "Using WHO growth charts instead of CDC growth charts for children 2 years and older"
+
+possible_findings:
+  - finding: "Amblyopia (detected on vision screening)"
+    description: "Visual acuity worse than 20/40 in one or both eyes, or 2-line difference between eyes on formal screening. Child may not have complaints because the better eye compensates."
+    probability: 0.05
+    framework_link: "amblyopia.yaml"
+    age_relevance: "4-year visit is often the first opportunity for reliable formal vision screening. Amblyopia treatment (patching, atropine penalization) is most effective before age 7. This is a critical screening window."
+  - finding: "Hearing loss (detected on audiometry)"
+    description: "Failure to respond at 20 dB at one or more frequencies in either ear on pure-tone audiometry. May present as inattention, speech delay, or behavioral issues rather than obvious hearing difficulty."
+    probability: 0.04
+    framework_link: "hearing_loss.yaml"
+    age_relevance: "First reliable formal hearing screening. Chronic otitis media with effusion is a common cause at this age. Sensorineural hearing loss may be congenital (progressive) or acquired (ototoxic medications, infections)."
+  - finding: "ADHD features"
+    description: "Excessive inattention, hyperactivity, or impulsivity beyond what is developmentally expected. Teacher/preschool reports of difficulty following directions, sitting still, waiting turns. Symptoms must be present in 2+ settings."
+    probability: 0.08
+    framework_link: "adhd.yaml"
+    age_relevance: "AAP guidelines support evaluation for ADHD starting at age 4. Many children are identified when entering structured preschool or pre-K settings where demands for sustained attention increase. Vanderbilt scales can be used for formal screening."
+  - finding: "Speech articulation disorder"
+    description: "Persistent errors in specific speech sounds beyond the expected age of mastery. Speech is less than 75% intelligible to unfamiliar listeners. May include substitutions, omissions, or distortions of consonant sounds."
+    probability: 0.06
+    framework_link: "speech_delay.yaml"
+    age_relevance: "By age 4, most consonants should be mastered. Persistent unintelligibility or specific sound errors (beyond r, l, s, z, sh, ch, th, j) warrant speech-language pathology referral. Early intervention before kindergarten improves outcomes."
+  - finding: "Dental caries"
+    description: "White spot lesions (early demineralization), brown or black discoloration, or visible cavities on primary teeth. May be asymptomatic or child may report pain with eating."
+    probability: 0.15
+    framework_link: "dental_caries.yaml"
+    age_relevance: "Dental caries affects approximately 23% of children aged 2-5 years. Risk factors include frequent sugary snacks/drinks, lack of fluoride exposure, no dental home, and nighttime bottle use. Refer to pediatric dentist for treatment."
+  - finding: "Obesity (BMI >= 95th percentile)"
+    description: "BMI at or above the 95th percentile for age and sex on CDC growth charts. May be accompanied by acanthosis nigricans, elevated blood pressure, or orthopedic complaints."
+    probability: 0.12
+    framework_link: "obesity.yaml"
+    age_relevance: "Obesity prevalence in 2-5 year-olds is approximately 12-14%. Early identification and intervention (before adiposity rebound at age 5-6) is critical. Focus on family-based lifestyle changes rather than restrictive dieting."
+  - finding: "Strabismus"
+    description: "Misalignment of the eyes detected on cover-uncover test or corneal light reflex. May be constant or intermittent. Child may squint, tilt head, or close one eye in bright light."
+    probability: 0.03
+    framework_link: "strabismus.yaml"
+    age_relevance: "Intermittent exotropia is common in preschoolers and may worsen with fatigue or illness. Constant strabismus at any age requires ophthalmology referral. Untreated strabismus is a leading cause of amblyopia."
+  - finding: "Functional constipation"
+    description: "Infrequent or painful bowel movements, stool withholding behaviors (stiff posture, crossing legs, hiding), large-caliber stools, or fecal soiling (encopresis). Often worsens around toilet training or school transitions."
+    probability: 0.08
+    framework_link: "constipation.yaml"
+    age_relevance: "Common at age 4, often associated with recent toilet training, dietary changes, or anxiety about using unfamiliar toilets (relevant as child prepares for school). Stool withholding can create a vicious cycle of painful defecation."
+
+parent_styles:
+  - "anxious parent worried about school readiness -- comparing child to peers"
+  - "vaccine-hesitant parent overwhelmed by the number of shots at this visit"
+  - "parent who dismisses speech or developmental concerns -- 'he's just a late bloomer'"
+  - "parent focused on academic milestones (reading, writing) at the expense of play and social development"
+  - "parent with concerns about ADHD based on preschool teacher feedback"
+  - "parent struggling with behavioral challenges -- tantrums, defiance, aggression"
+  - "divorced or separated parents with conflicting approaches to discipline and health decisions"
+  - "parent with limited health literacy who needs concrete, actionable guidance"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Policy Statement: Visual System Assessment in Infants, Children, and Young Adults by Pediatricians (2022)"
+  - "AAP Clinical Practice Guideline: Evaluation, Diagnosis, and Treatment of ADHD in Children and Adolescents (2019, updated 2023)"
+  - "AAP Clinical Practice Guideline: Screening and Management of High Blood Pressure in Children and Adolescents (2017)"
+  - "CDC Growth Charts for the United States (ages 2-20 years)"
+  - "AAP Policy Statement: The Use of Fluoride (2020)"
+  - "USPSTF: Vision Screening in Children Aged 3 to 5 Years (Grade B Recommendation)"
+  - "AAP Policy Statement: Media and Young Minds (2016, reaffirmed 2020)"

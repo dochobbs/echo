@@ -34,6 +34,8 @@ class CaseSession(Base):
     patient_data = Column(JSON, nullable=False)
     status = Column(String(50), default="active")
     phase = Column(String(50), default="intro")
+    visit_type = Column(String(50), default="sick")  # "sick" or "well_child"
+    visit_age_months = Column(Integer, nullable=True)
     started_at = Column(DateTime, default=datetime.utcnow)
     completed_at = Column(DateTime, nullable=True)
     duration_seconds = Column(Integer, nullable=True)
@@ -43,6 +45,12 @@ class CaseSession(Base):
     plan_proposed = Column(ARRAY(Text), default=list)
     hints_given = Column(Integer, default=0)
     teaching_moments = Column(ARRAY(Text), default=list)
+    # Well-child tracking
+    growth_reviewed = Column(String(10), default="false")
+    milestones_assessed = Column(ARRAY(Text), default=list)
+    guidance_topics_covered = Column(ARRAY(Text), default=list)
+    immunizations_addressed = Column(String(10), default="false")
+    screening_tools_used = Column(ARRAY(Text), default=list)
     learning_materials = Column(JSON, nullable=True)
     debrief_summary = Column(Text, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)

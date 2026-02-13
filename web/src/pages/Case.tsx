@@ -132,7 +132,7 @@ export function Case() {
               )}
             </div>
             
-            <CaseTimeline currentPhase={caseState.phase} compact />
+            <CaseTimeline currentPhase={caseState.phase} compact visitType={caseState.visit_type} />
           </div>
         </motion.div>
       )}

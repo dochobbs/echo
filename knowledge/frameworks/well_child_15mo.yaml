@@ -1,0 +1,231 @@
+# 15 Month Well-Child Visit - Teaching Framework
+topic: "15 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 15
+category: "well_child"
+
+teaching_goals:
+  - "Assess gross motor development with emphasis on independent walking -- the CDC 2022 milestone update moved walking alone to 15 months (from 12 months)"
+  - "Administer DTaP 4th dose and catch-up any immunizations not given at the 12-month visit (MMR, Varicella, HepA, PCV20, Hib)"
+  - "Perform gait assessment and distinguish normal wide-based toddler gait from pathologic gait patterns"
+  - "Evaluate dental health, recommend fluoride toothpaste (smear), and confirm dental home established"
+  - "Counsel on limit-setting and discipline approaches as tantrums emerge"
+  - "Assess growth trajectory and nutrition during the transition to table foods and picky eating"
+
+expected_milestones:
+  gross_motor:
+    - "Takes a few steps on their own (walking alone) -- THIS IS THE 15-MONTH MILESTONE per CDC 2022 update, not 12 months"
+    - "May stoop to pick up a toy and return to standing"
+    - "Wide-based gait is normal at this age (toddler waddle)"
+  fine_motor:
+    - "Stacks 2 blocks"
+    - "Feeds self with fingers"
+    - "Holds and drinks from a cup (with spilling)"
+    - "Scribbles with a crayon if offered"
+  language:
+    - "Tries to say 1-2 words besides 'mama' and 'dada' (e.g., 'ba' for ball, 'da' for dog)"
+    - "Points to ask for something or to get help"
+    - "Looks at a familiar object when you name it"
+    - "Follows simple directions given with gestures (e.g., 'give me the ball' while holding out hand)"
+  social_emotional:
+    - "Copies other children in play (clapping, making sounds)"
+    - "Shows you an object they like"
+    - "Claps when excited"
+    - "Hugs a stuffed doll or toy"
+    - "Shows affection to familiar people (hugging, cuddling)"
+  cognitive:
+    - "Tries to use things the right way (phone to ear, cup for drinking)"
+    - "Stacks at least 2 small objects"
+    - "Looks at objects or pictures when named"
+    - "Explores by banging, throwing, and dropping objects"
+    - "Points to indicate wants or interest"
+
+screening_tools:
+  - tool: "Developmental surveillance (clinical observation)"
+    when: "routine -- no formal standardized screening mandated at 15 months, but continuous surveillance per AAP"
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "if developmental concern (formal ASQ screening occurs at 9, 18, and 30 months per AAP)"
+  - tool: "Oral health risk assessment"
+    when: "routine - continue fluoride varnish application every 3-6 months"
+  - tool: "Food insecurity screening (Hunger Vital Sign)"
+    when: "routine - 2-question screen per AAP"
+
+anticipatory_guidance:
+  safety:
+    - "Childproofing review: walking toddler can now reach higher surfaces -- reassess cabinet locks, drawer latches, stair gates, furniture anchoring"
+    - "Choking prevention: Cut round foods (grapes, hot dogs) lengthwise into small pieces; avoid nuts, popcorn, hard candy, raw carrots"
+    - "Poison prevention: Secure all medications, cleaning products, and toxic plants out of reach; post Poison Control number (1-800-222-1222)"
+    - "Burn prevention: Keep hot drinks, irons, curling irons out of reach; use back burners and turn pot handles inward"
+    - "Water safety: Never leave child unattended near any water source, including bathtubs, toilets, and buckets"
+    - "Car seat: Rear-facing car seat required until at least age 2 (or until child exceeds rear-facing height/weight limits)"
+    - "Outdoor safety: Walking toddler near streets and driveways requires constant supervision"
+    - "Firearm safety: If guns in home, store locked and unloaded, ammunition stored separately"
+  nutrition:
+    - "Whole milk continues: 16-24 oz/day maximum (excessive milk intake causes iron deficiency and displaces solid foods)"
+    - "Picky eating is developmentally normal at this age -- continue offering variety without pressure"
+    - "3 meals plus 2-3 snacks daily; let child self-feed and explore textures"
+    - "Self-feeding with fingers is expected; introduce utensils (spoon) even though messy"
+    - "Offer iron-rich foods: meats, beans, fortified cereals, leafy greens"
+    - "Juice limited to 4 oz/day of 100% fruit juice (whole fruit preferred)"
+    - "Avoid using food as reward or punishment -- promotes unhealthy eating patterns"
+    - "Offer water in an open cup or straw cup throughout the day"
+  development:
+    - "Read to child daily -- let them point at pictures, turn pages, and name objects"
+    - "Encourage walking by providing safe, open space and supportive shoes (flexible soles, flat)"
+    - "Name objects and actions constantly throughout the day to build vocabulary"
+    - "Offer stacking toys, shape sorters, and push toys for fine and gross motor development"
+    - "Encourage pointing to communicate wants -- respond verbally to reinforce language"
+    - "No screen time under 18 months (except video chatting per AAP)"
+  behavior:
+    - "Tantrums are beginning at this age -- they are a normal part of development, not misbehavior"
+    - "Discipline approach: calm redirection, distraction, and removing the child from unsafe situations"
+    - "Avoid spanking and harsh verbal discipline -- AAP recommends positive discipline strategies"
+    - "Set consistent, simple limits ('hot -- do not touch') and follow through each time"
+    - "Praise desired behaviors with specific language (positive reinforcement)"
+    - "Separation anxiety continues and is normal -- brief, confident goodbyes are better than sneaking away"
+    - "Biting and hitting are exploratory at this age -- redirect firmly and calmly without anger"
+  sleep:
+    - "Total sleep: 12-16 hours per 24 hours (including 1-2 naps)"
+    - "Many toddlers transition from 2 naps to 1 nap between 12-18 months"
+    - "Maintain consistent bedtime routine (bath, book, bed)"
+    - "If still using a bottle at bedtime, prioritize weaning -- bottle in bed causes dental caries"
+    - "Night waking may increase with developmental leaps and separation anxiety"
+    - "Safe sleep: firm mattress, no heavy blankets or pillows"
+  dental:
+    - "Begin brushing teeth with a smear (rice-grain size) of fluoride toothpaste twice daily"
+    - "Parent should brush for the child -- toddler lacks coordination for effective brushing"
+    - "Confirm dental home established (first visit by age 1 or within 6 months of first tooth)"
+    - "Sippy cups with juice or milk throughout the day increase caries risk -- limit to meals"
+    - "Continue fluoride varnish application every 3-6 months at well visits"
+
+immunizations_due:
+  - vaccine: "Diphtheria, Tetanus, Pertussis (DTaP)"
+    cvx: 20
+    dose_number: "4th dose"
+    notes: "Intramuscular, anterolateral thigh or deltoid. 4th dose at 15-18 months. Minimum interval 6 months from 3rd dose. Counsel on expected local reactions (injection site redness/swelling may be more prominent with 4th dose)."
+  - vaccine: "MMR (Measles, Mumps, Rubella)"
+    cvx: 3
+    dose_number: "1st dose (catch-up if not given at 12 months)"
+    notes: "If not administered at 12-month visit, give now. Live vaccine. Mild fever and rash 7-12 days after vaccination is common and expected."
+  - vaccine: "Varicella (Chickenpox)"
+    cvx: 21
+    dose_number: "1st dose (catch-up if not given at 12 months)"
+    notes: "If not administered at 12-month visit, give now. Live vaccine. Can give as MMRV (CVX 94) if not previously given; discuss febrile seizure risk with MMRV at 12-15 months vs separate injections."
+  - vaccine: "Hepatitis A"
+    cvx: 83
+    dose_number: "1st dose (catch-up if not given at 12 months)"
+    notes: "2-dose series starting at 12-23 months. 2nd dose at least 6 months after 1st dose."
+  - vaccine: "PCV20 (Pneumococcal conjugate, 20-valent)"
+    cvx: 216
+    dose_number: "4th dose / booster (catch-up if not given at 12 months)"
+    notes: "Booster dose due at 12-15 months. PCV20 replaced PCV15/PCV13 per 2025 ACIP. If started with PCV13/PCV15, can complete series with PCV20."
+  - vaccine: "Hib (Haemophilus influenzae type b)"
+    cvx: 48
+    dose_number: "Booster (catch-up if not given at 12 months)"
+    notes: "Booster dose due at 12-15 months. PRP-OMP (PedvaxHIB): booster is 3rd dose. PRP-T (ActHIB/Hiberix): booster is 4th dose."
+  - vaccine: "Influenza (Inactivated or Recombinant)"
+    cvx: 150
+    dose_number: "Annual dose"
+    notes: "If in influenza season. First-time recipients age 6mo-8yr need 2 doses separated by 4+ weeks. LAIV (FluMist, CVX 151) not approved until age 2."
+
+physical_exam_focus:
+  - area: "Gait assessment"
+    detail: "Observe independent walking. Assess for wide-based gait (normal at this age), asymmetry, toe-walking, and in-toeing or out-toeing. Watch child walk across the room."
+    teaching_point: "Walking alone is the KEY milestone at 15 months per the CDC 2022 update. A wide-based, toddling gait is normal. Persistent toe-walking beyond initial learning, asymmetric gait, or refusal to bear weight warrants further evaluation. If not walking at 15 months, assess for gross motor delay and consider referral."
+  - area: "Growth parameters"
+    detail: "Plot weight, length, head circumference on WHO growth charts (used for ages 0-24 months). Calculate weight-for-length percentile."
+    teaching_point: "Continue using WHO charts (not CDC) until age 2. Growth velocity may slow as toddler becomes more active and picky eating begins -- this is normal. Crossing 2+ major percentile lines in either direction warrants evaluation. Head circumference crossing upward may suggest hydrocephalus."
+  - area: "Anterior fontanelle"
+    detail: "Palpate for closure status. Anterior fontanelle typically closes between 12-18 months (range 9-24 months)."
+    teaching_point: "Many 15-month-olds will have a closing or closed fontanelle. Delayed closure (still widely open at 18+ months) may suggest hypothyroidism, rickets, hydrocephalus, or skeletal dysplasia. Premature closure (before 9 months) raises concern for craniosynostosis."
+  - area: "Dentition"
+    detail: "Count erupted teeth (average 8-12 at 15 months, including first molars beginning). Inspect for caries, enamel defects, eruption pattern. Apply fluoride varnish."
+    teaching_point: "First molars typically erupt 12-16 months and may cause significant fussiness. Upper lateral incisors often erupt 9-13 months. Teething does NOT cause high fever (>101F) -- evaluate for other sources if febrile. Early childhood caries (white spots on upper incisors) require prompt dental referral."
+  - area: "Eyes / Strabismus screening"
+    detail: "Corneal light reflex (Hirschberg test) and cover/uncover test to assess eye alignment. Bilateral red reflex."
+    teaching_point: "Persistent strabismus at any age beyond 4-6 months is abnormal and requires ophthalmology referral. Amblyopia risk increases if strabismus is untreated. Check red reflex at every well visit."
+  - area: "Heart auscultation"
+    detail: "Listen in all four positions with child calm if possible. Innocent murmurs (Still's murmur) are common in toddlers."
+    teaching_point: "Still's murmur: vibratory/musical, grade 1-2/6, heard best supine at LLSB, changes with position. New murmurs at this age are usually innocent but always assess for pathologic features: diastolic, harsh, grade 3+, symptoms (poor feeding, tachypnea, diaphoresis), or abnormal S2."
+  - area: "Musculoskeletal"
+    detail: "Assess lower extremity alignment. Physiologic genu varum (bowlegs) is normal until age 2. Check for tibial torsion or metatarsus adductus."
+    teaching_point: "Bowlegs are physiologic at this age and should not be treated. Asymmetric bowing, bowing that worsens after 18 months, or associated short stature may suggest Blount disease or rickets -- obtain radiographs. Flat feet are universal at this age due to fat pad; arch develops by 3-5 years."
+  - area: "Skin"
+    detail: "Full skin survey. Look for bruising patterns (normal on shins/forehead in walkers), eczema, birthmarks, and signs of neglect or abuse."
+    teaching_point: "Bruising on shins, knees, and forehead is expected in a newly walking toddler ('cruising bruises'). Bruises in unusual locations (ears, neck, trunk, buttocks, genitalia) or in a non-ambulatory child are concerning for abuse. TEN-4 rule: bruises on Torso, Ears, Neck in children <4 years warrant abuse evaluation."
+
+common_mistakes:
+  - "Expecting walking at 12 months -- walking alone is a 15-MONTH milestone per CDC 2022 update; this is the most common knowledge gap for learners"
+  - "Referring for motor delay because child was not walking at 12 months without reassessing at 15 months"
+  - "Forgetting to administer DTaP 4th dose at 15-18 months"
+  - "Not catching up on MMR, Varicella, HepA, PCV20, or Hib if they were missed at the 12-month visit"
+  - "Failing to assess and document gait quality when child is walking (just noting 'walks' without observing)"
+  - "Not counseling on fluoride toothpaste -- parents often wait too long; smear of fluoride paste should start at first tooth"
+  - "Dismissing tantrums as behavioral problems rather than normal developmental expression at this age"
+  - "Not addressing picky eating proactively -- reassuring parents that food refusal is developmentally normal prevents unnecessary dietary interventions"
+  - "Continuing to use WHO growth charts incorrectly or switching to CDC charts before 24 months"
+  - "Skipping shoe guidance -- overly structured shoes hinder foot development; flexible-soled shoes are preferred for new walkers"
+  - "Missing early childhood caries on exam (check upper incisors for white spot lesions)"
+  - "Not screening for parental concerns about behavior (tantrums, sleep, biting) since parents may not volunteer these"
+
+possible_findings:
+  - finding: "Not walking independently"
+    description: "Child is not taking independent steps at 15 months. May still be cruising or bottom-shuffling. Requires evaluation for gross motor delay, hypotonia, or neuromuscular conditions."
+    probability: 0.05
+    framework_link: "N/A"
+    age_relevance: "15 months is the CDC 2022 milestone for walking alone. Failure to walk by 15 months warrants close follow-up and possible referral for developmental evaluation or physical therapy. Consider: prematurity (use corrected age), bottom-shuffling (familial variant), and hypotonia."
+  - finding: "Language delay"
+    description: "No words besides mama/dada, no pointing to communicate, does not follow simple directions with gestures. Limited babbling variety."
+    probability: 0.10
+    framework_link: "speech_delay"
+    age_relevance: "At 15 months, expect 1-2 words beyond mama/dada and pointing to communicate. Absence of these milestones or loss of previously acquired words warrants audiology referral and close developmental follow-up. Consider autism screening at 18 months if concerns persist."
+  - finding: "Behavioral concerns (tantrums)"
+    description: "Parent reports frequent, intense tantrums, head-banging, or breath-holding spells. May include biting, hitting, or throwing objects."
+    probability: 0.12
+    framework_link: "breath_holding_spells"
+    age_relevance: "Tantrums typically begin 12-18 months and peak at 2-3 years. At 15 months, the key is reassurance and teaching positive discipline strategies. Breath-holding spells may begin at this age and are usually benign but distressing to parents."
+  - finding: "Early childhood caries"
+    description: "White spot lesions or cavitation on primary teeth, especially upper incisors. Associated with bottle use at bedtime, sippy cup throughout day, and lack of fluoride."
+    probability: 0.06
+    framework_link: "N/A"
+    age_relevance: "With 8-12 teeth erupted at 15 months, caries risk increases. Prolonged bottle use (especially at night) is a major risk factor. Fluoride varnish and toothpaste counseling are critical interventions."
+  - finding: "Iron deficiency anemia"
+    description: "Pallor, fatigue, pica, or follow-up on abnormal 12-month hemoglobin. Often related to excessive milk intake (>24 oz/day) displacing iron-rich foods."
+    probability: 0.06
+    framework_link: "iron_deficiency_anemia"
+    age_relevance: "Peak prevalence 9-24 months. If 12-month screen was abnormal, 15-month visit is critical for follow-up. Excessive whole milk intake is the most common dietary cause in toddlers."
+  - finding: "Gait abnormality"
+    description: "Persistent toe-walking, asymmetric gait, excessive in-toeing, or wide-based gait beyond what is expected for a new walker."
+    probability: 0.04
+    framework_link: "limping_child"
+    age_relevance: "Wide-based, toddling gait is normal at 15 months. Persistent toe-walking beyond 2-3 months of independent walking, asymmetric gait, or refusal to bear weight needs evaluation (consider cerebral palsy, muscular dystrophy, DDH, or toddler's fracture)."
+  - finding: "Failure to thrive"
+    description: "Weight <3rd percentile or crossing 2+ major percentile lines downward. Picky eating onset at this age may contribute."
+    probability: 0.04
+    framework_link: "failure_to_thrive"
+    age_relevance: "Growth velocity naturally slows in the second year. Distinguish normal growth deceleration from pathologic FTT. The onset of picky eating and increased activity at 15 months can unmask underlying nutritional deficiencies."
+  - finding: "Autism spectrum features (early signs)"
+    description: "Reduced eye contact, lack of pointing/gesturing, no response to name, repetitive behaviors, or regression of social skills."
+    probability: 0.03
+    framework_link: "autism"
+    age_relevance: "Formal M-CHAT-R/F screening occurs at 18 months per AAP, but early signs may be apparent at 15 months. Lack of pointing, poor joint attention, and absence of pretend play should prompt early referral. Do not delay to 18 months if concerns are present."
+
+parent_styles:
+  - "Anxious parent concerned that child is not walking 'on time' -- often comparing to earlier milestones or other children"
+  - "Experienced parent who assumes the visit is unnecessary because 'everything is fine'"
+  - "Parent struggling with tantrums and seeking discipline guidance"
+  - "Parent with picky eater frustration -- concerned child is not eating enough"
+  - "Vaccine-hesitant parent wanting to delay DTaP 4th dose or catch-up vaccines"
+  - "Parent still using a bottle at bedtime and resistant to weaning"
+  - "Parent concerned about shoe choices and foot development in a new walker"
+  - "Non-English speaking parent requiring interpreter services"
+
+sources:
+  - "AAP Bright Futures Guidelines, 4th Edition - 15 Month Visit"
+  - "CDC 2022 Developmental Milestones (75th percentile standard) -- walking alone moved to 15 months"
+  - "CDC/ACIP Recommended Immunization Schedule for Children and Adolescents, 2025"
+  - "AAP Policy Statement: Maintaining and Improving the Oral Health of Young Children (2014)"
+  - "AAP Policy Statement: Media and Young Minds (2016) - no screen time under 18 months"
+  - "AAP Policy Statement on Effective Discipline (2018) - positive discipline, no spanking"
+  - "WHO Child Growth Standards: Length/height-for-age, weight-for-age, weight-for-length (used for children under 24 months)"
+  - "AAP Clinical Report: Diagnosis and Prevention of Iron Deficiency and Iron-Deficiency Anemia (2010, reaffirmed)"

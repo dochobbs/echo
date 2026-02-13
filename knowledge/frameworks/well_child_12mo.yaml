@@ -1,0 +1,229 @@
+# 12 Month Well-Child Visit - Teaching Framework
+topic: "12 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 12
+category: "well_child"
+
+teaching_goals:
+  - "Perform age-appropriate developmental surveillance using CDC 2022 milestones"
+  - "Identify immunizations due at 12 months per 2025 ACIP schedule"
+  - "Screen for iron deficiency anemia and lead exposure risk"
+  - "Counsel on bottle weaning and transition to whole milk"
+  - "Assess home safety for a newly mobile child (cruising/early walking)"
+  - "Evaluate fontanelle status, growth parameters, and dental health"
+
+expected_milestones:
+  gross_motor:
+    - "Pulls to stand using furniture or support"
+    - "Cruises (walks holding onto furniture)"
+    - "May stand alone briefly (walking alone is NOT expected until 15 months)"
+  fine_motor:
+    - "Pincer grasp (picks up small objects between thumb and forefinger)"
+    - "Puts objects into a container"
+    - "Releases objects voluntarily (lets go on purpose)"
+  language:
+    - "Says 'mama' and 'dada' with meaning (directed at correct parent)"
+    - "Uses 1-2 other words besides mama/dada"
+    - "Responds to simple verbal requests (e.g., 'come here')"
+    - "Understands 'no' (may not always obey)"
+  social_emotional:
+    - "Waves bye-bye"
+    - "Plays pat-a-cake or other simple interactive games"
+    - "Shows separation anxiety (cries when parent leaves)"
+    - "Shows stranger wariness"
+    - "Hands you a book to read"
+  cognitive:
+    - "Explores objects by shaking, banging, throwing"
+    - "Finds hidden objects easily (object permanence established)"
+    - "Looks at correct picture when named"
+    - "Imitates gestures (clapping, waving)"
+    - "Begins to use objects correctly (drinks from cup, brushes hair)"
+
+screening_tools:
+  - tool: "Hemoglobin/Hematocrit"
+    when: "routine - universal screen at 12 months per AAP"
+  - tool: "Lead screening (venous lead level)"
+    when: "risk-based; required for all Medicaid-enrolled children at 12 months"
+  - tool: "Oral health risk assessment"
+    when: "routine - assess dental caries risk, apply fluoride varnish"
+  - tool: "ASQ-3 (Ages and Stages Questionnaire)"
+    when: "if developmental concern"
+  - tool: "Food insecurity screening (Hunger Vital Sign)"
+    when: "routine - 2-question screen per AAP"
+  - tool: "Maternal depression screening (PHQ-2/EPDS)"
+    when: "if not completed at earlier visit or new concerns"
+
+anticipatory_guidance:
+  safety:
+    - "Childproofing for mobile child: cabinet locks, outlet covers, stair gates, furniture anchoring"
+    - "Poison prevention: Lock up medications, cleaning products, plants; post Poison Control number (1-800-222-1222)"
+    - "Water safety: Never leave child unattended near water, including bathtub"
+    - "Car seat: Rear-facing car seat required until at least age 2 (or until max height/weight for seat)"
+    - "Choking hazards: Avoid grapes, hot dogs, popcorn, nuts, hard candy, raw carrots; cut foods into small pieces"
+    - "Burn prevention: Lower water heater to 120F, keep hot liquids out of reach, use back burners"
+    - "Firearm safety: If guns in home, store locked and unloaded, ammunition stored separately"
+  nutrition:
+    - "Transition from formula to whole milk at 12 months (limit to 16-24 oz/day to prevent iron deficiency)"
+    - "Wean from bottle to sippy cup or open cup by 12-15 months to protect dental health"
+    - "Offer iron-rich foods: fortified cereal, meats, beans, leafy greens"
+    - "3 meals plus 2-3 snacks per day; self-feeding encouraged"
+    - "Avoid juice before 12 months; if given after 12 months, limit to 4 oz/day of 100% fruit juice"
+    - "Avoid honey before 12 months (botulism risk) - now safe to introduce"
+    - "Avoid cow's milk as primary drink before 12 months; OK to start now"
+    - "Continue offering variety of textures and flavors to prevent picky eating"
+  development:
+    - "Read to child daily - point to and name pictures"
+    - "Encourage speech by responding to babbling and words with real words"
+    - "Provide safe space to cruise and practice standing/walking"
+    - "Offer stacking toys, shape sorters, and containers for fine motor development"
+    - "Limit screen time: No screens recommended under 18 months (except video chat)"
+    - "Name objects and actions throughout the day to build vocabulary"
+  behavior:
+    - "Separation anxiety is normal and peaks 12-18 months - do not sneak away; brief goodbyes are better"
+    - "Set consistent limits with calm redirection rather than punishment"
+    - "Temper tantrums may begin - stay calm, ensure safety, avoid giving in to the behavior"
+    - "Praise desired behaviors specifically (positive reinforcement)"
+    - "Begin teaching 'no' for dangerous situations only - overuse diminishes effectiveness"
+    - "Biting and hitting are exploratory at this age - redirect firmly without anger"
+  sleep:
+    - "Total sleep: 12-16 hours per 24 hours (including 1-2 naps)"
+    - "Encourage consistent bedtime routine (bath, book, bed)"
+    - "Night waking is common - encourage self-soothing"
+    - "Transition from 2 naps to 1 nap typically occurs 12-18 months"
+    - "Avoid bottle in bed (dental caries risk, 'bottle rot')"
+    - "Safe sleep environment: firm mattress, no loose bedding"
+
+immunizations_due:
+  - vaccine: "MMR (Measles, Mumps, Rubella)"
+    cvx: 3
+    dose_number: "1st dose"
+    notes: "Live vaccine; give at 12-15 months. Can give with varicella or as MMRV (CVX 94). Mild fever/rash 7-12 days after is common."
+  - vaccine: "Varicella (Chickenpox)"
+    cvx: 21
+    dose_number: "1st dose"
+    notes: "Live vaccine; give at 12-15 months. Can combine with MMR as MMRV (CVX 94). Increased febrile seizure risk with MMRV at 12-15mo vs separate MMR+Var."
+  - vaccine: "Hepatitis A"
+    cvx: 83
+    dose_number: "1st dose"
+    notes: "2-dose series; 1st dose at 12-23 months, 2nd dose 6+ months after 1st."
+  - vaccine: "PCV20 (Pneumococcal conjugate, 20-valent)"
+    cvx: 216
+    dose_number: "4th dose (booster)"
+    notes: "Booster dose at 12-15 months. PCV20 replaced PCV15 on 2025 ACIP schedule. If started with PCV13/PCV15, can complete series with PCV20."
+  - vaccine: "Hib (Haemophilus influenzae type b)"
+    cvx: 48
+    dose_number: "Booster (3rd or 4th dose depending on product)"
+    notes: "Booster at 12-15 months. PRP-OMP (PedvaxHIB): booster is 3rd dose. PRP-T (ActHIB/Hiberix): booster is 4th dose."
+  - vaccine: "Hepatitis B"
+    cvx: 8
+    dose_number: "3rd dose (if not yet completed)"
+    notes: "3rd dose given 6-18 months. Many infants complete series by 6 months; verify records. Minimum 8 weeks after 2nd dose and 16 weeks after 1st dose."
+  - vaccine: "Influenza (Inactivated or Recombinant)"
+    cvx: 150
+    dose_number: "Annual dose"
+    notes: "If in influenza season (October-March). First-time recipients age 6mo-8yr need 2 doses separated by 4+ weeks. LAIV (FluMist, CVX 151) not approved until age 2."
+
+physical_exam_focus:
+  - area: "Growth parameters"
+    detail: "Plot weight, length, head circumference on WHO growth charts (used for <24 months). Calculate weight-for-length."
+    teaching_point: "WHO charts (not CDC) are standard for under 2 years. WHO charts reflect growth of breastfed infants as the norm. A crossing of 2 major percentile lines warrants evaluation."
+  - area: "Anterior fontanelle"
+    detail: "Palpate for size, fullness, and pulsation. Average closure 12-18 months but wide normal range (9-24 months)."
+    teaching_point: "Bulging fontanelle suggests increased ICP (meningitis, hydrocephalus). Sunken fontanelle suggests dehydration. Early closure (craniosynostosis) needs head circumference tracking and possible imaging."
+  - area: "Dental evaluation"
+    detail: "Count erupted teeth (average 6-8 at 12 months). Inspect for caries, enamel defects. Apply fluoride varnish."
+    teaching_point: "Refer to dentist by age 1 or within 6 months of first tooth eruption (whichever comes first). Fluoride varnish can be applied by pediatrician every 3-6 months starting at first tooth."
+  - area: "Eyes / Red reflex / Strabismus screening"
+    detail: "Check red reflex bilaterally (Bruckner test). Assess eye alignment with corneal light reflex (Hirschberg test) and cover/uncover test."
+    teaching_point: "Intermittent strabismus beyond 4-6 months is abnormal. Constant strabismus at any age needs ophthalmology referral. Absent or white red reflex (leukocoria) is urgent - rule out retinoblastoma."
+  - area: "Heart auscultation"
+    detail: "Listen in all 4 positions. Innocent murmurs are common at this age (Still's murmur)."
+    teaching_point: "Still's murmur: vibratory/musical, grade 1-2/6, heard best supine at LLSB, changes with position. Pathologic clues: diastolic, harsh, grade 3+, thrills, abnormal S2, symptoms."
+  - area: "Genitourinary (males)"
+    detail: "Confirm bilateral descended testes. Assess for inguinal hernia."
+    teaching_point: "Cryptorchidism: If not descended by 6 months (corrected age), refer to urology by 12 months. Orchiopexy should be completed by 12-18 months to preserve fertility and reduce cancer risk."
+  - area: "Musculoskeletal / Gait"
+    detail: "Observe cruising or supported walking. Check hip symmetry, leg length, foot alignment. Physiologic genu varum (bowlegs) is normal at this age."
+    teaching_point: "Walking alone is not expected until 15 months (CDC 2022). Do not diagnose motor delay based on not walking at 12 months. Bowlegs are physiologic until 2 years; reassure parents. Assess for DDH: asymmetric thigh folds, limited abduction."
+  - area: "Hearing / Informal assessment"
+    detail: "Observe response to name, sounds, and simple commands. Verify newborn hearing screen was passed."
+    teaching_point: "If newborn screen was failed or missed, audiology referral is urgent. At 12 months, child should turn to voice, respond to name, understand simple words. Speech delay may be first sign of hearing loss."
+  - area: "Skin"
+    detail: "Full skin survey. Look for birthmarks, hemangiomas, eczema, bruising patterns."
+    teaching_point: "Bruising in a non-mobile infant is concerning for abuse. At 12 months (cruising/walking), shin bruises are expected. Bruises in unusual locations (ears, neck, trunk, buttocks) warrant further evaluation."
+
+common_mistakes:
+  - "Diagnosing motor delay because child is not walking alone at 12 months (walking alone milestone is 15 months per CDC 2022)"
+  - "Forgetting to screen for anemia at 12-month visit (universal Hgb/Hct recommended)"
+  - "Not asking about lead exposure risk factors (Medicaid requires screening at 12 months)"
+  - "Failing to counsel on bottle weaning - continued bottle use leads to dental caries and iron deficiency"
+  - "Giving MMRV combination to first-dose 12-15 month olds without discussing increased febrile seizure risk vs separate MMR + Varicella"
+  - "Not applying or recommending fluoride varnish at the 12-month visit"
+  - "Forgetting to counsel on whole milk transition or allowing >24 oz/day (causes iron deficiency)"
+  - "Failing to plot growth on WHO charts (WHO is standard for under 24 months, not CDC charts)"
+  - "Missing undescended testis on exam - last chance before surgical window closes"
+  - "Not addressing parental screen time habits and recommending zero screens under 18 months"
+  - "Skipping oral health assessment and dental home referral"
+  - "Overlooking maternal depression screening at well visits"
+
+possible_findings:
+  - finding: "Iron deficiency anemia"
+    description: "Hgb <11 g/dL at 12-month screen. Common with excessive milk intake, limited dietary iron, or prematurity."
+    probability: 0.08
+    framework_link: "iron_deficiency_anemia"
+    age_relevance: "Peak prevalence 9-24 months during dietary transition from iron-fortified formula/breast milk to cow's milk"
+  - finding: "Developmental speech/language delay"
+    description: "No meaningful words ('mama'/'dada' directed), no babbling with consonant sounds, no gestures (waving, pointing)."
+    probability: 0.10
+    framework_link: "speech_delay"
+    age_relevance: "12 months is a critical checkpoint - absence of directed words and gestures warrants audiology referral and close follow-up"
+  - finding: "Strabismus"
+    description: "Misaligned eyes detected on Hirschberg or cover/uncover test. Intermittent exotropia may still be noted."
+    probability: 0.04
+    framework_link: "N/A"
+    age_relevance: "Intermittent strabismus should have resolved by 4-6 months. Persistent misalignment at 12 months requires ophthalmology referral."
+  - finding: "Cryptorchidism (undescended testicle)"
+    description: "Unilateral or bilateral undescended testis found on exam. Distinguish from retractile testis (descends with warmth/relaxation)."
+    probability: 0.01
+    framework_link: "cryptorchidism"
+    age_relevance: "If not descended by 6 months corrected age, orchiopexy recommended by 12-18 months. The 12-month visit is the critical decision point for referral."
+  - finding: "Elevated lead level"
+    description: "Venous lead level >= 3.5 mcg/dL (2021 CDC reference value). Risk factors: old housing, Medicaid, immigrant families, certain hobbies/occupations of parents."
+    probability: 0.03
+    framework_link: "N/A"
+    age_relevance: "12 months: onset of hand-to-mouth exploration increases lead ingestion risk. Universal screening for Medicaid; risk-based otherwise."
+  - finding: "Dental caries (early childhood caries)"
+    description: "White spot lesions or cavitation on primary teeth, especially upper incisors. Associated with bottle propping, nighttime bottle use, and lack of fluoride."
+    probability: 0.05
+    framework_link: "N/A"
+    age_relevance: "12 months is the recommended age for first dental visit. Fluoride varnish application by pediatrician reduces caries risk."
+  - finding: "Failure to thrive"
+    description: "Weight <3rd percentile or crossing 2+ major percentile lines downward. Evaluate feeding, caloric intake, psychosocial factors."
+    probability: 0.05
+    framework_link: "failure_to_thrive"
+    age_relevance: "Dietary transition at 12 months (formula to milk, introducing table foods) is a common inflection point for FTT"
+  - finding: "Developmental dysplasia of the hip (late presentation)"
+    description: "Asymmetric thigh folds, limb length discrepancy, limited hip abduction, or abnormal gait pattern when cruising."
+    probability: 0.01
+    framework_link: "ddh"
+    age_relevance: "Late DDH may present as gait abnormality when child begins cruising. Ultrasound under 6 months; X-ray preferred after 4-6 months ossification."
+
+parent_styles:
+  - "First-time parent anxious about milestones (especially not walking yet)"
+  - "Experienced parent skipping visit because child 'seems fine'"
+  - "Parent resistant to vaccines (wants to delay or refuse MMR)"
+  - "Parent unaware of dietary transition needs (still using bottle with formula)"
+  - "Parent overwhelmed by childproofing demands of a newly mobile toddler"
+  - "Parent concerned about child's attachment/separation anxiety at daycare"
+  - "Parent with postpartum depression symptoms at 12-month visit"
+  - "Non-English speaking parent requiring interpreter services"
+
+sources:
+  - "AAP Bright Futures Guidelines, 4th Edition - 12 Month Visit"
+  - "CDC 2022 Developmental Milestones (75th percentile standard)"
+  - "CDC/ACIP Recommended Immunization Schedule for Children and Adolescents, 2025"
+  - "AAP Clinical Report: Diagnosis and Prevention of Iron Deficiency and Iron-Deficiency Anemia (2010, reaffirmed)"
+  - "AAP Policy Statement: Maintaining and Improving the Oral Health of Young Children (2014)"
+  - "CDC Advisory Committee on Childhood Lead Poisoning Prevention: Low Level Lead Exposure Harms Children (reference value 3.5 mcg/dL, 2021)"
+  - "AAP Policy Statement: Media and Young Minds (2016) - screen time under 18 months"
+  - "WHO Child Growth Standards: Length/height-for-age, weight-for-age, weight-for-length (used for children under 24 months)"

@@ -7,15 +7,29 @@ from pydantic import BaseModel, Field
 import uuid
 
 
+class VisitType(str, Enum):
+  """Type of clinical encounter."""
+  SICK = "sick"
+  WELL_CHILD = "well_child"
+
+
 class CasePhase(str, Enum):
   """Phases of a case encounter."""
+  # Shared
   INTRO = "intro"
-  HISTORY = "history"
   EXAM = "exam"
-  ASSESSMENT = "assessment"
-  PLAN = "plan"
   DEBRIEF = "debrief"
   COMPLETE = "complete"
+  # Sick visit
+  HISTORY = "history"
+  ASSESSMENT = "assessment"
+  PLAN = "plan"
+  # Well-child
+  GROWTH_REVIEW = "growth_review"
+  DEVELOPMENTAL_SCREENING = "developmental_screening"
+  ANTICIPATORY_GUIDANCE = "anticipatory_guidance"
+  IMMUNIZATIONS = "immunizations"
+  PARENT_QUESTIONS = "parent_questions"
 
 
 class CaseImage(BaseModel):
@@ -45,7 +59,7 @@ class GeneratedPatient(BaseModel):
   age_unit: str = "months"  # days, weeks, months, years
   sex: str  # male, female
   weight_kg: float
-  chief_complaint: str
+  chief_complaint: Optional[str] = None
   parent_name: str
   parent_style: str  # anxious, experienced, hesitant, rushed
   condition_key: str
@@ -56,6 +70,13 @@ class GeneratedPatient(BaseModel):
   vitals: dict[str, float]
   exam_findings: list[dict]
 
+  # Well-child specific
+  visit_age_months: Optional[int] = None
+  growth_data: Optional[dict] = None
+  milestones: Optional[dict] = None
+  immunization_history: Optional[list] = None
+  incidental_finding: Optional[dict] = None
+
 
 class CaseState(BaseModel):
   """State of an active case."""
@@ -63,12 +84,21 @@ class CaseState(BaseModel):
   phase: CasePhase = CasePhase.INTRO
   patient: GeneratedPatient
   learner_level: LearnerLevel = LearnerLevel.STUDENT
+  visit_type: VisitType = VisitType.SICK
 
-  # What the learner has discovered
+  # Sick visit tracking
   history_gathered: list[str] = Field(default_factory=list)
   exam_performed: list[str] = Field(default_factory=list)
   differential: list[str] = Field(default_factory=list)
   plan_proposed: list[str] = Field(default_factory=list)
+
+  # Well-child tracking
+  growth_reviewed: bool = False
+  milestones_assessed: list[str] = Field(default_factory=list)
+  guidance_topics_covered: list[str] = Field(default_factory=list)
+  immunizations_addressed: bool = False
+  screening_tools_used: list[str] = Field(default_factory=list)
+  parent_concerns_addressed: list[str] = Field(default_factory=list)
 
   # Teaching tracking
   hints_given: int = 0
@@ -118,6 +148,8 @@ class StartCaseRequest(BaseModel):
   learner_level: LearnerLevel = LearnerLevel.STUDENT
   condition_key: Optional[str] = None  # Optional: request specific condition
   time_constraint: Optional[int] = None  # Minutes available
+  visit_type: VisitType = VisitType.SICK
+  visit_age_months: Optional[int] = None  # Required for well-child cases
 
   # Variant controls - None means Claude picks randomly
   severity: Optional[CaseSeverity] = None
@@ -132,6 +164,22 @@ class CaseMessageRequest(BaseModel):
   case_state: CaseState
 
 
+class DomainScore(BaseModel):
+  """Score for a single well-child domain."""
+  score: int = Field(ge=0, le=10)
+  feedback: str
+
+
+class WellChildScores(BaseModel):
+  """Domain scores for well-child case debrief."""
+  growth_interpretation: DomainScore
+  milestone_assessment: DomainScore
+  exam_thoroughness: DomainScore
+  anticipatory_guidance: DomainScore
+  immunization_knowledge: DomainScore
+  communication_skill: DomainScore
+
+
 class DebriefData(BaseModel):
   """Structured debrief data for case completion."""
   summary: str
@@ -140,6 +188,7 @@ class DebriefData(BaseModel):
   missed_items: list[str] = Field(default_factory=list)
   teaching_points: list[str] = Field(default_factory=list)
   follow_up_resources: list[str] = Field(default_factory=list)
+  well_child_scores: Optional[WellChildScores] = None
 
 
 class CaseResponse(BaseModel):

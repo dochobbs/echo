@@ -39,6 +39,18 @@ def get_system_prompt() -> str:
   return load_prompt("system")
 
 
+@lru_cache
+def get_well_child_prompt() -> str:
+  """Load and cache the well-child teaching prompt."""
+  return load_prompt("well_child")
+
+
+@lru_cache
+def get_well_child_debrief_prompt() -> str:
+  """Load and cache the well-child debrief prompt."""
+  return load_prompt("well_child_debrief")
+
+
 def clean_json_response(text: str) -> str:
   """Strip markdown code blocks from LLM response."""
   text = re.sub(r'^```(?:json)?\s*\n?', '', text.strip())
@@ -348,6 +360,10 @@ Respond with valid JSON only. No markdown, no code blocks:
 
   def _build_case_system_prompt(self, case_state: "CaseState", condition_info: dict) -> str:
     """Build a system prompt for case-based teaching with fluid voice."""
+    from ..cases.models import VisitType
+    if case_state.visit_type == VisitType.WELL_CHILD:
+      return self._build_well_child_system_prompt(case_state, condition_info)
+
     patient = case_state.patient
     parent_styles = condition_info.get("parent_styles", [])
 
@@ -439,11 +455,123 @@ When stepping BACK into parent roleplay:
 
 Keep transitions BRIEF - one short bracketed phrase, then your content. Don't over-explain the switch."""
 
+  def _build_well_child_system_prompt(self, case_state: "CaseState", framework: dict) -> str:
+    """Build system prompt for well-child case teaching."""
+    patient = case_state.patient
+    well_child_prompt = get_well_child_prompt()
+
+    milestones_text = ""
+    if framework.get("expected_milestones"):
+      for domain, items in framework["expected_milestones"].items():
+        if isinstance(items, list):
+          milestones_text += f"\n**{domain}**: {', '.join(items)}"
+
+    immunizations_text = ""
+    for vax in framework.get("immunizations_due", []):
+      immunizations_text += f"\n- {vax.get('vaccine', '')} (CVX {vax.get('cvx', '')})"
+
+    guidance_text = ""
+    for category, items in framework.get("anticipatory_guidance", {}).items():
+      if isinstance(items, list):
+        guidance_text += f"\n**{category}**: {', '.join(items[:3])}"
+
+    exam_focus_text = ""
+    for item in framework.get("physical_exam_focus", []):
+      if isinstance(item, dict):
+        exam_focus_text += f"\n- {item.get('area', '')}: {item.get('detail', '')}"
+      elif isinstance(item, str):
+        exam_focus_text += f"\n- {item}"
+
+    incidental_text = ""
+    if patient.incidental_finding:
+      incidental_text = f"""
+### INCIDENTAL FINDING (reveal during exam or parent_questions phase)
+- **Finding**: {patient.incidental_finding.get('description', '')}
+- **Age relevance**: {patient.incidental_finding.get('age_relevance', '')}
+- Present this naturally — don't announce it. Let the learner discover it."""
+
+    screening_tools = framework.get("screening_tools", [])
+    screening_text = ""
+    for s in screening_tools:
+      if isinstance(s, dict):
+        screening_text += f"\n- {s.get('tool', '')} ({s.get('when', '')})"
+      elif isinstance(s, str):
+        screening_text += f"\n- {s}"
+
+    return f"""{self.system_prompt}
+
+{well_child_prompt}
+
+## CURRENT WELL-CHILD CASE
+
+### Patient
+- **Name**: {patient.name}
+- **Visit Age**: {patient.visit_age_months} months
+- **Sex**: {patient.sex}
+- **Weight**: {patient.weight_kg} kg
+- **Parent**: {patient.parent_name} (style: {patient.parent_style})
+
+### Growth Data
+{json.dumps(patient.growth_data, indent=2) if patient.growth_data else "Standard growth"}
+
+### Expected Milestones for This Age
+{milestones_text}
+
+### Actual Milestone Status
+{json.dumps(patient.milestones, indent=2) if patient.milestones else "Typical for age"}
+
+### Immunizations Due at This Visit
+{immunizations_text}
+
+### Anticipatory Guidance Topics
+{guidance_text}
+
+### Physical Exam Focus Areas
+{exam_focus_text}
+
+### Teaching Goals
+{chr(10).join(['- ' + g for g in framework.get('teaching_goals', [])])}
+
+### Common Learner Mistakes
+{chr(10).join(['- ' + m for m in framework.get('common_mistakes', [])])}
+
+### Screening Tools for This Age
+{screening_text}
+
+{incidental_text}
+
+## Current Phase: {case_state.phase.value}
+
+## WELL-CHILD RULES
+1. **No chief complaint** - This child is here for a routine check
+2. **Play the parent** - Respond to questions as the parent would
+3. **Don't volunteer information** - Let the learner drive the visit
+4. **Track what they cover** - Note which guidance topics, milestones, and vaccines they address
+5. **Incidental finding** - If present, reveal naturally during appropriate phase
+6. **Celebrate thoroughness** - Praise when they remember important screenings or guidance topics"""
+
   async def generate_case_opening(self, case_state: "CaseState", condition_info: dict) -> str:
     """Generate the opening message for a case."""
+    from ..cases.models import VisitType
     patient = case_state.patient
 
-    prompt = f"""You're starting a new case with a {case_state.learner_level.value} learner.
+    if case_state.visit_type == VisitType.WELL_CHILD:
+      prompt = f"""You're starting a well-child visit case with a {case_state.learner_level.value} learner.
+
+The patient is {patient.name}, a {patient.age} {patient.age_unit} old {patient.sex}
+here for their {condition_info.get('topic', 'well-child check')}.
+The parent ({patient.parent_name}) is here and seems {patient.parent_style}.
+
+Start the encounter:
+1. Briefly set the scene (routine well-child visit, you're the attending)
+2. Present as the parent bringing in the child for their check-up
+3. Mention any specific parent concerns if they have them, otherwise say things are going well
+4. End with something that invites them to take the lead on the visit
+
+Keep it natural. No chief complaint — this child is here for a routine visit.
+3-4 sentences max from the parent."""
+    else:
+      prompt = f"""You're starting a new case with a {case_state.learner_level.value} learner.
 
 The patient is {patient.name}, a {patient.age} {patient.age_unit} old {patient.sex}.
 The parent ({patient.parent_name}) is bringing them in with this chief complaint:
@@ -607,7 +735,10 @@ Remember: help, don't interrogate."""
 
   def _update_case_phase(self, message: str, case_state: "CaseState") -> "CaseState":
     """Update case phase based on learner's message."""
-    from ..cases.models import CasePhase
+    from ..cases.models import CasePhase, VisitType
+
+    if case_state.visit_type == VisitType.WELL_CHILD:
+      return self._update_well_child_phase(message, case_state)
 
     msg_lower = message.lower()
 
@@ -634,11 +765,46 @@ Remember: help, don't interrogate."""
 
     return case_state
 
+  def _update_well_child_phase(self, message: str, case_state: "CaseState") -> "CaseState":
+    """Update well-child case phase based on learner's message."""
+    from ..cases.models import CasePhase
+    msg_lower = message.lower()
+
+    if case_state.phase == CasePhase.INTRO:
+      if any(w in msg_lower for w in ["growth", "weight", "percentile", "chart", "gaining", "length", "head circumference"]):
+        case_state.phase = CasePhase.GROWTH_REVIEW
+      elif any(w in msg_lower for w in ["milestone", "development", "rolling", "sitting", "walking", "talking", "words"]):
+        case_state.phase = CasePhase.DEVELOPMENTAL_SCREENING
+
+    elif case_state.phase == CasePhase.GROWTH_REVIEW:
+      if any(w in msg_lower for w in ["milestone", "development", "rolling", "sitting", "walking", "talking", "babbl", "words", "screen"]):
+        case_state.phase = CasePhase.DEVELOPMENTAL_SCREENING
+        case_state.growth_reviewed = True
+
+    elif case_state.phase == CasePhase.DEVELOPMENTAL_SCREENING:
+      if any(w in msg_lower for w in ["examine", "look at", "check", "exam", "heart", "ears", "hips", "lungs", "belly", "reflex"]):
+        case_state.phase = CasePhase.EXAM
+
+    elif case_state.phase == CasePhase.EXAM:
+      if any(w in msg_lower for w in ["safety", "sleep", "feeding", "nutrition", "car seat", "tummy time", "screen time", "guidance", "counsel", "anticipatory"]):
+        case_state.phase = CasePhase.ANTICIPATORY_GUIDANCE
+
+    elif case_state.phase == CasePhase.ANTICIPATORY_GUIDANCE:
+      if any(w in msg_lower for w in ["vaccine", "immuniz", "shot", "dtap", "mmr", "pcv", "hep", "flu", "schedule"]):
+        case_state.phase = CasePhase.IMMUNIZATIONS
+
+    elif case_state.phase == CasePhase.IMMUNIZATIONS:
+      if any(w in msg_lower for w in ["question", "concern", "anything else", "wrap up", "done", "follow up"]):
+        case_state.phase = CasePhase.PARENT_QUESTIONS
+
+    return case_state
+
   def _get_phase_guidance(self, phase: "CasePhase") -> str:
     """Get phase-specific guidance for the tutor."""
     from ..cases.models import CasePhase
 
     guidance = {
+      # Sick visit phases
       CasePhase.INTRO: "The learner is just starting. Let them take the lead.",
       CasePhase.HISTORY: "They're gathering history. Answer their questions as the parent would. Don't volunteer information they haven't asked about.",
       CasePhase.EXAM: "They want to examine. Describe what they find based on the exam findings. Be specific about normal and abnormal findings.",
@@ -646,8 +812,65 @@ Remember: help, don't interrogate."""
       CasePhase.PLAN: "They're making a plan. Validate good choices, gently question problematic ones. Remember: shared decision-making with the parent matters.",
       CasePhase.DEBRIEF: "Time to debrief. Summarize what they did well and areas to improve.",
       CasePhase.COMPLETE: "The case is complete.",
+      # Well-child phases
+      CasePhase.GROWTH_REVIEW: "They're reviewing growth. See if they interpret trajectory, not just read numbers.",
+      CasePhase.DEVELOPMENTAL_SCREENING: "They're assessing development. See if they cover all domains and know screening tools.",
+      CasePhase.ANTICIPATORY_GUIDANCE: "They're counseling the parent. Don't prompt topics — see what they cover. Play the parent with realistic questions.",
+      CasePhase.IMMUNIZATIONS: "They're addressing vaccines. See if they know what's due. If parent is hesitant, stay in character.",
+      CasePhase.PARENT_QUESTIONS: "The parent has a question or concern. This may include an incidental finding. See how the learner handles it.",
     }
     return guidance.get(phase, "Continue the encounter naturally.")
+
+  async def generate_well_child_debrief(self, case_state: "CaseState", framework: dict) -> dict:
+    """Generate well-child debrief with domain scores."""
+    patient = case_state.patient
+    well_child_debrief_prompt = get_well_child_debrief_prompt()
+
+    prompt = f"""{well_child_debrief_prompt}
+
+## Case Summary
+- **Visit**: {framework.get('topic', 'Well-Child Visit')}
+- **Patient**: {patient.name}, {patient.age} {patient.age_unit}
+- **Learner Level**: {case_state.learner_level.value}
+
+## What the Learner Covered
+- **Growth reviewed**: {case_state.growth_reviewed}
+- **Milestones assessed**: {', '.join(case_state.milestones_assessed) if case_state.milestones_assessed else 'None documented'}
+- **Guidance topics**: {', '.join(case_state.guidance_topics_covered) if case_state.guidance_topics_covered else 'None documented'}
+- **Immunizations addressed**: {case_state.immunizations_addressed}
+- **Screening tools used**: {', '.join(case_state.screening_tools_used) if case_state.screening_tools_used else 'None'}
+- **Parent concerns addressed**: {', '.join(case_state.parent_concerns_addressed) if case_state.parent_concerns_addressed else 'None'}
+
+## Expected at This Visit
+- **Teaching goals**: {json.dumps(framework.get('teaching_goals', []))}
+- **Immunizations due**: {json.dumps(framework.get('immunizations_due', []))}
+- **Screening tools**: {json.dumps(framework.get('screening_tools', []))}
+- **Anticipatory guidance**: {json.dumps(framework.get('anticipatory_guidance', {}))}
+
+## Response Format
+Return valid JSON only:
+{{"summary": "2-3 sentences", "strengths": ["specific strengths"], "areas_for_improvement": ["specific areas"], "missed_items": ["what was missed"], "teaching_points": ["1-3 pearls"], "follow_up_resources": ["optional resources"], "well_child_scores": {{"growth_interpretation": {{"score": 0, "feedback": "specific feedback"}}, "milestone_assessment": {{"score": 0, "feedback": "..."}}, "exam_thoroughness": {{"score": 0, "feedback": "..."}}, "anticipatory_guidance": {{"score": 0, "feedback": "..."}}, "immunization_knowledge": {{"score": 0, "feedback": "..."}}, "communication_skill": {{"score": 0, "feedback": "..."}}}}}}"""
+
+    response = self.client.messages.create(
+      model=self.model,
+      max_tokens=1500,
+      system=self.system_prompt,
+      messages=[{"role": "user", "content": prompt}]
+    )
+
+    content = clean_json_response(response.content[0].text)
+    try:
+      return json.loads(content)
+    except json.JSONDecodeError:
+      return {
+        "summary": "Case complete.",
+        "strengths": [],
+        "areas_for_improvement": [],
+        "missed_items": [],
+        "teaching_points": [],
+        "follow_up_resources": [],
+        "well_child_scores": None,
+      }
 
   async def generate_debrief(self, case_state: "CaseState", condition_info: dict) -> dict:
     """Generate end-of-case debrief with structured data.
@@ -655,6 +878,10 @@ Remember: help, don't interrogate."""
     Returns a dict with: summary, strengths, areas_for_improvement,
     missed_items, teaching_points, follow_up_resources
     """
+    from ..cases.models import VisitType
+    if case_state.visit_type == VisitType.WELL_CHILD:
+      return await self.generate_well_child_debrief(case_state, condition_info)
+
     patient = case_state.patient
 
     debrief_prompt = f"""The case is complete. Time for a debrief.
