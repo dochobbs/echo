@@ -1,0 +1,214 @@
+# 4 Month Well-Child Visit - Teaching Framework
+topic: "4 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 4
+category: "well_child"
+
+teaching_goals:
+  - "Perform a comprehensive physical exam with emphasis on age-specific findings (strabismus assessment, head shape, traction response, hip stability)"
+  - "Assess developmental milestones using the CDC 2022 checklist (75th percentile standard)"
+  - "Administer and counsel on the second round of immunizations per 2025 ACIP schedule"
+  - "Screen for maternal depression using a validated tool (EPDS) -- continued screening through first year"
+  - "Deliver anticipatory guidance on approaching solids introduction, oral health awareness, reading to baby, continued tummy time, and sleep safety"
+  - "Recognize common incidental findings at this age (persistent strabismus, plagiocephaly, torticollis, infantile eczema) and determine appropriate workup vs reassurance"
+
+expected_milestones:
+  gross_motor:
+    - "Holds head steady without support when held upright (no head lag)"
+    - "Pushes up on elbows and forearms during tummy time (chest off surface)"
+    - "May begin to roll from tummy to back"
+  fine_motor:
+    - "Brings hands to mouth consistently"
+    - "Holds a toy when placed in hand (voluntary grasp emerging)"
+    - "Reaches for toys with both hands (may bat at dangling objects)"
+  language:
+    - "Makes cooing sounds -- 'oooo' and 'aahh' vowel combinations"
+    - "Laughs out loud"
+    - "Coos or vocalizes back when spoken to (turn-taking begins)"
+  social_emotional:
+    - "Laughs in response to playful interaction"
+    - "Looks at you, moves, or makes sounds to get your attention"
+    - "Smiles spontaneously, especially at people (social smile well established)"
+  cognitive:
+    - "Watches hands with interest (hand regard)"
+    - "Looks at own hands and brings them together at midline"
+    - "Shows interest in new toys and objects by looking, reaching, mouthing"
+    - "Begins to show anticipation (excited when seeing bottle or breast)"
+
+screening_tools:
+  - tool: "Edinburgh Postnatal Depression Scale (EPDS)"
+    when: "routine"
+  - tool: "Developmental surveillance (clinical observation)"
+    when: "routine"
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "if concern"
+
+anticipatory_guidance:
+  safety:
+    - "Back to sleep for every sleep -- supine position on a firm, flat surface with no loose bedding, pillows, bumpers, or soft toys"
+    - "Rear-facing car seat in the back seat; ensure proper harness fit (chest clip at armpit level)"
+    - "Never leave infant unattended on elevated surfaces -- rolling is imminent or already occurring"
+    - "Water temperature less than 120 F (48 C) to prevent scald burns"
+    - "Keep small objects, plastic bags, coins, and button batteries out of reach -- infant is now grasping and mouthing"
+    - "Do not use infant walkers (AAP recommends against due to injury risk)"
+    - "Never leave infant alone in a bathtub, even briefly"
+  nutrition:
+    - "Exclusive breastfeeding or iron-fortified formula for the first 6 months remains the recommendation"
+    - "Breastfed infants: continue vitamin D supplementation 400 IU daily"
+    - "Feeding frequency: breastfed infants may feed every 3-4 hours; formula-fed approximately 5-6 oz per feeding, 4-6 times daily"
+    - "Discuss readiness signs for solid food introduction (around 6 months) -- good head control, sitting with support, interest in food, loss of tongue-thrust reflex"
+    - "Solids should NOT be started yet at 4 months for most infants; discuss timeline and plan for next visit"
+    - "No juice, water, honey, or cow's milk in the first year"
+  development:
+    - "Tummy time: multiple sessions daily while awake and supervised; infant should be comfortable for extended periods"
+    - "Read to baby daily -- board books with high-contrast pictures; narrate daily activities"
+    - "Respond to coos and babbles -- reciprocal 'conversations' build language foundation"
+    - "Provide a variety of safe toys with different textures, colors, and sounds for exploration"
+    - "No screen time for children under 2 years (except video chatting)"
+    - "Play interactive games (peek-a-boo is approaching, but face-to-face play, songs, and gentle tickling are appropriate now)"
+  behavior:
+    - "Colic and peak fussiness period should be resolving by 4 months -- if still excessive, reassess"
+    - "Infant may be developing more predictable sleep-wake cycles and feeding routines"
+    - "Discuss separation awareness -- infant may fuss when caregiver leaves their visual field"
+    - "Encourage responsive parenting -- continue to respond promptly to cries; cannot spoil an infant"
+    - "Period of PURPLE Crying review -- reinforce coping strategies if still experiencing frustration"
+  sleep:
+    - "Total sleep: 12-16 hours per 24-hour period (including naps)"
+    - "Nighttime stretches may lengthen to 6-8 hours; some infants begin sleeping through the night"
+    - "Typically 2-3 daytime naps"
+    - "Room-sharing without bed-sharing recommended for at least the first 6 months"
+    - "Continue establishing consistent bedtime routine (dim lights, bath, story, feeding, sleep)"
+    - "If infant is rolling, stop swaddling; transition to a sleep sack or wearable blanket"
+  oral_health:
+    - "Begin wiping gums with a clean, damp cloth after feedings"
+    - "Teething may begin around 4-6 months; discuss signs (drooling, fussiness, gum rubbing) and safe comfort measures"
+    - "Avoid teething gels containing benzocaine or lidocaine (FDA warning)"
+    - "Do not put infant to bed with a bottle (risk of dental caries and aspiration)"
+
+immunizations_due:
+  - vaccine: "Rotavirus (RV5 - RotaTeq)"
+    cvx: 116
+    dose_number: "2nd dose"
+    notes: "Oral vaccine, 3-dose series (RV5). Minimum interval 4 weeks from 1st dose. Maximum age for any dose in the series is 8 months 0 days."
+  - vaccine: "Rotavirus (RV1 - Rotarix)"
+    cvx: 119
+    dose_number: "2nd dose"
+    notes: "Oral vaccine, 2-dose series (RV1). If RV1 was used, this is the FINAL dose. Minimum interval 4 weeks from 1st dose. Maximum age for any dose is 8 months 0 days."
+  - vaccine: "Diphtheria, Tetanus, Pertussis (DTaP)"
+    cvx: 20
+    dose_number: "2nd dose"
+    notes: "Intramuscular, anterolateral thigh. Minimum interval 4 weeks from 1st dose. Counsel on expected local reactions (redness, swelling at injection site) and low-grade fever."
+  - vaccine: "Haemophilus influenzae type b (Hib)"
+    cvx: 48
+    dose_number: "2nd dose"
+    notes: "Intramuscular. Minimum interval 4 weeks from 1st dose (8 weeks if PRP-OMP given as dose 1). Schedule varies by product: PRP-T (ActHIB/Hiberix) is 4 doses; PRP-OMP (PedvaxHIB) is 3 doses."
+  - vaccine: "Pneumococcal conjugate (PCV20 - Prevnar 20)"
+    cvx: 216
+    dose_number: "2nd dose"
+    notes: "Intramuscular. PCV20 replaced PCV15/PCV13 per 2025 ACIP update. Minimum interval 4 weeks from 1st dose. 4-dose series (2, 4, 6, 12-15 months)."
+  - vaccine: "Inactivated Poliovirus (IPV)"
+    cvx: 10
+    dose_number: "2nd dose"
+    notes: "Intramuscular. Minimum interval 4 weeks from 1st dose. 4-dose series (2, 4, 6-18 months, 4-6 years). Combination vaccines (Pediarix, Vaxelis) may reduce injection count."
+
+physical_exam_focus:
+  - area: "Strabismus assessment"
+    detail: "Perform corneal light reflex (Hirschberg) test and cover/uncover test. Light reflex should be symmetric and centered on both pupils. Intermittent strabismus is common before 4 months but should be resolving by this visit."
+    teaching_point: "Persistent strabismus beyond 4 months warrants ophthalmology referral. Constant esotropia at any age is abnormal. Pseudostrabismus (flat nasal bridge with epicanthal folds) can mimic esotropia -- corneal light reflex will be symmetric in pseudostrabismus."
+  - area: "Head shape and fontanelle"
+    detail: "Assess for plagiocephaly (asymmetric flattening), brachycephaly (symmetric posterior flattening), and craniosynostosis (premature sutural fusion). Anterior fontanelle typically 2-3 cm, soft and flat. Posterior fontanelle may be closed or nearly closed by 4 months."
+    teaching_point: "Positional plagiocephaly is common due to supine sleep positioning. Distinguish from craniosynostosis by checking for sutural ridging -- a palpable bony ridge along a suture line suggests synostosis and requires urgent referral. Repositioning strategies and tummy time help mild plagiocephaly; a cranial orthotic (helmet) may be considered for moderate-severe cases, ideally started between 4-6 months."
+  - area: "Traction response"
+    detail: "Grasp infant's hands and gently pull to sitting position. Observe head control -- at 4 months, the head should come up in line with the trunk with minimal or no head lag."
+    teaching_point: "Persistent significant head lag at 4 months is a red flag for hypotonia or motor delay. Consider neurological causes (central or peripheral hypotonia), genetic conditions, or metabolic disorders. Refer for developmental evaluation and physical therapy if head lag is present."
+  - area: "Hip examination (Barlow and Ortolani)"
+    detail: "Ortolani: abduct flexed hips, feel for a 'clunk' as a dislocated hip reduces. Barlow: adduct flexed hip with gentle posterior pressure, feel for subluxation. Also assess for asymmetric thigh folds and limited abduction."
+    teaching_point: "DDH screening continues at every well-child visit through the first year. By 4 months, Barlow and Ortolani sensitivity decreases as the hip joint tightens. Limited abduction becomes a more reliable sign after 3 months. If clinical suspicion exists at 4 months or beyond, hip radiograph (not ultrasound) is the preferred imaging modality as the femoral head begins to ossify."
+  - area: "Growth parameters"
+    detail: "Plot weight, length, and head circumference on WHO growth charts (used for ages 0-24 months). Calculate weight-for-length percentile. Expect birth weight to have approximately doubled by 4-5 months."
+    teaching_point: "At 4 months, typical weight gain is approximately 150-200 g per week (about 5-7 oz/week). Growth velocity begins to slow compared to the first 2-3 months. Crossing 2 or more major percentile lines (up or down) warrants investigation. Head circumference crossing percentiles upward may indicate hydrocephalus; downward crossing may suggest microcephaly."
+  - area: "Skin"
+    detail: "Examine for infantile eczema (atopic dermatitis), which commonly presents on cheeks and extensor surfaces at this age. Note any infantile hemangiomas (growth phase), seborrheic dermatitis (resolving), or new rashes."
+    teaching_point: "Atopic dermatitis often debuts between 2-6 months, typically on cheeks and extensor surfaces in infants (flexural involvement is more common in older children). Early aggressive moisturizing can help prevent flares. Discuss the association between eczema, food allergy, and the atopic march. Avoid triggers; use fragrance-free products."
+  - area: "Genitourinary"
+    detail: "Males: confirm bilateral descended testes, reassess for inguinal hernia or hydrocele. Females: assess for labial adhesions."
+    teaching_point: "If testes are undescended at 4 months, urology referral should be placed -- surgical correction (orchiopexy) is recommended by 6-12 months. Communicating hydroceles that persist and enlarge should be evaluated for possible inguinal hernia."
+
+common_mistakes:
+  - "Not assessing for strabismus or dismissing persistent strabismus beyond 4 months as normal"
+  - "Failing to evaluate head shape for plagiocephaly and missing the optimal window for helmet therapy (4-6 months)"
+  - "Not performing the traction response to assess head control -- missing significant head lag as a red flag"
+  - "Skipping the hip exam or relying solely on Barlow/Ortolani without checking for limited abduction"
+  - "Ordering hip ultrasound instead of radiograph for DDH screening at 4 months or older"
+  - "Continuing to screen with EPDS only at the 2-month visit and not repeating at 4 months"
+  - "Prematurely advising introduction of solid foods before 6 months without a specific indication"
+  - "Failing to counsel on the transition from swaddling to a sleep sack when the infant is rolling"
+  - "Not counseling on oral health awareness and early teething management"
+  - "Omitting vitamin D counseling for exclusively breastfed infants"
+  - "Using CDC growth charts instead of WHO growth charts for infants under 24 months"
+  - "Dismissing parental concern about developmental delay without performing a formal milestone assessment"
+
+possible_findings:
+  - finding: "Persistent strabismus"
+    description: "Constant or intermittent misalignment of the eyes beyond 4 months of age. May present as esotropia (inward turning) or exotropia (outward turning). Asymmetric corneal light reflex on Hirschberg test."
+    probability: 0.04
+    framework_link: "strabismus.yaml"
+    age_relevance: "Intermittent strabismus is common before 4 months due to immature extraocular muscle coordination. Persistent misalignment at or beyond 4 months requires ophthalmology referral to prevent amblyopia."
+  - finding: "Positional plagiocephaly"
+    description: "Asymmetric flattening of one side of the occiput, often with ipsilateral frontal bossing and ear displacement. No sutural ridging. Commonly associated with preferential head positioning or torticollis."
+    probability: 0.15
+    framework_link: "torticollis_plagiocephaly.yaml"
+    age_relevance: "4 months is the ideal window for intervention. Mild cases respond to repositioning strategies and increased tummy time. Moderate-severe cases benefit from cranial orthotic (helmet) therapy, most effective when started between 4-6 months."
+  - finding: "Torticollis"
+    description: "Persistent head tilt to one side with limited range of motion in contralateral rotation. May have palpable sternocleidomastoid mass (fibromatosis colli). Often coexists with plagiocephaly."
+    probability: 0.05
+    framework_link: "torticollis.yaml"
+    age_relevance: "If not already identified and treated, 4 months is late for initial detection. Early physical therapy referral improves outcomes. Untreated torticollis worsens plagiocephaly and can lead to developmental asymmetries."
+  - finding: "Infantile eczema (atopic dermatitis)"
+    description: "Erythematous, scaly, pruritic patches on cheeks, forehead, and extensor surfaces of extremities. Skin may be dry and rough with excoriations from scratching."
+    probability: 0.15
+    framework_link: "atopic_dermatitis.yaml"
+    age_relevance: "Commonly debuts between 2-6 months. Early recognition and management (frequent emollient use, trigger avoidance) can improve quality of life and may reduce progression of the atopic march (eczema to food allergy to allergic rhinitis to asthma)."
+  - finding: "Infantile hemangioma"
+    description: "Raised, bright red ('strawberry') or deep bluish vascular lesion that may be in its proliferative growth phase. Soft, compressible, well-circumscribed."
+    probability: 0.04
+    framework_link: "infantile_hemangiomas.yaml"
+    age_relevance: "Proliferative phase is maximal at 3-5 months. Reassess size, location, and functional impact. Periocular, nasal, segmental, or large hemangiomas warrant referral. Propranolol is first-line for problematic hemangiomas and is most effective when started early in the proliferative phase."
+  - finding: "Developmental dysplasia of the hip (DDH)"
+    description: "Limited hip abduction on one or both sides. Barlow and Ortolani maneuvers become less reliable after 3 months. May have asymmetric thigh folds or apparent leg length discrepancy."
+    probability: 0.02
+    framework_link: "ddh.yaml"
+    age_relevance: "After 4 months, hip radiograph replaces ultrasound as the preferred imaging modality because ossification of the femoral head begins. Limited abduction becomes the most reliable clinical sign. Delay in diagnosis leads to worse surgical outcomes."
+  - finding: "Blocked nasolacrimal duct (dacryostenosis)"
+    description: "Persistent tearing (epiphora) and mucoid discharge from one or both eyes without conjunctival injection. Positive regurgitation test with massage over lacrimal sac."
+    probability: 0.08
+    framework_link: "dacryostenosis.yaml"
+    age_relevance: "Common in infants; most resolve spontaneously by 6-12 months. Continue conservative management (nasolacrimal duct massage 2-3 times daily, warm compresses). If not resolved by 12 months, referral for probing may be indicated."
+  - finding: "Innocent heart murmur"
+    description: "Soft (grade 1-2/6) systolic murmur, often heard at LLSB or pulmonic area. No symptoms, normal femoral pulses, no thrill."
+    probability: 0.12
+    framework_link: "innocent_murmurs.yaml"
+    age_relevance: "May be detected for the first time or continue from prior visits. Peripheral pulmonic stenosis murmur is common in young infants and typically resolves by 6 months. Distinguish from pathologic murmurs by absence of symptoms and normal perfusion."
+
+parent_styles:
+  - "anxious first-time parent seeking reassurance about every normal variant"
+  - "experienced multiparous parent who may minimize concerns"
+  - "vaccine-hesitant parent requesting delayed or alternative schedule"
+  - "postpartum depression -- flat affect, poor eye contact, disengaged from infant"
+  - "overwhelmed single parent with limited support system"
+  - "parent focused on milestones and comparing to other infants"
+  - "non-English speaking parent requiring interpreter services"
+  - "parent with medical background who asks detailed clinical questions"
+  - "parent eager to start solids early and seeking validation"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Clinical Report: Screening for Developmental Dysplasia of the Hip"
+  - "AAP Policy Statement: Red Reflex Examination in Neonates, Infants, and Children"
+  - "AAP Policy Statement: SIDS and Other Sleep-Related Infant Deaths, Updated 2022"
+  - "ACOG/AAP: Screening for Perinatal Depression (Committee Opinion 757)"
+  - "WHO Child Growth Standards (0-24 months)"
+  - "AAP Guidelines on Management of Infantile Hemangiomas (2019)"
+  - "AAP Policy Statement: Eye Examination in Infants, Children, and Young Adults by Pediatricians (2022)"

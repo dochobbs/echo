@@ -1,0 +1,235 @@
+# 18 Month Well-Child Visit - Teaching Framework
+topic: "18 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 18
+category: "well_child"
+
+teaching_goals:
+  - "Administer and interpret the M-CHAT-R/F autism screening -- THIS IS THE DEFINING SCREENING at the 18-month visit and the #1 teaching point"
+  - "Perform formal developmental screening with ASQ-3 (routine at 9, 18, and 30 months per AAP Bright Futures)"
+  - "Assess language development -- expect 3+ words beyond mama/dada; absence warrants concern"
+  - "Evaluate gait maturity -- child should walk well without holding on by 18 months"
+  - "Administer DTaP 4th dose (if not given at 15 months) and HepA 2nd dose per 2025 ACIP schedule"
+  - "Counsel on discipline strategies as tantrums peak, screen time limits, and dental health"
+
+expected_milestones:
+  gross_motor:
+    - "Walks without holding on to anyone or anything (should be well-established by 18 months)"
+    - "Climbs on and off a couch or chair without help"
+    - "May run with a stiff, flat-footed gait"
+    - "Walks up steps with hand held"
+  fine_motor:
+    - "Scribbles with a crayon or marker"
+    - "Drinks from a cup without a lid (open cup), with some spilling"
+    - "Feeds self with fingers and attempts spoon use"
+    - "Stacks 2-4 blocks"
+    - "Turns pages of a book (may turn multiple pages at once)"
+  language:
+    - "Says at least 3 words besides 'mama' and 'dada' -- THIS IS THE CDC 2022 MILESTONE; fewer than 3 words warrants evaluation"
+    - "Follows 1-step directions without gestures (e.g., 'give me the ball' without pointing at it)"
+    - "Points to show you something interesting"
+    - "Copies words heard in conversation (echolalia is normal at this age)"
+  social_emotional:
+    - "Moves away from caregiver but looks back to make sure they are close by (secure base behavior)"
+    - "Points to show you something interesting (shared attention / joint attention)"
+    - "Puts hands out for you to wash them"
+    - "Helps with getting dressed (pushes arm through sleeve, lifts foot for shoe)"
+    - "Looks at several pages of a book with you"
+  cognitive:
+    - "Copies you doing chores (sweeping, wiping)"
+    - "Plays with toys in a simple way (pushes a toy car, feeds a doll)"
+    - "Tries to use things the right way (phone to ear, cup for drinking)"
+    - "Stacks at least 2-3 small objects"
+
+screening_tools:
+  - tool: "M-CHAT-R/F (Modified Checklist for Autism in Toddlers, Revised with Follow-Up)"
+    when: "ROUTINE -- universal screening at 18 months and 24 months per AAP. This is the #1 screening at the 18-month visit. 20-question parent-completed tool. Score 0-2 = low risk; 3-7 = medium risk (administer Follow-Up interview); 8-20 = high risk (refer immediately)."
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Edition)"
+    when: "ROUTINE -- formal developmental screening required at 9, 18, and 30 months per AAP Bright Futures. Covers communication, gross motor, fine motor, problem-solving, and personal-social domains."
+  - tool: "Developmental surveillance (clinical observation)"
+    when: "routine -- in addition to formal screening tools"
+  - tool: "Oral health risk assessment"
+    when: "routine -- continue fluoride varnish application every 3-6 months"
+  - tool: "Food insecurity screening (Hunger Vital Sign)"
+    when: "routine -- 2-question screen per AAP"
+
+anticipatory_guidance:
+  safety:
+    - "Childproofing intensifies: climbing toddler can reach countertops, pull objects off tables, and open drawers -- reassess furniture anchoring, stove knob covers, and window guards"
+    - "Choking prevention: Cut round foods (grapes, hot dogs, cherry tomatoes) lengthwise into quarters; avoid nuts, popcorn, hard candy, raw carrots, whole grapes"
+    - "Poison prevention: Secure all medications (including visitors' purses), cleaning products, and toxic plants; post Poison Control number (1-800-222-1222)"
+    - "Burn prevention: Keep hot drinks, irons, and curling irons out of reach; use back burners and turn pot handles inward; toddlers can now reach stovetops"
+    - "Water safety: Never leave child unattended near any water source (bathtub, pool, bucket, toilet); drowning can occur in as little as 1 inch of water"
+    - "Car seat: Rear-facing car seat required until at least age 2 (or until child exceeds rear-facing height/weight limits)"
+    - "Street and driveway safety: Walking/running toddler requires constant supervision near roads; hold hands in parking lots"
+    - "Firearm safety: If guns in home, store locked and unloaded, ammunition stored separately; ASK campaign"
+  nutrition:
+    - "Whole milk: limit to 16 oz/day maximum (excessive milk displaces iron-rich foods and causes iron deficiency anemia)"
+    - "3 meals plus 2-3 snacks daily; allow child to self-regulate portion sizes"
+    - "Picky eating is at its peak at 18-24 months -- continue offering variety without pressure, coercion, or using food as reward"
+    - "Self-feeding with utensils (spoon) is emerging -- expect messiness; do not discourage independent eating"
+    - "Offer iron-rich foods daily: meats, beans, fortified cereals, leafy greens, eggs"
+    - "Juice limited to 4 oz/day of 100% fruit juice (whole fruit strongly preferred)"
+    - "Avoid added sugar and honey in excess; no caffeinated beverages"
+    - "Offer water throughout the day in an open cup or straw cup"
+  development:
+    - "Read to child daily -- ask 'where is the ___?' and let them point; encourage page turning and naming pictures"
+    - "Name objects, body parts, and actions throughout the day to build vocabulary (narrate your day)"
+    - "Respond to all communication attempts (words, pointing, gestures) with real words to reinforce language"
+    - "Provide opportunities for imitative play: toy phone, broom, kitchen set, dolls"
+    - "Encourage scribbling and stacking -- praise effort, not product"
+    - "Screen time: AAP recommends AVOIDING screen media for children under 18 months (except video chatting). At 18 months, if introducing media, choose high-quality programming and co-view with child"
+  behavior:
+    - "Tantrums are peaking at 18-24 months -- they are a NORMAL expression of frustration, not misbehavior"
+    - "Discipline approach: calm redirection, brief removal from situation, offering choices (2 options)"
+    - "Avoid spanking and harsh verbal discipline -- AAP recommends positive discipline strategies (2018 policy)"
+    - "Set consistent, simple limits and follow through every time; use the same words ('hot -- do not touch')"
+    - "Praise desired behaviors with specific language ('I like how you put the cup down gently')"
+    - "Biting, hitting, and hair-pulling are common at 18 months -- redirect firmly and calmly; model gentle touch"
+    - "Separation anxiety may resurge; maintain brief, confident goodbyes at drop-off"
+    - "Toilet readiness AWARENESS (not training): begin talking about the potty, let child observe, but do not push training until child shows readiness signs (usually 24-36 months)"
+  sleep:
+    - "Total sleep: 11-14 hours per 24 hours (including 1 nap)"
+    - "Most toddlers have transitioned to 1 nap per day by 18 months"
+    - "Maintain consistent bedtime routine (bath, brush teeth, book, bed)"
+    - "Bedtime resistance is common -- set firm and consistent limits, avoid elaborate bedtime negotiations"
+    - "If still using a bottle at bedtime, this is the last chance to wean -- bottle in bed causes dental caries"
+    - "Transitioning from crib to toddler bed is NOT recommended at 18 months -- wait until child is climbing out (typically 2-3 years)"
+  dental:
+    - "Brush teeth twice daily with a smear (rice-grain size) of fluoride toothpaste"
+    - "Parent must do the brushing -- toddler lacks coordination for effective brushing until age 6-7"
+    - "Confirm first dental visit has occurred (recommended by age 1); if not, refer now"
+    - "Continue fluoride varnish application every 3-6 months at well visits"
+    - "Limit sippy cups with juice or milk to mealtimes only -- prolonged exposure causes dental caries"
+    - "Pacifier use after 18 months may affect dental alignment -- begin discussing weaning plan"
+
+immunizations_due:
+  - vaccine: "Diphtheria, Tetanus, Pertussis (DTaP)"
+    cvx: 20
+    dose_number: "4th dose (if not given at 15 months)"
+    notes: "Intramuscular. 4th dose window is 15-18 months. Minimum interval 6 months from 3rd dose. If given at the 15-month visit, not needed again. Counsel on expected local reactions (may be more prominent with 4th dose)."
+  - vaccine: "Hepatitis A (HepA)"
+    cvx: 83
+    dose_number: "2nd dose"
+    notes: "2-dose series; 2nd dose given at least 6 months after 1st dose. If 1st dose was at 12 months, 2nd dose is due now. If 1st dose was at 15 months, 2nd dose may be given at 21+ months."
+  - vaccine: "Hepatitis B (HepB)"
+    cvx: 8
+    dose_number: "3rd dose (catch-up if not completed)"
+    notes: "3-dose series should be completed by 18 months. Minimum 8 weeks after 2nd dose and 16 weeks after 1st dose. Verify records."
+  - vaccine: "Inactivated Poliovirus (IPV)"
+    cvx: 10
+    dose_number: "3rd dose (catch-up if not completed)"
+    notes: "3rd dose given at 6-18 months. If not yet administered, give now. Minimum interval 4 weeks from 2nd dose."
+  - vaccine: "Influenza (Inactivated or Recombinant)"
+    cvx: 150
+    dose_number: "Annual dose"
+    notes: "If in influenza season (October-March). First-time recipients age 6mo-8yr need 2 doses separated by 4+ weeks. LAIV (FluMist, CVX 151) not approved until age 2."
+
+physical_exam_focus:
+  - area: "Gait assessment"
+    detail: "Observe walking without support. By 18 months, gait should be more mature than at 15 months -- less wide-based, with emerging heel-strike pattern. Observe running attempts, climbing, and ability to squat and return to standing."
+    teaching_point: "Walking well without holding on is a firm 18-month expectation. If still not walking independently at 18 months, this is a RED FLAG for gross motor delay requiring prompt referral (developmental pediatrics, neurology, or PT). Persistent toe-walking beyond 3 months of independent walking warrants evaluation. In-toeing is usually physiologic but should be documented."
+  - area: "Language assessment"
+    detail: "Count spoken words (expect 3+ beyond mama/dada). Assess receptive language by giving 1-step commands without gestures. Observe pointing for wants and interests. Listen for jargoning (babbling that sounds like sentences with intonation)."
+    teaching_point: "Language is the most sensitive early indicator of developmental concerns at this age. Fewer than 3 words at 18 months, no pointing, or failure to follow simple commands without gestures warrants audiology referral and close developmental follow-up. Loss of previously acquired words is a RED FLAG for autism spectrum disorder."
+  - area: "Social engagement and joint attention"
+    detail: "Observe eye contact, social referencing (looking back at parent), response to name, shared enjoyment, and pointing to show (not just to request). Assess quality of parent-child interaction."
+    teaching_point: "Poor joint attention (not following a point, not pointing to show, not looking where caregiver looks) is one of the earliest signs of autism spectrum disorder. The M-CHAT-R/F at 18 months is designed to catch these concerns. Do not rely solely on the questionnaire -- clinical observation during the visit is essential."
+  - area: "Growth parameters"
+    detail: "Plot weight, length, and head circumference on WHO growth charts (used for ages 0-24 months). Calculate weight-for-length percentile."
+    teaching_point: "Continue using WHO charts until age 2 (then switch to CDC charts). Growth velocity slows in the second year; crossing 1 percentile line may be normal, but crossing 2+ lines warrants evaluation. Overweight on weight-for-length is increasingly relevant as dietary patterns establish."
+  - area: "Anterior fontanelle"
+    detail: "Palpate for closure status. Anterior fontanelle should be closed or nearly closed by 18 months (normal range 9-24 months)."
+    teaching_point: "If still widely open at 18 months, consider hypothyroidism (check TSH), rickets (check 25-OH vitamin D, alkaline phosphatase), hydrocephalus (measure head circumference trend), or skeletal dysplasia. A small, nearly closed fontanelle is expected and normal."
+  - area: "Dentition"
+    detail: "Count erupted teeth (average 12 at 18 months, including first molars and canines erupting). Inspect for caries -- check upper incisors for white spot lesions. Apply fluoride varnish."
+    teaching_point: "Upper incisor caries ('bottle rot') are the earliest and most common location for early childhood caries. Ask about nighttime bottle/sippy cup use. Canine eruption (16-22 months) can cause significant fussiness -- reassure parents. High fever is NOT caused by teething."
+  - area: "Ears / Hearing"
+    detail: "Otoscopic exam. Assess response to name, following verbal commands, and speech development as indirect hearing assessment."
+    teaching_point: "Recurrent otitis media at this age can cause conductive hearing loss and speech delay. If child has had 3+ episodes in 6 months or 4+ in 12 months, consider ENT referral for tubes. Speech delay always warrants formal audiology evaluation."
+  - area: "Skin"
+    detail: "Full skin survey. Assess bruising patterns (normal on shins, knees, forehead in walkers/climbers). Look for eczema, birthmarks, signs of neglect or abuse."
+    teaching_point: "TEN-4 FACES rule: bruises on Torso, Ears, Neck in children under 4, or on Frenulum, Angle of jaw, Cheeks, Eyes, Subconjunctivae are concerning for abuse. At 18 months, shin and forehead bruises from falls are expected in an active toddler."
+
+common_mistakes:
+  - "Failing to administer the M-CHAT-R/F at 18 months -- this is the most critical screening at this visit and is often skipped or deferred"
+  - "Not scoring the M-CHAT-R/F correctly -- medium-risk scores (3-7) require the Follow-Up interview, not immediate referral; high-risk scores (8-20) require immediate referral without waiting for Follow-Up"
+  - "Skipping the ASQ-3 formal developmental screening at 18 months (it is mandated at 9, 18, and 30 months per AAP Bright Futures)"
+  - "Reassuring parents that speech delay will 'resolve on its own' without formal evaluation -- fewer than 3 words at 18 months warrants action"
+  - "Not recognizing loss of previously acquired words or social skills as a red flag for autism (regression)"
+  - "Relying solely on the M-CHAT-R/F questionnaire without clinical observation of social engagement and joint attention"
+  - "Forgetting the DTaP 4th dose if it was not given at 15 months"
+  - "Not administering or scheduling the HepA 2nd dose"
+  - "Counseling on toilet 'training' at 18 months -- readiness signs are typically not present until 24-36 months; premature training causes frustration"
+  - "Allowing screen time without qualification -- 18 months is the AAP threshold; if introducing, emphasize high-quality programming and co-viewing only"
+  - "Not asking about whole milk intake -- parents often exceed 16 oz/day, causing iron deficiency"
+  - "Missing early childhood caries on exam (inspect upper incisors for white spots)"
+  - "Dismissing parental behavioral concerns (tantrums, biting, sleep issues) as 'just a phase' without providing specific management strategies"
+  - "Not confirming that a dental home has been established by 18 months"
+
+possible_findings:
+  - finding: "Autism spectrum disorder features (M-CHAT-R/F positive)"
+    description: "Positive M-CHAT-R/F screen (score 3+), reduced or absent joint attention, poor eye contact, lack of pointing to show, no response to name, limited pretend play, repetitive behaviors, or regression of social/language skills."
+    probability: 0.08
+    framework_link: "autism"
+    age_relevance: "18 months is the first ROUTINE M-CHAT-R/F screening age per AAP. Early identification and intervention (before age 3) significantly improves outcomes. M-CHAT-R/F has a positive predictive value of ~50% in primary care -- positive screens need diagnostic evaluation, not just re-screening. Do not 'wait and see.'"
+  - finding: "Language delay"
+    description: "Fewer than 3 words beyond mama/dada, no pointing to communicate wants or interests, does not follow 1-step directions without gestures, loss of previously acquired words."
+    probability: 0.12
+    framework_link: "speech_delay"
+    age_relevance: "At 18 months, the CDC 2022 milestone is 3+ words. Language delay at this age may be isolated (late talker) or may be an early sign of autism, hearing loss, or global developmental delay. Always obtain audiology testing. If M-CHAT-R/F is also positive, pursue dual-track evaluation (speech + autism)."
+  - finding: "Behavioral regression"
+    description: "Loss of previously acquired developmental skills -- words, gestures, social engagement, or motor abilities. Parent reports child 'used to say more words' or 'stopped waving/pointing.'"
+    probability: 0.03
+    framework_link: "autism"
+    age_relevance: "Regression at 15-24 months is a RED FLAG for autism spectrum disorder (occurs in ~30% of ASD cases). Any confirmed regression warrants urgent referral for comprehensive developmental evaluation. Do not attribute to 'he's just focused on walking now.'"
+  - finding: "Gross motor delay (not walking)"
+    description: "Child is not walking independently at 18 months. Still cruising, bottom-shuffling, or requiring support."
+    probability: 0.03
+    framework_link: "N/A"
+    age_relevance: "Not walking at 18 months is beyond the CDC milestone range and warrants prompt evaluation. Consider cerebral palsy, muscular dystrophy, DDH, neuromuscular disease, or global developmental delay. Refer for developmental pediatrics and/or physical therapy. Use corrected age for premature infants."
+  - finding: "Iron deficiency anemia"
+    description: "Pallor, fatigue, pica, poor appetite, or follow-up on abnormal 12-month hemoglobin. Often related to excessive whole milk intake (>16 oz/day) displacing iron-rich foods."
+    probability: 0.06
+    framework_link: "iron_deficiency_anemia"
+    age_relevance: "Peak prevalence 9-24 months. If 12-month screen was abnormal, 18-month visit is a critical follow-up point. Counsel on limiting milk to 16 oz/day and increasing dietary iron. Repeat hemoglobin if previously abnormal or new risk factors."
+  - finding: "Early childhood caries"
+    description: "White spot lesions or cavitation on primary teeth, especially upper incisors. Associated with nighttime bottle use, prolonged sippy cup exposure, and inadequate fluoride."
+    probability: 0.08
+    framework_link: "N/A"
+    age_relevance: "With 10-14 teeth erupted, caries risk is significant. Nighttime bottle with milk or juice is the #1 modifiable risk factor. Fluoride varnish at every visit and fluoride toothpaste counseling are critical interventions."
+  - finding: "Recurrent otitis media"
+    description: "History of 3+ episodes in 6 months or 4+ in 12 months. May present with current effusion, retracted TM, or parent report of ear-pulling and irritability."
+    probability: 0.10
+    framework_link: "otitis_media"
+    age_relevance: "Peak incidence 6-24 months. Recurrent OM at 18 months can cause conductive hearing loss contributing to speech delay. Consider ENT referral for tympanostomy tubes. Always assess speech development in children with recurrent OM."
+  - finding: "Failure to thrive"
+    description: "Weight <3rd percentile or crossing 2+ major percentile lines downward. Picky eating and increased activity at this age may unmask nutritional deficiency."
+    probability: 0.04
+    framework_link: "failure_to_thrive"
+    age_relevance: "Growth velocity naturally slows in the second year. Picky eating peaks at 18-24 months and can contribute to inadequate caloric intake. Distinguish normal growth deceleration from pathologic FTT by assessing dietary intake, psychosocial factors, and organic causes."
+
+parent_styles:
+  - "Parent anxious about autism after reading about M-CHAT-R/F screening online"
+  - "Parent who dismisses developmental concerns ('he's just a boy, boys talk late')"
+  - "Parent struggling with intense tantrums and biting, seeking discipline guidance"
+  - "Parent still giving bottles at bedtime and resistant to weaning"
+  - "Vaccine-hesitant parent wanting to delay DTaP 4th dose"
+  - "Parent overwhelmed by picky eating and worried child is 'starving'"
+  - "Parent allowing significant screen time and defensive when counseled"
+  - "Parent concerned about regression ('she used to say more words')"
+  - "Non-English speaking parent requiring interpreter services -- M-CHAT-R/F available in multiple languages"
+  - "Parent with a family history of autism who is hypervigilant about every behavior"
+
+sources:
+  - "AAP Bright Futures Guidelines, 4th Edition - 18 Month Visit"
+  - "CDC 2022 Developmental Milestones (75th percentile standard)"
+  - "CDC/ACIP Recommended Immunization Schedule for Children and Adolescents, 2025"
+  - "AAP Policy Statement: Identification, Evaluation, and Management of Children with Autism Spectrum Disorder (2020)"
+  - "Robins DL, et al. Validation of the Modified Checklist for Autism in Toddlers, Revised with Follow-Up (M-CHAT-R/F). Pediatrics. 2014;133(1):37-45"
+  - "AAP Policy Statement: Media and Young Minds (2016) - screen time threshold at 18 months"
+  - "AAP Policy Statement on Effective Discipline (2018) - positive discipline, no spanking"
+  - "AAP Clinical Report: Diagnosis and Prevention of Iron Deficiency and Iron-Deficiency Anemia (2010, reaffirmed)"
+  - "AAP Policy Statement: Maintaining and Improving the Oral Health of Young Children (2014)"
+  - "WHO Child Growth Standards: Length/height-for-age, weight-for-age, weight-for-length (used for children under 24 months)"
+  - "AAP/Bright Futures: Recommendations for Preventive Pediatric Health Care (Periodicity Schedule, 2024)"

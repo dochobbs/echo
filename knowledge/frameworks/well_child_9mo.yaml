@@ -1,0 +1,210 @@
+# 9 Month Well-Child Visit - Teaching Framework
+topic: "9 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 9
+category: "well_child"
+
+teaching_goals:
+  - "Perform a comprehensive physical exam with emphasis on age-specific findings (sitting stability, pulling to stand, dental assessment, strabismus screening)"
+  - "Assess developmental milestones using the CDC 2022 checklist (75th percentile standard) and administer the ASQ-3 developmental screening (routine at 9, 18, 30 months)"
+  - "Screen for iron deficiency anemia with Hgb/Hct (recommended at 9-12 months per AAP)"
+  - "Administer catch-up immunizations if needed; give Influenza #2 (CVX 150) if first influenza season and 1st dose was given at least 4 weeks prior"
+  - "Deliver anticipatory guidance on finger foods, choking hazards, childproofing for the crawling/cruising stage, and separation anxiety normalization"
+  - "Recognize common findings at this age and determine appropriate workup vs reassurance (developmental delay, iron deficiency anemia, strabismus, hearing concern)"
+
+expected_milestones:
+  gross_motor:
+    - "Sits without support (stable, can reach for toys while sitting without toppling)"
+    - "Gets into a sitting position independently"
+    - "Pulls to stand using furniture or support"
+    - "Crawls or moves across the floor (some infants scoot, commando crawl, or roll instead)"
+  fine_motor:
+    - "Rakes food toward self with fingers"
+    - "Transfers objects from one hand to the other"
+    - "Emerging pincer grasp (beginning to pick up small objects between thumb and forefinger)"
+    - "Bangs two objects together"
+  language:
+    - "Babbles with consonant-vowel combinations ('mamama', 'bababa', 'dadada')"
+    - "Responds to own name by looking or turning"
+    - "Understands 'no' (may pause or look at caregiver)"
+    - "Uses gestures such as reaching to be picked up"
+  social_emotional:
+    - "Stranger anxiety -- shows wariness, clinginess, or crying around unfamiliar people"
+    - "Separation anxiety -- protests when primary caregiver leaves"
+    - "Shows preference for familiar caregivers"
+    - "Engages in interactive games (peek-a-boo, pat-a-cake)"
+  cognitive:
+    - "Object permanence emerging -- looks for a toy that has been hidden or dropped"
+    - "Explores objects by shaking, banging, throwing, and mouthing"
+    - "Uses objects purposefully (shakes a rattle to make noise, pushes a button)"
+    - "Watches the path of a falling object (visual tracking)"
+
+screening_tools:
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "routine"
+  - tool: "Hemoglobin/Hematocrit (Hgb/Hct)"
+    when: "routine"
+  - tool: "Developmental surveillance (clinical observation)"
+    when: "routine"
+  - tool: "Structured developmental screening (M-CHAT-R/F)"
+    when: "if concern for autism"
+
+anticipatory_guidance:
+  safety:
+    - "Childproofing for the crawling and cruising stage -- cover electrical outlets, install safety gates at stairs, secure heavy furniture and TVs to walls"
+    - "Keep small objects, coins, batteries, and magnets out of reach (choking hazard for items smaller than a toilet paper roll)"
+    - "Never leave infant unattended near water -- bathtubs, toilets, buckets, pools (drowning risk in as little as 1 inch of water)"
+    - "Rear-facing car seat in the back seat; ensure proper harness fit (chest clip at armpit level)"
+    - "Poison prevention -- store medications, cleaning products, and plants out of reach; program Poison Control number (1-800-222-1222)"
+    - "Water temperature less than 120 F (48 C) to prevent scald burns"
+    - "Supervise closely around pets -- infant may grab or provoke animals"
+    - "Window guards or stops on windows above first floor"
+  nutrition:
+    - "Introduction of finger foods -- soft, age-appropriate pieces (ripe banana, avocado, well-cooked vegetables, soft cheese, small pieces of toast)"
+    - "Choking hazards to avoid: whole grapes, hot dogs (round cuts), nuts, popcorn, raw carrots, chunks of meat, hard candy, thick peanut butter"
+    - "Continue breastfeeding or iron-fortified formula as primary nutrition source; goal of 24-32 oz formula or continued breastfeeding daily"
+    - "Introduce a cup (open or straw cup) for water; begin transitioning away from bottles by 12 months"
+    - "Three meals and 2 snacks daily with family; encourage self-feeding and exploration of textures"
+    - "Iron-rich foods important: iron-fortified cereal, pureed meats, beans, dark leafy greens"
+    - "No cow's milk as primary drink until 12 months; no honey until 12 months (botulism risk)"
+    - "No juice recommended; if given, limit to 4 oz/day of 100% fruit juice in a cup (AAP)"
+  development:
+    - "Read to your child every day -- point to pictures, name objects, use simple words"
+    - "Encourage exploration in a safe environment -- floor time with age-appropriate toys"
+    - "Play interactive games: peek-a-boo, pat-a-cake, 'so big,' waving bye-bye"
+    - "Name objects, body parts, and actions throughout the day to build receptive language"
+    - "Provide toys that encourage cause-and-effect learning (stacking cups, shape sorters, push-button toys)"
+    - "No screen time for children under 2 years (except video chatting)"
+    - "Respond to babbling as if it is conversation -- turn-taking builds language skills"
+  behavior:
+    - "Separation anxiety is normal and peaks between 9-18 months -- reassure parents this is a sign of healthy attachment"
+    - "Stranger anxiety is developmentally appropriate -- allow child to warm up to new people gradually"
+    - "Begin setting simple, consistent limits -- brief, calm redirection rather than punishment"
+    - "Distraction and redirection are the most effective discipline strategies at this age"
+    - "Encourage positive behaviors with praise and attention rather than focusing on 'no'"
+    - "Responsive parenting continues to be important -- respond to cues, provide comfort"
+    - "Temper tantrums may begin to emerge -- stay calm, ensure safety, and wait for the tantrum to pass"
+  sleep:
+    - "Total sleep: 12-16 hours per 24-hour period (including 2-3 naps)"
+    - "Most 9-month-olds take 2 naps per day (morning and afternoon)"
+    - "Consistent bedtime routine: bath, book, song, then bed (awake but drowsy)"
+    - "Night waking is common due to separation anxiety and developmental leaps -- brief reassurance without removing from crib"
+    - "Safe sleep continues: firm mattress, fitted sheet, no loose blankets, pillows, or stuffed animals in crib"
+    - "Sleep training methods (if not already established) can be discussed -- graduated extinction, chair method"
+
+immunizations_due:
+  - vaccine: "Catch-up immunizations"
+    cvx: null
+    dose_number: "varies"
+    notes: "No new routine vaccinations are due at 9 months. Review immunization record for any missed doses from 2, 4, or 6 month visits (DTaP, Hib, PCV20, IPV, Rotavirus, HepB) and administer catch-up doses per ACIP catch-up schedule."
+  - vaccine: "Influenza (IIV4 - quadrivalent inactivated)"
+    cvx: 150
+    dose_number: "2nd dose (if first influenza season)"
+    notes: "If this is the child's first influenza season and the 1st dose was given at least 4 weeks prior, administer the 2nd dose. Children aged 6 months through 8 years receiving influenza vaccine for the first time require 2 doses separated by at least 4 weeks. Intramuscular, anterolateral thigh."
+  - vaccine: "Hepatitis B (HepB)"
+    cvx: 8
+    dose_number: "3rd dose (catch-up if not yet given)"
+    notes: "3rd dose can be given as early as 24 weeks of age, with minimum interval of 8 weeks from 2nd dose and 16 weeks from 1st dose. Verify completion of the 3-dose series."
+
+physical_exam_focus:
+  - area: "Sitting stability and gross motor"
+    detail: "Observe infant sitting unsupported on exam table or floor. Note trunk control, ability to reach for objects while maintaining balance, and any asymmetry in posture or movement."
+    teaching_point: "Inability to sit unsupported by 9 months is a red flag for gross motor delay and warrants referral for developmental evaluation. Assess for hypotonia (floppy posture, head lag when pulled to sit) or hypertonia (stiff limbs, scissoring). Observe for pulling to stand at the exam table edge."
+  - area: "Pulling to stand and cruising"
+    detail: "Observe if infant pulls to stand on furniture or the exam table rail. Note whether the infant bears weight symmetrically and uses both hands equally."
+    teaching_point: "Many 9-month-olds are beginning to pull to stand. Asymmetric weight-bearing or consistent hand preference at this age may suggest hemiparesis or orthopedic pathology. Not pulling to stand by 9 months is within normal variation but should be noted for follow-up."
+  - area: "Fine motor (pincer grasp)"
+    detail: "Offer small, safe objects (cereal puff, raisin-sized objects under supervision) and observe grasp pattern. Note if infant uses a raking grasp, inferior pincer, or true pincer (thumb and forefinger opposition)."
+    teaching_point: "The pincer grasp typically emerges between 9-12 months. At 9 months, expect an emerging or inferior pincer. Persistent fisting or inability to transfer objects hand to hand at this age warrants concern. The pincer grasp is critical for self-feeding and later fine motor tasks."
+  - area: "Dental assessment"
+    detail: "Examine for erupted teeth (lower central incisors typically first, appearing around 6-10 months). Assess gingival health, check for natal teeth abnormalities, and note number and condition of teeth present."
+    teaching_point: "First dental visit should occur by age 1 or within 6 months of first tooth eruption (whichever comes first). Counsel on oral hygiene: wipe gums with damp cloth, brush erupted teeth with a rice-grain-sized smear of fluoride toothpaste twice daily. Discuss avoidance of bottle in bed (dental caries risk). Assess fluoride exposure (water supply, supplementation if <0.3 ppm)."
+  - area: "Growth parameters"
+    detail: "Plot weight, length, and head circumference on WHO growth charts (used for ages 0-24 months). Calculate weight-for-length percentile."
+    teaching_point: "Expected weight approximately 2.5-3x birth weight by 9-12 months. Growth velocity slows in the second half of the first year. Crossing 2 or more major percentile lines (up or down) warrants investigation. Head circumference crossing percentiles upward may indicate hydrocephalus; plateauing or declining may suggest microcephaly."
+  - area: "Eye alignment and strabismus screening"
+    detail: "Perform corneal light reflex test (Hirschberg test) and cover/uncover test. Assess for symmetric red reflex bilaterally. Observe visual tracking and whether infant fixates and follows objects across midline in all directions."
+    teaching_point: "Intermittent strabismus (exotropia or esotropia) should be resolved by 4-6 months. Persistent misalignment at 9 months requires ophthalmology referral. Early detection and treatment of amblyopia is critical -- the visual system is highly plastic in the first 2 years. Asymmetric red reflex remains a red flag for retinoblastoma or congenital cataract."
+  - area: "Hearing assessment"
+    detail: "Observe response to name, turning toward sounds, and response to voice at conversational volume. Ask parents about concerns regarding hearing. Confirm newborn hearing screen results."
+    teaching_point: "Risk factors for hearing loss include NICU stay >5 days, family history, craniofacial anomalies, congenital infections (CMV, rubella), and hyperbilirubinemia requiring exchange transfusion. If infant is not responding to name or not turning toward sounds by 9 months, refer for formal audiologic evaluation. Even if newborn screen was passed, acquired or progressive hearing loss can occur."
+  - area: "Skin"
+    detail: "Examine for atopic dermatitis (common at this age), new or changing birthmarks, and signs of trauma. Assess diaper area for dermatitis."
+    teaching_point: "Atopic dermatitis often presents on the cheeks and extensor surfaces in infants. Discuss emollient use, trigger avoidance, and when to use low-potency topical steroids. Pattern injuries or bruising in a pre-ambulatory infant should raise concern for non-accidental trauma."
+
+common_mistakes:
+  - "Not administering the ASQ-3 developmental screening at the 9-month visit (routine screening age per AAP)"
+  - "Forgetting to screen for iron deficiency anemia with Hgb/Hct at the 9-12 month visit"
+  - "Dismissing parental concern about developmental delay because 'every child develops at their own pace' without performing formal screening"
+  - "Not assessing for strabismus or performing the corneal light reflex test"
+  - "Failing to counsel on choking hazards when discussing introduction of finger foods"
+  - "Not asking about dental care or recommending the first dental visit"
+  - "Overlooking the need for a 2nd influenza dose if the child received their first dose earlier in the season"
+  - "Providing excessive reassurance about separation and stranger anxiety without explaining it as a normal developmental milestone"
+  - "Not assessing hearing by asking about response to name and sounds"
+  - "Using CDC growth charts instead of WHO growth charts for infants under 24 months"
+  - "Forgetting to assess the home environment for childproofing now that the infant is mobile"
+  - "Missing iron-rich food counseling when discussing the transition to table foods"
+
+possible_findings:
+  - finding: "Developmental delay (not sitting unsupported)"
+    description: "Infant unable to sit without support at 9 months. May have poor trunk control, persistent head lag, or hypotonia. May not be reaching for objects or transferring between hands."
+    probability: 0.05
+    framework_link: "speech_delay.yaml"
+    age_relevance: "Sitting without support is expected by 9 months (CDC 2022). Failure to sit independently at this age warrants formal developmental evaluation and consideration of referral to early intervention services."
+  - finding: "Iron deficiency anemia"
+    description: "Hemoglobin <11.0 g/dL or hematocrit <33% on screening labs. Infant may appear pale, irritable, or have poor feeding. Often asymptomatic and detected only on routine screening."
+    probability: 0.08
+    framework_link: "iron_deficiency_anemia.yaml"
+    age_relevance: "Iron stores from birth are depleted by 4-6 months. Risk factors include exclusive breastfeeding without iron supplementation, cow's milk introduction before 12 months, prematurity, and low dietary iron intake. Screen at 9-12 months per AAP guidelines."
+  - finding: "Strabismus"
+    description: "Persistent misalignment of the eyes detected on corneal light reflex (Hirschberg test) or cover/uncover test. May present as constant or intermittent esotropia or exotropia."
+    probability: 0.04
+    framework_link: "conjunctivitis.yaml"
+    age_relevance: "Intermittent exotropia may be normal in the first 4-6 months but should resolve by 6 months. Any persistent misalignment at 9 months requires ophthalmology referral to prevent amblyopia. Early intervention during the critical visual development period improves outcomes."
+  - finding: "Hearing concern"
+    description: "Infant does not consistently turn to name, does not respond to environmental sounds, or has limited babbling. Parents may report that the child seems inattentive or startles only to loud noises."
+    probability: 0.03
+    framework_link: "speech_delay.yaml"
+    age_relevance: "By 9 months, infants should respond to name, turn toward sounds, and babble with consonant-vowel combinations. Absent or limited babbling, lack of response to name, and no sound localization warrant formal audiologic evaluation even if newborn hearing screen was normal."
+  - finding: "Atopic dermatitis flare"
+    description: "Erythematous, dry, pruritic patches typically on cheeks, extensor surfaces of arms and legs, and sometimes trunk. May have excoriations from scratching."
+    probability: 0.15
+    framework_link: "atopic_dermatitis.yaml"
+    age_relevance: "Atopic dermatitis commonly presents or worsens in the second half of the first year, often coinciding with introduction of solid foods and environmental exposures. The cheek and extensor distribution is characteristic of infantile eczema."
+  - finding: "Stranger/separation anxiety (parental concern)"
+    description: "Parent reports intense crying or clinging when left with unfamiliar caregivers. Child may refuse to be held by anyone other than primary caregiver. Parents may worry something is wrong."
+    probability: 0.20
+    framework_link: null
+    age_relevance: "Stranger and separation anxiety peak between 9-18 months and are signs of healthy attachment and cognitive development (object permanence). Reassure parents this is normal. Counsel on gradual transitions and consistent goodbye routines."
+  - finding: "Eruption cysts or teething symptoms"
+    description: "Bluish-purple swelling over erupting tooth (eruption cyst/hematoma), or increased drooling, irritability, mild temperature elevation, and gum rubbing. Parent may attribute other symptoms to teething."
+    probability: 0.10
+    framework_link: "teething.yaml"
+    age_relevance: "Most infants have 2-4 teeth by 9 months. Eruption cysts are benign and resolve spontaneously. Counsel that teething does not cause high fever, diarrhea, or significant illness -- these symptoms warrant separate evaluation. Avoid benzocaine and homeopathic teething tablets."
+  - finding: "Failure to thrive"
+    description: "Weight crossing 2 or more major percentile lines downward, or weight-for-length below the 5th percentile. May have decreased subcutaneous fat, decreased energy, or delayed milestones."
+    probability: 0.04
+    framework_link: "failure_to_thrive.yaml"
+    age_relevance: "Growth velocity normally slows in the second half of the first year, but true growth faltering at 9 months warrants evaluation. Common causes at this age include inadequate caloric intake (transition to solids), iron deficiency, and feeding difficulties. Assess dietary history, feeding behaviors, and psychosocial factors."
+
+parent_styles:
+  - "anxious parent worried about separation anxiety and stranger danger"
+  - "experienced parent comparing this child's development to older siblings"
+  - "parent eager to introduce all table foods without awareness of choking hazards"
+  - "working parent feeling guilty about daycare and separation anxiety"
+  - "parent who has not yet started any solid foods or is behind on food introduction"
+  - "parent concerned about lack of teeth or delayed tooth eruption"
+  - "vaccine-hesitant parent questioning the need for influenza vaccination"
+  - "parent with medical background asking detailed questions about developmental screening tools"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Clinical Report: Diagnosis and Prevention of Iron Deficiency and Iron-Deficiency Anemia in Infants and Young Children (0-3 Years of Age)"
+  - "AAP Policy Statement: Visual System Assessment in Infants, Children, and Young Adults by Pediatricians"
+  - "AAP Policy Statement: Maintaining and Improving the Oral Health of Young Children"
+  - "AAP Policy Statement: Developmental Surveillance and Screening of Infants and Young Children"
+  - "AAP Policy Statement: Prevention of Choking Among Children"
+  - "WHO Child Growth Standards (0-24 months)"

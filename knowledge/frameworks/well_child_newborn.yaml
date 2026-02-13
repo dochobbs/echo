@@ -1,0 +1,204 @@
+# Newborn Well-Child Visit - Teaching Framework
+topic: "Newborn Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 0
+category: "well_child"
+
+teaching_goals:
+  - "Perform a comprehensive newborn physical exam with emphasis on birth-related findings (clavicle fracture, caput/cephalohematoma, hip stability, cardiac, red reflex)"
+  - "Assess primitive reflexes and neurobehavioral state (Moro, rooting, sucking, palmar grasp, flexor tone, alertness)"
+  - "Administer Hepatitis B birth dose and counsel on Nirsevimab (RSV monoclonal antibody) if indicated by season"
+  - "Ensure completion of mandatory newborn screening: metabolic screen (after 24 hrs), CCHD pulse oximetry (after 24 hrs), hearing (OAE or ABR), and bilirubin assessment"
+  - "Deliver anticipatory guidance on safe sleep (ABCs -- Alone, Back, Crib), feeding initiation, cord care, and when to call the doctor"
+  - "Recognize common newborn findings and determine which require urgent intervention vs reassurance"
+
+expected_milestones:
+  reflexes:
+    - "Moro reflex present and symmetric (startle with arm extension then flexion when head drops back)"
+    - "Rooting reflex present (turns toward stimulus when cheek or corner of mouth is stroked)"
+    - "Sucking reflex present and coordinated with swallowing"
+    - "Palmar grasp reflex present bilaterally (fingers close around examiner's finger)"
+    - "Plantar grasp reflex present (toes curl when sole of foot is stroked)"
+    - "Stepping reflex may be present (alternating leg movements when held upright with feet on surface)"
+  tone_and_posture:
+    - "Flexor tone predominates -- arms and legs flexed at rest"
+    - "Head lag present when pulled to sitting (expected at this age)"
+    - "Moves all four extremities spontaneously and equally"
+    - "Tone symmetric between right and left sides"
+  sensory:
+    - "Responds to loud sounds with startle or behavioral change"
+    - "Fixes briefly on high-contrast objects or faces at 8-12 inches"
+    - "Alerts to voice -- may quiet briefly when spoken to"
+    - "Strong, lusty cry when hungry or uncomfortable"
+
+screening_tools:
+  - tool: "Newborn metabolic screen (state-mandated panel)"
+    when: "After 24 hours of life, before discharge. Repeat at 1-2 weeks in some states."
+  - tool: "Critical congenital heart disease (CCHD) pulse oximetry screening"
+    when: "After 24 hours of life. Per 2025 AAP update, a single retest is performed on initial fail before proceeding to echocardiography."
+  - tool: "Newborn hearing screen (OAE or ABR)"
+    when: "Before discharge. Refer for diagnostic ABR if fail or incomplete."
+  - tool: "Bilirubin assessment (transcutaneous or serum total bilirubin)"
+    when: "Before discharge. Plot on Bhutani nomogram (hour-specific) to determine risk zone and follow-up timing."
+
+anticipatory_guidance:
+  safety:
+    - "ABCs of safe sleep: Alone (no co-sleeping), Back (supine), Crib (firm, flat surface with fitted sheet only -- no blankets, pillows, bumpers, wedges, or soft toys)"
+    - "Room-sharing without bed-sharing for at least the first 6 months (AAP recommendation)"
+    - "Rear-facing car seat in the back seat -- ensure proper installation and harness fit before discharge"
+    - "Never shake a baby -- discuss the Period of PURPLE Crying and coping strategies when caregiver is frustrated"
+    - "Avoid exposure to cigarette smoke -- associated with increased SIDS risk"
+    - "Keep water heater temperature below 120 F (48 C) to prevent scald burns"
+    - "Never leave the infant unattended on elevated surfaces, in the bath, or in a car"
+  nutrition:
+    - "Initiate breastfeeding within the first hour of life if possible; encourage skin-to-skin contact"
+    - "Breastfeeding frequency: 8-12 times per 24 hours (on demand, every 1.5-3 hours); colostrum in first 2-3 days"
+    - "For formula-fed infants: iron-fortified formula, 15-20 mL (0.5-1 oz) per feeding in first 1-2 days, increasing to 30-60 mL (1-2 oz) per feeding by end of first week"
+    - "Expected weight loss: up to 7-10% of birth weight in first 3-5 days is normal; should regain birth weight by 10-14 days"
+    - "Breastfed infants: vitamin D supplementation 400 IU daily starting in first few days of life"
+    - "Assess latch, positioning, and milk transfer; refer to lactation consultant if difficulties arise"
+    - "Wet diaper expectations: 1 wet on day 1, 2 on day 2, increasing to 6+ wet and 3-4 stools by day 4-5"
+  cord_care:
+    - "Keep the umbilical cord stump clean and dry -- fold diaper below the stump"
+    - "No alcohol, ointments, or antiseptics needed on the cord (dry care per current guidelines)"
+    - "Cord stump typically falls off within 1-3 weeks"
+    - "Signs of omphalitis requiring urgent evaluation: erythema spreading from the base, foul-smelling discharge, warmth, or swelling"
+    - "Sponge baths only until the cord stump falls off and the site is healed"
+  when_to_call:
+    - "Temperature >= 100.4 F (38.0 C) rectally -- this is an emergency in the first 28 days of life"
+    - "Poor feeding, refusing to eat, or feeding less than 6 times in 24 hours after day 3"
+    - "Excessive jaundice: yellowing spreading to chest, abdomen, or extremities, or deep orange/yellow color"
+    - "Lethargy, difficulty arousing, weak or absent cry, or floppiness"
+    - "Persistent vomiting (especially bilious/green), bloody stools, or abdominal distension"
+    - "Respiratory distress: grunting, nasal flaring, chest retractions, or breathing rate > 60/min"
+    - "Cyanosis (blue color of lips, tongue, or central body -- acrocyanosis of hands/feet alone is normal)"
+  circumcision_care:
+    - "If circumcised: apply petroleum jelly and gauze with each diaper change for 3-5 days"
+    - "Expect a yellowish film (granulation tissue) over the healing site -- this is normal, not infection"
+    - "Call if there is active bleeding that does not stop with gentle pressure, foul-smelling discharge, or inability to urinate within 12 hours"
+    - "If uncircumcised: do not retract the foreskin; clean the external surface only"
+
+immunizations_due:
+  - vaccine: "Hepatitis B (HepB)"
+    cvx: 8
+    dose_number: "1st dose (birth dose)"
+    notes: "Administer within 24 hours of birth per 2025 ACIP schedule. For infants born to HBsAg-positive mothers: give HepB vaccine AND HBIG (hepatitis B immune globulin) within 12 hours of birth. For infants born to mothers with unknown HBsAg status: give HepB vaccine within 12 hours and test mother immediately."
+  - vaccine: "Nirsevimab (RSV monoclonal antibody, <5 kg)"
+    cvx: 306
+    dose_number: "Single dose"
+    notes: "Nirsevimab is a monoclonal antibody (passive immunization), not a traditional vaccine. CVX 306 for infants weighing less than 5 kg. Indicated for all infants born during or entering their first RSV season (typically October through March). Administer before hospital discharge if born during RSV season."
+  - vaccine: "Nirsevimab (RSV monoclonal antibody, >=5 kg)"
+    cvx: 307
+    dose_number: "Single dose"
+    notes: "CVX 307 for infants weighing 5 kg or more at time of administration. Same indication as CVX 306 but at the higher weight-based dose. Most term newborns will receive CVX 306 (the <5 kg dose) at birth."
+
+physical_exam_focus:
+  - area: "Anterior and posterior fontanelles"
+    detail: "Anterior fontanelle typically 1-4 cm (diamond-shaped), soft and flat. Posterior fontanelle typically 0.5-1 cm (triangular), may be difficult to palpate. Palpate all suture lines."
+    teaching_point: "A large anterior fontanelle may be seen in hypothyroidism, hydrocephalus, or skeletal dysplasias. A third fontanelle (between anterior and posterior along the sagittal suture) may be a normal variant or associated with Down syndrome. Overriding sutures can be normal from delivery but should resolve; ridging of sutures raises concern for craniosynostosis."
+  - area: "Red reflex"
+    detail: "Bilateral simultaneous red reflex with direct ophthalmoscope at 12-18 inches. Should be symmetric, bright red-orange bilaterally. Also assess for subconjunctival hemorrhage (common after vaginal delivery)."
+    teaching_point: "Absent or white reflex (leukocoria) is an emergency -- must rule out retinoblastoma, congenital cataract, or other intraocular pathology. Asymmetric reflex may suggest anisometropia or strabismus. Subconjunctival hemorrhages from birth trauma resolve spontaneously within 1-2 weeks."
+  - area: "Head and skull"
+    detail: "Palpate for caput succedaneum (diffuse, boggy swelling crossing suture lines) and cephalohematoma (firm, fluctuant swelling limited by suture lines). Assess head shape and circumference."
+    teaching_point: "Caput succedaneum resolves within days and crosses suture lines. Cephalohematoma is subperiosteal, does NOT cross suture lines, and resolves over weeks to months. Large cephalohematomas increase risk of hyperbilirubinemia. Cephalohematomas that do not resolve or have underlying skull fracture need further evaluation."
+  - area: "Hip examination (Barlow and Ortolani)"
+    detail: "Ortolani: abduct flexed hips gently, feel for a 'clunk' as a dislocated hip reduces into the acetabulum. Barlow: adduct flexed hip with gentle posterior pressure, feel for subluxation or dislocation out of the acetabulum."
+    teaching_point: "The newborn exam is the earliest opportunity to detect DDH. Risk factors include breech presentation, family history, female sex, and firstborn. A 'click' (ligamentous) is different from a 'clunk' (bony, pathologic). Hip ultrasound is the imaging modality of choice before 4-6 months. AAP recommends ultrasound at 6 weeks for breech infants even with a normal exam."
+  - area: "Cardiac auscultation and perfusion"
+    detail: "Listen in all four positions with infant calm. Assess rate (normal 120-160 bpm), rhythm, and murmurs. Palpate femoral pulses bilaterally and compare with brachial pulses. Assess for central cyanosis."
+    teaching_point: "Transitional murmurs (PDA closing, tricuspid regurgitation) are common in the first 24-48 hours and typically resolve. Persistent murmurs, absent or diminished femoral pulses (coarctation of the aorta), or differential cyanosis warrant urgent echocardiography. CCHD screening by pulse oximetry complements but does not replace cardiac auscultation."
+  - area: "Skin"
+    detail: "Assess for jaundice (cephalocaudal progression), birthmarks (Mongolian spots, nevus simplex/salmon patch, port-wine stain), erythema toxicum neonatorum, milia, and neonatal acne. Note any petechiae or bruising."
+    teaching_point: "Erythema toxicum (red blotchy rash with papules/pustules, eosinophils on Wright stain) is benign and self-limited. Port-wine stains in the V1 distribution require evaluation for Sturge-Weber syndrome. Mongolian spots (dermal melanocytosis) are benign blue-gray patches, most common over the sacrum in infants with darker skin tones -- document to avoid confusion with bruising. Jaundice visible in the first 24 hours is always pathologic."
+  - area: "Clavicles"
+    detail: "Palpate both clavicles along their full length for crepitus, swelling, or discontinuity. Observe for asymmetric Moro reflex or pseudoparalysis of the affected arm."
+    teaching_point: "Clavicle fracture is the most common birth-related fracture, especially with macrosomia or shoulder dystocia. An asymmetric Moro reflex is a key clue. Most clavicle fractures heal without treatment in 7-10 days. A callus may be palpable at 1-2 weeks. Distinguish from brachial plexus injury (Erb palsy) which presents with arm weakness in a 'waiter's tip' position."
+  - area: "Genitalia"
+    detail: "Males: confirm bilateral descended testes, assess for hypospadias (meatal position), inguinal hernia, or hydrocele. Females: assess for labial adhesions, vaginal discharge (physiologic estrogen withdrawal), or clitoromegaly."
+    teaching_point: "Undescended testes (cryptorchidism) should be documented and followed -- refer to urology if not descended by 6 months. Do not circumcise if hypospadias is present (foreskin may be needed for surgical repair). Physiologic vaginal discharge or pseudo-menses (estrogen withdrawal) in female newborns is normal and self-limited. Ambiguous genitalia requires urgent endocrine evaluation."
+  - area: "Growth parameters"
+    detail: "Plot birth weight, length, and head circumference on WHO growth charts. Note birth weight relative to gestational age (SGA <10th percentile, AGA 10-90th, LGA >90th percentile)."
+    teaching_point: "SGA infants are at higher risk for hypoglycemia, polycythemia, and hypothermia. LGA infants are at higher risk for birth injuries, hypoglycemia (especially if mother had gestational diabetes), and polycythemia. Weight loss of up to 7-10% in first 3-5 days is expected; failure to regain birth weight by 14 days warrants evaluation of feeding adequacy."
+
+common_mistakes:
+  - "Failing to administer the HepB birth dose within 24 hours of birth"
+  - "Not administering HBIG along with HepB vaccine to infants born to HBsAg-positive mothers within 12 hours"
+  - "Missing the newborn metabolic screen timing -- must be collected after 24 hours of age for accurate results"
+  - "Performing CCHD pulse oximetry screening before 24 hours of life, leading to false positives from transitional circulation"
+  - "Confusing caput succedaneum (crosses suture lines, resolves quickly) with cephalohematoma (does not cross suture lines, resolves slowly)"
+  - "Calling a ligamentous hip 'click' a positive Ortolani or Barlow -- the pathologic finding is a 'clunk'"
+  - "Attempting to circumcise when hypospadias is present (foreskin needed for repair)"
+  - "Dismissing jaundice in the first 24 hours of life as physiologic -- jaundice before 24 hours is always pathologic"
+  - "Not counseling on safe sleep practices before discharge (ABCs: Alone, Back, Crib)"
+  - "Failing to document Mongolian spots, leading to potential confusion with non-accidental trauma"
+  - "Not counseling that fever >= 100.4 F (38.0 C) rectally in a neonate is an emergency requiring immediate evaluation"
+  - "Overlooking asymmetric Moro reflex as a sign of clavicle fracture or brachial plexus injury"
+  - "Forgetting to counsel breastfeeding mothers on vitamin D 400 IU daily supplementation for the infant"
+
+possible_findings:
+  - finding: "Physiologic jaundice"
+    description: "Yellowish discoloration of skin and sclerae appearing after 24 hours of life, peaking at days 3-5 in term infants. Cephalocaudal progression correlates with bilirubin level."
+    probability: 0.60
+    framework_link: "neonatal_jaundice.yaml"
+    age_relevance: "Affects up to 60% of term and 80% of preterm newborns. Use hour-specific Bhutani nomogram to determine risk. Phototherapy thresholds are based on gestational age and risk factors. Jaundice before 24 hours is always pathologic."
+  - finding: "Hip click or DDH"
+    description: "Positive Ortolani (clunk on abduction) or Barlow (subluxation on adduction) maneuver. May have asymmetric thigh folds or apparent leg length discrepancy. A soft click (ligamentous) is distinguished from a clunk (bony, pathologic)."
+    probability: 0.03
+    framework_link: "ddh.yaml"
+    age_relevance: "Newborn exam is the first opportunity for DDH detection. Risk factors: breech, family history, female, firstborn. Confirm with hip ultrasound at 4-6 weeks. Early detection and harness treatment have the best outcomes."
+  - finding: "Clavicle fracture"
+    description: "Crepitus or swelling over the clavicle, asymmetric Moro reflex, or pseudoparalysis of the ipsilateral arm. Most common with macrosomia, shoulder dystocia, or difficult delivery."
+    probability: 0.03
+    framework_link: "birth_trauma.yaml"
+    age_relevance: "Most common birth-related fracture. Usually heals without intervention in 7-10 days. A callus forms at 1-2 weeks. Important to distinguish from brachial plexus injury."
+  - finding: "Tongue-tie (ankyloglossia)"
+    description: "Short, tight, or thickened lingual frenulum restricting tongue mobility. May present with difficulty latching, poor milk transfer, nipple pain in breastfeeding mother, or clicking during feeds."
+    probability: 0.05
+    framework_link: "ankyloglossia.yaml"
+    age_relevance: "Identified at newborn exam or when breastfeeding difficulties arise. Frenotomy is considered if functionally significant (impairing breastfeeding). Refer to lactation and ENT/pediatric dentistry for evaluation."
+  - finding: "Heart murmur (transitional or pathologic)"
+    description: "Systolic murmur detected on auscultation. Transitional murmurs (PDA closing, tricuspid regurgitation) are soft, brief, and resolve within 48 hours. Pathologic murmurs may be harsh, diastolic, or associated with other signs."
+    probability: 0.10
+    framework_link: "neonatal_murmurs.yaml"
+    age_relevance: "Transitional murmurs in the first 48 hours are common. Persistent murmurs, diminished femoral pulses, cyanosis, or abnormal CCHD screen warrant echocardiography. VSD is the most common congenital heart defect."
+  - finding: "Cephalohematoma"
+    description: "Firm, fluctuant subperiosteal hemorrhage that does NOT cross suture lines. Most commonly overlies the parietal bone. May enlarge slightly over the first 24-48 hours."
+    probability: 0.05
+    framework_link: "birth_trauma.yaml"
+    age_relevance: "Associated with vacuum or forceps delivery. Resolves over weeks to months. Increases risk of hyperbilirubinemia due to blood resorption. Rarely, may calcify. Underlying skull fracture should be considered if large or associated with other findings."
+  - finding: "Erythema toxicum neonatorum"
+    description: "Benign self-limited rash with erythematous macules, papules, and pustules. Appears within 24-48 hours of life and may wax and wane. Wright stain of pustule contents shows eosinophils."
+    probability: 0.40
+    framework_link: "neonatal_rashes.yaml"
+    age_relevance: "Affects up to 50% of term newborns. Resolves spontaneously within 5-14 days. No treatment needed. Important to distinguish from neonatal HSV (clustered vesicles on erythematous base) and staph pustulosis (neutrophils on stain, localized to intertriginous areas)."
+  - finding: "Undescended testis (cryptorchidism)"
+    description: "Testis not palpable in the scrotum on exam. May be retractile (can be gently manipulated into scrotum and stays briefly), inguinal (palpable in inguinal canal), or nonpalpable (abdominal or absent)."
+    probability: 0.03
+    framework_link: "cryptorchidism.yaml"
+    age_relevance: "Present in approximately 3% of term and up to 30% of preterm male newborns. Many descend spontaneously by 3-6 months. Refer to urology if not descended by 6 months. Orchiopexy typically performed by 12 months to preserve fertility and reduce malignancy risk."
+
+parent_styles:
+  - "anxious first-time parent overwhelmed by the responsibility of a newborn"
+  - "experienced multiparous parent who may dismiss counseling as unnecessary"
+  - "vaccine-hesitant parent questioning the need for a birth-dose hepatitis B vaccine"
+  - "postpartum depression or distress -- flat affect, tearfulness, difficulty bonding, or expressing feelings of inadequacy"
+  - "parent insisting on bed-sharing for cultural or practical reasons despite safe sleep counseling"
+  - "parent anxious about jaundice after seeing yellowing of the skin"
+  - "parent with strong opinions about circumcision (for or against) seeking medical guidance"
+  - "non-English speaking parent requiring interpreter services for discharge teaching"
+  - "parent of a NICU infant being prepared for transition to home"
+  - "teenage or adolescent parent needing additional support and education"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Clinical Practice Guideline: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation (2022 Revision)"
+  - "AAP Policy Statement: Red Reflex Examination in Neonates, Infants, and Children"
+  - "AAP Policy Statement: SIDS and Other Sleep-Related Infant Deaths, Updated 2022"
+  - "AAP Recommendation: CCHD Screening Using Pulse Oximetry (2025 Update -- single retest protocol)"
+  - "AAP/ACOG Guidelines for Perinatal Care, 8th Edition"
+  - "AAP Clinical Report: Screening for Developmental Dysplasia of the Hip"
+  - "ACIP Recommendations: Nirsevimab for Prevention of RSV Disease in Infants and Young Children (2023-2024 Season, updated 2025)"
+  - "WHO Child Growth Standards (0-24 months)"

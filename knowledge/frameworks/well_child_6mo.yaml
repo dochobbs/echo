@@ -1,0 +1,233 @@
+# 6 Month Well-Child Visit - Teaching Framework
+topic: "6 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 6
+category: "well_child"
+
+teaching_goals:
+  - "Perform a comprehensive physical exam with emphasis on age-specific findings (teeth eruption, sitting stability, object transfer, visual tracking)"
+  - "Assess developmental milestones using the CDC 2022 checklist (75th percentile standard)"
+  - "Administer and counsel on immunizations per 2025 ACIP schedule, including influenza if in season"
+  - "Screen for maternal depression using EPDS (last routinely recommended screening)"
+  - "Perform oral health risk assessment and apply fluoride varnish"
+  - "Deliver anticipatory guidance on complementary food introduction, early allergen exposure, choking prevention, and dental home establishment"
+  - "Recognize common incidental findings at this age and determine appropriate workup vs reassurance"
+
+expected_milestones:
+  gross_motor:
+    - "Rolls from tummy to back"
+    - "Pushes up with straight arms when on tummy"
+    - "Leans on hands to support self while sitting (tripod sitting)"
+  fine_motor:
+    - "Reaches for and grasps toys within range"
+    - "Brings objects to mouth"
+    - "Transfers objects from one hand to the other (emerging)"
+    - "Uses raking grasp to pick up small objects"
+  language:
+    - "Blows raspberries (lip buzzing)"
+    - "Makes squealing and vowel-consonant sounds ('ba', 'da', 'ga')"
+    - "Takes turns making sounds with caregiver (vocal turn-taking)"
+  social_emotional:
+    - "Knows familiar people and may show stranger wariness"
+    - "Laughs and squeals with delight"
+    - "Likes to look at self in mirror"
+    - "Responds to own name by turning to look"
+  cognitive:
+    - "Puts things in mouth to explore them"
+    - "Reaches to grab a toy they want"
+    - "Closes lips to show they do not want more food"
+    - "Shows curiosity about things out of reach"
+
+screening_tools:
+  - tool: "Edinburgh Postnatal Depression Scale (EPDS)"
+    when: "routine (last recommended)"
+  - tool: "Oral health risk assessment"
+    when: "routine"
+  - tool: "Fluoride varnish application"
+    when: "routine (upon tooth eruption or per state guidelines)"
+  - tool: "Developmental surveillance (clinical observation)"
+    when: "routine"
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "if concern"
+
+anticipatory_guidance:
+  safety:
+    - "Childproofing -- infant is increasingly mobile (rolling, scooting); secure furniture, cover outlets, gate stairs"
+    - "Rear-facing car seat in the back seat; ensure proper harness fit as infant grows"
+    - "Choking hazard awareness -- no whole grapes, hot dogs, nuts, popcorn, hard candy, raw carrots, chunks of meat, or coin-shaped foods"
+    - "Cut soft foods into small pieces no larger than 1/2 inch; always supervise feeding"
+    - "Keep small objects, button batteries, coins, and magnets out of reach"
+    - "Water safety -- never leave infant unattended near water, including bathtubs, buckets, and pools"
+    - "Avoid infant walkers (AAP recommends against them due to injury risk)"
+    - "Poison prevention -- store medications and household chemicals out of reach; post Poison Control number (1-800-222-1222)"
+  nutrition:
+    - "Introduce complementary foods (purees and soft mashed foods) while continuing breastmilk or formula as primary nutrition"
+    - "Start with iron-rich foods (iron-fortified cereal, pureed meats, beans) to address increased iron needs at 6 months"
+    - "Early introduction of allergenic foods (peanut butter thinned into puree, well-cooked egg, dairy) -- recommended between 4-6 months to reduce allergy risk"
+    - "For infants with severe eczema or known egg allergy, consider peanut introduction after evaluation (per NIAID/LEAP guidelines)"
+    - "Introduce one new food every 3-5 days to monitor for allergic reactions (though AAP supports faster introduction)"
+    - "Avoid honey until 12 months (botulism risk)"
+    - "Begin offering water in an open or straw cup with meals (no juice before 12 months)"
+    - "Breastfed infants: continue vitamin D supplementation 400 IU daily"
+    - "Fluoride supplementation if primary water source is not fluoridated (0.25 mg/day from 6 months to 3 years)"
+  development:
+    - "Continue tummy time to strengthen core and support sitting and crawling readiness"
+    - "Provide a variety of textures and toys for exploration (rattles, stacking cups, board books)"
+    - "Read to infant daily -- point at pictures, name objects to build receptive language"
+    - "Respond to babbling with words and conversation -- reciprocal interaction supports language development"
+    - "Encourage sitting practice with support (pillows around infant for safety)"
+    - "No screen time for children under 2 years (except video chatting)"
+  behavior:
+    - "Stranger anxiety may emerge around 6-8 months -- this is a normal developmental milestone"
+    - "Separation anxiety may begin; reassure parents this reflects healthy attachment"
+    - "Infant may become frustrated when unable to reach desired objects -- support exploration while ensuring safety"
+    - "Encourage responsive parenting and consistent routines"
+    - "Discuss discipline strategies: redirection is age-appropriate; 'no' can be introduced for safety situations"
+  sleep:
+    - "Total sleep: 12-16 hours per 24-hour period (including 2-3 naps)"
+    - "Many infants can sleep 6-8 hour stretches overnight by 6 months"
+    - "Maintain consistent bedtime routine (bath, book, song, bed)"
+    - "If sleep training is desired, discuss evidence-based approaches (graduated extinction, bedtime fading)"
+    - "Ensure safe sleep environment -- firm flat surface, no loose bedding; can transition to sleep sack if not already"
+    - "Night wakings may increase temporarily with teething, developmental leaps, or separation anxiety"
+  dental:
+    - "First teeth typically erupt around 6 months (lower central incisors)"
+    - "Begin brushing with a smear (grain-of-rice sized amount) of fluoride toothpaste twice daily as soon as teeth appear"
+    - "Establish a dental home by age 1 (first dental visit)"
+    - "Avoid putting infant to bed with a bottle (risk of early childhood caries)"
+    - "Teething symptoms are typically mild (drooling, fussiness, gum rubbing) -- high fever and diarrhea are NOT caused by teething"
+
+immunizations_due:
+  - vaccine: "Hepatitis B (HepB)"
+    cvx: 8
+    dose_number: "3rd dose"
+    notes: "Minimum age for 3rd dose is 24 weeks. Minimum interval 8 weeks from 2nd dose AND at least 16 weeks from 1st dose. Final dose should not be given before 24 weeks of age."
+  - vaccine: "Rotavirus (RV5 - RotaTeq)"
+    cvx: 116
+    dose_number: "3rd dose"
+    notes: "Oral vaccine. 3rd and final dose of RV5 series. Maximum age for final dose is 8 months 0 days. RV1 (Rotarix) is a 2-dose series completed at 4 months -- no 6-month dose needed for RV1."
+  - vaccine: "Diphtheria, Tetanus, Pertussis (DTaP)"
+    cvx: 20
+    dose_number: "3rd dose"
+    notes: "Intramuscular, anterolateral thigh. Minimum interval 4 weeks from 2nd dose. Counsel on expected local reactions and low-grade fever. Acetaminophen may be used for discomfort."
+  - vaccine: "Haemophilus influenzae type b (Hib - PRP-T)"
+    cvx: 48
+    dose_number: "3rd dose"
+    notes: "Intramuscular. Applies to PRP-T products (ActHIB, Hiberix) which require a 3rd dose at 6 months. PRP-OMP (PedvaxHIB) is a 2-dose primary series with no 6-month dose (booster at 12-15 months only)."
+  - vaccine: "Pneumococcal conjugate (PCV20 - Prevnar 20)"
+    cvx: 216
+    dose_number: "3rd dose"
+    notes: "Intramuscular. PCV20 replaced PCV15/PCV13 per 2025 ACIP update. 4-dose series (2, 4, 6, 12-15 months). Minimum interval 4 weeks from 2nd dose."
+  - vaccine: "Inactivated Poliovirus (IPV)"
+    cvx: 10
+    dose_number: "3rd dose"
+    notes: "Intramuscular. Minimum interval 4 weeks from 2nd dose. 3rd dose can be given as early as 6 months. Combination vaccines (Pediarix, Vaxelis) may reduce injection count."
+  - vaccine: "Influenza (IIV4)"
+    cvx: 150
+    dose_number: "1st dose (if in season)"
+    notes: "Intramuscular. Eligible starting at 6 months of age. First season requires 2 doses given at least 4 weeks apart. Administer during influenza season (typically October-March). LAIV (nasal spray) is not approved for children under 2 years."
+
+physical_exam_focus:
+  - area: "Oral cavity and teeth"
+    detail: "Inspect gums for erupting teeth (lower central incisors typically first). Assess for natal teeth remnants, mucosal lesions, or thrush. Apply fluoride varnish if teeth present."
+    teaching_point: "First teeth erupt around 6 months. Eruption cysts (bluish swelling over erupting tooth) are benign and self-resolving. Natal/neonatal teeth present before 30 days are usually removed due to aspiration risk. Early childhood caries prevention starts now with fluoride toothpaste and avoidance of bottle in bed."
+  - area: "Sitting assessment"
+    detail: "Observe infant's ability to sit with support (tripod sitting -- leaning forward on hands). Assess trunk control and protective reflexes (lateral propping). Note if infant can sit momentarily without support."
+    teaching_point: "Most 6-month-olds sit with hand support (tripod). Independent sitting typically develops by 7-9 months. Persistent inability to sit with support by 9 months warrants developmental evaluation. Assess for truncal hypotonia if the infant is floppy or cannot maintain any supported sitting posture."
+  - area: "Fine motor and object manipulation"
+    detail: "Observe reaching, grasping, transferring objects between hands, and bringing objects to mouth. Assess for hand preference (should NOT have one yet)."
+    teaching_point: "A strong hand preference before 12-18 months suggests contralateral upper motor neuron pathology (e.g., hemiplegic cerebral palsy). At 6 months, infants should use both hands equally. Raking grasp is typical; pincer grasp develops around 9-10 months."
+  - area: "Visual tracking and eye alignment"
+    detail: "Assess binocular visual tracking of an object through full range of motion. Perform cover-uncover test and corneal light reflex (Hirschberg test) for strabismus screening."
+    teaching_point: "Intermittent strabismus should have resolved by 4-6 months. Persistent misalignment at 6 months requires ophthalmology referral. Pseudostrabismus (wide nasal bridge with prominent epicanthal folds) is common and can mimic esotropia -- corneal light reflex will be symmetric."
+  - area: "Growth parameters"
+    detail: "Plot weight, length, and head circumference on WHO growth charts (used for ages 0-24 months). Calculate weight-for-length percentile. Assess growth velocity."
+    teaching_point: "Birth weight should approximately double by 5 months and triple by 12 months. Weight gain slows to approximately 15-20 g/day by 6 months. Crossing 2 or more major percentile lines (up or down) warrants investigation. Macrocephaly crossing percentiles upward may indicate hydrocephalus or familial macrocephaly."
+  - area: "Skin"
+    detail: "Examine for eczema distribution (face, extensor surfaces in infants), diaper dermatitis, and any new lesions. Assess severity of atopic dermatitis if present."
+    teaching_point: "Eczema affects up to 20% of infants and often flares around 6 months with food introduction. Moderate-to-severe eczema is an indication for early peanut introduction (per NIAID guidelines). Assess for secondary infection (honey crusting, weeping). Emollients are the foundation of management."
+  - area: "Abdomen"
+    detail: "Palpate for organomegaly, masses, or umbilical hernia. Assess for inguinal hernias, especially during crying."
+    teaching_point: "Umbilical hernias are common and most close spontaneously by age 4-5 years. Refer if defect is greater than 2 cm, enlarging, or symptomatic. Incarceration is rare with umbilical hernias (unlike inguinal). No home remedies (taping, coin placement) are effective or recommended."
+  - area: "Neurological"
+    detail: "Assess tone (axial and appendicular), primitive reflexes (Moro, ATNR should be fading), and emerging protective reflexes (lateral propping, parachute emerging). Observe for symmetry of movement."
+    teaching_point: "Persistence of primitive reflexes (Moro, ATNR) beyond 6 months suggests upper motor neuron pathology and warrants neurological evaluation. The parachute reflex (arms extend when tilted forward) typically appears at 6-9 months and persists for life. Asymmetric tone or movement is a red flag for cerebral palsy."
+
+common_mistakes:
+  - "Failing to perform oral health assessment and fluoride varnish application at the 6-month visit"
+  - "Not screening for maternal depression at 6 months (this is the last routinely recommended EPDS)"
+  - "Advising delayed introduction of allergenic foods (outdated guidance) instead of early introduction between 4-6 months"
+  - "Administering a 3rd dose of RV1 (Rotarix) -- RV1 is a 2-dose series completed at 4 months; only RV5 (RotaTeq) has a 6-month dose"
+  - "Giving a 3rd Hib dose when using PRP-OMP (PedvaxHIB) -- PRP-OMP is a 2-dose primary series with no 6-month dose"
+  - "Forgetting to counsel on fluoride supplementation when the water supply is not fluoridated"
+  - "Missing influenza vaccine opportunity during flu season (first eligible at 6 months, needs 2 doses first season)"
+  - "Attributing high fever or diarrhea to teething without considering other etiologies"
+  - "Not assessing for iron deficiency risk, especially in exclusively breastfed infants who have not started iron-rich complementary foods"
+  - "Ignoring a persistent hand preference at 6 months (red flag for contralateral upper motor neuron lesion)"
+  - "Using CDC growth charts instead of WHO growth charts for infants under 24 months"
+  - "Failing to counsel on choking hazards as the infant transitions to solid foods"
+  - "Not discussing cup introduction and recommending continued exclusive bottle use beyond what is developmentally appropriate"
+
+possible_findings:
+  - finding: "Tooth eruption with eruption cyst"
+    description: "Bluish, translucent swelling overlying an erupting tooth. Painless, fluctuant, and self-resolving. No intervention needed unless symptomatic or persists beyond expected eruption."
+    probability: 0.08
+    framework_link: "teething.yaml"
+    age_relevance: "First teeth typically erupt around 6 months. Lower central incisors are usually first. Eruption cysts are benign and resolve spontaneously when the tooth breaks through."
+  - finding: "Atopic dermatitis flare"
+    description: "Erythematous, scaly, pruritic patches on the face, scalp, and extensor surfaces. May worsen with introduction of complementary foods. Skin may be dry and rough."
+    probability: 0.15
+    framework_link: "atopic_dermatitis.yaml"
+    age_relevance: "Eczema prevalence peaks in infancy. Flares around 6 months often coincide with food introduction. Moderate-to-severe eczema warrants early peanut introduction evaluation per NIAID guidelines."
+  - finding: "Iron deficiency or risk"
+    description: "Pallor, poor weight gain, or irritability in an exclusively breastfed infant without iron supplementation or iron-rich complementary foods. May be subclinical at this age."
+    probability: 0.10
+    framework_link: "iron_deficiency_anemia.yaml"
+    age_relevance: "Iron stores from birth deplete around 4-6 months. Exclusively breastfed infants are at higher risk without supplementation or iron-rich foods. Universal screening recommended at 12 months, but clinical suspicion should prompt earlier evaluation."
+  - finding: "Food protein allergy (CMPI/egg/other)"
+    description: "Vomiting, diarrhea (possibly bloody), eczema flare, urticaria, or irritability after introduction of a new food. IgE-mediated reactions occur within minutes to hours; non-IgE (FPIES) may present with delayed vomiting 1-4 hours after ingestion."
+    probability: 0.06
+    framework_link: "cmpi.yaml"
+    age_relevance: "Food allergies may first present at 6 months with complementary food introduction. Distinguish IgE-mediated (immediate urticaria, angioedema) from non-IgE (delayed GI symptoms). Cow's milk and egg are the most common allergens in infancy."
+  - finding: "Strabismus"
+    description: "Persistent misalignment of the eyes detected by asymmetric corneal light reflex (Hirschberg test) or cover-uncover test. May be constant or intermittent. Distinguish from pseudostrabismus."
+    probability: 0.04
+    framework_link: "conjunctivitis.yaml"
+    age_relevance: "Intermittent strabismus should resolve by 4-6 months. Persistent misalignment at 6 months requires ophthalmology referral. Untreated strabismus can lead to amblyopia. Pseudostrabismus is common due to wide nasal bridge and prominent epicanthal folds."
+  - finding: "Failure to thrive"
+    description: "Weight crossing 2 or more major percentile lines downward, weight-for-length below 5th percentile, or inadequate weight gain velocity. May present with developmental delays if severe."
+    probability: 0.05
+    framework_link: "failure_to_thrive.yaml"
+    age_relevance: "Can emerge at 6 months as caloric needs increase and complementary feeding begins. Evaluate feeding practices, caloric intake, and psychosocial stressors. Consider organic causes (GERD, celiac, UTI) if history suggests."
+  - finding: "Developmental delay"
+    description: "Not meeting expected milestones: not rolling, not reaching for objects, not babbling, not recognizing familiar people, persistent head lag, or hypotonia."
+    probability: 0.04
+    framework_link: "speech_delay.yaml"
+    age_relevance: "By 6 months, absence of rolling, lack of social smile or laugh, no babbling, or persistent head lag are concerning. Refer for developmental evaluation and early intervention services if delays are identified."
+  - finding: "Blocked nasolacrimal duct (dacryostenosis)"
+    description: "Persistent tearing (epiphora) and mucoid discharge from one or both eyes without conjunctival injection. Positive regurgitation test with massage over lacrimal sac."
+    probability: 0.08
+    framework_link: "dacryostenosis.yaml"
+    age_relevance: "Still common at 6 months. Most resolve spontaneously by 12 months with conservative management (nasolacrimal massage, warm compresses). Refer to ophthalmology if not resolved by 12 months for possible probing."
+
+parent_styles:
+  - "anxious first-time parent concerned about starting solid foods and allergic reactions"
+  - "experienced multiparous parent who may minimize developmental concerns or skip immunizations for this visit"
+  - "vaccine-hesitant parent requesting delayed or alternative schedule, particularly regarding influenza vaccine"
+  - "postpartum depression -- flat affect, poor engagement, particularly relevant as this is the last recommended EPDS screening"
+  - "overwhelmed parent with limited support system struggling with sleep deprivation"
+  - "parent focused on milestones and comparing to other infants of the same age"
+  - "non-English speaking parent requiring interpreter services"
+  - "parent with medical background who asks detailed questions about allergen introduction and iron supplementation"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Policy Statement: Oral Health Risk Assessment Timing and Establishment of the Dental Home (2003, reaffirmed)"
+  - "AAP Clinical Report: Fluoride Use in Caries Prevention in the Primary Care Setting (2020)"
+  - "NIAID Addendum Guidelines for the Prevention of Peanut Allergy (LEAP Study, 2017)"
+  - "AAP Committee on Nutrition: Complementary Feeding (2024)"
+  - "ACOG/AAP: Screening for Perinatal Depression (Committee Opinion 757)"
+  - "WHO Child Growth Standards (0-24 months)"
+  - "AAP Section on Oral Health: Maintaining and Improving the Oral Health of Young Children (2014)"

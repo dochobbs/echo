@@ -1,0 +1,225 @@
+# 24 Month (2 Year) Well-Child Visit - Teaching Framework
+topic: "24 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 24
+category: "well_child"
+
+teaching_goals:
+  - "Transition growth chart plotting from WHO (0-24 months) to CDC charts (2-20 years) and begin calculating BMI-for-age"
+  - "Assess developmental milestones using the CDC 2022 checklist (75th percentile standard) with focus on language explosion and social-emotional development"
+  - "Complete M-CHAT-R/F autism screening (routine at 18 and 24 months per AAP) and interpret results"
+  - "Administer catch-up immunizations per 2025 ACIP schedule (HepA #2, annual influenza)"
+  - "Screen for lead exposure risk and order blood lead level for Medicaid-enrolled children or those with risk factors"
+  - "Deliver anticipatory guidance on toilet training readiness, nutrition transition, screen time limits, and preschool readiness"
+  - "Recognize common behavioral and developmental concerns at this age including language delay, autism spectrum disorder, and behavioral dysregulation"
+
+expected_milestones:
+  gross_motor:
+    - "Runs (not just walks fast) -- feet leave the ground"
+    - "Kicks a ball forward without losing balance"
+    - "Walks up stairs with hand held or holding the railing (may not alternate feet yet)"
+    - "Jumps with both feet leaving the ground (emerging)"
+  fine_motor:
+    - "Stacks 6 or more blocks into a tower"
+    - "Turns pages of a book one at a time"
+    - "Uses a spoon and fork with minimal spilling"
+    - "Turns doorknobs and unscrews lids"
+  language:
+    - "Uses 50 or more words (vocabulary explosion between 18-24 months)"
+    - "Puts 2 words together in short phrases ('more milk', 'daddy go', 'want up')"
+    - "Points to things in a book when asked ('Where is the dog?')"
+    - "Points to at least 2 body parts when asked"
+    - "Follows 2-step instructions ('Pick up the ball and bring it to me')"
+  social_emotional:
+    - "Notices when others are hurt or upset and may try to comfort them (emerging empathy)"
+    - "Looks at your face to see how to react in new situations (social referencing)"
+    - "Plays next to other children and sometimes with them (parallel play transitioning to associative play)"
+    - "Shows defiant behavior and says 'no' (normal autonomy development)"
+    - "Shows a wider range of emotions -- frustration, pride, shame"
+  cognitive:
+    - "Plays with more than one toy at a time (e.g., putting toy food on a plate)"
+    - "Begins to play make-believe or pretend (feeds a doll, talks on toy phone)"
+    - "Points to things to show you something interesting (declarative pointing)"
+    - "Tries to use switches, knobs, or buttons on a toy"
+    - "Completes simple shape sorters and puzzles (2-3 pieces)"
+
+screening_tools:
+  - tool: "M-CHAT-R/F (Modified Checklist for Autism in Toddlers, Revised with Follow-Up)"
+    when: "routine"
+    notes: "Routine screening at 18 and 24 months per AAP. Positive screen requires follow-up interview (M-CHAT-R/F). Medium-risk (score 3-7) requires follow-up; high-risk (score 8-20) warrants immediate referral."
+  - tool: "Blood lead level"
+    when: "risk-based (required for Medicaid at 12 and 24 months)"
+    notes: "Universal screening for Medicaid-enrolled children. Risk-based for others: older housing (pre-1978), renovation exposure, immigrant/refugee, pica behavior, sibling with elevated lead."
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "if concern; routine at 30 months"
+    notes: "Upcoming at 30-month visit. Use at 24 months if developmental concern raised by parent or clinical observation."
+  - tool: "BMI-for-age percentile (CDC growth charts)"
+    when: "routine (begins at 24 months)"
+    notes: "Transition from WHO weight-for-length to CDC BMI-for-age at 2 years. Overweight: 85th-94th percentile. Obesity: >= 95th percentile."
+  - tool: "Dental screening and fluoride varnish"
+    when: "routine"
+    notes: "Apply fluoride varnish if teeth present. Confirm establishment of dental home (first visit by age 1 or within 6 months of first tooth)."
+
+anticipatory_guidance:
+  safety:
+    - "Car seat: Remain rear-facing as long as possible (until maximum height or weight allowed by car seat manufacturer); most children should remain rear-facing until at least age 2"
+    - "Drowning prevention: Never leave unattended near water -- bathtubs, pools, buckets. Fence pools with self-closing, self-latching gates. Constant arm's-reach supervision"
+    - "Poison prevention: Lock up medications and household chemicals. Keep Poison Control number accessible (1-800-222-1222). No syrup of ipecac"
+    - "Gun safety: If firearms in the home, store locked, unloaded, ammunition separate. Ask about firearms in homes where child visits"
+    - "Fall prevention: Use window guards above first floor. Gate stairways. Supervise playground equipment"
+    - "Pedestrian safety: Hold hands near streets and in parking lots. Toddlers have no traffic sense"
+    - "Choking hazards: Avoid round, hard foods (whole grapes, hot dogs, nuts, popcorn, raw carrots). Cut food into small pieces. Supervise eating"
+  nutrition:
+    - "Transition to low-fat (1%) or skim milk after age 2 (whole milk recommended from 12-24 months for brain development)"
+    - "Limit milk intake to 16-24 oz per day to prevent iron deficiency anemia (milk displaces iron-rich foods and inhibits iron absorption)"
+    - "Offer a variety of fruits, vegetables, whole grains, and protein at each meal. Allow self-feeding"
+    - "Avoid juice or limit to 4 oz/day of 100% fruit juice. Water is the preferred beverage after milk"
+    - "Expect picky eating and food jags as normal toddler behavior. Avoid using food as reward or punishment"
+    - "Division of responsibility (Ellyn Satter): Parent decides what, when, and where to eat; child decides whether and how much"
+    - "Ensure adequate iron and vitamin D intake. Consider iron-rich foods (meat, beans, fortified cereals) and vitamin D supplementation if dietary intake inadequate"
+  development:
+    - "Read together daily -- at least 15-20 minutes. Let child turn pages, point to pictures, and fill in words in familiar stories"
+    - "Encourage pretend play, which supports cognitive and social development"
+    - "Talk throughout the day, narrating activities ('Now we're putting on your shoes'). Expand on child's 2-word phrases ('Yes, the big red truck!')"
+    - "Provide opportunities for physical play -- running, climbing, kicking balls, playground time"
+    - "Limit screen time to no more than 1 hour per day of high-quality programming (AAP). Co-view and discuss content. Avoid screens during meals and before bedtime"
+    - "Discuss preschool readiness and the benefits of group learning environments for socialization and language development"
+  behavior:
+    - "Expect tantrums as normal at this age -- toddlers have big emotions and limited language to express them"
+    - "Use positive reinforcement and praise for desired behaviors rather than focusing on punishment"
+    - "Offer limited choices to foster autonomy ('Do you want the red cup or the blue cup?')"
+    - "Set consistent, age-appropriate limits and follow through calmly"
+    - "Redirect rather than punish. Time-outs are appropriate only briefly (1 minute per year of age) and in a safe, boring location"
+    - "Normal to have separation anxiety that may intensify with transitions (new daycare, new sibling)"
+    - "Discuss biting, hitting, and aggressive behavior as developmentally typical but requiring consistent redirection"
+  sleep:
+    - "Total sleep: approximately 11-14 hours per 24-hour period (including one nap)"
+    - "Most toddlers transition from 2 naps to 1 nap between 12-18 months; by 24 months, expect a single afternoon nap of 1-3 hours"
+    - "Maintain consistent bedtime routine: bath, teeth brushing, books, lights out at a regular time"
+    - "Transition from crib to toddler bed when child climbs out of crib or reaches 35 inches tall. Use bed rails for safety"
+    - "Night waking may return with developmental leaps, illness, or schedule changes. Respond consistently"
+    - "Avoid screens for at least 1 hour before bedtime"
+  toilet_training:
+    - "Assess readiness signs: staying dry for 2+ hours, showing interest in the toilet, discomfort with dirty diapers, able to follow simple instructions, can pull pants up and down"
+    - "Do not pressure or punish -- readiness varies widely (most children train between 18-36 months)"
+    - "Introduce a potty chair and let the child sit on it fully clothed initially to build familiarity"
+    - "Praise attempts, not just success. Avoid showing disappointment with accidents"
+    - "Most children achieve daytime dryness before nighttime dryness. Nighttime enuresis is normal until age 5-7"
+
+immunizations_due:
+  - vaccine: "Hepatitis A (HepA)"
+    cvx: 83
+    dose_number: "2nd dose (catch-up)"
+    notes: "Minimum interval 6 months from 1st dose (1st dose given at 12 months). Inactivated vaccine, intramuscular. Completes the 2-dose series."
+  - vaccine: "Influenza (IIV or LAIV)"
+    cvx: 150
+    dose_number: "Annual dose"
+    notes: "Annual influenza vaccination recommended for all children 6 months and older. If first-ever influenza vaccination, child needs 2 doses separated by at least 4 weeks. LAIV (nasal spray, CVX 151) approved for age 2+ without contraindications."
+
+physical_exam_focus:
+  - area: "Growth parameters -- transition to CDC charts"
+    detail: "Plot weight, height (standing), and head circumference. Calculate BMI (weight in kg / height in meters squared). Plot BMI-for-age on CDC growth charts. Transition from WHO charts (used for 0-24 months) to CDC charts (used for 2-20 years)."
+    teaching_point: "This visit marks a critical transition: WHO growth charts are used from birth to 24 months because they describe how children SHOULD grow (breastfed reference). CDC charts are used from age 2 to 20 and describe how US children DO grow. BMI-for-age begins at age 2 -- overweight is 85th-94th percentile, obesity is >= 95th percentile. Standing height replaces recumbent length, which may measure 1-2 cm shorter."
+  - area: "Language and communication assessment"
+    detail: "Assess expressive vocabulary (expect 50+ words), use of 2-word phrases, ability to follow 2-step commands, and pointing to body parts. Observe quality of communication -- does the child initiate communication, respond to name, use gestures?"
+    teaching_point: "Language delay is the most common developmental concern identified at 24 months. Fewer than 50 words or no 2-word combinations by 24 months warrants referral to speech-language pathology and audiology. Late talkers who have good receptive language and gestures have better prognosis, but all should be referred -- do not adopt a 'wait and see' approach."
+  - area: "Behavioral and social-emotional assessment"
+    detail: "Observe child's interaction with caregiver and examiner. Note eye contact, joint attention, pretend play, response to name, pointing, and social reciprocity. Review M-CHAT-R/F results."
+    teaching_point: "The 24-month visit is a critical window for autism spectrum disorder (ASD) detection. Red flags include: no 2-word phrases, loss of previously acquired skills (regression), poor eye contact, lack of pretend play, no pointing to show interest, not responding to name. A positive M-CHAT-R/F should trigger both developmental referral AND Early Intervention services simultaneously -- do not wait for specialist evaluation to begin services."
+  - area: "Dental examination"
+    detail: "Count teeth (expect 16-20 primary teeth by 24 months). Inspect for caries (brown or white spots on enamel, especially upper incisors), gum health, malocclusion, and oral trauma."
+    teaching_point: "Early childhood caries (ECC) is the most common chronic disease of childhood. Major risk factors: bottle/sippy cup with milk or juice at bedtime, frequent sugary snacks, no fluoride exposure, no dental home. Counsel on brushing twice daily with a rice-grain-sized amount of fluoride toothpaste and establishing a dental home if not already done."
+  - area: "Gait and musculoskeletal assessment"
+    detail: "Observe the child walking and running. Assess for genu varum (bowlegs) which is physiologic at this age, toe-walking, asymmetric gait, and in-toeing."
+    teaching_point: "Physiologic genu varum (bowlegs) is maximal around 12-18 months and should be improving by 24 months. Red flags for pathologic bowing: asymmetric, progressive worsening after 18 months, lateral thrust during walking, or short stature (consider Blount disease or rickets). Most in-toeing at this age is from metatarsus adductus or internal tibial torsion and is self-correcting."
+  - area: "Skin"
+    detail: "Examine for eczema (atopic dermatitis), bruising patterns, birthmarks, and infectious lesions. Note distribution and symmetry of any bruising."
+    teaching_point: "Bruising in a toddler who is walking and running is common over bony prominences (shins, forehead, knees). Bruising in non-mobile areas (ears, neck, trunk, buttocks) or in a specific pattern should raise concern for non-accidental trauma. Document bruise location, size, and pattern carefully."
+  - area: "Abdomen"
+    detail: "Palpate for hepatosplenomegaly, masses, and tenderness. Inspect for umbilical hernia."
+    teaching_point: "Umbilical hernias are common in toddlers and most close spontaneously by age 4-5. Referral for surgical repair if hernia persists beyond age 4-5, is larger than 2 cm, is incarcerated, or is symptomatic. Do not recommend home remedies (taping, coin placement)."
+
+common_mistakes:
+  - "Continuing to use WHO growth charts after age 2 instead of transitioning to CDC growth charts"
+  - "Failing to calculate and plot BMI-for-age, which begins at the 24-month visit"
+  - "Confusing standing height with recumbent length -- standing height may be 1-2 cm less, which is normal at the transition"
+  - "Not administering or properly interpreting the M-CHAT-R/F screening tool at the 24-month visit"
+  - "Adopting a 'wait and see' approach to language delay instead of referring to speech therapy and audiology"
+  - "Forgetting lead screening for Medicaid-enrolled children, which is required at 12 and 24 months"
+  - "Overlooking the HepA #2 catch-up dose if not yet given"
+  - "Not assessing dental health or applying fluoride varnish"
+  - "Recommending whole milk beyond age 2 when the transition to low-fat milk should occur"
+  - "Providing no guidance on toilet training readiness or pressuring parents to start too early"
+  - "Missing early signs of autism because the child is 'too young' -- 24 months is an optimal screening window"
+  - "Not distinguishing physiologic bowlegs (improving genu varum) from pathologic bowing (worsening, asymmetric, or associated with lateral thrust)"
+  - "Failing to ask about screen time and not counseling on the 1-hour daily limit"
+
+possible_findings:
+  - finding: "Language delay"
+    description: "Fewer than 50 words in expressive vocabulary, absence of 2-word combinations, limited gestures, or poor receptive language. Parents may report 'he understands everything but just doesn't talk.'"
+    probability: 0.15
+    framework_link: "speech_delay.yaml"
+    age_relevance: "24 months is the critical identification window. By this age, children should have 50+ words and 2-word phrases. Referral to speech-language pathology and audiology should not be delayed."
+  - finding: "Positive M-CHAT-R/F (autism spectrum disorder concern)"
+    description: "Positive screen on M-CHAT-R/F (score >= 3) with concerning follow-up interview. May present with limited eye contact, absent pointing, no pretend play, language delay, repetitive behaviors, or regression of previously acquired skills."
+    probability: 0.05
+    framework_link: "autism.yaml"
+    age_relevance: "24-month screening is the second routine M-CHAT window (after 18 months). Early identification allows earlier access to intensive behavioral interventions, which have the strongest evidence for improving outcomes when started before age 3."
+  - finding: "Elevated blood lead level"
+    description: "Blood lead level >= 3.5 mcg/dL (CDC 2021 reference value). Child may be asymptomatic or present with irritability, developmental delay, abdominal pain, or constipation at higher levels."
+    probability: 0.04
+    framework_link: null
+    age_relevance: "24-month screening is required for Medicaid-enrolled children. Peak lead levels typically occur at 18-36 months due to hand-to-mouth behavior and increased mobility. Levels >= 3.5 mcg/dL require environmental assessment and follow-up testing."
+  - finding: "Behavioral concerns (tantrums, aggression, defiance)"
+    description: "Parents report frequent, intense, or prolonged tantrums, aggressive behavior toward other children or adults, extreme defiance, or inability to be soothed. Must differentiate normal toddler behavior from emerging behavioral disorder."
+    probability: 0.12
+    framework_link: null
+    age_relevance: "Peak tantrum frequency occurs between 18-36 months. Most behavioral concerns at this age are developmentally normal. Red flags: self-injurious behavior, no calming within 15-20 minutes, aggression without provocation, or regression."
+  - finding: "Obesity or overweight (elevated BMI-for-age)"
+    description: "BMI-for-age >= 85th percentile (overweight) or >= 95th percentile (obesity) on CDC growth charts. May note rapid weight gain crossing percentiles or excess weight-for-length prior to BMI calculation."
+    probability: 0.10
+    framework_link: "obesity.yaml"
+    age_relevance: "BMI-for-age begins at 24 months. Early identification of obesity trajectory allows early intervention with nutrition counseling and activity promotion. Assess family history of obesity, diabetes, and cardiovascular disease."
+  - finding: "Growth faltering (failure to thrive)"
+    description: "Weight-for-age or BMI-for-age below the 5th percentile, or crossing downward across 2 or more major percentile lines. May present with picky eating, food refusal, or developmental concerns."
+    probability: 0.04
+    framework_link: "failure_to_thrive.yaml"
+    age_relevance: "Toddler food refusal and picky eating are common and can contribute to poor weight gain. Assess caloric intake, meal patterns, milk intake (excessive milk displaces solid food), and psychosocial factors."
+  - finding: "Early childhood caries"
+    description: "White spot lesions or brown discoloration on primary teeth, especially upper incisors. May have visible cavities, broken or discolored teeth, or gum swelling."
+    probability: 0.08
+    framework_link: null
+    age_relevance: "ECC can begin as early as tooth eruption. By 24 months, most children have 16+ teeth. Major modifiable risk factors include nighttime bottle with milk/juice and absence of tooth brushing with fluoride toothpaste."
+  - finding: "Iron deficiency anemia"
+    description: "Pallor, fatigue, irritability, pica behavior, or asymptomatic with microcytic anemia found on screening labs. Hemoglobin < 11 g/dL at this age."
+    probability: 0.06
+    framework_link: "iron_deficiency_anemia.yaml"
+    age_relevance: "Common at 24 months due to high milk intake displacing iron-rich foods, picky eating, and rapid growth. Excessive cow's milk (> 24 oz/day) is the most common dietary cause. Screen with CBC if not done at 12 months or if risk factors present."
+  - finding: "Physiologic genu varum (bowlegs)"
+    description: "Bilateral symmetric bowing of the lower extremities. Intercondylar distance may be up to 6 cm. No lateral thrust with walking, normal height velocity."
+    probability: 0.10
+    framework_link: "lower_extremity_alignment.yaml"
+    age_relevance: "Physiologic bowing peaks at 12-18 months and should be improving by 24 months with transition toward neutral alignment. Progression to genu valgum (knock-knees) occurs by age 3-4. Persistent or worsening bowing warrants evaluation for Blount disease or metabolic bone disease."
+
+parent_styles:
+  - "anxious parent concerned about language development comparing to other children the same age"
+  - "parent resistant to autism screening, stating 'he's just a late talker' or 'boys talk later'"
+  - "parent overwhelmed by toddler behavioral challenges (tantrums, defiance, biting)"
+  - "parent seeking guidance on toilet training with pressure from daycare or extended family"
+  - "vaccine-hesitant parent questioning the need for additional vaccines"
+  - "parent with concerns about screen time and feeling guilty about device use"
+  - "parent focused on academics and pushing early learning activities over play"
+  - "parent with limited resources needing community referrals (WIC, Early Intervention, dental services)"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Policy Statement: Identification, Evaluation, and Management of Children with Autism Spectrum Disorder (2020)"
+  - "M-CHAT-R/F: Modified Checklist for Autism in Toddlers, Revised with Follow-Up (Robins et al.)"
+  - "CDC Advisory Committee on Childhood Lead Poisoning Prevention: Blood Lead Reference Value Update (2021)"
+  - "WHO Child Growth Standards (0-24 months) and CDC Growth Charts (2-20 years)"
+  - "AAP Policy Statement: Media and Young Minds (2016)"
+  - "AAP Clinical Report: Toilet Training Guidelines for Parents"
+  - "AAP Policy Statement: Fluoride Use in Caries Prevention in the Primary Care Setting"
+  - "AAP Bright Futures Nutrition, 3rd Edition: Toddler Nutrition"
