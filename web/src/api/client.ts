@@ -11,6 +11,8 @@ export interface BackendStartCaseRequest {
   learner_level: LearnerLevel;
   condition_key?: string;
   time_constraint?: number;
+  visit_type?: 'sick' | 'well_child';
+  visit_age_months?: number;
 }
 
 export interface BackendCaseState {
@@ -21,14 +23,18 @@ export interface BackendCaseState {
     age_unit: string;
     sex: string;
     weight_kg: number;
-    chief_complaint: string;
+    chief_complaint?: string;
     condition_key: string;
     condition_display: string;
     parent_name: string;
     vitals: Record<string, number>;
+    visit_age_months?: number;
+    growth_data?: Record<string, unknown>;
+    milestones?: Record<string, string[]>;
   };
   phase: string;
   learner_level: string;
+  visit_type?: string;
   conversation: Array<{ role: string; content: string }>;
   history_gathered: string[];
   exam_performed: string[];
@@ -37,6 +43,27 @@ export interface BackendCaseState {
   hints_given: number;
   teaching_moments: string[];
   started_at: string;
+  // Well-child tracking
+  growth_reviewed?: boolean;
+  milestones_assessed?: string[];
+  guidance_topics_covered?: string[];
+  immunizations_addressed?: boolean;
+  screening_tools_used?: string[];
+  parent_concerns_addressed?: string[];
+}
+
+export interface WellChildDomainScore {
+  score: number;
+  feedback: string;
+}
+
+export interface WellChildScores {
+  growth_interpretation: WellChildDomainScore;
+  milestone_assessment: WellChildDomainScore;
+  exam_thoroughness: WellChildDomainScore;
+  anticipatory_guidance: WellChildDomainScore;
+  immunization_knowledge: WellChildDomainScore;
+  communication_skill: WellChildDomainScore;
 }
 
 export interface DebriefData {
@@ -46,6 +73,7 @@ export interface DebriefData {
   missed_items: string[];
   teaching_points: string[];
   follow_up_resources: string[];
+  well_child_scores?: WellChildScores;
 }
 
 export interface BackendCaseResponse {
