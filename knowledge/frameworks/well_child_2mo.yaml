@@ -1,0 +1,201 @@
+# 2 Month Well-Child Visit - Teaching Framework
+topic: "2 Month Well-Child Visit"
+visit_type: "well_child"
+visit_age_months: 2
+category: "well_child"
+
+teaching_goals:
+  - "Perform a comprehensive physical exam with emphasis on age-specific findings (fontanelle, red reflex, hip stability, cardiac)"
+  - "Assess developmental milestones using the CDC 2022 checklist (75th percentile standard)"
+  - "Administer and counsel on the first major round of immunizations per 2025 ACIP schedule"
+  - "Screen for maternal postpartum depression using a validated tool (EPDS)"
+  - "Deliver anticipatory guidance on safe sleep, tummy time, feeding, and injury prevention"
+  - "Recognize common incidental findings at this age and determine appropriate workup vs reassurance"
+
+expected_milestones:
+  gross_motor:
+    - "Lifts head when on tummy (45-degree angle or higher)"
+    - "Moves both arms and both legs equally"
+    - "Beginning to push up on forearms during tummy time"
+  fine_motor:
+    - "Opens hands briefly (hands no longer tightly fisted)"
+    - "Holds objects placed in hand momentarily (reflexive grasp)"
+  language:
+    - "Makes cooing sounds (vowel-like 'oo', 'ah')"
+    - "Turns head toward sounds"
+  social_emotional:
+    - "Smiles in response to being spoken to or smiled at (social smile)"
+    - "Calms when spoken to or picked up"
+    - "Looks at parent's face; briefly regards caregiver"
+  cognitive:
+    - "Watches you as you move (visual tracking past midline)"
+    - "Looks at a toy for several seconds (beginning visual fixation)"
+    - "Begins to show boredom if activity does not change (fussing, looking away)"
+
+screening_tools:
+  - tool: "Edinburgh Postnatal Depression Scale (EPDS)"
+    when: "routine"
+  - tool: "Developmental surveillance (clinical observation)"
+    when: "routine"
+  - tool: "ASQ-3 (Ages and Stages Questionnaire, 3rd Ed)"
+    when: "if concern"
+
+anticipatory_guidance:
+  safety:
+    - "Back to sleep for every sleep -- supine position on a firm, flat surface with no loose bedding, pillows, bumpers, or soft toys"
+    - "Rear-facing car seat in the back seat; ensure proper harness fit (chest clip at armpit level)"
+    - "Never shake a baby -- discuss Period of PURPLE Crying and coping strategies for caregiver frustration"
+    - "Water temperature less than 120 F (48 C) to prevent scald burns"
+    - "Never leave infant unattended on elevated surfaces (changing tables, beds, couches)"
+    - "Keep small objects, plastic bags, and cords out of reach"
+  nutrition:
+    - "Exclusive breastfeeding or iron-fortified formula for the first 6 months"
+    - "Breastfed infants: vitamin D supplementation 400 IU daily starting in first few days of life"
+    - "Feeding frequency: 8-12 times per day for breastfed, every 3-4 hours for formula-fed"
+    - "Expected intake: approximately 4-5 oz per feeding for formula-fed infants"
+    - "No cereal in bottles, no introduction of solids until 4-6 months"
+    - "Assess latch, milk supply, and any breastfeeding difficulties; refer to lactation support if needed"
+  development:
+    - "Tummy time: at least 3-5 sessions daily while awake and supervised, working up to 15-30 minutes total"
+    - "Talk, read, and sing to infant frequently to promote language development"
+    - "Provide high-contrast toys and objects for visual stimulation"
+    - "Respond to coos and smiles -- reciprocal interaction supports social-emotional growth"
+    - "No screen time for children under 2 years (except video chatting)"
+  behavior:
+    - "Discuss normal fussiness and peak crying period (typically peaks at 6-8 weeks, improving by 3-4 months)"
+    - "Soothing techniques: swaddling (arms-in until rolling), shushing, swinging, sucking, side/stomach position while held"
+    - "Recognizing hunger cues vs other fussiness (rooting, lip smacking, hand to mouth)"
+    - "Encourage responsive parenting -- cannot spoil an infant by responding to cries"
+  sleep:
+    - "Total sleep: 14-17 hours per 24-hour period"
+    - "Nighttime stretches may lengthen to 4-6 hours; some infants still wake every 2-3 hours"
+    - "Room-sharing without bed-sharing recommended for at least the first 6 months"
+    - "Begin establishing a bedtime routine (dim lights, quiet activities, consistent timing)"
+    - "Swaddling is appropriate until signs of rolling emerge; then transition to sleep sack"
+
+immunizations_due:
+  - vaccine: "Hepatitis B (HepB)"
+    cvx: 8
+    dose_number: "2nd dose"
+    notes: "Minimum interval 4 weeks from 1st dose (birth dose). If mother was HBsAg+, confirm HBIG was given at birth."
+  - vaccine: "Rotavirus (RV5 - RotaTeq)"
+    cvx: 116
+    dose_number: "1st dose"
+    notes: "Oral vaccine, 3-dose series (RV5). First dose must be given before 15 weeks 0 days of age. Do not restart or readminister if infant spits up."
+  - vaccine: "Rotavirus (RV1 - Rotarix)"
+    cvx: 119
+    dose_number: "1st dose"
+    notes: "Oral vaccine, 2-dose series (RV1). Alternative to RV5. First dose must be given before 15 weeks 0 days of age."
+  - vaccine: "Diphtheria, Tetanus, Pertussis (DTaP)"
+    cvx: 20
+    dose_number: "1st dose"
+    notes: "Intramuscular, anterolateral thigh. 5-dose series (2, 4, 6, 15-18 months, 4-6 years). Counsel on expected local reactions and fever."
+  - vaccine: "Haemophilus influenzae type b (Hib)"
+    cvx: 48
+    dose_number: "1st dose"
+    notes: "Intramuscular. Schedule varies by product: PRP-T (ActHIB/Hiberix) is 4 doses; PRP-OMP (PedvaxHIB) is 3 doses."
+  - vaccine: "Pneumococcal conjugate (PCV20 - Prevnar 20)"
+    cvx: 216
+    dose_number: "1st dose"
+    notes: "Intramuscular. PCV20 replaced PCV15/PCV13 per 2025 ACIP update. 4-dose series (2, 4, 6, 12-15 months)."
+  - vaccine: "Inactivated Poliovirus (IPV)"
+    cvx: 10
+    dose_number: "1st dose"
+    notes: "Intramuscular. 4-dose series (2, 4, 6-18 months, 4-6 years). Combination vaccines (Pediarix, Vaxelis) may reduce injection count."
+
+physical_exam_focus:
+  - area: "Anterior fontanelle"
+    detail: "Assess size (typically 2-3 cm at 2 months), fullness, and pulsation. Should be soft and flat in upright position."
+    teaching_point: "A bulging fontanelle (especially when upright and calm) suggests elevated intracranial pressure. A sunken fontanelle may indicate dehydration. Premature closure raises concern for craniosynostosis."
+  - area: "Red reflex"
+    detail: "Bilateral simultaneous red reflex with direct ophthalmoscope at 12-18 inches. Should be symmetric, bright red-orange bilaterally."
+    teaching_point: "Absent or white reflex (leukocoria) is an emergency -- must rule out retinoblastoma, congenital cataract, or other intraocular pathology. Asymmetric reflex may suggest strabismus."
+  - area: "Hip examination (Barlow and Ortolani)"
+    detail: "Ortolani: abduct flexed hips, feel for a 'clunk' as a dislocated hip reduces. Barlow: adduct flexed hip with gentle posterior pressure, feel for subluxation out of the acetabulum."
+    teaching_point: "DDH is most reliably detected in the first 2-3 months. Risk factors include breech presentation, family history, female sex, firstborn. Asymmetric thigh folds or leg length discrepancy are additional clues. Refer for hip ultrasound if abnormal."
+  - area: "Cardiac auscultation"
+    detail: "Listen in all four positions (aortic, pulmonic, tricuspid, mitral) with infant calm. Assess rate, rhythm, and presence of murmurs."
+    teaching_point: "Innocent murmurs (Still's, pulmonary flow) are common and benign. Red flags for pathologic murmur: diastolic timing, harsh or blowing quality, grade 3+, associated symptoms (poor feeding, tachypnea, diaphoresis with feeds, cyanosis), or absent femoral pulses (coarctation)."
+  - area: "Growth parameters"
+    detail: "Plot weight, length, and head circumference on WHO growth charts (used for ages 0-24 months). Calculate weight-for-length percentile."
+    teaching_point: "At 2 months, expect weight gain of approximately 20-30 g/day (about 1 oz/day). Crossing 2 or more major percentile lines (up or down) warrants investigation. Head circumference crossing percentiles upward may indicate hydrocephalus."
+  - area: "Skin"
+    detail: "Examine for birthmarks, rashes, signs of trauma. Note infantile hemangiomas, Mongolian spots, erythema toxicum (if residual), or eczema."
+    teaching_point: "Infantile hemangiomas proliferate in first 3-5 months -- document size and location. Periocular, nasal tip, or segmental hemangiomas may require early referral. Multiple hemangiomas (5+) warrant hepatic ultrasound."
+  - area: "Genitourinary"
+    detail: "Males: confirm bilateral descended testes, assess for inguinal hernia or hydrocele. Females: assess for labial adhesions."
+    teaching_point: "Undescended testes should be referred to urology if not descended by 6 months. Inguinal hernia presents as a groin bulge that increases with crying or straining -- surgical referral needed. Communicating hydroceles transilluminate and typically resolve by 12 months."
+
+common_mistakes:
+  - "Skipping the hip exam (Barlow/Ortolani) or performing it too gently to detect instability"
+  - "Failing to screen the mother for postpartum depression at the 2-month visit"
+  - "Not performing bilateral simultaneous red reflex testing"
+  - "Omitting vitamin D counseling for exclusively breastfed infants"
+  - "Forgetting to assess femoral pulses when a murmur is detected (missing coarctation)"
+  - "Providing overly reassuring anticipatory guidance on sleep without asking about safe sleep practices"
+  - "Not counseling on shaken baby prevention when parent reports excessive crying"
+  - "Using CDC growth charts instead of WHO growth charts for infants under 24 months"
+  - "Dismissing parental concern about developmental progress without formal milestone assessment"
+  - "Missing the rotavirus vaccine age window -- first dose must be given before 15 weeks 0 days"
+
+possible_findings:
+  - finding: "Innocent heart murmur"
+    description: "Soft (grade 1-2/6) systolic murmur, often heard at LLSB or pulmonic area. No symptoms, normal femoral pulses, no thrill."
+    probability: 0.15
+    framework_link: "innocent_murmurs.yaml"
+    age_relevance: "Common first detection at 2-month visit; most are pulmonary flow murmurs in young infants."
+  - finding: "Positional plagiocephaly"
+    description: "Flattening of one side of the occiput, often with ipsilateral frontal bossing and ear displacement. No ridging of sutures."
+    probability: 0.12
+    framework_link: "torticollis_plagiocephaly.yaml"
+    age_relevance: "Becoming apparent at 2 months due to supine sleep positioning. Distinguish from craniosynostosis by checking for sutural ridging."
+  - finding: "Inguinal hernia or hydrocele"
+    description: "Inguinal bulge that may increase with crying (hernia) or scrotal swelling that transilluminates (hydrocele)."
+    probability: 0.05
+    framework_link: "inguinal_hernia_hydrocele.yaml"
+    age_relevance: "More common in preterm males. Inguinal hernia requires surgical referral; communicating hydrocele can be observed."
+  - finding: "Blocked nasolacrimal duct (dacryostenosis)"
+    description: "Persistent tearing (epiphora) and mucoid discharge from one or both eyes without conjunctival injection. Positive regurgitation test with massage over lacrimal sac."
+    probability: 0.10
+    framework_link: "dacryostenosis.yaml"
+    age_relevance: "Affects up to 6-20% of newborns. Most resolve spontaneously by 6-12 months with conservative management (nasolacrimal massage, warm compresses)."
+  - finding: "Infantile hemangioma"
+    description: "Raised, bright red ('strawberry') or deep bluish vascular lesion that may be rapidly growing. Soft, compressible, well-circumscribed."
+    probability: 0.04
+    framework_link: "infantile_hemangiomas.yaml"
+    age_relevance: "Proliferative phase peaks at 2-3 months. Early evaluation if periocular, nasal, segmental, or large (risk of complications). Propranolol is first-line for problematic hemangiomas."
+  - finding: "Developmental dysplasia of the hip (DDH)"
+    description: "Positive Ortolani (clunk on abduction) or Barlow (subluxation on adduction) maneuver. May have asymmetric thigh folds or apparent leg length discrepancy."
+    probability: 0.03
+    framework_link: "ddh.yaml"
+    age_relevance: "2-month visit is a critical window for clinical detection. Hip ultrasound is the imaging modality of choice before 4-6 months (before ossification of femoral head)."
+  - finding: "Torticollis"
+    description: "Persistent head tilt to one side with limited range of motion in contralateral rotation. May have palpable sternocleidomastoid mass (fibromatosis colli)."
+    probability: 0.04
+    framework_link: "torticollis.yaml"
+    age_relevance: "Often noticed by 2 months. Associated with plagiocephaly. Early physical therapy referral improves outcomes."
+  - finding: "Seborrheic dermatitis (cradle cap)"
+    description: "Yellowish, greasy, scaly patches on the scalp, sometimes extending to eyebrows, nasolabial folds, and behind the ears."
+    probability: 0.10
+    framework_link: "seborrheic_dermatitis.yaml"
+    age_relevance: "Very common in first 3 months. Self-limited. Counsel on gentle shampooing and soft brush. Distinguish from atopic dermatitis."
+
+parent_styles:
+  - "anxious first-time parent seeking reassurance about every normal variant"
+  - "experienced multiparous parent who may minimize concerns"
+  - "vaccine-hesitant parent requesting delayed or alternative schedule"
+  - "postpartum depression -- flat affect, poor eye contact, disengaged from infant"
+  - "overwhelmed single parent with limited support system"
+  - "parent focused on milestones and comparing to other infants"
+  - "non-English speaking parent requiring interpreter services"
+  - "parent with medical background who asks detailed clinical questions"
+
+sources:
+  - "AAP Bright Futures: Guidelines for Health Supervision of Infants, Children, and Adolescents, 4th Edition"
+  - "CDC 2025 Recommended Child and Adolescent Immunization Schedule (ACIP)"
+  - "CDC Learn the Signs. Act Early. Developmental Milestones Checklist, Updated 2022 (75th percentile standard)"
+  - "AAP Clinical Report: Screening for Developmental Dysplasia of the Hip"
+  - "AAP Policy Statement: Red Reflex Examination in Neonates, Infants, and Children"
+  - "AAP Policy Statement: SIDS and Other Sleep-Related Infant Deaths, Updated 2022"
+  - "ACOG/AAP: Screening for Perinatal Depression (Committee Opinion 757)"
+  - "WHO Child Growth Standards (0-24 months)"

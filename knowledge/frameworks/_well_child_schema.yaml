@@ -1,0 +1,62 @@
+# Well-Child Visit Teaching Framework Schema
+#
+# Each framework is organized by VISIT AGE (not condition).
+# Claude generates patient details dynamically at case start.
+# All clinical data from AAP Bright Futures, CDC/ACIP 2025, CDC 2022 milestones.
+#
+# ============ REQUIRED FIELDS ============
+#
+# topic: str                    # "2 Month Well-Child Visit"
+# visit_type: "well_child"      # Always "well_child"
+# visit_age_months: int         # Age in months (0 for newborn)
+# category: "well_child"        # Always "well_child"
+#
+# teaching_goals:               # 4-6 learning objectives for this visit age
+#   - str
+#
+# expected_milestones:          # CDC 2022 milestones (75th percentile standard)
+#   gross_motor: [str]
+#   fine_motor: [str]
+#   language: [str]
+#   social_emotional: [str]
+#   cognitive: [str]
+#
+# screening_tools:              # Recommended screenings at this age
+#   - tool: str                 # e.g., "ASQ-3", "M-CHAT-R/F", "EPDS"
+#     when: str                 # "routine" or "if concern"
+#
+# anticipatory_guidance:        # Bright Futures 4th edition topics
+#   safety: [str]
+#   nutrition: [str]
+#   development: [str]
+#   behavior: [str]
+#   sleep: [str]
+#
+# immunizations_due:            # Per 2025 CDC/ACIP schedule
+#   - vaccine: str
+#     cvx: int
+#     dose_number: str          # "1st dose", "2nd dose", etc.
+#     notes: str                # Optional clinical notes
+#
+# physical_exam_focus:          # Age-specific exam priorities
+#   - area: str
+#     detail: str
+#     teaching_point: str
+#
+# common_mistakes:              # Typical learner errors at this visit age
+#   - str
+#
+# ============ RECOMMENDED FIELDS ============
+#
+# possible_findings:            # Incidental findings that can surface
+#   - finding: str
+#     description: str
+#     probability: float        # 0.0-1.0
+#     framework_link: str       # Links to sick-visit framework
+#     age_relevance: str
+#
+# parent_styles:                # Realistic parent presentations
+#   - str
+#
+# sources:                      # Clinical references
+#   - str
