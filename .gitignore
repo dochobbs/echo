@@ -40,3 +40,6 @@ widget/dist/
 *.mp3
 *.wav
 *.ogg
+
+# Worktrees
+.worktrees/
