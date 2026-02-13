@@ -107,6 +107,41 @@ def get_frameworks_by_category(category: str) -> list[dict]:
     ]
 
 
+def get_well_child_frameworks() -> list[dict]:
+    """Get all well-child visit frameworks.
+
+    Returns:
+        List of well-child frameworks with their keys
+    """
+    if not _loaded:
+        load_frameworks()
+
+    return [
+        {"key": k, **v}
+        for k, v in FRAMEWORKS.items()
+        if v.get("category") == "well_child"
+    ]
+
+
+def get_well_child_by_age(age_months: int) -> Optional[dict]:
+    """Get well-child framework for a specific visit age.
+
+    Args:
+        age_months: Visit age in months (0 for newborn)
+
+    Returns:
+        Framework data or None if no matching visit age
+    """
+    if not _loaded:
+        load_frameworks()
+
+    for key, fw in FRAMEWORKS.items():
+        if fw.get("category") == "well_child" and fw.get("visit_age_months") == age_months:
+            return fw
+
+    return None
+
+
 def get_all_framework_keys() -> list[str]:
     """Get list of all available framework keys."""
     if not _loaded:
