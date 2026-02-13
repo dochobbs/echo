@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 interface CaseTimelineProps {
   currentPhase: string;
   compact?: boolean;
+  visitType?: string;
 }
 
 interface Phase {
@@ -13,7 +14,7 @@ interface Phase {
   Icon: (props: { className?: string; size?: number; animate?: boolean }) => ReactNode;
 }
 
-const phases: Phase[] = [
+const SICK_PHASES: Phase[] = [
   { id: 'history', label: 'History', Icon: ClipboardIcon },
   { id: 'examination', label: 'Exam', Icon: StethoscopeSimpleIcon },
   { id: 'differential', label: 'Differential', Icon: BrainIcon },
@@ -21,7 +22,18 @@ const phases: Phase[] = [
   { id: 'complete', label: 'Complete', Icon: CircleCheckIcon },
 ];
 
-export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProps) {
+const WELL_CHILD_PHASES: Phase[] = [
+  { id: 'growth_review', label: 'Growth', Icon: ClipboardIcon },
+  { id: 'developmental_screening', label: 'Development', Icon: BrainIcon },
+  { id: 'exam', label: 'Exam', Icon: StethoscopeSimpleIcon },
+  { id: 'anticipatory_guidance', label: 'Guidance', Icon: FileTextIcon },
+  { id: 'immunizations', label: 'Vaccines', Icon: ClipboardIcon },
+  { id: 'parent_questions', label: 'Wrap-Up', Icon: BrainIcon },
+  { id: 'complete', label: 'Complete', Icon: CircleCheckIcon },
+];
+
+export function CaseTimeline({ currentPhase, compact = false, visitType }: CaseTimelineProps) {
+  const phases = visitType === 'well_child' ? WELL_CHILD_PHASES : SICK_PHASES;
   const currentIndex = phases.findIndex(p => p.id === currentPhase);
 
   return (
@@ -38,7 +50,7 @@ export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProp
                 compact ? 'w-8 h-8' : 'w-10 h-10'
               } ${
                 isComplete
-                  ? 'bg-echo-500 text-white'
+                  ? visitType === 'well_child' ? 'bg-emerald-500 text-white' : 'bg-echo-500 text-white'
                   : isCurrent
                   ? 'bg-copper-500 text-white'
                   : 'bg-surface-3 text-gray-500 border border-surface-4'
@@ -57,7 +69,7 @@ export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProp
               ) : (
                 <Icon size={compact ? 14 : 18} animate={false} />
               )}
-              
+
               {isCurrent && (
                 <motion.div
                   className="absolute inset-0 rounded-full border-2 border-copper-400"
@@ -72,9 +84,11 @@ export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProp
                 <motion.div
                   className="h-full rounded-full"
                   initial={{ width: 0 }}
-                  animate={{ 
+                  animate={{
                     width: isComplete ? '100%' : '0%',
-                    backgroundColor: isComplete ? '#0D9CB8' : '#27272a'
+                    backgroundColor: isComplete
+                      ? (visitType === 'well_child' ? '#10b981' : '#0D9CB8')
+                      : '#27272a'
                   }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 />
@@ -82,7 +96,11 @@ export function CaseTimeline({ currentPhase, compact = false }: CaseTimelineProp
             )}
 
             {index < phases.length - 1 && compact && (
-              <div className={`w-3 h-0.5 mx-0.5 rounded-full ${isComplete ? 'bg-echo-500' : 'bg-surface-4'}`} />
+              <div className={`w-3 h-0.5 mx-0.5 rounded-full ${
+                isComplete
+                  ? (visitType === 'well_child' ? 'bg-emerald-500' : 'bg-echo-500')
+                  : 'bg-surface-4'
+              }`} />
             )}
           </div>
         );
