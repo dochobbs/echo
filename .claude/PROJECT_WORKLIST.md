@@ -1,6 +1,6 @@
 # Echo Project Worklist
 
-**Last Updated:** 2026-02-04
+**Last Updated:** 2026-02-12
 
 ## Vision
 
@@ -31,7 +31,7 @@ Target: Medical learner with 30 minutes at lunch wanting to run a case.
   - Feedback, question, debrief prompts
   - Fluid voice switching (roleplay + teaching seamlessly)
 
-### Sprint 1: The Magic Moment ✅ COMPLETE
+### Sprint 1: The Magic Moment
 - [x] Mobile-first web app scaffold (`web/` directory)
 - [x] Port AOM condition from Oread
 - [x] Case generation module (`src/cases/`)
@@ -39,53 +39,57 @@ Target: Medical learner with 30 minutes at lunch wanting to run a case.
 - [x] TTS available (off by default, toggle in header)
 - [x] localStorage persistence
 
-### Sprint 2: Voice + Depth ✅ MOSTLY COMPLETE
+### Sprint 2: Voice + Depth
 - [x] Expand conditions to 11
 - [x] Stuck detection + natural hint offering
 - [x] CDS validation (dosing, guidelines)
 - [x] Debrief experience refinement
-- [ ] STT (Deepgram) - learners can speak to Echo
 
-### Teaching Frameworks ✅ NEW - 2026-01-04
+### Teaching Frameworks
 - [x] **100 condition teaching frameworks** - Full pediatric curriculum coverage
 - [x] Framework schema with teaching fields (goals, mistakes, pearls, red flags)
 - [x] Framework loader module (`src/knowledge/framework_loader.py`)
-- [x] Replit deployment bundle (`frameworks_bundle.tar.gz`)
 
-### Licensing ✅ 2026-01-20
+### Licensing
 - [x] Added AGPL-3.0 license (copyleft, covers network use)
-- [x] Copyright: Michael Hobbs <michael@hobbs.md>
 
----
+### Auth
+- [x] Fix: ApiClient.fetch() not loading stored JWT after page refresh
+- [x] Supabase setup - Schema created, client ready
+- [x] Auth module structure - `src/auth/`
+- [x] Server-side case storage
 
-## Ready for Replit Integration
-
-### Files to Upload
-- `frameworks_bundle.tar.gz` (106 KB) - Everything bundled
-- `REPLIT_HANDOFF.md` - Integration instructions
-
-### Integration Tasks
-- [ ] Upload and extract frameworks bundle
-- [ ] Add `/frameworks` API endpoints
-- [ ] Update case generation to use framework teaching context
-- [ ] Add condition selector UI
+### Well-Child Visits (2026-02-12) - NEW
+- [x] 13 AAP Bright Futures well-child frameworks (newborn through adolescent)
+- [x] Well-child framework schema with growth data, milestones, immunizations, guidance
+- [x] WellChildGenerator with incidental finding support and probability weights
+- [x] Framework loader methods for well-child filtering
+- [x] Tutor well-child prompt and debrief prompt templates
+- [x] Tutor well-child phase detection, system prompt building, 6-domain debrief scoring
+- [x] API routing for well-child cases through `/start`, `/message`, `/debrief`
+- [x] Database columns for well-child tracking (visit_type, visit_age_months, etc.)
+- [x] Frontend: visit type selector (Sick/Well-Child), age picker grid
+- [x] Frontend: well-child phase timeline with emerald color theme
+- [x] Frontend: domain score cards in DebriefCard component
+- [x] TypeScript types and API client updates for well-child support
 
 ---
 
 ## Pending
 
-### Auth Bug Fix (2026-02-04)
-- [x] Fix: ApiClient.fetch() not loading stored JWT after page refresh
-  - Learners could not access old cases after refresh/return visit
-  - Root cause: `ensureInitialized()` missing from `fetch()` method
+### Well-Child Follow-Up
+- [ ] End-to-end testing of all 13 visit ages with Claude API
+- [ ] Verify debrief scoring produces meaningful domain-level feedback
+- [ ] Save well-child tracking fields to database (growth_reviewed, milestones_assessed, etc.)
+- [ ] Well-child admin views for case review
+
+### Sprint 2 Remaining
+- [ ] STT (Deepgram) - learners can speak to Echo
 
 ### Sprint 3: Identity + Persistence
-- [x] Supabase setup - Schema created, client ready
-- [x] Auth module structure - `src/auth/`
-- [x] Server-side case storage
-- [ ] Cross-device case resume (partially fixed - auth token now persists)
+- [ ] Cross-device case resume
 - [ ] Harden case history endpoints (require auth, remove in-memory fallback)
-- [ ] Fix in-memory history user isolation (no user filtering when DB is down)
+- [ ] Fix in-memory history user isolation
 
 ### Sprint 4: Memory + Personalization
 - [ ] Case history tracking per user
@@ -98,7 +102,7 @@ Target: Medical learner with 30 minutes at lunch wanting to run a case.
 - [ ] Progress display (natural language, not gamification)
 
 ### Sprint 6: Admin + Polish
-- [ ] Admin dashboard
+- [ ] Admin dashboard enhancements
 - [ ] Usage metrics
 - [ ] Performance optimization
 
@@ -110,20 +114,20 @@ Target: Medical learner with 30 minutes at lunch wanting to run a case.
 ```bash
 cd /Users/dochobbs/Downloads/Consult/MedEd/echo
 source .venv/bin/activate
-uvicorn src.main:app --port 8002
+uvicorn src.main:app --port 8001
 ```
 
 ### Web App
 ```bash
 cd web
-npm run dev  # http://localhost:3001
+npm run dev  # http://localhost:5000
 ```
 
-### Test Case Endpoint
+### Test Well-Child Case
 ```bash
-curl -X POST http://localhost:8002/case/start \
+curl -X POST http://localhost:8001/case/start \
   -H "Content-Type: application/json" \
-  -d '{"learner_level": "student"}'
+  -d '{"learner_level": "student", "visit_type": "well_child", "visit_age_months": 12}'
 ```
 
 ---
@@ -132,36 +136,31 @@ curl -X POST http://localhost:8002/case/start \
 
 ```
 echo/
-├── src/                    # Backend
+├── src/
 │   ├── main.py             # FastAPI app
-│   ├── core/tutor.py       # Claude-based tutor with fluid voice
-│   ├── cases/              # Case generation
-│   ├── knowledge/          # NEW: Framework loader
-│   │   └── framework_loader.py
-│   ├── routers/            # API routes
-│   └── prompts/            # System, feedback, question, debrief prompts
+│   ├── core/tutor.py       # Claude tutor (sick + well-child)
+│   ├── cases/
+│   │   ├── models.py       # VisitType, CasePhase, WellChildScores
+│   │   ├── router.py       # /start, /message, /debrief
+│   │   └── well_child_generator.py  # NEW
+│   ├── frameworks/
+│   │   └── loader.py       # Framework + well-child loader
+│   └── prompts/
+│       ├── well_child.md        # NEW: Well-child teaching prompt
+│       └── well_child_debrief.md # NEW: 6-domain scoring rubric
 ├── knowledge/
-│   ├── conditions/         # Full condition YAML files
-│   └── frameworks/         # NEW: 100 teaching frameworks
-├── web/                    # Standalone web app
+│   └── frameworks/
+│       ├── _well_child_schema.yaml  # NEW
+│       └── well_child_*.yaml        # NEW: 13 visit-age frameworks
+├── web/                    # React frontend
+├── tests/                  # 20 tests passing
 └── widget/                 # Embeddable widget
 ```
 
----
-
-## Framework Categories (100 total)
+## Framework Categories
 
 | Category | Count |
 |----------|-------|
-| Newborn/Infant | 15 |
-| Infectious Disease | 17 |
-| Respiratory/Allergy | 5 |
-| Dermatology | 11 |
-| Behavioral/Developmental | 12 |
-| GI | 6 |
-| Emergency/Trauma | 10 |
-| MSK | 6 |
-| Endocrine | 7 |
-| Nephrology/Urology | 7 |
-| Hematology/Oncology | 2 |
-| Adolescent/GYN | 3 |
+| Sick Visit (conditions) | 100 |
+| Well-Child Visit (ages) | 13 |
+| **Total** | **113** |
