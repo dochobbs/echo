@@ -18,7 +18,7 @@ const demoPatient = {
 function Demo() {
   return (
     <EchoWidget
-      apiUrl="http://localhost:8002"
+      apiUrl="http://localhost:9102"
       context={{
         source: 'oread',
         patient: demoPatient,

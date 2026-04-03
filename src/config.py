@@ -41,7 +41,7 @@ class Settings(BaseSettings):
 
   # Server
   echo_host: str = "0.0.0.0"
-  echo_port: int = 8000
+  echo_port: int = 9101
 
   class Config:
     env_file = ".env"
