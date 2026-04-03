@@ -1,6 +1,6 @@
 # CLAUDE.md - Echo Development Context
 
-**Last Updated:** December 2025
+**Last Updated:** April 2026
 
 ## Project Overview
 
@@ -180,7 +180,7 @@ source .venv/bin/activate
 pip install -e .
 
 # Run server
-uvicorn src.main:app --reload --port 8001
+uvicorn src.main:app --reload --port 9101
 
 # Test
 pytest tests/
@@ -203,11 +203,12 @@ Echo is part of the **MedEd Platform**, orchestrated by Metis.
 
 | Project | Greek Name | Port | Purpose |
 |---------|------------|------|---------|
-| synpat | Oread | 8004 | Patient generation |
-| synvoice | Syrinx | 8003 | Encounter scripts |
-| synchart | Mneme | 8002 | EMR interface |
-| echo | **Echo** | 8001 | AI tutor |
-| metis | Metis | 3000 | Portal (planned) |
+| synpat | Oread | 9104 | Patient generation |
+| synvoice | Syrinx | 9103 | Encounter scripts |
+| synchart | Mneme | 9102 | EMR interface |
+| echo | **Echo** | 9101 | AI tutor |
+| metis | Metis | 9100 | Portal (planned) |
+| athena | Athena | 9105 | Curriculum & knowledge |
 
 ### Shared Models
 
@@ -242,15 +243,15 @@ Echo can run independently without Metis:
 ```bash
 cd /Users/dochobbs/Downloads/Consult/MedEd/echo
 source .venv/bin/activate
-uvicorn src.main:app --port 8001
-# API at http://localhost:8001
+uvicorn src.main:app --port 9101
+# API at http://localhost:9101
 ```
 
 ### Cross-Service Integration (February 2026)
 
 **Echo had ZERO code changes** in the integration work. Its existing endpoints (`/feedback`, `/question`, `/debrief`) already accept `PatientContext` with `source: "oread"`. The Metis Dashboard now sends real patient data from Oread to Echo's `/question` endpoint via the Vite proxy.
 
-**Important:** Echo routes have **no `/api/` prefix** — the Vite proxy rewrites `/api/echo/question` to `/question`. Mneme's `EchoClient` was fixed to point to port 8001 (was incorrectly 8002).
+**Important:** Echo routes have **no `/api/` prefix** — the Vite proxy rewrites `/api/echo/question` to `/question`. Mneme's `EchoClient` was fixed to point to port 9101 (was incorrectly 8002).
 
 See **`docs/INTEGRATION.md`** for the full cross-service integration guide.
 
