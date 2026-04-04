@@ -1,35 +1,50 @@
-"""Framework loader for pediatric teaching frameworks."""
+"""Framework loader — queries Athena first, falls back to local YAML files."""
 
+import os
 import random
 from pathlib import Path
 from typing import Optional
 import yaml
 
+try:
+    import httpx
+    _HAS_HTTPX = True
+except ImportError:
+    _HAS_HTTPX = False
+
 
 FRAMEWORKS: dict[str, dict] = {}
 _loaded = False
 
+ATHENA_URL = os.environ.get("ATHENA_URL", "http://localhost:9105")
 
-def load_frameworks(reload: bool = False) -> dict[str, dict]:
-    """Load all teaching frameworks into memory.
-    
-    Args:
-        reload: Force reload even if already loaded
-        
-    Returns:
-        Dictionary mapping framework keys to framework data
-    """
-    global FRAMEWORKS, _loaded
-    
-    if _loaded and not reload:
-        return FRAMEWORKS
-    
-    FRAMEWORKS.clear()
+
+def _load_from_athena(specialty: str = "pediatrics") -> dict[str, dict]:
+    """Try loading frameworks from Athena service."""
+    if not _HAS_HTTPX:
+        return {}
+    try:
+        with httpx.Client(base_url=ATHENA_URL, timeout=5.0) as client:
+            resp = client.get("/api/frameworks", params={"specialty": specialty})
+            resp.raise_for_status()
+            frameworks = {}
+            for fw in resp.json():
+                key = fw.get("id", "")
+                if key:
+                    frameworks[key] = fw
+            return frameworks
+    except Exception:
+        return {}
+
+
+def _load_from_local() -> dict[str, dict]:
+    """Load frameworks from local YAML directory."""
+    frameworks = {}
     framework_dir = Path("knowledge/frameworks")
-    
+
     if not framework_dir.exists():
-        return FRAMEWORKS
-    
+        return frameworks
+
     for file in framework_dir.glob("*.yaml"):
         if file.name.startswith("_"):
             continue
@@ -37,11 +52,39 @@ def load_frameworks(reload: bool = False) -> dict[str, dict]:
             with open(file) as f:
                 data = yaml.safe_load(f)
                 if data and isinstance(data, dict):
-                    key = file.stem
-                    FRAMEWORKS[key] = data
+                    frameworks[file.stem] = data
         except Exception:
             continue
-    
+
+    return frameworks
+
+
+def load_frameworks(reload: bool = False, specialty: str = "pediatrics") -> dict[str, dict]:
+    """Load all teaching frameworks — tries Athena first, falls back to local.
+
+    Args:
+        reload: Force reload even if already loaded
+        specialty: Specialty to load (pediatrics, internal_medicine, family_practice)
+
+    Returns:
+        Dictionary mapping framework keys to framework data
+    """
+    global FRAMEWORKS, _loaded
+
+    if _loaded and not reload:
+        return FRAMEWORKS
+
+    FRAMEWORKS.clear()
+
+    # Try Athena first
+    athena_fws = _load_from_athena(specialty)
+    if athena_fws:
+        FRAMEWORKS = athena_fws
+        _loaded = True
+        return FRAMEWORKS
+
+    # Fall back to local
+    FRAMEWORKS = _load_from_local()
     _loaded = True
     return FRAMEWORKS
 
