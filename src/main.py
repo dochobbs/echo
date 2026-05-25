@@ -46,7 +46,31 @@ app.include_router(frameworks_router)
 
 @app.on_event("startup")
 async def startup():
-  """Initialize database tables on startup."""
+  """Validate required config and initialize database tables on startup."""
+  import sys
+
+  # Required: Claude API for tutoring
+  settings = get_settings()
+  if not settings.anthropic_api_key:
+    print(
+      "FATAL: ANTHROPIC_API_KEY not set. Echo requires Claude API for tutoring. "
+      "Set the env var and restart.",
+      file=sys.stderr,
+    )
+    sys.exit(1)
+
+  # Optional: voice. Warn but don't fail.
+  if not settings.eleven_api_key:
+    print(
+      "WARN: ELEVEN_LABS_API_KEY not set. /voice/speak will return 501 if invoked.",
+      file=sys.stderr,
+    )
+  if not getattr(settings, "deepgram_api_key", None):
+    print(
+      "WARN: DEEPGRAM_API_KEY not set. Voice STT will fall back to local Whisper.",
+      file=sys.stderr,
+    )
+
   if is_database_configured():
     create_tables()
     print("Database tables created/verified.")
