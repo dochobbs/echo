@@ -1,8 +1,26 @@
 """Context models shared across platforms."""
 
-from typing import Optional, Literal, Union
-from pydantic import BaseModel, model_validator
-from datetime import date
+from typing import Any, Optional, Literal, Union
+from pydantic import BaseModel, field_validator, model_validator
+from datetime import date, datetime
+
+
+def _coerce_date(value: Any) -> Any:
+  """Accept date, datetime, or ISO string with optional time component.
+
+  Oread serializes encounter dates as ISO datetime strings (`2026-05-25T14:00:00`);
+  Pydantic's strict date validator rejects those. Coerce to the date portion.
+  """
+  if value is None or isinstance(value, date) and not isinstance(value, datetime):
+    return value
+  if isinstance(value, datetime):
+    return value.date()
+  if isinstance(value, str):
+    try:
+      return datetime.fromisoformat(value).date()
+    except ValueError:
+      return value
+  return value
 
 
 class Condition(BaseModel):
@@ -12,6 +30,10 @@ class Condition(BaseModel):
   code_system: Optional[str] = None
   is_active: bool = True
   onset_date: Optional[date] = None
+
+  @field_validator("onset_date", mode="before")
+  @classmethod
+  def _onset_date(cls, v): return _coerce_date(v)
 
 
 class Medication(BaseModel):
@@ -37,6 +59,10 @@ class EncounterSummary(BaseModel):
   chief_complaint: str
   diagnoses: list[str] = []
   provider: Optional[str] = None
+
+  @field_validator("date", mode="before")
+  @classmethod
+  def _enc_date(cls, v): return _coerce_date(v)
 
 
 class PatientContext(BaseModel):
@@ -132,9 +158,21 @@ FlexiblePatientContext = Union[PatientContext, WidgetPatientContext]
 
 
 def normalize_patient_context(patient: Optional[FlexiblePatientContext]) -> Optional[PatientContext]:
-  """Convert any patient context format to the standard PatientContext."""
+  """Convert any patient context format to the standard PatientContext.
+
+  Handles three shapes:
+    - PatientContext (already normalized) → return as-is
+    - WidgetPatientContext (camelCase widget shape) → convert
+    - dict (Pydantic accepted but didn't coerce because the field union
+      includes raw dict) → coerce to PatientContext or WidgetPatientContext
+      based on shape, then normalize
+  """
   if patient is None:
     return None
+  if isinstance(patient, dict):
+    if "patientId" in patient:
+      return WidgetPatientContext(**patient).to_patient_context()
+    return PatientContext(**patient)
   if isinstance(patient, WidgetPatientContext):
     return patient.to_patient_context()
   return patient
