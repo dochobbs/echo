@@ -40,7 +40,8 @@ def _load_from_athena(specialty: str = "pediatrics") -> dict[str, dict]:
 def _load_from_local() -> dict[str, dict]:
     """Load frameworks from local YAML directory."""
     frameworks = {}
-    framework_dir = Path("knowledge/frameworks")
+    # Absolute path so behavior is independent of process working dir
+    framework_dir = Path(__file__).resolve().parent.parent.parent / "knowledge" / "frameworks"
 
     if not framework_dir.exists():
         return frameworks
