@@ -43,3 +43,6 @@ widget/dist/
 
 # Worktrees
 .worktrees/
+
+# Generated artifacts
+frameworks_bundle.tar.gz
