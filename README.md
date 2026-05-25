@@ -6,7 +6,7 @@ Echo provides Socratic clinical teaching across the MedEd platform. It never giv
 
 Part of the **MedEd Platform** -- see [metis/](../metis/) for platform orchestration.
 
-**Port:** 8001
+**Port:** 9101
 
 ---
 
@@ -41,9 +41,9 @@ cp .env.example .env
 # Edit .env with your API keys
 
 # Run
-uvicorn src.main:app --reload --port 8001
-# API at http://localhost:8001
-# Docs at http://localhost:8001/docs
+uvicorn src.main:app --reload --port 9101
+# API at http://localhost:9101
+# Docs at http://localhost:9101/docs
 ```
 
 ## API Endpoints
@@ -137,7 +137,7 @@ import { EchoWidget } from '@meded/echo-widget';
 import '@meded/echo-widget/styles.css';
 
 <EchoWidget
-  apiUrl="http://localhost:8001"
+  apiUrl="http://localhost:9101"
   context={{
     source: 'oread',
     patient: {
@@ -287,7 +287,7 @@ See [docs/INTEGRATION.md](../docs/INTEGRATION.md) for the full integration guide
 
 ```bash
 source .venv/bin/activate
-uvicorn src.main:app --reload --port 8001   # Dev server
+uvicorn src.main:app --reload --port 9101   # Dev server
 pytest tests/                                # Tests
 ```
 

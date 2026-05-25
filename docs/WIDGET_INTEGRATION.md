@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
 
       <EchoWidget
-        apiUrl="http://localhost:8001"  // or production URL
+        apiUrl="http://localhost:9101"  // or production URL
         context={{
           source: 'oread',  // or 'syrinx' or 'mneme'
         }}
@@ -40,7 +40,7 @@ When patient data is available:
 
 ```tsx
 <EchoWidget
-  apiUrl="http://localhost:8001"
+  apiUrl="http://localhost:9101"
   context={{
     source: 'oread',
     patient: {
